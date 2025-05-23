@@ -9,3 +9,10 @@ The latest version of HTML is **HTML5**. The two main components of HTML are **T
 Example:  
 ```html
 <a href="https://www.example.com">Visit Example</a>
+```
+
+```html
+<p align="center">Interview questions</p>
+````
+
+- Here, `<p>` is the tag, and align="center" is the attribute that centers the paragraph content.
