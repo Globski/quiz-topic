@@ -608,3 +608,276 @@ To define an option in a dropdown list or list box.
 **Answer:**  
 The `<form>` element.
 ---
+
+
+# Question: What is the purpose of the HTML `<canvas>` element?
+
+**Answer:**  
+To draw graphics dynamically via scripting, typically using JavaScript.
+
+---
+
+# Question: Which HTML element is used for marking up subscript text?
+
+**Answer:**  
+The `<sub>` element.
+
+---
+
+# Question: Which HTML element represents a thematic break?
+
+**Answer:**  
+The `<hr>` element.
+
+---
+
+# Question: What is the purpose of the HTML `<track>` element?
+
+**Answer:**  
+To specify text tracks (like subtitles) for media elements such as `<video>` and `<audio>`.
+
+---
+
+# Question: Which attribute is used to specify the character encoding?
+
+**Answer:**  
+The `<meta charset="UTF-8">` tag in the document `<head>`.
+
+---
+
+# Question: What is the purpose of the `<datalist>` element?
+
+**Answer:**  
+To provide a list of predefined options for an `<input>` element.
+
+---
+
+# Question: Which HTML element defines a mathematical formula?
+
+**Answer:**  
+The `<math>` element.
+
+---
+
+# Question: What is the purpose of the `<output>` element?
+
+**Answer:**  
+To represent the result of a calculation or user action.
+
+---
+
+# Question: Which attribute specifies the base URL for relative URLs?
+
+**Answer:**  
+The `<base href="...">` element.
+
+---
+
+# Question: What is the purpose of the `<mark>` element?
+
+**Answer:**  
+To highlight or mark text as relevant or important.
+
+---
+
+# Question: Which HTML element is used for bi-directional text isolation?
+
+**Answer:**  
+The `<bdi>` element.
+
+---
+
+# Question: What is the purpose of the `<meter>` element?
+
+**Answer:**  
+To represent a scalar measurement within a known range (e.g., disk usage).
+
+---
+
+# Question: Which attribute specifies the relationship between linked documents?
+
+**Answer:**  
+The `rel` attribute in the `<a>` or `<link>` elements.
+
+---
+
+# Question: What is the purpose of the `<ruby>` element?
+
+**Answer:**  
+To provide ruby annotations, typically for pronunciation guides.
+
+---
+
+# Question: Which HTML element represents a contact address?
+
+**Answer:**  
+The `<address>` element.
+
+---
+
+# Question: What is the purpose of the `<wbr>` element?
+
+**Answer:**  
+To indicate a possible line break opportunity in long words or URLs.
+
+---
+
+# Question: Which attribute is used to specify keyboard shortcuts?
+
+**Answer:**  
+The `accesskey` attribute.
+
+---
+
+# Question: What is the purpose of the `<picture>` element?
+
+**Answer:**  
+To provide multiple sources for responsive images.
+
+---
+
+# Question: Which HTML element is used for representing progress?
+
+**Answer:**  
+The `<progress>` element.
+
+---
+
+# Question: What is the purpose of the `<optgroup>` element?
+
+**Answer:**  
+To group related options in a dropdown (`<select>`) list.
+
+---
+
+# Question: Which attribute specifies the writing direction?
+
+**Answer:**  
+The `dir` attribute.
+
+---
+
+# Question: What is the purpose of the `<cite>` element?
+
+**Answer:**  
+To represent the title of a work or a citation.
+
+---
+
+# Question: Which HTML element represents a term definition?
+
+**Answer:**  
+The `<dd>` element.
+
+---
+
+# Question: What is the purpose of the `<source>` element?
+
+**Answer:**  
+To specify multiple media resources for `<picture>`, `<audio>`, or `<video>` elements.
+
+---
+
+# Question: Which attribute specifies the draggable status of an element?
+
+**Answer:**  
+The `draggable` attribute.
+
+---
+
+# Question: What is the purpose of the `<summary>` element?
+
+**Answer:**  
+To provide a summary, caption, or legend for the `<details>` element.
+
+---
+
+# Question: Which HTML element represents sample output?
+
+**Answer:**  
+The `<samp>` element.
+
+---
+
+# Question: What is the purpose of the `download` attribute?
+
+**Answer:**  
+To specify that the target of a hyperlink should be downloaded instead of navigated to.
+
+---
+
+# Question: Which HTML element defines embedded content?
+
+**Answer:**  
+The `<embed>` element.
+
+---
+
+# Question: What is the purpose of the `<abbr>` element?
+
+**Answer:**  
+To represent an abbreviation or acronym.
+
+---
+
+# Question: Which attribute specifies if an element is spellchecked?
+
+**Answer:**  
+The `spellcheck` attribute.
+
+---
+
+# Question: What is the purpose of the `<var>` element?
+
+**Answer:**  
+To represent a variable in a mathematical expression or programming context.
+
+---
+
+# Question: Which HTML element represents a generic container?
+
+**Answer:**  
+The `<div>` element.
+
+---
+
+# Question: What is the purpose of the `translate` attribute?
+
+**Answer:**  
+To specify whether the content of an element should be translated or not.
+
+---
+
+# Question: Which element represents a clickable button?
+
+**Answer:**  
+The `<button>` element.
+
+---
+
+# Question: What is the purpose of the `<sup>` element?
+
+**Answer:**  
+To mark text as superscript.
+
+---
+
+# Question: Which attribute specifies if an element is editable?
+
+**Answer:**  
+The `contenteditable` attribute.
+
+---
+
+# Question: What is the purpose of the `<ins>` element?
+
+**Answer:**  
+To represent inserted text.
+
+---
+
+# Question: Which HTML element represents a thematic grouping of content?
+
+**Answer:**  
+The `<section>` element.
+
