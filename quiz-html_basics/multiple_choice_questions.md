@@ -261,9 +261,350 @@ Content that is tangentially related to the main content, often used for sidebar
 
 ---
 
+# Question: What is the font-size of the h1 heading tag?
+
+**Answer:**  
+By default, the font size of the `<h1>` tag is 2em or approximately 32px, though it can vary based on the browser's stylesheet.
+
+---
+
+# Question: How many heading tags are there in HTML5?
+
+**Answer:**  
+There are six heading tags in HTML5: `<h1>` through `<h6>`.
+
+---
+
+# Question: Which of the following attributes is used to add a link to any element?
+
+**Answer:**  
+The `href` attribute is used to specify the URL in anchor (`<a>`) tags. For adding link behavior to any element, JavaScript or wrapping it in an `<a>` tag is used.
+
+---
+
+# Question: How many attributes are there in HTML5?
+
+**Answer:**  
+HTML5 includes over 100 global and specific attributes. The number can vary depending on how they are categorized, but there is no fixed total count.
+
+---
+
+# Question: Which of the following is the correct way of creating a hyperlink in HTML?
+
+**Answer:**  
+`<a href="https://example.com">Link</a>`
+
+---
+
+# Question: What is the purpose of using `<div>` tags in HTML?
+
+**Answer:**  
+The `<div>` tag is a container used to group elements for styling (with CSS) or scripting (with JavaScript).
+
+---
+
+# Question: Which of the following tags is used to make a portion of text italic in HTML?
+
+**Answer:**  
+The `<i>` or `<em>` tags can be used to italicize text, with `<em>` also conveying emphasis.
+
+---
+
+# Question: Which of the following attributes is used to open a hyperlink in a new tab?
+
+**Answer:**  
+The `target="_blank"` attribute.
+
+---
+
+# Question: Which of the following elements can be used in HTML to create a table?
+
+**Answer:**  
+The main elements are `<table>`, `<tr>`, `<td>`, and `<th>`.
+
+---
+
+# Question: Which tag is used to add a header in an HTML5 table?
+
+**Answer:**  
+The `<th>` tag is used for table headers.
+
+---
+
 # Question: Which HTML element is used to specify a header for a document or section?
 
 **Answer:**  
 The `<header>` element.
 
 
+# Question: What is the purpose of the HTML `<main>` element?
+
+**Answer:**  
+It represents the dominant content of the `<body>` of a document, unique and excluding repeated sections like navigation, headers, or footers.
+
+---
+
+# Question: Which attribute is used to specify the language of the content?
+
+**Answer:**  
+The `lang` attribute.
+
+---
+
+# Question: What does the `<figure>` element represent?
+
+**Answer:**  
+It represents self-contained content, like illustrations, diagrams, photos, or code snippets, often with a caption.
+
+---
+
+# Question: Which HTML element is used to define a tooltip for an image?
+
+**Answer:**  
+The `title` attribute is used to add a tooltip to any element, including images.
+
+---
+
+# Question: What is the purpose of the `<time>` element?
+
+**Answer:**  
+It represents a specific time (or date), optionally with a machine-readable format.
+
+---
+
+# Question: Which attribute is used to specify the target of a link?
+
+**Answer:**  
+The `target` attribute.
+
+---
+
+# Question: What is the purpose of the `<mark>` element?
+
+**Answer:**  
+To highlight or mark text as relevant or important.
+
+---
+
+# Question: Which HTML element is used to define a progress bar?
+
+**Answer:**  
+The `<progress>` element.
+
+---
+
+# Question: What is the purpose of the `<details>` element?
+
+**Answer:**  
+To create a disclosure widget that users can open and close to show or hide additional information.
+
+---
+
+# Question: Which HTML element is used to define a dialog box?
+
+**Answer:**  
+The `<dialog>` element.
+
+---
+
+# Question: Which HTML element is used to define a section of a document?
+
+**Answer:**  
+The `<section>` element.
+
+---
+
+# Question: What is the purpose of the `<figcaption>` element?
+
+**Answer:**  
+To provide a caption or legend for the content of the `<figure>` element.
+
+---
+
+# Question: Which HTML element is used to define keyboard input?
+
+**Answer:**  
+The `<kbd>` element.
+
+---
+
+# Question: What is the purpose of the `<samp>` element?
+
+**Answer:**  
+To represent sample output from a computer program.
+
+---
+
+# Question: Which HTML element is used to define a variable?
+
+**Answer:**  
+The `<var>` element.
+
+---
+
+# Question: What is the purpose of the `<ruby>` element?
+
+**Answer:**  
+To represent ruby annotations, which are short runs of text presented alongside base text, often for pronunciation guides.
+
+---
+
+# Question: Which HTML element is used to define a definition term?
+
+**Answer:**  
+The `<dt>` element.
+
+---
+
+# Question: What is the purpose of the `<q>` element?
+
+**Answer:**  
+To enclose short inline quotations.
+
+---
+
+# Question: Which HTML element is used to define a generic container for styling purposes?
+
+**Answer:**  
+The `<div>` element.
+
+---
+
+# Question: What is the purpose of the `<abbr>` element?
+
+**Answer:**  
+To represent an abbreviation or acronym, optionally with an expansion.
+
+---
+
+# Question: Which attribute is used to specify the draggable status of an element?
+
+**Answer:**  
+The `draggable` attribute.
+
+---
+
+# Question: What is the purpose of the `<wbr>` element?
+
+**Answer:**  
+To indicate a position within text where the browser may optionally break a line.
+
+---
+
+# Question: Which attribute is used to specify the base URL for relative URLs?
+
+**Answer:**  
+The `<base>` element with its `href` attribute.
+
+---
+
+# Question: What is the purpose of the `<ins>` element?
+
+**Answer:**  
+To represent inserted text.
+
+---
+
+# Question: Which HTML element is used to define a contact address?
+
+**Answer:**  
+The `<address>` element.
+
+---
+
+# Question: What is the purpose of the `<del>` element?
+
+**Answer:**  
+To represent deleted text.
+
+---
+
+# Question: Which HTML element is used to define a table row?
+
+**Answer:**  
+The `<tr>` element.
+
+---
+
+# Question: What is the purpose of the `<colgroup>` element?
+
+**Answer:**  
+To group one or more columns in a table for formatting.
+
+---
+
+# Question: Which HTML element is used to define a table header cell?
+
+**Answer:**  
+The `<th>` element.
+
+---
+
+# Question: What is the purpose of the `<col>` element?
+
+**Answer:**  
+To specify column properties within a `<colgroup>`.
+
+---
+
+# Question: Which HTML element is used to define a table data cell?
+
+**Answer:**  
+The `<td>` element.
+
+---
+
+# Question: What is the purpose of the `<tfoot>` element?
+
+**Answer:**  
+To group the footer content in a table.
+
+---
+
+# Question: Which HTML element is used to define a table caption?
+
+**Answer:**  
+The `<caption>` element.
+
+---
+
+# Question: What is the purpose of the `<thead>` element?
+
+**Answer:**  
+To group the header content in a table.
+
+---
+
+# Question: Which HTML element is used to define a table body?
+
+**Answer:**  
+The `<tbody>` element.
+
+---
+
+# Question: What is the purpose of the `<optgroup>` element?
+
+**Answer:**  
+To group related options in a dropdown list.
+
+---
+
+# Question: Which HTML element is used to define an option group in a dropdown list?
+
+**Answer:**  
+The `<optgroup>` element.
+
+---
+
+# Question: What is the purpose of the `<option>` element?
+
+**Answer:**  
+To define an option in a dropdown list or list box.
+
+---
+
+# Question: Which HTML element is used to define a form?
+
+**Answer:**  
+The `<form>` element.
+---
