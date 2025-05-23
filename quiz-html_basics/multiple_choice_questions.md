@@ -104,6 +104,22 @@ Use the `<select>` element with nested `<option>` elements, e.g.:
   <option>Option 2</option>
 </select>
 ```
+---
+
+# Question: How do you add a favicon to an HTML document?
+
+**Answer:**  
+You add a favicon by including a `<link>` element inside the `<head>` section of your HTML, like this:
+
+```html
+<link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+````
+
+or
+
+```html
+<link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
+```
 
 ---
 
