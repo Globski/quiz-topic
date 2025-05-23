@@ -1,4 +1,4 @@
-# Quiz Css Styling
+# Quiz CSS Styling
 
 ## Description
 
