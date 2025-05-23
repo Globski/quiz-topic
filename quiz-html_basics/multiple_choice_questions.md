@@ -1003,3 +1003,76 @@ The `<pre>` element.
 <button>Click me</button>
 ```
 ---
+
+# Question: What is the purpose of responsive web design?
+
+**Answer:**  
+Responsive web design ensures that web pages look good on all devices by automatically adjusting the layout based on screen size and viewport dimensions.
+
+---
+
+# Question: What HTML tag is used to set the viewport for responsive web design?
+
+**Answer:**  
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+````
+
+---
+
+# Question: What does the `width=device-width` value in the viewport meta tag mean?
+
+**Answer:**
+It sets the width of the page to follow the screen-width of the device, ensuring proper scaling on different screen sizes.
+
+---
+
+# Question: How can you make an image responsive using CSS?
+
+**Answer:**
+By using `width: 100%;` or `max-width: 100%; height: auto;` to ensure the image scales correctly based on the browser window size.
+
+---
+
+# Question: What is the benefit of using `max-width: 100%` over `width: 100%` for images?
+
+**Answer:**
+`max-width: 100%` ensures the image scales down if necessary but never grows larger than its original size, preserving quality.
+
+---
+
+# Question: Which HTML element allows you to define different images for different screen sizes?
+
+**Answer:**
+The `<picture>` element.
+
+---
+
+# Question: What unit allows text size to scale with the browser window?
+
+**Answer:**
+The `vw` unit (viewport width), e.g., `font-size: 10vw`.
+
+---
+
+# Question: What are media queries used for in responsive design?
+
+**Answer:**
+Media queries apply different CSS styles based on the screen size, resolution, or other characteristics of the user's device.
+
+---
+
+# Question: What does the following media query do?
+
+```css
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%;
+  }
+}
+```
+
+**Answer:**
+It sets the width of the `.left`, `.main`, and `.right` elements to 100% when the screen size is 800px or smaller, making the layout stack vertically.
+
+---
