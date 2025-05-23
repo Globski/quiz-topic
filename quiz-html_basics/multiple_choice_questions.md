@@ -87,6 +87,34 @@ Use the `<ul>` element to create a bulleted (unordered) list.
 
 ---
 
+# Question: What does the file path `<img src="images/picture.jpg">` indicate about the location of the image file?
+
+**Answer:**  
+It indicates that the image file "picture.jpg" is located inside the "images" folder, which is inside the current folder of the webpage.
+
+---
+
+# Question: What is the difference between a relative file path and an absolute file path in HTML?
+
+**Answer:**  
+- A **relative file path** points to a file location relative to the current page’s folder (e.g., `images/picture.jpg` or `../picture.jpg`).  
+- An **absolute file path** specifies the full URL to the file, including the domain (e.g., `https://www.w3schools.com/images/picture.jpg`).
+
+---
+
+# Question: What does the file path `<img src="../picture.jpg">` mean?
+
+**Answer:**  
+It means the file "picture.jpg" is located one folder level up from the current page’s folder.
+
+---
+
+# Question: How do you specify an image located in the root folder of the website?
+
+**Answer:**  
+You use a path starting with a slash `/`, for example: `<img src="/images/picture.jpg">`.
+---
+
 # Question: What is the correct HTML for making a text input field?
 
 **Answer:**  
