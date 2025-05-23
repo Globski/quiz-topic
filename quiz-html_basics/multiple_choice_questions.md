@@ -881,3 +881,81 @@ To represent inserted text.
 **Answer:**  
 The `<section>` element.
 
+# Question: Which HTML tag is used to define an internal style sheet?
+
+**Answer:**  
+The `<style>` tag is used inside the `<head>` section to define internal CSS styles.
+
+--- 
+
+# Question: Which doctype is correct for HTML5?
+
+**Answer:**  
+`<!DOCTYPE html>`
+
+---
+
+# Question: What is the correct HTML for creating a table?
+
+**Answer:**  
+```html
+<table>
+  <tr>
+    <th>Header</th>
+    <th>Header</th>
+  </tr>
+  <tr>
+    <td>Data</td>
+    <td>Data</td>
+  </tr>
+</table>
+````
+
+---
+
+# Question: What is the correct HTML for creating an email link?
+
+**Answer:**
+
+```html
+<a href="mailto:example@example.com">Send Email</a>
+```
+
+---
+
+# Question: Which HTML element defines a description list?
+
+**Answer:**
+The `<dl>` element.
+
+---
+
+# Question: Which HTML element is used to render or embed SVG graphics?
+
+**Answer:**
+The `<svg>` element.
+
+---
+
+# Question: Which HTML element is used for specifying a section of time?
+
+**Answer:**
+The `<time>` element.
+
+---
+
+# Question: Which HTML element is used to define preformatted text?
+
+**Answer:**
+The `<pre>` element.
+
+---
+
+# Question: What is the correct HTML for creating a button?
+
+**Answer:**
+
+```html
+<button>Click me</button>
+```
+---
