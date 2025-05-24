@@ -1,3 +1,24 @@
+# Question: What does HTML stand for?
+
+**Answer:**  
+HTML stands for **HyperText Markup Language**.
+
+---
+
+# Question: What is the advantage of collapsing white space in HTML?
+
+**Answer:**  
+In HTML, a sequence of whitespace characters (spaces, tabs, newlines) is treated as a single space. This collapsing of white space helps developers indent and format their HTML code for readability without affecting how the content is displayed in the browser.
+
+---
+
+# Question: Which of the following colors contain equal amounts of RGB?
+
+**Answer:**
+Colors that contain equal amounts of Red, Green, and Blue (RGB) are shades of gray, including black, white, and all grays in between. For example, RGB values like (0,0,0) for black, (255,255,255) for white, or (128,128,128) for medium gray have equal amounts of RGB.
+
+---
+
 # Question: Choose the correct HTML element for the largest heading.
 
 **Answer:**  
