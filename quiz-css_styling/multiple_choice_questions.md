@@ -476,3 +476,460 @@ In this example:
 | `element,element,..` | `div, p`     | Selects all `<div>` and all `<p>` elements |
 
 ---
+
+# Question: What are the three main ways to add CSS to an HTML document?
+
+**Answer:**
+CSS can be added to HTML documents in **three** main ways:
+
+1. **External CSS** – Linked through a separate `.css` file
+2. **Internal CSS** – Written within a `<style>` tag in the HTML document's `<head>`
+3. **Inline CSS** – Applied directly to HTML elements via the `style` attribute
+
+---
+
+# Question: How does External CSS work and why is it recommended?
+
+**Answer:**
+**External CSS** involves linking an external `.css` file using the `<link>` tag in the HTML `<head>` section.
+It is recommended because it allows you to control the look of **multiple web pages** with one style sheet.
+
+### Example:
+
+**HTML (`index.html`)**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
+</body>
+</html>
+```
+
+**CSS (`mystyle.css`)**
+
+```css
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+```
+
+> ✅ **Tip:** Don't insert a space between numbers and units:
+> `margin-left: 20px;` is correct,
+> `margin-left: 20 px;` is incorrect.
+
+---
+
+# Question: When should you use Internal CSS?
+
+**Answer:**
+Use **Internal CSS** when a **single page** has a unique style that does not need to be reused elsewhere.
+
+### Example:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: linen;
+    }
+    h1 {
+      color: maroon;
+      margin-left: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
+</body>
+</html>
+```
+
+---
+
+# Question: What is Inline CSS and when should it be used?
+
+**Answer:**
+**Inline CSS** is applied directly on an HTML element using the `style` attribute.
+It is best used **sparingly** for **quick, one-off styles**, since it mixes content and presentation.
+
+### Example:
+
+```html
+<h1 style="color:blue; text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+```
+
+> ⚠️ **Note:** Inline styles override both internal and external styles due to higher specificity.
+
+---
+
+# Question: What happens when multiple style sheets apply to the same element?
+
+**Answer:**
+When multiple styles apply to the same element, **CSS follows a "cascading" order** to determine which rule wins:
+
+### Cascading Order (highest to lowest priority):
+
+1. **Inline styles**
+2. **Internal or embedded styles** (within `<style>`)
+3. **External styles** (linked via `<link>`)
+4. **Browser defaults**
+
+> The **last loaded rule** of equal specificity wins if there are conflicts.
+
+---
+
+# Question: What determines the final style when both internal and external styles are used?
+
+**Answer:**
+The **order of the stylesheets** matters. The **last one loaded** (internal or external) will override earlier ones if they target the same element with the same specificity.
+
+### Example – Internal overrides External:
+
+```html
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    h1 { color: orange; }
+  </style>
+</head>
+```
+
+### Example – External overrides Internal:
+
+```html
+<head>
+  <style>
+    h1 { color: orange; }
+  </style>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+```
+
+---
+
+# Question: What are CSS comments and how are they used?
+
+**Answer:**
+CSS comments are used to explain code or leave notes for future reference. They are **ignored by the browser** and do **not affect** how styles are applied.
+
+### Syntax:
+
+CSS comments start with `/*` and end with `*/`.
+
+### Example (Single-line comment):
+
+```css
+/* This is a single-line comment */
+p {
+  color: red;
+}
+```
+
+### Example (Inline comment):
+
+```css
+p {
+  color: red;  /* Set text color to red */
+}
+```
+
+### Example (Within a value – not recommended):
+
+```css
+p {
+  color: /*red*/blue;
+}
+```
+
+### Example (Multi-line comment):
+
+```css
+/* This is
+a multi-line
+comment */
+```
+
+---
+
+# Question: Can HTML and CSS comments be used together?
+
+**Answer:**
+Yes. HTML uses a different syntax for comments: `<!-- comment -->`.
+
+You can use both in the same document, typically HTML comments in the body and CSS comments in `<style>` or `.css` files.
+
+### Example:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  p {
+    color: red; /* Set text color to red */
+  }
+</style>
+</head>
+<body>
+
+<h2>My Heading</h2>
+
+<!-- These paragraphs will be red -->
+<p>Hello World!</p>
+<p>This paragraph is styled with CSS.</p>
+<p>HTML and CSS comments are not shown in the output.</p>
+
+</body>
+</html>
+```
+
+**Tip:** Use comments to improve code readability and maintainability, especially in large stylesheets.
+
+---
+
+# Question: How can you specify colors in CSS?
+
+**Answer:**
+In CSS, colors can be specified using:
+
+* **Predefined color names** (e.g., `Tomato`, `SlateBlue`, `MediumSeaGreen`)
+* **RGB values** (e.g., `rgb(255, 99, 71)`)
+* **HEX values** (e.g., `#ff6347`)
+* **HSL values** (e.g., `hsl(9, 100%, 64%)`)
+* **RGBA values** (e.g., `rgba(255, 99, 71, 0.5)`) — includes transparency
+* **HSLA values** (e.g., `hsla(9, 100%, 64%, 0.5)`) — includes transparency
+
+---
+
+# Question: How do you set the background color of an element in CSS?
+
+**Answer:**
+Use the `background-color` property to set an element's background color.
+
+### Example:
+
+```html
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+```
+
+---
+
+# Question: How do you change the text color in CSS?
+
+**Answer:**
+Use the `color` property to change the text color of HTML elements.
+
+### Example:
+
+```html
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+```
+
+---
+
+# Question: How do you set the border color of an element in CSS?
+
+**Answer:**
+Use the `border` property and specify the color along with width and style.
+
+### Example:
+
+```html
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+```
+
+---
+
+# Question: What is the difference between `rgb()` and `rgba()` in CSS?
+
+**Answer:**
+
+* `rgb(r, g, b)` specifies a color using red, green, and blue components.
+* `rgba(r, g, b, a)` adds an **alpha (a)** parameter for **transparency**, where `0` is fully transparent and `1` is fully opaque.
+
+### Example:
+
+```html
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">Transparent Tomato</h1>
+```
+
+---
+
+# Question: What does `hsl()` and `hsla()` mean in CSS?
+
+**Answer:**
+
+* `hsl(hue, saturation, lightness)` is another way to define colors using hue, saturation, and lightness.
+* `hsla()` includes an alpha parameter to control transparency.
+
+### Example:
+
+```html
+<h1 style="background-color:hsl(9, 100%, 64%);">Tomato in HSL</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">Semi-transparent Tomato</h1>
+```
+
+---
+
+# Question: What is an RGB color in CSS?
+
+**Answer:**
+An **RGB color** in CSS defines colors using the **Red**, **Green**, and **Blue** light model. It is written as:
+
+```
+rgb(red, green, blue)
+```
+
+Each color component is a number between **0** (no intensity) and **255** (full intensity).
+
+---
+
+# Question: How do you create pure red, black, and white using RGB?
+
+**Answer:**
+
+* **Red:** `rgb(255, 0, 0)`
+* **Black:** `rgb(0, 0, 0)`
+* **White:** `rgb(255, 255, 255)`
+
+---
+
+# Question: How do you create shades of gray using RGB?
+
+**Answer:**
+Shades of gray are created by setting equal values for red, green, and blue.
+
+### Examples:
+
+* `rgb(60, 60, 60)` – dark gray
+* `rgb(120, 120, 120)` – medium gray
+* `rgb(240, 240, 240)` – light gray
+
+---
+
+# Question: What is the difference between `rgb()` and `rgba()` in CSS?
+
+**Answer:**
+
+* `rgb()` sets the color using red, green, and blue values.
+* `rgba()` adds an **alpha** value to control transparency.
+
+### Syntax:
+
+```css
+rgba(red, green, blue, alpha)
+```
+
+* The **alpha** value ranges from `0.0` (fully transparent) to `1.0` (fully opaque).
+
+---
+
+# Question: Give examples of using `rgba()` in CSS.
+
+**Answer:**
+
+```css
+rgba(255, 99, 71, 1.0)   /* Fully opaque */
+rgba(255, 99, 71, 0.5)   /* 50% transparent */
+rgba(255, 99, 71, 0.2)   /* 20% opaque */
+```
+
+---
+
+# Question: What is a HEX color code in CSS?
+
+**Answer:**
+A **HEX color** in CSS is specified using the format:
+
+```
+#rrggbb
+```
+
+Where:
+
+* `rr` is the red component
+* `gg` is the green component
+* `bb` is the blue component
+
+Each pair is a **hexadecimal** value ranging from `00` (0 in decimal) to `ff` (255 in decimal).
+
+---
+
+# Question: How do you write red, black, and white using HEX?
+
+**Answer:**
+
+* **Red:** `#ff0000`
+* **Black:** `#000000`
+* **White:** `#ffffff`
+
+---
+
+# Question: How do you create shades of gray using HEX codes?
+
+**Answer:**
+Shades of gray use equal red, green, and blue values.
+
+### Examples:
+
+* `#3c3c3c` – dark gray
+* `#787878` – medium gray
+* `#f0f0f0` – light gray
+
+---
+
+# Question: What is a 3-digit HEX color code in CSS?
+
+**Answer:**
+A **3-digit HEX code** is a shorthand form of the 6-digit HEX code. It can be used when each color component has identical pairs.
+
+### Syntax:
+
+```
+#rgb
+```
+
+It expands to:
+
+```
+#rrggbb
+```
+
+### Example:
+
+* `#f0c` = `#ff00cc`
+* `#fc9` = `#ffcc99`
+* `#b58` = `#bb5588`
+
+---
+
+# Question: Why use HEX codes over other color formats?
+
+**Answer:**
+HEX codes are concise, easy to read, and widely supported in CSS. They are useful for:
+
+* Defining precise colors
+* Matching design systems
+* Reducing file size with 3-digit shorthand when possible
+
+---
