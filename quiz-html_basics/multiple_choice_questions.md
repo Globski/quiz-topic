@@ -1,3 +1,95 @@
+# Question: What is the ‘class’ attribute in HTML?
+
+**Answer:**  
+The `class` attribute is used to specify a class name for an HTML element. Multiple elements can share the same class name. It is mainly used to link HTML elements with CSS styles defined in stylesheets.
+
+---
+
+# Question: Why is HTML important in web development, and why is it not sufficient alone?
+
+**Answer:**  
+HTML is important because it defines the structure of web content and is essential for web designers and developers. However, HTML alone is not sufficient because it only structures the data. To make web pages visually appealing and functional, CSS (for styling) and JavaScript (for interactivity) are also needed.
+
+---
+
+# Question: What are HTML elements?
+
+**Answer:**  
+HTML elements are building blocks that define and label parts of a webpage, like headings, paragraphs, and links.
+
+---
+
+# Question: What does HTML do in a web browser?
+
+**Answer:**  
+- HTML informs the web browser on how to display the content of the website when the user loads it.
+- It consists of a series of elements that label pieces of content as “heading”, “paragraph”, “link”, and more.
+
+---
+
+# Question: Who is making the Web standards?
+
+**Answer:**  
+Web standards are primarily developed and maintained by the World Wide Web Consortium (W3C), along with contributions from other groups like the Web Hypertext Application Technology Working Group (WHATWG) and various standards bodies.
+
+---
+
+# Question: What file extensions are used for HTML files, and how are they viewed?
+
+**Answer:**  
+An HTML file is saved with the `.htm` or `.html` extension. It is usually provided by a web server and can be viewed in any web browser.
+
+---
+
+# Question: When was HTML released
+
+**Answer:**  
+HTML was released in 1993.
+
+---
+
+# Question: What is HTML used for?
+
+**Answer:**  
+HTML is the standard go-to language to make web pages and is used to create the general structure of a website or webpage.
+
+---
+
+# Question: What is the general syntax of an HTML element?
+
+**Answer:**  
+An HTML element generally consists of a start tag, some content, and an end tag. For example:  
+```html
+<tagname>Content</tagname>
+```
+---
+
+# Question: Can we display a web page inside another web page? How?
+
+**Answer:**  
+Yes, we can display a web page inside another HTML web page using the `<iframe>` tag.
+
+Example:  
+```html
+<iframe src="url-of-the-web-page-to-embed"></iframe>
+```
+- This tag embeds the specified webpage inside the current page.
+
+---
+
+# Question: What are void elements in HTML?
+
+**Answer:**  
+Void elements in HTML are elements that do not have closing tags or do not need to be closed.
+
+Examples include:  
+```html
+<br />
+<img />
+<hr />
+```
+---
+
 # Question: What does HTML stand for?
 
 **Answer:**  
