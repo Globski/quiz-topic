@@ -251,3 +251,106 @@ The default value is `static`.
 The `font-family` property.
 
 ---
+
+
+# Question: Which CSS selectors will correctly target the `<p>` element only if it's inside a `<div>` with the ID `"container"`?
+
+**Answer:**
+
+```css
+#container p {
+  /* styles */
+}
+```
+
+---
+
+# Question: What is the correct HTML for referring to an external style sheet?
+
+**Answer:**
+
+```html
+<link rel="stylesheet" href="styles.css">
+```
+
+---
+
+# Question: The `overflow` property accepts two keywords. The first keyword is for which axis?
+
+**Answer:**
+The horizontal axis (x-axis).
+
+---
+
+# Question: Which display values create a flexible box layout?
+
+**Answer:**
+`display: flex;` and `display: inline-flex;`
+
+---
+
+# Question: Which of the following are valid CSS pseudo-classes?
+
+**Answer:**
+
+* `:hover`
+* `:focus`
+* `:nth-child()`
+* `:first-child`
+
+---
+
+# Question: Which techniques are used to create a responsive design using CSS?
+
+**Answer:**
+
+* Media queries
+* Relative units (%, em, rem, vw, vh)
+* Flexbox and Grid layouts
+* Responsive images
+* CSS container queries (modern approach)
+
+---
+
+# Question: Which of the following properties control the stacking order of elements?
+
+**Answer:**
+The `z-index` property.
+
+---
+
+# Question: Which of these are valid units for specifying font sizes in CSS?
+
+**Answer:**
+
+* `px`
+* `em`
+* `rem`
+* `%`
+* `vw`, `vh`
+* `pt`, `cm`, `mm` (less commonly used for screen)
+
+---
+
+# Question: Which of the following CSS properties influence the visual layout of a table?
+
+**Answer:**
+
+* `border-collapse`
+* `table-layout`
+* `caption-side`
+* `empty-cells`
+
+---
+
+# Question: What are some ways to improve the accessibility of CSS-styled web pages?
+
+**Answer:**
+
+* Use high contrast between text and background
+* Ensure font sizes are readable and scalable
+* Avoid using color as the only means of conveying information
+* Use semantic HTML along with CSS
+* Avoid animations that can trigger motion sickness (use `prefers-reduced-motion`)
+
+---
