@@ -1,3 +1,218 @@
+# Question: What is the basic structure of a standard HTML file?
+
+**Answer:**  
+A standard HTML file includes the following structure:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title Page</title>
+</head>
+<body>
+
+<h1>Heading Line</h1>
+<p>Paragraph Lines</p>
+
+</body>
+</html>
+```
+
+- The `<!DOCTYPE html>` acts as a declaration that this document is an HTML5 document.
+- The `<html>` element is the root element of the HTML page.
+- The `<head>` element contains metadata for the HTML page.
+- The `<title>` tag produces a title for the webpage we are currently rendering(our HTML page).
+- The `<body>` defines the body of the document, and is basically a container for all the contents which is visible in the HTML page like hyperlinks, headings, titles, paragraphs, etc.
+- The `<h1>` tag is basically a heading. The ‘1’ represents the size of the heading, 1 being the largest and 6 being the smallest.
+- The `<p>` tag basically defines a paragraph.
+
+---
+
+# Question: What does HTML stand for and what is its purpose?
+
+**Answer:**  
+**HTML** stands for **HyperText Markup Language**. It is a language interpreted by web browsers to define the structure and content of web pages. HTML uses “tags” to mark up text, images, and other elements, instructing the browser what to display and how to display it. It is the standardized system used to create and design web pages.
+
+ An HTML document is a plaintext document formatted using elements. These elements are surrounded by opening and closing tags, which use angle brackets (`<>`).  
+- Tags like `<image>`, `<p>`, etc., can be empty or void and do not contain any text.  
+- Attributes can be added to HTML tags to provide additional information that affects how the browser interprets the element.
+
+---
+
+# Question: What is the root element in an HTML document and what is its significance?
+
+**Answer:**  
+The root element of an HTML page is the `<html>` element. It is the top-level element and must be the ancestor of all other elements in the document.
+
+Example structure:  
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>...</head>
+  <body>...</body>
+</html>
+```
+
+- The <html> tag encloses the entire content of the HTML document.
+
+---
+
+# Question: How do you indicate the character set being used by an HTML document?
+
+**Answer:**
+
+The character set of an HTML document is specified using the `<meta>` tag inside the `<head>` section. This tells the browser how to interpret the characters in the document, ensuring correct display of text.
+
+The most common character set used today is **UTF-8**, which supports virtually all characters from all languages.
+
+**Example:**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Example Document</title>
+  </head>
+  <body>
+    <p>This document uses UTF-8 character encoding.</p>
+  </body>
+</html>
+```
+
+> By including `<meta charset="UTF-8">`, you ensure that the browser correctly interprets the document's character encoding.
+
+---
+
+# Question: What is the latest version of HTML, and what are its two main components?
+**Answer:**  
+The latest version of HTML is **HTML5**. The two main components of HTML are **Tags** and **Attributes**.
+
+- **Tags** are the primary components in HTML that define how the content will be structured or formatted. they define the elements on the webpage. For example, `<a>` is a tag used to create a hyperlink.
+
+- **Attributes** are used with HTML tags to define the characteristics or properties of the element. they provide extra information about tags. For example, the `href` attribute specifies the link destination in an `<a>` tag.
+
+Example:  
+```html
+<a href="https://www.example.com">Visit Example</a>
+```
+
+```html
+<p align="center">Interview questions</p>
+````
+
+- Here, `<p>` is the tag, and align="center" is the attribute that centers the paragraph content.
+
+---
+
+# Question: What are the various formatting tags in HTML? List and describe them.
+
+**Answer:**  
+HTML provides several formatting tags to change the appearance and meaning of text:
+
+- `<b>`: Makes text **bold**.  
+- `<i>`: Makes text *italic*.  
+- `<em>`: Makes text *italic* with added semantic emphasis.  
+- `<big>`: Increases the font size by one unit.  
+- `<small>`: Decreases the font size by one unit.  
+- `<sub>`: Displays text as a subscript.  
+- `<sup>`: Displays text as a superscript.  
+- `<del>`: Displays text with a strike-through (deleted text).  
+- `<strong>`: Marks text as important (typically bold).  
+- `<mark>`: Highlights text.  
+- `<ins>`: Displays text as inserted (usually underlined).
+
+---
+
+# Question: Describe the HTML layout structure and its common components.
+
+**Answer:**  
+Every web page has different components to display content and UI, but there are some standard, globally accepted layout elements:
+
+- `<header>`: Contains the starting information about the web page.
+- `<footer>`: Represents the last section of the page.
+- `<nav>`: Contains the navigation menu of the page.
+- `<article>`: Represents a self-contained set of information.
+- `<section>`: Used inside an article to define a specific section or block of content.
+- `<aside>`: Contains sidebar content or tangentially related information.
+
+---
+
+# Question: What are the different types of lists in HTML?
+
+**Answer:**  
+There are three main types of lists in HTML:
+
+1. **Ordered List (`<ol>`)**  
+   Displays list items in a numbered sequence.
+
+2. **Unordered List (`<ul>`)**  
+   Displays list items with bullet points.
+
+3. **Description List (`<dl>`)**  
+   Used for a list of terms and their descriptions.
+
+Example:  
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+</ol>
+
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+</ul>
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+</dl>
+```
+---
+
+# Question: What are HTML Entities?
+
+**Answer:**  
+HTML Entities are special codes used to display reserved characters in HTML, such as `<`, `>`, and `&`, which otherwise have special meanings in HTML.
+
+| Character         | Entity Name | Entity Number |
+|-------------------|-------------|---------------|
+| <                 | &lt;        | &#60;         |
+| >                 | &gt;        | &#62;         |
+| &                 | &amp;       | &#38;         |
+| (Non-breaking space) Eg. 10 PM | &nbsp;      | &#160;        |
+
+Example:  
+```html
+<p>10&nbsp;PM</p>
+```
+- This displays as: 10 PM (with a non-breaking space).
+
+---
+
+# Question: Why do we use HTML?
+
+**Answer:**  
+HTML ensures the proper formatting of text and images so that web browsers can display them correctly. Without HTML, browsers wouldn’t know how to display text as elements or load images and other content. HTML provides the basic structure (the "bones") of a web page, while CSS adds styling (the "skin") to change its appearance.
+
+The basic skeleton of an HTML document looks like this:
+
+```html
+<html>
+<head>
+<title> Title </title>
+</head>
+<body>
+..........................
+....Body contents here....
+..........................
+</body>
+</html>
+```
+
+---
+
 # Question: What is the ‘class’ attribute in HTML?
 
 **Answer:**  
@@ -226,6 +441,7 @@ It means the file "picture.jpg" is located one folder level up from the current 
 
 **Answer:**  
 You use a path starting with a slash `/`, for example: `<img src="/images/picture.jpg">`.
+
 ---
 
 # Question: What is the correct HTML for making a text input field?
@@ -245,6 +461,7 @@ Use the `<select>` element with nested `<option>` elements, e.g.:
   <option>Option 2</option>
 </select>
 ```
+
 ---
 
 # Question: How do you add a favicon to an HTML document?
@@ -764,6 +981,7 @@ To define an option in a dropdown list or list box.
 
 **Answer:**  
 The `<form>` element.
+
 ---
 
 
@@ -1115,6 +1333,7 @@ The `<pre>` element.
 ```html
 <button>Click me</button>
 ```
+
 ---
 
 # Question: What is the purpose of responsive web design?
