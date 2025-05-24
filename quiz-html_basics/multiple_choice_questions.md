@@ -1,3 +1,25 @@
+# Question: What tag is used to render an image on a webpage?
+
+**Answer:**
+The `<img>` tag is used to render an image on a webpage. It is a self-closing tag and requires the `src` attribute to specify the image source URL, and often the `alt` attribute for alternative text.
+Example: `<img src="image.jpg" alt="Description of image">`
+
+---
+
+# Question: Which of the following colors contain equal amounts of RGB?
+
+**Answer:**
+Colors that contain equal amounts of Red, Green, and Blue (RGB) are shades of gray, including black, white, and all grays in between. For example, RGB values like (0,0,0) for black, (255,255,255) for white, or (128,128,128) for medium gray have equal amounts of RGB.
+
+---
+
+# Question: Can extra spaces affect how HTML is displayed in the browser?
+
+**Answer:**
+No, extra spaces generally do not affect how HTML is displayed in the browser because HTML collapses multiple whitespace characters (spaces, tabs, newlines) into a single space when rendering content. This means you can use extra spaces in your HTML code for readability without changing the visual output.
+
+---
+
 # Question: What is the basic structure of a standard HTML file?
 
 **Answer:**  
@@ -1406,5 +1428,141 @@ Media queries apply different CSS styles based on the screen size, resolution, o
 
 **Answer:**
 It sets the width of the `.left`, `.main`, and `.right` elements to 100% when the screen size is 800px or smaller, making the layout stack vertically.
+
+
+---
+
+# Question: What are HTML attributes and where are they specified?
+
+**Answer:**
+HTML attributes provide additional information about HTML elements. They are always specified in the start tag of an element and usually come in name/value pairs, like `name="value"`.
+
+---
+
+# Question: What does the `href` attribute in the `<a>` tag specify?
+
+**Answer:**
+The `href` attribute in the `<a>` tag specifies the URL of the page the link goes to.
+
+---
+
+# Question: What is the purpose of the `src` attribute in the `<img>` tag?
+
+**Answer:**
+The `src` attribute in the `<img>` tag specifies the path or URL of the image to be displayed on the webpage.
+
+---
+
+# Question: What is the difference between absolute and relative URLs in the `src` attribute?
+
+**Answer:**
+
+* Absolute URL links to an external image hosted on another website (e.g., `https://example.com/image.jpg`).
+* Relative URL links to an image within the same website, either relative to the current page or the domain (e.g., `img_girl.jpg` or `/images/img_girl.jpg`).
+
+---
+
+# Question: Why is it recommended to use relative URLs over absolute URLs?
+
+**Answer:**
+Relative URLs are recommended because they are more reliable and won’t break if the domain changes.
+
+---
+
+# Question: What are the `width` and `height` attributes used for in the `<img>` tag?
+
+**Answer:**
+They specify the width and height of the image in pixels.
+
+---
+
+# Question: Why is the `alt` attribute important for the `<img>` tag?
+
+**Answer:**
+The `alt` attribute provides alternate text if the image cannot be displayed due to slow connection, an error, or for screen readers, improving accessibility.
+
+---
+
+# Question: How is the `style` attribute used in HTML?
+
+**Answer:**
+The `style` attribute is used to add inline CSS styles to an element, such as color, font, and size.
+
+---
+
+# Question: What is the purpose of the `lang` attribute in the `<html>` tag?
+
+**Answer:**
+The `lang` attribute declares the language of the webpage to assist search engines and browsers.
+
+---
+
+# Question: What does the `title` attribute do?
+
+**Answer:**
+The `title` attribute defines extra information about an element, displayed as a tooltip when the mouse hovers over it.
+
+---
+
+# Question: Should attribute names and values be lowercase and quoted?
+
+**Answer:**
+While HTML does not require lowercase attribute names or quotes around values, W3C recommends lowercase names and always quoting attribute values for better compatibility and stricter document types.
+
+---
+
+# Question: Which HTML tags define headings on a webpage?
+
+**Answer:**
+HTML headings are defined with the `<h1>` to `<h6>` tags.
+
+---
+
+# Question: Which heading tag defines the most important heading?
+
+**Answer:**
+The `<h1>` tag defines the most important heading.
+
+---
+
+# Question: Which heading tag defines the least important heading?
+
+**Answer:**
+The `<h6>` tag defines the least important heading.
+
+---
+
+# Question: Why is it important to use HTML headings properly?
+
+**Answer:**
+Headings help search engines index the structure and content of web pages and help users skim the page by its structure.
+
+---
+
+# Question: What is the recommended order for using headings in an HTML document?
+
+**Answer:**
+Use `<h1>` for main headings, followed by `<h2>`, then `<h3>`, and so on, down to `<h6>` for the least important headings.
+
+---
+
+# Question: Should HTML headings be used just to make text bigger or bold?
+
+**Answer:**
+No, headings should only be used for headings and document structure, not just to make text bigger or bold.
+
+---
+
+# Question: How can you change the size of an HTML heading?
+
+**Answer:**
+You can change the size of a heading using the `style` attribute with CSS, for example: `<h1 style="font-size:60px;">Heading 1</h1>`.
+
+---
+
+# Question: Which heading tag is the largest and most important: `<h1>`, `<h2>`, or `<h3>`?
+
+**Answer:**
+`<h1>` is the largest and most important heading tag.
 
 ---
