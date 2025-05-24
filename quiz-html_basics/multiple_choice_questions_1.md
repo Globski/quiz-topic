@@ -1001,3 +1001,119 @@ H<sub>2</sub>O
 ```
 
 ---
+
+# Question: What role does the title attribute play in user experience?
+
+**Answer:**
+The `title` attribute provides additional information about an element, which is shown as a **tooltip** when the user hovers the mouse over the element. This helps improve user experience by offering helpful hints, explanations, or extra context without cluttering the page.
+
+---
+
+# Question: What format should the `lang` attribute follow?
+
+**Answer:**
+The `lang` attribute should follow the **IETF language tag format**, typically consisting of:
+
+* A **two-letter language code** (ISO 639-1), e.g., `en` for English, `fr` for French
+* Optionally followed by a **hyphen and a two-letter country code** (ISO 3166-1 alpha-2), e.g., `en-US` for U.S. English, `fr-CA` for Canadian French
+
+Examples:
+
+```html
+<html lang="en">
+<html lang="en-US">
+<html lang="fr">
+<html lang="fr-CA">
+```
+
+---
+
+# Question: Why should you be cautious with absolute URLs?
+
+**Answer:**
+Absolute URLs link to external websites and may cause issues such as broken links if the external resource is moved or deleted. They can also lead to copyright violations and reduce control over the content displayed.
+
+---
+
+# Question: What is a tooltip in HTML?
+
+**Answer:**
+A tooltip is additional information displayed when a user hovers over an element. It is created using the `title` attribute and usually appears as a small popup box near the cursor.
+
+---
+
+# Question: What is a potential issue with not quoting attribute values in HTML?
+
+**Answer:**
+Not quoting attribute values, especially those containing spaces or special characters, can cause browsers to misinterpret the attribute, leading to errors or incorrect rendering.
+
+---
+
+# Question: Why is the `lang` attribute important in HTML?
+
+**Answer:**
+The `lang` attribute specifies the language of the content, which helps search engines, browsers, and assistive technologies like screen readers to correctly process and display the text.
+
+---
+
+# Question: How can you inspect an HTML element on a webpage?
+
+**Answer:**
+You can inspect an HTML element by right-clicking on it in a web browser and selecting "Inspect" or "Inspect Element," which opens developer tools to view and edit the HTML and CSS.
+
+---
+
+# Question: What keyboard shortcut do you use to view HTML source code in a web browser?
+
+**Answer:**
+Press `Ctrl + U` on Windows/Linux or `Cmd + Option + U` on Mac to view the HTML source code of a webpage.
+
+---
+
+# Question: What encoding should be set when saving an HTML file in Notepad?
+
+**Answer:**
+HTML files should be saved with **UTF-8** encoding to support a wide range of characters and symbols properly.
+
+---
+
+# Question: When was HTML first invented?
+
+**Answer:**
+HTML was first invented in **1991**.
+
+---
+
+# Question: Who invented the World Wide Web and when?
+
+**Answer:**
+The World Wide Web was invented by **Tim Berners-Lee** in **1989-1990**.
+
+---
+
+# Question: What is the purpose of a web browser?
+
+**Answer:**
+A web browser retrieves HTML, CSS, and JavaScript files from the internet and renders them as interactive web pages for users to view and navigate.
+
+---
+
+# Question: List some versions of HTML and their release years.
+
+**Answer:**
+
+* HTML 1.0 — 1991
+* HTML 2.0 — 1995
+* HTML 3.2 — 1997
+* HTML 4.01 — 1999
+* XHTML 1.0 — 2000
+* HTML5 — 2014
+
+---
+
+# Question: What is displayed in a browser's title bar?
+
+**Answer:**
+The text inside the `<title>` tag of an HTML document is displayed in the browser’s title bar or tab.
+
+---
