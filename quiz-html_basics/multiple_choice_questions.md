@@ -1636,3 +1636,194 @@ Both tags adjust the size of the text relative to the surrounding content withou
 
 ---
 
+# Question: What is meant by an empty tag in HTML?
+
+**Answer:**
+An empty tag in HTML is a tag that does not have a closing tag and does not contain any content. It stands alone and typically represents elements like line breaks or horizontal rules.
+Examples of empty tags include `<br>`, `<hr>`, and `<img>`.
+
+---
+
+# Question: Colors are defined in HTML using?
+
+**Answer:**
+Colors in HTML are defined using color names (like "red", "blue"), hexadecimal color codes (like `#FF0000`), RGB values (like `rgb(255,0,0)`), or HSL values (like `hsl(0, 100%, 50%)`). These can be applied using CSS properties such as `color` for text color or `background-color` for background color.
+
+
+---
+
+# Question: How is the black color represented in terms of RGB values?
+
+**Answer:**
+Black is represented in RGB as (0, 0, 0), meaning no red, no green, and no blue light.
+
+---
+
+# Question: How many characters can be written in 1KB?
+
+**Answer:**
+1KB (kilobyte) typically equals 1024 bytes, and since 1 character usually takes 1 byte in standard encoding (like ASCII), about **1024 characters** can be written in 1KB.
+
+---
+
+# Question: HTML files are saved by default with which extension?
+
+**Answer:**
+HTML files are saved by default with the `.html` or `.htm` extension.
+
+---
+
+# Question: If a background image is smaller than the screen on which it is being displayed, what will occur on the webpage?
+
+**Answer:**
+If a background image is smaller than the screen, the image will **repeat (tile)** both horizontally and vertically by default to fill the entire background area unless CSS properties like `background-repeat: no-repeat;` or `background-size` are used to change this behavior.
+
+---
+
+# Question: Apart from the `<i>` tag, which of the following tag is used to render text in italics?
+
+**Answer:**
+The `<em>` tag is also used to render text in italics. It stands for *emphasis* and semantically indicates that the text should be emphasized, usually displayed in italics by default.
+
+---
+
+# Question: We enclose HTML tags within?
+
+**Answer:**
+HTML tags are enclosed within **angle brackets**, like `<` and `>`. For example, `<p>` is an HTML paragraph tag.
+
+
+---
+
+# Question: What are some valid character sets available in HTML?
+
+**Answer:**
+Some valid character sets used in HTML include:
+
+* **UTF-8** (Unicode): The most common and recommended character set supporting virtually all characters worldwide.
+* **ISO-8859-1** (Latin-1): Used for Western European languages.
+* **ASCII**: A basic character set supporting English letters, digits, and some symbols.
+* **UTF-16**: Another Unicode encoding supporting a wide range of characters.
+
+UTF-8 is the preferred charset for modern web pages.
+
+---
+
+# Question: What are the attributes used to change the size of an image in HTML?
+
+**Answer:**
+The `width` and `height` attributes are used to change the size of an image in HTML. They specify the width and height of the image in pixels.
+Example: `<img src="image.jpg" width="500" height="300">`
+
+---
+
+# Question: What are the main components of the front end of any working website?
+
+**Answer:**
+The main components of the front end of a website are:
+
+1. **HTML** – Structures the content and layout of the webpage.
+2. **CSS** – Styles the webpage, controlling the design, colors, fonts, and layout.
+3. **JavaScript** – Adds interactivity and dynamic behavior to the webpage.
+
+These three technologies work together to create the user interface and experience of a website.
+
+---
+
+# Question: What are the types of unordered lists in HTML?
+
+**Answer:**
+In HTML, unordered lists (`<ul>`) can display list items with different bullet styles using the `type` attribute (although it is deprecated in HTML5 and CSS is preferred). The common bullet types are:
+
+* **Disc** (default): ●
+* **Circle**: ○
+* **Square**: ■
+
+Example using CSS to style bullets:
+
+```css
+ul {
+  list-style-type: square;
+}
+```
+
+---
+
+# Question: What does the Alpha value in RGBA represent?
+
+**Answer:**
+The Alpha value in RGBA represents the **opacity** or **transparency** of a color. It ranges from `0` (completely transparent) to `1` (fully opaque). For example, `rgba(255, 0, 0, 0.5)` is a semi-transparent red.
+
+
+---
+
+# Question: What does the Alpha value of 0.0 represent?
+
+**Answer:**
+An Alpha value of `0.0` represents **full transparency**, meaning the color is completely invisible.
+
+
+---
+
+# Question: HTML is a subset of?
+
+**Answer:**
+HTML is a subset of **SGML** (Standard Generalized Markup Language).
+
+---
+
+# Question: What is the correct syntax of a web address (URL)?
+
+**Answer:**
+The correct syntax of a web address (URL) is:
+
+```
+protocol://domain:port/path?query_string#fragment_id
+```
+
+* **protocol** — Specifies the protocol (e.g., `http`, `https`, `ftp`)
+* **domain** — The domain name or IP address (e.g., `www.example.com`)
+* **port** (optional) — Port number (e.g., `:80`)
+* **path** (optional) — Path to the resource (e.g., `/folder/page.html`)
+* **query\_string** (optional) — Parameters passed to the server (e.g., `?id=123`)
+* **fragment\_id** (optional) — Section within the page (e.g., `#section1`)
+
+Example:
+`https://www.example.com:443/path/page.html?id=123#top`
+
+---
+
+# Question: Which HTML element is used for embedding YouTube videos?
+
+**Answer:**
+The `<iframe>` element is commonly used to embed YouTube videos in a webpage.
+
+Example:
+
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+    frameborder="0" allowfullscreen></iframe>
+```
+
+---
+
+# Question: Which HTML tag is used for raising a number to a power?
+
+**Answer:**
+The `<sup>` tag is used to display text as superscript, which is typically used for raising a number to a power.
+
+Example:
+
+```html
+E = mc<sup>2</sup>
+```
+
+---
+
+# Question: What is the color of an unvisited link in HTML by default?
+
+**Answer:**
+By default, an unvisited link is displayed in **blue** color.
+
+
+---
