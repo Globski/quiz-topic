@@ -933,3 +933,119 @@ HEX codes are concise, easy to read, and widely supported in CSS. They are usefu
 * Reducing file size with 3-digit shorthand when possible
 
 ---
+
+# Question: What does HSL stand for in CSS?
+
+**Answer:**
+**HSL** stands for **Hue**, **Saturation**, and **Lightness**. It's a color model used in CSS to define colors more intuitively.
+
+```css
+hsl(hue, saturation, lightness)
+```
+
+---
+
+# Question: What is the range of values for each HSL component?
+
+**Answer:**
+
+* **Hue:** A degree on the color wheel (0–360)
+
+  * `0` = red, `120` = green, `240` = blue
+* **Saturation:** 0% (gray) to 100% (full color)
+* **Lightness:** 0% (black) to 100% (white)
+
+---
+
+# Question: Give examples of using HSL colors in CSS.
+
+**Answer:**
+
+```css
+hsl(0, 100%, 50%)      /* Red */
+hsl(240, 100%, 50%)    /* Blue */
+hsl(147, 50%, 47%)     /* Muted green */
+hsl(39, 100%, 50%)     /* Orange-like */
+```
+
+---
+
+# Question: How does saturation affect HSL colors?
+
+**Answer:**
+**Saturation** controls the intensity of the color.
+
+* `100%`: Full vivid color
+* `50%`: Color mixed with 50% gray
+* `0%`: Fully gray (no color)
+
+### Examples:
+
+```css
+hsl(0, 100%, 50%)   /* Full red */
+hsl(0, 60%, 50%)    /* Less intense red */
+hsl(0, 0%, 50%)     /* Pure gray */
+```
+
+---
+
+# Question: How does lightness affect HSL colors?
+
+**Answer:**
+**Lightness** controls how light or dark the color appears.
+
+* `0%`: Black
+* `50%`: Pure color
+* `100%`: White
+
+### Examples:
+
+```css
+hsl(0, 100%, 0%)     /* Black */
+hsl(0, 100%, 50%)    /* Red */
+hsl(0, 100%, 100%)   /* White */
+```
+
+---
+
+# Question: How do you create shades of gray using HSL?
+
+**Answer:**
+To create gray shades, set **hue** and **saturation** to `0`, and adjust **lightness**.
+
+### Examples:
+
+```css
+hsl(0, 0%, 0%)     /* Black */
+hsl(0, 0%, 50%)    /* Medium gray */
+hsl(0, 0%, 100%)   /* White */
+```
+
+---
+
+# Question: What is the difference between HSL and HSLA in CSS?
+
+**Answer:**
+**HSLA** adds an **alpha** channel to HSL to control transparency.
+
+### Syntax:
+
+```css
+hsla(hue, saturation, lightness, alpha)
+```
+
+* **Alpha** ranges from `0.0` (fully transparent) to `1.0` (fully opaque)
+
+---
+
+# Question: Give examples of HSLA color values.
+
+**Answer:**
+
+```css
+hsla(9, 100%, 64%, 0)     /* Fully transparent */
+hsla(9, 100%, 64%, 0.5)   /* 50% transparent */
+hsla(9, 100%, 64%, 1)     /* Fully opaque */
+```
+
+---
