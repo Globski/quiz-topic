@@ -1566,3 +1566,73 @@ You can change the size of a heading using the `style` attribute with CSS, for e
 `<h1>` is the largest and most important heading tag.
 
 ---
+
+
+# Question: What HTML tag is used to define a paragraph?
+
+**Answer:**
+The `<p>` tag is used to define a paragraph.
+
+---
+
+# Question: Does a paragraph start on a new line in HTML?
+
+**Answer:**
+Yes, a paragraph always starts on a new line, and browsers automatically add some white space (margin) before and after a paragraph.
+
+---
+
+# Question: Can extra spaces or extra lines inside the HTML code change how the paragraph is displayed?
+
+**Answer:**
+No, browsers automatically collapse multiple spaces and lines in the source code and display the paragraph as a normal block of text.
+
+---
+
+# Question: What HTML tag defines a horizontal rule or thematic break in a page?
+
+**Answer:**
+The `<hr>` tag defines a horizontal rule or thematic break and is an empty tag with no end tag.
+
+---
+
+# Question: How do you insert a line break inside a paragraph without starting a new paragraph?
+
+**Answer:**
+Use the `<br>` tag to insert a line break without starting a new paragraph. It is also an empty tag with no end tag.
+
+---
+
+# Question: What problem occurs when displaying a poem or preformatted text inside a `<p>` tag?
+
+**Answer:**
+The poem or preformatted text will display all on a single line because HTML collapses spaces and line breaks inside the `<p>` tag.
+
+---
+
+# Question: Which HTML tag preserves spaces and line breaks exactly as in the source code?
+
+**Answer:**
+The `<pre>` tag defines preformatted text and preserves both spaces and line breaks, displaying text in a fixed-width font.
+
+---
+
+# Question: True or False: HTML paragraphs always start on a new line.
+
+**Answer:**
+True.
+
+---
+
+# Question: What is special about the `<small>` and `<big>` tags in HTML?
+
+**Answer:**
+The `<small>` tag displays text in a smaller font size than the surrounding text, often used for fine print or disclaimers.
+The `<big>` tag displays text in a larger font size than the surrounding text.
+Both tags adjust the size of the text relative to the surrounding content without requiring CSS.
+
+*Note:* The `<big>` tag is deprecated in HTML5, so using CSS for sizing is recommended instead.
+
+
+---
+
