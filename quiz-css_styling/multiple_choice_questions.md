@@ -354,3 +354,125 @@ The `z-index` property.
 * Avoid animations that can trigger motion sickness (use `prefers-reduced-motion`)
 
 ---
+
+# Question: What is CSS and what is its purpose?
+
+**Answer:**
+CSS (Cascading Style Sheets) is the language used to describe the presentation of an HTML document. It controls how HTML elements are displayed, allowing developers to style web pages with colors, fonts, layouts, and more.
+
+---
+
+# Question: How does CSS improve web development?
+
+**Answer:**
+CSS separates content (HTML) from design, making it easier to maintain and update the look of a website. It enhances consistency across pages and allows for responsive and visually appealing layouts.
+
+---
+
+# Question: In the CSS example below, what does each rule do?
+
+```css
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+```
+
+**Answer:**
+
+* The `body` selector sets the background color of the entire page to light blue.
+* The `h1` selector changes the heading color to white and centers it.
+* The `p` selector sets the font family to Verdana and the font size to 20 pixels for all paragraphs.
+
+---
+
+# Question: What does CSS stand for, and what is its purpose?
+
+**Answer:**
+CSS stands for **Cascading Style Sheets**. It is used to describe how HTML elements should be displayed on screen, paper, or other media, allowing for the design and layout of web pages to be managed separately from their content.
+
+---
+
+# Question: How does CSS benefit web development?
+
+**Answer:**
+CSS saves time and effort by enabling developers to control the layout of multiple web pages from a single stylesheet. It allows for consistent styling across a site and makes maintenance easier, especially for large websites.
+
+---
+
+# Question: What is one major problem that CSS solved?
+
+**Answer:**
+Before CSS, HTML included tags like `<font>` for styling, which made maintaining large websites difficult. CSS solved this by separating content (HTML) from presentation (CSS), making code cleaner and easier to manage.
+
+---
+
+# Question: How can one HTML page be styled differently using CSS?
+
+**Answer:**
+By linking the HTML page to different external stylesheets, you can apply multiple visual themes. Changing the linked CSS file alters the page's appearance without modifying the HTML structure.
+
+---
+
+# Question: Why is it recommended to use external stylesheets in CSS?
+
+**Answer:**
+External stylesheets allow you to apply consistent styles across multiple web pages. You can update the design of an entire website by modifying a single `.css` file, enhancing efficiency and scalability.
+
+---
+
+# Question: What is the correct syntax structure of a CSS rule?
+
+**Answer:**
+A CSS rule consists of a **selector** and a **declaration block**. The declaration block is enclosed in curly braces `{}` and contains one or more declarations, each made up of a **property** and a **value**, separated by a colon (`:`) and ending with a semicolon (`;`).
+Example:
+
+```css
+p {
+  color: red;
+  text-align: center;
+}
+```
+
+In this example:
+
+* `p` is the **selector**
+* `color` and `text-align` are **properties**
+* `red` and `center` are the corresponding **values**
+
+---
+
+# Question: Which CSS selector is used to select an element with a specific id?
+
+**Options:**
+
+* A) `*`
+* B) `.`
+* C) `#`
+* D) `%`
+
+**Answer:**
+**C) `#`**
+
+---
+
+# Summary of Basic CSS Selectors:
+
+| Selector             | Example      | Description                                |
+| -------------------- | ------------ | ------------------------------------------ |
+| `#id`                | `#firstname` | Selects the element with id="firstname"    |
+| `.class`             | `.intro`     | Selects all elements with class="intro"    |
+| `*`                  | `*`          | Selects all elements                       |
+| `element`            | `p`          | Selects all `<p>` elements                 |
+| `element,element,..` | `div, p`     | Selects all `<div>` and all `<p>` elements |
+
+---
