@@ -872,3 +872,124 @@ The `<div>` element.
 To represent an abbreviation or acronym, optionally with an expansion.
 
 ---
+
+# Question: What is an HTML element?
+
+**Answer:**
+An HTML element consists of a start tag, content, and an end tag (e.g., `<p>Hello</p>`). It defines the structure and content of a webpage.
+
+---
+
+# Question: Why is browser support important in web development?
+
+**Answer:**
+Browser support ensures that web pages and features work consistently across different web browsers, providing a good user experience for all visitors.
+
+---
+
+# Question: What are HTML attributes?
+
+**Answer:**
+Attributes provide additional information about HTML elements, usually in name/value pairs inside the start tag (e.g., `<img src="image.jpg" alt="My Image">`).
+
+---
+
+# Question: What are global attributes in HTML?
+
+**Answer:**
+Global attributes are attributes that can be applied to any HTML element, such as `id`, `class`, `style`, and `title`.
+
+---
+
+# Question: What are event attributes in HTML?
+
+**Answer:**
+Event attributes specify event handlers for user interactions like clicks or key presses (e.g., `onclick`, `onmouseover`).
+
+---
+
+# Question: What are color names in HTML?
+
+**Answer:**
+Color names are predefined color keywords recognized by browsers, such as `red`, `blue`, `green`, which can be used instead of hex or RGB values.
+
+---
+
+# Question: What is the `<canvas>` element used for in HTML?
+
+**Answer:**
+The `<canvas>` element is used to draw graphics on the fly via scripting (usually JavaScript), enabling dynamic rendering of shapes, images, and animations.
+
+---
+
+# Question: What is the Audio/Video DOM in HTML?
+
+**Answer:**
+The Audio/Video DOM provides JavaScript interfaces to control audio and video elements for playback, volume, events, and other media features.
+
+---
+
+# Question: What is a character set in HTML?
+
+**Answer:**
+A character set defines the encoding used to display text, such as UTF-8, which supports a wide range of characters from multiple languages.
+
+---
+
+# Question: What is URL encoding?
+
+**Answer:**
+URL encoding converts characters into a format that can be transmitted over the Internet by replacing unsafe ASCII characters with `%` followed by hexadecimal values.
+
+---
+
+# Question: What does the `lang` attribute specify in HTML?
+
+**Answer:**
+The `lang` attribute specifies the language of the content, aiding browsers and assistive technologies in correctly processing the text.
+
+---
+
+# Question: What are country codes used for in web development?
+
+**Answer:**
+Country codes are used in language tags (e.g., `en-US`) to specify regional variations of a language for localization.
+
+---
+
+# Question: What is an HTTP message?
+
+**Answer:**
+An HTTP message is a request or response sent between a client (browser) and server that follows the HTTP protocol to communicate data.
+
+---
+
+# Question: What is a px to em converter used for?
+
+**Answer:**
+It converts pixel units (px) to relative font size units (em), which scale better across different screen sizes and devices.
+
+---
+
+# Question: What are common keyboard shortcuts for web development?
+
+**Answer:**
+Examples include `Ctrl + U` to view source, `F12` to open developer tools, and `Ctrl + Shift + I` to inspect elements.
+
+---
+
+# Question: What is a URL?
+
+**Answer:**
+A URL (Uniform Resource Locator) is the address used to access resources on the internet, such as web pages, images, or files. It specifies the location of the resource and the protocol used to retrieve it (e.g., `https://www.example.com`).
+
+---
+
+# Question: What is used for specifying an email to be sent in HTML?
+
+**Answer:**
+The `mailto:` protocol is used in the `href` attribute of an `<a>` tag to specify an email address that opens the user's default email client for sending an email. For example: `<a href="mailto:example@example.com">Send Email</a>`.
+
+
+---
+
