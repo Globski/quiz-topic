@@ -153,3 +153,44 @@ print("Hello, World!")
 
 ---
 
+# Question: What are some common uses of comments in Python?
+
+**Answer:**
+Comments can be used to explain code, make it more readable, and prevent execution of code when testing.
+
+---
+
+# Question: How do you write a single-line comment in Python?
+
+**Answer:**
+By starting the line with a `#`. Everything after the `#` on that line is ignored by Python.
+
+---
+
+# Question: Can comments be placed at the end of a line of code? If yes, how?
+
+**Answer:**
+Yes, by adding `#` after the code on the same line. Python will ignore everything after the `#`.
+
+---
+
+# Question: How can comments be used to prevent code from running?
+
+**Answer:**
+By adding a `#` before the code line, making it a comment so Python skips executing it.
+
+---
+
+# Question: Does Python have a specific syntax for multiline comments?
+
+**Answer:**
+No, Python does not have a dedicated multiline comment syntax. You can use multiple single-line comments (`#` on each line) or use a multiline string (triple quotes) that is not assigned to a variable as a workaround.
+
+---
+
+# Question: How does using triple quotes (`""" ... """`) create a multiline comment?
+
+**Answer:**
+Triple-quoted strings that are not assigned to any variable are ignored by Python at runtime, effectively acting as multiline comments.
+
+---
