@@ -6,3 +6,5 @@ Test your Docker knowledge through interactive questions about containerization,
 ## Features
 - Multiple-choice questions on Docker commands and concepts
 - Simple responsive UI
+
+---
