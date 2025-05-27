@@ -300,4 +300,149 @@ The official style guide for Python is PEP 8. You can check your code for style 
 
 ---
 
+# Question: What is `pycodestyle` and how is it used?
 
+**Answer:**
+`pycodestyle` is a tool that checks Python code against the style conventions defined in PEP 8. It was formerly known as `pep8`. It provides parseable output for editors, supports plugin architecture, and includes a test suite. You can install it using `pip install pycodestyle`. To use it, run commands like `pycodestyle yourfile.py` to see style violations, and options like `--show-source` and `--show-pep8` for more context on the errors.
+
+---
+
+# Question: What command installs `pycodestyle` using pip?
+
+**Answer:**
+`$ pip install pycodestyle`
+
+---
+
+# Question: How can you upgrade `pycodestyle` to the latest version?
+
+**Answer:**
+`$ pip install --upgrade pycodestyle`
+
+---
+
+# Question: What does the `--first` option do when running `pycodestyle`?
+
+**Answer:**
+It shows only the first occurrence of each error.
+
+---
+
+# Question: What error does code `E401` represent in `pycodestyle`?
+
+**Answer:**
+E401 indicates "multiple imports on one line."
+
+---
+
+# Question: What option makes `pycodestyle` show the source code and PEP 8 explanation for each error?
+
+**Answer:**
+Use `--show-source --show-pep8`
+
+---
+
+# Question: How can you see how many times each error occurred in a directory?
+
+**Answer:**
+By using the `--statistics -qq` options.
+
+---
+
+# Question: What does the `--format` option in `pycodestyle` control?
+
+**Answer:**
+It sets the output format of the error messages. Options include `default`, `pylint`, and custom formats.
+
+---
+
+# Question: What variables are available when using a custom format with `--format`?
+
+**Answer:**
+`path`, `row`, `col`, `code`, and `text`
+
+---
+
+# Question: Where does `pycodestyle` look for user-level configuration on a Unix-like system?
+
+**Answer:**
+In `~/.config/pycodestyle` or the directory set by `XDG_CONFIG_HOME/pycodestyle`
+
+---
+
+# Question: What are two files that can be used for project-level configuration?
+
+**Answer:**
+`setup.cfg` and `tox.ini`
+
+---
+
+# Question: What does error code `E302` indicate?
+
+**Answer:**
+E302 means "expected 2 blank lines, found 1."
+
+---
+
+# Question: Which error code is triggered by a line that is too long?
+
+**Answer:**
+E501
+
+---
+
+# Question: What does `pycodestyle --help` display?
+
+**Answer:**
+It displays usage information and available command-line options.
+
+---
+
+# Question: Which error indicates "whitespace before '(' "?
+
+**Answer:**
+E211
+
+---
+
+# Question: What does the `--diff` option do?
+
+**Answer:**
+It reports only lines changed according to the unified diff received on STDIN.
+
+---
+
+# Question: What does the `--max-line-length` option control?
+
+**Answer:**
+It sets the maximum allowed length of a line. Default is 79 characters.
+
+---
+
+# Question: What is the significance of the `--ignore=errors` option?
+
+**Answer:**
+It allows you to skip specific errors and warnings.
+
+---
+
+# Question: What does error code `E301` mean?
+
+**Answer:**
+E301 means "expected 1 blank line, found 0."
+
+---
+
+# Question: How can runtime errors be identified in `pycodestyle`?
+
+**Answer:**
+They are identified by error codes starting with `E9`, like `E901` for `SyntaxError`.
+
+---
+
+# Question: What special comment can be used to disable specific checks for a line?
+
+**Answer:**
+`# noqa`
+
+---
