@@ -194,3 +194,72 @@ No, Python does not have a dedicated multiline comment syntax. You can use multi
 Triple-quoted strings that are not assigned to any variable are ignored by Python at runtime, effectively acting as multiline comments.
 
 ---
+
+# Question: How are variables created in Python?
+
+**Answer:**
+Variables are created when you assign a value to a name. Python does not require declaring the variable type beforehand.
+
+---
+
+# Question: Can variables change their data type after being created? Provide an example.
+
+**Answer:**
+Yes, variables can change type. For example:
+
+```python
+x = 4       # x is an int  
+x = "Sally" # x is now a str
+```
+
+---
+
+# Question: How can you specify the data type of a variable explicitly in Python?
+
+**Answer:**
+By using casting functions such as `str()`, `int()`, and `float()`. For example:
+
+```python
+x = str(3)    # x will be '3'  
+y = int(3)    # y will be 3  
+z = float(3)  # z will be 3.0
+```
+
+---
+
+# Question: How can you check the data type of a variable?
+
+**Answer:**
+Using the `type()` function. For example:
+
+```python
+print(type(x))
+```
+
+---
+
+# Question: Are single quotes and double quotes interchangeable for string variables in Python?
+
+**Answer:**
+Yes, strings can be declared with either single or double quotes:
+
+```python
+x = "John"  
+x = 'John'
+```
+
+---
+
+# Question: Are variable names case-sensitive in Python? Explain with an example.
+
+**Answer:**
+Yes, variable names are case-sensitive. For example:
+
+```python
+a = 4  
+A = "Sally"
+```
+
+Here, `a` and `A` are two different variables.
+
+---
