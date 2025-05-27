@@ -263,3 +263,235 @@ A = "Sally"
 Here, `a` and `A` are two different variables.
 
 ---
+
+# Question: What are the basic rules for naming variables in Python?
+
+**Answer:**
+
+* A variable name must start with a letter or an underscore (\_).
+* It cannot start with a number.
+* It can only contain letters, numbers, and underscores (A-Z, a-z, 0-9, \_).
+* Variable names are case-sensitive.
+* Variable names cannot be Python keywords.
+
+---
+
+# Question: Which of the following are legal variable names in Python?
+
+`myvar`, `my_var`, `_my_var`, `myVar`, `MYVAR`, `myvar2`, `2myvar`, `my-var`, `my var`
+
+**Answer:**
+Legal variable names are:
+`myvar`, `my_var`, `_my_var`, `myVar`, `MYVAR`, `myvar2`
+Illegal variable names are:
+`2myvar` (starts with number), `my-var` (contains hyphen), `my var` (contains space)
+
+---
+
+# Question: Are Python variable names case-sensitive? Give an example.
+
+**Answer:**
+Yes, they are case-sensitive. For example:
+
+```python
+age = 25  
+Age = 30  
+AGE = 35
+```
+
+These are three different variables.
+
+---
+
+# Question: What are three common naming conventions for multi-word variable names in Python?
+
+**Answer:**
+
+* Camel Case: `myVariableName` (first word lowercase, subsequent words capitalized)
+* Pascal Case: `MyVariableName` (each word capitalized)
+* Snake Case: `my_variable_name` (words separated by underscores)
+
+---
+
+# Question: How do you assign multiple values to multiple variables in one line in Python?
+
+**Answer:**
+You can assign values like this:
+
+```python
+x, y, z = "Orange", "Banana", "Cherry"
+```
+
+---
+
+# Question: What must you ensure when assigning multiple values to multiple variables?
+
+**Answer:**
+The number of variables must match the number of values; otherwise, Python will raise an error.
+
+---
+
+# Question: How can you assign the same value to multiple variables in one line?
+
+**Answer:**
+By chaining the assignment:
+
+```python
+x = y = z = "Orange"
+```
+
+---
+
+# Question: What is unpacking in Python and how does it work with collections?
+
+**Answer:**
+Unpacking is extracting values from a collection (like a list or tuple) into variables. For example:
+
+```python
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+```
+
+---
+
+# Question: How do you print the value of a variable in Python?
+
+**Answer:**
+By passing the variable to the `print()` function. Example:
+
+```python
+x = "Python is awesome"
+print(x)
+```
+
+---
+
+# Question: How can you print multiple variables separated by spaces?
+
+**Answer:**
+By passing multiple variables separated by commas inside `print()`. Example:
+
+```python
+print(x, y, z)
+```
+
+---
+
+# Question: How can you concatenate multiple string variables in a print statement?
+
+**Answer:**
+Using the `+` operator to join strings. Example:
+
+```python
+print(x + y + z)
+```
+
+Make sure to include spaces inside the strings if you want spaces in the output.
+
+---
+
+# Question: What happens when you try to add a string and a number using the `+` operator in `print()`?
+
+**Answer:**
+Python raises a TypeError because you cannot directly add (concatenate) a string and an integer.
+
+---
+
+# Question: What is the preferred way to print variables of different data types together?
+
+**Answer:**
+Separate them with commas in the `print()` function, which supports different data types. Example:
+
+```python
+print(x, y)
+```
+
+---
+
+# Question: What is a global variable in Python?
+
+**Answer:**
+A global variable is a variable created outside of any function, accessible both inside and outside of functions.
+
+---
+
+# Question: What happens if you create a variable with the same name inside a function?
+
+**Answer:**
+The variable inside the function is local to that function and does not affect the global variable with the same name.
+
+---
+
+# Question: How can you create or modify a global variable inside a function?
+
+**Answer:**
+By using the `global` keyword before the variable name inside the function.
+
+---
+
+# Question: Provide an example of using the `global` keyword to create a global variable inside a function.
+
+**Answer:**
+
+```python
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+print("Python is " + x)  # Output: Python is fantastic
+```
+
+---
+
+# Question: How do you change the value of an existing global variable inside a function?
+
+**Answer:**
+Use the `global` keyword inside the function to refer to the global variable, then assign a new value to it.
+
+---
+
+# Question: What is a data type in programming?
+
+**Answer:**
+A data type specifies the kind of data a variable can hold and determines what operations can be performed on that data.
+
+---
+
+# Question: Name some built-in data types in Python.
+
+**Answer:**
+Python built-in data types include:
+
+* Text Type: `str`
+* Numeric Types: `int`, `float`, `complex`
+* Sequence Types: `list`, `tuple`, `range`
+* Mapping Type: `dict`
+* Set Types: `set`, `frozenset`
+* Boolean Type: `bool`
+* Binary Types: `bytes`, `bytearray`, `memoryview`
+* None Type: `NoneType`
+
+---
+
+# Question: How can you find out the data type of a variable in Python?
+
+**Answer:**
+Use the `type()` function, e.g., `type(x)`
+
+---
+
+# Question: How is the data type of a variable determined in Python?
+
+**Answer:**
+It is set automatically when you assign a value to the variable.
+
+---
+
+# Question: How can you explicitly specify the data type of a variable in Python?
+
+**Answer:**
+By using constructor functions like `str()`, `int()`, `float()`, `list()`, `tuple()`, `dict()`, etc.
+
+---
+
