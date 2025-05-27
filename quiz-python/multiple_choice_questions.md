@@ -94,3 +94,62 @@ Type either `python` or `py` and press Enter.
 
 ---
 
+# Question: How does Python indicate a block of code?
+
+**Answer:**
+Python uses indentation (spaces at the beginning of a line) to indicate a block of code.
+
+---
+
+# Question: Why is indentation important in Python?
+
+**Answer:**
+Unlike many other languages where indentation is just for readability, in Python, incorrect indentation causes syntax errors because it defines the structure of the code.
+
+---
+
+# Question: What will happen if you write this code?
+
+```python
+if 5 > 2:
+print("Five is greater than two!")
+```
+
+**Answer:**
+Python will give a syntax error because the print statement is not indented under the if statement.
+
+---
+
+# Question: Is there a fixed number of spaces required for indentation in Python?
+
+**Answer:**
+No, the number of spaces is flexible, but it must be consistent within the same block. Typically, 4 spaces are used.
+
+---
+
+# Question: How do you create variables in Python?
+
+**Answer:**
+Variables are created by assigning a value to a name, for example:
+
+```python
+x = 5
+y = "Hello, World!"
+```
+
+No explicit declaration command is needed.
+
+---
+
+# Question: How do you write a comment in Python?
+
+**Answer:**
+By starting the line with a `#`, e.g.:
+
+```python
+# This is a comment.
+print("Hello, World!")
+```
+
+---
+
