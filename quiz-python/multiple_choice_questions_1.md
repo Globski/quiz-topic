@@ -446,3 +446,129 @@ They are identified by error codes starting with `E9`, like `E901` for `SyntaxEr
 `# noqa`
 
 ---
+
+# Question: What does this command line print?
+
+```python
+a = "Python is cool"
+print(a[7:-5])
+```
+
+**Answer:**
+`is`
+Explanation: Index 7 is `'i'`, and `-5` is the fifth character from the end (the space before `'cool'`). The slice `a[7:-5]` returns characters from index 7 up to, but not including, index -5.
+
+---
+
+# Question: What does this command line print?
+
+```python
+a = "Python is cool"
+print(a[4])
+```
+
+**Answer:**
+`o`
+Explanation: Indexing starts at 0. Index 4 corresponds to `'o'` in `"Python"`.
+
+---
+
+# Question: What does this command line print?
+
+```python
+print(f"{98} Battery street, {'San Francisco'}")
+```
+
+**Answer:**
+`98 Battery street, San Francisco`
+Explanation: f-strings evaluate expressions inside `{}` and insert them into the string.
+
+---
+
+# Question: What does this command line print?
+
+```python
+a = "Python is cool"
+print(a[-2])
+```
+
+**Answer:**
+`o`
+Explanation: Negative indexing counts from the end. `-2` is the second last character, which is `'o'`.
+
+---
+
+# Question: What does this command line print?
+
+```python
+print("Holberton school")
+```
+
+**Answer:**
+`Holberton school`
+
+---
+
+# Question: What does this command line print?
+
+```python
+a = "Python is cool"
+print(a[7:])
+```
+
+**Answer:**
+`is cool`
+Explanation: Slice from index 7 to the end.
+
+---
+
+# Question: What does this command line print?
+
+```python
+a = "Python is cool"
+print(a[0:6])
+```
+
+**Answer:**
+`Python`
+Explanation: Slice from index 0 to index 6 (not including index 6).
+
+---
+
+# Question: What does this command line print?
+
+```python
+a = "Python is cool"
+print(a[:6])
+```
+
+**Answer:**
+`Python`
+Explanation: This is equivalent to `a[0:6]`.
+
+---
+
+# Question: What does this command line print?
+
+```python
+print(f"{98} Battery street")
+```
+
+**Answer:**
+`98 Battery street`
+Explanation: f-string inserts the value `98` into the string.
+
+---
+
+# Question: Write a Shell script that runs a Python script. The Python file name will be saved in the environment variable `$PYFILE`
+
+**Answer:**
+
+```bash
+#!/bin/bash
+python3 "$PYFILE"
+```
+
+Explanation: This script uses `python3` to execute the Python file whose name is stored in the environment variable `PYFILE`.
+
+---
