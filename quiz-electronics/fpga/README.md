@@ -1,9 +1,9 @@
-# Quiz: Programming & Firmware Development
+# Quiz: FPGA & Hardware Description Languages
 
 ## Description
-Dive deeper into firmware writing, low-level programming, register manipulation, and debugging embedded devices. This module helps sharpen skills needed for practical firmware development.
+Learn FPGA architecture and get quizzed on Verilog or VHDL basics, combinational and sequential logic design, and hardware simulation. Aimed at those interested in programmable logic devices.
 
 ## Features
-- Quiz questions on register-level programming
-- Firmware flashing and debugging concepts
-- Communication protocol implementation
+- Quizzes on FPGA fundamentals and HDLs
+- Design questions on combinational and sequential circuits
+- Simulation and synthesis basics
