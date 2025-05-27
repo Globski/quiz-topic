@@ -495,3 +495,88 @@ By using constructor functions like `str()`, `int()`, `float()`, `list()`, `tupl
 
 ---
 
+# Question: What are some key features of Python that make it powerful and easy to use?
+
+**Answer:**
+Python has efficient high-level data structures, simple but effective object-oriented programming, elegant syntax, dynamic typing, and is an interpreted language.
+
+---
+
+# Question: Where can you find the official Python interpreter and standard library?
+
+**Answer:**
+From the official Python website: [https://www.python.org/](https://www.python.org/)
+
+---
+
+# Question: How can Python be extended beyond its standard features?
+
+**Answer:**
+Python can be extended with new functions and data types implemented in C, C++, or other languages callable from C.
+
+---
+
+# Question: How can you start the Python interpreter on a Unix machine if it is installed at `/usr/local/bin/python3.13`?
+
+**Answer:**
+By typing the command `python3.13` in the shell, assuming `/usr/local/bin` is in your search path.
+
+---
+
+# Question: How do you exit the Python interpreter from the command line?
+
+**Answer:**
+Type the end-of-file character (Control-D on Unix, Control-Z on Windows), or type the command `quit()`.
+
+---
+
+# Question: What command can you use to execute Python code directly from the command line without entering interactive mode?
+
+**Answer:**
+Use `python -c "command"`, where `"command"` is the Python code to execute.
+
+---
+
+# Question: How can you run a Python module as a script from the command line?
+
+**Answer:**
+By using `python -m module [arg] ...`, which executes the source file for the specified module.
+
+---
+
+# Question: What is the difference between the primary prompt and the secondary prompt in interactive mode?
+
+**Answer:**
+The primary prompt (`>>>`) appears when waiting for a new command, while the secondary prompt (`...`) appears when entering continuation lines of multi-line constructs.
+
+---
+
+# Question: What variable contains the list of command-line arguments passed to a Python script, and how do you access it?
+
+**Answer:**
+The list is stored in `sys.argv`, which you can access by importing the `sys` module with `import sys`.
+
+---
+
+# Question: How does Python treat source code files by default in terms of encoding?
+
+**Answer:**
+Python treats source code files as UTF-8 encoded by default.
+
+---
+
+# Question: How do you specify a different encoding (e.g., Windows-1252) for a Python source file?
+
+**Answer:**
+Add a special comment as the first line: `# -*- coding: cp1252 -*-`
+
+If there is a shebang line, the encoding declaration should be the second line.
+
+---
+
+# Question: What is the purpose of the `-i` option when running a Python script?
+
+**Answer:**
+It runs the script and then enters interactive mode afterwards.
+
+---
