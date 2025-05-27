@@ -580,3 +580,308 @@ If there is a shebang line, the encoding declaration should be the second line.
 It runs the script and then enters interactive mode afterwards.
 
 ---
+
+# Question:
+
+Why might a professional developer prefer Python over C/C++ or Java for writing test suites or quick scripts?
+
+**Answer:**
+Because Python is simpler to use and has a faster write/test cycle since it is interpreted and doesn’t require compiling and linking, which saves development time.
+
+---
+
+# Question:
+
+List three types of tasks mentioned that Python can help automate.
+
+**Answer:**
+
+* Search-and-replace over many text files
+* Renaming and rearranging photo files
+* Writing a small custom database or a specialized GUI application or a simple game
+
+---
+
+# Question:
+
+What are some limitations of shell scripts or batch files compared to Python?
+
+**Answer:**
+Shell scripts are best at moving files and changing text data but are not well-suited for GUI applications or games.
+
+---
+
+# Question:
+
+What advantages does Python offer over languages like Awk or Perl?
+
+**Answer:**
+Python has more general and flexible data types, supports a larger problem domain, and many tasks are at least as easy to perform as in Awk or Perl.
+
+---
+
+# Question:
+
+How does Python help in writing reusable code?
+
+**Answer:**
+Python allows you to split your program into modules that can be reused in other Python programs.
+
+---
+
+# Question:
+
+Name two examples of functionality provided by Python’s standard modules.
+
+**Answer:**
+
+* File I/O (input/output)
+* Interfaces to graphical user interface toolkits like Tk
+
+---
+
+### Question:
+
+Why is Python considered a “high-level” language, and what is one consequence of this?
+
+**Answer:**
+Because it provides built-in flexible data types (like arrays and dictionaries) and abstracts away low-level details; as a consequence, Python programs tend to be shorter and more readable than equivalent programs in lower-level languages.
+
+---
+
+# Question:
+
+What unique feature of Python’s syntax helps make programs more readable compared to languages like C or Java?
+
+**Answer:**
+Statement grouping by indentation instead of using beginning and ending brackets.
+
+---
+
+# Question:
+
+What is the origin of the name “Python” for the programming language?
+
+**Answer:**
+It is named after the BBC comedy show “Monty Python’s Flying Circus,” not the reptile.
+
+---
+
+# Question:
+
+How can Python be extended for performance or integration with other languages?
+
+**Answer:**
+By adding new built-in functions or modules written in C, or by embedding the Python interpreter into C applications to serve as an extension or command language.
+
+---
+
+# Question:. Why might someone want to use Python instead of Unix shell scripts or Windows batch files for automation tasks?
+
+**Answer:** Because shell scripts and batch files are good for simple file moving or text processing, but are not well-suited for GUI applications or games, where Python offers more versatility.
+
+---
+
+
+# Question: What are some examples of tasks Python can help automate?
+
+**Answer:** Search-and-replace in many files, renaming and rearranging photos, writing custom databases, creating specialized GUI applications, or simple games.
+
+---
+
+# Question: How does Python help speed up the development cycle compared to compiled languages like C++ or Java?
+
+**Answer:** Python is interpreted, so no compilation and linking are needed, which saves time during development.
+
+---
+
+# Question: What are two high-level data types built into Python that help express complex operations simply?
+
+**Answer:** Flexible arrays (lists) and dictionaries.
+
+---
+
+# Question: Why do Python programs tend to be shorter than equivalent programs in C, C++, or Java?
+
+**Answer:** Because Python uses high-level data types, indentation for statement grouping, and doesn’t require variable declarations.
+
+---
+
+# Question: How can Python be used in conjunction with C programming?
+
+**Answer:** Python can be extended with C functions for speed or integrated as an extension language within C applications.
+
+---
+
+# Question: What is a unique cultural aspect of Python’s name and documentation style?
+
+**Answer:** It is named after the BBC show “Monty Python’s Flying Circus,” and Monty Python references are encouraged in documentation.
+
+---
+
+# Question: What are the benefits of Python’s interactive interpreter?
+
+**Answer:** It allows experimenting with code, writing throw-away programs, and testing functions quickly without compiling.
+
+---
+
+# Question: How does Python support modular programming?
+
+**Answer:** By allowing programs to be split into reusable modules.
+
+---
+
+# Question: How can you distinguish between input and output in Python interactive examples?
+
+**Answer:**
+Input lines begin with prompts `>>>` or `...`, while lines without prompts represent output from the interpreter.
+
+---
+
+# Question: What symbol starts a comment in Python, and where can it appear?
+
+**Answer:**
+Comments start with the hash character `#` and extend to the end of the line. They can appear at the start of a line or after code/whitespace but not inside string literals.
+
+---
+
+# Question: What arithmetic operators are available in Python for basic calculations?
+
+**Answer:**
+`+` (addition), `-` (subtraction), `*` (multiplication), `/` (division), `//` (floor division), `%` (modulus), and `**` (exponentiation).
+
+---
+
+# Question: What is the difference between `/` and `//` operators in Python?
+
+**Answer:**
+`/` performs classic division and returns a floating-point number; `//` performs floor division and returns an integer result by discarding the fractional part.
+
+---
+
+# Question: What happens if you try to use a variable before assigning a value in Python?
+
+**Answer:**
+Python raises a `NameError` indicating the variable is not defined.
+
+---
+
+# Question: How does Python handle operations involving integers and floating-point numbers?
+
+**Answer:**
+If operands have mixed types (int and float), Python converts the integer to float before the operation.
+
+---
+
+# Question: How does Python represent text data and what are the ways to define strings?
+
+**Answer:**
+Text data is represented by the `str` type (strings). Strings can be enclosed in single quotes `'...'` or double quotes `"..."` with the same effect.
+
+---
+
+# Question: How do you include a quote character inside a string?
+
+**Answer:**
+Either escape the quote using a backslash `\'` or use the other type of quote to enclose the string.
+
+---
+
+# Question: What does the print() function do differently compared to just typing a string in the Python shell?
+
+**Answer:**
+`print()` outputs the string without quotes and interprets special characters like `\n` as newlines, providing more readable output.
+
+---
+
+# Question: How do you create a raw string, and what is its purpose?
+
+**Answer:**
+By prefixing the string literal with `r` (e.g., `r'C:\path'`). Raw strings prevent backslash escapes from being processed.
+
+---
+
+# Question: What are string slicing and indexing? How are negative indices used?
+
+**Answer:**
+Indexing accesses a single character by position (starting at 0). Negative indices count from the end (-1 is last character). Slicing extracts substrings by specifying start and end indices.
+
+---
+
+# Question: Are Python strings mutable? What happens if you try to assign to an indexed position?
+
+**Answer:**
+Strings are immutable; attempting to assign to an indexed position results in a `TypeError`.
+
+---
+
+# Question: How can you concatenate and repeat strings in Python?
+
+**Answer:**
+Use the `+` operator to concatenate and the `*` operator to repeat strings.
+
+---
+
+# Question: What is a list in Python, and how is it different from a string?
+
+**Answer:**
+A list is a mutable sequence of items (possibly of different types) enclosed in square brackets `[ ]`. Unlike strings, lists can be modified after creation.
+
+---
+
+# Question: How do you add new elements to a list?
+
+**Answer:**
+Using the `append()` method, e.g., `list.append(element)` adds an item at the end.
+
+---
+
+# Question: What happens when you assign one list variable to another?
+
+**Answer:**
+Both variables refer to the same list object; changes via one variable affect the other.
+
+---
+
+# Question: How do you create a shallow copy of a list?
+
+**Answer:**
+By slicing the entire list: `copy = original[:]`.
+
+---
+
+# Question: How does Python treat slices that are out of the valid index range?
+
+**Answer:**
+Out-of-range slice indices are handled gracefully and do not raise errors; the slice simply includes all valid elements within the range.
+
+---
+
+# Question: What is the syntax for a while loop in Python, and what must follow a compound statement entered interactively?
+
+**Answer:**
+A while loop starts with `while <condition>:` followed by an indented block. When entered interactively, a blank line must follow the block to indicate its end.
+
+---
+
+# Question: What does the statement `a, b = b, a + b` do in Python?
+
+**Answer:**
+It simultaneously assigns `a` to `b`’s value and `b` to `a + b` — multiple assignment with right-hand side expressions evaluated before assignment.
+
+---
+
+# Question: How does Python treat non-zero and zero values in conditions?
+
+**Answer:**
+Non-zero values are treated as `True`, zero as `False`. Similarly, non-empty sequences are `True` and empty sequences are `False`.
+
+---
+
+# Question: What is the use of the keyword argument `end` in the print() function?
+
+**Answer:**
+It specifies what to print after the output; for example, `end=','` prevents a newline and appends a comma instead.
+
+---
+
