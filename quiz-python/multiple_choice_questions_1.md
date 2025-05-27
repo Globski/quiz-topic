@@ -230,3 +230,74 @@ The `flynt` tool can automatically convert `%` and `.format()`-based strings int
 
 ---
 
+# Question: Why is Python considered an awesome programming language?
+
+**Answer:**
+Python is considered awesome because it's simple, readable, and versatile. It supports multiple programming paradigms, has a large standard library, and is widely used in fields like web development, data science, automation, and AI.
+
+---
+
+# Question: Who created the Python programming language?
+
+**Answer:**
+Python was created by Guido van Rossum in the late 1980s and released in 1991.
+
+---
+
+# Question: Who is Guido van Rossum?
+
+**Answer:**
+Guido van Rossum is a Dutch programmer best known as the creator of the Python programming language. He served as Python’s "Benevolent Dictator For Life" (BDFL) until stepping down in 2018.
+
+---
+
+# Question: Where does the name ‘Python’ come from?
+
+**Answer:**
+The name "Python" was inspired by the British comedy group Monty Python. Guido van Rossum was a fan of their work and wanted a name that was short, unique, and slightly mysterious.
+
+---
+
+# Question: What is the Zen of Python?
+
+**Answer:**
+The Zen of Python is a collection of guiding principles for writing computer programs in Python. You can view it by running `import this` in the Python interpreter. It emphasizes simplicity, readability, and explicitness.
+
+---
+
+# Question: How do you use the Python interpreter?
+
+**Answer:**
+You can start the Python interpreter by typing `python` or `python3` in the terminal. It allows you to write and execute Python code interactively.
+
+---
+
+# Question: How do you print text and variables in Python?
+
+**Answer:**
+You use the `print()` function. For example: `print("Hello")` prints text, and `print(f"Age: {age}")` prints a variable using an f-string.
+
+---
+
+# Question: How do you use strings in Python?
+
+**Answer:**
+Strings are sequences of characters enclosed in single, double, or triple quotes. You can concatenate them with `+`, repeat with `*`, and manipulate them with methods like `.upper()`, `.lower()`, and `.split()`.
+
+---
+
+# Question: What are indexing and slicing in Python?
+
+**Answer:**
+Indexing accesses a specific character in a string using its position (e.g., `s[0]`). Slicing retrieves a substring using a range of positions (e.g., `s[1:4]`).
+
+---
+
+# Question: What is the official Python coding style and how do you check your code?
+
+**Answer:**
+The official style guide for Python is PEP 8. You can check your code for style compliance using the `pycodestyle` tool (formerly known as `pep8`).
+
+---
+
+
