@@ -123,3 +123,110 @@ F-strings are generally faster than both the `%` operator and the `.format()` me
 Yes, you can use variables inside format specifiers like `{value:{sep}}`, where `sep` defines the format dynamically.
 
 ---
+
+
+# Question: Why is it important to use different types of quotation marks in f-strings?
+
+**Answer:**
+Using different quotation marks (single, double, triple-single, and triple-double) allows flexibility in nesting and inserting strings within f-strings. This helps when embedding quotes or dictionary keys, and supports nested f-strings.
+
+---
+
+# Question: What was the quotation mark limitation in f-strings before Python 3.12?
+
+**Answer:**
+Before Python 3.12, you couldn’t reuse the same type of quotation mark in both the f-string and its embedded expressions, leading to syntax errors due to unmatched brackets.
+
+---
+
+# Question: What limited the nesting depth of f-strings before Python 3.12?
+
+**Answer:**
+The number of available string delimiters limited f-string nesting depth. You could only nest f-strings as deep as the number of different quote types you could use to differentiate levels.
+
+---
+
+# Question: How did Python 3.12 improve f-string nesting?
+
+**Answer:**
+Python 3.12 removed the limitation on reusing quotes, allowing unlimited nesting of f-strings regardless of the type or number of quote delimiters.
+
+---
+
+# Question: What was the limitation of using backslashes in f-strings before Python 3.12?
+
+**Answer:**
+Backslashes weren’t allowed inside f-string expressions before Python 3.12, causing syntax errors when using escape sequences like `\n` in curly braces.
+
+---
+
+# Question: How did Python 3.12 change the use of backslashes in f-strings?
+
+**Answer:**
+Python 3.12 allowed backslashes in f-string expressions, enabling the use of escape sequences like newline characters directly within the expressions.
+
+---
+
+# Question: Could you use inline comments in f-string expressions before Python 3.12?
+
+**Answer:**
+No, using the `#` symbol inside f-string expressions before Python 3.12 would result in a syntax error. Python 3.12 now allows inline comments within expressions.
+
+---
+
+# Question: How did Python 3.12 improve error messages for f-strings?
+
+**Answer:**
+Python 3.12, using the PEG parser, provides clearer and more specific error messages for f-string issues, including exact error location and helpful suggestions.
+
+---
+
+# Question: Why might using `.format()` be preferred over f-strings for dictionary interpolation?
+
+**Answer:**
+`.format()` can unpack a dictionary using `**` and reference keys by name, resulting in cleaner and more readable code than using dictionary lookups in f-strings.
+
+---
+
+# Question: Why should you avoid f-strings in logging statements?
+
+**Answer:**
+F-strings are eagerly evaluated even if the logging level is too low to show the message. Using `%` with logging enables lazy evaluation, improving performance.
+
+---
+
+# Question: Why should f-strings be avoided in SQL query construction?
+
+**Answer:**
+Using f-strings or other interpolation methods to build SQL queries directly invites SQL injection. The recommended approach is to use parameterized queries via `%s` placeholders and pass arguments separately.
+
+---
+
+# Question: What’s the safe way to pass parameters in SQL queries in Python?
+
+**Answer:**
+Use `%s` placeholders in the query string and pass the parameters as a separate tuple to the `.execute()` method, allowing the database driver to safely handle them.
+
+---
+
+# Question: Which string interpolation method is recommended for internationalization?
+
+**Answer:**
+The `.format()` method is recommended because it works well with string templates and allows dynamic insertion of localized content based on user locale.
+
+---
+
+# Question: What tool can help convert old Python strings to f-strings?
+
+**Answer:**
+The `flynt` tool can automatically convert `%` and `.format()`-based strings into f-strings in a Python codebase, aiding modernization.
+
+---
+
+# Question: How does the `flynt` tool help in modernizing code?
+
+**Answer:**
+`flynt` scans Python files and rewrites older string formatting styles (`%` and `.format()`) as f-strings, improving readability and performance with minimal effort.
+
+---
+
