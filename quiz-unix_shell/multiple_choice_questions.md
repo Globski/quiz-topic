@@ -579,3 +579,114 @@ The `groups` command prints the group names that a user belongs to.
 
 ---
 
+# Question: What is the purpose of the `gzip` command?
+
+**Answer:**
+The `gzip` command compresses or decompresses named files using the gzip compression algorithm.
+
+---
+
+# Question: What does the `hash` command do in the shell?
+
+**Answer:**
+The `hash` command remembers the full pathname of a command name argument to speed up command execution.
+
+---
+
+# Question: What is the function of the `head` command?
+
+**Answer:**
+The `head` command outputs the first part (default 10 lines) of files.
+
+---
+
+# Question: What does the `help` command display?
+
+**Answer:**
+The `help` command displays help information for shell built-in commands.
+
+---
+
+# Question: What is the purpose of the `history` command?
+
+**Answer:**
+The `history` command displays the command history of the shell session.
+
+---
+
+# Question: What does the `hostname` command do?
+
+**Answer:**
+The `hostname` command prints or sets the system’s network hostname.
+
+---
+
+# Question: What is the use of the `iconv` command?
+
+**Answer:**
+The `iconv` command converts the character set encoding of a file.
+
+---
+
+# Question: What information does the `id` command provide?
+
+**Answer:**
+The `id` command prints the current user and group IDs.
+
+---
+
+# Question: What is the function of the `if` command in shell scripting?
+
+**Answer:**
+The `if` command conditionally performs commands based on test results.
+
+---
+
+# Question: What does the `ifconfig` command do?
+
+**Answer:**
+The `ifconfig` command configures a network interface, including setting IP addresses and flags.
+
+---
+
+# Question: What is the purpose of the `ifdown` command?
+
+**Answer:**
+The `ifdown` command stops or disables a network interface.
+
+---
+
+# Question: What does the `ifup` command do?
+
+**Answer:**
+The `ifup` command starts or enables a network interface.
+
+---
+
+# Question: What is the use of the `import` command?
+
+**Answer:**
+The `import` command captures an X server screen and saves the image to a file.
+
+---
+
+# Question: What does the `install` command do?
+
+**Answer:**
+The `install` command copies files and sets attributes such as permissions.
+
+---
+
+# Question: What is the function of the `jobs` command?
+
+**Answer:**
+The `jobs` command lists active jobs running in the current shell session.
+
+---
+
+# Question: What does the `join` command do?
+
+**Answer:**
+The `join` command joins lines of two files based on a common field.
+
+---
