@@ -61,3 +61,23 @@ A screen reader is software that reads out the contents of a screen aloud, commo
 
 ---
 
+# Question: What is HTML and what role does it play on the Web?
+
+**Answer:**
+HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content, allowing browsers to display text, images, and other elements correctly.
+
+# Question: What does the term "Hypertext" refer to in HTML?
+
+**Answer:**
+"Hypertext" refers to links that connect web pages to one another, either within a single website or between different websites, enabling navigation across the Web.
+
+# Question: What technologies are typically used alongside HTML, and what are their purposes?
+
+**Answer:**
+CSS is used to describe a web page's appearance or presentation, while JavaScript is used to add functionality or behavior to a web page.
+
+# Question: How does HTML markup annotate content for display?
+
+**Answer:**
+HTML markup uses special elements (tags) to annotate text, images, and other content so that browsers can display them properly.
+
