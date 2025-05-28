@@ -221,3 +221,108 @@ The `csplit` command splits a file into context-determined pieces based on patte
 The `cut` command divides a file into several parts by extracting sections of lines, such as columns or fields.
 
 ---
+
+# Question: What does the `date` command do?
+
+**Answer:**
+The `date` command displays or changes the system date and time.
+
+---
+
+# Question: What is the function of the `dc` command?
+
+**Answer:**
+The `dc` command is a desk calculator that supports arbitrary precision arithmetic.
+
+---
+
+# Question: What does the `dd` command do?
+
+**Answer:**
+The `dd` command converts and copies files, and can write disk headers and boot records.
+
+---
+
+# Question: What is the purpose of the `ddrescue` tool?
+
+**Answer:**
+`ddrescue` is a data recovery tool used to recover data from damaged or corrupted storage devices.
+
+---
+
+# Question: What does the `declare` command do in shell scripting?
+
+**Answer:**
+The `declare` command declares variables and assigns attributes to them, such as readonly or integer.
+
+---
+
+# Question: What information does the `df` command display?
+
+**Answer:**
+The `df` command displays free disk space available on mounted filesystems.
+
+---
+
+# Question: What is the use of the `diff` command?
+
+**Answer:**
+The `diff` command displays the differences between two files line by line.
+
+---
+
+# Question: What does the `diff3` command do?
+
+**Answer:**
+The `diff3` command shows differences among three files.
+
+---
+
+# Question: What is the function of the `dig` command?
+
+**Answer:**
+The `dig` command performs DNS lookups to query domain name system servers.
+
+---
+
+# Question: What does the `dir` command do?
+
+**Answer:**
+The `dir` command briefly lists the contents of a directory.
+
+---
+
+# Question: What is the purpose of the `dircolors` command?
+
+**Answer:**
+The `dircolors` command sets up color schemes for the `ls` command output.
+
+---
+
+# Question: What does the `dirname` command do?
+
+**Answer:**
+The `dirname` command extracts the directory path from a full pathname, removing the filename.
+
+---
+
+# Question: What information does the `dirs` command provide?
+
+**Answer:**
+The `dirs` command displays the list of remembered directories in the shell’s directory stack.
+
+---
+
+# Question: What is the function of the `dmesg` command?
+
+**Answer:**
+The `dmesg` command prints kernel and driver messages, often useful for debugging hardware issues.
+
+---
+
+# Question: What does the `du` command estimate?
+
+**Answer:**
+The `du` command estimates file or directory space usage on disk.
+
+---
