@@ -326,3 +326,94 @@ The `dmesg` command prints kernel and driver messages, often useful for debuggin
 The `du` command estimates file or directory space usage on disk.
 
 ---
+
+# Question: What does the `echo` command do?
+
+**Answer:**
+The `echo` command displays a message or text on the screen.
+
+---
+
+# Question: What is the function of the `egrep` command?
+
+**Answer:**
+The `egrep` command searches files for lines that match an extended regular expression.
+
+---
+
+# Question: What does the `eject` command do?
+
+**Answer:**
+The `eject` command ejects removable media such as CDs or DVDs.
+
+---
+
+# Question: What is the purpose of the `enable` command in the shell?
+
+**Answer:**
+The `enable` command is used to enable or disable shell builtin commands.
+
+---
+
+# Question: What does the `env` command display or modify?
+
+**Answer:**
+The `env` command displays the current environment variables or runs a command with modified environment variables.
+
+---
+
+# Question: What is the use of the `ethtool` command?
+
+**Answer:**
+The `ethtool` command is used to query and control Ethernet device settings.
+
+---
+
+# Question: What does the `eval` command do?
+
+**Answer:**
+The `eval` command evaluates and executes several commands or arguments passed to it.
+
+---
+
+# Question: What is the function of the `exec` command?
+
+**Answer:**
+The `exec` command replaces the current shell with a specified command without creating a new process.
+
+---
+
+# Question: What does the `exit` command do?
+
+**Answer:**
+The `exit` command terminates the current shell session or script.
+
+---
+
+# Question: What is `expect` used for?
+
+**Answer:**
+`expect` automates interactions with applications accessed over a terminal, useful for scripting inputs.
+
+---
+
+# Question: What does the `expand` command do?
+
+**Answer:**
+The `expand` command converts tab characters in text files into spaces.
+
+---
+
+# Question: What is the purpose of the `export` command?
+
+**Answer:**
+The `export` command sets an environment variable to be inherited by child processes.
+
+---
+
+# Question: What does the `expr` command do?
+
+**Answer:**
+The `expr` command evaluates expressions and returns the result, commonly used in shell scripting.
+
+---
