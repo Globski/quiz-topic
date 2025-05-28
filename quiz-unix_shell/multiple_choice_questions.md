@@ -417,3 +417,165 @@ The `export` command sets an environment variable to be inherited by child proce
 The `expr` command evaluates expressions and returns the result, commonly used in shell scripting.
 
 ---
+
+# Question: What does the `false` command do?
+
+**Answer:**
+The `false` command does nothing and returns an unsuccessful exit status (non-zero).
+
+---
+
+# Question: What is the purpose of the `fdformat` command?
+
+**Answer:**
+The `fdformat` command performs a low-level format of a floppy disk.
+
+---
+
+# Question: What does the `fdisk` command do?
+
+**Answer:**
+The `fdisk` command is a partition table manipulator used to create and modify disk partitions in Linux.
+
+---
+
+# Question: What is the function of the `fg` command?
+
+**Answer:**
+The `fg` command brings a background job to the foreground.
+
+---
+
+# Question: What does the `fgrep` command do?
+
+**Answer:**
+The `fgrep` command searches files for lines matching a fixed string (no regular expressions).
+
+---
+
+# Question: What is the use of the `file` command?
+
+**Answer:**
+The `file` command determines the type of a file based on its content.
+
+---
+
+# Question: What does the `find` command do?
+
+**Answer:**
+The `find` command searches for files in a directory hierarchy that meet specified criteria.
+
+---
+
+# Question: What is the purpose of the `fmt` command?
+
+**Answer:**
+The `fmt` command reformats paragraph text to a specified width.
+
+---
+
+# Question: What does the `fold` command do?
+
+**Answer:**
+The `fold` command wraps text to fit within a specified width by inserting line breaks.
+
+---
+
+# Question: What is the function of the `for` command in shell scripting?
+
+**Answer:**
+The `for` command iterates over a list of words and executes commands for each word.
+
+---
+
+# Question: What does the `format` command do?
+
+**Answer:**
+The `format` command formats disks or tapes for use.
+
+---
+
+# Question: What information does the `free` command provide?
+
+**Answer:**
+The `free` command displays memory usage, including free and used RAM and swap space.
+
+---
+
+# Question: What is the purpose of the `fsck` command?
+
+**Answer:**
+The `fsck` command checks and repairs the consistency of a filesystem.
+
+---
+
+# Question: What does the `ftp` command do?
+
+**Answer:**
+The `ftp` command is a client for the File Transfer Protocol used to transfer files over a network.
+
+---
+
+# Question: What is the use of the `function` keyword in shell scripting?
+
+**Answer:**
+The `function` keyword defines function macros (shell functions).
+
+---
+
+# Question: What does the `fuser` command do?
+
+**Answer:**
+The `fuser` command identifies or kills processes accessing a specified file or filesystem.
+
+---
+
+# Question: What is the function of the `gawk` command?
+
+**Answer:**
+The `gawk` command is GNU’s implementation of `awk`, used to find and replace text within files.
+
+---
+
+# Question: What does the `getopts` command do?
+
+**Answer:**
+The `getopts` command parses positional parameters and options in shell scripts.
+
+---
+
+# Question: What is the purpose of the `grep` command?
+
+**Answer:**
+The `grep` command searches files for lines matching a given pattern using regular expressions.
+
+---
+
+# Question: What does the `groupadd` command do?
+
+**Answer:**
+The `groupadd` command adds a new user security group.
+
+---
+
+# Question: What is the function of the `groupdel` command?
+
+**Answer:**
+The `groupdel` command deletes an existing group.
+
+---
+
+# Question: What does the `groupmod` command do?
+
+**Answer:**
+The `groupmod` command modifies an existing group’s properties.
+
+---
+
+# Question: What is the use of the `groups` command?
+
+**Answer:**
+The `groups` command prints the group names that a user belongs to.
+
+---
+
