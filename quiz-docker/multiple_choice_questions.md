@@ -425,3 +425,256 @@ The analogy of standard rail tracks is used—just as standardized tracks allow 
 
 ---
 
+# Question: On which operating systems can Docker Desktop be installed?
+
+**Answer:**
+Docker Desktop can be installed on 64-bit versions of Windows 10 and Mac.
+
+---
+
+# Question: What additional features does Docker Desktop include for development purposes?
+
+**Answer:**
+Docker Desktop includes Docker Compose and an option to enable a single-node Kubernetes cluster.
+
+---
+
+# Question: Can Docker Desktop run both Linux and Windows containers on all supported platforms?
+
+**Answer:**
+No. Docker Desktop on Windows 10 can run both native Windows and Linux containers, but Docker Desktop on Mac can only run Linux containers.
+
+---
+
+# Question: What are the Windows system prerequisites for installing Docker Desktop?
+
+**Answer:**
+
+* 64-bit version of Windows 10 Pro, Enterprise, or Education (not Home edition)
+* Hardware virtualization support enabled in BIOS
+* Hyper-V and Containers features enabled in Windows
+
+---
+
+# Question: Which Windows features can the Docker installer enable automatically, and which must be enabled manually?
+
+**Answer:**
+The Docker installer can enable Hyper-V and Containers features, but hardware virtualization must be manually enabled in the system BIOS.
+
+---
+
+# Question: Why might someone need to be cautious when enabling hardware virtualization in BIOS?
+
+**Answer:**
+Because changing BIOS settings can affect system stability or functionality, and incorrect changes can cause problems.
+
+---
+
+# Question: Where can you download the Docker Desktop installer for Windows 10?**
+*Answer:*
+By performing a Google search for “install Docker Desktop,” which will lead to the official Docker download page.
+
+---
+
+# Question: What are the two release channels available when installing Docker Desktop, and how do they differ?**
+*Answer:*
+
+* **Stable channel:** More tested, reliable version
+* **Edge channel:** Access to bleeding-edge, newer features earlier
+
+---
+
+# Question: How can you start Docker Desktop after installation if it doesn’t start automatically?**
+*Answer:*
+Manually start Docker Desktop from the Windows Start menu.
+
+---
+
+# Question: How can you check the installed Docker version and components after installation?**
+*Answer:*
+Open PowerShell and run the command:
+
+```
+docker version
+```
+
+---
+
+# Question: Why does the Docker Server show `OS/Arch: linux/amd64` after a default installation on Windows?**
+*Answer:*
+Because Docker runs Linux containers inside a lightweight Linux Hyper-V VM by default.
+
+---
+
+# Question: How do you switch Docker Desktop on Windows from Linux containers to Windows containers?**
+*Answer:*
+
+* Right-click the Docker whale icon in the notifications tray and select “Switch to Windows containers...”
+* Or run the command:
+
+```
+.\dockercli -SwitchDaemon
+```
+
+from the `C:\Program Files\Docker\Docker` directory.
+
+---
+
+# Question: What happens to Linux containers when you switch to Windows containers mode?**
+*Answer:*
+Linux containers continue running in the background but cannot be seen or managed until you switch back to Linux containers mode.
+
+---
+
+# Question: What might you be prompted to enable when switching to Windows containers for the first time?**
+*Answer:*
+You may be prompted to enable the Windows Containers feature if it isn’t already enabled.
+
+---
+
+# Question: How can you confirm you are running Windows containers after switching?**
+*Answer:*
+Run `docker version` again and look for `windows/amd64` in the Server section of the output.
+
+---
+
+# Question: How can you verify that Docker Desktop on Windows is running Windows containers?
+
+**Answer:**
+Run the command `docker version` and check the Server section for `OS/Arch: windows/amd64`. This indicates Docker is running Windows containers.
+
+---
+
+# Question: What is Docker Desktop for Mac, and how does it run Docker containers?
+
+**Answer:**
+Docker Desktop for Mac is a packaged product for Mac that runs the Docker daemon inside a lightweight Linux virtual machine. This allows Mac users to run Linux-based Docker containers using standard Docker commands.
+
+---
+
+# Question: Can Docker Desktop for Mac run Windows containers natively?
+
+**Answer:**
+No, Docker Desktop for Mac only runs Linux-based containers inside the Linux VM. It cannot run Windows containers natively because Mac OS uses the Darwin kernel, which is different from Windows.
+
+---
+
+# Question: What are the installation options available when downloading Docker Desktop on both Windows and Mac?
+
+**Answer:**
+Users can choose between the stable channel, which provides stable releases, and the edge channel, which offers earlier access to new, bleeding-edge features.
+
+---
+
+# Question: Why does Docker Desktop for Mac use a lightweight Linux VM under the hood?
+
+**Answer:**
+Because Mac OS uses the Darwin kernel, it cannot natively run the Linux Docker Engine. The lightweight Linux VM enables Docker to run Linux containers on a Mac by providing a compatible Linux environment.
+
+---
+
+# Question: After installing Docker Desktop on Mac, how can you confirm that Docker is running correctly?
+
+**Answer:**
+You can open a terminal window and run the command `docker version`. The Client section will show `OS/Arch: darwin/amd64` indicating the native Mac client, and the Server section will show `OS/Arch: linux/amd64` indicating the daemon is running inside the Linux VM.
+
+---
+
+# Question: What does the Docker whale icon in the MacOS status bar indicate during startup?
+
+**Answer:**
+The animated whale icon shows Docker Desktop is starting. Once the icon stops animating, Docker Desktop has started and is ready to use.
+
+---
+
+# Question: Why does the Docker Server show `OS/Arch: linux/amd64` on a Mac even though the client runs on Darwin?
+
+**Answer:**
+Because the Docker daemon runs inside a lightweight Linux VM on Mac, the Server reports a Linux architecture (`linux/amd64`), while the client runs natively on Mac OS (`darwin/amd64`).
+
+---
+
+# Question: What is the first recommended step before installing Docker on Ubuntu Linux 20.04 LTS?
+
+**Answer:**
+Update the apt package index to ensure you have the latest package information.
+
+---
+
+# Question: What command updates the package index on Ubuntu before installing Docker?
+
+**Answer:**
+`sudo apt-get update` updates the package index to ensure the system has the latest package information before installing new software.
+
+---
+
+# Question: How do you install Docker on Ubuntu Linux using the official repository?
+
+**Answer:**
+Run the command `sudo apt-get install docker.io` to install Docker from the official Ubuntu repository.
+
+---
+
+# Question: How can you verify that Docker is installed correctly on Ubuntu after installation?
+
+**Answer:**
+You can run `sudo docker --version` to check the installed Docker version and `sudo docker info` to see the Docker server information, including containers and running status.
+
+---
+
+# Question: What is a quick way to get Docker pre-installed when using Windows Server 2019 on cloud platforms?
+
+**Answer:**
+Use a pre-configured Windows Server 2019 image with Docker pre-installed, such as “Microsoft Windows Server 2019 Base with Containers” available on AWS or other cloud providers.
+
+---
+
+# Question: What PowerShell command is used to install the Docker Provider on Windows Server 2019?
+
+**Answer:**
+`Install-Module DockerMsftProvider -Force` installs the Docker provider module in PowerShell, which is required to install Docker on Windows Server 2019.
+
+---
+
+# Question: After installing Docker on Windows Server 2019 using PowerShell, what important system action is required before Docker can run?
+
+**Answer:**
+A system restart is required to enable the containers feature after installing Docker on Windows Server 2019.
+
+---
+
+# Question: What command installs Docker on Windows Server 2019 after adding the Docker provider?
+
+**Answer:**
+`Install-Package Docker -ProviderName DockerMsftProvider -Force` installs Docker using the DockerMsftProvider.
+
+---
+
+# Question: How can you verify that Docker Engine - Enterprise is installed and running on Windows Server 2019?
+
+**Answer:**
+Run the command `docker version` in PowerShell to see details of the Docker client and server, including versions and OS architecture.
+
+---
+
+# Question: What is Play with Docker (PWD), and what does it offer?
+
+**Answer:**
+Play with Docker is a free, online Docker playground that provides a fully functional Docker environment for up to 4 hours, allowing users to create multiple nodes and even cluster them in a swarm.
+
+---
+
+# Question: What is Docker Desktop primarily intended for?
+
+**Answer:**
+Docker Desktop is intended for development purposes on Windows 10 and Mac laptops, providing a single-engine Docker environment and optional single-node Kubernetes cluster.
+
+---
+
+# Question: Can Docker be installed on both Linux and Windows Server?
+
+**Answer:**
+Yes, Docker can be installed on both Linux and Windows Server, with many distributions and Windows versions offering easy installation packages.
+
+---
+
