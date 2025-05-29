@@ -204,3 +204,37 @@ The output will appear on the same line, concatenated one after another.
 
 ---
 
+# Question: What is the purpose of comments in Kotlin code?
+
+**Answer:**
+Comments are used to explain Kotlin code, make it more readable, and prevent execution when testing alternative code.
+
+---
+
+# Question: How do you write a single-line comment in Kotlin?
+
+**Answer:**
+A single-line comment starts with two forward slashes `//`. Everything after `//` on that line is ignored by Kotlin.
+
+---
+
+# Question: Can you place a single-line comment at the end of a line of code in Kotlin?
+
+**Answer:**
+Yes, you can add a single-line comment at the end of a line of code by placing `//` followed by the comment.
+
+---
+
+# Question: How do you write a multi-line comment in Kotlin?
+
+**Answer:**
+Multi-line comments start with `/*` and end with `*/`. Any text between these symbols is ignored by Kotlin.
+
+---
+
+# Question: What is a common use of multi-line comments in Kotlin?
+
+**Answer:**
+Multi-line comments are often used to write longer explanations or comment blocks that span multiple lines.
+
+---
