@@ -1166,3 +1166,326 @@ The `rmdir` command removes empty directories.
 The `rsync` command synchronizes and copies files between local or remote locations efficiently.
 
 ---
+
+# Question: What is the function of the `screen` command?
+
+**Answer:**
+The `screen` command multiplexes terminal sessions, allowing multiple remote shells over SSH and session persistence.
+
+---
+
+# Question: What does the `scp` command do?
+
+**Answer:**
+The `scp` command securely copies files between hosts over a network.
+
+---
+
+# Question: What is the use of the `sdiff` command?
+
+**Answer:**
+The `sdiff` command merges two files interactively by showing differences side by side.
+
+---
+
+# Question: What does the `sed` command do?
+
+**Answer:**
+The `sed` command is a stream editor used to perform basic text transformations on an input stream.
+
+---
+
+# Question: What is the purpose of the `select` command in shell scripting?
+
+**Answer:**
+The `select` command accepts keyboard input and is typically used to create simple menus.
+
+---
+
+# Question: What does the `seq` command do?
+
+**Answer:**
+The `seq` command prints numeric sequences.
+
+---
+
+# Question: What is the function of the `set` command?
+
+**Answer:**
+The `set` command manipulates shell variables and functions.
+
+---
+
+# Question: What does the `sftp` command do?
+
+**Answer:**
+The `sftp` command provides a secure file transfer program over SSH.
+
+---
+
+# Question: What is the purpose of the `shift` command in shell scripting?
+
+**Answer:**
+The `shift` command shifts positional parameters to the left, effectively removing the first parameter.
+
+---
+
+# Question: What does the `shopt` command do?
+
+**Answer:**
+The `shopt` command enables or disables shell options.
+
+---
+
+# Question: What is the function of the `shutdown` command?
+
+**Answer:**
+The `shutdown` command safely shuts down or restarts the Linux system.
+
+---
+
+# Question: What does the `sleep` command do?
+
+**Answer:**
+The `sleep` command delays execution for a specified amount of time.
+
+---
+
+# Question: What is the `slocate` command used for?
+
+**Answer:**
+The `slocate` command finds files using a secure locate database.
+
+---
+
+# Question: What does the `sort` command do?
+
+**Answer:**
+The `sort` command sorts lines of text files.
+
+---
+
+# Question: What is the function of the `source` command?
+
+**Answer:**
+The `source` command runs commands from a file in the current shell environment.
+
+---
+
+# Question: What does the `split` command do?
+
+**Answer:**
+The `split` command splits a file into fixed-size pieces.
+
+---
+
+# Question: What is the purpose of the `ssh` command?
+
+**Answer:**
+The `ssh` command is a secure shell client used for remote login to another computer.
+
+---
+
+# Question: What does the `strace` command do?
+
+**Answer:**
+The `strace` command traces system calls and signals made by a process.
+
+---
+
+# Question: What is the function of the `su` command?
+
+**Answer:**
+The `su` command substitutes the user identity, typically to switch users.
+
+---
+
+# Question: What does the `sudo` command do?
+
+**Answer:**
+The `sudo` command executes a command as another user, often with elevated privileges.
+
+---
+
+# Question: What is the purpose of the `sum` command?
+
+**Answer:**
+The `sum` command prints a checksum for a file.
+
+---
+
+# Question: What does the `suspend` command do?
+
+**Answer:**
+The `suspend` command suspends execution of the current shell.
+
+---
+
+# Question: What is a `symlink`?
+
+**Answer:**
+A `symlink` is a symbolic link, a new name pointing to an existing file.
+
+---
+
+# Question: What does the `sync` command do?
+
+**Answer:**
+The `sync` command synchronizes data on disk with the in-memory buffers.
+
+---
+
+# Question: What is the function of the `tail` command?
+
+**Answer:**
+The `tail` command outputs the last part of a file.
+
+---
+
+# Question: What does the `tar` command do?
+
+**Answer:**
+The `tar` command creates or extracts archive files (Tape Archiver).
+
+---
+
+# Question: What is the purpose of the `tee` command?
+
+**Answer:**
+The `tee` command redirects output to multiple files or commands.
+
+---
+
+# Question: What does the `test` command do?
+
+**Answer:**
+The `test` command evaluates conditional expressions.
+
+---
+
+# Question: What is the function of the `time` command?
+
+**Answer:**
+The `time` command measures the running time of a program.
+
+---
+
+# Question: What does the `times` command report?
+
+**Answer:**
+The `times` command shows user and system CPU times for the shell and its children.
+
+---
+
+# Question: What is the use of the `touch` command?
+
+**Answer:**
+The `touch` command changes file timestamps or creates empty files.
+
+---
+
+# Question: What does the `top` command do?
+
+**Answer:**
+The `top` command lists running processes with dynamic updates.
+
+---
+
+# Question: What is the function of the `traceroute` command?
+
+**Answer:**
+The `traceroute` command traces the route packets take to reach a host.
+
+---
+
+# Question: What does the `trap` command do in shell scripting?
+
+**Answer:**
+The `trap` command runs a specified command when the shell receives a signal.
+
+---
+
+# Question: What is the use of the `tr` command?
+
+**Answer:**
+The `tr` command translates, squeezes, and/or deletes characters from input.
+
+---
+
+# Question: What does the `true` command do?
+
+**Answer:**
+The `true` command does nothing successfully and returns a true exit status.
+
+---
+
+# Question: What is the purpose of the `tsort` command?
+
+**Answer:**
+The `tsort` command performs a topological sort of input lines.
+
+---
+
+# Question: What does the `tty` command print?
+
+**Answer:**
+The `tty` command prints the filename of the terminal connected to standard input.
+
+---
+
+# Question: What is the function of the `type` command?
+
+**Answer:**
+The `type` command describes how a command would be interpreted by the shell.
+
+---
+
+# Question: What does the `ulimit` command do?
+
+**Answer:**
+The `ulimit` command sets or displays user resource limits.
+
+---
+
+# Question: What is the purpose of the `umask` command?
+
+**Answer:**
+The `umask` command sets the default permission mask for newly created files.
+
+---
+
+# Question: What does the `umount` command do?
+
+**Answer:**
+The `umount` command unmounts a mounted filesystem or device.
+
+---
+
+# Question: What is the function of the `unalias` command?
+
+**Answer:**
+The `unalias` command removes a shell alias.
+
+---
+
+# Question: What does the `uname` command do?
+
+**Answer:**
+The `uname` command prints system information such as kernel name and version.
+
+---
+
+# Question: What is the use of the `unexpand` command?
+
+**Answer:**
+The `unexpand` command converts spaces into tabs in text.
+
+---
+
+# Question: What does the `uniq` command do?
+
+**Answer:**
+The `uniq` command filters out repeated adjacent lines in a file or input.
+
+---
+
