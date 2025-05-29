@@ -1718,3 +1718,215 @@ The `class` keyword. Example: `class Car { }`
 
 ---
 
+# Question: What is a correct syntax to output "Hello World" in Kotlin?
+
+**Answer:**
+
+```kotlin
+println("Hello World")
+```
+
+---
+
+# Question: How do you insert COMMENTS in Kotlin code?
+
+**Answer:**
+Use `//` for single-line comments and `/* */` for multi-line comments.
+Example:
+
+```kotlin
+// This is a single-line comment  
+/* This is  
+a multi-line  
+comment */
+```
+
+---
+
+# Question: Which keyword is used to declare a function?
+
+**Answer:**
+The `fun` keyword.
+
+---
+
+# Question: In Kotlin, code statements must end with a semicolon (;)
+
+**Answer:**
+**False.** Semicolons are optional in Kotlin and typically omitted.
+
+---
+
+# Question: How can you create a variable with the floating number 2.8?
+
+**Answer:**
+
+```kotlin
+val myNumber = 2.8
+```
+
+---
+
+# Question: Which operator is used to add together two values?
+
+**Answer:**
+The `+` operator.
+
+---
+
+# Question: What is the output of the following code: `println(5 > 3 && 5 < 10)`?
+
+**Answer:**
+`true`
+
+---
+
+# Question: The value of a string variable must be surrounded by single quotes.
+
+**Answer:**
+**False.** String values in Kotlin must be surrounded by **double quotes**, e.g., `"Hello"`.
+
+---
+
+# Question: Which operator can be used to compare two values?
+
+**Answer:**
+The `==` operator.
+
+---
+
+# Question: Which property can be used to find the length of a string?
+
+**Answer:**
+The `.length` property.
+Example: `"Hello".length` returns `5`.
+
+---
+
+# Question: Which symbol is used for string templates/interpolation?
+
+**Answer:**
+The `$` symbol.
+Example:
+
+```kotlin
+val name = "John"
+println("Hello, $name")
+```
+
+---
+
+# Question: To create an array in Kotlin, use
+
+**Answer:**
+The `arrayOf()` function.
+Example: `val numbers = arrayOf(1, 2, 3)`
+
+---
+
+# Question: Array indexes start with:
+
+**Answer:**
+`0`
+
+---
+
+# Question: How do you call a function in Kotlin?
+
+**Answer:**
+By writing the function name followed by parentheses.
+Example: `myFunction()`
+
+---
+
+# Question: How do you start writing an if statement in Kotlin?
+
+**Answer:**
+
+```kotlin
+if (condition) {
+    // code block
+}
+```
+
+---
+
+# Question: How do you start writing a while loop in Kotlin?
+
+**Answer:**
+
+```kotlin
+while (condition) {
+    // code block
+}
+```
+
+---
+
+# Question: Which keyword is used to return a value inside a function?
+
+**Answer:**
+The `return` keyword.
+
+---
+
+# Question: How do you start writing a for loop in Kotlin, to loop through arrays?
+
+**Answer:**
+
+```kotlin
+for (item in array) {
+    // code block
+}
+```
+
+---
+
+# Question: How can you create a range of numbers between 5 and 15 in Kotlin?
+
+**Answer:**
+
+```kotlin
+val range = 5..15
+```
+
+---
+
+# Question: Which statement is used to stop a loop?
+
+**Answer:**
+The `break` statement.
+
+---
+
+# Question: Which keyword is used to create a class in Kotlin?
+
+**Answer:**
+The `class` keyword.
+
+---
+
+# Question: What is the correct way to create an object called `myObj` of `MyClass`?
+
+**Answer:**
+
+```kotlin
+val myObj = MyClass()
+```
+
+---
+
+# Question: In Kotlin, it is possible to inherit class properties and functions from one class to another.
+
+**Answer:**
+**True.** Kotlin supports class inheritance using the `open` keyword for the superclass.
+
+---
+
+# Question: What is the `fname` known as in the following code: `fun myFunction(fname: String)`?
+
+**Answer:**
+`fname` is a **parameter** of the function `myFunction`.
+
+---
+
