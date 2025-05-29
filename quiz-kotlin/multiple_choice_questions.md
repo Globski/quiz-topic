@@ -126,3 +126,45 @@ The output is:
 Click the Run button in the top navigation bar, then select "Run," and choose your Kotlin file (e.g., `Main.kt`).
 
 ---
+
+# Question: What keyword is used to declare a function in Kotlin?
+
+**Answer:**
+The `fun` keyword is used to declare a function in Kotlin.
+
+---
+
+# Question: What is the purpose of the `main()` function in a Kotlin program?
+
+**Answer:**
+The `main()` function is used to execute code; any code inside its curly brackets `{}` will be executed when the program runs.
+
+---
+
+# Question: What does the `println()` function do in Kotlin?
+
+**Answer:**
+The `println()` function outputs or prints text to the screen.
+
+---
+
+# Question: Does Kotlin require code statements to end with a semicolon (`;`)?
+
+**Answer:**
+No, in Kotlin, code statements do not have to end with a semicolon (`;`), unlike some other programming languages like Java or C++.
+
+---
+
+# Question: How was the `main()` function declared in Kotlin versions before 1.3?
+
+**Answer:**
+Before Kotlin version 1.3, the `main()` function was required to have parameters and was declared as `fun main(args: Array<String>)`.
+
+---
+
+# Question: Why might the `main(args: Array<String>)` signature be used in Kotlin?
+
+**Answer:**
+This signature allows the program to accept command-line arguments as an array of strings.
+
+---
