@@ -168,3 +168,39 @@ Before Kotlin version 1.3, the `main()` function was required to have parameters
 This signature allows the program to accept command-line arguments as an array of strings.
 
 ---
+
+# Question: What is the purpose of the `println()` function in Kotlin?
+
+**Answer:**
+The `println()` function is used to output values or print text followed by a new line.
+
+---
+
+# Question: What happens if you use multiple `println()` functions in a Kotlin program?
+
+**Answer:**
+Each `println()` function outputs its text on a new line.
+
+---
+
+# Question: Can `println()` print numbers or results of mathematical calculations in Kotlin?
+
+**Answer:**
+Yes, `println()` can print numbers and perform mathematical calculations, outputting the result.
+
+---
+
+# Question: How does the `print()` function differ from the `println()` function in Kotlin?
+
+**Answer:**
+The `print()` function outputs text without adding a new line at the end, unlike `println()`, which adds a new line.
+
+---
+
+# Question: If you use multiple `print()` functions in a row, how will the output appear?
+
+**Answer:**
+The output will appear on the same line, concatenated one after another.
+
+---
+
