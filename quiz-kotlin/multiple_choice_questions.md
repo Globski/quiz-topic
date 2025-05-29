@@ -294,3 +294,85 @@ Variable names can contain letters, digits, underscores, and dollar signs; must 
 "camelCase" is a naming convention where multi-word variable names start with a lowercase letter and each subsequent word begins with a capital letter, like `firstName` or `myFavoriteFood`.
 
 ---
+
+# Question: How does Kotlin decide the type of a variable?
+
+**Answer:**
+Kotlin decides the type of a variable based on the value assigned to it.
+
+---
+
+# Question: Name the main groups of data types in Kotlin.
+
+**Answer:**
+The main groups are Numbers, Characters, Booleans, Strings, and Arrays.
+
+---
+
+# Question: What are the integer data types in Kotlin, and what ranges do they cover?
+
+**Answer:**
+
+* Byte: stores whole numbers from -128 to 127
+* Short: stores whole numbers from -32,768 to 32,767
+* Int: stores whole numbers from -2,147,483,648 to 2,147,483,647
+* Long: stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+---
+
+# Question: When should you use `Long` instead of `Int`?
+
+**Answer:**
+Use `Long` when the number exceeds the range of `Int` (greater than 2,147,483,647) or smaller than -2,147,483,648.
+
+---
+
+# Question: What is the difference between Float and Double in Kotlin?
+
+**Answer:**
+Float has about 6-7 decimal digits precision and requires an "F" suffix, while Double has about 15 decimal digits precision and is safer for most calculations.
+
+---
+
+# Question: How do you represent scientific numbers in Kotlin?
+
+**Answer:**
+By using an "e" or "E" followed by the power of 10, e.g., `35E3F` for Float or `12E4` for Double.
+
+---
+
+# Question: What values can a Boolean variable hold in Kotlin?
+
+**Answer:**
+A Boolean can only hold `true` or `false`.
+
+---
+
+# Question: How do you declare a Char variable and what is a key difference from Java regarding Char values?
+
+**Answer:**
+A Char is declared with single quotes, e.g., `'B'`. Unlike Java, Kotlin does not allow ASCII values to be assigned directly to a Char.
+
+---
+
+# Question: How are String values declared in Kotlin?
+
+**Answer:**
+String values are declared using double quotes, e.g., `"Hello World"`.
+
+---
+
+# Question: Can Kotlin automatically convert an `Int` to a `Long`?
+
+**Answer:**
+No, Kotlin requires explicit type conversion using functions like `toLong()`.
+
+---
+
+# Question: How do you explicitly convert an `Int` to a `Long` in Kotlin?
+
+**Answer:**
+By calling the `toLong()` function on the `Int` variable, e.g., `val y: Long = x.toLong()`.
+
+---
+
