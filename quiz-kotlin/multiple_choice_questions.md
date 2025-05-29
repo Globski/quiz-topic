@@ -1228,3 +1228,335 @@ fun myFunction(x: Int): Int {
 It returns `8` because it adds 5 to the argument (3 + 5).
 
 ---
+
+# Question: What does OOP stand for?
+
+**Answer:**
+OOP stands for Object-Oriented Programming.
+
+---
+
+# Question: How does procedural programming differ from object-oriented programming?
+
+**Answer:**
+Procedural programming is about writing procedures or methods that perform operations on data, while object-oriented programming focuses on creating objects that contain both data and methods.
+
+---
+
+# Question: Name one advantage of object-oriented programming over procedural programming.
+
+**Answer:**
+OOP is faster and easier to execute.
+
+---
+
+# Question: What does the DRY principle stand for, and why is it important in OOP?
+
+**Answer:**
+DRY stands for "Don't Repeat Yourself." It is important because it reduces code repetition by extracting common code into a single place for reuse, making the code easier to maintain, modify, and debug.
+
+---
+
+# Question: What are the two main aspects of object-oriented programming?
+
+**Answer:**
+The two main aspects of OOP are classes and objects.
+
+---
+
+# Question: What is a class in Kotlin OOP?
+
+**Answer:**
+A class is a template for objects.
+
+---
+
+# Question: What is an object in Kotlin OOP?
+
+**Answer:**
+An object is an instance of a class.
+
+---
+
+# Question: When individual objects are created from a class, what do they inherit?
+
+**Answer:**
+They inherit all the variables and methods from the class.
+
+---
+
+# Question: What is everything in Kotlin associated with?
+
+**Answer:**
+Everything in Kotlin is associated with classes and objects, along with their properties and functions.
+
+---
+
+# Question: What is a class in Kotlin?
+
+**Answer:**
+A class is like an object constructor or a blueprint for creating objects.
+
+---
+
+# Question: In the context of Kotlin, what is a property?
+
+**Answer:**
+A property is a variable that belongs to a class.
+
+---
+
+# Question: What keyword is used to define a class in Kotlin?
+
+**Answer:**
+The `class` keyword is used to define a class.
+
+---
+
+# Question: According to best practices, how should you name a class in Kotlin?
+
+**Answer:**
+It is good practice to start the name of a class with an uppercase letter.
+
+---
+
+# Question: How do you create an object from a class in Kotlin?
+
+**Answer:**
+You create an object by using the class name followed by parentheses. For example: `val c1 = Car()`.
+
+---
+
+# Question: How do you access or modify an object’s property in Kotlin?
+
+**Answer:**
+You use the dot syntax (`.`), such as `c1.brand = "Ford"` or `println(c1.brand)`.
+
+---
+
+# Question: Can you create multiple objects from a single Kotlin class?
+
+**Answer:**
+Yes, you can create multiple objects from one class, each with its own property values.
+
+---
+
+# Question: What will the following line output: `println(c1.brand)` after `c1.brand = "Ford"`?
+
+**Answer:**
+It will output `Ford`.
+
+---
+
+# Question: What is a constructor in Kotlin?
+
+**Answer:**
+A constructor is a special function used to initialize properties of a class when an object is created.
+
+---
+
+# Question: How do you define a constructor in Kotlin?
+
+**Answer:**
+You define a constructor by placing parentheses `()` after the class name and specifying the properties with their types inside the parentheses.
+
+---
+
+# Question: What does this Kotlin code do: `val c1 = Car("Ford", "Mustang", 1969)`?
+
+**Answer:**
+It creates an object `c1` of the `Car` class and initializes its `brand`, `model`, and `year` properties using the constructor.
+
+---
+
+# Question: What is the benefit of using a constructor in Kotlin?
+
+**Answer:**
+Using a constructor allows you to initialize object properties more quickly and cleanly, reducing repetitive code.
+
+---
+
+# Question: How are properties passed into a constructor different from properties defined inside the class body?
+
+**Answer:**
+Properties passed into a constructor are initialized at object creation time, while properties defined inside the class body need to be manually assigned after object creation.
+
+---
+
+# Question: Write the syntax for defining a Kotlin class with three properties: `brand`, `model`, and `year`, using a constructor.
+
+**Answer:**
+`class Car(var brand: String, var model: String, var year: Int)`
+
+---
+
+# Question: How would you create multiple objects of a class using a constructor in Kotlin?
+
+**Answer:**
+By calling the class constructor with different arguments, e.g.:
+
+```kotlin
+val c1 = Car("Ford", "Mustang", 1969)  
+val c2 = Car("BMW", "X5", 1999)
+```
+
+---
+
+# Question: What will the following Kotlin code output if we print `c3.brand`?
+
+```kotlin
+val c3 = Car("Tesla", "Model S", 2020)
+println(c3.brand)
+```
+
+**Answer:**
+It will output: `Tesla`.
+
+---
+
+# Question: What is a class function in Kotlin?
+
+**Answer:**
+A class function, also known as a member function, is a function defined inside a class that performs a specific action related to that class.
+
+---
+
+# Question: How do you define a function inside a Kotlin class?
+
+**Answer:**
+You define a function inside a Kotlin class using the `fun` keyword, followed by the function name and its body.
+
+---
+
+# Question: What happens when an object of a class is created in Kotlin?
+
+**Answer:**
+When an object is created, it has access to all the properties and functions (including class functions) defined in the class.
+
+---
+
+# Question: In Kotlin, how would you call the `drive()` function on an object `c1` of class `Car`?
+
+**Answer:**
+You would call it using dot syntax: `c1.drive()`
+
+---
+
+# Question: What will the following code print?
+
+```kotlin
+class Car(var brand: String, var model: String, var year: Int) {
+  fun drive() {
+    println("Wrooom!")
+  }
+}
+
+val c1 = Car("Ford", "Mustang", 1969)
+c1.drive()
+```
+
+**Answer:**
+It will print: `Wrooom!`
+
+---
+
+# Question: What is inheritance in Kotlin?
+
+**Answer:**
+Inheritance in Kotlin allows a class (subclass) to inherit properties and functions from another class (superclass), promoting code reusability.
+
+---
+
+# Question: What is a superclass in Kotlin?
+
+**Answer:**
+A superclass (or parent class) is the class being inherited from.
+
+---
+
+# Question: What is a subclass in Kotlin?
+
+**Answer:**
+A subclass (or child class) is the class that inherits properties and functions from another class.
+
+---
+
+# Question: Which keyword is used to allow a Kotlin class to be inherited?
+
+**Answer:**
+The `open` keyword is used before a class definition to allow it to be inherited.
+
+---
+
+# Question: How do you define that a class inherits from another in Kotlin?
+
+**Answer:**
+You define it by placing a colon `:` after the subclass name, followed by the superclass name. Example: `class MyChildClass : MyParentClass()`
+
+---
+
+# Question: What will the following code output?
+
+```kotlin
+open class MyParentClass {
+  val x = 5
+}
+
+class MyChildClass : MyParentClass() {
+  fun myFunction() {
+    println(x)
+  }
+}
+
+fun main() {
+  val myObj = MyChildClass()
+  myObj.myFunction()
+}
+```
+
+**Answer:**
+It will output: `5`
+
+---
+
+# Question: Why is inheritance useful in Kotlin?
+
+**Answer:**
+Inheritance is useful for code reusability, allowing you to reuse properties and functions of an existing class when creating new classes.
+
+---
+
+# Question: What happens if you try to inherit from a class in Kotlin without marking it as `open`?
+
+**Answer:**
+You will get a compilation error because, by default, Kotlin classes are `final` and cannot be inherited unless marked `open`.
+
+---
+
+
+# Question: Can you pass parameters to a class function in Kotlin?
+
+**Answer:**
+Yes, just like regular functions, you can pass parameters to a class function.
+
+---
+
+# Question: What does the following Kotlin function do?
+
+```kotlin
+fun speed(maxSpeed: Int) {
+  println("Max speed is: " + maxSpeed)
+}
+```
+
+**Answer:**
+It prints the maximum speed passed to it as an argument.
+
+---
+
+# Question: Write the correct way to call the `speed()` function with a value of `200` on an object `c1` of the `Car` class.
+
+**Answer:**
+`c1.speed(200)`
+
+---
