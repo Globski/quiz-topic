@@ -1560,3 +1560,161 @@ It prints the maximum speed passed to it as an argument.
 `c1.speed(200)`
 
 ---
+
+# Question: What is the basic structure of a Kotlin program?
+
+**Answer:**
+A basic Kotlin program consists of a `main` function, which is the entry point:
+
+```kotlin
+fun main() {
+    println("Hello, World!")
+}
+```
+
+---
+
+# Question: How do you write a single-line comment in Kotlin?
+
+**Answer:**
+Use `//` before the comment text.
+Example: `// This is a single-line comment`
+
+---
+
+# Question: How do you declare a variable that can be changed in Kotlin?
+
+**Answer:**
+Use the `var` keyword. Example: `var age = 25`
+
+---
+
+# Question: How do you declare a read-only (immutable) variable in Kotlin?
+
+**Answer:**
+Use the `val` keyword. Example: `val name = "John"`
+
+---
+
+# Question: Name two common data types in Kotlin.
+
+**Answer:**
+Examples include: `Int`, `String`, `Boolean`, `Double`, and `Float`.
+
+---
+
+# Question: What operator would you use to add two numbers in Kotlin?
+
+**Answer:**
+The `+` operator. Example: `val sum = a + b`
+
+---
+
+# Question: How are strings declared in Kotlin?
+
+**Answer:**
+Strings are declared using double quotes. Example: `val text = "Hello"`
+
+---
+
+# Question: What value does a Boolean type hold in Kotlin?
+
+**Answer:**
+A Boolean holds either `true` or `false`.
+
+---
+
+# Question: How do you write an if-else statement in Kotlin?
+
+**Answer:**
+
+```kotlin
+if (x > 10) {
+    println("x is greater than 10")
+} else {
+    println("x is 10 or less")
+}
+```
+
+---
+
+# Question: What is the `when` expression in Kotlin used for?
+
+**Answer:**
+The `when` expression is used as a replacement for multiple `if-else` conditions.
+Example:
+
+```kotlin
+when (x) {
+    1 -> println("One")
+    2 -> println("Two")
+    else -> println("Other")
+}
+```
+
+---
+
+# Question: What is the syntax for a `while` loop in Kotlin?
+
+**Answer:**
+
+```kotlin
+while (condition) {
+    // code to execute
+}
+```
+
+---
+
+# Question: How do you declare an array in Kotlin?
+
+**Answer:**
+Use `arrayOf()`. Example: `val fruits = arrayOf("Apple", "Banana", "Cherry")`
+
+---
+
+# Question: How do you write a `for` loop to iterate over an array?
+
+**Answer:**
+
+```kotlin
+for (fruit in fruits) {
+    println(fruit)
+}
+```
+
+---
+
+# Question: What is a range in Kotlin and how is it used?
+
+**Answer:**
+A range is defined using `..` and is often used in loops.
+Example:
+
+```kotlin
+for (i in 1..5) {
+    println(i)
+}
+```
+
+---
+
+# Question: How do you define a function in Kotlin?
+
+**Answer:**
+
+```kotlin
+fun myFunction() {
+    println("Hello from function")
+}
+```
+
+---
+
+# Question: What keyword is used to define a class in Kotlin?
+
+**Answer:**
+The `class` keyword. Example: `class Car { }`
+
+---
+
