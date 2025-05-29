@@ -238,3 +238,59 @@ Multi-line comments start with `/*` and end with `*/`. Any text between these sy
 Multi-line comments are often used to write longer explanations or comment blocks that span multiple lines.
 
 ---
+
+# Question: What keywords are used to declare variables in Kotlin?
+
+**Answer:**
+The keywords `var` and `val` are used to declare variables in Kotlin.
+
+---
+
+# Question: What is the main difference between `var` and `val` in Kotlin?
+
+**Answer:**
+Variables declared with `var` can be changed or modified, while variables declared with `val` cannot be reassigned once initialized.
+
+---
+
+# Question: Do Kotlin variables require explicit type declaration?
+
+**Answer:**
+No, Kotlin can infer the variable type automatically based on the assigned value, but you can specify the type explicitly if you want.
+
+---
+
+# Question: How can you declare a variable without assigning a value immediately?
+
+**Answer:**
+You can declare a variable without assigning a value if you specify its type explicitly, for example: `var name: String`.
+
+---
+
+# Question: What happens if you try to reassign a value to a `val` variable?
+
+**Answer:**
+It will generate an error because `val` variables cannot be reassigned.
+
+---
+
+# Question: How do you combine text and variables when printing in Kotlin?
+
+**Answer:**
+You use the `+` operator to concatenate text and variables, for example: `println("Hello " + name)`.
+
+---
+
+# Question: What rules apply to Kotlin variable names?
+
+**Answer:**
+Variable names can contain letters, digits, underscores, and dollar signs; must start with a letter; are case sensitive; cannot contain whitespace; and cannot use reserved keywords.
+
+---
+
+# Question: What is "camelCase" in Kotlin variable naming?
+
+**Answer:**
+"camelCase" is a naming convention where multi-word variable names start with a lowercase letter and each subsequent word begins with a capital letter, like `firstName` or `myFavoriteFood`.
+
+---
