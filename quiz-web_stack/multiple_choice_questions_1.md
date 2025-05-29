@@ -116,3 +116,46 @@ An attacker is anyone who tries to decrypt or access encrypted data without prop
 The goal of encryption is to ensure that authorized users can easily decrypt and access data, while making it virtually impossible for unauthorized users (attackers) to do so.
 
 ---
+
+# Question: Why is no encryption system considered completely unbreakable?
+
+**Answer:**
+Because with enough time and computing power, any encryption system can theoretically be broken. The goal is to make decryption so difficult that it becomes impractical for attackers.
+
+---
+
+# Question: What is the primary goal of computer security in terms of encryption?
+
+**Answer:**
+To make attacks so resource-intensive and time-consuming that they are practically impossible to succeed, even if technically feasible.
+
+---
+
+# Question: Why are old, pre-software encryption techniques still relevant today?
+
+**Answer:**
+Because they form the foundational concepts upon which modern digital encryption schemes are built. Techniques like transposition still influence current encryption methods.
+
+---
+
+# Question: What does the term "transposition" mean in the context of encryption?
+
+**Answer:**
+Transposition refers to a method of encryption that involves rearranging the positions of characters in the plaintext to create ciphertext without altering the actual characters.
+
+---
+
+# Question: How does a simple transposition cipher work?
+
+**Answer:**
+A simple transposition cipher works by selecting letters from the plaintext in a specific pattern (e.g., every third letter), and rearranging them in multiple passes to obscure the original message.
+
+---
+
+# Question: Why were transposition ciphers useful among children passing notes?
+
+**Answer:**
+Because they could quickly scramble a message in a way that made it unreadable to others, while still being easy to reverse for the intended recipient.
+
+---
+
