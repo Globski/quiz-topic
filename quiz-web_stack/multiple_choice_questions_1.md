@@ -159,3 +159,38 @@ Because they could quickly scramble a message in a way that made it unreadable t
 
 ---
 
+# Question: Why is the basic transposition method considered weak encryption?
+
+**Answer:**
+Because it relies on secrecy of the method itself, which can be easily compromised if someone reveals the technique. Once the method is known, the messages become easy to decode.
+
+---
+
+# Question: What is the primary weakness of using secret encryption methods without keys?
+
+**Answer:**
+They are vulnerable to leaks—if the method becomes known, anyone can decrypt the messages, making the encryption ineffective.
+
+---
+
+# Question: What is Kerckhoffs’s Principle?
+
+**Answer:**
+Kerckhoffs’s Principle states that the security of a cryptographic system should depend only on the secrecy of the key, not on the secrecy of the encryption method itself.
+
+---
+
+# Question: How do modern encryption systems ensure security if the method is publicly known?
+
+**Answer:**
+They use secret cipher keys. Even if the encryption method is public, the data remains secure because only the correct key can successfully decrypt the message.
+
+---
+
+# Question: What is a cipher key in encryption?
+
+**Answer:**
+A cipher key is a secret value (such as a number or string) shared between the sender and receiver that determines how data is encrypted or decrypted within a known encryption method.
+
+---
+
