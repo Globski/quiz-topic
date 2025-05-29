@@ -236,3 +236,58 @@ By using language patterns or context—like recognizing that most English words
 
 ---
 
+# Question: What is the purpose of varying the substitution pattern in encryption?
+
+**Answer:**
+Varying the substitution pattern strengthens encryption against frequency analysis by ensuring that the same plaintext letter can be replaced by different ciphertext letters throughout the message.
+
+---
+
+# Question: What is the name of the technique that uses varying substitution patterns during encryption?
+
+**Answer:**
+The technique is known as polyalphabetic substitution.
+
+---
+
+# Question: What is a tabula recta?
+
+**Answer:**
+A tabula recta is a grid of alphabets where each row and column is labeled with a letter of the alphabet, used to vary encryption in polyalphabetic substitution.
+
+---
+
+# Question: How are the rows and columns labeled in a tabula recta?
+
+**Answer:**
+Each row and column in a tabula recta is labeled with the letter of the alphabet that starts that row or column.
+
+---
+
+# Question: In a tabula recta, what does the intersection of row D and column H contain?
+
+**Answer:**
+The intersection of row D and column H contains the letter K.
+
+---
+
+# Question: What type of key is used in a tabula recta to vary encryption?
+
+**Answer:**
+A textual key, where letters are used to select columns, is used to vary encryption in a tabula recta.
+
+---
+
+# Question: In the tabula recta example, how is the first letter of the ciphertext derived from the plaintext letter S and key letter T?
+
+**Answer:**
+The first letter of the ciphertext is found at the intersection of row S and column T in the tabula recta, which is the letter L.
+
+---
+
+# Question: What happens when the plaintext is longer than the key in a tabula recta encryption?
+
+**Answer:**
+When the plaintext is longer than the key, the letters of the key are reused starting from the beginning.
+
+---
