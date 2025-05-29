@@ -61,3 +61,58 @@ Mapping systems use software to interpret maps and apply specialized search tech
 
 ---
 
+# Question: Why do most people trust the “lock” icon in their browser when entering sensitive information?
+
+**Answer:**
+The lock icon indicates that the website is using secure encryption protocols (like HTTPS), which protect data—such as credit card numbers—by making it unreadable to unauthorized parties during transmission.
+
+---
+
+# Question: How does creating a password protect the data on your phone?
+
+**Answer:**
+A password protects your phone’s data by triggering encryption mechanisms that scramble the contents, making them inaccessible to anyone without the correct password.
+
+---
+
+# Question: What does computer security aim to protect?
+
+**Answer:**
+Computer security focuses on protecting digital data from unauthorized access, theft, or tampering, often by using technologies like encryption and secure authentication.
+
+---
+
+# Question: Why was data more secure before the digital age?
+
+**Answer:**
+Before the digital age, most data was stored physically (e.g., in filing cabinets or shoeboxes), making it harder to access or steal remotely. Today, digital data can be accessed or stolen from anywhere, often without the victim's immediate knowledge.
+
+---
+
+# Question: What is the role of encryption in computer security?
+
+**Answer:**
+Encryption is the foundation of computer security. It transforms readable data (plaintext) into unreadable data (ciphertext), which can only be decrypted by someone with the correct key.
+
+---
+
+# Question: What is plaintext and ciphertext in the context of encryption?
+
+**Answer:**
+Plaintext is the original, readable form of data, while ciphertext is the encrypted, unreadable form. Encryption turns plaintext into ciphertext, and decryption reverses the process.
+
+---
+
+# Question: Who is considered an attacker in the context of computer security?
+
+**Answer:**
+An attacker is anyone who tries to decrypt or access encrypted data without proper authorization.
+
+---
+
+# Question: What is the goal of encryption from a security standpoint?
+
+**Answer:**
+The goal of encryption is to ensure that authorized users can easily decrypt and access data, while making it virtually impossible for unauthorized users (attackers) to do so.
+
+---
