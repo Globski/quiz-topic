@@ -1489,3 +1489,191 @@ The `uniq` command filters out repeated adjacent lines in a file or input.
 
 ---
 
+# Question: What does the `units` command do?
+
+**Answer:**
+The `units` command converts quantities from one unit scale to another.
+
+---
+
+# Question: What is the function of the `unset` command?
+
+**Answer:**
+The `unset` command removes variable or function names from the shell environment.
+
+---
+
+# Question: What does the `unshar` command do?
+
+**Answer:**
+The `unshar` command unpacks shell archive (shar) scripts.
+
+---
+
+# Question: What is the purpose of the `until` command?
+
+**Answer:**
+The `until` command executes commands repeatedly until the command fails (i.e., until an error occurs).
+
+---
+
+# Question: What does the `uptime` command show?
+
+**Answer:**
+The `uptime` command displays how long the system has been running, along with load averages.
+
+---
+
+# Question: What is the use of the `useradd` command?
+
+**Answer:**
+The `useradd` command creates a new user account.
+
+---
+
+# Question: What does the `usermod` command do?
+
+**Answer:**
+The `usermod` command modifies an existing user account.
+
+---
+
+# Question: What is the function of the `users` command?
+
+**Answer:**
+The `users` command lists all users currently logged in.
+
+---
+
+# Question: What does the `uuencode` command do?
+
+**Answer:**
+The `uuencode` command encodes binary files into ASCII text for safe transmission.
+
+---
+
+# Question: What is the purpose of the `uudecode` command?
+
+**Answer:**
+The `uudecode` command decodes files that were encoded with `uuencode`.
+
+---
+
+# Question: What does the `v` command do?
+
+**Answer:**
+The `v` command verbosely lists directory contents, similar to `ls -l -b`.
+
+---
+
+# Question: What is the function of the `vdir` command?
+
+**Answer:**
+The `vdir` command also verbosely lists directory contents, like `ls -l -b`.
+
+---
+
+# Question: What is `vi`?
+
+**Answer:**
+`vi` is a text editor commonly used in Unix-like systems.
+
+---
+
+# Question: What does the `vmstat` command report?
+
+**Answer:**
+The `vmstat` command reports virtual memory and system statistics.
+
+---
+
+# Question: What is the use of the `wait` command?
+
+**Answer:**
+The `wait` command waits for a specified process to complete before continuing.
+
+---
+
+# Question: What does the `watch` command do?
+
+**Answer:**
+The `watch` command repeatedly executes a program and displays its output periodically.
+
+---
+
+# Question: What is the function of the `wc` command?
+
+**Answer:**
+The `wc` command prints counts of bytes, words, and lines in a file or input.
+
+---
+
+# Question: What does the `whereis` command do?
+
+**Answer:**
+The `whereis` command searches for the binary, source, and manual files of a command.
+
+---
+
+# Question: What is the function of the `which` command?
+
+**Answer:**
+The `which` command searches the user’s PATH environment to find the location of a program.
+
+---
+
+# Question: What does the `while` command do?
+
+**Answer:**
+The `while` command executes commands repeatedly as long as the condition is true.
+
+---
+
+# Question: What is the use of the `who` command?
+
+**Answer:**
+The `who` command prints usernames of all currently logged-in users.
+
+---
+
+# Question: What does the `whoami` command do?
+
+**Answer:**
+The `whoami` command prints the current user ID and name.
+
+---
+
+# Question: What is the purpose of the `wget` command?
+
+**Answer:**
+The `wget` command retrieves files or web pages via HTTP, HTTPS, or FTP.
+
+---
+
+# Question: What does the `write` command do?
+
+**Answer:**
+The `write` command sends a message to another logged-in user.
+
+---
+
+# Question: What is the function of the `xargs` command?
+
+**Answer:**
+The `xargs` command builds and executes command lines from standard input arguments.
+
+---
+
+# Question: What does the `xdg-open` command do?
+
+**Answer:**
+The `xdg-open` command opens a file or URL in the user’s preferred default application.
+
+---
+
+# Question: What is the purpose of the `yes` command?
+
+**Answer:**
+The `yes` command repeatedly outputs a string until interrupted.
+
+---
