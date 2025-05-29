@@ -681,3 +681,164 @@ An error will occur because Kotlin keywords are case-sensitive; `if` must be low
 
 ---
 
+# Question: What is the purpose of the Kotlin `when` expression?
+
+**Answer:**
+The `when` expression is used to select one of many code blocks to be executed, providing an easier-to-read alternative to multiple `if..else` expressions.
+
+---
+
+# Question: How does the `when` expression work internally?
+
+**Answer:**
+
+* The `when` variable is evaluated once.
+* Its value is compared with each branch’s value.
+* Each branch has a value followed by an arrow `->` and a result.
+* When a match is found, the corresponding block is executed.
+* The `else` branch runs if no match is found.
+
+---
+
+# Question: Write a Kotlin `when` expression that returns the weekday name for the day number stored in variable `day`.
+
+**Answer:**
+
+```kotlin
+val result = when (day) {
+  1 -> "Monday"
+  2 -> "Tuesday"
+  3 -> "Wednesday"
+  4 -> "Thursday"
+  5 -> "Friday"
+  6 -> "Saturday"
+  7 -> "Sunday"
+  else -> "Invalid day."
+}
+```
+
+---
+
+# Question: What will be the output if `day` equals 4 in the `when` example?
+
+**Answer:**
+The output will be:
+
+```
+Thursday
+```
+
+---
+
+# Question: What is the Kotlin `when` expression similar to in Java?
+
+**Answer:**
+The Kotlin `when` expression is similar to the `switch` statement in Java.
+
+---
+
+# Question: What happens if no branch in a `when` expression matches the variable's value and there is no `else` branch?
+
+**Answer:**
+The code will not compile because `when` requires an `else` branch to handle unmatched cases, unless all possible cases are covered.
+
+---
+
+# Question: What is the purpose of loops in programming?
+
+**Answer:**
+Loops execute a block of code repeatedly as long as a specified condition is true, helping save time, reduce errors, and make code more readable.
+
+---
+
+# Question: What is the syntax of a `while` loop in Kotlin?
+
+**Answer:**
+
+```kotlin
+while (condition) {
+  // code block to be executed
+}
+```
+
+---
+
+# Question: In the `while` loop example below, what is the output?
+
+```kotlin
+var i = 0
+while (i < 5) {
+  println(i)
+  i++
+}
+```
+
+**Answer:**
+The output will be:
+
+```
+0
+1
+2
+3
+4
+```
+
+---
+
+# Question: Why is it important to increase the variable inside a `while` loop?
+
+**Answer:**
+If the variable is not increased, the condition will never become false, causing an infinite loop.
+
+---
+
+# Question: What is the difference between a `while` loop and a `do..while` loop in Kotlin?
+
+**Answer:**
+A `while` loop checks the condition before executing the code block, so it may not execute at all if the condition is false initially.
+A `do..while` loop executes the code block once before checking the condition, ensuring the block runs at least once.
+
+---
+
+# Question: What is the syntax of a `do..while` loop in Kotlin?
+
+**Answer:**
+
+```kotlin
+do {
+  // code block to be executed
+} while (condition)
+```
+
+---
+
+# Question: What will the following Kotlin code output?
+
+```kotlin
+var i = 0
+do {
+  println(i)
+  i++
+} while (i < 5)
+```
+
+**Answer:**
+The output will be:
+
+```
+0
+1
+2
+3
+4
+```
+
+---
+
+# Question: Can a `do..while` loop run even if the condition is false initially? Explain.
+
+**Answer:**
+Yes, because the code block in a `do..while` loop executes before the condition is tested, it runs at least once regardless of the condition.
+
+---
