@@ -194,3 +194,45 @@ A cipher key is a secret value (such as a number or string) shared between the s
 
 ---
 
+# Question: Why is it difficult to decrypt a transposition message without the key?
+
+**Answer:**
+Without the key, the sequence of rearranged letters is unknown, making it nearly impossible to reverse the process accurately without trying an enormous number of possibilities.
+
+---
+
+# Question: What is one strategy for maintaining encryption security against leaks?
+
+**Answer:**
+Regularly changing the cipher key helps prevent leaks from compromising the encryption, even if someone learns the method being used.
+
+---
+
+# Question: What is a brute-force attack in the context of encryption?
+
+**Answer:**
+A brute-force attack tries every possible permutation or key until the correct plaintext is found. It’s a trial-and-error method that becomes impractical when the number of combinations is very large.
+
+---
+
+# Question: How many possible permutations are there for the message "CATHY LIKES KEITH" using transposition?
+
+**Answer:**
+There are approximately **40 billion** possible permutations, making brute-force decryption very difficult without additional clues.
+
+---
+
+# Question: Why are brute-force attacks often inefficient?
+
+**Answer:**
+Because they test all possible combinations, many of which are nonsensical. This makes the process extremely slow unless additional information can help narrow down the possibilities.
+
+---
+
+# Question: How can an attacker improve their chances without using brute force?
+
+**Answer:**
+By using language patterns or context—like recognizing that most English words don’t start with “HT,” or guessing likely names or words in the message—an attacker can eliminate many permutations.
+
+---
+
