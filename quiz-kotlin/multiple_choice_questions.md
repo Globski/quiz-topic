@@ -842,3 +842,389 @@ The output will be:
 Yes, because the code block in a `do..while` loop executes before the condition is tested, it runs at least once regardless of the condition.
 
 ---
+
+# Question: What does the `break` statement do in a Kotlin loop?
+
+**Answer:**
+The `break` statement immediately exits the loop, stopping any further iterations.
+
+---
+
+# Question: In the example below, when does the loop stop executing?
+
+```kotlin
+var i = 0
+while (i < 10) {
+  println(i)
+  i++
+  if (i == 4) {
+    break
+  }
+}
+```
+
+**Answer:**
+The loop stops executing when `i` becomes equal to 4, so the output will include values from 0 to 3.
+
+---
+
+# Question: What does the `continue` statement do in a Kotlin loop?
+
+**Answer:**
+The `continue` statement skips the current iteration of the loop and proceeds with the next iteration.
+
+---
+
+# Question: In the example below, which value is skipped during the loop?
+
+```kotlin
+var i = 0
+while (i < 10) {
+  if (i == 4) {
+    i++
+    continue
+  }
+  println(i)
+  i++
+}
+```
+
+**Answer:**
+The value `4` is skipped and not printed.
+
+---
+
+# Question: Why is `i++` called before `continue` in the example with `continue`?
+
+**Answer:**
+Because `continue` skips the rest of the loop body, `i++` must be called before `continue` to avoid an infinite loop.
+
+---
+
+# Question: How do you create an array in Kotlin with the values "Volvo", "BMW", "Ford", and "Mazda"?
+
+**Answer:**
+Use the `arrayOf()` function with comma-separated values:
+
+```kotlin
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+```
+
+---
+
+# Question: How do you access the first element of an array named `cars`?
+
+**Answer:**
+By referring to the index 0 inside square brackets:
+
+```kotlin
+cars[0]
+```
+
+---
+
+# Question: What is the output of this code?
+
+```kotlin
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+println(cars[0])
+```
+
+**Answer:**
+
+```
+Volvo
+```
+
+---
+
+# Question: How can you change the first element of the `cars` array to "Opel"?
+
+**Answer:**
+Assign the new value to the element at index 0:
+
+```kotlin
+cars[0] = "Opel"
+```
+
+---
+
+# Question: How do you find the number of elements in an array `cars`?
+
+**Answer:**
+By using the `.size` property:
+
+```kotlin
+cars.size
+```
+
+---
+
+# Question: How can you check if the element `"Volvo"` exists in the `cars` array?
+
+**Answer:**
+By using the `in` operator:
+
+```kotlin
+if ("Volvo" in cars) {
+  // element exists
+}
+```
+
+---
+
+# Question: Write a Kotlin loop to print all elements in the array `cars`.
+
+**Answer:**
+
+```kotlin
+for (x in cars) {
+  println(x)
+}
+```
+
+---
+
+# Question: What index does the first element of an array have in Kotlin?
+
+**Answer:**
+The first element has the index `0`.
+
+---
+
+# Question: How do you loop through all elements of an array in Kotlin?
+
+**Answer:**
+Use the `for` loop with the `in` operator:
+
+```kotlin
+for (x in array) {
+  // code to execute for each element x
+}
+```
+
+---
+
+# Question: Write a Kotlin `for` loop that prints all elements in the array `cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")`.
+
+**Answer:**
+
+```kotlin
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+for (x in cars) {
+  println(x)
+}
+```
+
+---
+
+# Question: Can the Kotlin `for` loop be used to iterate over arrays of types other than strings? Give an example.
+
+**Answer:**
+Yes. For example, iterating over an array of integers:
+
+```kotlin
+val nums = arrayOf(1, 5, 10, 15, 20)
+for (x in nums) {
+  println(x)
+}
+```
+
+---
+
+# Question: Does Kotlin have the traditional for loop syntax found in Java (e.g., for(init; condition; increment))?
+
+**Answer:**
+No, Kotlin does not have the traditional for loop syntax. Instead, it uses the `for` loop to iterate over arrays, ranges, or other iterable collections.
+
+---
+
+# Question: What kinds of collections or data can Kotlin's `for` loop iterate over?
+
+**Answer:**
+Kotlin's `for` loop can iterate over arrays, ranges, and other collections or objects that contain a countable number of values.
+
+---
+
+# Question: How do you create a range of characters from 'a' to 'x' in Kotlin?
+
+**Answer:**
+Use the `..` operator to create a range:
+
+```kotlin
+for (chars in 'a'..'x') {
+  println(chars)
+}
+```
+
+---
+
+# Question: Does a Kotlin range include both the first and last values?
+
+**Answer:**
+Yes, ranges include both the start and the end values.
+
+---
+
+# Question: How do you create a range of numbers from 5 to 15 in Kotlin?
+
+**Answer:**
+Use the `..` operator in a for loop:
+
+```kotlin
+for (nums in 5..15) {
+  println(nums)
+}
+```
+
+---
+
+# Question: How can you check if a value exists in an array using Kotlin?
+
+**Answer:**
+Use the `in` operator to check if the value is contained in the array:
+
+```kotlin
+if (value in array) {
+  // it exists
+}
+```
+
+---
+
+# Question: What will the following code do?
+
+```kotlin
+for (nums in 5..15) {
+  if (nums == 10) {
+    break
+  }
+  println(nums)
+}
+```
+
+**Answer:**
+It will print numbers from 5 up to 9 and then stop the loop when `nums` equals 10.
+
+---
+
+# Question: What will the following code do?
+
+```kotlin
+for (nums in 5..15) {
+  if (nums == 10) {
+    continue
+  }
+  println(nums)
+}
+```
+
+**Answer:**
+It will print all numbers from 5 to 15 except it will skip printing 10.
+
+---
+
+# Question: Can you use `break` and `continue` statements inside a Kotlin range-based `for` loop?
+
+**Answer:**
+Yes, you can use both `break` to exit the loop early and `continue` to skip the current iteration.
+
+---
+
+# Question: What keyword is used to declare a function in Kotlin?
+
+**Answer:**
+The `fun` keyword is used to declare a function.
+
+---
+
+# Question: How do you define a simple function named `myFunction` that prints "I just got executed!"?
+
+**Answer:**
+
+```kotlin
+fun myFunction() {
+  println("I just got executed!")
+}
+```
+
+---
+
+# Question: How do you call a function named `myFunction` in Kotlin?
+
+**Answer:**
+Write the function name followed by parentheses:
+
+```kotlin
+myFunction()
+```
+
+---
+
+# Question: What is the difference between a function parameter and an argument?
+
+**Answer:**
+A parameter is a variable in the function declaration (e.g., `fname`), while an argument is the actual value passed to the function when called (e.g., `"John"`).
+
+---
+
+# Question: Write a function `myFunction` that takes a String parameter `fname` and prints `<fname> Doe`.
+
+**Answer:**
+
+```kotlin
+fun myFunction(fname: String) {
+  println(fname + " Doe")
+}
+```
+
+---
+
+# Question: Can Kotlin functions have multiple parameters? Provide an example.
+
+**Answer:**
+Yes. Example:
+
+```kotlin
+fun myFunction(fname: String, age: Int) {
+  println(fname + " is " + age)
+}
+```
+
+---
+
+# Question: How do you specify a return type for a Kotlin function?
+
+**Answer:**
+Specify the return type after the parentheses using a colon. For example, for an `Int` return type:
+
+```kotlin
+fun myFunction(x: Int): Int {
+  return x + 5
+}
+```
+
+---
+
+# Question: How can you write a Kotlin function with a shorter syntax that returns the sum of two integers?
+
+**Answer:**
+
+```kotlin
+fun myFunction(x: Int, y: Int) = x + y
+```
+
+---
+
+# Question: What does the following function return when called with argument `3`?
+
+```kotlin
+fun myFunction(x: Int): Int {
+  return (x + 5)
+}
+```
+
+**Answer:**
+It returns `8` because it adds 5 to the argument (3 + 5).
+
+---
