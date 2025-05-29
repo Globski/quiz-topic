@@ -376,3 +376,65 @@ By calling the `toLong()` function on the `Int` variable, e.g., `val y: Long = x
 
 ---
 
+# Question: What are operators in Kotlin?
+
+**Answer:**
+Operators are symbols used to perform operations on variables and values, with operands being the values involved in the operation.
+
+---
+
+# Question: What are the four main groups of Kotlin operators?
+
+**Answer:**
+The four main groups are Arithmetic operators, Assignment operators, Comparison operators, and Logical operators.
+
+---
+
+# Question: Name at least three arithmetic operators in Kotlin and their functions.
+
+**Answer:**
+
+* `+` Addition: adds two values
+* `-` Subtraction: subtracts one value from another
+* `*` Multiplication: multiplies two values
+* `/` Division: divides one value by another
+* `%` Modulus: returns the remainder of division
+* `++` Increment: increases a value by 1
+* `--` Decrement: decreases a value by 1
+
+---
+
+# Question: What does the assignment operator `+=` do?
+
+**Answer:**
+The `+=` operator adds a value to a variable and assigns the result back to that variable (e.g., `x += 5` is equivalent to `x = x + 5`).
+
+---
+
+# Question: How does the comparison operator `!=` work?
+
+**Answer:**
+The `!=` operator checks if two values are not equal and returns `true` if they are different, otherwise `false`.
+
+---
+
+# Question: What does the logical operator `&&` (Logical and) do?
+
+**Answer:**
+The `&&` operator returns `true` only if both conditions on its sides are `true`.
+
+---
+
+# Question: What is the function of the logical NOT operator `!`?
+
+**Answer:**
+The `!` operator reverses the result of a Boolean expression, returning `false` if the expression is `true`, and vice versa.
+
+---
+
+# Question: Give an example of using the modulus operator `%` in Kotlin.
+
+**Answer:**
+Example: `val remainder = 10 % 3` results in `remainder` being `1`, because 10 divided by 3 leaves a remainder of 1.
+
+---
