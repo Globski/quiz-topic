@@ -438,3 +438,246 @@ The `!` operator reverses the result of a Boolean expression, returning `false` 
 Example: `val remainder = 10 % 3` results in `remainder` being `1`, because 10 divided by 3 leaves a remainder of 1.
 
 ---
+
+# Question: How do you declare a string variable in Kotlin?
+
+**Answer:**
+You can declare a string variable by assigning text surrounded by double quotes, for example: `var greeting = "Hello"`. Specifying the type explicitly as `String` is optional.
+
+---
+
+# Question: How do you access the first and third characters in a Kotlin string?
+
+**Answer:**
+Use the index inside square brackets, starting at 0. For example, `txt[0]` accesses the first character, and `txt[2]` accesses the third character.
+
+---
+
+# Question: How do you find the length of a string in Kotlin?
+
+**Answer:**
+Use the `length` property on the string object, for example: `txt.length`.
+
+---
+
+# Question: What do the functions `toUpperCase()` and `toLowerCase()` do?
+
+**Answer:**
+`toUpperCase()` converts all characters in the string to uppercase; `toLowerCase()` converts all characters to lowercase.
+
+---
+
+# Question: How does the `compareTo()` function work when comparing two strings?
+
+**Answer:**
+It compares two strings and returns `0` if they are equal.
+
+---
+
+# Question: What does the `indexOf()` function return?
+
+**Answer:**
+It returns the index (position) of the first occurrence of a specified substring within a string, counting from zero.
+
+---
+
+# Question: How can you include quotes inside a Kotlin string?
+
+**Answer:**
+Use single quotes `'` inside a double-quoted string, for example: `var txt = "It's alright"`.
+
+---
+
+# Question: How do you concatenate two strings in Kotlin?
+
+**Answer:**
+You can use the `+` operator or the `plus()` function. For example: `"John" + " " + "Doe"` or `"John ".plus("Doe")`.
+
+---
+
+# Question: What is a string template in Kotlin and how is it used?
+
+**Answer:**
+A string template allows embedding variables or expressions inside a string using the `$` symbol, e.g., `println("My name is $firstName $lastName")`.
+
+---
+
+# Question: What values can a Boolean variable in Kotlin hold?
+
+**Answer:**
+A Boolean variable can only hold `true` or `false`.
+
+---
+
+# Question: How do you declare a Boolean variable with an explicit type in Kotlin?
+
+**Answer:**
+You declare it using the `Boolean` keyword, for example: `val isKotlinFun: Boolean = true`.
+
+---
+
+# Question: Can Kotlin infer the type of a Boolean variable if not explicitly specified?
+
+**Answer:**
+Yes, Kotlin can infer the type, so you can write: `val isKotlinFun = true`.
+
+---
+
+# Question: What does a Boolean expression return?
+
+**Answer:**
+It returns a Boolean value: `true` or `false`.
+
+---
+
+# Question: Give an example of a Boolean expression using the greater than operator.
+
+**Answer:**
+`println(10 > 9)` which returns `true`.
+
+---
+
+# Question: What will `println(x == 10)` return if `x` is declared as `val x = 10`?
+
+**Answer:**
+It will return `true` because `x` is equal to 10.
+
+---
+
+# Question: What will `println(10 == 15)` output?
+
+**Answer:**
+It will output `false` because 10 is not equal to 15.
+
+---
+
+# Question: What logical conditions does Kotlin support for comparisons?
+
+**Answer:**
+Kotlin supports the usual logical conditions from mathematics:
+
+* Less than: `a < b`
+* Less than or equal to: `a <= b`
+* Greater than: `a > b`
+* Greater than or equal to: `a >= b`
+* Equal to: `a == b`
+* Not equal to: `a != b`
+
+---
+
+# Question: What is the basic syntax to use an `if` statement in Kotlin?
+
+**Answer:**
+
+```kotlin
+if (condition) {
+  // block of code to be executed if the condition is true
+}
+```
+
+The keyword `if` must be lowercase.
+
+---
+
+# Question: How do you use an `else` block in Kotlin?
+
+**Answer:**
+You use `else` to specify a block of code that executes if the `if` condition is false:
+
+```kotlin
+if (condition) {
+  // executes if condition is true
+} else {
+  // executes if condition is false
+}
+```
+
+---
+
+# Question: What does the `else if` statement do in Kotlin?
+
+**Answer:**
+`else if` allows testing a new condition if the previous `if` condition is false:
+
+```kotlin
+if (condition1) {
+  // executes if condition1 is true
+} else if (condition2) {
+  // executes if condition1 is false and condition2 is true
+} else {
+  // executes if both condition1 and condition2 are false
+}
+```
+
+---
+
+# Question: How can Kotlin’s `if..else` be used differently from Java’s?
+
+**Answer:**
+In Kotlin, `if..else` can be used both as a statement and as an expression to assign a value to a variable, whereas in Java, `if..else` is typically used only as a statement.
+
+---
+
+# Question: Show an example of using `if` as an expression in Kotlin to assign a value.
+
+**Answer:**
+
+```kotlin
+val time = 20
+val greeting = if (time < 18) {
+  "Good day."
+} else {
+  "Good evening."
+}
+println(greeting)
+```
+
+The variable `greeting` gets a value based on the condition.
+
+---
+
+# Question: Is the `else` block required when using `if` as an expression in Kotlin? Why?
+
+**Answer:**
+Yes, `else` is required when using `if` as an expression because every possible condition must return a value to assign to the variable.
+
+---
+
+# Question: Can you omit curly braces `{}` in Kotlin `if` statements? Under what condition?
+
+**Answer:**
+Yes, you can omit curly braces `{}` if the `if` or `else` block contains only a single statement.
+
+---
+
+# Question: What will the following Kotlin code output?
+
+```kotlin
+val time = 22
+if (time < 10) {
+  println("Good morning.")
+} else if (time < 20) {
+  println("Good day.")
+} else {
+  println("Good evening.")
+}
+```
+
+**Answer:**
+It will output:
+
+```
+Good evening.
+```
+
+Because `time` (22) is greater than both 10 and 20, the else block executes.
+
+---
+
+# Question: What error will occur if you write `If` or `IF` instead of `if` in Kotlin?
+
+**Answer:**
+An error will occur because Kotlin keywords are case-sensitive; `if` must be lowercase.
+
+---
+
