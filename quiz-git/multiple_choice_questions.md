@@ -310,3 +310,108 @@ GitHub shows the number of commits each branch is behind or ahead of the default
 Click the red trash icon next to the branch name on the branches page to delete it.
 
 ---
+
+
+---
+
+# Question: What happens to the option to restore a deleted branch on GitHub if you refresh the page or navigate away?
+
+**Answer:**
+The Restore button disappears, meaning you lose the chance to restore the recently deleted branch.
+
+---
+
+# Question: What is the purpose of the Raw button when viewing a file on GitHub?
+
+**Answer:**
+The Raw button opens the file in its raw form without any HTML formatting, which is useful for downloading the file directly.
+
+---
+
+# Question: Why is the Raw file format useful when downloading files with command-line tools like Wget or Curl?
+
+**Answer:**
+Because it provides the pure file content without HTML wrappers, ensuring you download the actual file rather than an HTML page.
+
+---
+
+# Question: What happens if you try to download a file from GitHub without using the Raw button?
+
+**Answer:**
+You might end up downloading an HTML file instead of the actual file content.
+
+---
+
+# Question: When do the Raw, Blame, and History buttons appear on GitHub?
+
+**Answer:**
+They appear when viewing a single file within a repository.
+
+---
+
+# Question: What does the Blame button on GitHub do?
+
+**Answer:**
+It uses Git’s blame function to show who last modified each line of a file and when.
+
+---
+
+# Question: Why might the README.md file not be ideal to demonstrate GitHub’s Blame feature?
+
+**Answer:**
+Because it typically has very few commits or changes, so there is less line-by-line history to show.
+
+---
+
+# Question: What example repository is suggested for better exploring the Blame feature?
+
+**Answer:**
+The repository at [https://github.com/gitlabhq/gitlabhq](https://github.com/gitlabhq/gitlabhq), specifically the file `app/models/ability.rb`.
+
+---
+
+# Question: How does GitHub enhance the functionality of `git blame` compared to the terminal command?
+
+**Answer:**
+GitHub annotates every line of code showing who, when, and in what commit the line was changed, with color-coded "hotness" bars indicating older (brown) and newer (yellow) commits.
+
+---
+
+# Question: What does the History button on GitHub show for a particular file?
+
+**Answer:**
+It shows the commit history (similar to Git’s `git log`) for that specific file.
+
+---
+
+# Question: Where are the Watch, Star, and Fork buttons located on a GitHub repository page?
+
+**Answer:**
+They are located at the top-right corner of every public repository page.
+
+---
+
+# Question: What is the purpose of the Watch button on GitHub?
+
+**Answer:**
+It manages your subscription level to a repository’s notifications, letting you control how and when you get notified about repository activity.
+
+---
+
+# Question: What are the three levels of subscription for the Watch button on GitHub?
+
+**Answer:**
+
+1. Never notified unless explicitly participating or mentioned
+2. Notified only if you participate or are mentioned
+3. Always notified (default when creating a new repository)
+
+---
+
+# Question: Where can you view and manage your GitHub notifications?
+
+**Answer:**
+In the notifications area at [https://github.com/notifications](https://github.com/notifications), where you can also mark notifications as read.
+
+---
+
