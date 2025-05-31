@@ -488,3 +488,83 @@ It can be used for feature requests, as a discussion board for projects or blogs
 Examples include [http://github.com/andreareginato/betterspecs/issues](http://github.com/andreareginato/betterspecs/issues) and [https://github.com/frabcus/house/issues](https://github.com/frabcus/house/issues).
 
 ---
+
+---
+
+# Question: Where do you go to see all issue activity for a GitHub repository?
+
+**Answer:**
+At [https://github.com/](https://github.com/)<username>/<repository>/issues.
+
+---
+
+# Question: What do you see if no issues have been created yet in a repository?
+
+**Answer:**
+A blank page with a prompt from GitHub encouraging you to open a new issue.
+
+---
+
+# Question: What is the minimum requirement to create a new issue on GitHub?
+
+**Answer:**
+You must provide at least a descriptive title.
+
+---
+
+# Question: Why is the "Submit new issue" button sometimes grayed out and unclickable?
+
+**Answer:**
+Because the required title field has not been filled in yet.
+
+---
+
+# Question: What can you add under the Write tab when creating a new issue?
+
+**Answer:**
+You can add detailed information and start a discussion related to the issue.
+
+---
+
+# Question: Who can participate in the discussion started by an issue on a public repository?
+
+**Answer:**
+Anyone who views the public repository can participate.
+
+---
+
+# Question: How can you attach images to a GitHub issue?
+
+**Answer:**
+By dragging and dropping the image into the issue or by selecting it using folder navigation.
+
+---
+
+# Question: What is the purpose of the Preview tab when creating or editing a GitHub issue?
+
+**Answer:**
+To show how the written content will look after being converted from Markdown to formatted HTML.
+
+---
+
+# Question: What is Markdown in the context of GitHub issues?
+
+**Answer:**
+Markdown is a text-to-HTML conversion tool that lets you write structured text easily, which GitHub then converts to valid HTML.
+
+---
+
+# Question: Who originally wrote Markdown?
+
+**Answer:**
+John Gruber.
+
+---
+
+# Question: Where can you learn more about GitHub’s extended Markdown features?
+
+**Answer:**
+At [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/).
+
+---
+
