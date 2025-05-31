@@ -119,3 +119,109 @@ You should properly configure your Git username and email settings.
 Guides are available at [https://help.github.com/articles/setting-your-username-in-git/](https://help.github.com/articles/setting-your-username-in-git/) and [https://help.github.com/articles/setting-your-email-in-git/](https://help.github.com/articles/setting-your-email-in-git/).
 
 ---
+
+# Question: What URL do you visit to access the main page of your GitHub repository?
+
+**Answer:**
+You visit `https://github.com/<username>/<repository>`, where `<username>` is your GitHub username and `<repository>` is the repository name.
+
+---
+
+# Question: What does the `<username>` in the GitHub repository URL represent?
+
+**Answer:**
+It represents the GitHub username you registered with, which can be found at the top-right corner of the GitHub page.
+
+---
+
+# Question: How does GitHub’s web UI relate to common git commands?
+
+**Answer:**
+GitHub’s web UI presents many common git commands visually, making it easier to interact with repository features like commits.
+
+---
+
+# Question: What are the steps to create a README file and push it to GitHub from the command line?
+
+**Answer:**
+
+1. Create and enter a directory: `mkdir -p ~/github-essentials && cd $_`
+2. Create README.md: `echo "# github-essentials" >> README.md`
+3. Initialize git: `git init`
+4. Stage README.md: `git add README.md`
+5. Commit changes: `git commit -m "first commit"`
+6. Add remote origin: `git remote add origin git@github.com:<username>/<repository>.git`
+7. Push to master branch: `git push -u origin master`
+
+---
+
+# Question: Why is the SSH-based Git protocol (`git@github.com`) preferred when pushing code?
+
+**Answer:**
+Because it uses SSH underneath, so you don't have to enter your username and password every time you push or pull code.
+
+---
+
+# Question: Does the local directory name need to match the repository name on GitHub?
+
+**Answer:**
+No, the local directory name can be different. The important part is that the remote URL set with `git remote add` matches the GitHub repository URL.
+
+---
+
+# Question: What happens to the commit count on the GitHub project main page as you add more commits?
+
+**Answer:**
+The total number of commits increases and is displayed on the project’s main page as a clickable link.
+
+---
+
+# Question: What information can you see on the commits page on GitHub?
+
+**Answer:**
+You can browse the list of commits and see details similar to the output of the `git log` command, such as commit hashes, authors, dates, and commit messages.
+
+---
+
+# Question: How does the output of `git log` on your local machine compare to the GitHub commits page?
+
+**Answer:**
+Both show the same commit information, but GitHub presents it in a user-friendly graphical interface.
+
+---
+
+# Question: What three key pieces of information are shown for each commit on GitHub?
+
+**Answer:**
+The commit message, the time it was committed, and the commit SHA (shortened to the first 7 characters).
+
+---
+
+# Question: What happens when you click on the commit SHA or the commit message on GitHub?
+
+**Answer:**
+You see the detailed changes introduced by that specific commit.
+
+---
+
+# Question: How does GitHub’s view of a commit compare to the `git show <commit>` command?
+
+**Answer:**
+GitHub’s view displays the same detailed commit information and diffs as the `git show <commit>` command but in a graphical format.
+
+---
+
+# Question: What is the purpose of displaying the commit message in big bold letters on GitHub?
+
+**Answer:**
+To emphasize the importance of the commit message as it conveys the key changes or purpose of the commit.
+
+---
+
+# Question: Where on GitHub can you see which branches include a specific commit?
+
+**Answer:**
+Just under the commit message, GitHub shows the branches where the commit is included.
+
+---
+
