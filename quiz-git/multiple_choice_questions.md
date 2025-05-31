@@ -225,3 +225,88 @@ Just under the commit message, GitHub shows the branches where the commit is inc
 
 ---
 
+# Question: What additional information does GitHub show under the commit details besides the SHA, author, and date?
+
+**Answer:**
+GitHub shows how many files changed during the commit and the number of additions and deletions made.
+
+---
+
+# Question: How does GitHub visually represent added and removed changes in a commit?
+
+**Answer:**
+Added changes are shown in green, while removed changes are shown in a pinkish color.
+
+---
+
+# Question: How do you create and switch to a new branch named `add_description` from the command line?
+
+**Answer:**
+Use the command: `git checkout -b add_description`
+
+---
+
+# Question: After creating the `add_description` branch and editing README.md, what are the steps to commit and push the changes to GitHub?
+
+**Answer:**
+
+1. Edit README.md and add text
+2. Stage changes: `git add README.md`
+3. Commit: `git commit -m "Add second level header to README file"`
+4. Push to the new branch: `git push origin add_description`
+
+---
+
+# Question: How do you create a second branch named `new_feature` from the master branch and push it to GitHub?
+
+**Answer:**
+
+1. Switch to master: `git checkout master`
+2. Create branch: `git branch new_feature`
+3. Push branch: `git push origin new_feature`
+
+---
+
+# Question: How many branches are visible on the main GitHub repository page after pushing the new branches?
+
+**Answer:**
+Three branches are visible on the main repository page.
+
+---
+
+---
+
+# Question: What information does the Overview page of the branches tab provide on GitHub?
+
+**Answer:**
+It provides an overview of the default branch, branches pushed from your account (Yours tab), most active branches in the last three months (Active tab), and stale branches not updated for over three months (Stale tab).
+
+---
+
+# Question: How can you change the default branch that appears on your project’s homepage?
+
+**Answer:**
+You can change the default branch in the project's settings, covered in detail in Chapter 6 of the book.
+
+---
+
+# Question: Why might the `new_feature` branch show an earlier update time than the `add_description` branch even though it was pushed later?
+
+**Answer:**
+Because `new_feature` has the same commit date as the master branch, which is dated before the `add_description` branch’s commits.
+
+---
+
+# Question: What does GitHub display next to each branch regarding its commits relative to the default branch?
+
+**Answer:**
+GitHub shows the number of commits each branch is behind or ahead of the default branch.
+
+---
+
+# Question: How do you delete a branch like `new_feature` on GitHub?
+
+**Answer:**
+Click the red trash icon next to the branch name on the branches page to delete it.
+
+---
