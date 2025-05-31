@@ -415,8 +415,6 @@ In the notifications area at [https://github.com/notifications](https://github.c
 
 ---
 
----
-
 # Question: How do you mention someone on GitHub to get their attention?
 
 **Answer:**
@@ -486,8 +484,6 @@ It can be used for feature requests, as a discussion board for projects or blogs
 
 **Answer:**
 Examples include [http://github.com/andreareginato/betterspecs/issues](http://github.com/andreareginato/betterspecs/issues) and [https://github.com/frabcus/house/issues](https://github.com/frabcus/house/issues).
-
----
 
 ---
 
@@ -568,8 +564,6 @@ At [https://guides.github.com/features/mastering-markdown/](https://guides.githu
 
 ---
 
----
-
 # Question: What does the Preview tab display when creating or editing a GitHub issue?
 
 **Answer:**
@@ -583,4 +577,30 @@ It displays a styled and formatted version of the issue content, showing how reg
 It supports proper URL formatting, image display, emoji rendering, and other rich text features.
 
 ---
+
+# Question: What do you do to finalize creating a new issue on GitHub?
+
+**Answer:**
+Click the "Submit new issue" button at the bottom of the page.
+
+---
+
+# Question: What unique identifier is assigned to each new GitHub issue?
+
+**Answer:**
+A unique issue number (e.g., #1 for the first issue).
+
+---
+
+# Question: What information is shown in the title area of a GitHub issue?
+
+**Answer:**
+The issue status (e.g., Open), the creator’s username, the creation time, and the number of comments.
+
+---
+
+# Question: How can the unique issue number be used later on?
+
+**Answer:**
+It can be used for referencing the issue in other issues, comments, or pull requests.
 
