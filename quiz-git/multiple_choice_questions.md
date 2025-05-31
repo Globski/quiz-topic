@@ -415,3 +415,76 @@ In the notifications area at [https://github.com/notifications](https://github.c
 
 ---
 
+---
+
+# Question: How do you mention someone on GitHub to get their attention?
+
+**Answer:**
+By prefixing their username with the at sign (@). GitHub also autocompletes usernames as you type.
+
+---
+
+# Question: What is the purpose of the Star button on GitHub?
+
+**Answer:**
+The Star button shows appreciation for a repository and indicates its popularity. Starred repositories are added to your personal starred list.
+
+---
+
+# Question: Where can you find a list of all the repositories you have starred?
+
+**Answer:**
+At [https://github.com/stars](https://github.com/stars).
+
+---
+
+# Question: How can you see the people who have starred a specific repository?
+
+**Answer:**
+By clicking the number next to the Star/Unstar button on that repository's page.
+
+---
+
+# Question: What is the main purpose of the Fork button on GitHub?
+
+**Answer:**
+To create a personal copy of a repository under your own namespace so you can freely modify it, typically used to contribute to projects.
+
+---
+
+# Question: What happens when you fork a repository like [https://github.com/axilleas/github-essentials](https://github.com/axilleas/github-essentials)?
+
+**Answer:**
+The repository is copied to your own GitHub account, and you gain full ownership and control over that copy.
+
+---
+
+---
+
+# Question: How do you add or change the description and website URL of a GitHub repository?
+
+**Answer:**
+On the main repository page, fill in the Description field with a project note and the Website field with a URL, then hit Save to apply changes immediately.
+
+---
+
+# Question: What is the primary use of GitHub's issue tracker?
+
+**Answer:**
+It is primarily used as a bug tracker to report and discuss bugs essential for project growth.
+
+---
+
+# Question: Besides bug tracking, what are some other uses of GitHub's issue tracker?
+
+**Answer:**
+It can be used for feature requests, as a discussion board for projects or blogs, and even as a notepad for personal tasks like house repairs.
+
+---
+
+# Question: Where can you find examples of GitHub issue trackers being used for purposes beyond bug tracking?
+
+**Answer:**
+Examples include [http://github.com/andreareginato/betterspecs/issues](http://github.com/andreareginato/betterspecs/issues) and [https://github.com/frabcus/house/issues](https://github.com/frabcus/house/issues).
+
+---
