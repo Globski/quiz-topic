@@ -568,3 +568,19 @@ At [https://guides.github.com/features/mastering-markdown/](https://guides.githu
 
 ---
 
+---
+
+# Question: What does the Preview tab display when creating or editing a GitHub issue?
+
+**Answer:**
+It displays a styled and formatted version of the issue content, showing how regular text, URLs, images, and emojis will appear after submission.
+
+---
+
+# Question: What formatting features does GitHub-flavored Markdown support in the Preview tab?
+
+**Answer:**
+It supports proper URL formatting, image display, emoji rendering, and other rich text features.
+
+---
+
