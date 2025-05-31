@@ -604,3 +604,37 @@ The issue status (e.g., Open), the creator’s username, the creation time, and 
 **Answer:**
 It can be used for referencing the issue in other issues, comments, or pull requests.
 
+---
+
+# Question: How can you edit a GitHub issue after creating it?
+
+**Answer:**
+Use the Edit button to change the title and the pencil icon to edit the issue description.
+
+---
+
+# Question: How do you close an issue on GitHub?
+
+**Answer:**
+Click the "Close issue" button. You can also comment and close the issue simultaneously by typing a comment, which changes the button to "Close and comment."
+
+---
+
+# Question: Who can be assigned to an issue in a GitHub repository?
+
+**Answer:**
+Collaborators with push access to the repository can be assigned issues.
+
+---
+
+# Question: Where do you assign an issue to a collaborator?
+
+**Answer:**
+Inside each issue, in the Assignee section.
+
+---
+
+# Question: Is it possible to assign multiple issues to a user at once?
+
+**Answer:**
+Yes, GitHub allows mass-assigning issues to a collaborator to save time.
