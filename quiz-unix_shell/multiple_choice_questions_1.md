@@ -1286,3 +1286,94 @@ Two advanced alternatives are:
 * `iftop` monitors network interface bandwidth usage.
 
 ---
+
+# Question: What does the `ls -a` option do?
+
+**Answer:**
+The `ls -a` option lists all files, including hidden files that start with a dot (`.`).
+
+---
+
+# Question: How can you make `ls` display colored output?
+
+**Answer:**
+Use the `ls --color` option with values `always`, `never`, or `auto` to control colored listing.
+
+---
+
+# Question: What does the `ls -d` option do?
+
+**Answer:**
+The `ls -d` option lists directories themselves, not their contents, often showing them with a trailing `/`.
+
+---
+
+# Question: What is the purpose of the `ls -F` option?
+
+**Answer:**
+The `ls -F` option appends a single character to entries to indicate their type: `/` for directories, `*` for executables, `@` for symbolic links, and others.
+
+---
+
+# Question: Which option shows the inode number of files?
+
+**Answer:**
+The `ls -i` option lists each file’s inode index number.
+
+---
+
+# Question: What information does the `ls -l` command display?
+
+**Answer:**
+The `ls -l` command shows a long format listing including file type, permissions, number of hard links, owner, group, file size, timestamp (modification time), and file name.
+
+---
+
+# Question: How can you list hidden files with detailed information using `ls`?
+
+**Answer:**
+Use `ls -la` to list all files including hidden ones in long format.
+
+---
+
+# Question: How do you display file sizes in a human-readable format with `ls`?
+
+**Answer:**
+Add the `-h` option to the long format listing: `ls -lh` shows file sizes in human-readable units like KB, MB.
+
+---
+
+# Question: What is the difference in sorting when using `ls -r`, `ls -S`, and `ls -t`?
+
+**Answer:**
+
+* `ls -r` lists files in reverse order.
+* `ls -S` sorts files by size.
+* `ls -t` sorts files by modification time.
+
+---
+
+# Question: In the `ls -l` output, what does the first character of each line represent?
+
+**Answer:**
+The first character indicates the file type, such as `d` for directory, `-` for regular file, and `l` for symbolic link.
+
+---
+
+# Question: What does the trailing `/`, `*`, and `@` mean when using `ls -F`?
+
+**Answer:**
+
+* `/` indicates a directory.
+* `*` indicates an executable file.
+* `@` indicates a symbolic link.
+
+---
+
+# Question: How does `ls` order the files by default when listing?
+
+**Answer:**
+`ls` lists files in alphabetical order with uppercase letters sorted before lowercase letters.
+
+---
+
