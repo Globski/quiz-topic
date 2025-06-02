@@ -565,3 +565,73 @@ Be careful not to delete `/` (root directory), as that will wipe the whole files
 
 ---
 
+# Question: What does the `ls -l` command display?
+
+**Answer:**
+It lists files and directories in long format, showing file permissions, number of links, owner, group, size, last modified date, and file/directory name.
+
+---
+
+# Question: In the permissions string `drwxrwxrwx`, what does the first character represent?
+
+**Answer:**
+The first character represents the file type: `d` means directory, `-` means regular file.
+
+---
+
+# Question: What do the groups of `rwx` in the permissions string indicate?
+
+**Answer:**
+The first `rwx` are permissions for the user (owner), the second `rwx` are for the group, and the third `rwx` are for others (everyone else).
+
+---
+
+# Question: What do the letters `r`, `w`, and `x` stand for in file permissions?
+
+**Answer:**
+`r` stands for read permission, `w` for write (modify) permission, and `x` for execute permission.
+
+---
+
+# Question: How is the permission to modify a file represented numerically when using `chmod`?
+
+**Answer:**
+Write permission `w` is represented by the number 2.
+
+---
+
+# Question: How would you set permissions so the owner has full permissions (read, write, execute), and the group and others have read and execute permissions on a directory called `test`?
+
+**Answer:**
+Use `chmod 755 test`. This sets permissions as owner: 7 (rwx), group: 5 (r-x), others: 5 (r-x).
+
+---
+
+# Question: What does the `ls -lh` command do?
+
+**Answer:**
+It lists files with detailed info (`-l`) and displays file sizes in a human-readable format (`-h`), like KB, MB.
+
+---
+
+# Question: How do you list hidden files in the current directory?
+
+**Answer:**
+Use `ls -a` to list all files including hidden ones (those starting with a dot).
+
+---
+
+# Question: What does the `ls -s` command show?
+
+**Answer:**
+It shows the size (in blocks) of each file/directory in the current directory.
+
+---
+
+# Question: How can you list all files and directories recursively, including subdirectories and their contents?
+
+**Answer:**
+Use `ls -R` to display files and directories recursively.
+
+---
+
