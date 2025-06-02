@@ -80,3 +80,169 @@ You should specify the relative path including the folder name, for example: `hr
 
 ---
 
+# Question: What is the difference between internal styles and external stylesheets in CSS?
+
+**Answer:**
+Internal styles are CSS rules enclosed within `<style></style>` tags inside the HTML document they style, typically placed inside the `<head>` element. They only apply to the document in which they live. External stylesheets are separate CSS files linked to HTML documents and can be reused across multiple pages.
+
+---
+
+# Question: Where must the `<style>` element be placed in an HTML document for proper validation?
+
+**Answer:**
+The `<style>` element must be placed inside the `<head>` element of the HTML document for proper HTML validation.
+
+---
+
+# Question: What is the purpose of the CSS `@import` at-rule?
+
+**Answer:**
+The `@import` at-rule is used to import style rules from other CSS style sheets into the current stylesheet.
+
+---
+
+# Question: Where must `@import` rules be placed within a CSS file?
+
+**Answer:**
+`@import` rules must precede all other types of CSS rules except for `@charset` rules.
+
+---
+
+# Question: Can `@import` be used inside conditional group at-rules?
+
+**Answer:**
+No, `@import` is not a nested statement and cannot be used inside conditional group at-rules.
+
+---
+
+# Question: How do you use the `@import` rule inside an internal style tag?
+
+**Answer:**
+Inside a `<style>` tag, you use `@import` like this:
+
+```css
+<style>
+  @import url('/css/styles.css');
+</style>
+```
+
+---
+
+# Question: How can you import an external CSS file into another CSS file?
+
+**Answer:**
+You can import it by writing `@import '/additional-styles.css';` at the top of the CSS file.
+
+---
+
+# Question: What is a common use case for importing external CSS files with `@import`?
+
+**Answer:**
+A common use case is importing font files, such as Google Fonts.
+
+---
+
+# Question: How do you specify media queries when using `@import`?
+
+**Answer:**
+You add an optional second argument with media queries, for example:
+
+```css
+@import '/print-styles.css' print;
+@import url('landscape.css') screen and (orientation:landscape);
+```
+
+---
+
+# Question: What are inline styles in CSS and when should they be used?
+
+**Answer:**
+Inline styles are CSS rules applied directly to an HTML element via the `style` attribute. They should be used sparingly, usually only when necessary to override other styles or ensure compatibility, such as in emails.
+
+---
+
+# Question: How do inline styles affect CSS specificity?
+
+**Answer:**
+Inline styles override any CSS rules defined in `<style>` tags or external stylesheets.
+
+---
+
+# Question: Why is using inline styles generally discouraged?
+
+**Answer:**
+Because inline styles reduce maintainability by mixing content and presentation and can be time-consuming and difficult to manage.
+
+---
+
+# Question: Provide an example of applying inline styles to an `<h1>` and a `<p>` element.
+
+**Answer:**
+
+```html
+<h1 style="color: green; text-decoration: underline;">Hello world!</h1>
+<p style="font-size: 25px; font-family: 'Trebuchet MS';">I ♥ CSS</p>
+```
+
+---
+
+# Question: How can JavaScript be used to change CSS styles of an element?
+
+**Answer:**
+JavaScript can access and modify an element's styles through the element's `.style` property, for example:
+
+```javascript
+var el = document.getElementById("element");
+el.style.opacity = 0.5;
+el.style.fontFamily = 'sans-serif';
+```
+
+---
+
+# Question: How are CSS property names formatted in JavaScript when accessed via `.style`?
+
+**Answer:**
+CSS property names are written in lower camel case in JavaScript (e.g., `font-family` becomes `fontFamily`).
+
+---
+
+# Question: Besides modifying styles directly on elements, what else can JavaScript do to affect CSS?
+
+**Answer:**
+JavaScript can create new `<style>` or `<link>` elements dynamically and append them to the `<head>` or `<body>` of the document.
+
+---
+
+# Question: How can jQuery be used to modify CSS properties?
+
+**Answer:**
+With jQuery, use the `.css()` method, for example:
+
+```javascript
+$('#element').css('margin', '5px');
+```
+
+---
+
+# Question: How can jQuery modify multiple CSS properties at once?
+
+**Answer:**
+By passing an object to `.css()`, for example:
+
+```javascript
+$('#element').css({
+  margin: "5px",
+  padding: "10px",
+  color: "black"
+});
+```
+
+---
+
+# Question: How does jQuery handle CSS property names with hyphens?
+
+**Answer:**
+jQuery allows hyphenated property names to be either quoted as strings (e.g., `"background-color"`) or camel-cased (e.g., `fontSize`).
+
+---
+
