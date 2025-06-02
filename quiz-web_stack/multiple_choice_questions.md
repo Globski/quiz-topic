@@ -334,3 +334,96 @@ It tells the browser to render the page content at the width of the device scree
 No, it is not a formal standard but has become the de facto method introduced by Apple for controlling page rendering on mobile devices.
 
 
+# Question: Why do web pages without CSS render poorly on devices like the iPhone 13 by default?
+
+**Answer:**
+Because iOS renders web pages at a fixed width of 980 pixels by default and shrinks them down to fit the smaller viewport, making the page appear like a desktop site scaled down, which looks unattractive and is hard to read.
+
+---
+
+# Question: What is the purpose of the viewport meta tag in responsive web design?
+
+**Answer:**
+The viewport meta tag tells the browser how to render the page, specifically instructing it to make the content render at the width of the device’s screen, enabling better mobile-friendly layouts.
+
+---
+
+# Question: What does the viewport technically refer to in a browser window?
+
+**Answer:**
+The viewport is the area of a browser window where the web page is visible, excluding browser toolbars, URL bars, and other interface elements.
+
+---
+
+# Question: How can you make an image scale fluidly across different screen sizes using CSS?
+
+**Answer:**
+By setting `max-width: 100%;` on the image, it ensures the image will scale down to fit within its container but never exceed its original size, making it fluid across various viewport widths.
+
+---
+
+# Question: Why might using `width: 100%` on images cause issues compared to `max-width: 100%`?
+
+**Answer:**
+Using `width: 100%` forces the image to always stretch to fill the container, which can cause smaller images to become oversized if the container is larger than the image’s intrinsic size. In contrast, `max-width: 100%` prevents images from exceeding their natural width.
+
+---
+
+# Question: What problem occurs with page’s layout at viewport widths larger than 800 pixels?
+
+**Answer:**
+The layout, especially the image, begins to stretch and look distorted because the basic styles are not optimized for larger screens, requiring adjustments like resizing and repositioning elements.
+
+---
+
+# Question: What layout adjustments are suggested when the viewport width exceeds 800 pixels?
+
+**Answer:**
+The main hero image is limited in size and positioned on the right, while the introductory text is positioned to the left, improving the layout on larger screens.
+
+---
+
+# Question: What are CSS media queries and how do they help in responsive design?
+
+**Answer:**
+Media queries are CSS directives that apply styles conditionally based on environment factors like screen width, allowing the layout to change and adapt to different viewport sizes.
+
+---
+
+# Question: What does the term “breakpoint” mean in responsive web design?
+
+**Answer:**
+A breakpoint is a specific viewport width or height where the design should significantly change its layout or styling to better fit the screen size.
+
+---
+
+# Question: Why is it considered bad practice to design specifically for popular device sizes using fixed breakpoints?
+
+**Answer:**
+Because it limits responsiveness to only certain screen sizes, rather than allowing the design to adapt fluidly to any viewport size, which defeats the purpose of truly responsive design.
+
+---
+
+# Question: How is a minimum-width media query written in CSS?
+
+**Answer:**
+It is written as:
+
+```css
+@media screen and (min-width: 800px) {
+  /* styles */
+}
+```
+
+This applies the enclosed styles only if the viewport is at least 800 pixels wide.
+
+---
+
+# Question: What is the “smallest screen first” approach in writing CSS for responsive design?
+
+**Answer:**
+It means writing the base styles for the smallest or least capable devices first, then progressively enhancing the design using media queries for larger screens.
+
+---
+
+
