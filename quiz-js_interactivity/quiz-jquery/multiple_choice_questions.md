@@ -160,3 +160,81 @@ Load one jQuery version, call `jQuery.noConflict(true)` to assign it to a unique
 
 ---
 
+# Question: What are the two ways to use jQuery in code?
+
+**Answer:**
+jQuery can be used as a function `jQuery(...)` or as a variable/property like `jQuery.foo`. The `$` symbol is an alias for `jQuery` and can usually be used interchangeably unless `jQuery.noConflict();` has been called.
+
+---
+
+# Question: How can you add text content to a `<div>` with id `demo_div` using jQuery?
+
+**Answer:**
+You can use the `text()` function with either `jQuery` or `$` selector like this:
+`jQuery("#demo_div").text("Demo Text!");` or `$("#demo_div").text("Demo Text!");`
+Both will set the inner text of the div to "Demo Text!".
+
+---
+
+# Question: Why is the `$` alias generally preferred over using `jQuery`?
+
+**Answer:**
+Because `$` is more concise and shorter to write, making the code simpler and quicker to type.
+
+---
+
+# Question: What does the jQuery selector `$("#demo_div")` use internally to select elements?
+
+**Answer:**
+It uses CSS selectors internally; in this case, an ID selector (`#demo_div`).
+
+---
+
+# Question: How can you load jQuery on a webpage that does not already include it using the Chrome Developer Tools console?
+
+**Answer:**
+By running the following code in the console:
+
+```javascript
+var j = document.createElement('script');
+j.onload = function(){ jQuery.noConflict(); };
+j.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js";
+document.getElementsByTagName('head')[0].appendChild(j);
+```
+
+---
+
+# Question: What does the function `jQuery.noConflict();` do when loading jQuery manually?
+
+**Answer:**
+It releases the `$` alias so it does not conflict with other libraries that might use `$`.
+
+---
+
+# Question: Where is the recommended place to include the jQuery `<script>` tag in your HTML?
+
+**Answer:**
+It is recommended to place the `<script>` tag inside the `<head>` section of the HTML.
+
+---
+
+# Question: What is the purpose of using the `async` attribute in the script tag when loading jQuery?
+
+**Answer:**
+The `async` attribute allows the script to be loaded and executed asynchronously as soon as it is available, without blocking the HTML parsing.
+
+---
+
+# Question: What is a potential risk of loading multiple JavaScript libraries asynchronously when one depends on another?
+
+**Answer:**
+If the dependent library loads and executes before the library it depends on, it may throw errors and break the application.
+
+---
+
+# Question: How do you get the official jQuery CDN URL for a specific version?
+
+**Answer:**
+You visit the jQuery website, choose the version you want, and copy the uncompressed or minified script tag provided.
+
+---
