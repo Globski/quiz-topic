@@ -138,3 +138,46 @@ There is a growing difference between the smallest and largest screens used to b
 It uses HTML and CSS to create layouts that adapt to different screen sizes, input types, and device/browser capabilities, allowing websites to work well across multiple devices.
 
 ---
+
+# Question: Who coined the term "responsive web design," and when?
+
+**Answer:**
+Ethan Marcotte coined the term in 2010.
+
+---
+
+# Question: What three techniques did Ethan Marcotte unify under the term responsive web design?
+
+**Answer:**
+Flexible grid layout, flexible images/media, and media queries.
+
+---
+
+# Question: How can responsive web design be summarized in a nutshell?
+
+**Answer:**
+It is the presentation of web content in the most relevant format for the viewport and device accessing it.
+
+---
+
+# Question: What was the common initial approach to responsive design, and why did it change?
+
+**Answer:**
+Initially, designs started fixed-width for desktop and scaled down for smaller screens. It changed because starting with the smallest screens first and progressively enhancing for larger screens proved more effective.
+
+---
+
+# Question: What is meant by “progressive enhancement” in responsive web design?
+
+**Answer:**
+It’s the process of building a basic experience for small or less capable devices first and then enhancing the design and content for larger or more capable devices.
+
+---
+
+# Question: What challenges does the variety of devices pose for responsive web design?
+
+**Answer:**
+It requires technical solutions that cater to a wide range of device capabilities and screen sizes to ensure good user experience for most users.
+
+---
+
