@@ -839,3 +839,87 @@ You can check your current default shell by echoing the `$SHELL` environment var
 
 ---
 
+# Question: How can you customize the shell prompt to show only the current directory?
+
+**Answer:**
+Set `PS1='\w $ '` to make the shell prompt show the current directory name followed by `$`. For example, it will display `~ $` if in the home directory.
+
+---
+
+# Question: What does the prompt `PS1='\h $ '` display?
+
+**Answer:**
+It displays the hostname followed by `$`. For example, `gotham $`.
+
+---
+
+# Question: How do you set the shell prompt to show the username only?
+
+**Answer:**
+Use `PS1='\u $ '` to display the username followed by `$`, e.g., `bruce $`.
+
+---
+
+# Question: What does `PS1='\t $ '` show in the shell prompt?
+
+**Answer:**
+It shows the current time in 24-hour format, like `22:37:31 $`.
+
+---
+
+# Question: Which PS1 value shows the shell prompt with the history number of the command?
+
+**Answer:**
+`PS1='! $ '` will display the command history number before the prompt.
+
+---
+
+# Question: What keyboard shortcut cuts or kills the text from the cursor to the end of the line in the shell?
+
+**Answer:**
+`Ctrl-k` cuts or kills text from the cursor to the end of the line.
+
+---
+
+# Question: How do you paste the last cut text in the shell?
+
+**Answer:**
+Use `Ctrl-y` to yank (paste) the last cut text.
+
+---
+
+# Question: What does pressing `Ctrl-a` do in the shell command line?
+
+**Answer:**
+`Ctrl-a` moves the cursor to the start of the line.
+
+---
+
+# Question: How can you clear the terminal screen using a keyboard shortcut?
+
+**Answer:**
+Press `Ctrl-l` to clear the screen or terminal.
+
+---
+
+# Question: How can you search your command history in reverse?
+
+**Answer:**
+Press `Ctrl-r` to start a reverse search through command history.
+
+---
+
+# Question: Where are the last 500 commands stored in the shell?
+
+**Answer:**
+They are stored in the `~/.bash_history` file.
+
+---
+
+# Question: How can you filter your command history to find commands containing a specific keyword?
+
+**Answer:**
+Use `history | grep <keyword>` to search the history for commands containing `<keyword>`.
+
+---
+
