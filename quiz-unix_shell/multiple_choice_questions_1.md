@@ -2501,3 +2501,73 @@ Unlike apt, most yum commands automatically check for and update repository meta
 
 ---
 
+# Question: How much free disk space should you have before compiling the Linux kernel on Ubuntu?
+
+**Answer:**
+You should have at least 15 GB of free disk space before compiling the Linux kernel on Ubuntu.
+
+---
+
+# Question: What is the advantage of using Git to compile the Linux kernel on Ubuntu?
+
+**Answer:**
+Using Git allows you to stay in sync with the latest Ubuntu kernel source.
+
+---
+
+# Question: After cloning the Ubuntu kernel source using Git, what command must you run to build the necessary control files?
+
+**Answer:**
+You must run `fakeroot debian/rules clean` to build the necessary control files.
+
+---
+
+# Question: Which command installs the build dependencies when downloading the source archive to rebuild standard Ubuntu kernel packages?
+
+**Answer:**
+`sudo apt-get build-dep linux-image-$(uname -r)` installs the build dependencies.
+
+---
+
+# Question: What is the purpose of downloading the source package and building it manually on Ubuntu?
+
+**Answer:**
+It is for users who want to modify or experiment with the Ubuntu-patched kernel source.
+
+---
+
+# Question: After extracting the Linux kernel source archive, which command do you use to build the ncurses configuration interface?
+
+**Answer:**
+You use the command `make menuconfig` to build the ncurses configuration interface.
+
+---
+
+# Question: How do you accept the default configuration in the `make menuconfig` interface?
+
+**Answer:**
+Highlight `< Exit >` using the arrow keys and press Return, then press Return again to save the configuration.
+
+---
+
+# Question: Which command compiles the Linux kernel after configuring it?
+
+**Answer:**
+The command `make` compiles the Linux kernel.
+
+---
+
+# Question: How can you speed up the compilation process of the Linux kernel?
+
+**Answer:**
+You can speed it up by using the `-j` flag with `make`, for example `make -j<number>`, to compile files in parallel using multiple CPU cores.
+
+---
+
+# Question: Where can you find the compressed kernel image after compiling the Linux kernel?
+
+**Answer:**
+The compressed kernel image can be found at `arch/[arch]/boot/bzImage`, where `[arch]` corresponds to the architecture output of `uname -a`.
+
+---
+
