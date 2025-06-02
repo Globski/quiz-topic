@@ -238,3 +238,57 @@ If the dependent library loads and executes before the library it depends on, it
 You visit the jQuery website, choose the version you want, and copy the uncompressed or minified script tag provided.
 
 ---
+
+
+# Question: What happens internally every time jQuery is called using `$()` or `jQuery()`?
+
+**Answer:**
+Internally, jQuery creates a new instance of the jQuery object by calling `new jQuery.fn.init(selector, context)`. This allows jQuery to return a new object without the caller needing to use the `new` keyword explicitly.
+
+---
+
+# Question: What is `jQuery.fn` in the jQuery source code?
+
+**Answer:**
+In the jQuery source code, `jQuery.fn` is an alias for `jQuery.prototype`. This means that all jQuery methods (like `.each()`, `.filter()`, `.children()`, etc.) are attached to `jQuery.fn`, making them available to every jQuery object instance. It exposes the prototype methods so they can be accessed or extended easily.
+
+**Source code snippet from the material:**
+
+```javascript
+jQuery = function( selector, context ) {
+  // The jQuery object is actually just the init constructor 'enhanced'
+  // Need init if jQuery is called (just allow error to be thrown if not included)
+  return new jQuery.fn.init( selector, context );
+}
+```
+
+Here, `jQuery.fn` refers to the prototype object where jQuery's methods are defined, enabling the creation of new jQuery instances without explicitly calling `new`.
+
+---
+
+# Question: How does jQuery internally structure the result of a selector?
+
+**Answer:**
+jQuery creates an array-like structure that holds the elements matched by the selector. If only one element is matched, the array-like structure contains just that single item.
+
+---
+
+# Question: How can you access the underlying native DOM element from a jQuery object?
+
+**Answer:**
+You can access the underlying DOM element by referencing the zero index of the jQuery object, for example:
+
+```javascript
+var $div = $("#myDiv");  
+var div = $div[0]; // native DOM element
+```
+
+---
+
+# Question: Why doesn’t a caller need to use the `new` keyword when creating a jQuery object?
+
+**Answer:**
+Because internally, jQuery’s main function returns a new instance of `jQuery.fn.init`, so the caller gets a new object without explicitly calling `new`.
+
+---
+
