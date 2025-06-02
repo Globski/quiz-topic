@@ -292,3 +292,115 @@ Use `chown owner1 filename` to change file ownership to user `owner1`.
 
 ---
 
+# Question: What command prints "Hello World" in the terminal?
+
+**Answer:**
+`echo "Hello World"` prints the text Hello World to the terminal.
+
+---
+
+# Question: How do you read the manual page for a command called `name`?
+
+**Answer:**
+Use `man name` to read the manual page for the command `name`.
+
+---
+
+# Question: Which command lets you search for man pages containing a specific keyword?
+
+**Answer:**
+`man -k <keyword>` outputs all man pages containing the specified keyword.
+
+---
+
+# Question: How can you get a list of all available bash commands?
+
+**Answer:**
+In Bash shell, use the `help` command to display all available bash commands.
+
+---
+
+# Question: What does `apropos editor` do?
+
+**Answer:**
+It outputs all applications whose one-line descriptions match the word "editor," useful if you don’t remember the exact command name.
+
+---
+
+# Question: Which command lists all installed packages on a Debian-based system?
+
+**Answer:**
+`dpkg -l` outputs a list of all installed packages.
+
+---
+
+# Question: How can you display the files installed by a specific Debian package?
+
+**Answer:**
+Use `dpkg -L packageName` to list all files and their paths installed by the package.
+
+---
+
+# Question: What command displays the hostname of the system?
+
+**Answer:**
+`hostname` displays the system's hostname.
+
+---
+
+# Question: How do you change the password of the current user?
+
+**Answer:**
+Use the `passwd` command to change the current user’s password.
+
+---
+
+# Question: What command shows the username of the user currently logged into the terminal?
+
+**Answer:**
+`whoami` shows the username of the current user.
+
+---
+
+# Question: Which command lists all users currently logged into the system?
+
+**Answer:**
+`who` lists all users currently logged in.
+
+---
+
+# Question: What command shows current system status, including time, user list, and other info?
+
+**Answer:**
+`w` displays the current system status, including logged-in users.
+
+---
+
+# Question: How can you view bad login attempts on the system?
+
+**Answer:**
+Use `lastb` to show all bad login attempts.
+
+---
+
+# Question: Which command lists all processes sorted by system resource usage, updating every few seconds?
+
+**Answer:**
+`top` lists all processes sorted by current system resource usage and updates dynamically.
+
+---
+
+# Question: How do you list all processes running under the user root?
+
+**Answer:**
+Use `ps -u root` to list all processes and commands run by root.
+
+---
+
+# Question: What does `ps aux` show?
+
+**Answer:**
+`ps aux` lists all processes running on the system by all users.
+
+---
+
