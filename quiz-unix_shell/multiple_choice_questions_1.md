@@ -2022,3 +2022,80 @@ Run `sudo killall sshd` and `sudo systemctl disable sshd.service`.
 
 ---
 
+# Question: What is the purpose of the `scp` command?
+
+**Answer:**
+`scp` is used to securely copy files to or from a remote destination over SSH.
+
+---
+
+# Question: How do you copy a local file in your current working directory to a remote directory?
+
+**Answer:**
+Use `scp localfile.txt /home/friend/share/`.
+
+---
+
+# Question: How do you copy a file from a remote server to your current working directory?
+
+**Answer:**
+Use `scp user@remotehost:/path/to/file ./`.
+
+---
+
+# Question: How do you copy a directory and its subdirectories using `scp`?
+
+**Answer:**
+Use the recursive option with `-r`, for example: `scp -r user@remotehost:/remote/dir ./localdir`.
+
+---
+
+# Question: How can you specify a private key file when using `scp`?
+
+**Answer:**
+Use the `-i` option followed by the key file, e.g., `scp -i my_key.pem file user@remotehost:/path`.
+
+---
+
+# Question: What is GnuPG (GPG) primarily used for?
+
+**Answer:**
+GnuPG is used for secure key management, enabling signing, encrypting data, and passwordless SSH authentication.
+
+---
+
+# Question: How do you export your public GPG key to a file?
+
+**Answer:**
+Use `gpg --armor --export EMAIL_ADDRESS > public_key.asc`.
+
+---
+
+# Question: How do you upload your public GPG key to a public key server?
+
+**Answer:**
+First find your key’s primary ID with `gpg --list-keys`, then upload with `gpg --send-keys PRIMARY_ID`.
+
+---
+
+# Question: What is a recommended tool to speed up key generation in GPG on Linux?
+
+**Answer:**
+The `haveged` daemon helps speed up the generation of random bytes.
+
+---
+
+# Question: How do you generate a new GPG key?
+
+**Answer:**
+Run `gpg --gen-key` and follow the prompts.
+
+---
+
+# Question: How can you publish your GPG key to a keyserver?
+
+**Answer:**
+Use `gpg --keyserver pgp.mit.edu --send-keys KEY_ID`.
+
+---
+
