@@ -1454,3 +1454,267 @@ It removes (strips) the specified number of leading path components from file na
 
 ---
 
+# Question: What command lists the status of all System V services on Ubuntu?
+
+**Answer:**
+`service --status-all` lists the state of all System V services on the system.
+
+---
+
+# Question: In the output of `service --status-all`, what do the symbols `+`, `-`, and `?` indicate?
+
+**Answer:**
+`+` indicates a running service, `-` indicates a stopped service, and `?` indicates a service managed by Upstart.
+
+---
+
+# Question: How can you check the status of all Upstart-managed services?
+
+**Answer:**
+Run `sudo initctl list` to see all Upstart services and their statuses.
+
+---
+
+# Question: What command lists all running services using systemd?
+
+**Answer:**
+`systemctl` by itself lists all running services.
+
+---
+
+# Question: How do you list failed services using systemd?
+
+**Answer:**
+Use the command `systemctl --failed` to list services that have failed.
+
+---
+
+# Question: How do you find and set the default system target (similar to runlevel) in systemd?
+
+**Answer:**
+
+* Find default target: `systemctl get-default`
+* Set default target: `systemctl set-default <target-name>`
+
+---
+
+# Question: What command starts, stops, restarts, and reloads a service using systemd?
+
+**Answer:**
+
+* Start: `systemctl start [service-name]`
+* Stop: `systemctl stop [service-name]`
+* Restart: `systemctl restart [service-name]`
+* Reload: `systemctl reload [service-name]`
+
+---
+
+# Question: How do you check if a service is enabled to start at boot using systemd?
+
+**Answer:**
+Run `systemctl is-enabled [service-name]` to see if it’s enabled on boot.
+
+---
+
+# Question: How do you mask and unmask a service in systemd?
+
+**Answer:**
+
+* Mask a service (to prevent it from starting): `systemctl mask [service-name]`
+* Unmask a service: `systemctl unmask [service-name]`
+
+---
+
+# Question: How do you reload systemd manager configuration after changing service files?
+
+**Answer:**
+Run `systemctl daemon-reload`.
+
+---
+
+# Question: How do you diagnose problems with a service using systemd?
+
+**Answer:**
+Use `systemctl status [service-name]` to get status and recent errors; use `journalctl -xe` or `journalctl -f -t [service-name]` to view logs.
+
+---
+
+# Question: What is the difference between `journalctl -xe` and `journalctl -f`?
+
+**Answer:**
+
+* `journalctl -xe` shows the last 1000 logs and jumps to the end with extra details (extended info).
+* `journalctl -f` follows the logs live, showing new entries as they happen.
+
+---
+
+# Question: How can you view service logs if `journalctl` is not available?
+
+**Answer:**
+Use `tail -f /var/log/messages` or `tail -f /var/log/secure` for privileged services, or check service-specific logs in `/var/log/`.
+
+---
+
+# Question: How do you start and stop a service on a system using System V init scripts?
+
+**Answer:**
+Use `service <service> start` and `service <service> stop`.
+
+---
+
+# Question: How do you check the status of a service on systemd-based systems like Ubuntu 15.04+?
+
+**Answer:**
+Use `systemctl status <service>`.
+
+---
+
+# Question: What are the restrictions for creating a valid username in Linux?
+
+**Answer:**
+Usernames must not contain capital letters, dots, colons, special characters, or end with a dash. They must not start with a number.
+
+---
+
+# Question: How can a user set their own password?
+
+**Answer:**
+By running the `passwd` command.
+
+---
+
+# Question: How can the root user set the password for another user?
+
+**Answer:**
+By running: `passwd username`
+
+---
+
+# Question: How do you add a new user in Linux?
+
+**Answer:**
+Run `useradd username` as root.
+
+---
+
+# Question: What command removes a user but keeps their home directory?
+
+**Answer:**
+`userdel username`
+
+---
+
+# Question: What command removes a user along with their home directory?
+
+**Answer:**
+`userdel -r username`
+
+---
+
+# Question: How do you list the groups that the current user belongs to?
+
+**Answer:**
+Use the `groups` command.
+
+---
+
+# Question: How can you list the groups for another user?
+
+**Answer:**
+Use `groups username` or `id username` for more detailed info.
+
+---
+
+# Question: What is the LAMP stack used for?
+
+**Answer:**
+LAMP (Linux, Apache, MySQL, PHP) is an open-source stack used for developing and deploying web applications.
+
+---
+
+# Question: What is the Windows equivalent of the LAMP stack?
+
+**Answer:**
+WAMP (Windows, Apache, MySQL, PHP)
+
+---
+
+# Question: Which command installs the LAMP stack on Arch Linux?
+
+**Answer:**
+`pacman -Syu apache php php-apache mariadb`
+
+---
+
+# Question: What directory typically contains the default web pages in Apache on Arch Linux?
+
+**Answer:**
+`/etc/httpd`
+
+---
+
+# Question: What file should be edited to configure user-specific web directories?
+
+**Answer:**
+`/etc/httpd/conf/httpd.conf` — specifically, un-comment `Include conf/extra/httpd-userdir.conf`
+
+---
+
+# Question: What command sets appropriate access to user web directories?
+
+**Answer:**
+Run:
+
+```
+chmod 755 /home  
+chmod 755 /home/username  
+chmod 755 /home/username/public_html  
+```
+
+---
+
+# Question: How can you enable virtual hosting in Apache?
+
+**Answer:**
+Uncomment `Include conf/extra/httpd-vhosts.conf` in `/etc/httpd/conf/httpd.conf` and configure virtual domains there.
+
+---
+
+# Question: What changes should be made in Apache to support PHP?
+
+**Answer:**
+
+* Comment out: `LoadModule mpm_event_module modules/mod_mpm_event.so`
+* Uncomment: `LoadModule mpm_prefork_module modules/mod_mpm_prefork.so`
+* Add: `LoadModule php7_module modules/libphp7.so`
+* Include: `conf/extra/php7_module.conf`
+
+---
+
+# Question: Which PHP extensions must be enabled for MySQL support?
+
+**Answer:**
+Uncomment these lines in `/etc/php/php.ini`:
+
+* `extension=mysqli.so`
+* `extension=pdo_mysql.so`
+
+---
+
+# Question: How do you initialize and secure a MySQL database on Arch Linux?
+
+**Answer:**
+
+1. Run:
+   `mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql`
+2. Enable and start the MySQL daemon:
+
+   ```
+   systemctl enable mysqld  
+   systemctl start mysqld  
+   ```
+3. Run:
+   `sh /usr/bin/mysql_secure_installation`
+
+---
+
