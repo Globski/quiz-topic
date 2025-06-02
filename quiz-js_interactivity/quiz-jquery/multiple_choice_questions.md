@@ -427,3 +427,56 @@ By separating selectors with commas, for example:
 
 ---
 
+# Question: Why should you cache a jQuery selector by assigning it to a variable?
+
+**Answer:**
+Because each time a selector is used, jQuery searches the DOM, which can reduce performance if done repeatedly. Caching the selector in a variable avoids repeated DOM searches and improves efficiency.
+
+---
+
+# Question: How do you cache the selector `$('#navigation')` in a variable?
+
+**Answer:**
+By assigning it to a variable like this: `var nav = $('#navigation');`
+
+---
+
+# Question: What happens if there are multiple elements matching a selector and you cache it in a variable?
+
+**Answer:**
+The variable will hold an array (or jQuery collection) of all matched elements.
+
+---
+
+# Question: What is the issue with assigning a selector to a variable before the matching elements exist in the DOM?
+
+**Answer:**
+The variable will store an empty array or collection because no elements with that selector exist yet in the DOM at the time of assignment.
+
+---
+
+# Question: After dynamically adding elements matching a selector to the DOM, what must you do with the cached selector variable?
+
+**Answer:**
+You must reassign the selector to the variable again to include the newly added elements.
+
+---
+
+# Question: Why do many developers prefix cached jQuery selector variables with a `$`?
+
+**Answer:**
+To indicate that the variable holds a jQuery object, making the code easier to read and understand.
+
+---
+
+# Question: How would you cache and show an element with id "navigation" using best practices for variable naming?
+
+**Answer:**
+
+```javascript
+var $nav = $('#navigation');
+$nav.show();
+```
+
+---
+
