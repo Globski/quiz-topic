@@ -2099,3 +2099,94 @@ Use `gpg --keyserver pgp.mit.edu --send-keys KEY_ID`.
 
 ---
 
+# Question: What naming convention does Linux use for network interfaces?
+
+**Answer:**
+Linux names network interfaces starting at zero, e.g., `eth0`, `eth1`, for multiple NICs.
+
+---
+
+# Question: What is the purpose of the `/etc/hosts` file?
+
+**Answer:**
+It contains a list of hostnames and IP addresses for local DNS resolution without querying external DNS servers.
+
+---
+
+# Question: Which file contains the DNS servers used for domain name resolution on a Linux system?
+
+**Answer:**
+The `/etc/resolv.conf` file contains the DNS server IP addresses.
+
+---
+
+# Question: How can you test if an internal DNS server resolves domain names properly?
+
+**Answer:**
+Use the `dig` command, e.g., `dig google.com @your.dns.server.com +short`.
+
+---
+
+# Question: How do you display the routing table without resolving hostnames?
+
+**Answer:**
+Use the command `route -n`.
+
+---
+
+# Question: What command and options would you use to add a default gateway with `route`?
+
+**Answer:**
+`route add default gw <gateway_ip> <interface>`, for example, `route add default gw 2.2.2.1 eth0`.
+
+---
+
+# Question: How can you add a default gateway using the `ip` command?
+
+**Answer:**
+Use `ip route add default via <gateway_ip> dev <interface>`, e.g., `ip route add default via 192.168.1.1 dev eth0`.
+
+---
+
+# Question: How can you configure a hostname for another system on your network system-wide?
+
+**Answer:**
+By adding a line to `/etc/hosts` with the IP address and hostname.
+
+---
+
+# Question: What command lists all network interfaces available on a Linux machine?
+
+**Answer:**
+`ifconfig -a` lists all network interfaces.
+
+---
+
+# Question: How do you query hardware and driver settings for a network interface?
+
+**Answer:**
+Use `ethtool <interface>`, e.g., `ethtool eth0`.
+
+---
+
+# Question: How do you rename the interface `eth0` to `wan` using the `ip` command?
+
+**Answer:**
+Use `ip link set dev eth0 name wan`.
+
+---
+
+# Question: How do you bring a network interface up using the `ip` command?
+
+**Answer:**
+Use `ip link set dev <interface> up`, for example, `ip link set dev eth0 up`.
+
+---
+
+# Question: How can you add an IP address with a subnet mask to an interface using `ip`?
+
+**Answer:**
+Use `ip addr add <IP>/<prefix_length> dev <interface>`, e.g., `ip addr add 1.2.3.4/24 dev eth0`.
+
+---
+
