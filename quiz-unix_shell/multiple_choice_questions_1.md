@@ -1718,3 +1718,122 @@ Uncomment these lines in `/etc/php/php.ini`:
 
 ---
 
+# Question: How do you install Apache on Ubuntu?
+
+**Answer:**
+Run:
+`sudo apt-get install apache2`
+
+---
+
+# Question: What command installs MySQL Server on Ubuntu?
+
+**Answer:**
+`sudo apt-get install mysql-server`
+
+---
+
+# Question: What command installs PHP on Ubuntu (legacy PHP5 version)?
+
+**Answer:**
+`sudo apt-get install php5 libapache2-mod-php5`
+
+---
+
+# Question: How do you restart Apache after installing LAMP on Ubuntu?
+
+**Answer:**
+`sudo systemctl restart apache2`
+
+---
+
+# Question: What command verifies that PHP is working on Ubuntu?
+
+**Answer:**
+Run:
+
+```bash
+php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
+```
+
+---
+
+# Question: How do you install Apache on CentOS?
+
+**Answer:**
+`sudo yum -y install httpd`
+
+---
+
+# Question: What command enables and starts Apache on CentOS?
+
+**Answer:**
+`sudo systemctl enable --now httpd`
+
+---
+
+# Question: How do you check if Apache is running on CentOS?
+
+**Answer:**
+Open a browser and go to `http://localhost`. You should see the default Apache page.
+
+---
+
+# Question: How do you install MariaDB on CentOS?
+
+**Answer:**
+`sudo yum -y install mariadb-server`
+
+---
+
+# Question: What command enables and starts the MariaDB service on CentOS?
+
+**Answer:**
+`sudo systemctl enable --now mariadb`
+
+---
+
+# Question: What is the purpose of the `mysql_secure_installation` script?
+
+**Answer:**
+It secures your database by:
+
+* Changing the root password
+* Removing test databases
+* Disabling remote access
+
+---
+
+# Question: How do you install PHP on CentOS?
+
+**Answer:**
+`sudo yum -y install php php-common`
+
+---
+
+# Question: What must be done after installing PHP on CentOS to apply changes?
+
+**Answer:**
+Restart Apache using:
+`sudo systemctl restart httpd`
+
+---
+
+# Question: How do you test if PHP is working on CentOS?
+
+**Answer:**
+
+1. Create a file `index.php` in `/var/www/html/`
+2. Add PHP code to display server info
+3. Open `http://localhost/index.php` in a browser
+
+---
+
+# Question: What command checks the installed PHP version on CentOS?
+
+**Answer:**
+Run:
+`php --version`
+
+---
+
