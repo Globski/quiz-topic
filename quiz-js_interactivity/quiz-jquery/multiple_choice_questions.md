@@ -292,3 +292,138 @@ Because internally, jQuery’s main function returns a new instance of `jQuery.f
 
 ---
 
+# Question: What does a jQuery selector do?
+
+**Answer:**
+A jQuery selector selects or finds DOM elements in an HTML document based on id, name, types, attributes, class, etc., using syntax similar to CSS selectors.
+
+---
+
+# Question: How do you select all elements in a document using jQuery?
+
+**Answer:**
+Using the wildcard selector `"*"` like this: `$(" * ")` selects all elements in the document.
+
+---
+
+# Question: What jQuery selector would you use to select all `<div>` elements?
+
+**Answer:**
+`$("div")` selects all `<div>` elements in the document.
+
+---
+
+# Question: How do you select elements that have both class "blue" and class "red"?
+
+**Answer:**
+You use the combined class selector: `$(".blue.red")`.
+
+---
+
+# Question: What is the difference between `$(".blue.red")` and `$(".blue, .red")`?
+
+**Answer:**
+`$(".blue.red")` selects elements that have both classes "blue" AND "red", while `$(".blue, .red")` selects elements that have either class "blue" OR class "red".
+
+---
+
+# Question: How would you select the element with id "headline"?
+
+**Answer:**
+Using the ID selector: `$("#headline")`.
+
+---
+
+# Question: How do you select all elements that have an `href` attribute?
+
+**Answer:**
+Using the attribute presence selector: `$("[href]")`.
+
+---
+
+# Question: What jQuery selector selects elements with an `href` attribute exactly equal to "example.com"?
+
+**Answer:**
+`$("[href='example.com']")` selects all elements with `href="example.com"`.
+
+---
+
+# Question: How do you select all `<span>` elements that are descendants of a `<div>`?
+
+**Answer:**
+Using the descendant selector: `$("div span")`.
+
+---
+
+# Question: How do you select all `<span>` elements that are direct children of a `<div>`?
+
+**Answer:**
+Using the child selector: `$("div > span")`.
+
+---
+
+# Question: What does the selector `$("a + span")` select?
+
+**Answer:**
+It selects all `<span>` elements that are immediately following an `<a>` element as an adjacent sibling.
+
+---
+
+# Question: What types of selectors can you use in jQuery?
+
+**Answer:**
+You can select elements by type, class, ID, possession of attribute, attribute value, indexed position, exclusion, and pseudo-states.
+
+---
+
+# Question: What does the selector `$("a:eq(1)")` do?
+
+**Answer:**
+It selects the second `<a>` element in the document because jQuery uses zero-based indexing.
+
+---
+
+# Question: How do you exclude an element by its index in a selection?
+
+**Answer:**
+Use the `.not()` method with an indexed selector, for example: `$("a").not(":eq(0)")` excludes the first `<a>` element.
+
+---
+
+# Question: What does `$("a:not(.example)")` select?
+
+**Answer:**
+It selects all `<a>` elements except those with the class `example`.
+
+---
+
+# Question: How do you select the first `<a>` element of its type?
+
+**Answer:**
+Using the pseudo-state selector: `$("a:first-of-type")`.
+
+---
+
+# Question: How would you select an `<a>` element with multiple classes, a specific ID, attributes, and pseudo-states all at once?
+
+**Answer:**
+By combining selectors like:
+`$("a.class1.class2.class3#someID[attr1][attr2='something'][attr3='something']:first-of-type:first-child")`
+
+---
+
+# Question: How do you select multiple different elements or classes with a single jQuery selector?
+
+**Answer:**
+By separating selectors with commas, for example:
+`$("a, .class1, #someID")` selects all `<a>` elements, all elements with class `class1`, and the element with id `someID`.
+
+---
+
+# Question: What jQuery selector syntax selects all elements inside an element with id "wrapper"?
+
+**Answer:**
+`$("#wrapper *")` selects all elements inside the element with id "wrapper".
+
+---
+
