@@ -2249,3 +2249,94 @@ No, `ifconfig` changes are temporary and lost after reboot.
 
 ---
 
+# Question: What is Midnight Commander (mc) used for?
+
+**Answer:**
+Midnight Commander is a console-based file manager used to browse, manage, and edit files in a terminal.
+
+---
+
+# Question: Which function key in Midnight Commander browsing mode opens the help?
+
+**Answer:**
+F1 opens the help in browsing mode.
+
+---
+
+# Question: What does the F5 key do in Midnight Commander browsing mode?
+
+**Answer:**
+F5 copies the selected file to the directory open in the second panel.
+
+---
+
+# Question: How do you delete a selected file or directory in Midnight Commander browsing mode?
+
+**Answer:**
+Press F8 to delete the selected file or directory.
+
+---
+
+# Question: Which function key exits Midnight Commander?
+
+**Answer:**
+F10 exits Midnight Commander.
+
+---
+
+# Question: How do you open a file in Midnight Commander’s internal editor from browsing mode?
+
+**Answer:**
+Press F4 to open the selected file in the internal file editor.
+
+---
+
+# Question: How can you start Midnight Commander’s editor in standalone mode?
+
+**Answer:**
+By running `mcedit <filename>` from the command line.
+
+---
+
+# Question: In Midnight Commander’s editor, which function key saves the current file?
+
+**Answer:**
+F2 saves the current file.
+
+---
+
+# Question: Which key marks the start and end of text selection in Midnight Commander’s editor?
+
+**Answer:**
+F3 marks the start and end of text selection.
+
+---
+
+# Question: How do you bring up the search/replace dialog in Midnight Commander’s editor?
+
+**Answer:**
+Press F4 to bring up the text search/replace dialog.
+
+---
+
+# Question: What does the F5 key do in Midnight Commander’s editor mode?
+
+**Answer:**
+F5 copies the selected text to the cursor location (copy/paste).
+
+---
+
+# Question: Which key deletes selected text in Midnight Commander’s editor?
+
+**Answer:**
+F8 deletes the selected text.
+
+---
+
+# Question: How do you exit the Midnight Commander editor?
+
+**Answer:**
+Press F10 to exit the editor.
+
+---
+
