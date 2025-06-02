@@ -2417,3 +2417,87 @@ Performing system maintenance when the system cannot boot or login, reinstalling
 
 ---
 
+# Question: What command is used to update the package list in the apt package manager?
+
+**Answer:**
+`sudo apt-get update` retrieves and scans the Packages.gz files so that information about new and updated packages is available.
+
+---
+
+# Question: What does the `sudo apt-get upgrade` command do?
+
+**Answer:**
+It installs the newest versions of all currently installed packages without removing any packages or installing new ones.
+
+---
+
+# Question: How does `sudo apt-get dist-upgrade` differ from `sudo apt-get upgrade`?
+
+**Answer:**
+`dist-upgrade` not only upgrades packages but also intelligently handles changing dependencies, possibly removing less important packages to upgrade the most important ones.
+
+---
+
+# Question: How do you search for packages using the pacman package manager?
+
+**Answer:**
+Use `pacman -Ss string1 string2 ...` to search both package names and descriptions for the specified strings.
+
+---
+
+# Question: What is the command to install a package with pacman?
+
+**Answer:**
+`sudo pacman -S package_name1 package_name2 ...` installs one or more packages along with their dependencies.
+
+---
+
+# Question: How can you update a specific program using pacman?
+
+**Answer:**
+Use `sudo pacman -S <programName>` to update a specific package.
+
+---
+
+# Question: What command updates the entire system using pacman?
+
+**Answer:**
+`sudo pacman -Syu` updates the entire system by synchronizing package databases and upgrading all packages.
+
+---
+
+# Question: Which package manager is used by Red Hat, Fedora, and CentOS?
+
+**Answer:**
+The `yum` package manager is used by Red Hat, Fedora, CentOS, and their derivatives.
+
+---
+
+# Question: How do you search for packages using yum?
+
+**Answer:**
+Use `yum search <queryString>` to locate software packages matching the search criteria in configured repositories.
+
+---
+
+# Question: What command installs a package with yum?
+
+**Answer:**
+`sudo yum install <packageName>` installs the specified package along with any needed prerequisites.
+
+---
+
+# Question: What does `sudo yum update` do?
+
+**Answer:**
+It installs the newest versions of all currently installed packages, retrieves and installs new prerequisites, and removes replaced or obsolete packages.
+
+---
+
+# Question: How does yum handle repository metadata updates compared to apt?
+
+**Answer:**
+Unlike apt, most yum commands automatically check for and update repository metadata if it hasn't been updated recently before performing operations.
+
+---
+
