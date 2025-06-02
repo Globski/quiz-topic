@@ -1837,3 +1837,83 @@ Run:
 
 ---
 
+# Question: What is the purpose of the `tee` command in Linux?
+
+**Answer:**
+The `tee` command reads from standard input and writes to both standard output and one or more files simultaneously.
+
+---
+
+# Question: What is the `-a` option used for with the `tee` command?
+
+**Answer:**
+The `-a` or `--append` option appends the output to the specified file(s) instead of overwriting them.
+
+---
+
+# Question: How does the `tee` command differ from using redirection with `>`?
+
+**Answer:**
+Redirection with `>` writes output only to the file and not to the screen. `tee`, on the other hand, writes output to both the file(s) and the screen (stdout).
+
+---
+
+# Question: How can you write the output of a command to both the screen and a file?
+
+**Answer:**
+Use the `tee` command like this:
+`ls | tee file`
+
+---
+
+# Question: How do you write the output of a command to multiple files and also display it?
+
+**Answer:**
+Use:
+`ls | tee file1 file2 file3`
+
+---
+
+# Question: What does the `-i` option do in the `tee` command?
+
+**Answer:**
+The `-i` or `--ignore-interrupts` option tells `tee` to ignore interrupt signals.
+
+---
+
+# Question: How can `tee` be used in the middle of a pipeline to log and modify output?
+
+**Answer:**
+Example:
+
+```bash
+crontab -l | tee crontab-backup.txt | sed 's/old/new/' | crontab -
+```
+
+This backs up the current crontab, modifies it using `sed`, and updates it.
+
+---
+
+# Question: By default, does `tee` overwrite or append to files?
+
+**Answer:**
+By default, `tee` **overwrites** files unless the `-a` option is used.
+
+---
+
+# Question: What plumbing tool is the `tee` command named after?
+
+**Answer:**
+It’s named after the **T-splitter**, which splits flow in plumbing and resembles a capital letter "T".
+
+---
+
+# Question: How do you display help and version info using the `tee` command?
+
+**Answer:**
+
+* Display help: `tee --help`
+* Display version: `tee --version`
+
+---
+
