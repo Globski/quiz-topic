@@ -1917,3 +1917,108 @@ It’s named after the **T-splitter**, which splits flow in plumbing and resembl
 
 ---
 
+# Question: What is the primary purpose of Secure Shell (SSH)?
+
+**Answer:**
+SSH is used to remotely access a server from a client over an encrypted connection, ensuring secure communication.
+
+---
+
+# Question: What is the default port number SSH listens on?
+
+**Answer:**
+The default SSH port is 22.
+
+---
+
+# Question: How would you connect to a remote server with a custom port number using SSH?
+
+**Answer:**
+Use the command: `ssh -p port user@server-address`, where `port` is the custom SSH port.
+
+---
+
+# Question: If your username is the same on both the client and server, how can you simplify the SSH command?
+
+**Answer:**
+You can omit the username and use just the server address, for example: `ssh web-servers.com`.
+
+---
+
+# Question: What SSH option allows connecting to a server through an intermediate host?
+
+**Answer:**
+The `-J` (ProxyJump) option allows you to connect through another server.
+
+---
+
+# Question: How do you install the OpenSSH suite on a Debian-based system?
+
+**Answer:**
+Run the command: `apt-get install openssh`.
+
+---
+
+# Question: Where is the SSH daemon configuration file usually located on Linux systems?
+
+**Answer:**
+The file is typically located at `/etc/ssh/sshd_config`.
+
+---
+
+# Question: What must be done to activate configuration lines in the `sshd_config` file?
+
+**Answer:**
+Remove the `#` at the beginning of the line to uncomment and activate the setting.
+
+---
+
+# Question: Why is it preferable to disable password logins in SSH configuration?
+
+**Answer:**
+Disabling password logins improves security by encouraging the use of SSH key-based authentication.
+
+---
+
+# Question: How do you copy your SSH public key to a remote server for passwordless login?
+
+**Answer:**
+Use the command: `ssh <user>@<ssh-server> 'cat >> ~/.ssh/authorized_keys' < id_rsa.pub`.
+
+---
+
+# Question: After placing the public key on the server, how do you login using your private key?
+
+**Answer:**
+Use: `ssh <user>@<ssh-server> -i id_rsa`.
+
+---
+
+# Question: How do you generate an SSH key pair with a 4096-bit RSA key and a comment?
+
+**Answer:**
+Use the command: `ssh-keygen -t rsa -b 4096 -C myemail@email.com`.
+
+---
+
+# Question: What is the default location for SSH private and public keys?
+
+**Answer:**
+Private key: `~/.ssh/id_rsa`, Public key: `~/.ssh/id_rsa.pub`.
+
+---
+
+# Question: How can you disable the SSH service on Ubuntu?
+
+**Answer:**
+Run `sudo service ssh stop` and `sudo systemctl disable sshd.service`.
+
+---
+
+# Question: How do you disable the SSH service on Arch Linux?
+
+**Answer:**
+Run `sudo killall sshd` and `sudo systemctl disable sshd.service`.
+
+---
+
