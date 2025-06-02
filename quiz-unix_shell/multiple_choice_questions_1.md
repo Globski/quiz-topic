@@ -965,3 +965,52 @@ You can manually update the locate database with `updatedb`, or use the `find` c
 
 ---
 
+# Question: What does the `du -sh *` command do?
+
+**Answer:**
+It summarizes and displays the disk usage of all files and directories in the current directory in a human-readable format, showing only total sizes for each.
+
+---
+
+# Question: How do you include hidden files when checking disk usage with `du`?
+
+**Answer:**
+Use `du -sh .[!.]* *` to include hidden files (those starting with a dot) along with regular files.
+
+---
+
+# Question: What option can you add to `du` to show a total summary at the end of the output?
+
+**Answer:**
+Add the `-c` option to `du`, like `du -sch .[!.]* *`, to display a grand total of disk usage.
+
+---
+
+# Question: Why is using `du` on the root directory useful?
+
+**Answer:**
+It helps identify which directories or applications are consuming the most disk space, which is essential for troubleshooting disk space issues on critical servers.
+
+---
+
+# Question: How can you list directories under root that consume more than 1GB of disk space?
+
+**Answer:**
+Use the command `sudo du --threshold=1G -ch /.[!.]* /*` to display directories larger than 1GB with a total at the end.
+
+---
+
+# Question: What is the meaning of the `-s` and `-h` options in `du`?
+
+**Answer:**
+`-s` summarizes disk usage for each argument (instead of showing usage for each file inside directories), and `-h` formats the output in human-readable units (e.g., K, M, G).
+
+---
+
+# Question: What does the error "du: cannot access ..." during a disk usage scan usually indicate?
+
+**Answer:**
+It indicates permission issues or that some special or transient files (like those in `/proc`) are inaccessible or no longer exist during the scan.
+
+---
+
