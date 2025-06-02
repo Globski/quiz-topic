@@ -635,3 +635,53 @@ Use `ls -R` to display files and directories recursively.
 
 ---
 
+# Question: What command is commonly used to detect the Debian-based Linux distribution name and version?
+
+**Answer:**
+`lsb_release -a` displays detailed information about the distribution including Distributor ID, Description, Release, and Codename.
+
+---
+
+# Question: What is an alternative file to check if `lsb_release` is not installed for guessing the Linux distribution?
+
+**Answer:**
+You can check the contents of `/etc/issue` to get the distribution name and version.
+
+---
+
+# Question: Why should you avoid using `/etc/debian_version` to detect the Linux distribution name?
+
+**Answer:**
+Because `/etc/debian_version` only contains Debian version info and does not accurately represent the distribution name, especially on derivatives like Ubuntu.
+
+---
+
+# Question: What is the preferred method to detect the Linux distribution on modern systemd-based systems?
+
+**Answer:**
+Look at the file `/etc/os-release` which contains variables like `NAME`, `VERSION`, `ID`, `VERSION_ID`, and `PRETTY_NAME`.
+
+---
+
+# Question: How can you display the pretty name of your Linux distribution from the `/etc/os-release` file in bash?
+
+**Answer:**
+By running:
+`( source /etc/os-release && echo "$PRETTY_NAME" )`
+
+---
+
+# Question: Name two Linux distributions where `/etc/os-release` contains detailed distribution information.
+
+**Answer:**
+Fedora and CentOS.
+
+---
+
+# Question: Is `/etc/os-release` exclusive to systemd-based systems?
+
+**Answer:**
+No, it is documented to exist on all systemd-based distributions but it is not systemd-specific and can be present on other systems too.
+
+---
+
