@@ -1126,3 +1126,80 @@ You can run `lshw | grep cpu` to filter out CPU-related hardware details from th
 
 ---
 
+# Question: What command on Ubuntu lists detailed hardware configuration, including CPU, memory, firmware, and bus speed?
+
+**Answer:**
+`sudo lshw` lists detailed hardware configuration.
+
+---
+
+# Question: How can you generate an HTML report of your hardware using `lshw`?
+
+**Answer:**
+`sudo lshw -html > myhardware.html`
+
+---
+
+# Question: Which command displays PCI device information in a tree view?
+
+**Answer:**
+`lspci -tv`
+
+---
+
+# Question: How do you list detailed USB device information?
+
+**Answer:**
+`lsusb -tv`
+
+---
+
+# Question: What command can you use to view BIOS information?
+
+**Answer:**
+`dmidecode -q | less`
+
+---
+
+# Question: How can you find disk-specific information for `/dev/sda`?
+
+**Answer:**
+`hdparm -i /dev/sda`
+
+---
+
+# Question: What command shows how long a disk has been powered on?
+
+**Answer:**
+`smartctl -A /dev/sda | grep Power_On_Hours`
+
+---
+
+# Question: How do you perform a read speed test on disk `/dev/sda`?
+
+**Answer:**
+`hdparm -tT /dev/sda`
+
+---
+
+# Question: Which command tests for unreadable blocks on a disk?
+
+**Answer:**
+`badblocks -s /dev/sda`
+
+---
+
+# Question: How do you get CPU model and speed info from the `/proc` filesystem?
+
+**Answer:**
+`cat /proc/cpuinfo`
+
+---
+
+# Question: What command counts the number of processors or cores on a system?
+
+**Answer:**
+`grep -c processor /proc/cpuinfo`
+
+---
+
