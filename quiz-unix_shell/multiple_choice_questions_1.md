@@ -1014,3 +1014,45 @@ It indicates permission issues or that some special or transient files (like tho
 
 ---
 
+# Question: Which command is commonly used to check disk space usage on partitions and mounted drives?
+
+**Answer:**
+The `df -h` command is used to display disk space usage in a human-readable format for all mounted filesystems.
+
+---
+
+# Question: What does the `-h` option do in the `df` command?
+
+**Answer:**
+The `-h` option formats the output sizes into human-readable units such as KB, MB, or GB.
+
+---
+
+# Question: In the output of `df -h`, what does the "Use%" column represent?
+
+**Answer:**
+The "Use%" column shows the percentage of disk space used on each filesystem or partition.
+
+---
+
+# Question: What information does the "Mounted on" column in `df -h` output provide?
+
+**Answer:**
+It shows the directory path where the filesystem or partition is mounted in the directory tree.
+
+---
+
+# Question: How can you identify from `df -h` output if a partition is almost full?
+
+**Answer:**
+If the "Use%" value is high (close to 100%), such as 95%, it indicates the partition is nearly full.
+
+---
+
+# Question: What types of filesystems or mounts might appear in `df -h` output besides physical partitions?
+
+**Answer:**
+You might see tmpfs (RAM disks), network mounts (like NFS or CIFS), and logical volume manager (LVM) partitions.
+
+---
+
