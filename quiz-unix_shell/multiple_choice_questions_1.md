@@ -1203,3 +1203,86 @@ You can run `lshw | grep cpu` to filter out CPU-related hardware details from th
 
 ---
 
+
+# Question: What is the primary purpose of the `ps` command in Linux?
+
+**Answer:**
+The `ps` command is used to provide information about the currently running processes on a Linux host, including their process identification numbers (PIDs).
+
+---
+
+# Question: How can you list processes in a hierarchical tree format using `ps`?
+
+**Answer:**
+You can list processes in a hierarchy using the command:
+`ps -e -o pid,args --forest`
+
+---
+
+# Question: Which `ps` command option lists processes sorted by CPU usage?
+
+**Answer:**
+The command to list processes sorted by CPU usage is:
+`ps -e -o pcpu,cpu,nice,state,cputime,args --sort pcpu | sed '/^ 0.0 /d'`
+
+---
+
+# Question: How do you list processes sorted by memory (KB) usage using `ps`?
+
+**Answer:**
+Use the following command to list processes sorted by memory usage:
+`ps -e -orss=,args= | sort -b -k1,1n | pr -TW$COLUMNS`
+
+---
+
+# Question: How can you list all threads for a specific process, for example "firefox-bin"?
+
+**Answer:**
+You can list all threads for the "firefox-bin" process with:
+`ps -C firefox-bin -L -o pid,tid,pcpu,state`
+
+---
+
+# Question: After identifying a specific process, how can you find the files or paths that this process has open?
+
+**Answer:**
+You can use the `lsof` command with the process ID:
+`lsof -p <PID>`
+For example, `lsof -p $$` lists open files for the current shell process.
+
+---
+
+# Question: How can you find which processes have a specific path open?
+
+**Answer:**
+Use the command:
+`lsof <path>`
+For example, `lsof ~` lists processes that have files open in the home directory.
+
+---
+
+# Question: What is the most commonly used tool for interactive process monitoring in Linux?
+
+**Answer:**
+The `top` command is the most commonly used tool for dynamic, real-time process monitoring.
+
+---
+
+# Question: Name two more advanced or alternative interactive monitoring tools that can replace `top`.
+
+**Answer:**
+Two advanced alternatives are:
+
+* `htop` (e.g., `htop -d 5` to set delay)
+* `atop`, which can log system activity to a file every 600 seconds by default.
+
+---
+
+# Question: What specialized monitoring tools exist for disk I/O and network interface bandwidth?
+
+**Answer:**
+
+* `iotop` monitors disk I/O usage per process (requires sudo).
+* `iftop` monitors network interface bandwidth usage.
+
+---
