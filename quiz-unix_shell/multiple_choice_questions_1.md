@@ -404,3 +404,45 @@ Use `ps -u root` to list all processes and commands run by root.
 
 ---
 
+# Question: How do you find all files under `/var/www` that have a `.css` extension?
+
+**Answer:**
+Use the command `find /var/www -name '*.css'` to print the full paths of all `.css` files under `/var/www`.
+
+---
+
+# Question: What does the command `grep font /var/www/html/style.css` do?
+
+**Answer:**
+It prints all lines in the file `/var/www/html/style.css` that contain the pattern "font".
+
+---
+
+# Question: Why does `grep font /var/www/html/` return an error, and how do you fix it?
+
+**Answer:**
+It returns an error because `/var/www/html/` is a directory. To search recursively inside directories, use `grep -R font /var/www/html/`.
+
+---
+
+# Question: What does the `-R` option do in the grep command?
+
+**Answer:**
+The `-R` option makes `grep` search recursively through all files in the specified directory and its subdirectories.
+
+---
+
+# Question: When `grep` matches patterns in multiple files, how can you prevent it from showing filenames before matched lines?
+
+**Answer:**
+Use the `-h` option with `grep` to suppress the filename prefix before matched lines.
+
+---
+
+# Question: Where can you find more detailed information about the `find` and `grep` commands?
+
+**Answer:**
+Use `man find` and `man grep` to read the manual pages for these commands.
+
+---
+
