@@ -446,3 +446,122 @@ Use `man find` and `man grep` to read the manual pages for these commands.
 
 ---
 
+# Question: How do you create an empty text file named `myFile`?
+
+**Answer:**
+Use the command `touch myFile` to create an empty file called `myFile`.
+
+---
+
+# Question: Which command renames `myFile` to `myFirstFile`?
+
+**Answer:**
+`mv myFile myFirstFile` renames the file from `myFile` to `myFirstFile`.
+
+---
+
+# Question: How can you view the entire contents of a file called `myFirstFile`?
+
+**Answer:**
+Use `cat myFirstFile` to view the whole contents of the file.
+
+---
+
+# Question: Which command lets you view a file one screen at a time?
+
+**Answer:**
+`less myFirstFile` allows you to view the file contents one screenful at a time.
+
+---
+
+# Question: How do you view the first few lines of a file?
+
+**Answer:**
+Use `head myFirstFile` to view the first several lines of the file.
+
+---
+
+# Question: How do you view the last few lines of a file?
+
+**Answer:**
+Use `tail myFirstFile` to view the last several lines.
+
+---
+
+# Question: What command opens `myFirstFile` for editing using the vi editor?
+
+**Answer:**
+`vi myFirstFile` opens the file in the vi text editor.
+
+---
+
+# Question: How do you list the files in the current working directory?
+
+**Answer:**
+Use `ls` to list files in the current directory.
+
+---
+
+# Question: How do you create an empty directory named `myFirstDirectory`?
+
+**Answer:**
+Use `mkdir myFirstDirectory` to create the directory.
+
+---
+
+# Question: How do you create nested directories `src/myFirstDirectory` in one command?
+
+**Answer:**
+Use `mkdir -p src/myFirstDirectory` to create the directory hierarchy.
+
+---
+
+# Question: How do you move `myFirstFile` into the directory `myFirstDirectory`?
+
+**Answer:**
+Use `mv myFirstFile myFirstDirectory/` to move the file.
+
+---
+
+# Question: How do you change the current directory to `myFirstDirectory`?
+
+**Answer:**
+Use `cd myFirstDirectory` to change into that directory.
+
+---
+
+# Question: How do you delete a file named `myFirstFile`?
+
+**Answer:**
+Use `rm myFirstFile` to delete the file.
+
+---
+
+# Question: How do you move back to the parent directory?
+
+**Answer:**
+Use `cd ..` to move to the parent directory.
+
+---
+
+# Question: How do you delete an empty directory named `myFirstDirectory`?
+
+**Answer:**
+Use `rmdir myFirstDirectory` to remove an empty directory.
+
+---
+
+# Question: How do you delete a directory and all its contents recursively?
+
+**Answer:**
+Use `rm -rf myFirstDirectory` to delete the directory and everything inside it.
+
+---
+
+# Question: What important caution is given about deleting directories?
+
+**Answer:**
+Be careful not to delete `/` (root directory), as that will wipe the whole filesystem. Always use `./` for current directory paths.
+
+---
+
