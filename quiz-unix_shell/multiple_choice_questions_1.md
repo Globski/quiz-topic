@@ -758,3 +758,84 @@ GNU coreutils provides fundamental utilities like `uname` which are available on
 
 ---
 
+# Question: Where can you find the Linux OS name and release number on most Debian and RPM-based distributions?
+
+**Answer:**
+Most Linux distributions store their version information in the `/etc/lsb-release` file for Debian-based systems and `/etc/redhat-release` for RPM-based systems. You can use a generic command like `cat /etc/*release` to view this information across most distributions.
+
+---
+
+# Question: What is an example output of the `cat /etc/*release` command on an Ubuntu machine?
+
+**Answer:**
+An example output on Ubuntu 14.04 is:
+
+```
+DISTRIB_ID=Ubuntu  
+DISTRIB_RELEASE=14.04  
+DISTRIB_CODENAME=trusty  
+DISTRIB_DESCRIPTION="Ubuntu 14.04 LTS"  
+```
+
+---
+
+# Question: How can you get complete details of the running Linux kernel?
+
+**Answer:**
+Use the command `uname -a` to get complete details of the running Linux kernel, including kernel name, hostname, kernel release, version, machine hardware, processor, hardware platform, and operating system.
+
+---
+
+# Question: What does the `uname -s` option print?
+
+**Answer:**
+`uname -s` prints the kernel name.
+
+---
+
+# Question: What is the purpose of the `chsh` command in Linux?
+
+**Answer:**
+The `chsh` (change shell) command is used to change the default login shell for a user.
+
+---
+
+# Question: How can you list all the shells installed and configured on your system using `chsh`?
+
+**Answer:**
+Run `chsh -l` to list all installed shells. If this option is not valid, you can check the file `/etc/shells` by running `cat /etc/shells`.
+
+---
+
+# Question: How do you change your default shell to `fish`?
+
+**Answer:**
+Use the command `chsh -s /usr/bin/fish`, enter your password when prompted, then log off and log back in to use the new shell.
+
+---
+
+# Question: How can an administrator change the default shell for another user named `user_2`?
+
+**Answer:**
+The administrator can run `chsh -s /usr/bin/fish user_2` to change the default shell for `user_2`.
+
+---
+
+# Question: How can you check what your current default shell is?
+
+**Answer:**
+You can check your current default shell by echoing the `$SHELL` environment variable using `echo $SHELL`.
+
+---
+
+# Question: What are the common options available with the `chsh` command?
+
+**Answer:**
+
+* `-s shell`: Sets the login shell to `shell`.
+* `-l` or `--list-shells`: Lists available shells.
+* `-h` or `--help`: Displays usage information.
+* `-v` or `--version`: Displays version information.
+
+---
+
