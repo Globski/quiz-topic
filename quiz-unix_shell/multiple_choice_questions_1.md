@@ -2190,3 +2190,62 @@ Use `ip addr add <IP>/<prefix_length> dev <interface>`, e.g., `ip addr add 1.2.3
 
 ---
 
+# Question: How can a Linux interface obtain an IP address dynamically via DHCP?
+
+**Answer:**
+By running the command `dhclient <interface>`, which requests an IP address from a DHCP server.
+
+---
+
+# Question: How do you configure an interface to use DHCP automatically on boot via the `/etc/network/interfaces` file?
+
+**Answer:**
+Add these lines to `/etc/network/interfaces`:
+
+```
+auto eth0
+iface eth0 inet dhcp
+```
+
+---
+
+# Question: How do you configure a static IP address permanently on an interface using the `/etc/network/interfaces` file?
+
+**Answer:**
+Add the following configuration:
+
+```
+auto eth0
+iface eth0 inet static
+ address <IP-address>
+ netmask <netmask>
+ gateway <gateway>
+ dns-nameservers <dns1>
+ dns-nameservers <dns2>
+```
+
+---
+
+# Question: Do changes made in `/etc/network/interfaces` persist after reboot?
+
+**Answer:**
+Yes, changes made here are permanent and persist after system reboot.
+
+---
+
+# Question: How can you assign a static IP address temporarily using the `ifconfig` utility?
+
+**Answer:**
+Use the command:
+`ifconfig <interface> <ip-address>/<mask> up`
+For example, `ifconfig eth0 10.10.50.100/16 up`.
+
+---
+
+# Question: Are static IP assignments made using `ifconfig` persistent after reboot?
+
+**Answer:**
+No, `ifconfig` changes are temporary and lost after reboot.
+
+---
+
