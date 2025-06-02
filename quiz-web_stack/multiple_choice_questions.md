@@ -230,3 +230,107 @@ It provides an easy-to-use interface to check browser support for various web pl
 
 ---
 
+# Question: What is "Can I Use" used for in web development?
+
+**Answer:**
+It provides browser support data for every web platform feature, helping developers decide what features to use based on browser compatibility.
+
+---
+
+# Question: Does the choice of text editor impact the ability to write HTML, CSS, and JavaScript?
+
+**Answer:**
+No, it doesn’t matter which tool you use as long as it allows you to write code; the choice is based on personal preference.
+
+---
+
+# Question: Are there any essential tools required to create responsive web designs?
+
+**Answer:**
+No, there are no essential tools required, but many free tools exist to reduce manual and time-intensive tasks in building websites.
+
+---
+
+# Question: Can tools help in the process of responsive web design development?
+
+**Answer:**
+Yes, tools can help automate or simplify many tasks, making the development process more efficient.
+
+---
+
+# Question: What kind of tasks can CSS post-processors like PostCSS automate?
+
+**Answer:**
+They can automate tasks such as CSS vendor prefixing and polyfilling new CSS features for older browsers.
+
+---
+
+# Question: What do linting and validation tools do?
+
+**Answer:**
+They check your HTML, JavaScript, and CSS code for typos and syntax errors as you work, helping to eliminate mistakes.
+
+---
+
+# Question: What is the purpose of code formatters like Prettier?
+
+**Answer:**
+They automatically format your code with proper indentation and spacing upon saving.
+
+---
+
+# Question: Are these tools (post-processors, linters, formatters) essential for building responsive web designs?
+
+**Answer:**
+No, they are not essential but can provide benefits that make development faster and more reliable.
+
+---
+
+# Question: What should you focus on when examining HTML?
+
+**Answer:**
+Focus on the elements inside the `<body>` tag, which include a few divs, a logo graphic, some text, and lists.
+
+---
+
+# Question: What happens to the text layout when you resize the browser window with no special responsive code applied?
+
+**Answer:**
+The text naturally re-flows and adjusts to fit the new window size, demonstrating that web pages are inherently flexible by default.
+
+---
+
+# Question: How does a web page without any CSS typically render on an iPhone 13?
+
+**Answer:**
+It renders like a desktop page shrunk down to fit the smaller screen because iOS renders pages at 980 px wide by default and scales them to the viewport.
+
+---
+
+# Question: Why did websites render poorly on mobile devices before responsive design became widespread?
+
+**Answer:**
+Because mobile browsers displayed desktop-sized pages shrunk to fit the screen, resulting in a poor and unreadable user experience.
+
+---
+
+# Question: What HTML element can you add to the `<head>` to make a page more mobile-friendly?
+
+**Answer:**
+A viewport meta tag: `<meta name="viewport" content="width=device-width,initial-scale=1.0" />`
+
+---
+
+# Question: What does the viewport meta tag instruct the browser to do?
+
+**Answer:**
+It tells the browser to render the page content at the width of the device screen, enabling proper scaling and layout on mobile devices.
+
+---
+
+# Question: Is the viewport meta tag a formal web standard?
+
+**Answer:**
+No, it is not a formal standard but has become the de facto method introduced by Apple for controlling page rendering on mobile devices.
+
+
