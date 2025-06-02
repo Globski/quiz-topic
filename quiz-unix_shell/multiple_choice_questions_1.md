@@ -1377,3 +1377,80 @@ The first character indicates the file type, such as `d` for directory, `-` for 
 
 ---
 
+# Question: What does the `-c` option do in the `tar` command?
+
+**Answer:**
+The `-c` or `--create` option creates a new archive.
+
+---
+
+# Question: Which option extracts files from a `tar` archive?
+
+**Answer:**
+The `-x` or `--extract` option extracts files from an archive.
+
+---
+
+# Question: How do you list the contents of a tar archive without extracting it?
+
+**Answer:**
+Use the `-t` or `--list` option, for example:
+`tar -tf archive.tar`
+
+---
+
+# Question: What is the purpose of the `-f` option in the `tar` command?
+
+**Answer:**
+The `-f` or `--file=ARCHIVE` option specifies the archive file to use.
+
+---
+
+# Question: How do you create a gzip-compressed tar archive of a folder?
+
+**Answer:**
+Use the `-z` option with `-c` and `-f`:
+`tar -czf archive.tar.gz ./folder/`
+
+---
+
+# Question: Which options compress a tar archive using bzip2 and xz respectively?
+
+**Answer:**
+
+* Use `-j` for bzip2 compression: `tar -cjf archive.tar.bz2 ./folder/`
+* Use `-J` for xz compression: `tar -cJf archive.tar.xz ./folder/`
+
+---
+
+# Question: How can you extract an archive to a specific directory?
+
+**Answer:**
+Use the `-C` option to specify the destination directory:
+`tar -xf archive.tar -C ./destination/`
+
+---
+
+# Question: How do you list the contents of a gzip-compressed tar archive?
+
+**Answer:**
+Use the `-t`, `-z`, and `-f` options together, e.g.:
+`tar -tzvf archive.tar.gz`
+
+---
+
+# Question: How do you exclude one or multiple folders when creating a tar archive?
+
+**Answer:**
+Use the `--exclude` option multiple times, e.g.:
+`tar -cf archive.tar ./my-folder/ --exclude="my-folder/sub1" --exclude="my-folder/sub3"`
+
+---
+
+# Question: What does the `--strip-components=NUMBER` option do during extraction?
+
+**Answer:**
+It removes (strips) the specified number of leading path components from file names when extracting files.
+
+---
+
