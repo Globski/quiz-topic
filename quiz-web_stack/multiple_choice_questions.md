@@ -181,3 +181,52 @@ It requires technical solutions that cater to a wide range of device capabilitie
 
 ---
 
+# Question: Why is it often impractical to fully support every browser and device variant in a responsive design project?
+
+**Answer:**
+Because of constraints such as limited time and budget, supporting every browser permutation fully is rarely feasible.
+
+---
+
+# Question: How does browser age affect the work needed to achieve feature or aesthetic parity?
+
+**Answer:**
+Older browsers require more work and additional code to match the features and appearance of modern evergreen browsers like Firefox or Chrome.
+
+---
+
+# Question: What approach is recommended for handling browser support?
+
+**Answer:**
+Practicing progressive enhancement: starting with a functional and accessible website for basic browsers and adding features for more capable browsers.
+
+---
+
+# Question: Is it common to have to create websites that do not function at all on old browsers?
+
+**Answer:**
+No, it should be very rare to create a website that isn’t at least functional on an old browser or device.
+
+---
+
+# Question: What is the most important browser support information for a project?
+
+**Answer:**
+The browser statistics specific to your own website’s visitors.
+
+---
+
+# Question: Why is it important to decide in advance which platforms you fully support and which you accept visual or functional anomalies on?
+
+**Answer:**
+Because it helps prioritize development efforts and tailor solutions to the browsers your audience actually uses.
+
+---
+
+# Question: What is the purpose of the website [http://caniuse.com](http://caniuse.com)?
+
+**Answer:**
+It provides an easy-to-use interface to check browser support for various web platform features.
+
+---
+
