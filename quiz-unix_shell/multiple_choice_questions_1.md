@@ -685,3 +685,76 @@ No, it is documented to exist on all systemd-based distributions but it is not s
 
 ---
 
+# Question: How can you detect which RHEL, CentOS, or Fedora distribution you are working in?
+
+**Answer:**
+You can look at the contents of the file `/etc/redhat-release` by running `cat /etc/redhat-release`. For example, on a Fedora 24 machine, it outputs:
+`Fedora release 24 (Twenty Four)`.
+
+---
+
+# Question: Which command can also be used to detect the Linux distribution and provides detailed information including Distributor ID, Description, Release, and Codename?
+
+**Answer:**
+The `lsb_release -a` command can be used to detect the distribution and provides detailed info such as Distributor ID, Description, Release, and Codename. For example, on Fedora 24, it outputs:
+
+```
+Distributor ID: Fedora  
+Description: Fedora release 24 (Twenty Four)  
+Release: 24  
+Codename: TwentyFour  
+```
+
+---
+
+# Question: What is the purpose of the `uname` command in Linux?
+
+**Answer:**
+The `uname` command prints information about the current system, including the kernel name, version, hardware, and operating system details.
+
+---
+
+# Question: What happens when you run `uname` without any options?
+
+**Answer:**
+If no option is specified, `uname` assumes the `-s` option and prints the kernel name.
+
+---
+
+# Question: What information does the command `uname -a` provide?
+
+**Answer:**
+`uname -a` prints all available system information including kernel name, nodename (hostname), kernel release, kernel version, machine hardware name, processor type, hardware platform, and operating system.
+
+---
+
+# Question: List some of the options available with the `uname` command and what they print.
+
+**Answer:**
+
+* `-s` or `--kernel-name`: Prints the kernel name.
+* `-n` or `--nodename`: Prints the network node hostname.
+* `-r` or `--kernel-release`: Prints the kernel release.
+* `-v` or `--kernel-version`: Prints the kernel version.
+* `-m` or `--machine`: Prints the machine hardware name.
+* `-p` or `--processor`: Prints the processor type or "unknown".
+* `-i` or `--hardware-platform`: Prints the hardware platform or "unknown".
+* `-o` or `--operating-system`: Prints the operating system.
+
+---
+
+# Question: Give an example output of `uname -a` on an Arch Linux system.
+
+**Answer:**
+An example output of `uname -a` on Arch Linux is:
+`Linux nokia 4.6.4-1-ARCH #1 SMP PREEMPT Mon Jul 11 19:12:32 CEST 2016 x86_64 GNU/Linux`
+
+---
+
+# Question: Why is GNU coreutils important in the context of detecting system information?
+
+**Answer:**
+GNU coreutils provides fundamental utilities like `uname` which are available on nearly all Linux systems, making it a reliable first tool to gather system information even if you don't know which Linux distribution you are running.
+
+---
+
