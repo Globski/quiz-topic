@@ -1056,3 +1056,73 @@ You might see tmpfs (RAM disks), network mounts (like NFS or CIFS), and logical 
 
 ---
 
+# Question: Which command provides real-time CPU statistics with intervals and counts?
+
+**Answer:**
+The `mpstat` command provides CPU statistics in real time, e.g., `mpstat 2 10` shows stats every 2 seconds, 10 times.
+
+---
+
+# Question: What command can you use to get detailed memory and I/O statistics over time?
+
+**Answer:**
+The `vmstat` command shows memory, CPU, and I/O statistics, e.g., `vmstat 2 10` updates every 2 seconds for 10 iterations.
+
+---
+
+# Question: Which tool is used to display real-time disk I/O statistics?
+
+**Answer:**
+`iostat` with options like `-kx` shows detailed disk I/O statistics, e.g., `iostat -kx 2` updates every 2 seconds.
+
+---
+
+# Question: How can you list all open TCP sockets on your system?
+
+**Answer:**
+Using the command `netstat -ntlp` will show all open TCP sockets with listening ports and associated processes.
+
+---
+
+# Question: What command can be used to monitor network traffic in real-time interactively?
+
+**Answer:**
+`iftop` is used for interactive real-time network traffic monitoring.
+
+---
+
+# Question: What is the purpose of the `dstat` command?
+
+**Answer:**
+`dstat` is a versatile monitoring tool that can replace vmstat, iostat, and ifstat by generating combined real-time statistics on CPU, disk, network, and I/O.
+
+---
+
+# Question: Which command provides detailed CPU architecture and configuration information?
+
+**Answer:**
+The `lscpu` command shows CPU details such as architecture, number of cores, threads, vendor ID, and cache sizes.
+
+---
+
+# Question: How do you extract CPU information using `lshw`?
+
+**Answer:**
+You can run `lshw | grep cpu` to filter out CPU-related hardware details from the full hardware listing.
+
+---
+
+# Question: What kind of information does `lscpu` output include about the CPU?
+
+**Answer:**
+`lscpu` outputs architecture, CPU modes (32-bit/64-bit), CPU count, cores per socket, threads per core, CPU MHz, cache sizes, virtualization support, and vendor info.
+
+---
+
+# Question: How does `lshw` report CPU speed and vendor?
+
+**Answer:**
+`lshw` outputs lines such as `product: Intel(R) Pentium(R) CPU G3220 @ 3.00GHz` and `vendor: Intel Corp.` along with size (speed) and width (bitness).
+
+---
+
