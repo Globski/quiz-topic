@@ -2340,3 +2340,80 @@ Press F10 to exit the editor.
 
 ---
 
+# Question: What does the `chroot` operation do?
+
+**Answer:**
+`chroot` changes the apparent root directory for the current running process and its children, restricting their file system access to that directory tree.
+
+---
+
+# Question: What privileges are required to use `chroot`?
+
+**Answer:**
+Root privileges are required to use `chroot`.
+
+---
+
+# Question: What must be ensured about the environment architectures when using `chroot`?
+
+**Answer:**
+The source and destination environments must have matching architectures (check with `uname -m`).
+
+---
+
+# Question: Which temporary filesystems should be mounted before using `chroot`?
+
+**Answer:**
+`proc`, `sys`, `dev`, and optionally `run` filesystems should be mounted inside the new root directory.
+
+---
+
+# Question: How do you copy DNS settings into the chroot environment?
+
+**Answer:**
+Copy `/etc/resolv.conf` to the new root’s `etc/resolv.conf` file.
+
+---
+
+# Question: How do you actually enter the new root environment after mounting the necessary filesystems?
+
+**Answer:**
+Use the command `chroot /location/of/new/root /bin/bash` (or another shell).
+
+---
+
+# Question: What is a common step after entering the chroot to load local shell settings?
+
+**Answer:**
+Run `source /etc/profile` and `source ~/.bashrc`.
+
+---
+
+# Question: How can you customize the shell prompt inside a chroot environment?
+
+**Answer:**
+Set the prompt with `export PS1="(chroot) $PS1"` to distinguish the chroot shell.
+
+---
+
+# Question: How do you exit a chroot environment?
+
+**Answer:**
+Type `exit` to leave the chroot shell.
+
+---
+
+# Question: How do you properly unmount the temporary filesystems after exiting the chroot?
+
+**Answer:**
+Run `umount --recursive /location/of/new/root` after changing directory out of the chroot.
+
+---
+
+# Question: Name at least two common reasons to use `chroot`.
+
+**Answer:**
+Performing system maintenance when the system cannot boot or login, reinstalling the bootloader, rebuilding initramfs, upgrading/downgrading packages, resetting passwords, or building software in a clean environment.
+
+---
+
