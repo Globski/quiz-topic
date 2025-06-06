@@ -219,3 +219,64 @@ The official React website and documentation are available at:
 
 **Answer:**  
 React is described as a **"JavaScript library for building user interfaces"**.
+
+# Question: What is JavaScript mainly used for in web development?
+
+**Answer:**  
+JavaScript is used to add **interactivity** to websites. It allows developers to **react to user events** and **manipulate the page after it has loaded**, enabling the creation of highly interactive user interfaces.
+
+---
+
+# Question: Why is React described as a "browser-side" JavaScript library?
+
+**Answer:**  
+React is mainly executed **in the browser**, where it enhances the behavior and interactivity of webpages using JavaScript.
+
+---
+
+# Question: What is a "library" in the context of programming?
+
+**Answer:**  
+A **library** is a collection of functionalities that can be reused in your own code. It helps developers **write less and better code**, solving common problems more quickly and allowing them to focus on their application's core logic.
+
+---
+
+# Question: How does using a library like React improve development?
+
+**Answer:**  
+React allows developers to write **shorter, more efficient code**, avoid reinventing the wheel, and focus on core business logic. This leads to **faster development** and often **higher-quality code**.
+
+---
+
+# Question: What kind of user interfaces does React help build?
+
+**Answer:**  
+React helps build **interactive and reactive user interfaces**, not only for web browsers but also for native mobile devices when used with **React Native**.
+
+---
+
+# Question: What is React Native?
+
+**Answer:**  
+React Native is a **library built on React** that allows developers to create **native mobile applications** using the same concepts and syntax as React for the web.
+
+---
+
+# Question: Why can creating user interfaces with plain JavaScript be difficult?
+
+**Answer:**  
+Building complex, interactive user interfaces with just plain JavaScript can become **overwhelming and error-prone**, as it involves managing a lot of state and DOM manipulation manually.
+
+---
+
+# Question: Do the concepts learned in React for web also apply to React Native?
+
+**Answer:**  
+Yes, the **core concepts of React** are applicable across platforms, including both **web and mobile development** using React Native.
+
+---
+
+# Question: Why should developers use a library like React instead of vanilla JavaScript?
+
+**Answer:**  
+Because React provides **optimized, reusable solutions** for building complex UIs, it helps avoid the pitfalls of manual DOM manipulation and improves **efficiency, readability, and scalability**.
