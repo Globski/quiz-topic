@@ -335,3 +335,66 @@ Answer:
 In preprocessors, multiple files can be joined and compiled into one CSS file, avoiding multiple HTTP requests. In contrast, importing in plain CSS still causes additional server requests in the browser.
 
 ---
+
+# Question: What is Less in the context of CSS preprocessors?
+
+**Answer:**  
+Less is a CSS preprocessor mainly used in the Bootstrap framework. It includes typical preprocessor features like mixins, math operations, nesting, and variables. Less allows quick invoking of declared mixins to reuse sets of CSS properties across different selectors.
+
+---
+
+# Question: How do you use a declared mixin in Less with an example?
+
+**Answer:**  
+In Less, you first declare a class with some properties, for example:  
+```less
+.text-settings {
+  font-size: 12px;
+  font-family: Arial;
+  text-align: center;
+}
+```
+Then, you can reuse these properties in another selector by invoking the class name as a mixin, like this:  
+```less
+p {
+  .text-settings;
+  color: red;
+}
+```
+This compiles to:  
+```css
+p {
+  font-size: 12px;
+  font-family: Arial;
+  text-align: center;
+  color: red;
+}
+```
+
+---
+
+# Question: What are the two syntax styles supported by Stylus?
+
+**Answer:**  
+Stylus supports two versions of syntax: one that uses braces `{}` and semicolons `;`, and another that omits braces and semicolons. Additionally, Stylus allows omission of colons `:` between property names and values.
+
+---
+
+# Question: How does Stylus compare to SASS in terms of syntax flexibility?
+
+**Answer:**  
+Stylus offers more syntax flexibility than SASS by allowing the omission of braces, semicolons, and colons. This makes Stylus code often shorter and cleaner than SASS, which requires stricter syntax rules.
+
+---
+
+# Question: What is predicted about Stylus’s future in relation to SASS?
+
+**Answer:**  
+If Stylus continues to be developed and retains its current features, it is predicted to become the biggest competitor to SASS.
+
+---
+
+# Question: Which preprocessor is described as the most mature in the given content?
+
+**Answer:**  
+SASS is described as the most mature CSS preprocessor in the given content.
