@@ -180,3 +180,82 @@ This compiles the program and creates an executable file `hello.exe` in the curr
 One example is `/W3`, which enables a set of warnings similar to what `-Wall` does in GCC.
 
 ---
+
+# Question: How do you execute a compiled C program named `hello` from the terminal?
+
+**Answer:**
+You execute it by typing `./hello` in the terminal. This runs the binary and prints `Hello, World` followed by a newline to the command prompt.
+
+---
+
+# Question: Who are the authors of the book *The C Programming Language*?
+
+**Answer:**
+Brian Kernighan and Dennis Ritchie. Dennis Ritchie was also the original developer of the C programming language at Bell Labs.
+
+---
+
+# Question: What did C89 assume about the return type of `main()` if not specified?
+
+**Answer:**
+In C89, if the return type of `main()` was not explicitly stated, it defaulted to `int`.
+
+---
+
+# Question: What change did C99 introduce regarding the `main()` function’s return?
+
+**Answer:**
+C99 allowed the omission of the `return` statement in `main()` by treating reaching the end of `main()` as equivalent to returning 0, which indicates successful execution.
+
+---
+
+# Question: What is the most portable and recommended way to declare `main()` in C for programs that do not use command-line arguments?
+
+**Answer:**
+The recommended form is:
+
+```c
+int main(void)
+```
+
+---
+
+# Question: What is the recommended declaration of `main()` when command-line arguments are used?
+
+**Answer:**
+The recommended form is:
+
+```c
+int main(int argc, char **argv)
+```
+
+---
+
+# Question: According to C90 §5.1.2.2.3, what does a return from `main()` equate to?
+
+**Answer:**
+A return from the initial call to the `main()` function is equivalent to calling the `exit` function with the return value of `main()` as its argument.
+
+---
+
+# Question: What happens if `main()` executes a `return` statement without a value in C90?
+
+**Answer:**
+According to C90 §5.1.2.2.3, the termination status returned to the host environment is undefined.
+
+---
+
+# Question: What does C90 §6.6.6.4 state about return statements without expressions?
+
+**Answer:**
+If a return statement without an expression is executed and the value is used by the caller, the behavior is undefined. Reaching the closing `}` is equivalent to executing such a return.
+
+---
+
+# Question: What does C99 §5.1.2.2.3 specify about program termination in `main()`?
+
+**Answer:**
+If `main()` returns a type compatible with `int`, reaching the closing `}` is treated as returning 0. If the return type is not compatible with `int`, the termination status is unspecified.
+
+---
+
