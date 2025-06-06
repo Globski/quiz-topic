@@ -280,3 +280,74 @@ Yes, the **core concepts of React** are applicable across platforms, including b
 
 **Answer:**  
 Because React provides **optimized, reusable solutions** for building complex UIs, it helps avoid the pitfalls of manual DOM manipulation and improves **efficiency, readability, and scalability**.
+
+---
+
+# Question: What is "vanilla JavaScript"?
+
+**Answer:**  
+"Vanilla JavaScript" refers to using **plain JavaScript** without any external libraries or frameworks like React, Angular, or Vue. It's just the core JavaScript language and browser APIs.
+
+---
+
+# Question: What is a key advantage of using vanilla JavaScript in web development?
+
+**Answer:**  
+Vanilla JavaScript usually results in **smaller file sizes**, as it doesn’t include the additional code from frameworks or libraries. This means **faster downloads** for users and potentially better performance.
+
+---
+
+# Question: What is the main downside of using vanilla JavaScript for complex user interfaces?
+
+**Answer:**  
+The developer must implement **all functionalities from scratch**, which can be **error-prone**, **time-consuming**, and difficult to manage for **larger or more interactive applications**.
+
+---
+
+# Question: How does React improve the development experience compared to vanilla JavaScript?
+
+**Answer:**  
+React provides a more manageable way to build interfaces by **moving from an imperative to a declarative approach**, simplifying the creation and maintenance of complex UIs.
+
+---
+
+# Question: What does "imperative vs declarative" mean in the context of JavaScript and React?
+
+**Answer:**  
+In an **imperative approach**, you manually describe each step the program must take (like vanilla JavaScript).  
+In a **declarative approach** (like in React), you describe **what** the UI should look like in a given state, and React handles **how** to update the DOM.
+
+---
+
+# Question: Provide a simple vanilla JavaScript example of updating a paragraph’s text when a button is clicked.
+
+**Answer:**  
+```javascript
+const buttonElement = document.querySelector('button');
+const paragraphElement = document.querySelector('p');
+
+function updateTextHandler() {
+  paragraphElement.textContent = 'Text was changed!';
+}
+
+buttonElement.addEventListener('click', updateTextHandler);
+```
+
+---
+
+# Question: What are the two DOM elements selected in the vanilla JavaScript example?
+
+**Answer:**  
+- A `<button>` element  
+- A `<p>` (paragraph) element
+
+---
+
+# Question: What happens when the button is clicked in the vanilla JavaScript example?
+
+**Answer:**  
+The paragraph text is changed to `'Text was changed!'` by modifying the `textContent` property of the `<p>` element.
+
+---
+
+
