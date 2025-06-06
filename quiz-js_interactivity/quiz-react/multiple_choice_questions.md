@@ -102,3 +102,49 @@ Further guidance is available at the official React documentation:
 
 **Answer:**  
 You will be prompted to grant permission to install the necessary files and folders. The process may take several minutes to complete.
+
+---
+
+# Question: What command do you use to launch the Node.js development server and preview your React app locally?
+
+**Answer:**  
+You use the command:  
+```bash
+npm start
+```  
+This launches the Node.js development server and opens your React app in a browser for live preview.
+
+---
+
+# Question: What happens when you run `npm start` in your React project directory?
+
+**Answer:**  
+Running `npm start` starts a local development server and attempts to open a new browser window displaying your app at `http://localhost:3000`.
+
+---
+
+# Question: What should you do if the browser doesn't open automatically after running `npm start`?
+
+**Answer:**  
+Manually open your browser and type `http://localhost:3000` into the address bar to access the React application.
+
+---
+
+# Question: How do you stop the development server once you're done?
+
+**Answer:**  
+You stop the server by pressing `Ctrl + C` in the terminal window where it is running.
+
+---
+
+# Question: How do you restart the development server after stopping it?
+
+**Answer:**  
+You can restart the server by running the command `npm start` again in your terminal.
+
+---
+
+# Question: Why should the process started by `npm start` remain running during development?
+
+**Answer:**  
+Keeping the `npm start` process running is essential because it automatically updates the website on `localhost:3000` with any changes you make to your code.
