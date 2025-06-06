@@ -246,3 +246,92 @@ jQuery allows hyphenated property names to be either quoted as strings (e.g., `"
 
 ---
 
+# Question: How do you define a mixin in SASS?
+
+Answer:  
+You define a mixin using the `@mixin` keyword followed by a name and optional parameters.  
+Example:  
+@mixin borderRadius($radius) {  
+  -webkit-border-radius: $radius;  
+  -moz-border-radius: $radius;  
+  border-radius: $radius;  
+}
+
+---
+
+# Question: How do you use (invoke) a mixin in SASS?
+
+Answer:  
+You use the `@include` keyword followed by the mixin name and any required arguments.  
+Example:  
+@include borderRadius(20px);
+
+---
+
+# Question: What types of mathematical operations can you use in CSS preprocessors?
+
+Answer:  
+You can use:  
+• Addition  
+• Subtraction  
+• Multiplication  
+• Division
+
+---
+
+# Question: How can you calculate column width in a preprocessor using math?
+
+Answer:  
+$wrapperWidth: 1000px;  
+$columnsNumber: 10;  
+$innerPadding: 10px;  
+
+$widthOfColumn: $wrapperWidth / $columnsNumber;  
+
+.wrapper {  
+  width: $wrapperWidth;  
+}  
+
+.column {  
+  width: $widthOfColumn;  
+  padding: 0 10px;  
+}
+
+---
+
+# Question: What comparison operators are available in preprocessors?
+
+Answer:  
+• `<` (less than)  
+• `>` (greater than)  
+• `==` (equal to)  
+• `!=` (not equal to)  
+• `<=` (less than or equal to)  
+• `>=` (greater than or equal to)
+
+---
+
+# Question: What logical operators can be used in preprocessors?
+
+Answer:  
+• `and`  
+• `or`  
+• `not`
+
+---
+
+# Question: What loop types are supported in preprocessors?
+
+Answer:  
+• `if`  
+• `foreach`  
+• `while`
+
+---
+
+# Question: Why is joining multiple CSS files using preprocessors more efficient?
+
+Answer:  
+In preprocessors, multiple files can be joined and compiled into one CSS file, avoiding multiple HTTP requests. In contrast, importing in plain CSS still causes additional server requests in the browser.
+
+---
