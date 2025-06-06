@@ -406,3 +406,120 @@ It can cause a variable on the next line (e.g., `int bar = 0;`) to be treated as
 
 ---
 
+# Question: What is a distinctive syntactic peculiarity of declarations in C?
+
+**Answer:**
+Declarations in C mirror the use of the declared object as it would be used in a normal expression.
+
+---
+
+# Question: What three operators are reused in C declarators, and what do they denote?
+
+**Answer:**
+
+* `*` (unary dereference): denotes a pointer
+* `[]` (binary array subscription): denotes an array
+* `()` (function call): denotes a function
+
+---
+
+# Question: What is the purpose of grouping parentheses `()` in declarations?
+
+**Answer:**
+They override the precedence and associativity of the other operators to clarify the intended structure of a declaration.
+
+---
+
+# Question: What is the relative precedence and associativity of `[]`, `()`, and `*` in C declarations?
+
+**Answer:**
+
+| Operator | Relative Precedence | Associativity |
+| -------- | ------------------- | ------------- |
+| `[]`     | 1                   | Left-to-right |
+| `()`     | 1                   | Left-to-right |
+| `*`      | 2                   | Right-to-left |
+
+---
+
+# Question: When interpreting a declaration, where should you begin and how should you proceed?
+
+**Answer:**
+Start from the identifier and move outward, applying adjacent operators according to their precedence and associativity.
+
+---
+
+# Question: How can C declarations be interpreted in plain English?
+
+**Answer:**
+Each operator corresponds to an English phrase:
+
+* `thing[X]`: an array of size X of...
+* `thing(t1, t2, t3)`: a function taking t1, t2, t3 and returning...
+* `*thing`: a pointer to...
+
+---
+
+# Question: In C declarations, how does the interpretation begin and end?
+
+**Answer:**
+It always begins with the identifier and ends with the base type that appears on the left-hand side of the declaration.
+
+---
+
+# Question: How do you interpret `char *names[20];`?
+
+**Answer:**
+Since `[]` takes precedence over `*`, the interpretation is:
+`names` is an array of size 20 of a pointer to `char`.
+
+---
+
+# Question: How do you interpret `char (*place)[10];`?
+
+**Answer:**
+Parentheses override precedence, so `*` is applied first:
+`place` is a pointer to an array of size 10 of `char`.
+
+---
+
+# Question: How do you interpret `int fn(long, short);`?
+
+**Answer:**
+No precedence issues here:
+`fn` is a function taking `long`, `short` and returning `int`.
+
+---
+
+# Question: How do you interpret `int *fn(void);`?
+
+**Answer:**
+The `()` is applied first:
+`fn` is a function taking `void` and returning a pointer to `int`.
+
+---
+
+# Question: How do you interpret `int (*fp)(void);`?
+
+**Answer:**
+Parentheses override the default precedence:
+`fp` is a pointer to a function taking `void` and returning `int`.
+
+---
+
+# Question: How do you interpret `int arr[5][8];`?
+
+**Answer:**
+According to left-to-right associativity of `[]`:
+`arr` is an array of size 5 of an array of size 8 of `int`.
+
+---
+
+# Question: How do you interpret `int **ptr;`?
+
+**Answer:**
+The two `*` operators are applied in right-to-left order:
+`ptr` is a pointer to a pointer to an `int`.
+
+---
+
