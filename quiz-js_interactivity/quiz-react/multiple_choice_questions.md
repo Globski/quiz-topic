@@ -350,4 +350,61 @@ The paragraph text is changed to `'Text was changed!'` by modifying the `textCon
 
 ---
 
+# Question: Why is the vanilla JavaScript example considered simple but not scalable?
+
+**Answer:**  
+Because it only handles a single interaction with minimal logic. In larger, feature-rich apps, vanilla JavaScript requires managing many event listeners and DOM updates manually, which becomes **complex and difficult to maintain**.
+
+---
+
+# Question: What does "imperative programming" mean in the context of vanilla JavaScript?
+
+**Answer:**  
+It means writing code as a **step-by-step set of instructions**, describing **exactly how** to perform tasks. In the example, the developer manually sets variables, attaches event listeners, and updates elements explicitly.
+
+---
+
+# Question: Translate the vanilla JS code into human-readable steps.
+
+**Answer:**  
+1. Find the first `<button>` element on the page.  
+2. Store it in a constant called `buttonElement`.  
+3. Find the first `<p>` element.  
+4. Store it in a constant called `paragraphElement`.  
+5. Add a click event listener to `buttonElement`.  
+6. When the button is clicked, update `paragraphElement.textContent` to "Text was changed!".
+
+---
+
+# Question: What are some problems of imperative programming for building user interfaces?
+
+**Answer:**  
+- **Verbosity**: Many instructions are needed even for simple tasks.  
+- **Repetition**: Similar code is repeated for multiple elements.  
+- **Error-prone**: Manually updating the DOM increases the chance of bugs.  
+- **Hard to scale**: As interfaces grow, the logic becomes harder to follow and maintain.
+
+---
+
+# Question: Why does imperative code become a problem in large UI projects?
+
+**Answer:**  
+Because **every interaction and DOM change** must be written explicitly. This leads to **longer code**, **higher maintenance**, and **increased chances of bugs** as complexity grows.
+
+---
+
+# Question: How does React address these challenges?
+
+**Answer:**  
+React uses a **declarative approach**, where developers describe **what the UI should look like**, not how to update it. React handles the DOM changes behind the scenes, making code cleaner and more scalable.
+
+---
+
+# Question: What does DOM stand for and why is it relevant in this context?
+
+**Answer:**  
+**DOM** stands for **Document Object Model**. It's the browser’s in-memory representation of the page structure. Vanilla JavaScript requires **manually updating the DOM**, whereas React abstracts that complexity.
+
+---
+
 
