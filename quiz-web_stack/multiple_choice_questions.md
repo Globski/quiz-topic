@@ -1,3 +1,66 @@
+# Question: What is the main purpose of using the Inspector tool in a web browser?
+
+Answer:  
+The Inspector allows developers to view and debug HTML and CSS code directly within the browser, including visualizing the box model and applied styles.
+
+---
+
+# Question: How can you open the Inspector using your mouse?
+
+Answer:  
+You can right-click on any element in the browser and choose “Inspect” from the context menu.
+
+---
+
+# Question: What key shortcut opens the Inspector in Google Chrome on Windows?
+
+Answer:  
+Pressing `F12` opens the Inspector on Windows.
+
+---
+
+# Question: What key shortcut opens the Inspector on macOS?
+
+Answer:  
+On macOS, press `Cmd + Option + I` to open the Inspector.
+
+---
+
+# Question: What did web developers use before built-in browser Inspectors became standard?
+
+Answer:  
+They used Firebug, a popular extension specifically for Firefox.
+
+---
+
+# Question: What key shortcut reloads a webpage in most browsers?
+
+Answer:  
+`Ctrl + R` on Windows or `Cmd + R` on macOS reloads the page.
+
+---
+
+# Question: What is the shortcut for reloading a page while bypassing the cache?
+
+Answer:  
+`Ctrl + Shift + R` on Windows or `Cmd + Shift + R` on macOS reloads the page without using cached data.
+
+---
+
+# Question: Which shortcut shows the source code of the current page?
+
+Answer:  
+`Ctrl + U` on Windows or `Cmd + Option + U` on macOS shows the page source.
+
+---
+
+# Question: Why is using keyboard shortcuts important for web developers?
+
+Answer:  
+Keyboard shortcuts speed up the development and debugging process, making work more efficient.
+
+---
+
 # Question: Why is cross-browser compatibility important in frontend development?
 
 Answer:
