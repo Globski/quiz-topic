@@ -148,3 +148,74 @@ You can restart the server by running the command `npm start` again in your term
 
 **Answer:**  
 Keeping the `npm start` process running is essential because it automatically updates the website on `localhost:3000` with any changes you make to your code.
+
+---
+
+# Question: What is React.js, and how is it commonly referred to?
+
+**Answer:**  
+React.js, commonly referred to as **React**, is one of the most popular frontend JavaScript libraries. It is widely used for building user interfaces and is often considered the most popular frontend tool according to developer surveys.
+
+---
+
+# Question: According to the 2021 Stack Overflow Developer Survey, how does React rank among frontend libraries?
+
+**Answer:**  
+According to the 2021 Stack Overflow Developer Survey, React is possibly the **most popular frontend JavaScript library**.
+
+---
+
+# Question: What percentage of the top 1,000 websites use React?
+
+**Answer:**  
+Over **5% of the top 1,000 websites** use React.
+
+---
+
+# Question: How does React compare to Angular based on npm download statistics?
+
+**Answer:**  
+React significantly **leads Angular** in key metrics such as **weekly package downloads** via npm.
+
+---
+
+# Question: What is npm, and how is it related to React?
+
+**Answer:**  
+**npm (Node Package Manager)** is a tool used for downloading and managing JavaScript packages, including React and its related tools.
+
+---
+
+# Question: Why is it important to understand how React works instead of just using it?
+
+**Answer:**  
+Understanding how React works helps developers make informed decisions, write better code, and understand the **reasons behind the tool’s existence and features**. It promotes more effective and efficient development.
+
+---
+
+# Question: Can you write good React code without understanding it fully?
+
+**Answer:**  
+Yes, it’s possible to write good React code without fully understanding it, but it is **strongly recommended** to understand the tool and its underlying concepts.
+
+---
+
+# Question: What should you do if you're unsure about why you are using React?
+
+**Answer:**  
+If you're not 100% certain about why you're using React, you should **follow the introductory chapters** that explain its purpose, benefits, and core concepts.
+
+---
+
+# Question: Where can you find the official React documentation?
+
+**Answer:**  
+The official React website and documentation are available at:  
+[https://reactjs.org](https://reactjs.org)
+
+---
+
+# Question: How does the React documentation describe React?
+
+**Answer:**  
+React is described as a **"JavaScript library for building user interfaces"**.
