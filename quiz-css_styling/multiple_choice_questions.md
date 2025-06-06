@@ -1049,3 +1049,104 @@ hsla(9, 100%, 64%, 1)     /* Fully opaque */
 ```
 
 ---
+
+# Question: What is a CSS preprocessor?
+
+Answer:  
+A CSS preprocessor is a tool that compiles a more advanced syntax (similar to CSS) into standard CSS, adding features like variables, nesting, and more.
+
+---
+
+# Question: Name some key advantages of using a CSS preprocessor.
+
+Answer:  
+Advantages include:
+- Code nesting  
+- Use of variables  
+- Creation of mixins  
+- Mathematical and logical operations  
+- Loops and conditions  
+- Joining multiple files
+
+---
+
+# Question: How does nesting in preprocessors differ from regular CSS?
+
+Answer:  
+In preprocessors, you can nest selectors inside other selectors in a structured way, reducing repetition and improving readability. This is not possible in standard CSS.
+
+---
+
+# Question: What is an example of how nesting works in a CSS preprocessor?
+
+Answer:  
+```scss
+.class {
+  property: value;
+
+  .insideClass {
+    property: value;
+  }
+}
+
+This compiles to:
+
+.class {
+  property: value;
+}
+.class .insideClass {
+  property: value;
+}
+```
+
+
+---
+
+# Question: Why is using variables helpful in CSS preprocessors?
+
+Answer:
+Variables allow you to store values like colors, font sizes, or spacing, making it easier to update styles consistently across a project with just one change.
+
+---
+
+# Question: Why is using variables in pure CSS limited?
+
+Answer:
+Not all browsers fully support native CSS variables, and older CSS does not allow variable use, which limits flexibility compared to preprocessors.
+
+---
+
+# Question: What is a mixin in the context of CSS preprocessors?
+
+Answer:
+A mixin is a reusable block of CSS declarations that can be included in other selectors, helping to avoid duplication and increase modularity.
+
+---
+
+# Question: What’s an example of nesting in SASS using indentation?
+
+Answer:
+
+.class
+  property: value
+
+  .insideClass
+    property: value
+
+
+
+---
+
+# Question: What is one major benefit of proper nesting usage in preprocessors?
+
+Answer:
+Proper nesting keeps the stylesheet organized and scalable while minimizing redundancy and enhancing maintainability.
+
+---
+
+# Question: What happens to preprocessor code after compilation?
+
+Answer:
+It is converted into standard CSS that browsers can understand and render.
+
+---
