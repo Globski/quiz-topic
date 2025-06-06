@@ -60,7 +60,141 @@ A free alternative is to create a virtual machine on your computer, where you ca
 Answer:
 Using a virtual machine allows you to simulate different system environments and browser versions locally, providing full control over your testing setup without relying on external services.
 
-⸻
+---
+
+# Question: Why are snippets useful in the programming process?
+
+Answer:
+Snippets help speed up the programming process by allowing developers to reuse commonly written code segments, reducing repetition and increasing productivity.
+
+# Question: Why are snippets useful in the programming process?
+
+Answer:  
+Snippets help speed up the programming process by allowing developers to reuse commonly written code segments, reducing repetition and increasing productivity.
+
+---
+
+# Question: What is Emmet?
+
+Answer:  
+Emmet (formerly known as Zen Coding) is a collection of HTML/CSS code snippets designed to help developers write code faster by using shorthand syntax that expands into complete code structures.
+
+---
+
+# Question: In which type of development is Emmet especially useful?
+
+Answer:  
+Emmet is especially useful in frontend development, where repetitive HTML and CSS structures are common.
+
+---
+
+# Question: Name some code editors that support Emmet.
+
+Answer:  
+Modern frontend editors that support Emmet include Sublime Text, Atom, Brackets, WebStorm, and others.
+
+---
+
+# Question: How do you trigger an Emmet snippet?
+
+Answer:  
+To trigger an Emmet snippet, you write a shorthand expression (e.g., `.className {pl}`), then press the Tab key, which expands the snippet into full code.
+
+---
+
+# Question: What does the Emmet abbreviation pl expand to?
+
+Answer:  
+`pl` expands to `padding-left`.
+
+---
+
+# Question: What is the Emmet abbreviation for background?
+
+Answer:  
+The abbreviation `bg` expands to `background`.
+
+---
+
+# Question: What does the Emmet abbreviation bgc stand for?
+
+Answer:  
+`bgc` stands for `background-color`.
+
+---
+
+# Question: Which Emmet abbreviation is used for setting margin?
+
+Answer:  
+`m` is the general abbreviation for `margin`.
+
+---
+
+# Question: What do the Emmet abbreviations ml, mr, mt, and mb stand for?
+
+Answer:  
+- `ml` stands for `margin-left`  
+- `mr` stands for `margin-right`  
+- `mt` stands for `margin-top`  
+- `mb` stands for `margin-bottom`
+
+---
+
+# Question: What does ml20px expand to using Emmet?
+
+Answer:  
+`ml20px` expands to `margin-left: 20px`.
+
+---
+
+# Question: What is the Emmet abbreviation for setting color?
+
+Answer:  
+The abbreviation `c` is used for `color`.
+
+---
+
+# Question: What does fl expand to in Emmet?
+
+Answer:  
+`fl` expands to `float: left`.
+
+---
+
+# Question: What does the Emmet abbreviation p20px20p produce?
+
+Answer:  
+`p20px20p` produces `padding: 20px 20%`.
+
+---
+
+# Question: What is the Emmet abbreviation tac used for?
+
+Answer:  
+`tac` is used for `text-align: center`.
+
+---
+
+# Question: What does tdn stand for in Emmet?
+
+Answer:  
+`tdn` stands for `text-decoration: none`.
+
+---
+
+# Question: What is the Emmet abbreviation ttu used for?
+
+Answer:  
+`ttu` is used for `text-transform: uppercase`.
+
+---
+
+# Question: Can you customize your own Emmet shorthand in VS Code?
+
+Answer:  
+Yes, you can customize your own Emmet abbreviations in Visual Studio Code by modifying the Emmet settings in the `settings.json` file under the `emmet.extensionsPath` configuration.
+
+---
 
 # Question: Into what two main categories do CSS properties generally fall?
 
@@ -135,11 +269,14 @@ HTML (HyperText Markup Language) is the most basic building block of the Web. It
 **Answer:**
 "Hypertext" refers to links that connect web pages to one another, either within a single website or between different websites, enabling navigation across the Web.
 
+---
+
 # Question: What technologies are typically used alongside HTML, and what are their purposes?
 
 **Answer:**
 CSS is used to describe a web page's appearance or presentation, while JavaScript is used to add functionality or behavior to a web page.
 
+---
 # Question: How does HTML markup annotate content for display?
 
 **Answer:**
