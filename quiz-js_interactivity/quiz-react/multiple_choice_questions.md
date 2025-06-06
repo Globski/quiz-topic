@@ -37,3 +37,68 @@ You can click on **Other Downloads**, which is the first of three links visible 
 
 **Answer:**  
 The 'Other Downloads' link provides access to a page listing **all installation options** for **all main platforms**, including source code versions and different builds of Node.js.
+
+# Question: What is available at the bottom of the Node.js download page?
+
+**Answer:**  
+A bullet list of available resources is provided, including guidance on installing Node.js via source code and the node package manager (npm), for systems that require specialized instructions.
+
+---
+
+# Question: What file do you need to locate after downloading Node.js, and what should you do with it?
+
+**Answer:**  
+You need to find the `.pkg` file in your Downloads folder. Double-click it to open the "Install Node.js" pop-up window and follow the given instructions to complete the installation.
+
+---
+
+# Question: What is the easiest and recommended way to create a React.js project?
+
+**Answer:**  
+The easiest and recommended way to create a React.js project is by using the `create-react-app` command.
+
+---
+
+# Question: What other methods exist for creating React.js projects besides create-react-app?
+
+**Answer:**  
+React.js projects can also be created using custom-built setups that incorporate tools like webpack and Babel, though they are more complex.
+
+---
+
+# Question: Where can you find further guidance on React.js installation and setup?
+
+**Answer:**  
+Further guidance is available at the official React documentation:  
+[https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+
+---
+
+# Question: What are the steps to install React.js using create-react-app?
+
+**Answer:**  
+1. **Open your terminal** (PowerShell/Command Prompt for Windows; Bash for Linux).  
+2. **Create a new project folder** with a name of your choice using:  
+   ```bash
+   mkdir react-projects
+   ```  
+3. **Navigate to the new directory** using:  
+   ```bash
+   cd react-projects
+   ```  
+4. **Create a new React project** using:  
+   ```bash
+   npx create-react-app my-app
+   ```  
+5. **Grant permission** to install required files and folders when prompted.  
+6. **Navigate to your new React project directory** using:  
+   ```bash
+   cd my-app
+   ```
+
+---
+
+# Question: What should you expect during the React installation process?
+
+**Answer:**  
+You will be prompted to grant permission to install the necessary files and folders. The process may take several minutes to complete.
