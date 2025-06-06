@@ -259,3 +259,122 @@ If `main()` returns a type compatible with `int`, reaching the closing `}` is tr
 
 ---
 
+# Question: What is the purpose of comments in C?
+
+**Answer:**
+Comments are used to indicate something to the person reading the code. They are treated as blanks by the compiler and do not change the actual meaning of the code.
+
+---
+
+# Question: What are the two primary comment syntaxes in C?
+
+**Answer:**
+The original syntax is `/* */` for multi-line comments, and the newer syntax introduced in C99 is `//` for single-line comments.
+
+---
+
+# Question: How can large chunks of code be commented out using the preprocessor?
+
+**Answer:**
+Using `#if 0` to start and `#endif` to end. Anything between these is removed by the preprocessor.
+Example:
+
+```c
+#if 0
+/* code to be excluded */
+#endif
+```
+
+---
+
+# Question: Why is `#if 0 ... #endif` useful for commenting?
+
+**Answer:**
+It is useful when the code block contains multi-line comments that would otherwise not nest properly with `/* */` syntax.
+
+---
+
+# Question: How does a `/* */` comment begin and end?
+
+**Answer:**
+It starts with `/*` and ends with `*/`. Everything in between is treated as a comment and ignored by the compiler.
+
+---
+
+# Question: Can `/* */` comments span multiple lines?
+
+**Answer:**
+Yes, `/* */` comments can span multiple lines.
+
+---
+
+# Question: What is a common formatting style for multi-line `/* */` comments?
+
+**Answer:**
+A common style is to place `/*` and `*/` on their own lines and begin each intermediate line with a `*`, like this:
+
+```c
+/*
+ * comment line 1
+ * comment line 2
+ */
+```
+
+---
+
+# Question: Where can `/* */` comments be placed in C code?
+
+**Answer:**
+They can be on their own line, at the end of a line of code, or even inside a line of code.
+
+---
+
+# Question: Can `/* */` comments be nested?
+
+**Answer:**
+No, `/* */` comments cannot be nested. The first closing `*/` ends the comment, even if another `/*` appears inside.
+
+---
+
+# Question: Why is nesting `/* */` comments problematic?
+
+**Answer:**
+Because the compiler ignores everything from the first `/*` to the first `*/`, which can cause unintended parts of the code to be commented out or result in compilation errors.
+
+---
+
+# Question: What version of C introduced `//` comments?
+
+**Answer:**
+C99 introduced the `//` style single-line comments, similar to those in C++.
+
+---
+
+# Question: How do `//` comments work?
+
+**Answer:**
+A `//` comment begins with two forward slashes and continues to the end of the line.
+
+---
+
+# Question: Can `//` comments span multiple lines?
+
+**Answer:**
+No, `//` comments cannot span multiple lines. Each line must begin with `//` if multiple lines are desired.
+
+---
+
+# Question: Where can `//` comments be used?
+
+**Answer:**
+They can be used on their own line or at the end of a line of code, but not in the middle of a line of code.
+
+---
+
+# Question: What is a possible pitfall when using `//` comments?
+
+**Answer:**
+A typographical error involving trigraphs may affect the expected operation of `//` comments.
+
+---
+
