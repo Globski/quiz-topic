@@ -1,3 +1,67 @@
+Question: Why is cross-browser compatibility important in frontend development?
+
+Answer:
+Cross-browser compatibility ensures that a website or application functions correctly across different web browsers, providing a consistent user experience for all visitors regardless of the browser they use.
+
+⸻
+
+Question: Which modern web browsers should you install to test your code?
+
+Answer:
+To test your code effectively, you should install the following browsers in their newest versions:
+	•	Google Chrome
+	•	Mozilla Firefox
+	•	Mozilla Firefox Developer Edition
+	•	Opera
+	•	Safari
+
+⸻
+
+Question: What makes Internet Explorer a major challenge for frontend developers?
+
+Answer:
+Internet Explorer (IE) is a major challenge because developers often need to test and support multiple older versions such as IE9, IE10, and IE11. These versions may render code differently and have limited support for modern web standards.
+
+⸻
+
+Question: Why is support for older versions of Internet Explorer becoming less common?
+
+Answer:
+Support for older versions like IE6, IE7, and IE8 is decreasing because major platforms like YouTube and Facebook no longer support them, and most users have moved on to newer browsers.
+
+⸻
+
+Question: Why might some companies still require support for old versions of Internet Explorer?
+
+Answer:
+Some large companies still use old versions of Internet Explorer due to the complexity of upgrading operating systems across the organization, which makes it difficult to adopt newer browsers.
+
+⸻
+
+Question: Name three online tools that can be used to test cross-browser compatibility.
+
+Answer:
+Three online tools for testing cross-browser compatibility are:
+	•	CrossBrowserTesting
+	•	Browserling
+	•	BrowserStack
+
+⸻
+
+Question: What is a free alternative to online browser testing tools?
+
+Answer:
+A free alternative is to create a virtual machine on your computer, where you can install the specific operating system and browser version you need for testing.
+
+⸻
+
+Question: What is the benefit of using a virtual machine for browser testing?
+
+Answer:
+Using a virtual machine allows you to simulate different system environments and browser versions locally, providing full control over your testing setup without relying on external services.
+
+⸻
+
 # Question: Into what two main categories do CSS properties generally fall?
 
 **Answer:**
