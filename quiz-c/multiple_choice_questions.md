@@ -378,3 +378,31 @@ A typographical error involving trigraphs may affect the expected operation of `
 
 ---
 
+# Question: What is a trigraph in C?
+
+**Answer:**
+A trigraph is a three-character sequence that the C preprocessor replaces with a single character. For example, `??/` is replaced by `\`, which is the line continuation symbol.
+
+---
+
+# Question: What can happen if `??/` appears at the end of a `//` comment?
+
+**Answer:**
+It will be interpreted as a backslash (`\`), making the next line appear as a continuation of the comment. This can cause unexpected behavior, such as unintentionally commenting out code on the next line.
+
+---
+
+# Question: What is the consequence of a trigraph like `??/` at the end of a comment?
+
+**Answer:**
+The compiler treats the next line as part of the same comment. This can cause valid code (like variable declarations) to be ignored and may lead to compilation errors.
+
+---
+
+# Question: What specific error can occur due to a `??/` trigraph at the end of a `//` comment?
+
+**Answer:**
+It can cause a variable on the next line (e.g., `int bar = 0;`) to be treated as part of the comment, leading to a compilation error such as an undeclared variable if it's later referenced.
+
+---
+
