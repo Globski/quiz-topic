@@ -362,3 +362,50 @@ Standard HTML:
 
 ---
 
+# Question: What is xHTML and why was it introduced?
+
+**Answer:**
+xHTML, or Extensible HyperText Markup Language, was introduced around 2000 as an improved version of HTML to keep pace with the rise of XML (Extensible Markup Language). It is essentially an "XML-ified" version of HTML intended to be the future standard for web pages by combining HTML's features with XML's stricter syntax rules.
+
+—-
+
+# Question: Why did the W3C move away from xHTML towards HTML5?
+
+**Answer:**
+The W3C moved away from xHTML because the complexity of fully adopting XML as the web's prime language made browser manufacturers reluctant to follow that path. As a result, the W3C closed the xHTML working group and developed HTML5 instead, which moves away from XML and back to an enhanced version of HTML, supported by all major browsers.
+
+—-
+
+# Question: How is HTML5 different from xHTML in terms of its approach to web development?
+
+**Answer:**
+Unlike xHTML, which aimed to foster a new way to build web pages with strict XML rules, HTML5 focuses on ensuring the Web continues to work as it always has, maintaining the basics of HTML while adding new elements to support modern web design practices without requiring XML compliance.
+
+—-
+
+# Question: What are some new tags introduced in HTML5, and what purposes do they serve?
+
+**Answer:**
+HTML5 introduced new semantic tags such as:
+
+* `<header>`: contains content typically found at the top of a page, like logos and navigation links.
+* `<nav>`: encloses navigation links for the site.
+* `<footer>`: holds content usually placed at the bottom of the page, such as legal notices or contact information.
+  Additionally, HTML5 adds tags to embed video and audio, and enhanced form tags with features like sliders, pop-up date pickers, and built-in form validation.
+
+—-
+
+# Question: What challenges are associated with using HTML5's new features?
+
+**Answer:**
+Browser support for many new HTML5 features is inconsistent, making it difficult to use them without elaborate workarounds. Older browsers, such as Internet Explorer 8 and earlier, require additional help to properly render HTML5 elements.
+
+—-
+
+# Question: Should developers start using HTML5 now, even though it is not fully supported?
+
+**Answer:**
+Yes, developers are encouraged to start using the HTML5 doctype and basic HTML5 elements now, despite some browser compatibility issues, especially with older browsers. HTML5 is widely supported by modern browsers like Google Chrome and Firefox and is becoming the new standard for web development.
+
+—-
+
