@@ -367,21 +367,21 @@ Standard HTML:
 **Answer:**
 xHTML, or Extensible HyperText Markup Language, was introduced around 2000 as an improved version of HTML to keep pace with the rise of XML (Extensible Markup Language). It is essentially an "XML-ified" version of HTML intended to be the future standard for web pages by combining HTML's features with XML's stricter syntax rules.
 
-—--
+---
 
 # Question: Why did the W3C move away from xHTML towards HTML5?
 
 **Answer:**
 The W3C moved away from xHTML because the complexity of fully adopting XML as the web's prime language made browser manufacturers reluctant to follow that path. As a result, the W3C closed the xHTML working group and developed HTML5 instead, which moves away from XML and back to an enhanced version of HTML, supported by all major browsers.
 
-—--
+---
 
 # Question: How is HTML5 different from xHTML in terms of its approach to web development?
 
 **Answer:**
 Unlike xHTML, which aimed to foster a new way to build web pages with strict XML rules, HTML5 focuses on ensuring the Web continues to work as it always has, maintaining the basics of HTML while adding new elements to support modern web design practices without requiring XML compliance.
 
-—--
+---
 
 # Question: What are some new tags introduced in HTML5, and what purposes do they serve?
 
@@ -487,18 +487,18 @@ Adding CSS to web design eliminates the need to repurpose awkward HTML tags just
 **Answer:**
 Old HTML tags and attributes like the <font> tag become obsolete and can be forgotten completely because CSS handles styling and visual effects.
 
-—--
+---
 
 # Question: Compare the size and complexity of an HTML-only page to a CSS-styled page with a similar look.
 
 **Answer:**
 An HTML-only page with visual effects can be nearly four times larger in file size and contain about three times more lines of code than a CSS-styled page achieving the same look. For example, an HTML-only page might be 14k with 213 lines of code, whereas the CSS version is only 4k with 71 lines.
 
-—--
+---
 
 # Question: Why was HTML originally created, and what was its primary purpose?
 
 **Answer:**
 HTML was originally created by scientists to structure technical documentation for easy comprehension, not for visual design. Its primary purpose was to organize information logically and semantically, such as using <h1> for main headings and <h2> for subheadings.
 
-—--
+---
