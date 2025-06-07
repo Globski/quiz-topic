@@ -474,3 +474,31 @@ Unlike previous versions, CSS3 is not a single standard but a collection of sepa
 There will be no single CSS4. Instead, new versions of different CSS modules will continue to be developed and updated independently at different levels.
 
 —-
+
+# Question: How does adding CSS change the way HTML is used on web pages?
+
+**Answer:**
+Adding CSS to web design eliminates the need to repurpose awkward HTML tags just to achieve visual effects. It makes writing HTML easier and more semantic by separating content structure from presentation, allowing the use of simpler and cleaner HTML code.
+
+—-
+
+# Question: What happens to old HTML tags like the <font> tag when using CSS-driven web design?
+
+**Answer:**
+Old HTML tags and attributes like the <font> tag become obsolete and can be forgotten completely because CSS handles styling and visual effects.
+
+—-
+
+# Question: Compare the size and complexity of an HTML-only page to a CSS-styled page with a similar look.
+
+**Answer:**
+An HTML-only page with visual effects can be nearly four times larger in file size and contain about three times more lines of code than a CSS-styled page achieving the same look. For example, an HTML-only page might be 14k with 213 lines of code, whereas the CSS version is only 4k with 71 lines.
+
+—-
+
+# Question: Why was HTML originally created, and what was its primary purpose?
+
+**Answer:**
+HTML was originally created by scientists to structure technical documentation for easy comprehension, not for visual design. Its primary purpose was to organize information logically and semantically, such as using <h1> for main headings and <h2> for subheadings.
+
+—-
