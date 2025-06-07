@@ -439,3 +439,38 @@ After typing a few hundred lines of HTML and CSS, basic editors can become cumbe
 TextWrangler is a free, simplified version of BBEdit. While it lacks some of BBEdit’s built-in HTML tools, it still offers syntax highlighting and FTP capabilities.
 
 —-
+
+# Question: What was introduced in CSS 1, and when was it released?
+
+**Answer:**
+CSS 1, introduced in 1996, laid the groundwork for Cascading Style Sheets by establishing the basic structure of styles and the selector concept, along with most of the core CSS properties covered in this book.
+
+—-
+
+# Question: What are some key features added in CSS 2?
+
+**Answer:**
+CSS 2 added features such as the ability to target different devices (like printers and monitors), new selectors, and precise positioning of elements on a web page.
+
+—-
+
+# Question: What is CSS 2.1, and how does it relate to CSS 2?
+
+**Answer:**
+CSS 2.1 is the current accepted standard that incorporates all of CSS 1, adds several new properties, and corrects some problems found in the CSS 2 guidelines. It is a minor update rather than a radical change from CSS 2, and most browsers have adapted to it smoothly.
+
+—-
+
+# Question: How is CSS3 different from previous versions like CSS 1 and CSS 2.1?
+
+**Answer:**
+Unlike previous versions, CSS3 is not a single standard but a collection of separate modules (e.g., Selectors, Values and Units, Box Alignment). Each module develops independently, meaning there is no unified "CSS3" standard. Different modules are at various stages of completion and browser support.
+
+—-
+
+# Question: What is the status of CSS4?
+
+**Answer:**
+There will be no single CSS4. Instead, new versions of different CSS modules will continue to be developed and updated independently at different levels.
+
+—-
