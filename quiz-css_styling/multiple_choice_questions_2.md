@@ -168,3 +168,92 @@ Common *HTML* doctypes include *HTML 4.01* and *XHTML 1.0*, each available in tw
 
 ---
 
+# Question: What is the simplified doctype used in HTML5?
+
+**Answer:**
+The simplified *HTML5* doctype is:
+
+```html
+<!doctype html>
+```
+
+It is supported by all major browsers, including older ones like Internet Explorer 6.
+
+---
+
+# Question: Why is the HTML5 doctype preferred over older doctypes?
+
+**Answer:**
+*HTML5* is easier to use, more streamlined, and widely supported. It avoids the complexity of earlier doctypes like HTML 4.01 and XHTML and is the future of web development.
+
+---
+
+# Question: Do all browsers support HTML5 features equally?
+
+**Answer:**
+No. While older browsers like Internet Explorer 6 and 8 support the *HTML5 doctype*, they do **not** recognize all *HTML5 tags* or features. Styling HTML5 tags in these browsers often requires additional *JavaScript*.
+
+---
+
+# Question: Why must every HTML page include a doctype?
+
+**Answer:**
+Including a *doctype* ensures consistent rendering across different browsers. Without it, browsers may display CSS inconsistently, causing your page to look different depending on the visitor’s browser.
+
+---
+
+# Question: What is the HTML 4.01 syntax for a line break?
+
+**Answer:**
+In *HTML 4.01*, a line break is written as:
+
+```html
+<br>
+```
+
+---
+
+# Question: What is the XHTML syntax for a line break?
+
+**Answer:**
+In *XHTML*, a line break is written as:
+
+```html
+<br />
+```
+
+---
+
+# Question: How does HTML5 handle line break syntax?
+
+**Answer:**
+*HTML5* is flexible and accepts **both** `<br>` and `<br />` as valid syntax for line breaks.
+
+---
+
+# Question: What do HTML tags do?
+
+**Answer:**
+*HTML tags* are instructions enclosed in brackets that tell the browser how to display content. They are the "markup" part of *Hypertext Markup Language*.
+
+---
+
+# Question: What is the structure of most HTML tags?
+
+**Answer:**
+Most HTML tags come in *pairs*: an opening tag (e.g., `<p>`) and a closing tag (e.g., `</p>`). The closing tag includes a forward slash `/`.
+
+---
+
+# Question: What are the four essential elements found in every HTML page?
+
+**Answer:**
+The four essential elements are:
+
+1. The *DOCTYPE* declaration.
+2. The opening `<html>` tag.
+3. The closing `</html>` tag.
+4. Content wrapped in HTML structure tags like `<head>`, `<title>`, and `<body>`.
+
+--
+
