@@ -409,3 +409,33 @@ Yes, developers are encouraged to start using the HTML5 doctype and basic HTML5 
 
 —-
 
+# Question: What basic software do you need to create web pages using HTML and CSS?
+
+**Answer:**
+You only need a basic text editor like Notepad on Windows or TextEdit on Mac to create web pages made up of HTML and CSS.
+
+—-
+
+# Question: Why might you want to use software other than basic text editors for web development?
+
+**Answer:**
+After typing a few hundred lines of HTML and CSS, basic editors can become cumbersome. Specialized software offers features like syntax highlighting, FTP support, and auto-completion that make writing, editing, and managing web pages easier and more efficient.
+
+—-
+
+# Question: Name three free programs for editing HTML and CSS, and one key feature of each.
+
+**Answer:**
+
+* **jEdit** (Windows, Mac, Linux): Java-based and includes syntax highlighting.
+* **Notepad++** (Windows): Fast text editor with syntax highlighting to color code HTML and CSS elements.
+* **TextWrangler** (Mac): Pared-down version of BBEdit with syntax highlighting and FTP support for uploading files.
+
+—-
+
+# Question: What is the difference between TextWrangler and BBEdit?
+
+**Answer:**
+TextWrangler is a free, simplified version of BBEdit. While it lacks some of BBEdit’s built-in HTML tools, it still offers syntax highlighting and FTP capabilities.
+
+—-
