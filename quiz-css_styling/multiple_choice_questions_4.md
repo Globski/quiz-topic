@@ -329,6 +329,66 @@ Using 769 pixels ensures that the style sheet applies only to screens wider than
 
 ---
 
+# Question: How can you target devices that fall between phone and desktop screen sizes using media queries?
+
+**Answer:**
+You can combine `min-width` and `max-width` in a media query to target devices within a range. For example:
+`<link href="css/medium.css" rel="stylesheet" media="(min-width:481px) and (max-width:768px)">`
+This applies styles only if the screen width is between 481 and 768 pixels, such as many tablets.
+
+---
+
+# Question: Would the media query `(min-width:481px) and (max-width:768px)` apply to a 320-pixel-wide smartphone or a 1024-pixel desktop screen?
+
+**Answer:**
+No, it would not apply to a 320-pixel smartphone because the minimum width is 481px. It also wouldn’t apply to a 1024-pixel desktop screen because the maximum width is 768px.
+
+---
+
+# Question: Besides width, what other features can CSS3 media queries check?
+
+**Answer:**
+CSS3 media queries can check height, orientation (portrait or landscape), and whether the device screen is color or monochrome. There are additional browser characteristics that media queries can test, but support varies between browsers.
+
+---
+
+# Question: Where can you learn more about the CSS3 media query standard?
+
+**Answer:**
+You can learn more at the W3C website: [www.w3.org/TR/css3-mediaqueries](http://www.w3.org/TR/css3-mediaqueries)
+
+---
+
+# Question: What is an alternative way to include media queries besides using multiple `<link>` tags?
+
+**Answer:**
+You can include media queries directly inside a single style sheet, either internal or external, to keep all styles in one place and avoid multiple `<link>` tags.
+
+---
+
+# Question: How can you load additional external style sheets inside a style sheet using media queries?
+
+**Answer:**
+You can use the `@import` directive combined with a media query. For example:
+`@import url(css/small.css) (max-width:320px);`
+This loads the `small.css` file only if the screen width is 320 pixels or smaller.
+
+---
+
+# Question: Why might using `@import` with media queries be problematic in older Internet Explorer versions?
+
+**Answer:**
+Internet Explorer 8 and earlier only support media queries if you use the JavaScript polyfill `respond.js`, but `respond.js` does not work with media queries loaded via the `@import` directive. Therefore, media queries using `@import` won’t work in IE 8 and earlier.
+
+---
+
+# Question: Why is the lack of `@import` media query support in IE 8 and earlier not a major concern?
+
+**Answer:**
+Because desktop browsers, which IE 8 and earlier generally run on, don’t necessarily need media queries as much, so the lack of support for media queries via `@import` is less impactful.
+
+---
+
 
 
 
