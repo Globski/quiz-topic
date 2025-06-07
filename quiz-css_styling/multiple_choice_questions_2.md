@@ -501,4 +501,4 @@ An HTML-only page with visual effects can be nearly four times larger in file si
 **Answer:**
 HTML was originally created by scientists to structure technical documentation for easy comprehension, not for visual design. Its primary purpose was to organize information logically and semantically, such as using <h1> for main headings and <h2> for subheadings.
 
-—-
+—--
