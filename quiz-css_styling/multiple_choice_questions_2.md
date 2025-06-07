@@ -101,3 +101,70 @@ Before *CSS*, web designers were restricted to HTML's basic formatting options, 
 By collecting all styles in a single external *style sheet* and linking it to every page, changes made to one style automatically apply across all linked pages, allowing for quick, global updates to a site’s appearance.
 
 ---
+
+# Question: Can CSS work without HTML?
+
+**Answer:**
+No. *CSS* cannot function on its own—it requires *HTML* to define the structure of the web page it styles.
+
+---
+
+# Question: What should you know before learning CSS?
+
+**Answer:**
+You should know how to create a web page using basic *HTML*, as CSS depends on it to apply styling.
+
+---
+
+# Question: What should you do if your HTML knowledge is rusty?
+
+**Answer:**
+If your HTML skills are rusty, you can refresh them using online tutorials like [HTMLDog](https://www.htmldog.com/guides/htmlbeginner) and [W3Schools](https://www.w3schools.com/html), or consult books like *Creating a Website: The Missing Manual* or *Head First HTML and CSS*.
+
+---
+
+# Question: What does HTML stand for?
+
+**Answer:**
+*HTML* stands for *Hypertext Markup Language*. It uses simple tags to define the parts of a web page.
+
+---
+
+# Question: What does the following HTML code represent?
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hey, I am the title of this web page</title>
+  </head>
+  <body>
+    <p>Hey, I am a paragraph on this web page.</p>
+  </body>
+</html>
+```
+
+**Answer:**
+This is a complete basic *HTML* web page that includes a doctype declaration, an `<html>` element, a `<head>` with metadata and title, and a `<body>` with content—in this case, a paragraph.
+
+---
+
+# Question: What is a doctype in HTML?
+
+**Answer:**
+A *doctype* is a line of code at the beginning of an HTML document that specifies the version (or flavor) of HTML being used, such as HTML 4.01 or XHTML 1.0.
+
+---
+
+# Question: What are some common HTML doctypes?
+
+**Answer:**
+Common *HTML* doctypes include *HTML 4.01* and *XHTML 1.0*, each available in two styles: *strict* and *transitional*. An example is:
+
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+```
+
+---
+
