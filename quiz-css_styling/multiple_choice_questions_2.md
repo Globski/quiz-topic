@@ -257,3 +257,108 @@ The four essential elements are:
 
 --
 
+# Question: What does the `<html>` tag represent in a web page?
+
+**Answer:**
+The `<html>` tag indicates that the content is written in HTML. It encloses all other content and tags in a web page, making it the "root" of the page structure.
+
+---
+
+# Question: What are the two main sections within the `<html>` tag?
+
+**Answer:**
+
+1. The `<head>` section
+2. The `<body>` section
+
+These are like two main branches of the HTML tree structure.
+
+---
+
+# Question: What does the `<head>` section of a web page contain?
+
+**Answer:**
+The `<head>` section contains:
+
+* The page’s `<title>`
+* Metadata (like a page description)
+* CSS code or links to external CSS files
+* Other non-visible information used by browsers and search engines
+
+---
+
+# Question: What does the `<body>` section of a web page contain?
+
+**Answer:**
+The `<body>` section contains all the visible content of the web page, such as:
+
+* Headlines
+* Text
+* Images
+* Paragraphs
+* Links
+
+---
+
+# Question: Which tag is used to define a paragraph?
+
+**Answer:**
+The `<p>` tag is used to start a paragraph, and the `</p>` tag is used to end it.
+
+---
+
+# Question: What does the `<strong>` tag do?
+
+**Answer:**
+The `<strong>` tag is used to emphasize text. It makes the enclosed text appear in **bold**.
+
+---
+
+# Question: How is a hyperlink created in HTML?
+
+**Answer:**
+Using the `<a>` (anchor) tag. For example:
+
+```html
+<a href="http://www.example.com">Click here!</a>
+```
+
+---
+
+# Question: What is an attribute in an HTML tag?
+
+**Answer:**
+An attribute provides extra information about an element. In `<a href="http://...">`, `href` is the attribute and the URL is its value.
+
+---
+
+# Question: What is the purpose of the `href` attribute?
+
+**Answer:**
+The `href` attribute in an `<a>` tag specifies the destination URL of the hyperlink.
+
+---
+
+# Question: Why was XHTML introduced?
+
+**Answer:**
+XHTML was introduced to enforce stricter rules on HTML. It requires:
+
+* Lowercase tag names
+* Properly nested and closed tags
+
+This improves compatibility with browsers, mobile devices, and other web technologies.
+
+---
+
+# Question: What are some issues with standard (older) HTML?
+
+**Answer:**
+Standard HTML:
+
+* Allows mixed-case tags (`<BODY>`, `<body>`, etc.)
+* Permits unclosed tags (e.g., `<p>` without `</p>`)
+  This makes HTML easier to write but harder for browsers and smart devices to interpret consistently.
+
+---
+
