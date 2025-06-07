@@ -367,21 +367,21 @@ Standard HTML:
 **Answer:**
 xHTML, or Extensible HyperText Markup Language, was introduced around 2000 as an improved version of HTML to keep pace with the rise of XML (Extensible Markup Language). It is essentially an "XML-ified" version of HTML intended to be the future standard for web pages by combining HTML's features with XML's stricter syntax rules.
 
-—-
+—--
 
 # Question: Why did the W3C move away from xHTML towards HTML5?
 
 **Answer:**
 The W3C moved away from xHTML because the complexity of fully adopting XML as the web's prime language made browser manufacturers reluctant to follow that path. As a result, the W3C closed the xHTML working group and developed HTML5 instead, which moves away from XML and back to an enhanced version of HTML, supported by all major browsers.
 
-—-
+—--
 
 # Question: How is HTML5 different from xHTML in terms of its approach to web development?
 
 **Answer:**
 Unlike xHTML, which aimed to foster a new way to build web pages with strict XML rules, HTML5 focuses on ensuring the Web continues to work as it always has, maintaining the basics of HTML while adding new elements to support modern web design practices without requiring XML compliance.
 
-—-
+—--
 
 # Question: What are some new tags introduced in HTML5, and what purposes do they serve?
 
@@ -393,35 +393,35 @@ HTML5 introduced new semantic tags such as:
 * `<footer>`: holds content usually placed at the bottom of the page, such as legal notices or contact information.
   Additionally, HTML5 adds tags to embed video and audio, and enhanced form tags with features like sliders, pop-up date pickers, and built-in form validation.
 
-—-
+—--
 
 # Question: What challenges are associated with using HTML5's new features?
 
 **Answer:**
 Browser support for many new HTML5 features is inconsistent, making it difficult to use them without elaborate workarounds. Older browsers, such as Internet Explorer 8 and earlier, require additional help to properly render HTML5 elements.
 
-—-
+—--
 
 # Question: Should developers start using HTML5 now, even though it is not fully supported?
 
 **Answer:**
 Yes, developers are encouraged to start using the HTML5 doctype and basic HTML5 elements now, despite some browser compatibility issues, especially with older browsers. HTML5 is widely supported by modern browsers like Google Chrome and Firefox and is becoming the new standard for web development.
 
-—-
+—--
 
 # Question: What basic software do you need to create web pages using HTML and CSS?
 
 **Answer:**
 You only need a basic text editor like Notepad on Windows or TextEdit on Mac to create web pages made up of HTML and CSS.
 
-—-
+—--
 
 # Question: Why might you want to use software other than basic text editors for web development?
 
 **Answer:**
 After typing a few hundred lines of HTML and CSS, basic editors can become cumbersome. Specialized software offers features like syntax highlighting, FTP support, and auto-completion that make writing, editing, and managing web pages easier and more efficient.
 
-—-
+—--
 
 # Question: Name three free programs for editing HTML and CSS, and one key feature of each.
 
@@ -431,70 +431,70 @@ After typing a few hundred lines of HTML and CSS, basic editors can become cumbe
 * **Notepad++** (Windows): Fast text editor with syntax highlighting to color code HTML and CSS elements.
 * **TextWrangler** (Mac): Pared-down version of BBEdit with syntax highlighting and FTP support for uploading files.
 
-—-
+—--
 
 # Question: What is the difference between TextWrangler and BBEdit?
 
 **Answer:**
 TextWrangler is a free, simplified version of BBEdit. While it lacks some of BBEdit’s built-in HTML tools, it still offers syntax highlighting and FTP capabilities.
 
-—-
+—--
 
 # Question: What was introduced in CSS 1, and when was it released?
 
 **Answer:**
 CSS 1, introduced in 1996, laid the groundwork for Cascading Style Sheets by establishing the basic structure of styles and the selector concept, along with most of the core CSS properties covered in this book.
 
-—-
+—--
 
 # Question: What are some key features added in CSS 2?
 
 **Answer:**
 CSS 2 added features such as the ability to target different devices (like printers and monitors), new selectors, and precise positioning of elements on a web page.
 
-—-
+—--
 
 # Question: What is CSS 2.1, and how does it relate to CSS 2?
 
 **Answer:**
 CSS 2.1 is the current accepted standard that incorporates all of CSS 1, adds several new properties, and corrects some problems found in the CSS 2 guidelines. It is a minor update rather than a radical change from CSS 2, and most browsers have adapted to it smoothly.
 
-—-
+—--
 
 # Question: How is CSS3 different from previous versions like CSS 1 and CSS 2.1?
 
 **Answer:**
 Unlike previous versions, CSS3 is not a single standard but a collection of separate modules (e.g., Selectors, Values and Units, Box Alignment). Each module develops independently, meaning there is no unified "CSS3" standard. Different modules are at various stages of completion and browser support.
 
-—-
+—--
 
 # Question: What is the status of CSS4?
 
 **Answer:**
 There will be no single CSS4. Instead, new versions of different CSS modules will continue to be developed and updated independently at different levels.
 
-—-
+—--
 
 # Question: How does adding CSS change the way HTML is used on web pages?
 
 **Answer:**
 Adding CSS to web design eliminates the need to repurpose awkward HTML tags just to achieve visual effects. It makes writing HTML easier and more semantic by separating content structure from presentation, allowing the use of simpler and cleaner HTML code.
 
-—-
+—--
 
 # Question: What happens to old HTML tags like the <font> tag when using CSS-driven web design?
 
 **Answer:**
 Old HTML tags and attributes like the <font> tag become obsolete and can be forgotten completely because CSS handles styling and visual effects.
 
-—-
+—--
 
 # Question: Compare the size and complexity of an HTML-only page to a CSS-styled page with a similar look.
 
 **Answer:**
 An HTML-only page with visual effects can be nearly four times larger in file size and contain about three times more lines of code than a CSS-styled page achieving the same look. For example, an HTML-only page might be 14k with 213 lines of code, whereas the CSS version is only 4k with 71 lines.
 
-—-
+—--
 
 # Question: Why was HTML originally created, and what was its primary purpose?
 
