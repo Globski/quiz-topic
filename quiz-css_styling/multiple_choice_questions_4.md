@@ -1,3 +1,337 @@
+# Question: What are media queries in CSS3?
+
+**Answer:**
+Media queries are a CSS3 feature that allows developers to apply styles to a web page based on the width and height of the destination browser, enabling responsive design for different devices like phones, tablets, and desktops.
+
+---
+
+# Question: What is the main goal of responsive web design?
+
+**Answer:**
+The goal of responsive design is to provide the most readable and attractive presentation possible for visitors, by customizing the layout and styling based on different browser widths and devices.
+
+---
+
+# Question: Which three device categories do designers usually target when planning responsive layouts?
+
+**Answer:**
+Designers typically target smartphones, tablets, and desktop computers, as these are the most common categories of web browsing devices.
+
+---
+
+# Question: Why is there no single ideal width for devices like phones and tablets?
+
+**Answer:**
+Because there is a wide variety of device sizes—such as small phones, large phones, 7" tablets, and 10" tablets—there is no universal width that fits all. Therefore, designs must adapt fluidly to various screen sizes.
+
+---
+
+# Question: What is one of the most common uses of media queries in web design?
+
+**Answer:**
+One common use is adjusting the number of columns in a layout. For example, reducing from four columns on a desktop to two or one column on tablets and phones to improve readability and usability.
+
+---
+
+# Question: Why should designers avoid using floats in mobile-targeted media query styles?
+
+**Answer:**
+Avoiding floats in mobile-targeted styles allows content containers to stack vertically, which improves readability and layout on smaller screens.
+
+---
+
+# Question: How do designers typically handle widths for different devices?
+
+**Answer:**
+Designers may use fixed-width layouts for desktop browsers but must use flexible widths for narrower screens like phones and tablets because a fixed-width layout (e.g., 960px) won’t fit smaller windows properly.
+
+---
+
+# Question: Why is a 960-pixel-wide fixed layout problematic for phones?
+
+**Answer:**
+A 960-pixel-wide fixed layout does not fit well on smaller phone screens that are typically 320 or 480 pixels wide, resulting in horizontal scrolling and poor user experience.
+
+---
+
+# Question: How can you convert a fixed-width layout into a liquid or flexible design?
+
+**Answer:**
+You can set the widths of your content `<div>` elements to `auto` or `100%`, allowing them to resize automatically to fit the width of the device's screen.
+
+---
+
+# Question: What happens when a user rotates a phone from portrait to landscape mode and the page uses `width: auto` or `width: 100%`?
+
+**Answer:**
+The `<div>` elements automatically resize to fit the new screen width, ensuring the layout remains responsive and readable.
+
+---
+
+# Question: Why should you tighten up whitespace in responsive design?
+
+**Answer:**
+On small screens like phones, too much whitespace between headlines, graphics, and other elements can waste space and force excessive scrolling. Reducing margins and padding helps fit more content and improve readability.
+
+---
+
+# Question: How should font sizes be adjusted for smaller screens?
+
+**Answer:**
+Large headlines may need to be reduced, and body text may need to be increased slightly to enhance readability on small screens. Proper font sizing ensures text remains legible and doesn't waste screen space.
+
+---
+
+# Question: What is a common issue with horizontal navigation bars on small screens?
+
+**Answer:**
+As the screen narrows, buttons in a horizontal navigation bar may no longer fit in a single row, causing them to wrap onto multiple lines and take up too much vertical space.
+
+---
+
+# Question: What is a common solution to handle complex navigation menus on smaller devices?
+
+**Answer:**
+Many sites use JavaScript to convert horizontal navigation menus into HTML drop-down menus, which take up less space and work better on small screens.
+
+---
+
+# Question: What are two recommended resources for learning about responsive navigation patterns?
+
+**Answer:**
+
+* [http://css-tricks.com/convert-menu-to-dropdown/](http://css-tricks.com/convert-menu-to-dropdown/)
+* [http://bradfrostweb.com/blog/web/responsive-nav-patterns/](http://bradfrostweb.com/blog/web/responsive-nav-patterns/)
+
+---
+
+# Question: Why might a designer choose to hide content on handheld devices?
+
+**Answer:**
+To reduce visual clutter and avoid overwhelming mobile users with too much information. Hiding non-essential content makes the site cleaner and easier to navigate on small screens.
+
+---
+
+# Question: What is the downside of hiding content for mobile users?
+
+**Answer:**
+Hiding content may prevent users from accessing important information they expected to find, especially if they previously saw it on a desktop version of the site.
+
+---
+
+# Question: What is a major drawback of hiding content using CSS on mobile devices?
+
+**Answer:**
+Even though the content is hidden visually, the HTML is still downloaded by the mobile browser, which wastes bandwidth and processing time.
+
+---
+
+# Question: Why should designers consider using background images instead of inline `<img>` tags for large graphics?
+
+**Answer:**
+Background images can be more easily swapped for smaller versions using CSS media queries, allowing for optimized loading and better fitting on small screens without zooming.
+
+---
+
+# Question: How can you use different background images for desktop and mobile in CSS?
+
+**Answer:**
+By assigning a class (e.g., `.logo`) to a `<div>` and defining different styles in the media queries, such as:
+
+```css
+.logo {
+    width: 960px;
+    height: 120px;
+    background-image: url(images/large_logo.png);
+}
+```
+
+Then overriding it in a mobile-specific media query with:
+
+```css
+.logo {
+    width: 320px;
+    height: 60px;
+    background-image: url(images/small_logo.png);
+}
+```
+
+---
+
+# Question: What is a breakpoint in responsive design?
+
+**Answer:**
+A breakpoint is a specific screen width at which a web design begins to visually break down or look awkward, signaling the need to apply new styles using a media query.
+
+---
+
+# Question: How can you determine a good breakpoint in your layout?
+
+**Answer:**
+By loading your design in a desktop browser and slowly narrowing the window until the layout starts to look cramped or broken—this point is a good candidate for a breakpoint.
+
+---
+
+# Question: What kind of screen width might you use as a media query condition?
+
+**Answer:**
+Common examples include:
+
+* `max-width: 480px` for mobile phones
+* `min-width: 481px and max-width: 768px` for tablets
+
+---
+
+# Question: Where can you find an overview of different layout strategies for responsive design?
+
+**Answer:**
+At [www.lukew.com/ff/entry.asp?1514](http://www.lukew.com/ff/entry.asp?1514)
+
+---
+
+# Question: What is a breakpoint in responsive web design?
+
+**Answer:**
+A breakpoint is a specific screen width at which a web design starts to look bad or cramped, signaling that a new set of styles should be applied using a media query.
+
+---
+
+# Question: What are the three most common breakpoints used in responsive design?
+
+**Answer:**
+
+* Less than 480 pixels: smartphones
+* Between 481 and 768 pixels: tablets
+* Greater than 768 pixels: desktops
+  (Some designers extend the tablet range up to 1024 pixels.)
+
+---
+
+# Question: Is it necessary to create a separate complete stylesheet for each breakpoint?
+
+**Answer:**
+No. You start with a default stylesheet and then use media queries to override or add to the default styles for specific screen widths.
+
+---
+
+# Question: What is the “desktop-first” design approach?
+
+**Answer:**
+The desktop-first approach means designing and styling the site primarily for desktop screens, then using media queries to adjust the design for tablets and smartphones. It’s beneficial because older desktop browsers that don’t support media queries will still display the site correctly.
+
+---
+
+# Question: What is the “mobile-first” design approach?
+
+**Answer:**
+The mobile-first approach involves designing the site initially for small screens, then using media queries to add styles for tablets and desktops. The base stylesheet contains mobile styles, with larger screen styles added through media queries.
+
+---
+
+# Question: What is one advantage of using the desktop-first approach?
+
+**Answer:**
+It ensures that older desktop browsers (like Internet Explorer 8) that don’t support media queries still get the full desktop styling.
+
+---
+
+# Question: What should your main stylesheet include regardless of your breakpoint strategy?
+
+**Answer:**
+It should include styles that are shared across all devices, such as:
+
+* Color schemes
+* Font choices
+* Link styling
+* Image appearance
+* General layout rules
+
+---
+
+# Question: What is a media query in web design?
+
+**Answer:**
+A media query is a question asked of a web browser, such as “Is your screen 480 pixels wide?” If the answer is yes, the browser loads a specific style sheet designed for that device size.
+
+---
+
+# Question: How do you link a CSS file to a webpage with a media query for a specific width?
+
+**Answer:**
+You use the `<link>` tag with the `media` attribute, for example:
+`<link href="css/small.css" rel="stylesheet" media="(width: 480px)">`
+This tells the browser to load `small.css` only if the screen width is exactly 480 pixels.
+
+---
+
+# Question: Why are parentheses required around the media query condition in the `media` attribute?
+
+**Answer:**
+Parentheses around the query, like `(width: 480px)`, are required because if you leave them out, the browser will ignore the media query and not apply the conditional style sheet.
+
+---
+
+# Question: What browsers do not support media queries by default, and how can support be added?
+
+**Answer:**
+Internet Explorer 8 and earlier versions do not understand media queries. To make them understand, you can include a JavaScript file called `respond.js` and link it with a conditional comment targeting IE 8 and lower, like so:
+
+```
+<!--[if lte IE 8]>
+<script src="respond.min.js"></script>
+<![endif]-->
+```
+
+---
+
+# Question: Where can you get the `respond.js` file to add media query support for older IE versions?
+
+**Answer:**
+You can download `respond.js` from the URL: [http://tinyurl.com/7w49a6z](http://tinyurl.com/7w49a6z)
+
+---
+
+# Question: Why is using an exact width like 480 pixels in media queries often not ideal?
+
+**Answer:**
+Because devices can have different screen widths, using an exact width like 480 pixels won’t cover smaller or larger screens. For example, a phone with a 300-pixel-wide screen would not match a query for exactly 480 pixels.
+
+---
+
+# Question: How do you specify a range for screen widths in a media query?
+
+**Answer:**
+You use `max-width` or `min-width` in the media query. For example:
+
+* `(max-width: 480px)` applies to screens that are at most 480 pixels wide.
+* `(min-width: 769px)` applies to screens that are at least 769 pixels wide.
+
+---
+
+# Question: What does the media query `(max-width: 480px)` mean?
+
+**Answer:**
+It means the style sheet applies to all screens that are 480 pixels wide or narrower, such as 480px, 320px, or even 200px wide screens.
+
+---
+
+# Question: What is the purpose of using `(min-width: 769px)` in a media query?
+
+**Answer:**
+It targets devices with screens wider than 768 pixels, such as many tablets or desktops, ensuring the style sheet applies only to screens at least 769 pixels wide.
+
+---
+
+# Question: What is the significance of using `769px` instead of `768px` in `(min-width: 769px)`?
+
+**Answer:**
+Using 769 pixels ensures that the style sheet applies only to screens wider than 768 pixels, avoiding overlap with devices exactly 768 pixels wide (like some tablets).
+
+---
+
+
+
+
 # Question: What are some common and less common text-formatting properties that CSS allows you to apply?
 
 **Answer:**
