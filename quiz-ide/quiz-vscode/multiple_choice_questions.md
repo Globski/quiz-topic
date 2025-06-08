@@ -871,3 +871,107 @@ A custom snippet can be created to insert a `fetch` call wrapped in a `try...cat
 
 ---
 
+# Question: What was the original purpose of using the "Setting Sync" extension in VS Code?
+
+**Answer:**
+The *Setting Sync* extension was originally used to save and share VS Code settings (like extensions, keybindings, and snippets) across different computers or instances of VS Code.
+
+---
+
+# Question: Where does the Setting Sync extension store user data like extensions and keybindings?
+
+**Answer:**
+It stores user data like extensions, keybindings, and snippets in specific files such as `extensions.json` and other configuration files inside a *cloud settings* folder, often accessible via GitHub.
+
+---
+
+# Question: What specific types of configurations can be synced using the built-in VS Code setting sync feature?
+
+**Answer:**
+VS Code's built-in setting sync can synchronize *settings, shortcuts (keybindings), user snippets, extensions, and UI state* across devices.
+
+---
+
+# Question: What account types can be used to log in and enable Setting Sync in VS Code?
+
+**Answer:**
+You can log in with either your *GitHub* or *Microsoft* account to enable Setting Sync.
+
+---
+
+# Question: How can you confirm if your settings are successfully being synchronized in VS Code?
+
+**Answer:**
+You can confirm sync status by clicking on your *account icon* in the bottom-left corner and checking for *Setting Sync is On*, or by accessing *"Show Sync Data"* to view recent sync activities and connected machines.
+
+---
+
+# Question: What can you do in the “Show Sync Data” tab in VS Code?
+
+**Answer:**
+In the *"Show Sync Data"* tab, you can see recent synchronization history, view which machines are synced, rename machine labels, refresh the list, and selectively turn sync off for certain machines.
+
+---
+
+# Question: What demonstrates that sync is working in real time between two VS Code instances?
+
+**Answer:**
+Changing the *theme* in one VS Code instance (e.g., switching to “Crackpot Contrast”) and observing it *automatically update* in another synced instance shows real-time sync in action.
+
+---
+
+# Question: What is one of the most powerful but underrated features in VS Code?
+
+**Answer:**
+*Debugging* is described as one of the most powerful and underrated features in VS Code.
+
+---
+
+# Question: Which tool is used to open an HTML file in a live server from VS Code?
+
+**Answer:**
+The *Go Live* extension is used to open HTML files in a live server (e.g., at `localhost:5500`).
+
+---
+
+# Question: What kind of project was used in the demo for debugging in VS Code?
+
+**Answer:**
+A *vanilla HTML, CSS, and JavaScript* project was used to demonstrate debugging in VS Code.
+
+---
+
+# Question: What does the debugger in VS Code allow you to do with your code?
+
+**Answer:**
+The debugger lets you *set breakpoints*, *step over or into functions*, *inspect variables*, and *watch expressions* during code execution.
+
+---
+
+# Question: How do you set a breakpoint in VS Code?
+
+**Answer:**
+You set a breakpoint by clicking to the *left of the line numbers* in the editor.
+
+---
+
+# Question: What are the two main options to control the flow once a breakpoint is hit?
+
+**Answer:**
+You can use *"Play"* to continue execution or use *"Step Over"/"Step Into"* to go through the code line-by-line.
+
+---
+
+# Question: What is the purpose of the “Watch” panel in VS Code debugging?
+
+**Answer:**
+The *"Watch"* panel allows you to monitor specific variables during debugging to track their values in real time.
+
+---
+
+# Question: Why is debugging considered better than using `console.log()` statements?
+
+**Answer:**
+Because *debugging* provides *deeper control and inspection* of the code flow and variable states, whereas `console.log()` only outputs static messages.
+
+---
