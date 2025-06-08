@@ -175,3 +175,99 @@ To change the value of an existing key, you simply use the `SET` command again:
 Example: `SET name "Daily Code Buffer"` overwrites the old value with the new one.
 
 ---
+
+# Question: How can you store an integer value in Redis?
+
+**Answer:**
+You can store an integer value in Redis using the `SET` command:
+Example: `SET count 1` stores the integer 1 under the key "count".
+
+---
+
+# Question: What does the `INCR` command do in Redis?
+
+**Answer:**
+The `INCR` command increments the integer value of a key by 1.
+Example: `INCR count` will increase the value of "count" from 1 to 2.
+
+---
+
+# Question: How can you increment a key’s value by a specific amount in Redis?
+
+**Answer:**
+Use the `INCRBY` command with a key and the increment amount:
+Example: `INCRBY count 10` increments the "count" value by 10.
+
+---
+
+# Question: What does the `DECR` command do in Redis?
+
+**Answer:**
+The `DECR` command decrements the integer value of a key by 1.
+Example: `DECR count` reduces the value of "count" by 1.
+
+---
+
+# Question: How can you decrement a value by a specific number in Redis?
+
+**Answer:**
+Use the `DECRBY` command:
+Example: `DECRBY count 5` decreases the value of "count" by 5.
+
+---
+
+# Question: Can Redis store float values? How?
+
+**Answer:**
+Yes, Redis can store float values using the `SET` command:
+Example: `SET pi 3.14`
+
+---
+
+# Question: Which command is used to increment a float value in Redis?
+
+**Answer:**
+Use the `INCRBYFLOAT` command:
+Example: `INCRBYFLOAT pi 0.001` increases the float value of "pi" by 0.001.
+
+---
+
+# Question: What does the `EXPIRE` command do in Redis?
+
+**Answer:**
+The `EXPIRE` command sets a timeout on a key, after which the key will be automatically deleted.
+Example: `EXPIRE a 10` sets key "a" to expire in 10 seconds.
+
+---
+
+# Question: How can you check how much time is left before a key expires in Redis?
+
+**Answer:**
+Use the `TTL` (Time To Live) command:
+Example: `TTL a` shows how many seconds are left before key "a" expires.
+
+---
+
+# Question: What does a TTL value of `-1` indicate in Redis?
+
+**Answer:**
+A TTL value of `-1` means that the key exists but has no expiration time set.
+
+---
+
+# Question: How can you set a key with an expiration time directly in a single command?
+
+**Answer:**
+Use the `SET` command with the `EX` option:
+Example: `SET x 100 EX 10` sets the key "x" with a value of 100 and an expiration time of 10 seconds.
+
+---
+
+# Question: What happens when you try to `GET` a key after it has expired in Redis?
+
+**Answer:**
+You will receive a `(nil)` response or no value, indicating the key no longer exists.
+
+---
+
+.
