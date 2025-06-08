@@ -307,4 +307,95 @@ You can *navigate word by word* by holding down **Option** (Mac) or **Alt** (Win
 
 ---
 
+# Question: How can you navigate quickly to the beginning or end of a line on a Mac and Windows machine?
+
+**Answer:**
+On a Mac, hold down **Command** and press **left** or **right arrow keys** to move to the beginning or end of a line. On Windows, hold down **Ctrl** and press **Home** or **End** to do the same.
+
+---
+
+# Question: What shortcut allows you to navigate to the top or bottom of a file in VS Code?
+
+**Answer:**
+On a Mac, hold down **Command** and press the **up** or **down arrow keys**. On Windows, hold down **Ctrl** and press **Home** or **End** to navigate to the top or bottom of the file.
+
+---
+
+# Question: How do you undo changes quickly in VS Code?
+
+**Answer:**
+Use **Command + Z** on Mac or **Ctrl + Z** on Windows to undo changes.
+
+---
+
+# Question: Describe how copying and pasting an entire line works in VS Code without selecting the line first.
+
+**Answer:**
+If your cursor is anywhere on a line, pressing **Command + C** (Mac) or **Ctrl + C** (Windows) copies the entire line automatically without needing to select it. You can then paste it with **Command + V** or **Ctrl + V**.
+
+---
+
+# Question: What does the shortcut Command (or Ctrl) + D do in VS Code?
+
+**Answer:**
+It selects the entire word where the cursor is currently placed.
+
+---
+
+# Question: How does IntelliSense in VS Code help with coding, particularly when working with JavaScript?
+
+**Answer:**
+IntelliSense provides automatic suggestions and autocomplete for objects and methods. For example, when typing `document.` in JavaScript, VS Code shows a list of available properties and methods for the document object, including functions like `addEventListener` with helpful parameter hints.
+
+---
+
+# Question: What is the purpose of Emmet in VS Code, and how do you trigger an HTML boilerplate with it?
+
+**Answer:**
+Emmet is a plugin built into VS Code that allows for fast HTML and CSS snippet expansion. Typing `!` (bang character) and pressing **Enter** generates the full HTML boilerplate code.
+
+---
+
+# Question: How would you create a `<div>` element with a class of "container" using Emmet abbreviations?
+
+**Answer:**
+Type `div.container` and press **Enter** to create a `<div>` element with a class of "container".
+
+---
+
+# Question: How can you create multiple list items at once using Emmet?
+
+**Answer:**
+You can type `ul>li*3` and press **Enter** to generate a `<ul>` with three `<li>` elements inside.
+
+---
+
+# Question: What Emmet abbreviation would you use to create an `<h1>` element with a class "title" and an id "cooltitle"?
+
+**Answer:**
+Type `h1.title#cooltitle` and press **Enter**.
+
+---
+
+# Question: How does Emmet simplify CSS coding in VS Code?
+
+**Answer:**
+Emmet provides shortcuts like typing `p10` to expand to `padding: 10px;` or `m10` to expand to `margin: 10px;`, speeding up CSS writing.
+
+---
+
+# Question: How do you open the settings panel in VS Code using keyboard shortcuts?
+
+**Answer:**
+Press **Command + ,** on Mac or **Ctrl + ,** on Windows to open the settings panel.
+
+---
+
+# Question: What is the Cascadia Code font and how do you use it in VS Code?
+
+**Answer:**
+Cascadia Code is a free monospaced font by Microsoft designed for coding. You can install it and then set it as your font family in VS Code’s settings for better readability and aesthetics.
+
+---
+
 
