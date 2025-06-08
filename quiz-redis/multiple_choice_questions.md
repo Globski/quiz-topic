@@ -503,3 +503,296 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 **Answer:** The command returns -1 and does not insert anything.
 
 ---
+
+# Question: What happens when you sort a list of integers in Redis without specifying any additional parameters?
+
+**Answer:** The list is sorted in ascending order by default without needing any alpha parameter when sorting integers.
+
+—--
+
+# Question: How do you sort a list in Redis in descending order?
+
+**Answer:** You can sort the list in descending order by specifying the appropriate descending option in the sort command.
+
+—--
+
+# Question: What is the behavior of the BLPOP command in Redis?
+
+**Answer:** BLPOP blocks the execution until it can remove an element from the specified list; if the list is empty, it waits until a specified timeout before returning.
+
+—--
+
+# Question: What happens if BLPOP times out without finding any element to remove?
+
+**Answer:** It returns nil, indicating no element was removed during the wait time.
+
+—--
+
+# Question: How is the BLPOP command used with a timeout and key in Redis? Provide an example.
+
+**Answer:** BLPOP is called with a list key and a timeout value in seconds, for example, `BLPOP movies 15` will wait up to 15 seconds to remove an element from the `movies` list.
+
+—--
+
+# Question: What is the behavior of BRPOP compared to BLPOP?
+
+**Answer:** BRPOP works similarly to BLPOP but removes elements from the end (right) of the list, also blocking execution until an element is available or the timeout occurs.
+
+—--
+
+# Question: What Redis commands are used to add members to a set?
+
+**Answer:** The `SADD` command is used to add one or more members to a set.
+
+—--
+
+# Question: How do you list all members of a set in Redis?
+
+**Answer:** Use the `SMEMBERS` command with the set's key to list all members.
+
+—--
+
+# Question: What is the main advantage of Redis sets over lists in terms of member uniqueness?
+
+**Answer:** Sets automatically enforce uniqueness, so duplicate values cannot be added; lists can contain duplicates.
+
+—--
+
+# Question: What is the return value of `SADD` if you attempt to add a duplicate member to a Redis set?
+
+**Answer:** It returns 0, indicating the member was not added because it already exists in the set.
+
+—--
+
+# Question: How can you get the number of members in a Redis set?
+
+**Answer:** Use the `SCARD` command with the set's key to get the cardinality (count) of the set.
+
+—--
+
+# Question: Which command checks if a member exists in a Redis set?
+
+**Answer:** The `SISMEMBER` command is used to check if a member exists in a set.
+
+—--
+
+# Question: What arguments does the `SISMEMBER` command require?
+
+**Answer:** The key of the set and the member to check for membership.
+
+—--
+
+# Question: What does the `sismember` command return when checking if an element exists in a Redis set?
+
+**Answer:** It returns `1` if the element is a member of the set, and `0` if it is not.
+
+---
+
+
+# Question: If the set "technology" contains `node.js`, `aws`, `redis`, and `java`, what will `sismember technology java` return?
+
+**Answer:** It will return `1` because `java` is present in the "technology" set.
+
+---
+
+
+# Question: What will `sismember technology spring` return if `spring` is not in the "technology" set?
+
+**Answer:** It will return `0` indicating `spring` is not a member of the set.
+
+---
+
+
+# Question: How do you create a new set in Redis and add members to it?
+
+**Answer:** You use the `sadd` command with the set name and the members to add, e.g., `sadd front_end javascript html node react`.
+
+---
+
+
+# Question: What members are added to the "front\_end" set in the example?
+
+**Answer:** `javascript`, `html`, `node`, and `react`.
+
+---
+
+
+# Question: What is the purpose of the `sdiff` command in Redis?
+
+**Answer:** It returns the members that are in the first set but not in the subsequent sets.
+
+---
+
+
+# Question: What is the output of `sdiff technology front_end` given the sets "technology" and "front\_end"?
+
+**Answer:** It returns the members `aws`, `redis`, and `java` which are in "technology" but not in "front\_end".
+
+---
+
+
+# Question: How does `sdiff` determine the difference between sets?
+
+**Answer:** It compares the first key's set against the other sets, returning members exclusive to the first key.
+
+---
+
+
+# Question: How can you store the result of a set difference operation into a new set?
+
+**Answer:** By using the `sdiffstore` command followed by the destination key and the sets to compare, e.g., `sdiffstore new_set technology front_end`.
+
+---
+
+
+# Question: What does the `sdiffstore` command do in the example?
+
+**Answer:** It stores the difference between "technology" and "front\_end" (i.e., `aws`, `redis`, `java`) into the new set named "new\_set".
+
+---
+
+
+# Question: How do you verify the members of the newly stored set after using `sdiffstore`?
+
+**Answer:** By running `smembers new_set` to list all members of the "new\_set".
+
+---
+
+
+# Question: What does the `sinter` command do?
+
+**Answer:** It returns the members that are common (intersection) to all the specified sets.
+
+---
+
+
+# Question: What is the result of `sinter technology front_end` in the example?
+
+**Answer:** It returns `node.js` as it is the only common member between the two sets.
+
+---
+
+
+# Question: Can `sinter` take multiple keys as arguments?
+
+**Answer:** Yes, it can take two or more keys and returns the common members across all of them.
+
+---
+
+
+# Question: What happens if you run `sinter` on `technology`, `front_end`, and `new_set` sets given the example data?
+
+**Answer:** It returns an empty list because there is no member common to all three sets.
+
+---
+
+
+# Question: How can you store the intersection of sets into a new set?
+
+**Answer:** Using the `sinterstore` command followed by the destination key and the sets to intersect, e.g., `sinterstore new_inter technology front_end`.
+
+---
+
+
+# Question: After running `sinterstore new_inter technology front_end`, what will `smembers new_inter` return?
+
+**Answer:** It will return `node.js` as that is the common member stored in "new\_inter".
+
+---
+
+
+# Question: How does the `sdiffstore` command differ from `sdiff`?
+
+**Answer:** `sdiff` displays the difference without storing it, while `sdiffstore` stores the difference in a specified destination set.
+
+---
+
+
+# Question: How does the `sinterstore` command differ from `sinter`?
+
+**Answer:** `sinter` returns the intersection members without storing them, while `sinterstore` saves the intersection in a specified destination set.
+
+---
+
+
+# Question: What will happen if you attempt to store the difference or intersection results into an existing set key?
+
+**Answer:** The existing set will be overwritten with the new result.
+
+---
+
+
+# Question: What Redis command do you use to list all members of a set?
+
+**Answer:** `smembers [set_key]` lists all members of the specified set.
+
+---
+
+
+# Question: When performing `sdiff technology front_end`, why is `node.js` not part of the result?
+
+**Answer:** Because `node.js` is present in both sets, so it is excluded from the difference which shows only unique members to the first set.
+
+---
+
+
+# Question: What is the significance of order of keys in the `sdiff` command?
+
+**Answer:** The order matters; the command returns members present in the first key but not in the subsequent keys.
+
+---
+
+
+# Question: If you want to check if a member exists in a set named `front_end`, which command do you use?
+
+**Answer:** Use `sismember front_end [member]`.
+
+---
+
+
+# Question: What command would you use to add `react` to the `front_end` set?
+
+**Answer:** `sadd front_end react`.
+
+---
+
+
+# Question: Can the `sinter` and `sdiff` commands be used with more than two sets?
+
+**Answer:** Yes, they accept multiple keys and operate accordingly across all.
+
+---
+
+
+# Question: After performing `sdiffstore new_set technology front_end`, what does `smembers new_set` show?
+
+**Answer:** It shows the members unique to "technology" set that are not in "front\_end": `java`, `aws`, and `redis`.
+
+---
+
+
+# Question: What happens if the sets passed to `sinter` have no common members?
+
+**Answer:** The command returns an empty list.
+
+---
+
+
+# Question: Explain the sequence of commands to find and store the common members of three sets: `technology`, `front_end`, and `new_set`.
+
+**Answer:** Use `sinterstore destination_set technology front_end new_set` to store the common members into `destination_set`. If no common members exist, the destination set will be empty.
+
+---
+
+
+# Question: What command would you use to clear all members from a set in Redis?
+
+**Answer:** `del [set_key]` deletes the entire set, effectively clearing all members.
+
+---
+
+# Question: How do Redis set commands treat members that appear in multiple sets when using `sdiff`?
+
+**Answer:** Members present in multiple sets are excluded from the difference result and only unique members to the first set are returned.
+
+---
