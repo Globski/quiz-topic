@@ -449,3 +449,59 @@ The cables between countries and continents represent real-life physical connect
 
 ---
 
+# Question: How long can underwater internet cables be, and why is their length important?
+
+**Answer:**
+Underwater internet cables vary in length from as short as 131 kilometers to nearly 20,000 kilometers. Their length is important because longer cables connect continents and carry massive amounts of internet traffic; damage to one such cable can disrupt internet access across entire continents.
+
+---
+
+# Question: What happened in 2018 involving an underwater cable, and what was the impact?
+
+**Answer:**
+In 2018, an almost 17,000-kilometer-long underwater cable connecting France to West Africa was accidentally cut near Egypt, causing the internet to crash in 10 countries along the west coast of Europe and Africa.
+
+---
+
+# Question: Approximately how many cable-related problems occur annually worldwide, and what are the main causes?
+
+**Answer:**
+Nearly 200 cable-related problems occur annually worldwide, mostly caused by natural disasters or shifts in the environment.
+
+---
+
+# Question: Describe a notable unusual incident involving cable theft.
+
+**Answer:**
+In 2007, sea pirates stole 11 kilometers of underwater cable connecting Thailand, Vietnam, and Hong Kong and sold the cable as scrap metal after cutting it into pieces, which was surprising given the complexity of the internet infrastructure.
+
+---
+
+# Question: What type of cables are used for underwater intercontinental internet connections, and why?
+
+**Answer:**
+Fiber optic cables are used for underwater intercontinental internet connections because they offer the fastest data transmission speeds and maintain data integrity over long distances, unlike copper cables which have a higher probability of transmission errors as their length increases.
+
+---
+
+# Question: Why are copper cables not used for long-distance underwater internet connections?
+
+**Answer:**
+Copper cables are not used for long distances because the longer the copper cable, the higher the probability of data transmission errors. Fiber optic cables transmit data almost without error over long distances.
+
+---
+
+# Question: What is the significance of understanding the physical structure of the internet?
+
+**Answer:**
+Understanding the physical structure of the internet is vital because it helps grasp how data travels globally and the challenges involved in maintaining reliable, high-speed connectivity between different areas and networks.
+
+---
+
+# Question: What is the first step when a computer in LAN one sends a packet to a computer in Atlanta?
+
+**Answer:**
+The first step is that the computer sends the packet to the switch in LAN one. After receiving the packet, the switch processes it before forwarding it to the router to exit the LAN towards its destination.
+
+---
+
