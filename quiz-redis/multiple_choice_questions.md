@@ -1022,3 +1022,111 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 **Answer:** It lists all members stored in `new_set` which are the differences between the two compared sets.
 
 ---
+
+# Question: What Redis command is used to count the number of elements in a sorted set within a specific rank range?
+
+**Answer:** The command `ZCOUNT` is used, passing the key (e.g., `users`), and the minimum and maximum rank range (e.g., `-inf` to `+inf` to get all elements).
+
+---
+
+# Question: How do you specify the full range of ranks in `ZCOUNT` to get all data?
+
+**Answer:** Use `-inf` (negative infinity) as the minimum rank and `+inf` (positive infinity) as the maximum rank.
+
+---
+
+# Question: What will happen if you use `ZCOUNT users 0 4` and some elements have ranks beyond 4?
+
+**Answer:** Elements with ranks greater than 4 will be excluded; only elements with ranks between 0 and 4 will be counted.
+
+---
+
+# Question: Which Redis command removes specific members from a sorted set?
+
+**Answer:** The command `ZREM` is used, with the key and one or more member names as arguments.
+
+---
+
+# Question: What is the effect of executing `ZREM users alex`?
+
+**Answer:** The member `alex` is removed from the sorted set `users`.
+
+---
+
+# Question: How can you retrieve all members of a sorted set in ascending order by their rank?
+
+**Answer:** Use the command `ZRANGE users 0 -1` to get all members from rank 0 to the last rank.
+
+---
+
+# Question: How do you retrieve members of a sorted set in descending order by rank?
+
+**Answer:** Use `ZREVRANGE` with the key and start and stop indices (e.g., `ZREVRANGE users 0 -1`).
+
+---
+
+# Question: How can you retrieve members along with their scores when using `ZRANGE` or `ZREVRANGE`?
+
+**Answer:** Add the `WITHSCORES` option to the command.
+
+---
+
+# Question: What does the `ZSCORE` command do in Redis?
+
+**Answer:** It returns the score associated with a specified member in a sorted set.
+
+---
+
+# Question: How do you get the score of member `shabir` in the sorted set `users`?
+
+**Answer:** Execute `ZSCORE users shabir`.
+
+---
+
+# Question: What is the difference between `ZREVRANGE` and `ZREVRANGEBYSCORE`?
+
+**Answer:** `ZREVRANGE` reverses by rank (index), while `ZREVRANGEBYSCORE` reverses the sorted set based on scores, using a score range as arguments.
+
+---
+
+# Question: How do you use `ZREVRANGEBYSCORE` to get all members with scores between 5 and 0 in descending order?
+
+**Answer:** Execute `ZREVRANGEBYSCORE users 5 0 WITHSCORES`.
+
+---
+
+# Question: How do you increment the score of a member in a sorted set?
+
+**Answer:** Use `ZINCRBY` followed by the key, increment value, and member name.
+
+---
+
+# Question: What happens when you run `ZINCRBY users 2 steve` if Steve's original score was 4?
+
+**Answer:** Steve's score increases from 4 to 6.
+
+---
+
+# Question: After incrementing Steve's score to 6, how does this affect results of `ZREVRANGEBYSCORE users 5 0`?
+
+**Answer:** Steve will no longer appear because the range is from 5 down to 0, and Steve's score is now 6 (above the max).
+
+---
+
+# Question: How do you remove members from a sorted set based on their score range?
+
+**Answer:** Use the command `ZREMRANGEBYSCORE` with the key, minimum score, and maximum score.
+
+---
+
+# Question: If you want to remove members with scores between 0 and 3 from `users`, which command would you use?
+
+**Answer:** `ZREMRANGEBYSCORE users 0 3`.
+
+---
+
+# Question: What is the behavior when removing members by score range with `ZREMRANGEBYSCORE` if the range covers multiple members?
+
+**Answer:** All members whose scores fall within the specified range will be removed from the sorted set.
+
+---
