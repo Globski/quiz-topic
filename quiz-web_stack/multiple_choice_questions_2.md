@@ -216,3 +216,67 @@ The switch is connected to the router using a copper cable.
 
 ---
 
+# Question: Why can’t we connect to the internet immediately after setting up our local network?
+
+**Answer:**
+Because we need a connection between our local network and the internet. This connection is established through a special cable provided by the Internet Service Provider (ISP), which connects our home or office to the internet.
+
+---
+
+# Question: What is the role of an Internet Service Provider (ISP) in establishing an internet connection?
+
+**Answer:**
+The ISP provides a special cable to homes or offices for a certain amount of money, which allows users to connect to the internet easily.
+
+---
+
+# Question: How do the seven computers in the office communicate with each other?
+
+**Answer:**
+They communicate through a switch. For example, if PC One wants to communicate with PC Five, it sends a packet to the switch, which learns the destination and then sends the packet directly to PC Five.
+
+---
+
+# Question: What is the main function of a switch in a local area network (LAN)?
+
+**Answer:**
+A switch enables communication between devices in the same LAN by receiving packets, learning their destinations, and forwarding them to the correct device within the LAN.
+
+---
+
+# Question: Does a router play a role in communication between devices in the same LAN?
+
+**Answer:**
+No, a router does not have a role in communication between devices within the same LAN, such as PC One communicating with PC Five.
+
+---
+
+# Question: What must happen for a computer (e.g., PC One) to send packets to the internet?
+
+**Answer:**
+PC One must first send its packet to the switch. The switch then forwards the packet to the router, which acts as the gateway to the internet and sends the packet onward.
+
+---
+
+# Question: Why must the packet from PC One go to the switch before reaching the router when communicating with the internet?
+
+**Answer:**
+Because the computer can only communicate with the router through the switch; the switch directs the packet to the router.
+
+---
+
+# Question: What is the router’s role when it receives a packet destined for the internet?
+
+**Answer:**
+The router examines the packet, understands it is destined for the internet, and then forwards the packet through the cable connected to the ISP, sending it to the internet.
+
+---
+
+# Question: How is the cable from the ISP physically connected to enable internet access?
+
+**Answer:**
+The cable provided by the ISP is plugged into a specific port on the router, which acts as the base for the internet connection.
+
+---
+
+
