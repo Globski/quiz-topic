@@ -1382,3 +1382,75 @@ No, the exact path cannot be known in advance because it is determined dynamical
 The website appears in your browser as soon as the response message, containing all necessary content like HTML and media files, is received from the server.
 
 ---
+
+# Question: What happens when you try to enter a website?
+
+**Answer:**
+When you try to enter a website, your device sends a **request message** to the server of that website. The server then responds with a **response message** that contains all the information needed to display the webpage. Your web browser processes this response and shows the related webpage.
+
+---
+
+# Question: Why don’t users notice the complex operations behind accessing a website?
+
+**Answer:**
+The entire request-response process happens within **milliseconds**, making the complex operations in the background **invisible to the user**.
+
+---
+
+# Question: How is Google’s server infrastructure different from a smaller website like ABCx.com?
+
+**Answer:**
+Unlike ABCx.com, **Google has many servers distributed globally**. This **distributed server structure** allows it to provide **faster and more efficient services** to users around the world.
+
+---
+
+# Question: Why does Google use servers close to users?
+
+**Answer:**
+Using servers near users helps Google ensure that **requests are handled faster**, reducing **latency** and improving the **user experience**.
+
+---
+
+# Question: What is the main reason large companies like Google use distributed servers?
+
+**Answer:**
+To enable customers to **communicate with their services in the fastest and most efficient way possible**, by minimizing the physical distance between users and servers.
+
+---
+
+# Question: How does your request reach Google's servers?
+
+**Answer:**
+Your request reaches Google's servers with the help of your **Internet Service Provider (ISP)**, which helps direct the **data packet** to the appropriate server.
+
+---
+
+# Question: What is “peering” in the context of Google’s network infrastructure?
+
+**Answer:**
+**Peering** is a technique where Google establishes a **direct connection** with ISPs to provide **faster and more efficient** access to its servers, bypassing some of the traditional ISP infrastructure.
+
+---
+
+# Question: How does peering help with speed and efficiency?
+
+**Answer:**
+By creating a **direct connection** between Google and local ISPs, peering **reduces the time and number of steps** needed for packets to travel, thus **increasing communication speed**.
+
+---
+
+# Question: How does peering improve security?
+
+**Answer:**
+Peering reduces the number of **public networks** that data packets travel through, which **lowers the risk of interception or tampering** and **increases security** for both Google and its users.
+
+---
+
+# Question: How does YouTube benefit from Google’s server infrastructure?
+
+**Answer:**
+Since **YouTube is owned by Google**, when users watch videos on YouTube, they are utilizing **Google’s global distributed server network**, ensuring **fast and reliable video streaming**.
+
+---
+
+
