@@ -1341,3 +1341,93 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 
 ---
 
+# Question: What does the Redis command `hstrlen myhash name` do?
+
+**Answer:** It returns the length of the string value stored at the `name` field in the hash `myhash`.
+
+---
+
+# Question: If the field `name` in `myhash` has the value `shabiri`, what will `hstrlen myhash name` return?
+
+**Answer:** It will return `7`, since "shabiri" has 7 characters.
+
+---
+
+# Question: What is the purpose of the Redis command `hsetnx`?
+
+**Answer:** `hsetnx` sets the value of a field in a hash only if the field does not already exist; it prevents overwriting existing fields.
+
+---
+
+# Question: What will the command `hsetnx myhash name newvalue` return if `name` already exists in `myhash`?
+
+**Answer:** It will return `0`, and the value will not be updated.
+
+---
+
+# Question: What will the command `hsetnx myhash lastname Khan` return if `lastname` does not exist in `myhash`?
+
+**Answer:** It will return `1`, and the `lastname` field will be added with value `Khan`.
+
+---
+
+# Question: What is the purpose of the Redis `MULTI` command?
+
+**Answer:** `MULTI` starts a Redis transaction, queuing subsequent commands without executing them until `EXEC` is called.
+
+---
+
+# Question: What happens to Redis commands issued after `MULTI` but before `EXEC`?
+
+**Answer:** They are queued and not executed immediately.
+
+---
+
+# Question: Which Redis command ends a transaction and executes all previously queued commands?
+
+**Answer:** `EXEC`
+
+---
+
+# Question: What does the Redis `DISCARD` command do?
+
+**Answer:** It cancels a transaction, discarding all queued commands without executing them.
+
+---
+
+# Question: What is the role of the `WATCH` command in Redis transactions?
+
+**Answer:** `WATCH` monitors one or more keys, and if any of them are modified before the transaction executes, the transaction is aborted to prevent race conditions.
+
+---
+
+# Question: In a Redis transaction, if you queue `SET name shabir` and then `GET name`, what will happen when you run `EXEC`?
+
+**Answer:** Both commands will be executed in order as part of the transaction.
+
+---
+
+# Question: If an error occurs in one of the commands queued in a Redis transaction, what is the expected behavior?
+
+**Answer:** If `EXEC` is issued, all commands are executed atomically; if the error is caught before `EXEC`, Redis may refuse to execute the transaction.
+
+---
+
+# Question: When does a Redis transaction enter execution mode?
+
+**Answer:** When the `EXEC` command is issued after queuing commands with `MULTI`.
+
+---
+
+# Question: What happens if you issue a `GET` command after `MULTI` and before `EXEC`?
+
+**Answer:** The `GET` command will be queued and its result will only be available after executing `EXEC`.
+
+---
+
+# Question: Can you cancel a Redis transaction after starting it with `MULTI` but before executing it?
+
+**Answer:** Yes, by using the `DISCARD` command.
+
+---
+
