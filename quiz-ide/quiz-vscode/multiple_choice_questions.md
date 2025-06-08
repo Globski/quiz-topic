@@ -1210,10 +1210,6 @@ While you can see all changed files and their diffs, you might choose not to sta
 
 ---
 
-Got it! Here’s a detailed quiz based on the content you provided, following your format exactly:
-
----
-
 # Question: What is the Live Share extension in VS Code?
 
 **Answer:**
@@ -1291,3 +1287,84 @@ The general advice is to learn and use keyboard shortcuts to keep your hands off
 
 ---
 
+Here’s a detailed quiz based on your provided VS Code material, following your specified format:
+
+---
+
+# Question: Why is it important to learn keyboard shortcuts in VS Code?
+
+**Answer:**
+Learning keyboard shortcuts in VS Code is crucial because it allows you to keep your hands on the keyboard, enabling faster navigation, opening, closing, and saving files. This efficiency saves a significant amount of time during coding and editing.
+
+---
+
+# Question: What technologies is VS Code built with that make customization easy and immediate?
+
+**Answer:**
+VS Code is built with Electron, which uses HTML, CSS, and JavaScript. This architecture allows users to make changes and immediately see those changes take effect, making customization easy and dynamic.
+
+---
+
+# Question: What are some of the font customization options in the material?
+
+**Answer:**
+Some font customization options include choosing the font family (such as Cascadia JS or Fira Code, which are free on GitHub), enabling font ligatures to display fancy characters like arrows, and adjusting font size and zoom level.
+
+---
+
+# Question: How can users customize keyboard shortcuts in VS Code beyond the built-in options?
+
+**Answer:**
+Users can define their own custom shortcuts or download key map extensions that allow them to port shortcuts from other editors like Sublime or Notepad++, enabling them to use familiar key bindings.
+
+---
+
+# Question: Name at least three VS Code extensions that enhance coding productivity.
+
+**Answer:**
+Three extensions are:
+
+* Live Server (used daily for live reload and development)
+* Advanced New File (for quickly creating files)
+* Bracket Pair Colorizer (for colorizing matching brackets)
+
+---
+
+# Question: What are some popular themes for VS Code customization?
+
+**Answer:**
+Popular themes include:
+
+* Cobalt2 theme
+* Winter is Coming
+* Night Owl by Sarah Dresner
+
+---
+
+# Question: How does VS Code simplify debugging compared to traditional browser debugging?
+
+**Answer:**
+VS Code allows debugging directly inside the editor with features like setting breakpoints and stepping through code, both for vanilla/front-end JavaScript and Node.js, eliminating the need to debug in the browser.
+
+---
+
+# Question: Describe how VS Code integrates with Git and mention any extension that enhances this integration.
+
+**Answer:**
+VS Code has built-in tools for working with Git repositories locally and with remote repositories on GitHub. The GitLens extension further supercharges the Git workflow by providing enhanced features and insights within the editor.
+
+---
+
+# Question: What is the Live Share extension, and what are its benefits?
+
+**Answer:**
+Live Share is a VS Code extension that allows developers to share and collaborate on code in real time with others anywhere in the world. Benefits include seeing each other's cursors, following each other's navigation, and enabling impactful code reviews, teaching, and collaborative coding.
+
+---
+
+# Question: Summarize the overall recommendation given about VS Code.
+
+**Answer:**
+Highly recommends VS Code as the best editor for web development and many other programming tasks due to its powerful features, customization options, integrated debugging, Git support, and collaborative tools.
+
+---
