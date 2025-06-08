@@ -270,4 +270,110 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 
 ---
 
-.
+# Question: What command can be used to retrieve all keys stored in Redis, including those added earlier?
+
+**Answer:** The command `keys *` can be used to retrieve all keys.
+
+---
+
+# Question: What does the `flushall` command do in Redis?
+
+**Answer:** The `flushall` command deletes all key-value pairs from the Redis database.
+
+---
+
+# Question: After executing `flushall`, what will the `keys *` command return?
+
+**Answer:** It will return an empty set because all data has been deleted.
+
+---
+
+# Question: How do you add elements to a list in Redis from the left (top) side?
+
+**Answer:** Use the `lpush` command with the key and value(s), e.g., `lpush country India`.
+
+---
+
+# Question: Provide an example of pushing multiple elements to a list key called "country".
+
+**Answer:** `lpush country India` and `lpush country USA` add "India" and then "USA" to the left of the list.
+
+---
+
+# Question: How can you retrieve all elements from a Redis list?
+
+**Answer:** Use the `lrange` command with the key and range start and stop, e.g., `lrange country 0 -1` to get all elements.
+
+---
+
+# Question: In the `lrange` command, what do the start and stop indices `0` and `-1` signify?
+
+**Answer:** `0` is the first element, and `-1` indicates the last element of the list, so `lrange 0 -1` retrieves the entire list.
+
+---
+
+# Question: How do you retrieve only the first two elements of a list in Redis?
+
+**Answer:** Use `lrange` with indices `0` and `1`, e.g., `lrange country 0 1`.
+
+---
+
+# Question: What is the difference between the `lpush` and `rpush` commands?
+
+**Answer:** `lpush` adds elements to the left (top) of the list, while `rpush` adds elements to the right (bottom) of the list.
+
+---
+
+# Question: If a list contains \["UK", "USA", "India"], what will happen after executing `rpush country Australia`?
+
+**Answer:** "Australia" will be added to the end (bottom) of the list, making it \["UK", "USA", "India", "Australia"].
+
+---
+
+# Question: How can you find the length of a Redis list?
+
+**Answer:** Use the `llen` command with the key, e.g., `llen country`.
+
+---
+
+# Question: What does the `llen` command return if the specified key does not exist?
+
+**Answer:** It returns zero.
+
+---
+
+# Question: How do the `lpop` and `rpop` commands modify a list?
+
+**Answer:** `lpop` removes and returns the first element (from the left/top), while `rpop` removes and returns the last element (from the right/bottom).
+
+---
+
+# Question: Given a list \["UK", "USA", "India", "Australia"], what will be the list after executing `lpop country`?
+
+**Answer:** "UK" will be removed, resulting in \["USA", "India", "Australia"].
+
+---
+
+# Question: After performing `rpop country` on the list \["USA", "India", "Australia"], what is the resulting list?
+
+**Answer:** "Australia" is removed, resulting in \["USA", "India"].
+
+---
+
+# Question: How would you add "France" to the left of the "country" list?
+
+**Answer:** Use `lpush country France`.
+
+---
+
+# Question: How can you verify the current contents of the "country" list after modifications?
+
+**Answer:** Use `lrange country 0 -1` to get all elements.
+
+---
+
+# Question: What command would you use to change an existing element in a Redis list, for example, changing "France" to another country?
+
+**Answer:** The `lset` command can be used to set the value at a specific index, e.g., `lset country [index] new_value`.
+
+---
