@@ -377,3 +377,129 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 **Answer:** The `lset` command can be used to set the value at a specific index, e.g., `lset country [index] new_value`.
 
 ---
+
+# Question: What does the `lset` command do in the context of a list in Redis?
+
+**Answer:** The `lset` command updates the value at a specified index of a list key. Indexing starts from zero.
+
+---
+
+# Question: If a list key "country" contains \["france", "usa", "india"], what will be the result of running `lset country 0 germany`?
+
+**Answer:** The value at index 0 ("france") will be changed to "germany", so the list becomes \["germany", "usa", "india"].
+
+---
+
+# Question: How do you insert an element before or after a specified element in a Redis list?
+
+**Answer:** Use the `linsert` command with the key, the position ("before" or "after"), the pivot element, and the new value to insert.
+
+---
+
+# Question: Provide the syntax and an example to insert "new zealand" before "germany" in a list with key "country".
+
+**Answer:** `linsert country before germany new zealand` inserts "new zealand" before "germany" in the list.
+
+---
+
+# Question: How can you insert an element after "usa" in the list "country"?
+
+**Answer:** Use `linsert country after usa <value>`, replacing `<value>` with the element to insert.
+
+---
+
+# Question: What command allows you to get the value at a particular index in a Redis list?
+
+**Answer:** The `lindex` command, used as `lindex <key> <index>`, returns the value at the specified index.
+
+---
+
+# Question: Using `lindex country 3`, what value is returned if the list at key "country" has "uae" at index 3?
+
+**Answer:** It returns "uae".
+
+---
+
+# Question: What is the difference between `lpush` and `lpushx` commands in Redis?
+
+**Answer:** `lpush` creates a new list if it does not exist and pushes the value; `lpushx` only pushes the value if the list already exists, otherwise does nothing.
+
+---
+
+# Question: What does the `lpushx movies "some_value"` command return if the key "movies" does not exist?
+
+**Answer:** It returns 0, indicating no element was added because the list does not exist.
+
+---
+
+# Question: When `lpushx` is used on an existing list, what does it return?
+
+**Answer:** It returns the new length of the list after the value is added.
+
+---
+
+# Question: How can you check the contents of a list "movies" from start to end in Redis?
+
+**Answer:** Use `lrange movies 0 -1` to get all elements of the list.
+
+---
+
+# Question: What does `lrange movies 0 -1` return if the list "movies" does not exist?
+
+**Answer:** It returns an empty list, indicating no elements exist.
+
+---
+
+# Question: What commands can be used to insert data into an existing list, but only if the list already exists?
+
+**Answer:** `lpushx` and `rpushx`.
+
+---
+
+# Question: How do you retrieve only a subset of elements from a Redis list?
+
+**Answer:** Use the `lrange` command with start and stop indices, e.g., `lrange country 0 1` retrieves elements at indices 0 and 1.
+
+---
+
+# Question: What is the purpose of the Redis `sort` command when used with lists?
+
+**Answer:** The `sort` command sorts the elements in a list by certain criteria like lexicographically or numerically.
+
+---
+
+# Question: How do you specify that the list elements are strings when using the `sort` command?
+
+**Answer:** By including the `ALPHA` option in the sort command.
+
+---
+
+# Question: What parameters can be provided to the `sort` command to control its behavior?
+
+**Answer:** Parameters include the key, pattern, limit (offset and count), order (asc or desc), and options like `ALPHA` for sorting strings.
+
+---
+
+# Question: What does the command `lrange country 0 1` return if the list contains \["germany", "usa", "india"]?
+
+**Answer:** It returns \["germany", "usa"], the elements at indices 0 and 1.
+
+---
+
+# Question: How does Redis indexing work for list commands like `lset` and `lindex`?
+
+**Answer:** Indexing starts at 0 for the first element.
+
+---
+
+# Question: What happens if you try to use `lset` with an index that does not exist in the list?
+
+**Answer:** It returns an error because the index is out of range.
+
+---
+
+# Question: How does the `linsert` command behave if the pivot element is not found in the list?
+
+**Answer:** The command returns -1 and does not insert anything.
+
+---
