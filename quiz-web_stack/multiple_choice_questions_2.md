@@ -386,3 +386,66 @@ Distributing routers avoids overloading one device, improves reliability by elim
 
 ---
 
+# Question: What is the main problem with using a single router to connect the entire world?
+
+**Answer:**
+Using a single router to connect the entire world creates a major problem because if that one router fails, the whole internet crashes down simultaneously. This single point of failure leads to overloading and a catastrophic collapse of the network.
+
+---
+
+# Question: Why is the cable length a significant issue in a single giant router design?
+
+**Answer:**
+In a design where one giant router is placed at the center of the world, LANs that are farthest away from this router require very long cables to connect. This results in impractical, extremely long cable lengths, causing inefficiency and high costs.
+
+---
+
+# Question: How does a distributed router structure solve the problems of overloading and cable length?
+
+**Answer:**
+A distributed router structure breaks the network into smaller segments, connecting routers closer to each other rather than all devices connecting to a single giant router. This reduces cable lengths since routers are connected over reasonable distances, avoids overloading one router, and minimizes cable mess by avoiding millions of long cables converging on a single point.
+
+---
+
+# Question: What advantage does connecting only two routers with one cable in a distributed structure provide compared to the single-router design?
+
+**Answer:**
+Connecting only two routers with one cable in the distributed structure is more manageable and efficient because it avoids the complexity and mess of having millions of long cables running from distant LANs directly to one giant router.
+
+---
+
+# Question: How does load balancing work in a distributed router structure, and why is it important?
+
+**Answer:**
+Load balancing in a distributed router structure efficiently distributes traffic among multiple routers, preventing any single router from becoming overloaded. This ensures the system runs smoothly, maintains high efficiency, and prevents network collapse.
+
+---
+
+# Question: How does the distributed router structure solve the "single point of failure" problem?
+
+**Answer:**
+In a distributed router structure, if one or several routers fail, the internet can continue to operate properly with only a slight decrease in efficiency. This contrasts with a single-router system, where the failure of the lone router causes the entire internet to crash.
+
+---
+
+# Question: Why is consistency important in the internet’s distributed structure?
+
+**Answer:**
+Consistency ensures that despite failures or issues in some routers, the internet remains operational globally. This is vital for such a huge and complex system as the internet to function reliably.
+
+---
+
+# Question: What do the cables between different countries and continents represent, and why are they important?
+
+**Answer:**
+The cables between countries and continents represent real-life physical connections that carry international internet communication, especially across oceans. They are crucial because 99% of all international communication on the internet depends on these undersea cables.
+
+---
+
+# Question: How many major cables carry the majority of international internet communication?
+
+**Answer:**
+468 major cables carry approximately 99% of all international communication on the internet.
+
+---
+
