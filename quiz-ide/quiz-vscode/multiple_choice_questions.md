@@ -1070,3 +1070,73 @@ Control + Command + Up or Down arrow keys are used to increase or decrease the s
 
 ---
 
+# Question: How can you close tabs inside the terminal to match the behavior of closing files?
+
+**Answer:**
+You can customize the terminal keybindings to close tabs using a shortcut like Command+W (on Mac) or Ctrl+W (on Windows), which is not built-in but set up by the user for a consistent experience with closing files.
+
+---
+
+# Question: What keyboard shortcuts are used to toggle the terminal and the side panel in the described setup?
+
+**Answer:**
+The terminal is toggled with Ctrl+\` (Control + backtick), and the side panel is toggled with Command+B (or Ctrl+B on Windows). This helps maximize screen space when coding.
+
+---
+
+# Question: What are some of the customizable settings available for the terminal inside VS Code?
+
+**Answer:**
+You can customize the shell type, cursor style (block or line), cursor width, cursor blinking behavior, font family and size, font weight (bold), line height, letter spacing, and the default position of the terminal panel (bottom, right, or left).
+
+---
+
+# Question: How do you change the terminal font to use "Cascadia Code" and what might you need to be careful about?
+
+**Answer:**
+You update the terminal font family setting to "Cascadia Code," and sometimes you may need to wrap the font name in quotes to avoid issues. Switching from "Fira Code" to "Cascadia Code" might remove some odd display glitches.
+
+---
+
+# Question: What effect does increasing letter spacing in the terminal settings have?
+
+**Answer:**
+Increasing letter spacing, for example to 10, spaces out the characters a lot, which is usually not desirable but is customizable if needed.
+
+---
+
+# Question: How can the terminal panel’s default location be adjusted in the workspace?
+
+**Answer:**
+The terminal panel’s default location can be set to appear either at the bottom, right, or left of the workbench, giving flexibility to the user’s workspace layout.
+
+---
+
+# Question: How can you create multiple terminal instances and organize them inside VS Code?
+
+**Answer:**
+You can create multiple terminals by clicking the plus (+) icon, and arrange them side by side. You can also close terminals individually or make them fullscreen for better focus.
+
+---
+
+# Question: How does the Git integration inside VS Code help when opening a folder with untracked files?
+
+**Answer:**
+The source control tab shows files that have changed or are untracked, indicated by color coding. It allows you to see the git status inside VS Code without using the command line separately.
+
+---
+
+# Question: What steps are described to initialize a new Git repository inside VS Code?
+
+**Answer:**
+You can initialize a Git repository by either running the `git init` command in the terminal or by clicking “Initialize Repository” in the Source Control tab, which runs the command for you inside VS Code.
+
+---
+
+# Question: What is the benefit of customizing terminal shortcuts and settings according to the user’s workflow?
+
+**Answer:**
+Customizing terminal shortcuts and settings allows the user to work more efficiently by matching familiar behaviors (like Command+W to close tabs), quickly toggling terminal and side panels, and optimizing the workspace layout to focus on code and terminal as needed.
+
+---
+
