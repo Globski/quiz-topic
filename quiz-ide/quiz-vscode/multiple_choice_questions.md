@@ -1140,3 +1140,73 @@ Customizing terminal shortcuts and settings allows the user to work more efficie
 
 ---
 
+# Question: How can you add and commit a new file in VS Code using Git?
+
+**Answer:**
+You can create a new file (e.g., `test.html`) in the VS Code terminal, then run `git status` to see the new file needs to be added. Next, stage the file with `git add test.html`, commit it with a message using `git commit` (e.g., "added test.html"), and push as needed. VS Code’s Git interface also allows staging files, writing commit messages, and committing changes via the UI.
+
+---
+
+# Question: What feature does VS Code provide to view changes made to a file?
+
+**Answer:**
+VS Code provides a visual diff tool that shows exactly what has changed in a file. Clicking on a changed file in the Git panel opens a side-by-side or inline comparison of the differences, which helps in reviewing modifications before committing.
+
+---
+
+# Question: What advantage does VS Code have after Microsoft acquired GitHub regarding repositories?
+
+**Answer:**
+VS Code allows you to create and publish repositories directly from within the editor using the "Publish to GitHub" command. This eliminates the need to manually create a repository on GitHub's website before pushing code, streamlining the workflow.
+
+---
+
+# Question: What steps are involved in pushing code to a newly created GitHub repository using VS Code?
+
+**Answer:**
+After publishing the repository from VS Code, you add the remote repository URL (usually named `origin`) via Git commands or VS Code’s interface, then push your commits to the remote GitHub repository. Refreshing the GitHub repository page will show the newly pushed files.
+
+---
+
+# Question: What Git-related actions can you perform directly inside VS Code?
+
+**Answer:**
+Inside VS Code, you can stage changes, commit files, push code, clone repositories, pull updates, switch between branches, create new branches, and revert/discard changes—all from the built-in Git interface.
+
+---
+
+# Question: What is GitLens, and why is it useful in VS Code?
+
+**Answer:**
+GitLens is a powerful VS Code extension that enhances Git integration. It provides features like file history, line-by-line commit blame information, commit details, contributor statistics, branch and remote management, and direct links to GitHub. It helps developers understand code changes and history deeply.
+
+---
+
+# Question: How does GitLens display commit information for individual lines of code?
+
+**Answer:**
+GitLens shows inline "blame" annotations next to each line, indicating who last edited the line, when it was edited, and the commit message. Hovering over this text reveals more detailed commit info, and you can click to view the full commit or author details.
+
+---
+
+# Question: What additional Git concepts and elements can you explore with GitLens in VS Code?
+
+**Answer:**
+With GitLens, you can explore multiple branches, contributors, remotes, stashes, tags, and detailed commit histories for files or individual lines of code, all accessible via an easy-to-navigate interface.
+
+---
+
+# Question: How can you discard changes to a file using VS Code’s Git integration?
+
+**Answer:**
+You can discard changes by clicking the "discard changes" icon (often shown as a backward squirrely arrow) next to the file in the Git panel, which reverts the file to the last committed state.
+
+---
+
+# Question: What are some limitations or things to keep in mind when working with multiple changed files in VS Code’s Git panel?
+
+**Answer:**
+While you can see all changed files and their diffs, you might choose not to stage or commit certain files if they are unrelated or unnecessary for the current commit. It’s important to selectively add files to keep commit history clean and relevant.
+
+---
+
