@@ -975,3 +975,98 @@ The *"Watch"* panel allows you to monitor specific variables during debugging to
 Because *debugging* provides *deeper control and inspection* of the code flow and variable states, whereas `console.log()` only outputs static messages.
 
 ---
+
+Here’s a detailed quiz based on the full content you provided, following your exact template:
+
+---
+
+# Question: How can you check if a DOM element has a specific class without using the inspect tool?
+
+**Answer:**
+You can check if a DOM element has a specific class by using debugging tools in VS Code and watching the element’s class list in the watch panel during debugging. Instead of manually inspecting the element in the browser’s inspect tool, you toggle the class and watch the variable in the debugger to see if the class has been applied or removed.
+
+---
+
+# Question: Why is debugging in VS Code described as “highly underrated and very useful”?
+
+**Answer:**
+Debugging in VS Code is highly underrated because it provides powerful features that many users overlook. It allows step-by-step code execution, setting breakpoints, inspecting variables, viewing the call stack, and controlling program flow—all within the editor. This makes debugging more efficient and convenient without leaving the development environment.
+
+---
+
+# Question: What type of application was used to demonstrate debugging Node.js in VS Code?
+
+**Answer:**
+A chat application built with Socket.IO and Node.js was used to demonstrate debugging in VS Code. The demo included running the application locally on localhost at port 3000 and using VS Code’s debug tools to inspect the application’s behavior.
+
+---
+
+# Question: What steps are involved in preparing the Node.js chat app for debugging in VS Code?
+
+**Answer:**
+The steps include:
+
+1. Installing necessary packages.
+2. Changing directory (cd) to the project folder (e.g., part eight directory).
+3. Opening a JavaScript file like server.js in VS Code.
+4. Opening the Debug tab and starting a debugging session by selecting “Node.”
+5. Running the application and accessing it via localhost in a browser.
+
+---
+
+# Question: How do you set a breakpoint in VS Code for the Node.js chat app, and what can you do when it hits the breakpoint?
+
+**Answer:**
+You set a breakpoint by clicking in the gutter next to the line of code you want to pause at, such as the message handler function. When the breakpoint is hit (for example, when a message is sent), you can inspect variables, watch expressions, view the call stack to see the function call history, step through code line-by-line, and then continue execution by pressing play.
+
+---
+
+# Question: What is the significance of the call stack in debugging?
+
+**Answer:**
+The call stack shows the history of function calls that led to the current point of execution. It helps understand the sequence of calls and where the program is paused, which is crucial for diagnosing the flow of the program and finding bugs.
+
+---
+
+# Question: What is the advantage of using VS Code’s built-in terminal compared to a separate terminal window?
+
+**Answer:**
+The advantage is convenience and integration: you can run terminal commands, scripts, and interact with your environment without switching applications or windows. This keeps everything in one place, streamlining workflow and reducing distractions.
+
+---
+
+# Question: Which shell is the default in the VS Code terminal on Mac?
+
+**Answer:**
+The default shell is zsh (Z shell), which has become the default on Macs.
+
+---
+
+# Question: Can you run multiple terminal sessions inside VS Code, and how are they typically managed?
+
+**Answer:**
+Yes, you can run multiple terminal sessions inside VS Code. They are typically managed as tabs rather than side-by-side panels, allowing you to switch between them easily without splitting the screen. You can also split the terminal if desired, but tabs are the common approach.
+
+---
+
+# Question: How does customize terminal tab navigation in VS Code?
+
+**Answer:**
+The customized keyboard shortcuts to toggle between terminal tabs using Control + Tab, similar to how they switch between open files in the editor. This allows efficient navigation through multiple terminal tabs without using the mouse.
+
+---
+
+# Question: What is the functionality of the expand button in VS Code’s terminal?
+
+**Answer:**
+The expand button maximizes the terminal panel, allowing it to take up more vertical space in the editor window. This is useful when you want to focus on terminal output or input without distraction from other editor panes.
+
+---
+
+# Question: What keyboard shortcuts are mentioned for resizing the terminal panel in VS Code?
+
+**Answer:**
+Control + Command + Up or Down arrow keys are used to increase or decrease the size of the terminal panel incrementally.
+
+---
+
