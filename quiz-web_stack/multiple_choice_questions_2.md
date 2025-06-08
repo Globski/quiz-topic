@@ -776,3 +776,66 @@ Because the internet operates by sending data in small packets, packet transmiss
 
 ---
 
+# Question: What are servers and how do they differ from normal computers?
+
+**Answer:**
+Servers are special computers that belong to services like Udemy.com. They do not differ fundamentally from normal computers but are much more powerful in terms of hardware because they handle packet exchanges with thousands of computers simultaneously.
+
+---
+
+# Question: Why does Udemy use multiple distributed servers around the world?
+
+**Answer:**
+Udemy uses multiple distributed servers to prevent a single point of failure and to provide load balancing. This means users connect to the most suitable server based on their location, ensuring reliability and efficient handling of many simultaneous users.
+
+---
+
+# Question: What is meant by the “single point of failure” in the context of servers?
+
+**Answer:**
+A single point of failure is a part of a system that, if it fails, causes the entire system to stop working. By distributing servers globally, Udemy avoids this risk, ensuring that if one server fails, others can handle the traffic.
+
+---
+
+# Question: How does load balancing improve the user experience on websites like Udemy?
+
+**Answer:**
+Load balancing distributes user requests across multiple servers so no single server is overwhelmed. This ensures faster response times and continuous availability, improving user experience.
+
+---
+
+# Question: What is a Wide Area Network (WAN)?
+
+**Answer:**
+A WAN is a network that combines multiple local area networks (LANs) across different geographic locations, allowing them to function as a single network.
+
+---
+
+# Question: How can a company use WAN to connect offices located in different parts of the world?
+
+**Answer:**
+By creating a WAN, a company can connect the LANs of different offices so that computers in separate locations communicate as if they were in the same local network environment.
+
+---
+
+# Question: Why might a company prefer a WAN over just using the internet for communication between offices?
+
+**Answer:**
+Although the internet connects millions of networks, it is a public network with no single owner and less control over security and performance. A WAN is a private network tailored to a company’s needs, offering secure, controlled communication between offices.
+
+---
+
+# Question: What does it mean that the internet is “a network of networks”?
+
+**Answer:**
+It means the internet connects millions of smaller networks (LANs and WANs) globally, allowing devices across these networks to communicate with each other.
+
+---
+
+# Question: Why is communication over the internet considered different from communication over a company’s private WAN?
+
+**Answer:**
+Communication over the internet is public and shared with everyone, while communication over a private WAN is restricted to authorized users within a company, providing better security, privacy, and control.
+
+---
+
