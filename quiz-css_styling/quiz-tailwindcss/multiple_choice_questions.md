@@ -1,3 +1,17 @@
+# Question: What does Tailwind CSS provide to speed up development?
+
+**Answer:**
+Tailwind CSS provides pre-written utility classes that can be applied directly to HTML elements to dynamically update the design without writing custom CSS.
+
+---
+
+# Question: What are the available installation methods for Tailwind CSS?
+
+**Answer:**
+You can install Tailwind CSS using its CLI, through a framework guide (e.g., Next.js, Angular, Gatsby), or by using a CDN script for single HTML files.
+
+---
+
 # Question: Give a Tailwind utility class to give padding left of size 10 to a container.
 
 ```html
