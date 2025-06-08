@@ -706,3 +706,73 @@ If the goal is to use only the **routing function**, a **standard router** could
 
 ---
 
+# Question: Why is the switch feature of a home router unnecessary in an environment with only one computer?
+
+**Answer:**
+The switch feature is unnecessary because there is only one computer in the environment, so no device switching or routing between multiple devices is required. The connection is straightforward, and the basic networking device roles are simpler and logical.
+
+---
+
+# Question: What determines whether a computer can connect to the internet?
+
+**Answer:**
+The connection to the internet is determined by whether the computer can send a packet to the internet successfully. If the computer can send and receive packets, it is connected.
+
+---
+
+# Question: Describe the packet flow when a user wants to watch a video on Udemy.com.
+
+**Answer:**
+When a user enters Udemy.com and clicks a video, the computer creates a request packet and sends it to the home router. The router then forwards the packet to Udemy.com over the internet. Udemy.com receives this request and sends back the video in packets to the router, which then delivers them to the user's computer.
+
+---
+
+# Question: What do the green and red packets represent in the video streaming process?
+
+**Answer:**
+The green packet represents the request message sent from the user's computer to Udemy.com, indicating the desire to watch a specific video. The red packets represent pieces of the video content sent from Udemy.com to the user's computer.
+
+---
+
+# Question: What is streaming, and how does it work in the context of watching videos online?
+
+**Answer:**
+Streaming is the process of sending video content piece by piece over the internet, allowing users to watch videos without waiting for the entire video file to download. This technology enables uninterrupted viewing by delivering video in small packets.
+
+---
+
+# Question: Why is the ability to send videos piece by piece important for users with slow internet speeds?
+
+**Answer:**
+If a video had to be fully downloaded before playback, users with slow internet speeds would have to wait a long time before watching. Streaming allows immediate viewing as pieces arrive, so slow speeds don't prevent watching videos continuously.
+
+---
+
+# Question: How does internet speed affect video streaming?
+
+**Answer:**
+The faster the internet speed, the quicker video packets reach the user's computer, resulting in smoother and faster video playback. Slower internet speeds cause delays but streaming mitigates the impact by sending video piece by piece.
+
+---
+
+# Question: What role does the home router play in internet connectivity?
+
+**Answer:**
+The home router forwards packets from the computer to the internet and forwards incoming packets from the internet back to the computer. It acts as a mediator enabling communication between the local computer and the wider internet.
+
+---
+
+# Question: What is the basic principle underlying connection to the internet?
+
+**Answer:**
+The basic principle is packet transmission — sending and receiving packets over the internet to communicate with servers or other devices globally.
+
+---
+
+# Question: Why is packet transmission crucial for communication with servers like Udemy.com?
+
+**Answer:**
+Because the internet operates by sending data in small packets, packet transmission allows devices to request and receive content (like videos) efficiently and reliably, making communication with powerful servers like Udemy.com possible.
+
+---
+
