@@ -100,4 +100,98 @@
 
 ---
 
+# Question: How is customer data typically stored in a relational database?
 
+**Answer:** As rows in a table, with each customer having attributes like customer ID, first name, last name, and date created.
+
+---
+
+# Question: What does the "customer ID" column typically represent?
+
+**Answer:** A unique numerical identifier for each customer.
+
+---
+
+# Question: What kind of data does the "date created" column store?
+
+**Answer:** The date and exact time when the customer was added to the database.
+
+---
+
+# Question: What does each column in a relational database table represent?
+
+**Answer:** A specific type of data or attribute, such as names, dates, or identifiers.
+
+---
+
+# Question: What is another name for a row in a relational database table?
+
+**Answer:** A record.
+
+---
+
+# Question: What does CRUD stand for in the context of relational databases?
+
+**Answer:** Create, Read, Update, Delete.
+
+---
+
+# Question: What does the "Create" operation in CRUD refer to?
+
+**Answer:** Adding a new row (record) into a table.
+
+---
+
+# Question: What does the "Read" operation in CRUD refer to?
+
+**Answer:** Querying or retrieving data from the database.
+
+---
+
+# Question: What does the "Update" operation in CRUD refer to?
+
+**Answer:** Modifying existing data in a row, such as changing an address or phone number.
+
+---
+
+# Question: What does the "Delete" operation in CRUD refer to?
+
+**Answer:** Removing a row (record) from a table.
+
+---
+
+# Question: What is the significance of relationships between tables in a relational database?
+
+**Answer:** They allow tables to be connected through relationship constraints, enabling linked data across entities.
+
+---
+
+# Question: What is an example of a relationship between two tables in a relational database?
+
+**Answer:** An employee record being linked to an office record to show where the employee works.
+
+---
+
+# Question: What types of relationships can exist between tables in a relational database?
+
+**Answer:** One-to-one, one-to-many, and many-to-one relationships.
+
+---
+
+# Question: What language is used to retrieve data from a relational database?
+
+**Answer:** SQL (Structured Query Language).
+
+---
+
+# Question: Where can relational databases be hosted?
+
+**Answer:** Locally on a computer or on the cloud for distributed access.
+
+---
+
+# Question: What are the advantages of hosting a database in the cloud for a company?
+
+**Answer:** Centralized access for all employees across different offices, with permission-based usage through browser applications.
+
+---
