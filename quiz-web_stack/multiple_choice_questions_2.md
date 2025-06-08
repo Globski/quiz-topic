@@ -159,3 +159,60 @@ A switch has multiple LAN ports, and the number of ports varies by switch modelâ
 The ports on a switch are called LAN ports.
 
 ---
+
+# Question: Why are the ports on a switch called LAN ports?
+
+**Answer:**
+They are called LAN ports because by connecting computers to these ports, a Local Area Network (LAN) is created.
+
+---
+
+# Question: Where else, besides switches, can LAN ports be found?
+
+**Answer:**
+LAN ports are also found on the back of desktop computers and on the sides of laptops.
+
+---
+
+# Question: How do we physically connect a computer to a switch?
+
+**Answer:**
+We connect the LAN port on the computer to the LAN port on the switch using a cable.
+
+---
+
+# Question: Describe the process of sending a packet from PC1 to PC4 through a switch.
+
+**Answer:**
+PC1 sends a packet destined for PC4 to its connected switch port. The switch hardware receives the packet, inspects its destination address, and forwards the packet through the port connected to PC4, which then receives the packet.
+
+---
+
+# Question: After connecting four computers to a switch, what type of network is created?
+
+**Answer:**
+A Local Area Network (LAN) is created, allowing the computers to communicate with each other easily.
+
+---
+
+# Question: Can computers connected only through a switch communicate with the internet?
+
+**Answer:**
+No, they cannot communicate with the internet just by having a switch device.
+
+---
+
+# Question: What device is necessary to enable computers in a LAN to connect to the internet?
+
+**Answer:**
+A router is necessary to enable computers in a LAN to connect to the internet.
+
+---
+
+# Question: How is the switch connected to the router to provide internet access to the LAN?
+
+**Answer:**
+The switch is connected to the router using a copper cable.
+
+---
+
