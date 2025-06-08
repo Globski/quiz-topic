@@ -1078,4 +1078,66 @@ Multiple networks may be needed within the same office to separate different dep
 
 ---
 
+# Question: What is the difference between a private WAN and a public WAN?
+
+**Answer:**
+A **private WAN** is a wide area network where the line between offices is a dedicated, private line requested from an ISP and paid for separately. Only the company using it can access this line, making it more secure but costly. In contrast, a **public WAN** uses the public internet network environment, often with VPN tunnels, meaning data packets travel over shared, public infrastructure.
+
+---
+
+# Question: Why is LAN considered more secure than WAN?
+
+**Answer:**
+LAN (Local Area Network) is considered more secure because it operates within a localized, controlled environment where devices communicate directly, minimizing exposure to external threats. WAN (Wide Area Network), especially public WANs that use the internet, exposes packets to potential interception despite encryption or tunneling, so it's inherently less secure.
+
+---
+
+# Question: What role does the ISP play in internet communication?
+
+**Answer:**
+The **Internet Service Provider (ISP)** is responsible for transmitting data packets from one location to another by managing and controlling a network of routers distributed globally. Each ISP controls specific routers and ensures that data travels across these routers to reach the intended destination.
+
+---
+
+# Question: How are routers related to ISPs?
+
+**Answer:**
+Routers are physical devices distributed around the world that manage the forwarding of packets on the internet. Each ISP controls certain routers within their network, and these routers handle the transmission of packets between locations. The global internet structure is composed of many such routers controlled by different ISPs.
+
+---
+
+# Question: Why might dividing computers in an office into different networks be useful?
+
+**Answer:**
+Dividing computers into different networks within an office, especially when there are many devices (e.g., 50 computers), increases hierarchy and order. It helps manage network traffic better, improve security, and organize units more efficiently, even though it may seem unnecessary in smaller setups.
+
+---
+
+# Question: What is the main security limitation of VPNs operating over public WAN?
+
+**Answer:**
+Even with tunnel links and encryption, VPNs operating over public WAN still transmit packets across the internet, where there's never 100% security. Packets can potentially persist or be intercepted, meaning VPNs reduce risk but do not eliminate it entirely.
+
+---
+
+# Question: Why is a private WAN sometimes called a “private line”?
+
+**Answer:**
+A private WAN is often called a “private line” because it involves leasing a dedicated communication line from an ISP exclusively for one company's use, which is separate from the public internet, thus providing more secure and consistent connectivity.
+
+---
+
+# Question: What does the term "public WAN" specifically refer to in the context of VPNs?
+
+**Answer:**
+In the context of VPNs, "public WAN" refers to VPNs that operate over the public internet network environment, where the underlying infrastructure is shared with other users, making it less secure compared to private WANs.
+
+---
+
+# Question: What is the key takeaway about communication between devices in different locations or within the same office?
+
+**Answer:**
+The key takeaway is that the basic networking principles enabling devices to communicate are consistent whether devices are in different parts of the world or within the same office. Both scenarios use network principles to achieve connectivity and communication.
+
+---
 
