@@ -639,4 +639,128 @@ The *.env* extension provides syntax highlighting for environment variable files
 
 ---
 
+# Question: What is the benefit of using extensions in VS Code?
+
+**Answer:**
+Extensions in VS Code enhance functionality by supporting additional tools, languages, and features. They provide integration with third-party services, enable snippets for frameworks like React and Redux, and allow for features like markdown preview, advanced file creation, and import cost estimation.
+
+---
+
+# Question: What is the most popular extension for React developers in VS Code?
+
+**Answer:**
+The most popular React extension includes snippets for React, Redux, GraphQL, and React Native, helping developers write boilerplate code quickly.
+
+---
+
+# Question: What does the FaunaDB extension in VS Code highlight?
+
+**Answer:**
+The FaunaDB extension shows that there are VS Code extensions available for third-party databases and tools, like FaunaDB, Firebase, and Netlify.
+
+---
+
+# Question: What does the Import Cost extension do?
+
+**Answer:**
+Import Cost shows the size of imported modules directly beside import statements, helping JavaScript developers optimize and avoid unnecessary bloat.
+
+---
+
+### Question: What is the Live Share extension used for in VS Code?
+
+**Answer:**
+Live Share enables real-time collaboration between developers by allowing them to share their coding session directly within VS Code.
+
+---
+
+# Question: How does the Markdown PDF extension enhance markdown usage in VS Code?
+
+**Answer:**
+The Markdown PDF extension lets users write markdown and export it directly to a PDF format, making it useful for generating eBooks and formatted documents.
+
+---
+
+# Question: How does VS Code support markdown natively?
+
+**Answer:**
+VS Code supports markdown with a live preview pane that displays the rendered document alongside the source code.
+
+---
+
+# Question: How can users access keyboard shortcut settings in VS Code?
+
+**Answer:**
+Users can access keyboard shortcut settings via the gear icon in the bottom-left corner or by opening the command palette and selecting "Preferences: Open Keyboard Shortcuts."
+
+---
+
+# Question: What does pressing `Command F` or `Ctrl F` do in VS Code?
+
+**Answer:**
+`Command F` (macOS) or `Ctrl F` (Windows/Linux) activates the "Find" feature, allowing users to search text within the editor.
+
+---
+
+# Question: How can you change a keyboard shortcut in VS Code?
+
+**Answer:**
+You can search for a command in the keyboard shortcuts list, click on the existing binding, and set a new key combination to override it.
+
+---
+
+# Question: What is the "Advanced New File" extension used for?
+
+**Answer:**
+The Advanced New File extension allows users to quickly create and name files in specific directories using a custom keyboard shortcut.
+
+---
+
+# Question: What happens if you override the default keybinding for creating a new file?
+
+**Answer:**
+The user-defined keybinding takes precedence over the default, allowing a more optimized workflow for file creation.
+
+---
+
+# Question: What does the “when” clause do in keyboard shortcuts configuration?
+
+**Answer:**
+The “when” clause allows conditions to be specified under which a shortcut should be active (e.g., when a certain language is used or a terminal is focused).
+
+---
+
+# Question: What are examples of contexts usable in the “when” clause?
+
+**Answer:**
+Examples include:
+
+* `editorLangId == "typescript"`
+* `editorHasSelection`
+* `terminalFocus`
+* `isLinux`, `isMac`, `isWindows`, `isWeb`
+
+---
+
+# Question: How does VS Code determine which keyboard shortcut takes precedence?
+
+**Answer:**
+VS Code gives precedence to user-defined shortcuts over default ones and uses context-specific "when" clauses to decide which command to execute.
+
+---
+
+# Question: What is a keymap extension in VS Code?
+
+**Answer:**
+A keymap extension remaps VS Code shortcuts to match those of another editor (like Sublime Text, Atom, Notepad++, etc.), making the transition easier for users.
+
+---
+
+# Question: Can you import settings and shortcuts from other editors into VS Code?
+
+**Answer:**
+Yes, keymap extensions can import settings and remap shortcuts from editors such as Sublime Text, Atom, Notepad++, etc.
+
+---
+
 
