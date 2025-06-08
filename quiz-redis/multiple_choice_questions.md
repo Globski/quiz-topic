@@ -796,3 +796,229 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 **Answer:** Members present in multiple sets are excluded from the difference result and only unique members to the first set are returned.
 
 ---
+
+# Question: What Redis command is used to find the union of multiple sets?
+
+**Answer:** The command `sunion` is used to find the union of two or more sets in Redis.
+
+---
+
+# Question: How do you find the union of the sets `technology` and `front end` in Redis CLI?
+
+**Answer:** Use the command `sunion technology front end`.
+
+---
+
+# Question: How can you find the union of multiple sets including `technology`, `front end`, `new set`, and `new enter`?
+
+**Answer:** Use the command `sunion technology front end new set new enter`.
+
+---
+
+# Question: Which command stores the union of multiple sets into a new destination set?
+
+**Answer:** The command `sunionstore` stores the union of multiple sets into a specified destination set.
+
+---
+
+# Question: How would you store the union of `technology`, `front end`, `new set`, and `new enter` into a set called `new union`?
+
+**Answer:** Use `sunionstore new_union technology front_end new_set new_enter`.
+
+---
+
+# Question: What are the main set operations demonstrated before moving to sorted sets?
+
+**Answer:** The main set operations demonstrated are difference (`sdiff`), intersection (`sinter`), and union (`sunion`), along with adding and removing elements.
+
+---
+
+# Question: What distinguishes a Redis sorted set from a regular set?
+
+**Answer:** A sorted set is like a regular set but each member has an associated score, and the set is sorted by these scores in ascending order.
+
+---
+
+# Question: Which Redis command adds elements to a sorted set?
+
+**Answer:** The command `zadd` is used to add elements to a sorted set.
+
+---
+
+# Question: What is the syntax to add a member with a score to a sorted set called `users`?
+
+**Answer:** `zadd users <score> <member>`.
+
+# Question: How can you add multiple members with their scores to a sorted set in one command?
+
+**Answer:** Use `zadd users <score1> <member1> <score2> <member2> ...`.
+
+---
+
+# Question: Give an example of adding multiple members to a sorted set named `users`.
+
+**Answer:** `zadd users 1 cover 2 x4 3 lx 4 nema 5 steve`.
+
+---
+
+# Question: How do you retrieve all elements in a sorted set `users` sorted by their scores?
+
+**Answer:** Use the command `zrange users 0 -1`.
+
+---
+
+# Question: How can you retrieve all elements in a sorted set along with their scores?
+
+**Answer:** Use `zrange users 0 -1 withscores`.
+
+---
+
+# Question: What Redis command returns the total number of elements in a sorted set?
+
+**Answer:** The command `zcard` returns the cardinality (count) of a sorted set.
+
+---
+
+# Question: How do you get the count of members in the sorted set `users`?
+
+**Answer:** Use `zcard users`.
+
+---
+
+# Question: Which command counts the members in a sorted set within a score range?
+
+**Answer:** The command `zcount` counts members within a given score range.
+
+---
+
+# Question: How is the `zrange` command's start and stop parameters interpreted?
+
+**Answer:** They represent the range of indexes to return from the sorted set, where `0` is the first element and `-1` is the last element.
+
+---
+
+# Question: What does the `withscores` option do when used with `zrange`?
+
+**Answer:** It includes the scores of each member in the output alongside the member names.
+
+---
+
+# Question: If no common elements exist among multiple sets, what will `sinter` return?
+
+**Answer:** It will return an empty list.
+
+---
+
+# Question: How do you store the intersection of `technology` and `front end` sets in a new set `new enter`?
+
+**Answer:** Use `sinterstore new_enter technology front_end`.
+
+---
+
+# Question: How does the `sdiff` command work when comparing two sets?
+
+**Answer:** It returns the members present in the first set but not in the second.
+
+---
+
+# Question: What is the difference between `sdiff` and `sdiffstore` commands?
+
+**Answer:** `sdiff` displays the difference between sets, while `sdiffstore` stores that difference in a new set.
+
+---
+
+# Question: What is the key concept of sorted sets’ score in Redis?
+
+**Answer:** Scores determine the order of elements in the sorted set from lowest to highest.
+
+---
+
+# Question: What happens when you add a member with a duplicate score to a sorted set?
+
+**Answer:** The member is placed according to the score; if scores are equal, lexicographical order is used to break ties.
+
+---
+
+# Question: Can Redis sets store duplicate members?
+
+**Answer:** No, sets store unique members only; duplicates are ignored.
+
+---
+
+# Question: Can you use the `sunionstore` command to merge multiple sets into one and overwrite existing data?
+
+**Answer:** Yes, `sunionstore` overwrites the destination set with the union of provided sets.
+
+---
+
+# Question: What Redis command would you use to list all members of a set called `technology`?
+
+**Answer:** Use `smembers technology`.
+
+---
+
+# Question: What is the Redis command to remove all elements from a set?
+
+**Answer:** Use `del <set_name>` to delete the entire set, or `srem <set_name> <member>` to remove specific members.
+
+---
+
+# Question: When querying a sorted set, what index range would return all members?
+
+**Answer:** The range `0` to `-1` returns all members.
+
+---
+
+# Question: What Redis command retrieves the score of a member in a sorted set?
+
+**Answer:** `zscore <key> <member>` retrieves the score of the specified member.
+
+---
+
+# Question: If you want to see only members with scores between 2 and 4 in a sorted set, which command would you use?
+
+**Answer:** Use `zrangebyscore <key> 2 4`.
+
+---
+
+# Question: What command would show the difference between two sets `technology` and `front end` without storing it?
+
+**Answer:** `sdiff technology front_end`.
+
+---
+
+# Question: How do you add a member named `react` to a set named `front end`?
+
+**Answer:** Use `sadd front_end react`.
+
+---
+
+# Question: How would you check if `java` exists in the set `technology`?
+
+**Answer:** Use `sismember technology java`.
+
+---
+
+# Question: What will `sismember technology spring` return if `spring` is not a member?
+
+**Answer:** It will return `0` indicating the member is not present.
+
+---
+
+# Question: Can `sunion` take more than two sets as arguments?
+
+**Answer:** Yes, `sunion` can accept multiple sets as arguments to union all of them.
+
+---
+
+# Question: How would you add members `node.js`, `aws`, `redis`, and `java` to a set called `technology`?
+
+**Answer:** Use `sadd technology node.js aws redis java`.
+
+---
+
+# Question: What is the effect of the command `smembers new_set` after using `sdiffstore` to create `new_set`?
+
+**Answer:** It lists all members stored in `new_set` which are the differences between the two compared sets.
+
+---
