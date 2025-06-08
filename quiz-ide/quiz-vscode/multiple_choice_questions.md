@@ -132,4 +132,88 @@ It lets you **search through your entire project** for specific terms (like `rea
 
 ---
 
+# Question: What is the purpose of the **Source Control tab** in VS Code?
+
+**Answer:**
+It allows you to **track changes with Git**, including staging, committing, and viewing modified files — all from within VS Code.
+
+---
+
+# Question: What does the **Debugging tab** allow you to do in VS Code?
+
+**Answer:**
+It enables a **true debugging experience** with features like breakpoints, inspecting variables, and running code step-by-step.
+
+---
+
+# Question: What can you do from the **Extensions tab** in VS Code?
+
+**Answer:**
+You can **search for, install, and manage extensions** to add extra functionality to your VS Code environment.
+
+---
+
+# Question: Which theme?
+
+**Answer:**
+The **Cobalt2 theme**.
+
+---
+
+# Question: How do you toggle the sidebar open or closed using a shortcut?
+
+**Answer:**
+Press **Command + B (Mac)** or **Ctrl + B (Windows)**.
+
+---
+
+# Question: What is the shortcut for going directly to the **Explorer** tab?
+
+**Answer:**
+**Command + Shift + E (Mac)** or **Ctrl + Shift + E (Windows)**.
+
+---
+
+# Question: What is the shortcut for going directly to the **Search** panel?
+
+**Answer:**
+**Command + Shift + F (Mac)** or **Ctrl + Shift + F (Windows)**.
+
+---
+
+# Question: What is the shortcut for opening the **Source Control** tab?
+
+**Answer:**
+**Ctrl + Shift + G** (on both Mac and Windows).
+
+---
+
+# Question: What is the shortcut for going to the **Debug panel**?
+
+**Answer:**
+**Command + Shift + D (Mac)** or **Ctrl + Shift + D (Windows)**.
+
+---
+
+# Question: What information does the **bottom bar** of VS Code typically show?
+
+**Answer:**
+It shows details such as the **Git branch** you're on (e.g., `master`) and other context-sensitive data depending on your extensions.
+
+---
+
+# Question: What file layout features are available in VS Code?
+
+**Answer:**
+You can open files in a **grid system**, **side-by-side**, or **top-bottom** split, and resize them **freely**. You can even have **multiple rows and columns** of files open at once.
+
+---
+
+# Question: Is there a practical limit to how many files you can open in split view?
+
+**Answer:**
+Not technically, but **screen size and practicality** become limiting factors.
+
+---
+
 
