@@ -1277,3 +1277,108 @@ If every ISP connected directly to every other ISP, the **number of connections*
 3. **Global ISP** – Connects regional ISPs across countries.
 
 ---
+
+# Question: How is the path of a packet determined in a network?
+
+**Answer:**
+The path of a packet is determined by the routers in the network. Each router independently makes a decision on where to forward the packet next, and the collective choices of these routers determine the overall path of the packet through the network.
+
+---
+
+# Question: Can the same packet take different paths at different times?
+
+**Answer:**
+Yes, the same packet (or different packets with the same source and destination) can take different paths through the network at different times, depending on the routing decisions made at each point in the network.
+
+---
+
+# Question: What is the role of regional and global ISPs in packet delivery?
+
+**Answer:**
+Regional ISPs connect local ISPs to the broader internet, while global ISPs provide large-scale infrastructure that connects different regions of the world. Packets often move from local ISPs to regional ISPs, and then to global ISPs to reach distant destinations.
+
+---
+
+# Question: Can a local ISP connect directly to a global ISP?
+
+**Answer:**
+Yes, a local ISP can connect directly to a global ISP without going through a regional ISP. This often depends on whether the global ISP already has infrastructure in that location. If not, the local ISP must pay extra to establish the connection.
+
+---
+
+# Question: What determines if a local ISP connects directly to a global ISP?
+
+**Answer:**
+The decision is typically based on infrastructure availability. If the global ISP has existing infrastructure in the local ISP’s area, a direct connection is feasible. Otherwise, significant investment is required to create that connection.
+
+---
+
+# Question: What does a local ISP typically represent?
+
+**Answer:**
+A local ISP usually represents a small company that provides internet access to individual users or small businesses within a localized area.
+
+---
+
+# Question: What happens when a packet reaches the local ISP connected to the destination LAN?
+
+**Answer:**
+The local ISP forwards the packet directly to the destination LAN. From there, the packet is sent to the specific computer within that LAN, completing the communication process.
+
+---
+
+# Question: What does the final step of packet delivery involve?
+
+**Answer:**
+The final step involves the destination router on the local network forwarding the packet to the target computer, completing the transmission process.
+
+---
+
+# Question: What happens when a user in Belgium tries to access a U.S.-hosted website like ABCx.com?
+
+**Answer:**
+The request packet from Belgium must pass through at least one global ISP to reach the server in the U.S. due to the physical and network distance.
+
+---
+
+# Question: Why does ABCx.com host its server in the USA?
+
+**Answer:**
+ABCx.com hosts its server in the USA due to limited financial resources, which likely make it more cost-effective to use existing hosting infrastructure there.
+
+---
+
+# Question: What does the server’s response message contain?
+
+**Answer:**
+The server’s response contains everything needed to display the website, including the HTML file, images, videos, and other web content.
+
+---
+
+# Question: What is an HTML file in the context of a website?
+
+**Answer:**
+An HTML file is the foundational structure or "skeleton" of a web page. It defines the layout and elements of the page that will be rendered in a web browser.
+
+---
+
+# Question: Does the response message from a server follow the same path as the request message?
+
+**Answer:**
+No, the response message can follow a different path than the request message. The exact path is determined dynamically by routers along the way and can vary from the original request route.
+
+---
+
+# Question: Can the exact path of a packet be known in advance?
+
+**Answer:**
+No, the exact path cannot be known in advance because it is determined dynamically by routers during the transmission.
+
+---
+
+# Question: What causes the website to appear in your browser?
+
+**Answer:**
+The website appears in your browser as soon as the response message, containing all necessary content like HTML and media files, is received from the server.
+
+---
