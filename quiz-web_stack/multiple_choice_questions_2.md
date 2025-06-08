@@ -1453,4 +1453,75 @@ Since **YouTube is owned by Google**, when users watch videos on YouTube, they a
 
 ---
 
+# Question: Why is YouTube typically more efficient for video streaming than Udemy?
+
+**Answer:**
+YouTube is more efficient because it utilizes a highly distributed server structure and robust infrastructure provided by Google, including technologies like peering. This ensures smooth and uninterrupted streaming. In contrast, Udemy’s infrastructure is not as extensive and does not use peering, which may lead to occasional freezes or interruptions.
+
+---
+
+# Question: What is peering, and why is it important?
+
+**Answer:**
+Peering is a network practice where multiple internet networks connect and exchange traffic directly without third-party involvement. It significantly increases streaming quality and speed, making it a very effective technology, especially used by major companies like Google and Amazon.
+
+---
+
+# Question: Despite its limitations, how has Udemy performed in terms of delivering content to millions?
+
+**Answer:**
+Udemy has done a significantly good job in serving millions of users simultaneously. This is a challenging engineering problem, and despite not using as extensive a server infrastructure or peering like Google, Udemy manages to deliver content effectively.
+
+---
+
+# Question: What are global ISPs, and what role do they play?
+
+**Answer:**
+Global ISPs (Internet Service Providers) are responsible for international internet communication. They are few in number compared to regional ISPs and require a substantial financial investment to set up, but they form the foundation of the internet backbone.
+
+---
+
+# Question: Why isn’t there a single global ISP?
+
+**Answer:**
+Having only one global ISP isn’t feasible due to technical reasons like load balancing and efficiency, as well as financial reasons. Setting up a global ISP is extremely costly but profitable over time.
+
+---
+
+# Question: What is the "internet backbone"?
+
+**Answer:**
+The internet backbone refers to the high-capacity data routes and infrastructure established by global ISPs to interconnect and support the global internet. It enables efficient data communication across the world.
+
+---
+
+# Question: What are Internet Exchange Points (IXPs), and what purpose do they serve?
+
+**Answer:**
+Internet Exchange Points (IXPs or IX) are physical infrastructure systems that allow different ISPs, especially global ones, to connect and exchange traffic directly. This helps the internet backbone function synchronously and efficiently.
+
+---
+
+# Question: Is it mandatory to connect through a local ISP to access the internet?
+
+**Answer:**
+No, it’s not mandatory. You can connect directly to a regional or global ISP if they offer services in your area. Choosing an ISP depends on availability and user preference.
+
+---
+
+# Question: What should you do if your preferred ISP doesn’t serve your location?
+
+**Answer:**
+If a preferred ISP doesn’t serve your location, you can contact the company to discuss possible solutions. Some regional and global ISPs may provide service if the required cost is covered, though this is generally unnecessary for average users.
+
+---
+
+# Question: Can setting up a local ISP be a viable option?
+
+**Answer:**
+Yes, establishing a local ISP can be a smart and viable business move, especially if done in an underserved area. It may make sense from both a technical and financial perspective.
+
+---
+
+
 
