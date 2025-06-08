@@ -839,3 +839,51 @@ Communication over the internet is public and shared with everyone, while commun
 
 ---
 
+# Question: Why is communication over the public internet considered insecure for important company data?
+
+**Answer:**
+Because the internet is a public network with no owner, anyone—including hackers—can potentially intercept, read, or modify data being transmitted over it. This makes sending important company files directly over the internet risky.
+
+---
+
+# Question: What is the advantage of sending data within a private network (LAN) compared to sending it over the internet?
+
+**Answer:**
+Data sent within a private network (LAN) stays inside that network, which is secure and controlled. Outsiders cannot access or intercept the data without permission, so the transmission is much safer.
+
+---
+
+# Question: What is a VPN and how does it help secure communication over the internet?
+
+**Answer:**
+VPN stands for Virtual Private Network. It encrypts data and creates a secure, private connection (a "tunnel") over the public internet, providing privacy, anonymity, and security for data transmission.
+
+---
+
+# Question: What does the term "tunneling" mean in the context of VPN?
+
+**Answer:**
+Tunneling is a VPN feature that creates a virtual secure path for data packets over the internet. It acts like a protected "tunnel" between two points, ensuring that data is encrypted and hidden from outsiders during transmission.
+
+---
+
+# Question: Does VPN tunneling create a physical tunnel?
+
+**Answer:**
+No, VPN tunneling does not create a physical tunnel. The tunnel is a virtual representation of a secure and encrypted connection between two points on the network.
+
+---
+
+# Question: Why might setting up a WAN be costly and complex?
+
+**Answer:**
+Because it involves creating secure connections across geographically distant locations, possibly requiring dedicated hardware, secure protocols, and proper management to ensure privacy and performance.
+
+---
+
+# Question: How does a VPN contribute to the cost-effectiveness of setting up a WAN?
+
+**Answer:**
+VPNs provide a cost-effective WAN solution by using encryption and tunneling over the existing public internet infrastructure instead of requiring dedicated private lines, reducing setup and maintenance costs.
+
+---
