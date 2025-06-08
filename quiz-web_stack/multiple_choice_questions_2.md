@@ -1028,3 +1028,54 @@ A LAN is more secure because the data packets never leave the local physical cab
 Because packets in a VPN WAN still travel over the public internet, there is always a potential risk of interception or vulnerability, whereas in a LAN, data stays within a controlled physical network.
 
 ---
+
+# Question: Why might an average company prefer a public WAN over a private WAN?
+
+**Answer:**
+Because a public WAN provides sufficient security at a more affordable cost, making it a practical choice for many companies.
+
+---
+
+# Question: What devices are used to create a LAN, and which devices are used to create a WAN?
+
+**Answer:**
+Switches are used to create a LAN, while routers are used to create a WAN.
+
+---
+
+# Question: Can a WAN be created using switches? Why or why not?
+
+**Answer:**
+No, a WAN cannot be created using switches because a WAN fundamentally involves connecting different LANs across various locations, which requires routers.
+
+---
+
+# Question: What is the primary function of a router?
+
+**Answer:**
+The primary function of a router is to connect different networks, regardless of whether they are in the same office or different parts of the world.
+
+---
+
+# Question: In an office setting, how can routers help connect different networks?
+
+**Answer:**
+Routers connect different networks within the same office, such as connecting the marketing unit’s LAN with the software unit’s LAN, enabling communication between them.
+
+---
+
+# Question: How are the cables on a router typically connected, and what does each cable represent?
+
+**Answer:**
+Each cable is connected to a different network; for example, one cable might connect to LAN one, another to LAN two, and another to the internet. Each port on the router represents a different network connection.
+
+---
+
+# Question: Why might there be multiple different networks within the same office?
+
+**Answer:**
+Multiple networks may be needed within the same office to separate different departments or units, such as marketing and software, for security, management, or organizational purposes.
+
+---
+
+
