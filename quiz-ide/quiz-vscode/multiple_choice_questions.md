@@ -216,4 +216,95 @@ Not technically, but **screen size and practicality** become limiting factors.
 
 ---
 
+# Question: What is the command palette in VS Code?
+
+**Answer:**
+*The command palette* is a master command interface in VS Code that lets users search for and execute any command available in the editor. It can be accessed using **Cmd+Shift+P** on Mac or **Ctrl+Shift+P** on Windows.
+
+---
+
+# Question: What is Zen Mode in VS Code?
+
+**Answer:**
+*Zen Mode* is a feature in VS Code that removes all interface clutter—such as the sidebar and borders—allowing users to focus solely on their code. It can be toggled on and off using the command palette.
+
+---
+
+# Question: What is the function of the minimap in VS Code?
+
+**Answer:**
+*The minimap* in VS Code provides a compact overview of a file, allowing users to quickly scroll and navigate through large files by clicking or dragging on the preview pane.
+
+---
+
+# Question: How can the minimap be toggled in VS Code?
+
+**Answer:**
+The *minimap* can be toggled on or off using the command palette by searching for and executing the toggle minimap command.
+
+---
+
+# Question: How do you search for a word inside a file in VS Code?
+
+**Answer:**
+You can *search inside a file* by pressing **Cmd+F** (Mac) or **Ctrl+F** (Windows), which opens the Find interface, allowing users to locate specific words or phrases.
+
+---
+
+# Question: What happens when you select text and press Command/Ctrl + F in VS Code?
+
+**Answer:**
+When *text is selected and Cmd/Ctrl + F* is pressed, VS Code automatically populates the Find field with the selected text.
+
+---
+
+# Question: How does Replace work in VS Code’s search?
+
+**Answer:**
+*Replace* allows users to substitute the searched term with another term either one-by-one or all at once. You can preview changes and selectively apply replacements file by file or line by line.
+
+---
+
+# Question: What keyboard shortcut toggles the sidebar in VS Code?
+
+**Answer:**
+**Cmd+B** (Mac) or **Ctrl+B** (Windows) toggles the sidebar on and off in VS Code.
+
+---
+
+# Question: What does Command/Ctrl + W do in VS Code?
+
+**Answer:**
+*Cmd+W* (Mac) or *Ctrl+W* (Windows) is used to close the currently open file tab in VS Code.
+
+---
+
+# Question: How can you cycle through open files in VS Code?
+
+**Answer:**
+You can cycle forward through open files using **Ctrl+Tab** and backward using **Ctrl+Shift+Tab** on both Mac and Windows.
+
+---
+
+# Question: What does Command/Ctrl + P do in VS Code?
+
+**Answer:**
+*Cmd+P* (Mac) or *Ctrl+P* (Windows) opens the Quick Open feature, allowing users to search for and open any file by typing its name.
+
+---
+
+# Question: What advice was given regarding productivity in VS Code?
+
+**Answer:**
+The advice is to *learn and use keyboard shortcuts* as much as possible to avoid using the mouse. This improves productivity by keeping hands on the keyboard and speeding up workflow.
+
+---
+
+# Question: How can you navigate word by word in a file?
+
+**Answer:**
+You can *navigate word by word* by holding down **Option** (Mac) or **Alt** (Windows) and pressing the left or right arrow keys. This moves the cursor word-by-word instead of character-by-character.
+
+---
+
 
