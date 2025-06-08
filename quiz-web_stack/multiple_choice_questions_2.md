@@ -1211,3 +1211,69 @@ The **number of paths** a local ISP has is directly related to the number of nei
 **Router icons** are used in ISP network diagrams to represent the presence of routers within PoPs. These visuals simplify the understanding of complex network structures by highlighting the key devices responsible for forwarding data across the internet.
 
 ---
+
+# Question: What is the difference between a local ISP and a regional ISP?
+
+**Answer:**
+A **local ISP** connects smaller areas such as **neighborhoods**, while a **regional ISP** connects larger areas such as **cities within a country**. Local ISPs communicate with each other **through** regional ISPs, not directly.
+
+---
+
+# Question: Why don't local ISPs connect directly to each other?
+
+**Answer:**
+Directly connecting all **local ISPs** would break the **hierarchical structure** and make the system unnecessarily **complex**. Instead, using **regional ISPs** as intermediaries helps maintain a **simplified and scalable** network design.
+
+---
+
+# Question: What does a regional ISP do?
+
+**Answer:**
+A **regional ISP** connects multiple **local ISPs** across different **cities** within the same country. It enables communication between devices located in different urban areas.
+
+---
+
+# Question: In a typical home, what physical line shows your connection to your local ISP?
+
+**Answer:**
+The **cable** connected to your **home router** from outside represents the physical line from your **local ISP**. This line is what gives your home or office access to the internet.
+
+---
+
+# Question: Why is a hierarchical structure used in ISP networks?
+
+**Answer:**
+The **hierarchical structure** (local → regional → global) is used to **minimize complexity** and ensure **efficient routing**. It allows for organized communication with the **minimum number of connections** required between ISPs.
+
+---
+
+# Question: What role does a global ISP play?
+
+**Answer:**
+A **global ISP** connects devices in **different countries**. For example, if a computer in the **USA** wants to communicate with one in **China**, the connection must go through **global ISPs**, as local and regional ISPs only handle domestic communication.
+
+---
+
+# Question: Can you give an example of when a global ISP is necessary?
+
+**Answer:**
+If a device in **New York (USA)** wants to communicate with a device in **Beijing (China)**, the data must travel through **global ISPs**, possibly using **undersea fiber-optic cables**, since local and regional ISPs cannot handle cross-country connections.
+
+---
+
+# Question: What would happen if every ISP tried to connect directly?
+
+**Answer:**
+If every ISP connected directly to every other ISP, the **number of connections** would increase **exponentially**, leading to **network congestion, complexity, and inefficiency**. The **hierarchical model** prevents this by organizing ISPs in structured layers.
+
+---
+
+# Question: What are the three main levels of ISP hierarchy?
+
+**Answer:**
+
+1. **Local ISP** – Connects individual homes/offices within neighborhoods.
+2. **Regional ISP** – Connects local ISPs across cities.
+3. **Global ISP** – Connects regional ISPs across countries.
+
+---
