@@ -1214,3 +1214,130 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 **Answer:** Use the command `HGETALL key`.
 
 ---
+
+# Question: What does the Redis command `hkeys myhash` return?
+
+**Answer:** It returns all the keys available in the hash stored at `myhash`.
+
+---
+
+# Question: How can you retrieve all the values stored in a Redis hash?
+
+**Answer:** By using the command `hvals myhash`, which returns all the values in the hash.
+
+---
+
+# Question: What does the Redis command `hgetall myhash` return?
+
+**Answer:** It returns all the keys and values stored in the hash `myhash`.
+
+---
+
+# Question: How do you check if a specific field exists in a Redis hash?
+
+**Answer:** Use the command `hexists myhash field`. It returns 1 if the field exists, 0 if it does not.
+
+---
+
+# Question: What will `hexists myhash name` return if the field `name` exists in the hash?
+
+**Answer:** It will return 1.
+
+---
+
+# Question: What will `hexists myhash name1` return if the field `name1` does not exist in the hash?
+
+**Answer:** It will return 0.
+
+---
+
+# Question: How do you find the number of fields stored in a Redis hash?
+
+**Answer:** By using the command `hlen myhash`, which returns the length (number of fields) of the hash.
+
+---
+
+# Question: What happens if you add a new field to a Redis hash and then run `hlen` again?
+
+**Answer:** The returned length will increase by one, reflecting the new field added.
+
+---
+
+# Question: Which command allows you to add multiple field-value pairs to a Redis hash in one call?
+
+**Answer:** `hmset myhash field1 value1 field2 value2 ...`
+
+---
+
+# Question: Provide an example command to add `country` as `India` and `phone` as `1234567890` to a Redis hash `myhash`.
+
+**Answer:** `hmset myhash country India phone 1234567890`
+
+---
+
+# Question: How can you retrieve multiple values from a Redis hash at once?
+
+**Answer:** Using the command `hmget myhash field1 field2 ...`
+
+---
+
+# Question: What is the result of running `hmget myhash name email phone` if those fields exist in the hash?
+
+**Answer:** It returns the values for `name`, `email`, and `phone` fields in the order requested.
+
+---
+
+# Question: If you want to increment a numeric field in a Redis hash by an integer, which command should you use?
+
+**Answer:** Use the command `hincrby myhash field increment`.
+
+---
+
+# Question: How would you increment the `age` field in `myhash` by 2?
+
+**Answer:** `hincrby myhash age 2`
+
+---
+
+# Question: Which Redis command increments a hash field by a floating point number?
+
+**Answer:** `hincrbyfloat myhash field increment_float`
+
+---
+
+# Question: How would you increase the `age` field in `myhash` by 1.5 using Redis commands?
+
+**Answer:** `hincrbyfloat myhash age 1.5`
+
+---
+
+# Question: How do you remove a field from a Redis hash?
+
+**Answer:** Use the command `hdel myhash field`.
+
+---
+
+# Question: What does the return value of `hdel myhash field` indicate?
+
+**Answer:** It returns the number of fields removed (1 if the field was removed, 0 if the field did not exist).
+
+---
+
+# Question: After deleting a field from a hash using `hdel`, how can you verify that the field no longer exists?
+
+**Answer:** Use `hexists myhash field` which will return 0 if the field was successfully removed.
+
+---
+
+# Question: Is it possible to use pipelining with Redis hash commands, and if so, which commands support adding and retrieving multiple fields?
+
+**Answer:** Yes, pipelining can be used; `hmset` supports adding multiple fields, and `hmget` supports retrieving multiple fields.
+
+---
+
+# Question: What happens if you mistakenly enter a field name in lowercase when it should be uppercase in commands like `hmset` or `hmget`?
+
+**Answer:** Redis treats field names as case-sensitive, so the incorrect case will lead to either creating a new field or returning null values for that field.
+
+---
+
