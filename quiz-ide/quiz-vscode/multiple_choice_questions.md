@@ -63,3 +63,73 @@ VS Code is *lightweight* because it loads quickly and doesn’t have the heavy f
 3. **Git Integration** – allows local source control and integration with services like GitHub and Bitbucket.
 
 ---
+
+# Question: What are the two different versions of Visual Studio Code?
+
+**Answer:**
+The two versions are the **Stable edition** and the **Insiders edition**.
+
+---
+
+# Question: What is the main difference between VS Code’s Stable edition and Insiders edition?
+
+**Answer:**
+The **Stable edition** is the official, thoroughly tested release, while the **Insiders edition** includes the *latest features and updates daily*, which may sometimes be unstable or experimental.
+
+---
+
+# Question: Who is the Insiders edition of VS Code intended for?
+
+**Answer:**
+It's intended for **early adopters** who want to try the latest features and don’t mind occasional bugs or instability.
+
+---
+
+# Question: Can you install both the Stable and Insiders editions of VS Code on the same computer?
+
+**Answer:**
+Yes, you can install **both editions side by side** without any conflict.
+
+---
+
+# Question: What happens when you first open VS Code?
+
+**Answer:**
+You are presented with a **welcome screen** that includes:
+
+* Recent projects
+* Keyboard shortcuts cheat sheet
+* Tips and tricks
+* Support for languages and platforms like Python, Java, Azure, and Docker.
+
+---
+
+# Question: What feature does VS Code include to keep users updated about new features?
+
+**Answer:**
+VS Code includes a **monthly update screen** or *newsletter* showing new features, enhancements, images, and animated previews.
+
+---
+
+# Question: What is typically the first thing you do after launching VS Code?
+
+**Answer:**
+You usually **open a folder or project** to start working on it.
+
+---
+
+# Question: What is the first icon in the VS Code sidebar used for?
+
+**Answer:**
+The first icon opens the **File Explorer**, which shows all the files and folders in the currently opened project.
+
+---
+
+# Question: What does the Search icon in the VS Code sidebar allow you to do?
+
+**Answer:**
+It lets you **search through your entire project** for specific terms (like `react`) and **replace them**, with inline previews of the changes.
+
+---
+
+
