@@ -83,3 +83,79 @@ Seven computers can communicate with each other by either connecting them with c
 
 ---
 
+# Question: What type of cables are generally used to connect computers to a switch in environments like homes or offices?
+
+**Answer:**
+Copper cables are generally used to connect computers to a switch in environments such as homes or offices.
+
+---
+
+# Question: What network is created when multiple computers are connected to a switch using cables?
+
+**Answer:**
+When computers are connected to a switch using cables, they form a Local Area Network (LAN).
+
+---
+
+# Question: How is a Local Area Network (LAN) defined?
+
+**Answer:**
+A Local Area Network (LAN) is a collection of devices connected together within a limited physical area, such as a building, office, or home.
+
+---
+
+# Question: Can a LAN be created between computers located far apart, like in different countries?
+
+**Answer:**
+No, a LAN cannot be created between computers located far apart, such as in the United States and Russia, because a LAN must be confined to a restricted, local area.
+
+---
+
+# Question: Why is a switch device important in creating a LAN?
+
+**Answer:**
+A switch device is important because it connects multiple devices within a local area to form a LAN, enabling communication among these devices.
+
+---
+
+# Question: What are some common places where LANs exist?
+
+**Answer:**
+LANs commonly exist in homes, offices, and neighboring houses, meaning almost every household or workplace with multiple connected devices has a LAN.
+
+---
+
+# Question: When PC1 sends a message to PC6 within a LAN, what are the names given to these messages?
+
+**Answer:**
+These messages are called packets or frames; in this course, the term "packet" is preferred.
+
+---
+
+# Question: How does a switch handle a packet sent from one PC to another?
+
+**Answer:**
+The switch receives the packet, examines it to find its destination address, and then forwards the packet to the destination PC.
+
+---
+
+# Question: What does it mean if one computer can send a packet to another computer?
+
+**Answer:**
+It means that both computers are on the same network and can communicate with each other.
+
+---
+
+# Question: What physical feature of a switch helps connect multiple devices, and how does it vary?
+
+**Answer:**
+A switch has multiple LAN ports, and the number of ports varies by switch model—from around 10 ports to many more—affecting the price and capacity.
+
+---
+
+# Question: What is the special name given to the ports on a switch?
+
+**Answer:**
+The ports on a switch are called LAN ports.
+
+---
