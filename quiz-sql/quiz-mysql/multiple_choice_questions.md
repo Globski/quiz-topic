@@ -264,6 +264,66 @@
 
 # Question: What does a blue square in the ERD typically indicate?
 
+**Answer:** That the field is **required** (non-nullable)
+
+---
+
+# Question: Where is the relational database for a platform like Jovian typically hosted?
+
+**Answer:** On the cloud.
+
+---
+
+# Question: What happens when you view your profile on a site like Jovian?
+
+**Answer:** Data is retrieved from a relational database and displayed on your profile page.
+
+---
+
+# Question: What is an Entity Relationship Diagram (ERD)?
+
+**Answer:** A diagram that describes all the tables in a database and the relationships between them.
+
+---
+
+# Question: When is an ERD typically created?
+
+**Answer:** When setting up a relational database, especially during initial design.
+
+---
+
+# Question: What does an ERD represent?
+
+**Answer:** The structure of the database including tables (entities), fields (columns), and their relationships.
+
+---
+
+# Question: What does each box in an ERD represent?
+
+**Answer:** A table in the database.
+
+---
+
+# Question: What is shown inside each box in an ERD?
+
+**Answer:** The list of columns (fields) in that table.
+
+---
+
+# Question: Does an ERD contain actual data?
+
+**Answer:** No, it only contains the structure (blueprint) of the database.
+
+---
+
+# Question: What does the key icon next to a column in an ERD represent?
+
+**Answer:** That the column is a **primary key**—a unique identifier for records in the table.
+
+---
+
+# Question: What does a blue square in the ERD typically indicate?
+
 **Answer:** That the field is **required** (non-nullable).
 
 ---
