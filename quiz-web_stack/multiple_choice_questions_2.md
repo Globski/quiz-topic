@@ -337,3 +337,52 @@ Yes, focusing only on routers is sufficient for understanding the basic concept 
 
 ---
 
+# Question: Why are routers so important to the internet?
+
+**Answer:**
+Routers enable different local area networks (LANs) to communicate with each other. Since the internet connects millions of LANs worldwide, routers are essential for linking these networks together.
+
+---
+
+# Question: Why does the internet need many routers instead of just one?
+
+**Answer:**
+Because millions of devices worldwide cannot be connected to a single router due to its physical and technical limitations. Also, having only one router would create a single point of failure, meaning if that router breaks, the entire internet connection would fail.
+
+---
+
+# Question: What is the problem known as "single point of failure" in the context of routers?
+
+**Answer:**
+It is a problem where all devices rely on one router or device, so if that device fails, the whole network or internet connection fails as well.
+
+---
+
+# Question: In the visual mentioned, why is there only one device instead of separate switch and router devices?
+
+**Answer:**
+Because it shows a home router, which is a combination device including both a router and a switch. This device is sufficient for small environments like homes or small offices.
+
+---
+
+# Question: When is a home router sufficient, and when might additional devices be needed?
+
+**Answer:**
+A home router is sufficient for small environments with few devices. If there are many devices, additional switches and routers might be necessary.
+
+---
+
+# Question: What would happen if a single router were used to connect all devices worldwide?
+
+**Answer:**
+That router would need to handle millions of ports, which is impossible to design. Additionally, it would create a single point of failure, risking the entire internet connection if that router failed.
+
+---
+
+# Question: Why is distributing many routers around the world a better solution than using a single router?
+
+**Answer:**
+Distributing routers avoids overloading one device, improves reliability by eliminating a single point of failure, and allows efficient communication across multiple networks.
+
+---
+
