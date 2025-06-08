@@ -534,4 +534,109 @@ Customizing settings and themes helps tailor the coding environment to your pref
 
 ---
 
+# Question: How can users customize the appearance of their Visual Studio Code editor?
+
+**Answer:**
+Users can install various themes, such as Linux, Duo Tone, Dark, or Zeplin themes, by simply clicking a button in the Extensions tab. After installation, they can activate a theme by selecting it in the settings.
+
+---
+
+# Question: What is the *Prettier* extension used for in VS Code?
+
+**Answer:**
+*Prettier* is a code formatting extension for Visual Studio Code. When combined with the "Format on Save" setting, it automatically formats your code every time you save a file, ensuring consistent indentation and structure.
+
+---
+
+# Question: What does the *Advanced New File* extension do?
+
+**Answer:**
+The *Advanced New File* extension allows users to create a new file using a command input, avoiding the need to use the mouse. It enables selecting the target directory and specifying the filename, speeding up the file creation process.
+
+---
+
+# Question: How does the *Better Comments* extension enhance code readability?
+
+**Answer:**
+*Better Comments* allows different types of comments to be color-coded for better visibility. For example, `!` turns comments red, `*` makes them green, and parameter annotations are also highlighted distinctly.
+
+---
+
+# Question: What is *Quokka* used for in Visual Studio Code?
+
+**Answer:**
+*Quokka* provides a live JavaScript and TypeScript playground directly in VS Code. It displays real-time output alongside the code, serving as an alternative to using the browser console.
+
+---
+
+# Question: What does the *Live Server* extension do?
+
+**Answer:**
+*Live Server*, created by Ritwick Dey, starts a local development server that reloads the browser automatically when HTML files are updated and saved, making front-end development faster and more interactive.
+
+---
+
+# Question: What is *Polacode* and how is it used?
+
+**Answer:**
+*Polacode* lets users generate beautifully formatted images of their code. It is useful for creating visual code snippets to share on social media platforms or in blog posts.
+
+---
+
+# Question: How does the *Auto Rename Tag* extension assist with HTML editing?
+
+**Answer:**
+*Auto Rename Tag* automatically updates the closing HTML tag when the opening tag is changed, saving time and reducing errors during markup editing.
+
+---
+
+# Question: What is the function of the *Bracket Pair Colorizer* extension?
+
+**Answer:**
+*Bracket Pair Colorizer* color-codes matching brackets in JavaScript and other languages, making it easier to identify bracket pairs and navigate nested code structures.
+
+---
+
+# Question: What does the *Bookmarks* extension allow developers to do?
+
+**Answer:**
+*Bookmarks* lets developers place and navigate between bookmarks in their code, which is particularly useful in large files or projects to mark important sections for quick access.
+
+---
+
+# Question: What is the purpose of the *Cloak* extension?
+
+**Answer:**
+*Cloak* hides sensitive information, such as environment variables in `.env` files, during screen recording or live streaming, preventing accidental exposure of credentials.
+
+---
+
+# Question: How does *CSS Peek* benefit front-end developers?
+
+**Answer:**
+*CSS Peek* allows developers to view CSS styles for classes and IDs inline within their HTML or JavaScript files without needing to open separate stylesheets, even when styles are from external libraries like Bootstrap.
+
+---
+
+# Question: What is the *Debugger for Chrome* extension?
+
+**Answer:**
+*Debugger for Chrome* enables debugging JavaScript code running in the Google Chrome browser directly from Visual Studio Code. It is integrated into the VS Code debugging workflow.
+
+---
+
+# Question: What does the *.env* extension provide?
+
+**Answer:**
+The *.env* extension provides syntax highlighting for environment variable files, improving readability and minimizing mistakes when working with `.env` files.
+
+---
+
+# Question: What is *EditorConfig* and why is it useful?
+
+**Answer:**
+*EditorConfig* helps maintain consistent coding styles across different editors and IDEs by using a `.editorconfig` file in the project, defining rules for things like indentation, line endings, and more.
+
+---
+
 
