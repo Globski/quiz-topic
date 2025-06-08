@@ -279,4 +279,61 @@ The cable provided by the ISP is plugged into a specific port on the router, whi
 
 ---
 
+# Question: What device helps a computer like PC One connect to the internet?
+
+**Answer:**
+The router is the device that helps connect a computer to the internet.
+
+---
+
+# Question: What two questions ask to provoke thinking about the internet?
+
+**Answer:**
+
+1. Can you visualize the internet in your mind?
+2. What exactly does the internet mean?
+
+---
+
+# Question: Why is it helpful to understand what the internet exactly stands for before learning how computers connect to it?
+
+**Answer:**
+Because if you are a real beginner (newbie), you might not know what the internet is, so understanding its meaning helps grasp how connections work.
+
+---
+
+# Question: What is the purpose of using a simplified model when explaining how a packet moves on the internet?
+
+**Answer:**
+The simplified model is used to make the concept easier to understand, even though the real internet is much more complex.
+
+---
+
+# Question: What role do routers play in connecting computers on the internet?
+
+**Answer:**
+Routers are devices required for computers or electronic devices to connect to the internet and communicate with computers in different LANs or anywhere else in the world.
+
+---
+
+# Question: How can the internet be visualized?
+
+**Answer:**
+The internet can be visualized as a structure that connects all LANs (local area networks) all over the world.
+
+---
+
+# Question: Why are there so many routers distributed around the world?
+
+**Answer:**
+Because the internet is organized with many routers distributed worldwide to facilitate communication, and while routers are important, there are also many other devices involved.
+
+---
+
+# Question: Is focusing only on routers enough to understand the concept behind the internet?
+
+**Answer:**
+Yes, focusing only on routers is sufficient for understanding the basic concept behind the internet, even though other devices exist in the network.
+
+---
 
