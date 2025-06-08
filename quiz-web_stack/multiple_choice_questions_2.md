@@ -887,3 +887,81 @@ Because it involves creating secure connections across geographically distant lo
 VPNs provide a cost-effective WAN solution by using encryption and tunneling over the existing public internet infrastructure instead of requiring dedicated private lines, reducing setup and maintenance costs.
 
 ---
+
+# Question: Why is it almost impossible to interfere with a packet when using a VPN tunneling?
+
+**Answer:**
+Because VPN uses tunneling, the packet is encapsulated inside another packet, effectively hiding its original content as it travels through many routers, making it almost impossible to interfere with the packet from the outside.
+
+---
+
+# Question: What is a site-to-site VPN, and where is it commonly used?
+
+**Answer:**
+A site-to-site VPN is a VPN tunneling setup established between routers at different physical locations, typically used to create a secure wide area network (WAN) between offices.
+
+---
+
+# Question: Using the analogy of sending a letter, explain what VPN tunneling represents.
+
+**Answer:**
+In the analogy, sending a letter without an envelope means the postman (representing the public internet) can read the letter. Putting the letter inside an envelope represents VPN tunneling, where the original packet (letter) is encapsulated inside another packet (envelope), so the intermediate routers cannot read the original data.
+
+---
+
+# Question: What does encapsulation of packets mean in the context of VPN tunneling?
+
+**Answer:**
+Encapsulation means placing the original data packet (yellow packet) inside another packet (red packet), similar to putting a letter inside an envelope, which helps protect the contents during transit.
+
+---
+
+# Question: Does VPN tunneling alone guarantee complete security of the data packet? Explain why or why not.
+
+**Answer:**
+No, tunneling alone does not guarantee complete security because the outer packet can still be opened by someone with access to the network. Without encryption, the encapsulated packet’s contents could potentially be accessed.
+
+---
+
+# Question: How does encryption enhance security in VPN tunneling?
+
+**Answer:**
+Encryption transforms the original packet into unreadable data that only authorized users (e.g., company employees) can understand. Even if someone intercepts and opens the encapsulated packet, they cannot understand the encrypted information.
+
+---
+
+# Question: Describe the correct process for maximizing security of data packets using VPN.
+
+**Answer:**
+First, encrypt the original packet so its contents are unreadable. Then, encapsulate this encrypted packet inside another packet (tunneling). This combined approach protects the packet both by hiding it inside another packet and by encrypting its contents.
+
+---
+
+# Question: What happens to the encapsulated and encrypted packet once it reaches the destination router?
+
+**Answer:**
+The destination router removes the outer packet (decapsulation), decrypts the encrypted original packet to retrieve the readable data, then examines the packet’s destination address and forwards it accordingly.
+
+---
+
+# Question: What is the main benefit of using VPN technology to connect two LANs?
+
+**Answer:**
+VPN technology allows secure communication between two LANs over the public internet, enabling safe transfer of company-related information despite the internet being a public network.
+
+---
+
+# Question: Is VPN technology 100% secure? Why or why not?
+
+**Answer:**
+No, VPN technology is not 100% secure because every system can have security vulnerabilities. However, VPNs currently provide a level of security that is generally satisfactory for both budget and protection.
+
+---
+
+# Question: If everyday internet operations (like sending emails or shopping online) occur over a public network, are these operations insecure?
+
+**Answer:**
+Not necessarily. While the internet is a public network, security depends on whether encryption or secure protocols (like HTTPS) are used. Some operations are secure due to encryption, while others may not be.
+
+---
+
