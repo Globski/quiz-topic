@@ -1139,5 +1139,75 @@ In the context of VPNs, "public WAN" refers to VPNs that operate over the public
 **Answer:**
 The key takeaway is that the basic networking principles enabling devices to communicate are consistent whether devices are in different parts of the world or within the same office. Both scenarios use network principles to achieve connectivity and communication.
 
+
 ---
 
+# Question: What is an ISP?
+
+**Answer:**
+An **Internet Service Provider (ISP)** is a company that provides users with access to the internet, typically for a fee. It is a necessary intermediary, as one cannot connect to the internet without going through an ISP. ISPs come in various types and sizes, and together they form the backbone of the global internet infrastructure.
+
+---
+
+# Question: What is the role of a local ISP?
+
+**Answer:**
+A **local ISP** is typically responsible for internet communication within small areas, such as neighborhoods or nearby regions. They handle packet transmission for closely located users, often requiring only one router to connect devices in the same vicinity. Their main job is to link local LANs to the broader internet.
+
+---
+
+# Question: How does packet transmission work through a local ISP?
+
+**Answer:**
+When a packet is sent through a **local ISP**, it usually passes through one or more routers managed by the ISP before reaching its destination. If the source and destination are in close proximity—like the same neighborhood—one router might be sufficient for the transmission.
+
+---
+
+# Question: What is a Point of Presence (PoP)?
+
+**Answer:**
+A **Point of Presence (PoP)** is a small office or facility belonging to a local ISP where various networking devices such as **routers**, **switches**, and **servers** are located. It serves as the first physical access point for homes or offices to connect to the internet through their ISP.
+
+---
+
+# Question: What is typically found in a PoP?
+
+**Answer:**
+A **PoP** usually contains routers (which connect different networks), as well as other network infrastructure devices such as **switches** and **servers**. These devices are essential for performing various configurations and maintaining internet connectivity.
+
+---
+
+# Question: Why do ISPs use routers in PoPs?
+
+**Answer:**
+**Routers** are used in **PoPs** because they are the primary devices that connect different networks and forward packets to their destination. While other devices like switches and servers assist with configuration and management, routers are critical for establishing internet connections across networks.
+
+---
+
+# Question: Can a local ISP have more than one PoP?
+
+**Answer:**
+Yes, a **local ISP** can have multiple **PoPs**, especially if it services multiple neighborhoods or regions. The number of PoPs depends on the size and coverage area of the ISP. A larger ISP covering four neighborhoods may have four different PoPs (paths), while a smaller one may have only one.
+
+---
+
+# Question: How does the size of a local ISP influence its infrastructure?
+
+**Answer:**
+The **size of a local ISP** determines the number of **PoPs** and **paths** it has. A larger local ISP serving several neighborhoods might have multiple PoPs and paths to efficiently manage traffic between these areas, while a smaller ISP might only need a single PoP and path.
+
+---
+
+# Question: What conclusion can we draw about local ISP paths?
+
+**Answer:**
+The **number of paths** a local ISP has is directly related to the number of neighborhoods or regions it serves. More neighborhoods require more paths to handle traffic and ensure efficient communication between LANs in different areas.
+
+---
+
+# Question: Why are router icons used in ISP network visuals?
+
+**Answer:**
+**Router icons** are used in ISP network diagrams to represent the presence of routers within PoPs. These visuals simplify the understanding of complex network structures by highlighting the key devices responsible for forwarding data across the internet.
+
+---
