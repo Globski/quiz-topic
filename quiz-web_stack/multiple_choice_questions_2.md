@@ -963,5 +963,68 @@ No, VPN technology is not 100% secure because every system can have security vul
 **Answer:**
 Not necessarily. While the internet is a public network, security depends on whether encryption or secure protocols (like HTTPS) are used. Some operations are secure due to encryption, while others may not be.
 
+
 ---
 
+# Question: How is credit card information protected when sent over the internet during online purchases?
+
+**Answer:**
+Credit card information is protected using encryption between the user’s computer and the destination server (e.g., amazon.com). This encryption ensures that nobody except the destination server can read the sensitive information.
+
+---
+
+# Question: What was the major security problem before encryption was commonly used for internet communications?
+
+**Answer:**
+Before encryption was used, sensitive information like credit card details was sent in plain text, making it easy for hackers to intercept and read the data.
+
+---
+
+# Question: What is the largest wide area network (WAN) in the world?
+
+**Answer:**
+The largest wide area network in the world is the internet itself.
+
+---
+
+# Question: How is a company’s VPN-based WAN different from the internet?
+
+**Answer:**
+A company’s VPN WAN is private and dedicated to the company, whereas the internet is a public network owned and used by everyone worldwide.
+
+---
+
+# Question: If two company offices are 100 meters apart, can their switches be directly connected to create a LAN?
+
+**Answer:**
+Yes, if the distance is short like 100 meters, switches can be directly connected to create a LAN.
+
+---
+
+# Question: What is a campus area network (CAN)?
+
+**Answer:**
+A campus area network (CAN) is a network created by connecting switches over a relatively short distance, such as between buildings on a university campus.
+
+---
+
+# Question: When offices are farther apart and cannot connect switches directly, what network solution can be used?
+
+**Answer:**
+When the distance is too great to connect switches directly, the offices can be connected using a VPN to create a WAN.
+
+---
+
+# Question: Between a LAN created by directly connecting switches and a VPN-based WAN, which is more secure and why?
+
+**Answer:**
+A LAN is more secure because the data packets never leave the local physical cable network and do not traverse the public internet, reducing exposure to external threats. Even though VPN provides protection, the packets still travel over the public internet.
+
+---
+
+# Question: Why does a VPN WAN still pose some security concerns despite encryption and tunneling?
+
+**Answer:**
+Because packets in a VPN WAN still travel over the public internet, there is always a potential risk of interception or vulnerability, whereas in a LAN, data stays within a controlled physical network.
+
+---
