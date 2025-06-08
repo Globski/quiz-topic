@@ -763,4 +763,111 @@ Yes, keymap extensions can import settings and remap shortcuts from editors such
 
 ---
 
+# Question: What is a snippet in VS Code?
+
+**Answer:**
+A *snippet* in VS Code is a predefined block of code that can be inserted quickly into a file using a shortcode or *prefix*. Snippets can be built-in or user-defined, and help speed up repetitive coding tasks.
+
+---
+
+# Question: How do you trigger a built-in snippet in VS Code for logging to the console in JavaScript?
+
+**Answer:**
+You can type `clg` in a JavaScript file, and VS Code's IntelliSense will suggest a snippet that outputs `console.log()`.
+
+---
+
+# Question: Where are custom VS Code snippets stored?
+
+**Answer:**
+Custom snippets are stored in a JSON file accessible through *User Snippets*. You can open it by clicking the gear icon or using the Command Palette to search for "Configure User Snippets".
+
+---
+
+# Question: What are global snippets in VS Code?
+
+**Answer:**
+*Global snippets* apply to all languages and files, as opposed to language-specific snippets which apply only to particular file types like JavaScript, Python, etc.
+
+---
+
+# Question: What are the basic components of a custom snippet in VS Code?
+
+**Answer:**
+A custom snippet includes:
+
+* **Prefix**: The shortcode that triggers the snippet.
+* **Body**: The actual code to be inserted (can be a string or an array of strings for multiple lines).
+* **Description** (optional): A short explanation of what the snippet does.
+
+---
+
+# Question: How do tab stops work in VS Code snippets?
+
+**Answer:**
+*Tab stops* (`$1`, `$2`, ..., `$0`) determine the positions the cursor will jump to when you press the Tab key after inserting a snippet. `$1` is the first input area, and `$0` is the final cursor position.
+
+---
+
+# Question: What format should the body of a multiline snippet follow?
+
+**Answer:**
+For multiline snippets, the body should be an **array of strings**, where each string represents a line in the final inserted code.
+
+---
+
+# Question: What does `$0` represent in VS Code snippets?
+
+**Answer:**
+`$0` is the final tab stop — it defines the last place the cursor will be positioned after all other tab stops have been filled.
+
+---
+
+# Question: What is the benefit of naming tab stops in VS Code snippets?
+
+**Answer:**
+Named tab stops (e.g., `${index}`) allow you to repeat the same input in multiple places within a snippet. Editing one will automatically update all other instances.
+
+---
+
+# Question: Give an example of a snippet use case involving environment variables.
+
+**Answer:**
+A snippet with the prefix `nv` can be created to output `process.env.` automatically, letting the user quickly insert environment variable references in Node.js without typing the full expression.
+
+---
+
+# Question: What is the benefit of creating a custom snippet for `document.getElementById()`?
+
+**Answer:**
+This allows the developer to quickly generate repetitive code like:
+
+```js
+const myElement = document.getElementById("myElement");
+```
+
+by simply typing a snippet prefix, saving time and reducing typing errors.
+
+---
+
+# Question: What is a practical use case for named tab stops in a `for` loop snippet?
+
+**Answer:**
+By naming the index variable (e.g., `${index}`), it is used consistently in multiple places (loop declaration, condition, and increment), and changing one updates all, which is helpful in standard array loops.
+
+---
+
+# Question: How can snippets help with `fetch` requests in JavaScript?
+
+**Answer:**
+A custom snippet can be created to insert a `fetch` call wrapped in a `try...catch` block, allowing developers to handle errors and responses consistently without rewriting the boilerplate code each time.
+
+---
+
+# Question: What is the role of the Setting Sync feature in VS Code?
+
+**Answer:**
+*Setting Sync* was originally an extension that allows users to sync their settings, snippets, extensions, and customizations across devices using GitHub.
+
+---
 
