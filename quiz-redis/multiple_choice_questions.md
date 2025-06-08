@@ -81,3 +81,97 @@ Redis can also be installed by:
 * Using a *ZIP file* that can be unzipped to start the server.
 
 ---
+
+# Question: How can you start the Redis server in a background process?
+
+**Answer:**
+You can start the Redis server in a background process using the command:
+`redis-server &`
+This launches Redis so it continues running in the background.
+
+---
+
+# Question: What command is used to start the Redis CLI?
+
+**Answer:**
+The command to start the Redis CLI is:
+`redis-cli`
+Once entered, it connects to the Redis server and allows you to run Redis commands.
+
+---
+
+# Question: What is the default port number Redis CLI connects to?
+
+**Answer:**
+The default port number Redis CLI connects to is *6379*.
+
+---
+
+# Question: What is the basic format for storing a string in Redis?
+
+**Answer:**
+The basic format for storing a string in Redis is:
+`SET <key> <value>`
+For example: `SET name shabir`
+
+---
+
+# Question: How do you retrieve a value from Redis using its key?
+
+**Answer:**
+You can retrieve a value using the command:
+`GET <key>`
+Example: `GET name` would return the value associated with the key "name".
+
+---
+
+# Question: How can you retrieve a specific range of characters from a string value in Redis?
+
+**Answer:**
+Use the command:
+`GETRANGE <key> <start> <end>`
+Example: `GETRANGE email 0 4` returns the first five characters of the value stored at key "email".
+
+---
+
+# Question: How do you set multiple key-value pairs at once in Redis?
+
+**Answer:**
+You use the command:
+`MSET key1 value1 key2 value2 ...`
+Example: `MSET lang English technology Redis`
+
+---
+
+# Question: How do you retrieve multiple values for multiple keys in Redis?
+
+**Answer:**
+Use the command:
+`MGET key1 key2 ...`
+Example: `MGET lang technology` returns the values of both keys.
+
+---
+
+# Question: What command gives the length of the value stored at a key?
+
+**Answer:**
+The command to get the length of a string value is:
+`STRLEN <key>`
+Example: `STRLEN lang` would return the number of characters in the value stored at "lang".
+
+---
+
+# Question: What happens if you use `STRLEN` on a non-existing key?
+
+**Answer:**
+Using `STRLEN` on a key that does not exist returns *0*.
+
+---
+
+# Question: How can you change the value of an existing key?
+
+**Answer:**
+To change the value of an existing key, you simply use the `SET` command again:
+Example: `SET name "Daily Code Buffer"` overwrites the old value with the new one.
+
+---
