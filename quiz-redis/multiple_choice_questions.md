@@ -1130,3 +1130,87 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 **Answer:** All members whose scores fall within the specified range will be removed from the sorted set.
 
 ---
+
+# Question: How do you remove members from a sorted set based on their score range, for example scores between 5 and 6?
+
+**Answer:** Use the command `ZREMRANGEBYSCORE users 5 6` to remove members with scores from 5 to 6 inclusive.
+
+---
+
+# Question: After removing members with scores between 5 and 6, what will be the result of `ZRANGE users 0 -1`?
+
+**Answer:** The sorted set will no longer include members with scores 5 and 6; only remaining members with other scores will be listed.
+
+---
+
+# Question: How do you remove members from a sorted set based on rank range, for example ranks 0 through 2?
+
+**Answer:** Use `ZREMRANGEBYRANK users 0 2` to remove all members with ranks from 0 to 2 inclusive.
+
+---
+
+# Question: What is the effect of executing `ZREMRANGEBYRANK users 0 2` if there are 5 members?
+
+**Answer:** The first three members by rank (0, 1, 2) are removed, leaving the remaining members intact.
+
+---
+
+# Question: What is a HyperLogLog data structure in Redis?
+
+**Answer:** HyperLogLog is a probabilistic data structure used to count unique elements approximately, such as unique IP addresses, search terms, or email addresses.
+
+---
+
+# Question: Which Redis command is used to add elements to a HyperLogLog?
+
+**Answer:** The command `PFADD` followed by the key and one or more elements adds elements to the HyperLogLog.
+
+---
+
+# Question: How do you count the approximate number of unique elements stored in a HyperLogLog?
+
+**Answer:** Use `PFCOUNT` followed by the HyperLogLog key.
+
+---
+
+# Question: Can you add multiple elements at once to a HyperLogLog using `PFADD`?
+
+**Answer:** Yes, you can add multiple elements in one command, for example `PFADD hll a b c d e`.
+
+---
+
+# Question: How do you merge multiple HyperLogLogs into one in Redis?
+
+**Answer:** Use the command `PFMERGE destination source1 source2 ...` to merge multiple HyperLogLogs into a single HyperLogLog stored at `destination`.
+
+---
+
+# Question: After merging two HyperLogLogs named `hll` and `hll2` into `merged_hll`, how do you get the total approximate count of unique elements?
+
+**Answer:** Use `PFCOUNT merged_hll`.
+
+---
+
+# Question: What is a Redis hash?
+
+**Answer:** A hash in Redis is a map between string fields and string values, ideal for storing objects.
+
+---
+
+# Question: How do you add a field-value pair to a Redis hash?
+
+**Answer:** Use the command `HSET key field value`, e.g., `HSET myhash name sugar`.
+
+---
+
+# Question: What does the `HSET` command return upon successfully adding a new field-value pair?
+
+**Answer:** It returns `1` if a new field was created and value set, or `0` if the field already existed and the value was updated.
+
+---
+
+# Question: How do you retrieve all fields and their values from a Redis hash?
+
+**Answer:** Use the command `HGETALL key`.
+
+---
