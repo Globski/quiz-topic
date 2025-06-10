@@ -221,6 +221,125 @@
 
 ---
 
+# Question: What are the two primary elements found in the `nginx.conf` file?
+
+**Answer:** Directives (key-value pairs) and contexts (blocks enclosed in curly braces).
+
+---
+
+# Question: What is a directive in an `nginx.conf` file?
+
+**Answer:** A directive is a key-value pair that configures specific behaviors in Nginx, such as `worker_processes 1;`.
+
+---
+
+# Question: Provide an example of a directive found in the Nginx configuration file.
+
+**Answer:** `worker_processes 1;` is a directive where `worker_processes` is the key and `1` is the value.
+
+---
+
+# Question: What is the `include` directive used for in Nginx?
+
+**Answer:** It includes external configuration files, such as `mime.types`.
+
+---
+
+# Question: What is a context in the `nginx.conf` file?
+
+**Answer:** A context is a block enclosed in curly braces `{}` that groups related directives under a specific scope, like `events` or `http`.
+
+---
+
+# Question: Can directives be nested inside contexts in Nginx configuration?
+
+**Answer:** Yes, directives can be defined within contexts and are specific to that context.
+
+---
+
+# Question: What is the purpose of the `http` context in Nginx?
+
+**Answer:** It defines the HTTP server and contains directives relevant to serving HTTP content.
+
+---
+
+# Question: What are examples of contexts in a basic Nginx configuration file?
+
+**Answer:** `events` and `http`.
+
+---
+
+# Question: What must be defined even if unused to ensure proper Nginx configuration?
+
+**Answer:** The `events` context must be defined even if it is not used.
+
+---
+
+# Question: What kind of content is referred to as "static content" in the context of a web server?
+
+**Answer:** Files like HTML, CSS, and images that do not change dynamically.
+
+---
+
+# Question: What command was used to create a directory named `my_site` from the terminal?
+
+**Answer:** `mkdir my_site`.
+
+---
+
+# Question: What command was used to open the created folder in Visual Studio Code?
+
+**Answer:** `code .` (run from inside the `my_site` directory).
+
+---
+
+# Question: What was the purpose of creating the `index.html` file in the `my_site` directory?
+
+**Answer:** To serve it as static content through the Nginx server.
+
+---
+
+# Question: What content was added to the `index.html` file to display in the browser?
+
+**Answer:** An HTML structure with a `<body>` containing `<h1>Hello, my friends, I am served from nginx</h1>`.
+
+---
+
+# Question: Which port is configured for the Nginx server to listen?
+
+**Answer:** Port 8080.
+
+---
+
+# Question: Which directive is used to specify the port Nginx should listen on?
+
+**Answer:** `listen`.
+
+---
+
+# Question: Which directive specifies the root directory from which Nginx will serve files?
+
+**Answer:** `root`.
+
+---
+
+# Question: In the configuration, what directory path is assigned to the `root` directive?
+
+**Answer:** The full path to the `my_site` directory (copied from the file system).
+
+---
+
+# Question: Under which context is the `server` context defined?
+
+**Answer:** Inside the `http` context.
+
+---
+
+# Question: What is the purpose of the `server` context in Nginx configuration?
+
+**Answer:** It defines the configuration for a specific server, including directives like `listen` and `root`.
+
+---
 
 
 
