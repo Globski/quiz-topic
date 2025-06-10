@@ -419,10 +419,114 @@
 
 ---
 
+# Question: What file extension should a CSS file have?
+
+**Answer:** `.css`
+
+---
+
+# Question: What file extension should an HTML file have?
+
+**Answer:** `.html`
+
+---
+
+# Question: What might cause styles not to be applied even when linked correctly in HTML?
+
+**Answer:** The browser may cache the old content type, showing it as `text/plain` instead of `text/css`.
+
+---
+
+# Question: How can you force the browser to reload content and ignore cache?
+
+**Answer:** By doing a **hard reload**, typically using `Command + Shift + R`.
+
+---
+
+# Question: What is the correct content type for CSS files to ensure styles are applied?
+
+**Answer:** `text/css`
+
+---
+
+# Question: Why was a hard reload necessary to apply the correct CSS styles?
+
+**Answer:** Because the browser was using a cached version with the incorrect content type (`text/plain`), and a hard reload forced it to fetch the updated content with `text/css`.
+
+---
+
+# Question: What is the challenge with manually specifying content types in nginx?
+
+**Answer:** Manually catching and adding every possible file type in the configuration can be tedious and error-prone.
+
+---
+
+# Question: What feature does nginx offer to handle many file types automatically?
+
+**Answer:** nginx comes with **default mime types**.
+
+---
+
+# Question: How can you view default mime types in nginx?
+
+**Answer:** By opening the default `mime.types` file, which lists various supported file types like GIFs and JPEGs.
+
+---
+
+# Question: What is the preferred way to include default MIME types in nginx configuration?
+
+**Answer:** Use the `include` directive with the path to the `mime.types` file.
+
+---
+
+# Question: What must you remember to add at the end of a configuration line in nginx?
+
+**Answer:** A **semicolon (`;`)**
+
+---
+
+# Question: What should you do after changing nginx configuration files?
+
+**Answer:** Reload the nginx server configuration.
+
+---
+
+# Question: What is the purpose of the `location` block in nginx?
+
+**Answer:** To specify certain endpoints or URL paths and serve specific content for those paths.
+
+---
+
+# Question: Where does the `location` block live within the nginx configuration?
+
+**Answer:** Inside the `server` block.
+
+---
+
+# Question: How do you define a `location` block to serve content from `/fruits` path?
+
+**Answer:**
+
+```nginx
+location /fruits {
+    # directives to serve index.html from fruits directory
+}
+```
+
+---
+
+# Question: What kind of content might you want to serve using a `location` block?
+
+**Answer:** Specific HTML pages or elements, such as an `index.html` file from a custom directory.
+
+---
 
 
+# Question: What must you do in nginx to serve a specific HTML file when hitting a particular path?
 
+**Answer:** Configure a `location` block pointing to that path and specify the directory or file to serve.
 
+---
 
 # Question: What is the main purpose of encryption in modern technology?
 
