@@ -88,3 +88,105 @@
 
 ---
 
+# Question: What is the purpose of the `getAuth` function in Firebase?
+
+**Answer:** `getAuth` is used to create an authentication instance that can be used to manage user authentication.
+
+---
+
+# Question: What is the purpose of the `createUserWithEmailAndPassword` function?
+
+**Answer:** It is used to create a new user account using an email and password.
+
+---
+
+# Question: How is the `auth` instance created in the application?
+
+**Answer:** By assigning the result of `getAuth()` to a constant, e.g., `const auth = getAuth()`.
+
+---
+
+# Question: In which function is the user creation logic placed?
+
+**Answer:** Inside the `handleSubmit` function, which is triggered when the submit button is clicked.
+
+---
+
+# Question: What are the required parameters for `createUserWithEmailAndPassword`?
+
+**Answer:** The `auth` instance, the user’s email, and the user’s password.
+
+---
+
+# Question: How are email and password values retrieved?
+
+**Answer:** From the state object, using `data.email` and `data.password`.
+
+---
+
+# Question: How is the response from `createUserWithEmailAndPassword` handled?
+
+**Answer:** Using `.then()` to access the response and log `response.user` to the console.
+
+---
+
+# Question: How are errors handled when user creation fails?
+
+**Answer:** By using `.catch(error)` and displaying `error.message` in an alert.
+
+---
+
+# Question: What happens when trying to sign up with the same email twice?
+
+**Answer:** Firebase returns an error stating that the email is already in use.
+
+---
+
+# Question: What is the expected error message when a duplicate email is used during sign up?
+
+**Answer:** “auth/email-already-in-use”
+
+---
+
+# Question: After a successful sign-up, what user data is accessible in the response?
+
+**Answer:** Access token, display name, original email, email verification status, and phone number.
+
+---
+
+# Question: What function is used to authenticate an existing user in Firebase?
+
+**Answer:** `signInWithEmailAndPassword`
+
+---
+
+# Question: What should be changed to switch from sign-up to sign-in in the authentication logic?
+
+**Answer:** Replace `createUserWithEmailAndPassword` with `signInWithEmailAndPassword`, and keep the other code the same.
+
+---
+
+# Question: What error message appears if a non-existent email is used to sign in?
+
+**Answer:** “auth/user-not-found”
+
+---
+
+# Question: What error is shown if the correct email is used with the wrong password?
+
+**Answer:** “auth/wrong-password”
+
+---
+
+# Question: What Firebase method can be used for social logins like Google Sign-In?
+
+**Answer:** `GoogleAuthProvider`
+
+---
+
+# Question: What is the purpose of `GoogleAuthProvider` in Firebase Authentication?
+
+**Answer:** It is used to authenticate users using their Google accounts.
+
+
+---
