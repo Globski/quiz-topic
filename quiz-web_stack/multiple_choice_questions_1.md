@@ -600,10 +600,372 @@ location /fruits {
 
 ---
 
+# Question: What HTTP error code is returned when there is no `index.html` file in a directory served by nginx using the `root` directive?
 
+**Answer:** `403 Forbidden`
 
+---
 
+# Question: Why does nginx return a `403 Forbidden` error instead of a `404 Not Found` when the `index.html` is missing in a directory?
 
+**Answer:** Because nginx found the directory but couldn’t find an index file to serve by default, so access is denied.
+
+---
+
+# Question: What directive allows you to define a prioritized list of files nginx should attempt to serve?
+
+**Answer:** `try_files`
+
+---
+
+# Question: How does the `try_files` directive work in nginx?
+
+**Answer:** It checks for the existence of specified files in order, serving the first one found. If none exist, it can fall back to a default file or return a `404`.
+
+---
+
+# Question: What happens if neither `/vegetables/veggies.html` nor `/index.html` exists?
+
+**Answer:** nginx returns a `404 Not Found` error.
+
+---
+
+# Question: What does changing the filename from `veggies.html` to `veggiez.html` simulate?
+
+**Answer:** It simulates a missing file, forcing nginx to use the fallback `index.html`.
+
+---
+
+# Question: What happens after renaming both `veggies.html` and `index.html` to unavailable names?
+
+**Answer:** nginx returns a `404 Not Found`.
+
+---
+
+# Question: How do you revert back to the working configuration after renaming files?
+
+**Answer:** Rename the files back to their original names (`veggies.html` and/or `index.html`), and reload nginx.
+
+---
+
+# Question: What directive in nginx allows the use of regular expressions in `location` blocks?
+
+**Answer:** `location ~*`
+
+---
+
+# Question: What does the tilde-star (`~*`) symbol mean in an nginx `location` block?
+
+**Answer:** It defines a case-insensitive regular expression match.
+
+---
+
+# Question: What regular expression pattern was used to match a path like `/count/4`?
+
+**Answer:** `/count/[0-9]`
+
+---
+
+# Question: What is the intended behavior for matching `/count/4` using the regular expression location block?
+
+**Answer:** nginx should serve the `index.html` file using a `try_files` fallback if the match is successful.
+
+---
+
+# Question: What fallback is used inside the regular expression location block if the requested file doesn't exist?
+
+**Answer:** `404 Not Found`
+
+---
+
+# Question: What is the effect of the rewrite configuration when visiting `/number/3` in the browser?
+
+**Answer:** The URL remains `/number/3`, but the request is internally forwarded to serve the content from the `/count/3` location, typically rendering `index.html`.
+
+---
+
+# Question: Why is Nginx used as a load balancer?
+
+**Answer:** Nginx forwards incoming client requests to multiple backend servers, abstracting the routing logic and relieving the client from deciding which server to contact.
+
+---
+
+# Question: What problem does a load balancer solve in high-traffic applications?
+
+**Answer:** It distributes client requests across multiple servers to ensure scalability and reliability.
+
+---
+
+# Question: How does the round-robin algorithm used by Nginx work?
+
+**Answer:** It forwards requests to backend servers one after another in sequence, cycling through the list of servers repeatedly.
+
+---
+
+# Question: What is the role of Nginx in load balancing architecture?
+
+**Answer:** Nginx receives incoming requests from clients and forwards them to one of several backend servers based on a load-balancing algorithm like round-robin.
+
+---
+
+# Question: Why is Docker used in the context of building multiple servers for load balancing?
+
+**Answer:** Docker allows for quickly creating isolated server containers, making it easy to simulate and deploy multiple backend instances.
+
+---
+
+# Question: What command initializes a new Node.js project in the terminal?
+
+**Answer:** `npm init -y`
+
+---
+
+# Question: What package is installed to create the server functionality in Node.js project?
+
+**Answer:** The `express` package is installed using `npm install express`.
+
+---
+
+# Question: What does `const express = require('express')` do?
+
+**Answer:** It imports the Express library into the Node.js script to be used for creating a web server.
+
+---
+
+# Question: What does `const app = express()` initialize?
+
+**Answer:** It creates an instance of the Express application.
+
+---
+
+# Question: What is the typical structure of an Express GET route handler?
+
+**Answer:** `app.get('/', (req, res) => { res.send(...) });`
+
+---
+
+# Question: What does the `app.listen` method do in a Node.js Express application?
+
+**Answer:** It starts the Express server on a specified port and optionally executes a callback function once the server is running.
+
+---
+
+# Question: What message is logged to the console when the server starts successfully on port 7777?
+
+**Answer:** `listening on port 7777`
+
+---
+
+# Question: What mistake was made when trying to start the server using `npm run start`?
+
+**Answer:** The `start` script was not properly defined in the `package.json` file, so `npm run start` failed to launch the server.
+
+---
+
+# Question: What command correctly starts the Node.js server from the terminal?
+
+**Answer:** `node index.js`
+
+---
+
+# Question: What HTTP response is returned by the Express app when visiting the root URL?
+
+**Answer:** `"I am a endpoint"`
+
+---
+
+# Question: What is the purpose of writing a Dockerfile?
+
+**Answer:** To define how to build a Docker image for the Node.js Express server, which can then be used to spin up multiple container instances.
+
+---
+
+# Question: What is the first instruction in a typical Dockerfile for an Express app?
+
+**Answer:** `FROM node`, which specifies the base image with Node.js installed.
+
+---
+
+# Question: What does the Dockerfile's `WORKDIR` directive do?
+
+**Answer:** It sets the working directory inside the container where subsequent commands will be executed.
+
+---
+
+# Question: What is the purpose of `COPY package.json .` in the Dockerfile?
+
+**Answer:** It copies the `package.json` file into the working directory inside the Docker container.
+
+---
+
+# Question: Why is `RUN npm install` included in the Dockerfile?
+
+**Answer:** To install all dependencies listed in `package.json` before running the application.
+
+---
+
+# Question: What does `COPY . .` do in the Dockerfile?
+
+**Answer:** It copies all the files from the current host directory to the working directory inside the container.
+
+---
+
+# Question: What command is used in the Dockerfile to start the application?
+
+**Answer:** `CMD ["npm", "run", "start"]`
+
+---
+
+# Question: What Docker command is used to build the image for the Express app?
+
+**Answer:** `docker build -t my-server .`
+
+---
+
+# Question: Why might previously running Docker containers need to be removed before spinning up new ones?
+
+**Answer:** Because they may be occupying ports needed by the new containers, causing conflicts.
+
+---
+
+# Question: What tool is used to visually manage Docker containers and images?
+
+**Answer:** Docker Desktop
+
+---
+
+# Question: What is the command used to run a Docker container in detached mode while mapping ports?
+
+**Answer:** `docker run -d -p [host_port]:[container_port] [image_name]`
+
+---
+
+# Question: What port is the Express app running inside the Docker container?
+
+**Answer:** Port 7777
+
+---
+
+# Question: What is port mapping used for when running Docker containers?
+
+**Answer:** It maps a port on the host machine to a port inside the Docker container to access services.
+
+---
+
+# Question: Which host ports were used to run multiple instances of the server?
+
+**Answer:** 1111, 2222, 3333, 4444
+
+---
+
+# Question: What happens when you visit `localhost:1111` in the browser after starting the first container?
+
+**Answer:** The browser displays the message `"I am an endpoint"`
+
+---
+
+# Question: What is the purpose of creating multiple containers of the same image?
+
+**Answer:** To simulate multiple servers for load balancing with NGINX.
+
+---
+
+# Question: Which NGINX directive is used to define a group of backend servers for load balancing?
+
+**Answer:** `upstream`
+
+---
+
+# Question: What is the syntax to define an upstream block in NGINX for load balancing?
+
+**Answer:**
+
+```nginx
+upstream backend_name {
+    server 127.0.0.1:1111;
+    server 127.0.0.1:2222;
+    server 127.0.0.1:3333;
+    server 127.0.0.1:4444;
+}
+```
+
+---
+
+# Question: What load balancing method does NGINX use by default?
+
+**Answer:** Round robin
+
+---
+
+# Question: What NGINX directive is used to route traffic to the upstream group?
+
+**Answer:** `proxy_pass http://[upstream_name];` inside a `location` block
+
+---
+
+# Question: What does the user plan to happen when a request hits `localhost:8080`?
+
+**Answer:** The request should be forwarded to one of the backend servers in a round-robin fashion.
+
+---
+
+Here are the quiz questions generated from the material you provided. All details and nuances mentioned were turned into questions, formatted as requested:
+
+---
+
+# Question: What directive is used in Nginx to forward requests to a backend server?
+
+**Answer:** `proxy_pass`
+
+---
+
+# Question: How should the URL be formatted when using the `proxy_pass` directive in Nginx?
+
+**Answer:** It should be formatted as `http://backend-server-name;`
+
+---
+
+# Question: Why is the backend server name specified in the `proxy_pass` directive important?
+
+**Answer:** Because Nginx uses that name to determine where to forward the request.
+
+---
+
+# Question: What default load-balancing behavior does Nginx apply when multiple backend servers are specified?
+
+**Answer:** Nginx performs round-robin load balancing by default, sending requests sequentially to each backend server in order.
+
+---
+
+# Question: What does round-robin behavior imply in the context of Nginx load balancing?
+
+**Answer:** Each new request is sent to the next backend server in the list, cycling through all servers repeatedly.
+
+---
+
+# Question: What is the effect of reloading the Nginx configuration after modifying it?
+
+**Answer:** It applies the updated configuration so that Nginx uses the new settings without restarting the service.
+
+---
+
+# Question: What was observed in the browser after hitting `localhost:8080` following the Nginx configuration change?
+
+**Answer:** The message "I am an endpoint" appeared, indicating that a backend server responded.
+
+---
+
+# Question: Why was it difficult to visually confirm that round-robin load balancing was occurring?
+
+**Answer:** Because there was no logging or visible change between requests, making the rotation across servers not easily observable.
+
+---
+
+# Question: What was suggested to make the round-robin effect more visible during testing?
+
+**Answer:** Adding a log would have made it clearer which server was handling each request.
+
+---
 
 # Question: What is the main purpose of encryption in modern technology?
 
