@@ -341,6 +341,86 @@
 
 ---
 
+# Question: What does Nginx do by default when accessing a route with a configured `root` directive?
+
+**Answer:** It looks for an `index.html` file in the specified root directory and serves it.
+
+---
+
+# Question: What should you do after modifying the Nginx configuration to apply changes?
+
+**Answer:** Run the command `nginx -s reload` in the terminal.
+
+---
+
+# Question: Why might you still see the default Nginx page after configuring the `root` and `listen` directives?
+
+**Answer:** Because the Nginx server needs to be reloaded with the new configuration using `nginx -s reload`.
+
+---
+
+# Question: What command is used to reload the Nginx configuration?
+
+**Answer:** `nginx -s reload`
+
+---
+
+# Question: What is the purpose of creating a `styles.css` file in this example?
+
+**Answer:** To apply custom styles to the `h1` element of the `index.html` using CSS.
+
+---
+
+# Question: What styles were applied to the `h1` element in the `styles.css` file?
+
+**Answer:** `background-color: pink;` and `color: aqua;`.
+
+---
+
+# Question: What HTML tags were added to properly structure the document for styling?
+
+**Answer:** `<!DOCTYPE html>`, `<head>`, `<meta charset="UTF-8">`, `<title>`, and `<link>` to the CSS file.
+
+---
+
+# Question: What was the issue when the CSS file was served but the styles were not applied?
+
+**Answer:** The `Content-Type` of the CSS file was incorrectly set to `text/plain` instead of `text/css`.
+
+---
+
+# Question: How was it determined that the CSS file was being served but not interpreted properly?
+
+**Answer:** By inspecting the browser’s network tab and checking the MIME type (`Content-Type`) of the file.
+
+---
+
+# Question: What MIME type did the CSS file incorrectly have when first served by Nginx?
+
+**Answer:** `text/plain`
+
+---
+
+# Question: What should the correct MIME type be for a CSS file?
+
+**Answer:** `text/css`
+
+---
+
+# Question: Where in the Nginx configuration can you define MIME types?
+
+**Answer:** Inside the `http` context.
+
+---
+
+# Question: Why is it important to configure the correct MIME type for static files in Nginx?
+
+**Answer:** Because browsers use the MIME type to determine how to process the file; incorrect types may prevent proper rendering or styling.
+
+---
+
+
+
 
 
 
