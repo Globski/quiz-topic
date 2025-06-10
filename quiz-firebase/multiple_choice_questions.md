@@ -190,3 +190,100 @@
 
 
 ---
+
+# Question: What is the purpose of `GoogleAuthProvider` in Firebase?
+
+**Answer:** It is used to enable Google sign-in by initializing a Google authentication provider.
+
+---
+
+# Question: What function is used to initiate Google authentication via a popup window?
+
+**Answer:** `signInWithPopup`
+
+---
+
+# Question: How is the Google authentication provider initialized?
+
+**Answer:** `const googleProvider = new GoogleAuthProvider();`
+
+---
+
+# Question: What are the three key Firebase imports required for Google authentication?
+
+**Answer:** `getAuth`, `GoogleAuthProvider`, and `signInWithPopup`
+
+---
+
+# Question: What arguments are passed to `signInWithPopup`?
+
+**Answer:** The `auth` instance and the provider instance (e.g., `googleProvider`).
+
+---
+
+# Question: What must be done in Firebase console before Google Auth will work?
+
+**Answer:** Enable Google Sign-In in the **Authentication > Sign-in Method** section and add the correct **authorized domains**.
+
+---
+
+# Question: What happens if the domain is not authorized in Firebase console?
+
+**Answer:** An "unauthorized domain" error will be shown and Google Sign-In will not work.
+
+---
+
+# Question: What type of data is returned after successful Google sign-in?
+
+**Answer:** User information including verified email, display name, and provider ID set to `"google.com"`.
+
+---
+
+# Question: Why is the email marked as verified when using Google Sign-In?
+
+**Answer:** Because Google ensures the user’s email is verified before allowing authentication.
+
+---
+
+# Question: What provider must be imported to support GitHub login in Firebase?
+
+**Answer:** `GithubAuthProvider`
+
+---
+
+# Question: What additional credentials must be configured for GitHub authentication?
+
+**Answer:** A **client ID** and a **client secret** from GitHub OAuth settings.
+
+---
+
+# Question: Where can you set up the GitHub application needed for Firebase authentication?
+
+**Answer:** In **GitHub > Settings > Developer Settings > OAuth Apps**.
+
+---
+
+# Question: What URL must be added to GitHub's OAuth app during setup?
+
+**Answer:** The **Authorization Callback URL** provided by Firebase (usually found in the Firebase Authentication method settings for GitHub).
+
+---
+
+# Question: What Firebase console setting allows you to enable GitHub login?
+
+**Answer:** Under **Authentication > Sign-in Method**, enable **GitHub** and provide the **client ID and secret**.
+
+---
+
+# Question: What happens if the GitHub client secret or callback URL is incorrect?
+
+**Answer:** Authentication will fail, typically with an "unauthorized" or "invalid client" error.
+
+---
+
+# Question: After a successful GitHub sign-in, what is returned?
+
+**Answer:** The same user object structure with email, provider data (`providerId: "github.com"`), and possibly the username from GitHub.
+
+---
+
