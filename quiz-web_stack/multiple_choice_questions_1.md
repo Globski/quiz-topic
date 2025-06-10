@@ -1,3 +1,63 @@
+# Question: What is NGINX?
+
+**Answer:** NGINX is an open-source web server software used for **reverse proxy**, **load balancing**, and **caching**.
+
+---
+
+# Question: Why is NGINX important for backend developers?
+
+**Answer:** Because it plays a critical role in **serving web content**, **routing traffic**, and **optimizing performance** in web applications.
+
+---
+
+# Question: What browser tool use to inspect how content is served from Airbnb.com?
+
+**Answer:** The **Developer Tools** (by right-clicking → Inspect), specifically the **Network tab**.
+
+---
+
+# Question: What is observed in the network tab when refreshing a page like Airbnb.com?
+
+**Answer:** A large number of **network requests** are made from the browser to servers to **fetch various types of content** (HTML, images, etc.).
+
+---
+
+# Question: In the Airbnb.com, what web server was found to be serving the content?
+
+**Answer:** **NGINX**
+
+---
+
+# Question: How can you identify the web server type used in a network request?
+
+**Answer:** By inspecting the **headers** in the **Network tab** of browser developer tools, under the **server** section.
+
+---
+
+# Question: What is NGINX typically known as?
+
+**Answer:** A **web server** that **serves web content** to browsers.
+
+---
+
+# Question: Why is calling NGINX simply a web server “not particularly accurate”?
+
+**Answer:** Because NGINX also functions in other roles such as **reverse proxy**, **load balancer**, and **cache**, not just a basic web server.
+
+---
+
+# Question: What cloud provider does Airbnb likely use to host its servers?
+
+**Answer:** **AWS (Amazon Web Services)**
+
+---
+
+# Question: What happens when a user goes to Airbnb.com?
+
+**Answer:** The user’s computer sends a **request over the internet** to a server hosted by Airbnb (likely on AWS), which processes the request and returns a **response with web content**.
+
+---
+
 # Question: What is the main purpose of encryption in modern technology?
 
 **Answer:**
