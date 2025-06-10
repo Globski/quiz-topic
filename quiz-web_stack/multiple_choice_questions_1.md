@@ -58,6 +58,83 @@
 
 ---
 
+# Question: In the typical web content delivery setup, what is the first server a browser contacts?
+
+**Answer:** The browser first contacts the Nginx server.
+
+---
+
+# Question: What role does the Nginx server play in the web request flow?
+
+**Answer:** Nginx acts as an intermediary that receives the browser’s request, forwards it to the application server (e.g., Airbnb server), and then sends the server’s response back to the browser.
+
+---
+
+# Question: What is the technical term for a server that receives client requests and forwards them to other servers, then returns the response to the client?
+
+**Answer:** Reverse proxy.
+
+---
+
+# Question: Why might it not be efficient to send requests directly to the main application server in high-traffic scenarios?
+
+**Answer:** Because a single application server can become a bottleneck under high traffic, resulting in increased latency.
+
+---
+
+# Question: How can scalability be achieved for a high-traffic application like Airbnb?
+
+**Answer:** By increasing the number of application servers behind a load balancer.
+
+---
+
+# Question: What is the problem introduced when multiple servers are used to handle incoming traffic?
+
+**Answer:** There needs to be a way to distribute incoming requests evenly across multiple servers.
+
+---
+
+# Question: How does Nginx help distribute traffic across multiple application servers?
+
+**Answer:** Nginx acts as a load balancer, forwarding each incoming request to an available server.
+
+---
+
+# Question: How does the client experience the request process when Nginx is used as a load balancer?
+
+**Answer:** The client always sends the request to Nginx and receives a response from it, without knowing which application server handled the request.
+
+---
+
+# Question: What is the benefit of using Nginx as a load balancer for application scalability?
+
+**Answer:** It enables automatic distribution of requests to multiple servers, reducing load on any single server and improving performance.
+
+---
+
+# Question: What is one additional important use case of Nginx besides load balancing?
+
+**Answer:** Handling encryption for secure HTTPS communication.
+
+---
+
+# Question: What does HTTPS indicate about the server's communication?
+
+**Answer:** That the server is encrypting and decrypting data to ensure secure communication.
+
+---
+
+# Question: What complexity arises when using HTTPS in a multi-server setup?
+
+**Answer:** Each server must handle its own encryption and decryption, which can add overhead and complexity.
+
+---
+
+
+
+
+
+
 # Question: What is the main purpose of encryption in modern technology?
 
 **Answer:**
