@@ -131,6 +131,96 @@
 ---
 
 
+# Question: What is one way to simplify the process of setting up HTTPS when using multiple servers?
+
+**Answer:** Use Nginx to handle all encryption and decryption, rather than configuring HTTPS individually on every server.
+
+---
+
+# Question: Why is centralizing HTTPS handling with Nginx beneficial in multi-server environments?
+
+**Answer:** It reduces configuration complexity by allowing encryption and decryption to occur only at the Nginx level.
+
+---
+
+# Question: What are the two most important use cases of Nginx?
+
+**Answer:** Acting as a load balancer and handling HTTPS encryption/decryption.
+
+---
+
+# Question: What command is used to install Nginx on a Mac using Homebrew?
+
+**Answer:** `brew install nginx`
+
+---
+
+# Question: What prerequisite must be installed before using the `brew install nginx` command?
+
+**Answer:** Homebrew, the package manager for macOS.
+
+---
+
+# Question: Where does the Nginx installation create a configuration directory on macOS?
+
+**Answer:** `/usr/local/etc/nginx`
+
+---
+
+# Question: After installing Nginx, what command can be used to list the contents of the Nginx directory?
+
+**Answer:** `ls /usr/local/etc/nginx`
+
+---
+
+# Question: What command is used to open the Nginx directory in Visual Studio Code?
+
+**Answer:** `code .`
+
+---
+
+# Question: What is the primary file used for configuring Nginx as a reverse proxy?
+
+**Answer:** `nginx.conf`
+
+---
+
+# Question: What does the `nginx.conf` file control?
+
+**Answer:** It configures how Nginx functions as a reverse proxy and defines how it serves web content.
+
+---
+
+# Question: What command is used to start the Nginx server after installation?
+
+**Answer:** `nginx`
+
+---
+
+# Question: After starting Nginx, what URL should be visited to verify it's working locally?
+
+**Answer:** `http://localhost:880`
+
+---
+
+# Question: What happens when visiting `http://localhost:880` after starting Nginx?
+
+**Answer:** The browser sends a request to the Nginx server, which then serves static content back to the browser.
+
+---
+
+# Question: How can you confirm that Nginx is serving content by inspecting your browser?
+
+**Answer:** Use the Network tab in developer tools to see the request and verify that the server is listed as Nginx.
+
+---
+
+# Question: What is the next step after confirming Nginx is serving content successfully?
+
+**Answer:** Begin returning other files, folders, and images needed for the application.
+
+---
+
 
 
 
