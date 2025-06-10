@@ -528,6 +528,83 @@ location /fruits {
 
 ---
 
+# Question: What does the `root` directive do in an nginx `location` block?
+
+**Answer:** It sets the file system path from which to serve files, and nginx appends the request URI to this root path.
+
+---
+
+# Question: What happens if you use `root` and the location path matches a subdirectory like `/fruits`?
+
+**Answer:** nginx appends `/fruits` to the root path, which can result in duplicated paths if the directory name is also included in the root directive.
+
+---
+
+# Question: Why should you avoid ending the `root` path with a duplicate of the location path?
+
+**Answer:** Because nginx automatically appends the URI, so including it again manually causes a duplicated path like `/fruits/fruits`.
+
+---
+
+# Question: What must you do after modifying the nginx configuration to apply changes?
+
+**Answer:** Run the command to reload nginx: `nginx -s reload`.
+
+---
+
+# Question: What content is served when navigating to `/fruits` after the correct root path is configured?
+
+**Answer:** The `index.html` file located in the `/fruits` directory is served.
+
+---
+
+# Question: What HTTP error code appears when navigating to an undefined path like `/carbs`?
+
+**Answer:** `404 Not Found`
+
+---
+
+# Question: What is the problem with reusing the same `root` directive to serve `/carbs` content from the `/fruits` directory?
+
+**Answer:** nginx would append `/carbs` to the root path, which results in an invalid path because no `/carbs` directory exists.
+
+---
+
+# Question: What nginx directive allows you to map a URI like `/carbs` to an unrelated directory like `/fruits` without appending the URI?
+
+**Answer:** `alias`
+
+---
+
+# Question: What is the key difference between `root` and `alias` in nginx?
+
+**Answer:** `root` appends the request URI to the root path, while `alias` replaces the request URI with the specified directory path.
+
+---
+
+# Question: When should you use `alias` instead of `root` in an nginx `location` block?
+
+**Answer:** When you want to serve content from a different directory than the URI path without appending the URI path to the file system path.
+
+---
+
+# Question: What do you not need when using `alias` to serve `/carbs` content from `/fruits`?
+
+**Answer:** You do not need a physical `/carbs` directory in your application.
+
+---
+
+# Question: What command do you run after setting up an alias in nginx to make it effective?
+
+**Answer:** `nginx -s reload`
+
+---
+
+
+
+
+
+
 # Question: What is the main purpose of encryption in modern technology?
 
 **Answer:**
