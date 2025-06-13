@@ -109,7 +109,7 @@
 # Question: What is the purpose of using a vulnerable binary to demonstrate?
 
 **Answer:** To provide a controlled environment for demonstrating how buffer overflow attacks work in practice.
-
+>
 ---
 
 # Question: What two machines are needed for the buffer overflow demonstration?
@@ -273,6 +273,75 @@
 **Answer:** Launch Immunity Debugger and use File > Open to load the vulnerable server executable.
 
 ---
+
+# Question: Why is the register pane important during this buffer overflow?
+
+**Answer:** The register pane shows key registers like EIP, which is crucial for observing how the buffer overflow manipulates program execution.
+
+---
+
+# Question: What are the primary components of the fuzzer?
+
+**Answer:** Declaring the target IP and port, setting an initial byte count, starting a connection, and incrementally sending payloads in a loop.
+
+---
+
+
+# Question: What is the purpose of increasing payload size over time in the fuzzer?
+
+**Answer:** To cause a buffer overflow by eventually sending a payload large enough to crash the program.
+
+---
+
+# Question: What command is used to run the fuzzer from the terminal?
+
+**Answer:** `python3 fazer.py`
+
+---
+
+# Question: Why is controlling the EIP register significant in a buffer overflow?
+
+**Answer:** It allows the attacker to redirect the program's execution to their malicious code, effectively hijacking the flow.
+
+---
+
+# Question: What does EIP stand for, and what is its function?
+
+**Answer:** EIP stands for Extended Instruction Pointer, and it points to the next instruction the CPU will execute.
+
+---
+
+# Question: What is the ultimate goal of exploiting a buffer overflow?
+
+**Answer:** To gain control of the EIP register and redirect execution to malicious payloads, turning the bug into a security exploit.
+
+---
+
+# Question: Why is it important to know where the overflow begins in the input?
+
+**Answer:** To precisely place malicious input that overwrites the EIP register and gains control of execution.
+
+---
+
+# Question: What tool is used to determine the exact offset where EIP is overwritten?
+
+**Answer:** `msf-pattern_create`, which generates a unique string of characters for overflow analysis.
+
+---
+
+# Question: What is the purpose of using `msf-pattern_create`?
+
+**Answer:** To create a non-repeating string to identify the exact byte offset that overwrites EIP.
+
+---
+
+# Question: What CLI command structure is used to generate a pattern of a specific length?
+
+**Answer:** `msf-pattern_create -l <length>`
+
+---
+
+
 
 
 
