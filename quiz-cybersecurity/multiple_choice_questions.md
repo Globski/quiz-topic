@@ -1,3 +1,81 @@
+# Question: What is a buffer in computer memory?
+
+**Answer:** A buffer is a chunk of memory set aside to temporarily store data.
+
+---
+
+# Question: What causes a buffer overflow?
+
+**Answer:** A buffer overflow occurs when a program writes more data into a buffer than it can actually hold.
+
+---
+
+# Question: What happens when data exceeds a buffer’s size limit?
+
+**Answer:** The extra data spills over into adjacent memory locations that were not meant to store it, potentially overwriting critical information.
+
+---
+
+# Question: Why is a buffer overflow dangerous?
+
+**Answer:** It can overwrite memory locations containing return addresses, variables, or other critical program data, which can cause erratic behavior or allow malicious exploitation.
+
+---
+
+# Question: What happens when a 3-item buffer is given 7 items?
+
+**Answer:** The extra items overflow and spill into memory locations not intended for them.
+
+---
+
+# Question: How many bytes can a buffer of length 8 hold?
+
+**Answer:** It can hold up to 8 bytes of data.
+
+---
+
+# Question: What string example correctly fit in an 8-byte buffer?
+
+**Answer:** The string "test123" (or similar short string that fits within 8 bytes) to show a proper fit.
+
+---
+
+# Question: What string caused a buffer overflow?
+
+**Answer:** The string "password123" caused a buffer overflow because it exceeded 8 bytes.
+
+---
+
+# Question: What happens to the "123" in "password123" when written into an 8-byte buffer?
+
+**Answer:** The "123" part overflows into the adjacent memory location next to the buffer.
+
+---
+
+# Question: What kind of data can be affected when buffer overflows occur?
+
+**Answer:** Critical program-related data such as return addresses and other important variables.
+
+---
+
+# Question: How does tightly packed memory contribute to buffer overflow risk?
+
+**Answer:** In tightly packed memory, overflowing a buffer is more likely to immediately overwrite adjacent data since there’s little or no empty space in between.
+
+---
+
+# Question: What real-world analogy is used to describe the behavior of a buffer overflow?
+
+**Answer:** A box meant to hold 3 items being crammed with 7, causing the extra to spill over.
+
+---
+
+# Question: Why is “password123” problematic for an 8-byte buffer?
+
+**Answer:** Because it contains more than 8 bytes and overflows into adjacent memory.
+
+---
+
 # Question: What are XSS and HTML Injection vulnerabilities?
 
 **Answer:**
