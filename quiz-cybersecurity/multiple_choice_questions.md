@@ -76,6 +76,114 @@
 
 ---
 
+# Question: What happens when overflow data overwrites existing memory?
+
+**Answer:** The original data in that memory location is replaced by the overflow data, leading to potential manipulation of program behavior.
+
+---
+
+# Question: Why is attacker-controlled overflow data dangerous?
+
+**Answer:** It allows the attacker to write specific values into memory, potentially modifying execution flow, crashing the program, or executing arbitrary code.
+
+---
+
+# Question: What does it mean to hijack a program’s execution flow?
+
+**Answer:** It means redirecting the program to run attacker-supplied code instead of its intended instructions.
+
+---
+
+# Question: What kind of malicious outcomes can buffer overflows lead to?
+
+**Answer:** Crashing the program, executing arbitrary code, and full system compromise.
+
+---
+
+# Question: How can an attacker redirect execution flow using a buffer overflow?
+
+**Answer:** By controlling the overflow data to overwrite the return address, redirecting it to malicious code.
+
+---
+
+# Question: What is the purpose of using a vulnerable binary to demonstrate?
+
+**Answer:** To provide a controlled environment for demonstrating how buffer overflow attacks work in practice.
+
+---
+
+# Question: What two machines are needed for the buffer overflow demonstration?
+
+**Answer:** A Windows target machine and a Kali Linux attacker machine.
+
+---
+
+# Question: What tool is used to monitor the vulnerable binary's execution?
+
+**Answer:** Immunity Debugger.
+
+---
+
+# Question: What operating system does Immunity Debugger run on?
+
+**Answer:** Windows.
+
+---
+
+# Question: Why are debuggers useful in buffer overflow analysis?
+
+**Answer:** They allow step-by-step monitoring of how data is processed, including input validation and buffer usage, which helps identify vulnerabilities.
+
+---
+
+# Question: What plugin is added to Immunity Debugger for exploitation analysis?
+
+**Answer:** Mona.
+
+---
+
+# Question: Where should the Mona plugin be placed in the Immunity Debugger installation?
+
+**Answer:** In the `PyCommands` folder inside the Immunity Debugger directory (typically `C:\Program Files (x86)\Immunity Inc\Immunity Debugger\PyCommands`).
+
+---
+
+# Question: What is the purpose of the Mona plugin?
+
+**Answer:** It assists in the exploitation phase of buffer overflow testing by automating common tasks and analysis.
+
+---
+
+# Question: What tool is used from Kali Linux to connect to the vulnerable server?
+
+**Answer:** `netcat`.
+
+---
+
+# Question: What is the command to check the IP address of the Windows target machine?
+
+**Answer:** `ipconfig`.
+
+---
+
+# Question: Why would you use the `ipconfig` command in this context?
+
+**Answer:** To determine the IP address of the Windows target machine so the Kali machine can connect to it.
+
+---
+
+# Question: What does netcat allow an attacker to do in this scenario?
+
+**Answer:** Connect to the running vulnerable server on port e.g 9999 for testing the buffer overflow vulnerability.
+
+---
+
+
+
+
+
+
+
 # Question: What are XSS and HTML Injection vulnerabilities?
 
 **Answer:**
