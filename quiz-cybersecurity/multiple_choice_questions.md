@@ -178,6 +178,104 @@
 
 ---
 
+# Question: Which command in the vulnerable server is known to be vulnerable to a buffer overflow?
+
+**Answer:** The `TRUN` command.
+
+---
+
+# Question: What happens when the `TRUN` command is executed with input?
+
+**Answer:** It returns the message "TRUN complete" indicating the operation has finished.
+
+---
+
+# Question: What is the issue with the `TRUN` command in the vulnerable server?
+
+**Answer:** It improperly handles user input by copying it without validating its size, leading to a buffer overflow vulnerability.
+
+---
+
+# Question: How many characters can the `TRUN` handler initially attempt to process?
+
+**Answer:** Up to 3,000 characters.
+
+---
+
+# Question: What is the problem with how the input is handled in the function?
+
+**Answer:** The input is copied into a smaller 2,000-character buffer using a risky `strcpy` (string copy) call without checking the length, leading to overflow.
+
+---
+
+# Question: What standard C function is used that introduces risk in the vulnerable code?
+
+**Answer:** `strcpy` (string copy).
+
+---
+
+# Question: Why is `strcpy` considered dangerous in the context of the `TRUN` vulnerability?
+
+**Answer:** Because it does not perform bounds checking and can copy more data than the destination buffer can hold, resulting in overflow.
+
+---
+
+# Question: What would be a safe practice to prevent the overflow in this case?
+
+**Answer:** Implementing a size check before calling `strcpy` to ensure the input does not exceed 2,000 characters.
+
+---
+
+# Question: What kind of issue arises if the input exceeds 2,000 bytes in the `TRUN` command?
+
+**Answer:** A buffer overflow, which may crash the program or allow execution of arbitrary attacker-supplied code.
+
+---
+
+# Question: In a real-life scenario, why is it difficult to detect such vulnerabilities directly?
+
+**Answer:** Because attackers often do not have access to the source code and must infer vulnerabilities through behavior and testing.
+
+---
+
+# Question: What tool can help discover how many bytes are needed to cause a buffer overflow?
+
+**Answer:** A fuzzer.
+
+---
+
+# Question: What is a fuzzer?
+
+**Answer:** A tool that sends increasing amounts of data to a server at intervals to determine the amount that causes a crash or overflow.
+
+---
+
+# Question: How does a fuzzer help in finding the overflow threshold?
+
+**Answer:** It automates the process of sending increasing input sizes, simulating manual testing to trigger a crash.
+
+---
+
+# Question: After using Netcat to connect to the vulnerable server, what should be done before using Immunity Debugger?
+
+**Answer:** Exit the Netcat connection and terminate the running instance of the vulnserver.
+
+---
+
+# Question: Why should vulnerable server be restarted inside Immunity Debugger?
+
+**Answer:** To monitor and analyze its behavior during exploitation attempts.
+
+---
+
+# Question: What is the first step in using Immunity Debugger with vulnerable server?
+
+**Answer:** Launch Immunity Debugger and use File > Open to load the vulnerable server executable.
+
+---
+
+
+
 
 
 
