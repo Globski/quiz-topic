@@ -341,6 +341,25 @@
 
 ---
 
+# Question: What is the purpose of placing a jump instruction in the overwritten EIP register?
+
+**Answer:** To redirect the program’s execution to the attacker's malicious shellcode.
+
+---
+
+# Question: What is a NOP sled, and what is its function in the exploit?
+
+**Answer:** A NOP sled is a series of "no operation" instructions (`\x90`) that act as a buffer zone to ensure reliable redirection of execution into the malicious code.
+
+---
+
+# Question: What two values must be correctly set at the beginning of the exploit script?
+
+**Answer:** The **IP address** and the **port number** of the target machine.
+
+---
+
+
 
 
 
