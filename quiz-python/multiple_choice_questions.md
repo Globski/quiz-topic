@@ -885,3 +885,86 @@ It specifies what to print after the output; for example, `end=','` prevents a n
 
 ---
 
+# Question: What is Selenium used for in Python?
+
+**Answer:** Selenium is used for interacting with websites, especially dynamic websites.
+
+---
+
+# Question: What is BeautifulSoup typically used for?
+
+**Answer:** BeautifulSoup is used for interacting with normal or static websites like blogs.
+
+---
+
+# Question: Which Python command is used to install Selenium?
+
+**Answer:** `pip install selenium`
+
+---
+
+# Question: What is the purpose of the command `from selenium import webdriver`?
+
+**Answer:** It imports the `webdriver` module from Selenium, which is used to control web browsers.
+
+---
+
+# Question: What is the purpose of `from selenium.webdriver.common.by import By`?
+
+**Answer:** It imports the `By` class, which is used to specify how elements should be located in the web page (e.g., by tag name, ID, etc.).
+
+---
+
+# Question: How do you initialize a Chrome WebDriver instance in Selenium?
+
+**Answer:** `driver = webdriver.Chrome()`
+
+---
+
+# Question: What does the `driver.get()` method do?
+
+**Answer:** It loads the specified website URL in the browser controlled by Selenium.
+
+---
+
+# Question: What URL is used as the example in the tutorial?
+
+**Answer:** `https://example.com`
+
+---
+
+# Question: How do you find an element on a webpage using a tag name in Selenium?
+
+**Answer:** `driver.find_element(By.TAG_NAME, "tag_name")`
+
+---
+
+# Question: How is the text content of a web element accessed?
+
+**Answer:** By using the `.text` property on the element object.
+
+---
+
+# Question: What is the purpose of `driver.quit()`?
+
+**Answer:** It closes the browser window and ends the WebDriver session.
+
+---
+
+# Question: How do you inspect an element to verify its tag in a browser?
+
+**Answer:** Use the browser's developer tools (right-click > Inspect Element).
+
+---
+
+# Question: What message is shown by the browser console when running Selenium?
+
+**Answer:** "DevTools listening on this particular port"
+
+---
+
+# Question: What does the printed text indicate when `pip install selenium` is run and Selenium is already installed?
+
+**Answer:** "Requirement already satisfied"
+
+---
