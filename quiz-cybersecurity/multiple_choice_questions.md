@@ -359,6 +359,83 @@
 
 ---
 
+# Question: Why do we replace the address in the EIP variable with the one from the jump instruction?
+
+**Answer:** To redirect execution to the location where our shellcode is stored, effectively taking control of the program’s flow.
+
+---
+
+# Question: What is shellcode in the context of exploitation?
+
+**Answer:** Shellcode is small, specialized machine-level code injected into memory during an exploit to execute harmful actions, such as opening a reverse shell or gaining unauthorized access.
+
+---
+
+# Question: What tool is used to generate the shellcode for the reverse shell?
+
+**Answer:** `msfvenom`
+
+---
+
+# Question: What is the purpose of setting `LHOST` and `LPORT` in `msfvenom`?
+
+**Answer:** `LHOST` sets the attacker's IP address and `LPORT` sets the port the target machine will connect back to in a reverse shell scenario.
+
+---
+
+# Question: What is the significance of using `EXITFUNC=thread` in the payload generation?
+
+**Answer:** It ensures the payload exits cleanly after execution, which is important to avoid crashing the exploited application.
+
+---
+
+# Question: Why is the null byte (`\x00`) excluded from the payload?
+
+**Answer:** To prevent premature termination of the string during the exploit, which could disrupt the shellcode execution.
+
+---
+
+# Question: What command is used to find the attacker's IP address on Kali Linux?
+
+**Answer:** `ifconfig`
+
+---
+
+# Question: Why is the shellcode output format set to Python in `msfvenom`?
+
+**Answer:** So the generated shellcode can be directly copied and pasted into a Python exploit script.
+
+---
+
+# Question: What does the generated machine code from `msfvenom` do?
+
+**Answer:** It connects back to the attacker’s Kali machine and provides a reverse shell.
+---
+
+# Question: What command is used to start a listener on Kali Linux to catch the reverse shell?
+
+**Answer:** `nc -lvnp 4444`
+
+---
+
+# Question: What does the `nc -lvnp 4444` command do?
+
+**Answer:** It starts Netcat in listening mode on port 4444, waiting for incoming reverse shell connections.
+
+---
+
+# Question: What must be done in Immunity Debugger before running the exploit?
+
+**Answer:** The target program must be restarted and set to play mode to resume execution and allow the exploit to trigger.
+
+---
+
+# Question: What indicates that the reverse shell exploit was successful?
+
+**Answer:** A connection is established back to the attacker’s machine, granting shell access to the target.
+
+---
+
 
 
 
