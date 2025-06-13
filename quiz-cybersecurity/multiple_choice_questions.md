@@ -436,16 +436,59 @@
 
 ---
 
+# Question: What command is used post-exploit to confirm access to the target system?
 
+**Answer:** `whoami`
 
+---
 
+# Question: What does the output of `whoami` confirm in a successful exploit?
 
+**Answer:** It confirms that the attacker has gained remote access to the target system.
 
+---
 
+# Question: What was unique about the method used to gain access in the demonstration?
 
+**Answer:** The exploit did not require sending any executable to the target; it leveraged an existing vulnerable application.
 
+---
 
+# Question: Why are buffer overflow vulnerabilities considered dangerous?
 
+**Answer:** Because they allow attackers to overwrite critical parts of a program's memory, such as the EIP register, and redirect execution to their malicious code, potentially compromising the entire system.
+
+---
+
+# Question: What is the role of the EIP register in buffer overflow attacks?
+
+**Answer:** The EIP (Extended Instruction Pointer) determines the next instruction the CPU executes. Overwriting it allows attackers to redirect the program flow to their injected shellcode.
+
+---
+
+# Question: Which tools were used to identify and exploit the buffer overflow vulnerability?
+
+**Answer:** Immunity Debugger, Mona (a plugin for Immunity Debugger), and Kali Linux’s built-in utilities.
+
+---
+
+# Question: What were the major steps in exploiting the buffer overflow?
+
+**Answer:** Setting up the environment, identifying the vulnerable input size, locating a jump instruction, crafting shellcode, and launching the final exploit.
+
+---
+
+# Question: What fundamental concept underlies buffer overflow exploits?
+
+**Answer:** Understanding how memory is managed and how improper input validation can allow attackers to overwrite program memory.
+
+---
+
+# Question: What is the key security lesson from this buffer overflow demonstration?
+
+**Answer:** Poor input validation can lead to serious security vulnerabilities, allowing full system compromise through memory manipulation.
+
+---
 
 # Question: What are XSS and HTML Injection vulnerabilities?
 
