@@ -968,3 +968,95 @@ It specifies what to print after the output; for example, `end=','` prevents a n
 **Answer:** "Requirement already satisfied"
 
 ---
+
+# Question: What VS Code feature is used to assist in connecting to MySQL?
+
+**Answer:** The MySQL extension from the VS Code extensions tab.
+
+---
+
+# Question: What Python module is required to connect MySQL to Python?
+
+**Answer:** `mysql-connector-python`
+
+---
+
+# Question: What is the correct pip command to install the MySQL connector module?
+
+**Answer:** `pip install mysql-connector-python`
+
+---
+
+# Question: What is the Python import statement for the MySQL connector module?
+
+**Answer:** `import mysql.connector`
+
+---
+
+# Question: Which Python construct is used to safely attempt the MySQL connection?
+
+**Answer:** A `try-except-finally` block.
+
+---
+
+# Question: What function is used to create a MySQL connection in Python?
+
+**Answer:** `mysql.connector.connect()`
+
+---
+
+# Question: What arguments are passed to `mysql.connector.connect()` for a local MySQL connection?
+
+**Answer:** `host`, `user`, `password`, and `database`
+
+---
+
+# Question: What value is typically assigned to the `host` parameter when connecting to a local MySQL server?
+
+**Answer:** `"localhost"`
+
+---
+
+# Question: How is connection success verified in the script?
+
+**Answer:** By checking `if connection.is_connected()`.
+
+---
+
+# Question: What is printed if the connection to the database is successful?
+
+**Answer:** `"connected to database"`
+
+---
+
+# Question: What is printed if the connection to the database fails?
+
+**Answer:** `"failed connection"`
+
+---
+
+# Question: How are errors during the connection process handled?
+
+**Answer:** With an `except` block that captures the exception as `err` and prints it.
+
+---
+
+# Question: What happens in the `finally` block if the connection is still active?
+
+**Answer:** The connection is closed using `connection.close()`.
+
+---
+
+# Question: What confirms that the connection and disconnection process worked correctly?
+
+**Answer:** The script outputs that it connected to the database and then closed the connection.
+
+---
+
+# Question: What happens if incorrect credentials are used (e.g., wrong username)?
+
+**Answer:** An error message is shown, demonstrating that the error-handling block works.
+
+---
+
+
