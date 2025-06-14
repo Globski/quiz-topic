@@ -1,3 +1,93 @@
+# Question: What does CSS stand for?
+
+**Answer:** CSS stands for Cascading Style Sheets.
+
+---
+
+# Question: What is CSS primarily used for?
+
+**Answer:** CSS is used to describe the presentation of a document.
+
+---
+
+# Question: Which markup language is CSS most commonly used with?
+
+**Answer:** CSS is most commonly used with HTML.
+
+---
+
+# Question: Besides HTML, name three other media or document types CSS can be applied to.
+
+**Answer:** CSS can be applied to XML, SVG, and MathML.
+
+---
+
+# Question: What are the three ways to apply CSS to an HTML document?
+
+**Answer:** External stylesheet, internal stylesheet, and inline styles.
+
+---
+
+# Question: What HTML tag is used to link an external CSS file?
+
+**Answer:** The `<link>` tag.
+
+---
+
+# Question: What attribute value does the `<link>` tag use to specify the type of relationship?
+
+**Answer:** `rel="stylesheet"`
+
+---
+
+# Question: What filename given to the CSS file?
+
+**Answer:** `style.css`
+
+---
+
+# Question: What selector?
+
+**Answer:** `p` (paragraph element).
+
+---
+
+# Question: What CSS property and value?
+
+**Answer:** `color: purple;`
+
+---
+
+# Question: What character ends a CSS declaration?
+
+**Answer:** A semicolon (`;`).
+
+---
+
+# Question: Where should the `href` in the `<link>` tag point to when referencing the external stylesheet?
+
+**Answer:** To `CSS/style.css`, reflecting the folder and file path.
+
+---
+
+# Question: Why is the `type` attribute in the `<link>` tag generally avoided today?
+
+**Answer:** It is considered outdated and no longer required; including it is frowned upon in modern HTML practices.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Question: How do you apply an external CSS stylesheet to an HTML document?
 
 **Answer:**
