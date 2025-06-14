@@ -537,6 +537,108 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What must you do after adding your SSH key to GitHub to make Git recognize it locally?
+
+**Answer:** Start the SSH agent and add the key to it using the `ssh-add` command.
+
+---
+
+# Question: What must users of macOS 10.12.2 or later modify to ensure the SSH key is used properly?
+
+**Answer:** They must edit their SSH configuration file and add specific settings to it.
+
+---
+
+# Question: Where is the SSH config file typically located?
+
+**Answer:** Inside the `.ssh` directory in the user’s home folder.
+
+---
+
+# Question: What command is used to add your SSH key to the SSH agent?
+
+**Answer:** `ssh-add path/to/your/private_key`
+
+---
+
+# Question: What does the `origin` argument represent in a Git push command?
+
+**Answer:** It represents the remote repository location.
+
+---
+
+# Question: What does the `master` argument represent in a Git push command?
+
+**Answer:** It specifies the branch being pushed to the remote repository.
+
+---
+
+# Question: What command pushes local commits to the `master` branch on the `origin` remote?
+
+**Answer:** `git push origin master`
+
+---
+
+# Question: How can you confirm that your local Git push was successful?
+
+**Answer:** By refreshing the GitHub repository page and checking if the code changes and commit appear.
+
+---
+
+# Question: What indicates that a commit was made locally and pushed to GitHub?
+
+**Answer:** The presence of a commit with a message that was written locally using the `-m` flag.
+
+---
+
+# Question: How can you differentiate between commits made locally and those made directly on GitHub?
+
+**Answer:** Commits pushed from local appear with the message created via the local Git CLI, while others are created via the GitHub interface.
+
+---
+
+# Question: What is demonstrated when code is pushed from a local Git repository to GitHub?
+
+**Answer:** How to create a new Git repository using GitHub and push code to it.
+
+---
+
+# Question: What happens when you create a new folder that is not yet a Git repository?
+
+**Answer:** It contains no `.git` folder, and Git commands like `git status` will indicate that it is not a repository.
+
+---
+
+# Question: How do you initialize a Git repository in a new folder?
+
+**Answer:** By running the command `git init` inside that folder.
+
+---
+
+# Question: What does the `git init` command do?
+
+**Answer:** It initializes a new Git repository in the current directory.
+
+---
+
+# Question: What does `git status` show after initializing a repository and creating a new file?
+
+**Answer:** It shows that the file (e.g., `README.md`) is untracked.
+
+---
+
+# Question: What kind of file was first created in the new folder to track changes?
+
+**Answer:** A `README.md` file containing a header and some text.
+
+---
+
+# Question: What does it mean when `git status` shows a file as “untracked”?
+
+**Answer:** The file is not yet staged for commit and is not being tracked by Git.
+
+---
+
 
 
 
