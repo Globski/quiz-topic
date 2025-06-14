@@ -1011,6 +1011,103 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What happens on GitHub when you push a new branch?
+
+**Answer:** GitHub detects the new branch and prompts you to compare it to another branch and create a pull request.
+
+---
+
+# Question: In the GitHub interface, how can you tell which branch is being merged into which?
+
+**Answer:** The arrow in the GitHub interface indicates the direction of the merge — the feature branch will be merged *into* the base branch.
+
+---
+
+# Question: What is the base branch in a GitHub pull request?
+
+**Answer:** The base branch is the branch into which changes from another branch will be merged, typically `master` or `main`.
+
+---
+
+# Question: What information can you include when creating a pull request on GitHub?
+
+**Answer:** You can include a title, a message, and a description listing the changes made and reasons behind them.
+
+---
+
+# Question: What kinds of views are available after you create a PR on GitHub?
+
+**Answer:** You can view comments, commits made, and diffs of changed files in the pull request interface.
+
+---
+
+# Question: How can you leave a comment on a specific line of code in a GitHub PR?
+
+**Answer:** Click the blue plus (`+`) button next to a line of code to open a comment box and leave a comment.
+
+---
+
+# Question: What is the benefit of commenting on a specific line of code in a PR?
+
+**Answer:** It allows collaborators to provide targeted feedback on individual lines, making reviews more precise and collaborative.
+
+---
+
+# Question: What does the "Resolve" button in a GitHub PR comment thread indicate?
+
+**Answer:** It indicates that a comment thread has been addressed or acknowledged, often after changes are made or questions are answered.
+
+---
+
+# Question: Do you need to resolve all comments before merging a PR?
+
+**Answer:** Not always. If you have full permissions (e.g., you're the repo owner), you can merge without resolving comments. Otherwise, resolution may be required based on repository settings.
+
+---
+
+# Question: What does clicking “Merge” and then “Confirm” in a PR do?
+
+**Answer:** It finalizes the PR by merging the changes from the feature branch into the base branch (e.g., `master`).
+
+---
+
+# Question: After merging a PR, where are the changes visible?
+
+**Answer:** They become part of the base branch on GitHub (e.g., `master`) and can be seen by viewing the code in the GitHub interface.
+
+---
+
+# Question: Why might you not see merged PR changes in your local master branch?
+
+**Answer:** Because the changes exist only on GitHub until you pull them into your local repository.
+
+---
+
+# Question: What command do you use to pull the latest changes from GitHub into your local branch?
+
+**Answer:** Use `git pull` to fetch and merge changes from the remote repository into your current local branch.
+
+---
+
+# Question: What’s the difference between `git pull` and `git pull origin master`?
+
+**Answer:** `git pull` uses the set upstream branch, while `git pull origin master` explicitly pulls from the `origin/master` branch when upstream isn’t set.
+
+---
+
+# Question: What message might you see after pulling from GitHub successfully?
+
+**Answer:** A message like “1 file changed, 4 insertions” indicating that updates have been applied to your local branch.
+
+---
+
+# Question: After pulling, how do you verify that your local branch includes the changes?
+
+**Answer:** Check the code files in your local environment to confirm the updates from the remote branch are now present.
+
+---
+
+
 
 
 
@@ -1339,9 +1436,6 @@ GitHub shows the number of commits each branch is behind or ahead of the default
 
 **Answer:**
 Click the red trash icon next to the branch name on the branches page to delete it.
-
----
-
 
 ---
 
