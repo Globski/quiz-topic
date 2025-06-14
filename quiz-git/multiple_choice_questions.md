@@ -227,6 +227,66 @@
 
 ---
 
+Here are **quiz questions** based on your provided material, written to cover **100% of the content** with technical clarity and CLI examples.
+
+---
+
+# Question: What command line interface is recommended for Git on Windows?
+
+**Answer:** Git Bash is recommended for Git on Windows as it often works more smoothly than Command Prompt.
+
+---
+
+# Question: What package manager is recommended for installing Git on macOS?
+
+**Answer:** Homebrew is recommended for installing Git on macOS.
+
+---
+
+# Question: Do Mac and Linux users typically need to install Git manually?
+
+**Answer:** No, Git is usually already installed on Mac and Linux systems.
+
+---
+
+# Question: Can any word processing software be used for coding?
+
+**Answer:** While technically possible, it is not recommended. Dedicated code editors are better suited for coding tasks.
+
+---
+
+# Question: What Git command is used to copy a GitHub repository to your local system?
+
+**Answer:** `git clone [repository URL]`
+
+---
+
+# Question: What is the effect of running `git clone` with an SSH URL?
+
+**Answer:** It creates a local copy of the GitHub repository in the current directory.
+
+---
+
+# Question: How do you navigate into the cloned repository from the terminal?
+
+**Answer:** Use the `cd` command followed by the repository folder name (e.g., `cd demo-repo`).
+
+---
+
+# Question: After cloning, what does the terminal prompt change indicate?
+
+**Answer:** It may include an indicator such as `Git master` showing that the current directory is a Git repository.
+
+---
+
+# Question: How can you tell if you're inside a Git repository even if it looks like a regular folder?
+
+**Answer:** There is a hidden `.git` folder inside the directory, which indicates it's a Git repository.
+
+---
+
+
+
 
 
 
