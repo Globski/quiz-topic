@@ -22,12 +22,97 @@
 
 ---
 
-
 # Question: What is a code editor used for?
 
 **Answer:** A code editor is used to write and edit code.
 
 ---
+
+# Question: What is a code editor, and how does it differ from a regular text document?
+
+**Answer:** A code editor is a specialized text editor designed with tools and features for programming, unlike general-purpose applications like word processors.
+
+---
+
+# Question: In programming, what is typically meant by the term “repository”?
+
+**Answer:** A repository usually refers to a Git repository — the folder or location where a project is stored and tracked using Git.
+
+---
+
+# Question: What is the difference between Git and GitHub?
+
+**Answer:** Git is a version control tool that tracks code changes locally, while GitHub is a website that hosts Git repositories online for collaboration and portfolio management.
+
+---
+
+# Question: Why is GitHub useful for developers?
+
+**Answer:** GitHub enables online collaboration, makes group work easier, and allows developers to organize and showcase their projects in a portfolio for potential employers.
+
+---
+
+# Question: What does the `clone` command do in Git?
+
+**Answer:** `clone` copies a repository from a remote source, like GitHub, to the local machine for local use.
+
+---
+
+# Question: Are Git commands case-sensitive?
+
+**Answer:** Yes, all Git commands are lowercase.
+
+---
+
+# Question: What is the purpose of the `add` command in Git?
+
+**Answer:** The `add` command tells Git to start tracking newly created, updated, or deleted files and folders.
+
+---
+
+# Question: What does it mean to “commit” in Git?
+
+**Answer:** To commit is to save the tracked changes into the Git repository, creating a permanent snapshot of the current state of the code.
+
+---
+
+# Question: What is the typical Git workflow for saving changes?
+
+**Answer:** First, use `add` to track changes, then use `commit` to save those changes, and finally use `push` to upload them to a remote repository.
+
+---
+
+# Question: What is the function of the `push` command in Git?
+
+**Answer:** `push` uploads committed changes from the local Git repository to a remote repository like GitHub.
+
+---
+
+# Question: What does the `pull` command do in Git?
+
+**Answer:** `pull` retrieves and merges changes from a remote repository into the local repository.
+
+---
+
+# Question: What must you do before using GitHub?
+
+**Answer:** You must sign up for a GitHub account, provide minimal information, verify your email, and log in.
+
+---
+
+# Question: After logging into GitHub, where can you create a new repository?
+
+**Answer:** You can create a new repository from the green “New” button or the plus (+) dropdown menu in the top navigation.
+
+---
+
+# Question: What does a GitHub repository contain?
+
+**Answer:** A GitHub repository contains all files and folders related to a project, including code and other project resources.
+
+---
+
+
 
 
 
