@@ -1107,6 +1107,94 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What is Git stash used for?
+
+**Answer:** Git stash temporarily stores local changes without committing them, allowing you to switch branches safely and retrieve the changes later.
+
+---
+
+# Question: What command stages and commits all modified tracked files with a message?
+
+**Answer:** `git commit -am "commit message"`
+
+---
+
+# Question: Why is `git commit -am` used in this scenario?
+
+**Answer:** Because only modified files (not new ones) were present, and it provides a quick way to stage and commit them together.
+
+---
+
+# Question: What Git command shows differences between the current branch and another branch?
+
+**Answer:** `git diff <branch_name>`
+
+---
+
+# Question: Why might you want to merge `master` into your feature branch before continuing development?
+
+**Answer:** To keep the feature branch up to date with the latest changes from `master`, avoiding larger conflicts later.
+
+---
+
+# Question: What command merges the `master` branch into the current branch?
+
+**Answer:** `git merge master`
+
+---
+
+# Question: What message does Git show when a merge conflict occurs?
+
+**Answer:** It indicates there is a conflict and specifies the file(s) involved, such as `merge conflict in index.html`.
+
+---
+
+# Question: What are common ways to resolve Git merge conflicts?
+
+**Answer:** Using GitHub’s interface, editing the file manually in a code editor, or using tools like VS Code’s merge resolution UI.
+
+---
+
+# Question: In a merge conflict, what do the Git conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) indicate?
+
+**Answer:** They show the conflicting changes:
+
+* `<<<<<<< HEAD`: your branch’s changes
+* `=======`: separator
+* `>>>>>>> branch_name`: incoming branch’s changes
+
+---
+
+# Question: After resolving a merge conflict manually, what must you do?
+
+**Answer:** Remove the conflict markers, save the file, and make a new commit to finalize the merge.
+
+---
+
+# Question: What is an appropriate commit message after resolving a merge conflict?
+
+**Answer:** Something like `"merged in master"` or `"resolved conflicts and updated with master"`.
+
+---
+
+# Question: Why is a new commit needed after fixing merge conflicts?
+
+**Answer:** Because Git treats the resolution as a change that must be recorded to complete the merge process.
+
+---
+
+# Question: After updating your feature branch with `master`, what should you do next?
+
+**Answer:** Continue developing your feature, fix, or enhancement as normal.
+
+---
+
+# Question: If you accidentally commit something in Git, what can you do?
+
+**Answer:** You can undo the commit using Git commands to reset or unstage changes (covered in the next part of the transcript).
+
+---
+
 
 
 
