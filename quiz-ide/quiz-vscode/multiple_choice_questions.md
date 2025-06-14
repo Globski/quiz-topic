@@ -1404,3 +1404,9 @@ Highly recommends VS Code as the best editor for web development and many other 
 **Answer:** It sets that folder as the root for your project and terminal, enabling file creation and Git operations within that context.
 
 ---
+
+# Question: What shortcut in Visual Studio Code can quickly generate a basic HTML document?
+
+**Answer:** Typing an exclamation mark (`!`) and pressing `Enter` generates a basic HTML boilerplate.
+
+---
