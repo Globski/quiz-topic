@@ -1319,24 +1319,121 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 **Answer:** All changes made after the target commit are permanently erased from both Git and the filesystem.
 
+---
 
+# Question: What does forking a repository on GitHub do?
 
+**Answer:** It creates a complete copy of the repository under your GitHub account, giving you full control over the code.
 
+---
 
+# Question: Why would you fork someone else’s repository instead of your own?
 
+**Answer:** You fork someone else’s repository when you don’t have direct access to modify their code, but want to make changes or contributions.
 
+---
 
+# Question: What can you do after forking a repository to your GitHub account?
 
+**Answer:** You can create branches, edit files, commit changes, and push updates independently of the original repository.
 
+---
 
+# Question: What is the default branch typically used in a GitHub repository?
 
+**Answer:** It is often `master`, but can also be `dev` or any other branch designated as default.
 
+---
 
+# Question: What is one reason a project might use multiple branches like `master`, `dev`, and `staging`?
 
+**Answer:** To separate environments: `dev` for development, `staging` for pre-production, and `master` for production-ready code.
 
+---
 
+# Question: After forking and editing a file like `README.md`, how do you save your changes?
 
+**Answer:** By committing the changes, optionally with a custom commit message, and specifying the branch to commit to.
 
+---
+
+# Question: Where do changes appear after committing in a forked repo?
+
+**Answer:** They appear in your fork, not in the original repository.
+
+---
+
+# Question: How can you propose your changes from a forked repository to the original repository?
+
+**Answer:** By creating a pull request (PR) comparing your updated fork/branch with the base branch in the original repository.
+
+---
+
+# Question: When creating a pull request, what two elements must you specify?
+
+**Answer:** The base (original repository and branch) and the compare (your fork and updated branch).
+
+---
+
+# Question: What GitHub feature allows you to preview differences in a pull request?
+
+**Answer:** The **diff view**, which shows file changes and commit history for the PR.
+
+---
+
+# Question: Can you create a pull request between branches in your own forked repository?
+
+**Answer:** Yes, you can create PRs between branches like `dev` and `master` within your fork.
+
+---
+
+# Question: What happens when you merge a pull request in GitHub?
+
+**Answer:** The changes from the source branch are added to the target branch.
+
+---
+
+# Question: After merging a feature branch into `dev` or `master`, what is the recommended cleanup step?
+
+**Answer:** Delete the feature branch both on GitHub and locally if it’s no longer needed.
+
+---
+
+# Question: Why aren’t branches like `dev` and `master` deleted after merges?
+
+**Answer:** Because they are permanent branches used as base branches for future merges and deployment workflows.
+
+---
+
+# Question: What is the general workflow for contributing to a large open-source project like Vue.js?
+
+**Answer:** Fork the repo, pull it to your local machine, make and test updates, push changes to your fork, then create a PR to the original repo.
+
+---
+
+# Question: What does CRUD stand for in the context of GitHub repository control?
+
+**Answer:** Create, Read, Update, Delete — referring to full control over files in your fork.
+
+---
+
+# Question: What is the purpose of creating feature branches?
+
+**Answer:** To isolate changes and updates before merging them into stable branches like `dev` or `master`.
+
+---
+
+# Question: When should feature or temporary branches be deleted?
+
+**Answer:** After they are successfully merged into a mainline branch such as `dev` or `master`.
+
+---
+
+# Question: What is the advantage of pushing changes to a fork before creating a pull request?
+
+**Answer:** It allows for independent testing, experimentation, and staging before proposing changes to the main repository.
+
+---
 
 # Question: What does the landing page of a GitHub project depict?
 
