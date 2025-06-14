@@ -897,6 +897,121 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What command is used to stage changes in Git?
+
+**Answer:** `git add` is used to stage changes in Git, such as staging changes made to the `README.md` file.
+
+---
+
+# Question: How do you make a Git commit with a message?
+
+**Answer:** You use `git commit -m "your message"` to make a Git commit with a message. The message must be enclosed in quotes.
+
+---
+
+# Question: What does Git show after a successful commit?
+
+**Answer:** It shows output like the number of files changed and the number of insertions or deletions (e.g., "1 file changed, 4 insertions").
+
+---
+
+# Question: Where are changes saved after a commit on a branch?
+
+**Answer:** Changes are saved locally on the current branch and not visible in other branches until merged.
+
+---
+
+# Question: What command is used to switch branches in Git?
+
+**Answer:** `git checkout branch-name` is used to switch between branches, such as switching from `feature-readme-instructions` to `master`.
+
+---
+
+# Question: Why might changes not appear after switching to the master branch?
+
+**Answer:** Because the changes were made and committed on another branch and haven't been merged into `master`.
+
+---
+
+# Question: What command is used to merge one branch into another locally?
+
+**Answer:** `git merge branch-name` is used to merge the specified branch into the current branch.
+
+---
+
+# Question: Before merging, what command can be used to preview the differences?
+
+**Answer:** `git diff branch-name` shows the differences between the current branch and the specified branch.
+
+---
+
+# Question: What does the `git diff` output show?
+
+**Answer:** It shows the file(s) affected, unchanged lines in white, added lines in green with a `+`, and removed lines in red with a `-`.
+
+---
+
+# Question: How do you exit the `git diff` view?
+
+**Answer:** Press `q` to quit the diff view.
+
+---
+
+# Question: What is the typical process after committing changes to a branch locally?
+
+**Answer:** The common practice is to push the changes to GitHub and create a pull request (PR).
+
+---
+
+# Question: What command is used to push changes to GitHub?
+
+**Answer:** `git push` is used to push changes to GitHub.
+
+---
+
+# Question: What happens when you push a new local branch to GitHub for the first time?
+
+**Answer:** Git prompts you to specify the remote branch name, typically using `git push --set-upstream origin branch-name`.
+
+---
+
+# Question: What does the `--set-upstream` or `-u` flag in Git do?
+
+**Answer:** It links the local branch to the remote branch, so future `git push` and `git pull` commands default to that branch.
+
+---
+
+# Question: What is a pull request (PR) in GitHub?
+
+**Answer:** A pull request is a request to merge code from one branch (e.g., a feature branch) into another (e.g., master).
+
+---
+
+# Question: What can happen after a pull request is made?
+
+**Answer:** Reviewers can comment on the code, request changes, and developers can update the PR by making new commits and pushing them to the same branch.
+
+---
+
+# Question: Can you update a PR after it’s created?
+
+**Answer:** Yes, by making additional commits to the same branch and pushing them to GitHub.
+
+---
+
+# Question: What typically happens after a PR is successfully merged?
+
+**Answer:** The feature or source branch is usually deleted, and developers switch back to the master branch.
+
+---
+
+# Question: What is the common Git workflow for new coding changes after a PR?
+
+**Answer:** Create a new branch, make commits, push to GitHub, create a pull request, and repeat the cycle.
+
+---
+
+
 
 
 
