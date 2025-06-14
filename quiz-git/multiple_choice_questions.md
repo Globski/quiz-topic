@@ -639,6 +639,101 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What error occurs if you try to push to `origin` before connecting your local repository to a remote?
+
+**Answer:** `fatal: 'origin' does not appear to be a git repository`
+
+---
+
+# Question: Why does Git return the error “origin does not appear to be a git repository”?
+
+**Answer:** Because the local repository was not cloned from a remote and has no remote URL configured.
+
+---
+
+# Question: What is the first step to connect a local Git repository to a remote GitHub repository?
+
+**Answer:** Create a new, empty repository on GitHub.
+
+---
+
+# Question: What Git command is used to connect a local repository to a remote one?
+
+**Answer:** `git remote add origin <remote_repository_URL>`
+
+---
+
+# Question: In Git, what does the term "remote" refer to?
+
+**Answer:** A repository that exists on another system or platform, not on the local machine.
+
+---
+
+# Question: How can you verify that a remote has been added to your Git repository?
+
+**Answer:** Run `git remote -v` to display the connected remote repositories.
+
+---
+
+# Question: After adding a remote, what command can you use to push commits?
+
+**Answer:** `git push origin master`
+
+---
+
+# Question: What does the `-u` flag in `git push -u origin master` do?
+
+**Answer:** It sets the upstream so that future pushes can be done using just `git push`.
+
+---
+
+# Question: What is the benefit of setting an upstream with `git push -u`?
+
+**Answer:** You can use `git push` alone in the future without specifying the branch and remote.
+
+---
+
+# Question: What confirms a successful push to GitHub in your browser?
+
+**Answer:** Refreshing the repository page and seeing the newly added or modified file(s), like `README.md`.
+
+---
+
+# Question: What are the main steps in pushing code from a local Git repository to GitHub?
+
+**Answer:** Initialize the repo with `git init`, create or modify files, stage changes with `git add`, commit with `git commit -m`, connect a remote with `git remote add origin <URL>`, then push with `git push`.
+
+---
+
+# Question: What step is automatically handled when you commit code directly on GitHub?
+
+**Answer:** The `git add` step is handled automatically — changes are staged and committed in one action.
+
+---
+
+# Question: Why is there no need to push after committing changes via GitHub’s interface?
+
+**Answer:** Because GitHub is already the remote repository — commits there are live immediately.
+
+---
+
+# Question: What is a pull request used for on GitHub?
+
+**Answer:** To request that your code changes be reviewed and merged into a repository you do not own or don’t have direct write access to.
+
+---
+
+# Question: What are the steps involved in writing code locally and pushing it to GitHub?
+
+**Answer:** Write code in a text editor, use `git add` to stage changes, `git commit` to save them, and `git push` to upload to GitHub.
+
+---
+
+# Question: How does the workflow differ between committing on GitHub and pushing from a local machine?
+
+**Answer:** On GitHub, committing skips staging (`git add`) and changes are live immediately; locally, you must stage, commit, and then push.
+
+
 
 
 
