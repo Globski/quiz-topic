@@ -112,6 +112,122 @@
 
 ---
 
+# Question: What is the term "repo" short for?
+
+**Answer:** Repo is short for "repository."
+
+---
+
+# Question: How do you create a new repository on GitHub?
+
+**Answer:** You click the green "New" button or the plus (+) dropdown, give the repository a name, leave the default settings if desired, and click "Create repository."
+
+---
+
+# Question: Where can you create project files for a GitHub repository?
+
+**Answer:** Files and folders can be created locally on your machine or directly in the online GitHub editor.
+
+---
+
+# Question: What is a README file, and what is its purpose?
+
+**Answer:** A README file is a markdown file typically named `README.md` that describes the project, what it does, and other relevant information.
+
+---
+
+# Question: What is Markdown used for in a README file?
+
+**Answer:** Markdown is used to format text using simple syntax, such as `#` for headers, making documentation easy to read.
+
+---
+
+# Question: How do you create a new file in the GitHub online editor?
+
+**Answer:** Click “Create a new file,” enter a filename like `README.md`, type content, and commit it to save.
+
+---
+
+# Question: What happens if you leave the commit message blank when creating a file?
+
+**Answer:** GitHub will use a default commit message based on the filename, such as “create README.md.”
+
+---
+
+# Question: Why does GitHub always show the `README.md` file on the repository home page?
+
+**Answer:** GitHub is configured to display `README.md` as the default visible file in the repository view.
+
+---
+
+# Question: How do you edit an existing file in GitHub's web interface?
+
+**Answer:** Navigate to the file and click "Edit this file," make changes, then commit them with an appropriate message.
+
+---
+
+# Question: What does the default commit message say when updating a file?
+
+**Answer:** If not manually changed, the default message is "update \[filename]", e.g., `update readme.md`.
+
+---
+
+# Question: How can you view your commit history on GitHub?
+
+**Answer:** Go to the “Commits” section of the repository to see all commit messages and timestamps.
+
+---
+
+# Question: What information does each commit contain?
+
+**Answer:** Each commit has a unique identifier, a message/title, and a visual representation of file changes.
+
+---
+
+# Question: In GitHub’s file change view, what does green with a plus sign mean?
+
+**Answer:** Lines were added to the file.
+
+---
+
+# Question: What does red with a minus sign indicate in GitHub’s commit comparison?
+
+**Answer:** Lines were deleted from the file.
+
+---
+
+# Question: What does white text mean in GitHub’s commit comparison view?
+
+**Answer:** The line stayed the same between commits.
+
+---
+
+# Question: How can you check if Git is installed on a Mac or Linux machine?
+
+**Answer:** Open the terminal and run the command:
+`git --version`
+
+---
+
+# Question: What should you do if Git is not installed on your system?
+
+**Answer:** Follow the Git installation tutorial provided by Atlassian, which covers all operating systems.
+
+---
+
+# Question: When installing Git on Windows, what option is recommended during setup?
+
+**Answer:** Select the **Git Bash** option from the installation menu.
+
+---
+
+# Question: Can you use Command Prompt on Windows for Git?
+
+**Answer:** Yes, you can use Command Prompt, but Git Bash is recommended for a Unix-like command-line experience.
+
+---
+
+
 
 
 
