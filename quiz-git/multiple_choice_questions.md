@@ -405,6 +405,139 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What does the `git push` command do?
+
+**Answer:** It pushes local commits to a remote repository, making them live on platforms like GitHub.
+
+---
+
+# Question: Why is authentication needed when pushing code to GitHub?
+
+**Answer:** GitHub requires users to prove they own the account before pushing code to a repository.
+
+---
+
+# Question: How does Git authenticate your local machine with your GitHub account?
+
+**Answer:** Through the use of SSH keys that are linked to your GitHub account.
+
+---
+
+# Question: What command is used to generate a new SSH key?
+
+**Answer:** `ssh-keygen`
+
+---
+
+# Question: What options are typically specified during SSH key generation?
+
+**Answer:** The type of encryption, strength of encryption, and GitHub email address.
+
+---
+
+# Question: Why must the email address used during SSH key generation match your GitHub account?
+
+**Answer:** To associate the key correctly with your GitHub identity.
+
+---
+
+# Question: Where is the default SSH key file stored on your system?
+
+**Answer:** Inside the user directory, under the `.ssh` directory, with the default filename `id_rsa`.
+
+---
+
+# Question: What should you do if you already have a key named `id_rsa`?
+
+**Answer:** Give the new key a different name during generation.
+
+---
+
+# Question: Is it mandatory to set a passphrase for an SSH key?
+
+**Answer:** No, it's optional—you can leave it blank.
+
+---
+
+# Question: What are the two files generated when you create an SSH key?
+
+**Answer:** A private key (e.g., `test_key`) and a public key (e.g., `test_key.pub`).
+
+---
+
+# Question: Which SSH key file should you upload to GitHub?
+
+**Answer:** The public key file (`.pub`), such as `test_key.pub`.
+
+---
+
+# Question: What does the `.pub` file extension indicate?
+
+**Answer:** That the file is a public key and can be shared safely.
+
+---
+
+# Question: Why must you never share your private key?
+
+**Answer:** Because it's used to authenticate you securely and must remain confidential.
+
+---
+
+# Question: How does the SSH key authentication process work with GitHub?
+
+**Answer:** The private key on your machine proves you generated the public key uploaded to GitHub.
+
+---
+
+# Question: What does the structure of a public SSH key look like?
+
+**Answer:** It starts with `ssh-rsa`, followed by encoded characters, and ends with your email address.
+
+---
+
+# Question: What’s the correct way to copy an SSH key from the terminal?
+
+**Answer:** Highlight the key text in the terminal to copy it automatically.
+
+---
+
+# Question: Why shouldn’t you use Ctrl+C to copy in the terminal?
+
+**Answer:** Because Ctrl+C is a command to cancel a running process, not for copying text.
+
+---
+
+# Question: What command can you use to copy the SSH public key from a file?
+
+**Answer:** `pbcopy < path/to/your/public/key.pub`
+
+---
+
+# Question: In what path is the SSH key usually found?
+
+**Answer:** In the `.ssh` directory inside your home folder, e.g., `~/.ssh/test_key.pub`
+
+---
+
+# Question: Where on GitHub can you add your SSH key?
+
+**Answer:** Under **Settings → SSH and GPG keys**.
+
+---
+
+# Question: What must you do after clicking **New SSH key** in GitHub?
+
+**Answer:** Give the key a title and paste your public key into the key field.
+
+---
+
+# Question: Why might you need to remove extra whitespace when pasting your SSH key on GitHub?
+
+**Answer:** To avoid format issues or authentication errors.
+
+---
+
+
 
 
 
