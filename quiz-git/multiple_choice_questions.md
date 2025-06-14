@@ -733,6 +733,87 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 **Answer:** On GitHub, committing skips staging (`git add`) and changes are live immediately; locally, you must stage, commit, and then push.
 
+---
+
+# Question: What does the `git push` command do?
+
+**Answer:** It updates the remote repository on GitHub with changes made locally.
+
+---
+
+# Question: What must be done if access rights are restricted or a code review is required before merging changes to GitHub?
+
+**Answer:** A pull request must be created.
+
+---
+
+# Question: In Git, what is the default branch typically called?
+
+**Answer:** The default branch is typically called `master`.
+
+---
+
+# Question: What does the term "branching" refer to in Git?
+
+**Answer:** Branching refers to the practice of creating separate lines of development that look like branches on a tree, diverging from the main codebase.
+
+---
+
+# Question: When a new branch is created from `master`, what is its initial content?
+
+**Answer:** It is exactly the same as the `master` branch at the time of creation.
+
+---
+
+# Question: If you make a commit on a feature branch, will those changes be visible when switching back to `master`?
+
+**Answer:** No, changes made on the feature branch are not visible on `master`.
+
+---
+
+# Question: How does Git track changes across branches?
+
+**Answer:** Each branch only tracks the changes committed to itself and is unaware of changes in other branches.
+
+---
+
+# Question: What happens if you make changes on the master branch while a feature branch exists?
+
+**Answer:** Those changes are committed to master and remain invisible to the feature branch until a merge occurs.
+
+---
+
+# Question: Why is branching useful in software development?
+
+**Answer:** It allows developers to build features in isolation, preventing unfinished or potentially breaking code from affecting the main codebase.
+
+---
+
+# Question: What is the purpose of working on a separate branch like a feature branch?
+
+**Answer:** To develop new features safely without affecting the stable code on the master branch.
+
+---
+
+# Question: How does branching help when multiple people are working on the same repository?
+
+**Answer:** It allows each person to work in isolation on their respective branches without interfering with others’ work on the master branch or other branches.
+
+---
+
+# Question: What is a "hotfix" branch typically used for?
+
+**Answer:** It is used to quickly fix major bugs in the code, with the changes merged back into the master branch once resolved.
+
+---
+
+# Question: What is the usual workflow after fixing a bug in a hotfix branch?
+
+**Answer:** Commit the fix in the hotfix branch, test it, and then merge it back into the master branch.
+
+---
+
+
 
 
 
