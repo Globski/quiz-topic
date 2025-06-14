@@ -1195,6 +1195,130 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What does the `git status` command show after adding a file with `git add`?
+
+**Answer:** It shows that the file is staged under “changes to be committed.”
+
+---
+
+# Question: How can you unstage a file after you've accidentally staged it with `git add`?
+
+**Answer:** Use `git reset` with or without the file name to unstage it.
+
+---
+
+# Question: What message does Git display after using `git reset` to unstage a file?
+
+**Answer:** “Unstaged changes after reset” followed by the file name.
+
+---
+
+# Question: What is the result of running `git status` after using `git reset` to unstage a file?
+
+**Answer:** The file appears under “changes not staged for commit.”
+
+---
+
+# Question: How do you commit a staged file in Git?
+
+**Answer:** Use `git commit -m "<message>"`, for example: `git commit -m "added install step"`.
+
+---
+
+# Question: What does `git status` show after committing changes?
+
+**Answer:** “Nothing to commit, working tree clean,” indicating all changes have been committed.
+
+---
+
+# Question: How do you undo your last Git commit but keep the changes?
+
+**Answer:** Use `git reset HEAD~1`.
+
+---
+
+# Question: What does `HEAD` represent in Git?
+
+**Answer:** `HEAD` is a pointer to the last commit.
+
+---
+
+# Question: What does `git reset HEAD~1` do specifically?
+
+**Answer:** It resets `HEAD` to point to the commit before the last one, effectively undoing the last commit and unstaging the changes.
+
+---
+
+# Question: What does Git display after using `git reset HEAD~1`?
+
+**Answer:** It says the changes were unstaged and uncommitted.
+
+---
+
+# Question: What command can you use to view what Git now considers unstaged changes after a reset?
+
+**Answer:** `git diff`
+
+---
+
+# Question: What does `git diff` show after undoing a commit?
+
+**Answer:** The changes from the undone commit now appear as new, unstaged changes.
+
+---
+
+# Question: How are commits arranged in `git log`?
+
+**Answer:** In reverse chronological order, with the latest commit first.
+
+---
+
+# Question: Why is writing a good commit message important?
+
+**Answer:** It helps humans quickly identify and understand each commit when scrolling through the log.
+
+---
+
+# Question: How can you identify a specific commit in Git history?
+
+**Answer:** By its unique hash shown in the `git log`.
+
+---
+
+# Question: How can you reset to a specific past commit?
+
+**Answer:** Use `git reset <commit-hash>`.
+
+---
+
+# Question: What happens when you run `git reset <commit-hash>`?
+
+**Answer:** Git unstages and uncommits all changes made after that commit but preserves the working directory changes.
+
+---
+
+# Question: What key difference is there between `git reset` and `git reset --hard`?
+
+**Answer:** `git reset` keeps changes in the working directory; `git reset --hard` completely removes them.
+
+---
+
+# Question: What does `git reset --hard <commit-hash>` do?
+
+**Answer:** It resets the working directory and index to match the given commit, erasing all changes after it.
+
+---
+
+# Question: What happens to the `HEAD` pointer after using `git reset --hard`?
+
+**Answer:** It points to the specified commit, effectively rolling back the repo to that state.
+
+---
+
+# Question: What is the result of using `git reset --hard` on your files?
+
+**Answer:** All changes made after the target commit are permanently erased from both Git and the filesystem.
+
 
 
 
