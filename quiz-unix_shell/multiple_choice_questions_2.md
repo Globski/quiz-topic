@@ -21,3 +21,10 @@
 **Answer:** `cd` stands for "change directory"; it allows users to navigate into folders or move up to parent directories in the command line.
 
 ---
+
+
+# Question: Does the appearance of the terminal prompt look the same on every machine?
+
+**Answer:** No, it varies depending on the terminal and user configurations.
+
+---
