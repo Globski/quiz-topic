@@ -813,6 +813,91 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What does the `git branch` command do?
+
+**Answer:** It lists all branches in the repository and shows the current branch with a star `*`.
+
+---
+
+# Question: What does the star `*` next to a branch in `git branch` output indicate?
+
+**Answer:** It indicates the branch you are currently on.
+
+---
+
+# Question: What key do you press to exit the branch list view after running `git branch`?
+
+**Answer:** Press the letter `Q` to exit the view.
+
+---
+
+# Question: What is the syntax for creating and switching to a new branch using `git checkout`?
+
+**Answer:** `git checkout -b [branch-name]`
+
+---
+
+# Question: What is the purpose of the `-b` flag in `git checkout -b`?
+
+**Answer:** It tells Git to create a new branch before switching to it.
+
+---
+
+# Question: What naming conventions are commonly used for Git branches in collaborative projects?
+
+**Answer:** Names like `feature/description`, `bugfix/issue-number`, or `hotfix/description`, often including ticket or issue numbers.
+
+---
+
+# Question: After creating a new branch, what message does Git display?
+
+**Answer:** `Switched to a new branch '[branch-name]'`
+
+---
+
+# Question: How can you confirm which branch you’re currently on after creating or switching branches?
+
+**Answer:** By running `git branch`; the current branch will be marked with a star.
+
+---
+
+# Question: What does hitting `Tab` while typing a branch name do in Git?
+
+**Answer:** It autocompletes the branch name if it matches a known branch.
+
+---
+
+# Question: Can you use `Tab` completion starting from the middle or end of a branch name?
+
+**Answer:** Yes, partial matches from any part of the branch name will autocomplete.
+
+---
+
+# Question: Why is `Tab` completion useful when working with many Git branches?
+
+**Answer:** Because many branches share prefixes like `feature/`, the unique part is often at the end, making tab-completion faster.
+
+---
+
+# Question: What does the letter `M` beside a file in VS Code signify in Git context?
+
+**Answer:** It means the file has been modified since the last commit.
+
+---
+
+# Question: What does the `git status` command do?
+
+**Answer:** It shows which files have been changed, staged, or are untracked.
+
+---
+
+# Question: After modifying a file, what is the first Git command used to save the change?
+
+**Answer:** `git add [filename]`
+
+---
+
+
 
 
 
