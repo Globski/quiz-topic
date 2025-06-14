@@ -285,6 +285,126 @@ Here are **quiz questions** based on your provided material, written to cover **
 
 ---
 
+# Question: What is the `.git` directory and why is it hidden?
+
+**Answer:** The `.git` directory is a hidden folder that stores all Git-related data, including commits and the complete history of the repository. It is hidden by default on most operating systems.
+
+---
+
+# Question: How can you view hidden files and folders on Mac using the terminal?
+
+**Answer:** Use the `la` command, which is shorthand for `ls -lA`, to list all files including hidden ones.
+
+---
+
+# Question: What is the full command equivalent to `la` on Mac for listing hidden files?
+
+**Answer:** `ls -lA`
+
+---
+
+# Question: How can non-Mac users list hidden files and folders in a terminal?
+
+**Answer:** Use the command `ls -lA`
+
+---
+
+# Question: What does the `.git` folder contain?
+
+**Answer:** It contains all the files that track commits and record the full change history of the repository.
+
+---
+
+# Question: How can you make local changes to a Git-tracked file?
+
+**Answer:** By editing the file (e.g., adding a subheader and text to `README.md`), then saving the file.
+
+---
+
+# Question: What does the command `git status` do?
+
+**Answer:** It displays the state of the working directory and staging area, showing modified, untracked, or staged files.
+
+---
+
+# Question: What type of file status is shown when a file is changed but not yet staged?
+
+**Answer:** The file appears as "modified" in the `git status` output.
+
+---
+
+# Question: What does Git mean by an "untracked" file?
+
+**Answer:** An untracked file is one that exists in the working directory but is not yet being tracked by Git.
+
+---
+
+# Question: How can you add a new file (e.g., `index.html`) to Git tracking?
+
+**Answer:** Use the `git add` command followed by the filename or `.` to stage the file for commit.
+
+---
+
+# Question: What does the command `git add .` do?
+
+**Answer:** It stages all modified and untracked files in the current directory and its subdirectories for commit.
+
+---
+
+# Question: What is an alternative to using `git add .`?
+
+**Answer:** You can specify individual file names, e.g., `git add README.md index.html`.
+
+---
+
+# Question: What command do you use to verify if files have been staged for commit?
+
+**Answer:** `git status`
+
+---
+
+# Question: What does it mean when `git status` shows changes in a different format after `git add`?
+
+**Answer:** It means the files have been successfully staged and are ready to be committed.
+
+---
+
+# Question: What is the purpose of `git commit -m`?
+
+**Answer:** It creates a new commit with a message describing the changes being saved.
+
+---
+
+# Question: Is the commit message in `git commit -m` optional?
+
+**Answer:** No, a commit message is required; Git will throw an error if none is provided.
+
+---
+
+# Question: What is the structure of a typical commit message using `git commit -m`?
+
+**Answer:** The structure is `git commit -m "Your message here"`, where the message briefly describes the commit.
+
+---
+
+# Question: How can you add a second message (like a description) when committing?
+
+**Answer:** By adding another `-m` flag, e.g., `git commit -m "Title" -m "Description"`
+
+---
+
+# Question: What does Git display after a successful commit?
+
+**Answer:** It shows the number of files changed, lines inserted or deleted, e.g., `2 files changed, 5 insertions`.
+
+---
+
+# Question: Where are changes saved after running `git commit`?
+
+**Answer:** Changes are saved locally in the repository; they are not yet pushed to a remote server.
+
+---
+
 
 
 
