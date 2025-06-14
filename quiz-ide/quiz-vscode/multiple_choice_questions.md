@@ -1368,3 +1368,39 @@ Live Share is a VS Code extension that allows developers to share and collaborat
 Highly recommends VS Code as the best editor for web development and many other programming tasks due to its powerful features, customization options, integrated debugging, Git support, and collaborative tools.
 
 ---
+
+# Question: What is Visual Studio Code and who maintains it?
+
+**Answer:** Visual Studio Code is a free, cross-platform code editor developed by Microsoft.
+
+---
+
+# Question: On which operating systems is Visual Studio Code available?
+
+**Answer:** It is available on macOS, Windows, and Linux.
+
+---
+
+# Question: Where can Visual Studio Code be downloaded?
+
+**Answer:** From the official website: `https://code.visualstudio.com`.
+
+---
+
+# Question: What do the icons on the left side of Visual Studio Code represent?
+
+**Answer:** They are used to navigate around your project and access development tools such as files, source control, and extensions.
+
+---
+
+# Question: How do you open a folder in Visual Studio Code?
+
+**Answer:** Click the top icon on the sidebar to open the file explorer, then select a folder to open.
+
+---
+
+# Question: What is the effect of opening a folder in Visual Studio Code?
+
+**Answer:** It sets that folder as the root for your project and terminal, enabling file creation and Git operations within that context.
+
+---
