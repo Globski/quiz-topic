@@ -1,3 +1,42 @@
+# Question: What are Git and GitHub, and why are they important?
+
+**Answer:** Git is a free and open-source version control system that helps programmers track code changes. GitHub is a platform that hosts Git repositories, enabling collaboration and sharing. They are essential tools widely used in software development.
+
+---
+
+# Question: What is version control?
+
+**Answer:** Version control is a method programmers use to track and manage code changes over time, enabling them to revert to previous versions or investigate bugs.
+
+---
+
+# Question: How does Git help programmers manage code changes?
+
+**Answer:** Git allows programmers to save an initial version of their code and continually save updates, creating a history of changes that can be reviewed or reverted as needed.
+
+---
+
+# Question: Why do programmers often use the terminal or CLI instead of graphical applications?
+
+**Answer:** Because it helps them learn the core Git workflow and get accustomed to command-line environments, which are frequently used in development tasks like installing software and running programs.
+
+---
+
+
+# Question: What is a code editor used for?
+
+**Answer:** A code editor is used to write and edit code.
+
+---
+
+
+
+
+
+
+
+
+
 # Question: What does the landing page of a GitHub project depict?
 
 **Answer:**
