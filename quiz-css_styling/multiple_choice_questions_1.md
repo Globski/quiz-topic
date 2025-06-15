@@ -220,6 +220,73 @@
 
 ---
 
+# Question: How do you use the W3C CSS Validator with a local CSS file?
+
+**Answer:** Select the “File Upload” option on the validator site, browse to your CSS file (e.g., `style.css` in the CSS folder), choose the file, then click the “Check” button.
+
+---
+
+# Question: What message do you see if your CSS file has no errors in the W3C CSS Validator?
+
+**Answer:** “Congratulations! No Error Found.”
+
+---
+
+# Question: What are the three most common levels of CSS selectors?
+
+**Answer:** Element selectors, class selectors, and ID selectors.
+
+---
+
+# Question: What is an element selector in CSS?
+
+**Answer:** An element selector targets all instances of a specific HTML tag, such as `body`, `p`, or `h1`.
+
+---
+
+# Question: Why did other elements’ text size increase when only the `body` was targeted?
+
+**Answer:** Because child elements inherit the font size from the `body` element due to CSS inheritance.
+
+---
+
+# Question: What happens when you apply the `p` element selector with `color: purple`?
+
+**Answer:** All paragraph (`<p>`) elements on the page are colored purple.
+
+---
+
+# Question: What is the second type of selector after element selectors?
+
+**Answer:** Class selectors.
+
+---
+
+# Question: How do you define a class selector in CSS?
+
+**Answer:** Use a period (`.`) followed by the class name (e.g., `.gray`).
+
+---
+
+# Question: How do you apply a class to an HTML element?
+
+**Answer:** Use the `class` attribute in the HTML tag, like `<p class="gray">`.
+
+---
+
+# Question: Can the same class be applied to multiple HTML elements?
+
+**Answer:** Yes, classes are reusable and can be applied to multiple elements on the same page.
+
+---
+
+# Question: Why should class names be meaningful in CSS?
+
+**Answer:** To make the code easier to understand and maintain for others as well as yourself.
+
+---
+
+
 
 
 
