@@ -1429,3 +1429,10 @@ Highly recommends VS Code as the best editor for web development and many other 
 **Answer:** `Ctrl + B`
 
 ---
+
+
+# Question: What does Visual Studio Code provide when writing `background-color`?
+
+**Answer:** A list of color names for autocomplete suggestions.
+
+---
