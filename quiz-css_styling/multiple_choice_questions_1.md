@@ -561,6 +561,104 @@ Clicking the link scrolls the page to the element with the matching id.
 
 ---
 
+# Question: Why does a CSS rule using the universal selector (`*`) apply to all elements?
+
+**Answer:** Because the universal selector directly targets all elements on the page, not through inheritance but by explicit selection.
+
+---
+
+# Question: Does the universal selector cause inheritance?
+
+**Answer:** No, it selects all elements directly; it does not rely on or trigger inheritance.
+
+---
+
+# Question: What does the acronym DRY stand for in coding best practices?
+
+**Answer:** Don't Repeat Yourself.
+
+---
+
+# Question: How does CSS inheritance support the DRY principle?
+
+**Answer:** Inheritance allows shared properties (like font settings) to be written once on a parent element and automatically apply to child elements, reducing repetitive code.
+
+---
+
+# Question: Which CSS properties do form elements typically not inherit?
+
+**Answer:** Font size and other typography-related settings.
+
+---
+
+# Question: Which form elements typically need to have `font: inherit` explicitly set to receive font styles?
+
+**Answer:** `button`, `input`, `textarea`, and `select`.
+
+---
+
+# Question: How can you make form elements like input and button inherit font styles?
+
+**Answer:** By explicitly setting `font: inherit;` in their CSS rule.
+
+---
+
+# Question: Which two HTML elements are commonly used to apply inherited CSS properties site-wide?
+
+**Answer:** The `body` element and the `html` element.
+
+---
+
+# Question: Which HTML element appears only once per page and is often used for setting global styles?
+
+**Answer:** Both the `html` and `body` elements appear once and can be used for setting global inherited styles.
+
+---
+
+# Question: Why might someone prefer using the `html` selector over the `body` selector for font settings?
+
+**Answer:** Because `html` applies inheritance from the root and keeps font settings separate from the body’s default styles, offering better organization and clarity.
+
+---
+
+# Question: What is the purpose of the `main` semantic element in HTML?
+
+**Answer:** To represent the main content of the document, and it should appear only once per page.
+
+---
+
+# Question: What is the least specific type of CSS selector?
+
+**Answer:** The element selector (e.g., `p`, `div`).
+
+---
+
+# Question: Which CSS selector type is more specific than an element selector but less specific than an ID selector?
+
+**Answer:** A class selector (e.g., `.gray`).
+
+---
+
+# Question: What is the most specific CSS selector type among element, class, and ID selectors?
+
+**Answer:** The ID selector (e.g., `#main-heading`).
+
+---
+
+# Question: What is the `!important` flag in CSS used for?
+
+**Answer:** To force a CSS rule to override all other rules, regardless of specificity.
+
+---
+
+# Question: Why is using `!important` in CSS generally discouraged?
+
+**Answer:** It bypasses normal specificity rules and can lead to code that is difficult to debug and maintain.
+
+---
+
+
+
 
 
 
