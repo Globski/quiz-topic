@@ -76,6 +76,153 @@
 
 ---
 
+# Question: What CSS property was added to increase the size of the paragraph text?
+
+**Answer:** `font-size: 64px;`
+
+---
+
+# Question: What is the purpose of using `<style>` tags inside the `<head>` section of an HTML file?
+
+**Answer:** To define an internal stylesheet directly within the HTML document.
+
+---
+
+# Question: What happened when both external and internal stylesheets defined the same CSS property?
+
+**Answer:** The last-read stylesheet took precedence, so the internal style's `color: limegreen` overrode the external one.
+
+---
+
+# Question: What is the browser’s interpretation of multiple stylesheets?
+
+**Answer:** The browser treats both internal and external stylesheets equally; it follows the cascade order based on the sequence they appear in the HTML.
+
+---
+
+# Question: What determines which CSS rule takes precedence when the same selector is styled in multiple places?
+
+**Answer:** The cascade order—whichever rule appears last in the HTML is applied.
+
+---
+
+# Question: What was the result of moving the `<link>` tag below the internal `<style>` tag?
+
+**Answer:** The external stylesheet was applied last, so the `color: purple` rule took precedence over the internal `color: limegreen` rule.
+
+---
+
+# Question: What is the third method of applying CSS in HTML, after external and internal stylesheets?
+
+**Answer:** Inline CSS.
+
+---
+
+# Question: What is inline CSS?
+
+**Answer:** Inline CSS is a method of styling by adding the `style` attribute directly to an HTML element.
+
+---
+
+# Question: Why should inline CSS generally be avoided?
+
+**Answer:** Inline CSS mixes content with presentation, reduces reusability, and overrides other styles, making it harder to maintain.
+
+---
+
+# Question: What does the `p` selector target in a CSS rule?
+
+**Answer:** The `p` selector targets all `<p>` (paragraph) elements in the HTML document.
+
+---
+
+# Question: When is it acceptable to omit a semicolon in a CSS declaration?
+
+**Answer:** A semicolon can be omitted if there's only one declaration in a rule set.
+
+---
+
+# Question: Why does inline CSS take precedence over internal or external stylesheets?
+
+**Answer:** Inline CSS takes precedence because it is applied directly to the HTML element, overriding styles from internal or external sources.
+
+---
+
+# Question: Why is external CSS considered best practice over inline or internal CSS?
+
+**Answer:** External CSS promotes separation of concerns by keeping the style rules in a separate file, making code easier to manage and reuse.
+
+---
+
+# Question: What two elements should be removed from an HTML document to transition fully to using external CSS?
+
+**Answer:** The inline styles on elements and the internal `<style>` element should be removed.
+
+---
+
+# Question: What is the result in the browser when inline and internal CSS are removed and only external CSS is used?
+
+**Answer:** The styles defined in the external stylesheet take effect, such as text color returning to purple if specified there.
+
+---
+
+# Question: What are the three main parts of a CSS rule set according to the MDN (Mozilla Developer Network)?
+
+**Answer:** Selector, property, and property value.
+
+---
+
+# Question: What constitutes a CSS declaration?
+
+**Answer:** A CSS declaration consists of a property and its corresponding value (e.g., `color: red`).
+
+---
+
+# Question: What is a CSS rule or rule set?
+
+**Answer:** A CSS rule set (often just called a "rule") includes the selector and all declarations within its block.
+
+---
+
+# Question: How is "color" spelled in CSS, and why is this important?
+
+**Answer:** "Color" must be spelled using American English (without the "u"). Misspelling it (e.g., "colour") causes the declaration to be ignored.
+
+---
+
+# Question: What happens in CSS if a property is misspelled?
+
+**Answer:** The declaration is silently ignored without throwing an error, potentially making debugging harder.
+
+---
+
+# Question: Why doesn’t CSS throw errors like traditional programming languages?
+
+**Answer:** CSS silently ignores invalid or unrecognized rules or properties, meaning mistakes don't cause execution errors but just fail to apply.
+
+---
+
+# Question: How can you detect silent errors or ignored declarations in your CSS?
+
+**Answer:** By using a CSS validation tool like the W3C CSS Validation Service to check for errors or invalid properties.
+
+---
+
+# Question: What is the W3C CSS Validation Service used for?
+
+**Answer:** It is used to validate CSS files to ensure they follow proper syntax and standards, helping detect issues in styling.
+
+---
+
+# Question: How do you use the W3C CSS Validation Service for local CSS files?
+
+**Answer:** By selecting the "File Upload" option and uploading the `style.css` file from your project folder.
+
+---
+
+
+
+
 
 
 
