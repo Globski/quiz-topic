@@ -501,6 +501,133 @@ align-items: center;
 
 ---
 
+# Question: What effect does `flex-direction: row-reverse` have on `justify-content` values?
+
+**Answer:** It reverses the main axis direction, so `flex-start` aligns items to the right and `flex-end` to the left.
+
+---
+
+# Question: What does `flex-direction: column` do?
+
+**Answer:** It changes the main axis to run from top to bottom, stacking elements vertically.
+
+---
+
+# Question: When using `flex-direction: column`, which property centers elements **horizontally**?
+
+**Answer:** `align-items: center`.
+
+---
+
+# Question: Why is it important to remember the `flex-direction` of your layout?
+
+**Answer:** Because it changes the orientation of the main and cross axes, which directly affects how alignment properties like `justify-content` and `align-items` behave.
+
+---
+
+# Question: What is the default value of `flex-direction` in Flexbox?
+
+**Answer:** `row`.
+
+---
+
+# Question: What Flexbox configuration would you use to align all elements vertically while centering them horizontally?
+
+**Answer:**
+
+```css
+display: flex;
+flex-direction: column;
+align-items: center;
+```
+
+---
+
+# Question: What does the `gap` property do in a Flexbox layout?
+
+**Answer:** It creates consistent spacing between items without needing to use margins.
+
+---
+
+# Question: Why is the `gap` property preferred over using margins in Flexbox?
+
+**Answer:** Because it simplifies spacing between items and avoids issues like collapsing margins or asymmetric gaps.
+
+---
+
+# Question: What does the `flex-wrap` property control?
+
+**Answer:** It determines whether Flexbox items stay in one line or wrap onto multiple lines when there isn't enough space.
+
+---
+
+# Question: What are the two main values of the `flex-wrap` property?
+
+**Answer:** `wrap` and `nowrap`.
+
+---
+
+# Question: What happens when you use `flex-wrap: wrap`?
+
+**Answer:** Items will wrap onto new lines when there isn't enough space in one line, creating a responsive layout.
+
+---
+
+# Question: What happens when you use `flex-wrap: nowrap`?
+
+**Answer:** Items stay on a single line and shrink to fit the container, even if they overflow.
+
+---
+
+# Question: What Flexbox configuration can create a responsive layout that centers content and wraps items as needed?
+
+**Answer:**
+
+```css
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+```
+
+---
+
+# Question: Why might there be a large gap between wrapped lines when using `flex-wrap`?
+
+**Answer:** Because each wrapped line becomes its own flex container with its own main and cross axes, and spacing is controlled per line.
+
+---
+
+# Question: How does the number of items affect layout behavior when using `flex-wrap`?
+
+**Answer:** More items can lead to multiple line breaks, with each line having its own main and cross axes, which impacts alignment.
+
+---
+
+# Question: How does `align-items` behave when multiple flex lines are present due to `flex-wrap`?
+
+**Answer:** It controls the alignment of items within **each individual line**, not across all lines.
+
+---
+
+# Question: What does `align-items: flex-start` do in a multi-line Flexbox layout?
+
+**Answer:** Aligns items at the start of each cross axis for each individual flex line.
+
+---
+
+# Question: What does `align-items: flex-end` do in a multi-line Flexbox layout?
+
+**Answer:** Aligns items at the end of each cross axis for each individual flex line.
+
+---
+
+# Question: What does `align-items: center` do in a multi-line Flexbox layout?
+
+**Answer:** Aligns items to the center of each cross axis for each individual flex line.
+
+---
+
 
 
 
