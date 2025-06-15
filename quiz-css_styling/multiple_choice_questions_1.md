@@ -286,6 +286,114 @@
 
 ---
 
+# Question: Why did the gray class override the purple color set for all paragraph elements?
+
+**Answer:** Because class selectors are more specific than element selectors, so the `.gray` class overrode the `p` selector's `color: purple` rule.
+
+---
+
+# Question: What is the most commonly used selector type in CSS?
+
+**Answer:** Class selectors are the most common type used in CSS.
+
+---
+
+# Question: What is more specific than a class selector in CSS?
+
+**Answer:** An ID selector is more specific than a class selector.
+
+---
+
+# Question: How do you define and use an ID selector in CSS?
+
+**Answer:** Use a hash symbol (`#`) followed by the ID name (e.g., `#second`) and apply it to an element with the `id="second"` attribute in HTML.
+
+---
+
+# Question: Why should ID selectors be used sparingly in CSS?
+
+**Answer:** Because IDs should be unique in an HTML document, and it's considered bad practice to use them for styling. Classes or element selectors are preferred.
+
+---
+
+# Question: What are some valid non-styling uses of the `id` attribute in HTML?
+
+**Answer:** Linking a form input to a label, or referencing elements via JavaScript.
+	•	Linking a form input to its <label> for better accessibility.
+	•	Referencing and manipulating elements via JavaScript.
+	•	Creating internal page navigation (anchor links).
+
+Examples:
+
+1. Linking a label to an input
+```
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+```
+The for attribute in the label connects to the input’s id, improving accessibility and allowing the user to click the label to focus the input.
+
+---
+
+2. JavaScript reference
+```
+<button id="myButton" onclick="alert('Button clicked!')">Click Me</button>
+
+<script>
+  document.getElementById('myButton').innerText = 'New Button Text';
+</script>
+```
+JavaScript uses the id to select and manipulate the element.
+
+---
+
+3. Internal page navigation
+```
+<a href="#section2">Go to Section 2</a>
+
+<h2 id="section2">Section 2</h2>
+<p>This is the content of section 2.</p>
+```
+Clicking the link scrolls the page to the element with the matching id.
+
+---
+
+# Question: What happens when you set a style for `h1` in CSS?
+
+**Answer:** The style applies to the single `h1` element on the page.
+
+---
+
+# Question: How do you apply the same CSS rule to multiple selectors?
+
+**Answer:** Group selectors with a comma (`,`) between them (e.g., `h1, h2`).
+
+---
+
+# Question: What happens if you omit the comma when writing grouped selectors like `h1 h2`?
+
+**Answer:** It creates a descendant selector, targeting only `h2` elements nested inside `h1` elements, which will likely not match any elements and result in no styles applied.
+
+---
+
+# Question: What is the purpose of using a descendant selector like `h1 h2`?
+
+**Answer:** It selects `h2` elements that are nested within `h1` elements, which is useful when targeting specific child elements inside a parent.
+
+---
+
+# Question: How can you target a `span` element inside a `p` element in CSS?
+
+**Answer:** Use the descendant selector `p span`.
+
+---
+
+# Question: What does the `text-transform: uppercase` property do?
+
+**Answer:** It converts all text within the targeted element to uppercase letters.
+
+---
+
+
 
 
 
