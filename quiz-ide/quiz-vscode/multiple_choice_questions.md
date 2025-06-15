@@ -1410,3 +1410,22 @@ Highly recommends VS Code as the best editor for web development and many other 
 **Answer:** Typing an exclamation mark (`!`) and pressing `Enter` generates a basic HTML boilerplate.
 
 ---
+
+
+# Question: How can you start Live Server in Visual Studio Code?
+
+**Answer:** You can click “Go Live” at the bottom right or right-click a file and select “Open with Live Server.”
+
+---
+
+# Question: What is the main benefit of using Live Server in development?
+
+**Answer:** Live Server simulates a real web server environment by automatically reloading the browser when files are saved.
+
+---
+
+# Question: What keyboard shortcut use to hide the file explorer in Visual Studio Code?
+
+**Answer:** `Ctrl + B`
+
+---
