@@ -326,7 +326,7 @@
 Examples:
 
 1. Linking a label to an input
-```
+```html
 <label for="username">Username:</label>
 <input type="text" id="username" name="username">
 ```
@@ -335,7 +335,7 @@ The for attribute in the label connects to the input’s id, improving accessibi
 ---
 
 2. JavaScript reference
-```
+```js
 <button id="myButton" onclick="alert('Button clicked!')">Click Me</button>
 
 <script>
@@ -347,7 +347,7 @@ JavaScript uses the id to select and manipulate the element.
 ---
 
 3. Internal page navigation
-```
+```html
 <a href="#section2">Go to Section 2</a>
 
 <h2 id="section2">Section 2</h2>
@@ -387,9 +387,93 @@ Clicking the link scrolls the page to the element with the matching id.
 
 ---
 
-# Question: What does the `text-transform: uppercase` property do?
+# Question: What does applying the `text-transform: uppercase;` property to a span do?
 
-**Answer:** It converts all text within the targeted element to uppercase letters.
+**Answer:** It transforms the text content inside the span to uppercase.
+
+---
+
+# Question: Why might applying inline styles directly to multiple elements not be ideal?
+
+**Answer:** Inline styles are not reusable or scalable; applying them directly makes the CSS disorganized and harder to maintain.
+
+---
+
+# Question: How can you make the styling of multiple span elements reusable and cleaner?
+
+**Answer:** By defining a CSS class (e.g., `.highlight`) and applying it to each span element, making the styling reusable and the CSS more organized.
+
+---
+
+# Question: What is the benefit of using a class like `.highlight` instead of repeating the same inline styles?
+
+**Answer:** It improves code reusability, maintainability, and flexibility by allowing a single change in the CSS file to affect all elements using that class.
+
+---
+
+# Question: What is the universal selector in CSS and how is it written?
+
+**Answer:** The universal selector is written as `*` and selects all elements on the page.
+
+---
+
+# Question: In what scenario is the universal selector commonly used?
+
+**Answer:** It is typically used in a CSS reset to apply base styles to all elements.
+
+---
+
+# Question: What effect does applying a font-family style using the universal selector have?
+
+**Answer:** It changes the font for all text on the page to the specified font (e.g., `monospace`), overriding any default font settings.
+
+---
+
+# Question: Why is the universal selector not commonly used for general styling?
+
+**Answer:** Because it affects every element indiscriminately, which can lead to unintended styling consequences and performance issues.
+
+---
+
+# Question: What does CSS stand for and what does "cascading" refer to?
+
+**Answer:** CSS stands for Cascading Style Sheets; "cascading" refers to the top-down application of styles, where later rules can override earlier ones.
+
+---
+
+# Question: In what order does the browser read and apply CSS rules?
+
+**Answer:** The browser reads CSS from top to bottom; later rules override earlier ones if they have the same specificity.
+
+---
+
+# Question: What happens when two conflicting style rules apply to the same element?
+
+**Answer:** The rule that appears last in the CSS (i.e., read later) is applied unless another rule has higher specificity.
+
+---
+
+# Question: How can class selectors override element selectors in CSS?
+
+**Answer:** Class selectors have higher specificity than element selectors, so they apply even if they appear earlier in the CSS.
+
+---
+
+# Question: If a class with a style appears above an element selector in the CSS file, which style is applied?
+
+**Answer:** The class style is applied because class selectors are more specific than element selectors, regardless of order.
+
+---
+
+# Question: What happens if a paragraph has both a class and an element style applied?
+
+**Answer:** The class style takes precedence due to its higher specificity.
+
+---
+
+# Question: If a class is removed from an element, which style will apply?
+
+**Answer:** The element selector style will apply, assuming there are no more specific styles remaining.
 
 ---
 
