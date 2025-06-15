@@ -310,6 +310,199 @@
 
 ---
 
+# Question: What is the first step when using Flexbox to create a layout in HTML?
+
+**Answer:** Define a reference point in HTML, such as the `<body>` or a specific container element.
+
+---
+
+# Question: What happens to elements when `display: flex` is applied to their parent container?
+
+**Answer:** The child elements are aligned side by side (horizontally), rather than stacked vertically.
+
+---
+
+# Question: What are the default display values for most HTML elements?
+
+**Answer:** `block` or `inline`.
+
+---
+
+# Question: What behavior do block-level elements have by default?
+
+**Answer:** Block-level elements take up the entire width of the screen and force subsequent elements onto the next line.
+
+---
+
+# Question: What property initiates the Flexbox layout system?
+
+**Answer:** `display: flex`.
+
+---
+
+# Question: What are the two axes used in Flexbox to position items?
+
+**Answer:** The **main axis** and the **cross axis**.
+
+---
+
+# Question: Which property controls positioning along the main axis in Flexbox?
+
+**Answer:** `justify-content`.
+
+---
+
+# Question: What does the `justify-content: flex-start` value do?
+
+**Answer:** Aligns items to the start of the main axis (default behavior, aligns items to the left).
+
+---
+
+# Question: What does the `justify-content: flex-end` value do?
+
+**Answer:** Aligns items to the end of the main axis (right side).
+
+---
+
+# Question: What does the `justify-content: center` value do?
+
+**Answer:** Aligns items to the center of the main axis.
+
+---
+
+# Question: What two lines of CSS are needed to center elements horizontally using Flexbox?
+
+**Answer:**
+
+```css
+display: flex;  
+justify-content: center;
+```
+
+---
+
+# Question: What common CSS layout problems can Flexbox help solve easily?
+
+**Answer:** Centering elements and creating responsive layouts with minimal code.
+
+---
+
+# Question: What Flexbox axis must be used to align elements vertically?
+
+**Answer:** The cross axis.
+
+---
+
+# Question: Which CSS property is used to align elements along the cross axis?
+
+**Answer:** `align-items`.
+
+---
+
+# Question: What CSS value for `align-items` positions elements at the top of the container?
+
+**Answer:** `flex-start`.
+
+---
+
+# Question: What CSS value for `align-items` positions elements at the bottom of the container?
+
+**Answer:** `flex-end`.
+
+---
+
+# Question: What CSS value for `align-items` centers elements vertically in the container?
+
+**Answer:** `center`.
+
+---
+
+# Question: What three lines of CSS are needed to center elements both horizontally and vertically using Flexbox?
+
+**Answer:**
+
+```css
+display: flex;  
+justify-content: center;  
+align-items: center;
+```
+
+---
+
+# Question: Why does a Flexbox layout remain centered even when resizing the layout?
+
+**Answer:** Because Flexbox is inherently flexible and adapts to the size changes of the container.
+
+---
+
+# Question: What are the three advanced values for `justify-content` and `align-items`?
+
+**Answer:** `space-between`, `space-around`, and `space-evenly`.
+
+---
+
+# Question: What does the `space-between` value do?
+
+**Answer:** Distributes items evenly from left to right with the first and last items touching the edges of the container.
+
+---
+
+# Question: What is the behavior of `space-around` in Flexbox?
+
+**Answer:** Gives equal space on both sides of each element, but results in doubled spacing between adjacent elements compared to the edges.
+
+---
+
+# Question: What issue can arise when using `space-around` in Flexbox?
+
+**Answer:** The spacing between elements is twice as large as the space between the elements and the container's edges.
+
+---
+
+# Question: What is the advantage of using `space-evenly` in Flexbox?
+
+**Answer:** It distributes equal space between all items and between the items and container edges, resulting in perfectly balanced spacing.
+
+---
+
+# Question: Do `justify-content` and `align-items` automatically adjust to container size changes?
+
+**Answer:** Yes, all values adjust dynamically with container resizing.
+
+---
+
+# Question: Can the same values used in `justify-content` also be used in `align-items`?
+
+**Answer:** Yes, but they may not be meaningful if there is only one row of content.
+
+---
+
+# Question: What Flexbox property controls the direction of the main axis?
+
+**Answer:** `flex-direction`.
+
+---
+
+# Question: What is the default value of `flex-direction`?
+
+**Answer:** `row`.
+
+---
+
+# Question: What does `flex-direction: row` do?
+
+**Answer:** Sets the main axis to run from left to right.
+
+---
+
+# Question: What effect does `flex-direction: row-reverse` have?
+
+**Answer:** Reverses the main axis to run from right to left, with items ordered accordingly.
+
+---
+
+
+
 
 
 
