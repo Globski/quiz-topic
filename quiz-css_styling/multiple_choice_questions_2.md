@@ -1,3 +1,155 @@
+# Question: What property must be set on a container to start using Flexbox?
+
+**Answer:** The container must have `display: flex` set in the CSS.
+
+---
+
+# Question: What does setting `display: flex` do to a container's layout?
+
+**Answer:** It creates two invisible axes: a main axis and a cross axis, and aligns child items along the main axis by default.
+
+---
+
+# Question: What is the default direction of the main axis in Flexbox?
+
+**Answer:** Horizontal (left to right).
+
+---
+
+# Question: How do you change the main axis direction in Flexbox to vertical?
+
+**Answer:** Use the `flex-direction` property and set it to `column`.
+
+---
+
+# Question: What value of `flex-direction` sets the main axis to horizontal?
+
+**Answer:** `row`, which is also the default value.
+
+---
+
+# Question: What property is used to align items along the main axis?
+
+**Answer:** `justify-content`.
+
+---
+
+# Question: What does `justify-content: flex-start` do?
+
+**Answer:** Aligns items to the start of the main axis. This is the default.
+
+---
+
+# Question: What does `justify-content: flex-end` do?
+
+**Answer:** Pushes items to the end of the main axis.
+
+---
+
+# Question: What does `justify-content: center` do?
+
+**Answer:** Centers items along the main axis.
+
+---
+
+# Question: What does `justify-content: space-between` do?
+
+**Answer:** Distributes items evenly along the main axis, placing the first and last items at the ends with space in between.
+
+---
+
+# Question: What does `justify-content: space-around` do?
+
+**Answer:** Distributes items with equal space around them, including space on the outer edges.
+
+---
+
+# Question: What does `justify-content: space-evenly` do?
+
+**Answer:** Evenly distributes items so that the spacing between any two items (and the container edges) is equal.
+
+---
+
+# Question: What property is used to align items along the cross axis?
+
+**Answer:** `align-items`.
+
+---
+
+# Question: What does `align-items: flex-start` do?
+
+**Answer:** Aligns items at the start of the cross axis.
+
+---
+
+# Question: What does `align-items: flex-end` do?
+
+**Answer:** Aligns items at the end of the cross axis.
+
+---
+
+# Question: What does `align-items: center` do?
+
+**Answer:** Centers items along the cross axis.
+
+---
+
+# Question: What does `align-items: baseline` do?
+
+**Answer:** Aligns the baseline of text across items, so their text baselines line up.
+
+---
+
+# Question: How can you see the effect of `align-items: baseline` clearly?
+
+**Answer:** By increasing the font size of some items, you can see that the text baselines still align.
+
+---
+
+# Question: If `flex-direction` is not defined, what is the default value?
+
+**Answer:** `row`.
+
+---
+
+# Question: What is the default direction of the cross axis?
+
+**Answer:** Vertical (top to bottom), when `flex-direction` is `row`.
+
+---
+
+# Question: What happens to the main and cross axes when `flex-direction: column` is set?
+
+**Answer:** The main axis becomes vertical, and the cross axis becomes horizontal.
+
+---
+
+# Question: In Flexbox, which property determines how items behave when they exceed the container width?
+
+**Answer:** `flex-wrap`.
+
+---
+
+# Question: What is the default value of the `flex-wrap` property?
+
+**Answer:** `nowrap`.
+
+---
+
+# Question: What does setting `flex-wrap: wrap` do?
+
+**Answer:** Allows Flex items to wrap onto multiple lines instead of trying to fit into one.
+
+---
+
+
+
+
+
+
+
+
+
 # Question: What does CSS stand for?
 
 **Answer:**
