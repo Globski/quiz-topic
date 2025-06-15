@@ -1399,6 +1399,101 @@ grid-template-areas:
 
 ---
 
+# Question: What do the `justify-items` and `align-items` properties control in a CSS Grid container?
+
+**Answer:** They control how items are aligned **inside their grid cells** along the **row axis** (`justify-items`) and the **column axis** (`align-items`).
+
+---
+
+# Question: What are the default values of `justify-items` and `align-items` in a CSS Grid?
+
+**Answer:** Both have a default value of `stretch`, causing items to stretch to fill their grid area.
+
+---
+
+# Question: What effect does changing `justify-items` to `start` have on the layout?
+
+**Answer:** Items align to the **start of the row axis**, but remain stretched along the column axis unless `align-items` is also changed.
+
+---
+
+# Question: What effect does changing `align-items` to `end` have on grid items?
+
+**Answer:** Items align to the **end of the column axis**, allowing vertical positioning within their grid cells.
+
+---
+
+# Question: How do you align a **specific** grid item differently from the rest?
+
+**Answer:** Use the `justify-self` and `align-self` properties on that individual grid item.
+
+---
+
+# Question: What does the `justify-self` property do?
+
+**Answer:** It overrides the horizontal (row axis) alignment of a **single** grid item within its cell.
+
+---
+
+# Question: What does the `align-self` property do?
+
+**Answer:** It overrides the vertical (column axis) alignment of a **single** grid item within its cell.
+
+---
+
+# Question: What properties allow you to align the **entire grid** inside its container?
+
+**Answer:** `justify-content` (aligns along the row axis) and `align-content` (aligns along the column axis).
+
+---
+
+# Question: What values do `justify-content` and `align-content` accept?
+
+**Answer:** `start`, `center`, `baseline`, `space-between`, `space-around`, and `space-evenly`.
+
+---
+
+# Question: What is the difference between `justify-items` and `justify-content`?
+
+**Answer:** `justify-items` aligns items **within** their individual grid cells, while `justify-content` aligns the **entire grid** within the container.
+
+---
+
+# Question: What is a good way to create a responsive CSS grid **without using media queries**?
+
+**Answer:** Use `repeat(auto-fit, minmax(100px, 1fr))` for `grid-template-columns`.
+
+---
+
+# Question: How does `auto-fit` work in CSS Grid?
+
+**Answer:** It fills the row with as many columns as will fit based on the defined minimum size, and automatically wraps extra items to new rows as needed.
+
+---
+
+# Question: What happens if items in a grid using `auto-fit` and `minmax(100px, 1fr)` can no longer fit in a row?
+
+**Answer:** They wrap onto the next row, making the grid automatically responsive.
+
+---
+
+# Question: What is the difference between `repeat(4, 1fr)` and `repeat(auto-fit, minmax(100px, 1fr))`?
+
+**Answer:** `repeat(4, 1fr)` creates exactly four equal-width columns regardless of screen size, while `auto-fit` dynamically adjusts the number of columns based on available space.
+
+---
+
+# Question: How would you write a CSS Grid that has four rows of 100px and columns that automatically wrap when items reach 100px minimum width?
+
+**Answer:**
+
+```css
+grid-template-rows: repeat(4, 100px);  
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+```
+
+---
+
 
 
 
