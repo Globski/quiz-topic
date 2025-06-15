@@ -268,6 +268,51 @@
 
 ---
 
+# Question: What Flexbox property allows individual items to override the `align-items` value set on the container?
+
+**Answer:** `align-self`.
+
+---
+
+# Question: What values can be used with the `align-self` property?
+
+**Answer:** `flex-start`, `flex-end`, `center`, and `baseline`.
+
+---
+
+# Question: What Flexbox property allows changing the visual order of items regardless of their order in the HTML?
+
+**Answer:** `order`.
+
+---
+
+# Question: What is the default value of the `order` property in Flexbox?
+
+**Answer:** `0`.
+
+---
+
+# Question: How can you make the last item appear first using the `order` property?
+
+**Answer:** Set its `order` value to `-1`.
+
+---
+
+# Question: What happens if an item is given an `order` value of `1` while all other items remain at the default?
+
+**Answer:** That item will appear after the others in the layout.
+
+---
+
+# Question: Why should the `order` property be used cautiously?
+
+**Answer:** Because it can break the semantic structure and accessibility of the HTML document.
+
+---
+
+
+
+
 
 
 
