@@ -1295,6 +1295,110 @@ grid-column: 5 / 7;
 
 ---
 
+# Question: How can you set a minimum and maximum width for a grid column?
+
+**Answer:** Use the `minmax()` function in `grid-template-columns`, where the first argument is the minimum size and the second is the maximum, e.g., `minmax(100px, 3fr)`.
+
+---
+
+# Question: What problem does `minmax()` solve in CSS Grid layouts?
+
+**Answer:** It prevents items from becoming too small by enforcing a minimum size while still allowing them to grow up to a maximum size.
+
+---
+
+# Question: What is the syntax for repeating values in CSS Grid using the `repeat()` function?
+
+**Answer:** `repeat(n, value)`, where `n` is the number of times to repeat the `value`. For example, `repeat(2, 100px)` creates two 100px rows.
+
+---
+
+# Question: What is the benefit of using the `repeat()` function in grid templates?
+
+**Answer:** It reduces repetition in code and improves readability by avoiding manually repeating the same value multiple times.
+
+---
+
+# Question: How do you add space between grid rows and columns using one value?
+
+**Answer:** Use the `grid-gap` property with a single value, e.g., `grid-gap: 10px;`, which applies equally to rows and columns.
+
+---
+
+# Question: What happens when you assign two values to the `grid-gap` property?
+
+**Answer:** The first value is applied to row gaps, and the second is applied to column gaps, e.g., `grid-gap: 10px 20px;`.
+
+---
+
+# Question: How does each line of `grid-template-areas` correspond to the layout?
+
+**Answer:** Each set of single quotes represents a row, and each word inside them represents a column. For example:
+
+```css
+grid-template-areas:
+  'header header'
+  'main aside'
+  'footer footer';
+```
+
+---
+
+# Question: How do you assign a grid item to a named section using `grid-template-areas`?
+
+**Answer:** Use the `grid-area` property on the item, assigning it a name like `grid-area: header;`, which corresponds to a name in `grid-template-areas`.
+
+---
+
+# Question: What is the purpose of using `grid-template-areas` in CSS Grid?
+
+**Answer:** It provides a more readable and declarative way to position items in the grid without needing to track line numbers.
+
+---
+
+# Question: How do you determine how many sets of single quotes to use in `grid-template-areas`?
+
+**Answer:** Match the number of sets of quotes to the number of rows defined in `grid-template-rows`.
+
+---
+
+# Question: How many values should be inside each set of quotes in `grid-template-areas`?
+
+**Answer:** Match the number of values to the number of columns defined in `grid-template-columns`.
+
+---
+
+# Question: What visual feedback does the browser give when using `grid-template-areas`?
+
+**Answer:** Developer tools will display the named areas in the layout, showing how elements are mapped visually based on the assigned names.
+
+---
+
+# Question: How would you structure `grid-template-areas` for a 3-row, 2-column layout with a header, main content, aside, and footer?
+
+**Answer:**
+
+```css
+grid-template-areas:
+  'header header'
+  'main aside'
+  'footer footer';
+```
+
+---
+
+# Question: What does each named area in `grid-template-areas` represent?
+
+**Answer:** Each name (e.g., `header`, `main`, `aside`, `footer`) corresponds to a section of the grid that you can assign to a grid item using `grid-area`.
+
+---
+
+# Question: Is it recommended to use a single grid for the entire webpage?
+
+**Answer:** No, in practice it's better to use multiple grids across different sections and components of the page.
+
+---
+
 
 
 
