@@ -477,6 +477,91 @@ Clicking the link scrolls the page to the element with the matching id.
 
 ---
 
+# Question: Why might a CSS rule not be applied even if it is written in the stylesheet?
+
+**Answer:** Because another rule with higher specificity (e.g. a class selector) is overriding it.
+
+---
+
+# Question: What is an example of a CSS class having higher specificity than an element selector?
+
+**Answer:** If a paragraph has the class `gray`, the rule for `.gray` will override a general `p` selector.
+
+---
+
+# Question: What tool in Chrome allows you to inspect and debug CSS rules?
+
+**Answer:** Chrome DevTools, accessed by right-clicking and choosing **Inspect**.
+
+---
+
+# Question: In Chrome DevTools, where can you see the CSS rules applied to an element?
+
+**Answer:** In the **Elements** tab under the **Styles** section.
+
+---
+
+# Question: What does it mean when a CSS rule appears crossed out in the Styles tab of DevTools?
+
+**Answer:** It means the rule is being overridden by a more specific rule.
+
+---
+
+# Question: What should you do when a CSS rule you wrote doesn’t appear to apply as expected?
+
+**Answer:** Use Chrome DevTools to inspect the element and review which rules are applied or overridden.
+
+---
+
+# Question: What is the rule of specificity in CSS?
+
+**Answer:** CSS applies the most specific rule among competing styles, overriding less specific ones.
+
+---
+
+# Question: What is CSS inheritance?
+
+**Answer:** Inheritance is when child elements receive CSS properties from their parent elements.
+
+---
+
+# Question: Which HTML element is typically the parent to all others and thus a source for inheritance?
+
+**Answer:** The `<body>` element.
+
+---
+
+# Question: Which types of CSS properties are typically inherited?
+
+**Answer:** Properties related to font and typography, such as `font-size`, `color`, `line-height`, and `text-align`.
+
+---
+
+# Question: Which types of CSS properties are **not** inherited?
+
+**Answer:** Properties unrelated to font and typography, such as `border`.
+
+---
+
+# Question: If a `border` property is set on the body, why doesn’t it apply to all child elements?
+
+**Answer:** Because `border` is not an inheritable property.
+
+---
+
+# Question: What is the difference between using the universal selector and relying on inheritance?
+
+**Answer:** The universal selector (`*`) directly selects and applies styles to all elements, while inheritance passes properties from parent to child elements.
+
+---
+
+# Question: How do you apply a border to all elements on the page using the universal selector?
+
+**Answer:** Use `* { border: 1px solid red; }`.
+
+---
+
+
 
 
 
