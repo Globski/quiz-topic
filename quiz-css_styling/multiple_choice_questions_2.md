@@ -1193,6 +1193,109 @@ grid-column: 5 / 7;
 
 ---
 
+# Question: What is the syntax to make a grid item start at row 3, end at row -1, and span columns from 1 to -1?
+
+**Answer:** Use `grid-area: 3 / 1 / -1 / -1;` which sets start-row, start-column, end-row, and end-column respectively.
+
+---
+
+# Question: What do negative numbers like `-1` represent in CSS Grid positioning?
+
+**Answer:** Negative numbers count from the end of the grid, so `-1` refers to the last line of the grid in either rows or columns.
+
+---
+
+# Question: How many CSS properties does the `grid-area` shorthand replace?
+
+**Answer:** It replaces six properties: `grid-row-start`, `grid-column-start`, `grid-row-end`, `grid-column-end`, and optionally positioning-related values.
+
+---
+
+# Question: How was layering done before CSS Grid, and what were its limitations?
+
+**Answer:** It required `position: absolute` and manually adjusting `top`, `right`, `bottom`, and `left`, making it difficult to maintain and position elements precisely.
+
+---
+
+# Question: How does CSS Grid simplify layering of items?
+
+**Answer:** By allowing items to occupy the same grid cells naturally, and controlling which is on top using `z-index`.
+
+---
+
+# Question: What grid-area values would position an item from row 2 to 4 and column 4 to 6?
+
+**Answer:** `grid-area: 2 / 4 / 4 / 6;`
+
+---
+
+# Question: How do you ensure an item appears on top of others in CSS Grid?
+
+**Answer:** Use `z-index: 1` or any higher value to bring it above other elements.
+
+---
+
+# Question: What happens if you place an item in the grid when all defined cells are already occupied?
+
+**Answer:** The grid automatically creates a new row, forming an **implicit grid**.
+
+---
+
+# Question: Why might a new item in an implicit grid appear smaller than other grid items?
+
+**Answer:** Because implicit grids don’t inherit the sizing defined in `grid-template-rows` and `grid-template-columns`.
+
+---
+
+# Question: How can you control the size of newly added rows in an implicit grid?
+
+**Answer:** Use the `grid-auto-rows` property on the container, e.g., `grid-auto-rows: 100px;`
+
+---
+
+# Question: What does the `grid-auto-flow: column;` property do?
+
+**Answer:** It changes the direction of implicit grid creation from rows (default) to columns.
+
+---
+
+# Question: How can you set the size of implicit columns when `grid-auto-flow` is set to `column`?
+
+**Answer:** Use `grid-auto-columns`, e.g., `grid-auto-columns: 100px;`
+
+---
+
+# Question: What units can be used inside `grid-template-rows` and `grid-template-columns`?
+
+**Answer:** Pixels (`px`), ems (`em`), root ems (`rem`), percentages (`%`), and fractional units (`fr`).
+
+---
+
+# Question: What does the `fr` unit in CSS Grid represent?
+
+**Answer:** A fractional portion of the available space in the grid container.
+
+---
+
+# Question: What happens if you define three columns with `1fr 1fr 1fr`?
+
+**Answer:** The available space is divided equally among the three columns.
+
+---
+
+# Question: How does changing one of the `fr` values affect column widths?
+
+**Answer:** The column with a higher `fr` value will occupy a larger portion of the available space. For example, `1fr 2fr 1fr` gives the second column twice as much width as the others.
+
+---
+
+# Question: Can you mix `fr` units with other units like `px` or `%` in the same grid definition?
+
+**Answer:** Yes, `fr` units can be mixed with other units without issues.
+
+---
+
+
 
 
 
