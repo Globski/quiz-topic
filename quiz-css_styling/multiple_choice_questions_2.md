@@ -971,6 +971,79 @@ gap: 10px;
 
 ---
 
+# Question: What is the "old school" CSS technique to push all other elements to the right in a navigation bar?
+
+**Answer:** Use `margin-right: auto` on the leftmost element (e.g., company logo) to push all other elements to the right.
+
+---
+
+# Question: In a navigation bar, how does `margin-right: auto` help with layout?
+
+**Answer:** It forces the element with the margin to stay on the left while pushing the subsequent elements to the right.
+
+---
+
+# Question: What are the main axes used in CSS Flexbox for layout alignment?
+
+**Answer:** The **main axis** and the **cross axis**.
+
+---
+
+# Question: Which Flexbox properties align elements along the main and cross axes?
+
+**Answer:** `justify-content` aligns along the main axis, and `align-items` aligns along the cross axis.
+
+---
+
+# Question: How can you wrap elements to the next line using Flexbox?
+
+**Answer:** Use `flex-wrap: wrap`.
+
+---
+
+# Question: What Flexbox properties control element resizing?
+
+**Answer:** `flex-grow` and `flex-shrink`.
+
+---
+
+# Question: How can you apply different sizing behaviors to each element in a flex container?
+
+**Answer:** Assign different values to `flex-grow` and `flex-shrink` for each element.
+
+---
+
+# Question: Which additional CSS techniques can be combined with Flexbox for layout control?
+
+**Answer:** Use **minimum and maximum sizes** and **media queries**.
+
+---
+
+# Question: What layout scenarios make CSS Grid a better choice than Flexbox?
+
+**Answer:** CSS Grid is better for creating **more complex layouts** or **simplifying code** with **fewer lines**.
+
+---
+
+# Question: What is the common Flexbox approach to center a `<div>`?
+
+**Answer:** Use `display: flex; justify-content: center; align-items: center;`.
+
+---
+
+# Question: What is the CSS Grid equivalent to center a `<div>` in fewer lines?
+
+**Answer:** Use `display: grid; place-content: center;`.
+
+---
+
+# Question: How many lines of CSS are typically required to center a div using Flexbox vs. Grid?
+
+**Answer:** Flexbox requires **3 lines**; Grid requires **2 lines**.
+
+---
+
+
 
 
 
