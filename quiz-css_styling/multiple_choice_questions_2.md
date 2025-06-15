@@ -628,6 +628,115 @@ align-items: center;
 
 ---
 
+# Question: What does the `align-content` property control in Flexbox?
+
+**Answer:** It controls the alignment of **all lines together** in a multi-line flex container along the cross axis.
+
+---
+
+# Question: What is the default value of the `align-content` property?
+
+**Answer:** `space-around`.
+
+---
+
+# Question: How does `align-items` differ from `align-content`?
+
+**Answer:** `align-items` aligns **individual items** within each line on the cross axis, while `align-content` aligns **all lines as a group** on the cross axis.
+
+---
+
+# Question: What three Flexbox properties must be centered to achieve a perfectly centered layout that adapts to wrapping?
+
+**Answer:**
+
+```css
+justify-content: center;
+align-items: center;
+align-content: center;
+```
+
+---
+
+# Question: How can you apply different vertical and horizontal gaps between Flexbox items?
+
+**Answer:** Use `row-gap` for vertical spacing and `column-gap` for horizontal spacing.
+
+---
+
+# Question: What does `row-gap: 20px; column-gap: 10px;` do in a Flexbox layout?
+
+**Answer:** It sets a 20px gap between rows and a 10px gap between columns.
+
+---
+
+# Question: Why is `gap` usually preferred over `row-gap` and `column-gap` in Flexbox layouts?
+
+**Answer:** Because most layouts only need uniform spacing, making the single `gap` property simpler and more efficient to use.
+
+---
+
+# Question: Why are `row-gap` and `column-gap` more relevant to Grid layouts than Flexbox?
+
+**Answer:** Because Grid layouts typically involve both row and column structures, making separate control of horizontal and vertical gaps more useful.
+
+---
+
+# Question: Can Flexbox be used on any HTML element or only on the `<body>`?
+
+**Answer:** It can be used on **any HTML element**, not just the `<body>`.
+
+---
+
+# Question: How can you center the numbers **inside each box** using Flexbox?
+
+**Answer:**
+
+```css
+display: flex;
+justify-content: center;
+align-items: center;
+```
+
+---
+
+# Question: When centering content **inside flex items**, where should the Flexbox properties be applied?
+
+**Answer:** On the **individual item containers** (e.g., the box selectors), not the outer parent container.
+
+---
+
+# Question: What is the first step to create a layout where boxes resize responsively without wrapping?
+
+**Answer:** Set `display: flex` on the container and **do not use** `flex-wrap`.
+
+---
+
+# Question: What Flexbox property enables boxes to shrink when the viewport gets too small?
+
+**Answer:** `flex-shrink`.
+
+---
+
+# Question: On which elements is the `flex-shrink` property applied?
+
+**Answer:** On the **flex items**, not the container.
+
+---
+
+# Question: What are the only two properties required on the container for a basic responsive resizing layout?
+
+**Answer:**
+
+```css
+display: flex;
+gap: 10px;
+```
+
+---
+
+
+
 
 
 
