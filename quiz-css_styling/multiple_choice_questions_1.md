@@ -657,6 +657,89 @@ Clicking the link scrolls the page to the element with the matching id.
 
 ---
 
+# Question: What happens when a CSS rule uses the `!important` flag?
+
+**Answer:** It overrides all other rules, regardless of specificity, and applies the declared style forcefully.
+
+---
+
+# Question: Why should the `!important` flag be avoided in CSS?
+
+**Answer:** Because it disrupts normal specificity rules, can lead to messy and unmanageable code, and is often a sign of poor CSS organization.
+
+---
+
+# Question: When is it acceptable to use `!important` in CSS?
+
+**Answer:** Only when you fully understand CSS specificity and have no better option; it should be used sparingly by experienced developers.
+
+---
+
+# Question: What learning tool can help understand CSS specificity?
+
+**Answer:** The Specificity Calculator.
+
+---
+
+# Question: In the specificity calculator, what is the score of an element selector like `h2`?
+
+**Answer:** 0-0-1 (or simply 1).
+
+---
+
+# Question: What is the specificity score of a class selector like `.gray`?
+
+**Answer:** 0-1-0 (or 10).
+
+---
+
+# Question: What is the specificity score of an ID selector like `#second`?
+
+**Answer:** 1-0-0 (or 100).
+
+---
+
+# Question: If an element has multiple classes, how does that affect its specificity score?
+
+**Answer:** The specificity score adds up per class. For example, two classes (`.highlight.gray`) result in a score of 0-2-0 (or 20).
+
+---
+
+# Question: Can multiple class selectors combined ever override an ID selector based on specificity?
+
+**Answer:** No, even multiple class selectors (e.g., 0-2-0 = 20) do not override an ID selector (1-0-0 = 100).
+
+---
+
+# Question: What is the purpose of using a specificity calculator?
+
+**Answer:** To compare selectors and understand why certain CSS rules override others based on specificity scoring.
+
+---
+
+# Question: What are the default colors of most browsers for web pages?
+
+**Answer:** A white background and black text.
+
+---
+
+# Question: What CSS property is used to change the background color of an element?
+
+**Answer:** `background-color`.
+
+---
+
+# Question: What HTML structure was used in the example webpage?
+
+**Answer:** An `h1` heading and three `article` elements, each containing an `h2` heading and a paragraph.
+
+---
+
+# Question: Which CSS declarations were already applied to make the sample page more readable?
+
+**Answer:** Larger font size, a specified font family, and line height.
+
+---
 
 
 
