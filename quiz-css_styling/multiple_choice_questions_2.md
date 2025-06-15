@@ -815,6 +815,88 @@ gap: 10px;
 
 ---
 
+# Question: What does the `flex-shrink` property do?
+
+**Answer:** It allows flex items to **shrink** when the container becomes too small to fit all items.
+
+---
+
+# Question: What is the default value of `flex-shrink`?
+
+**Answer:** `1` — this means all flex items shrink by default if necessary.
+
+---
+
+# Question: What happens when you set `flex-shrink: 0` on a flex item?
+
+**Answer:** The item will **not shrink**, even if there's not enough space, which may cause it to overflow.
+
+---
+
+# Question: When should you disable `flex-shrink` on a flex item?
+
+**Answer:** When you don’t want the item to distort — for example, an image or icon.
+
+---
+
+# Question: What is the primary difference between `flex-shrink` and `flex-grow`?
+
+**Answer:**
+
+* `flex-shrink` controls **how much an item can shrink** if needed.
+* `flex-grow` controls **how much an item can grow** to fill extra space.
+
+---
+
+# Question: What is the default value of `flex-grow`?
+
+**Answer:** `0`, meaning items do **not grow** unless explicitly allowed.
+
+---
+
+# Question: What happens if you set `flex-grow: 1` on all flex items?
+
+**Answer:** All items will **share the available space equally**, growing to fill the parent container.
+
+---
+
+# Question: What happens if one flex item has `flex-grow: 5` and others have `flex-grow: 1`?
+
+**Answer:** The item with `flex-grow: 5` will grow **five times faster** than the others, taking up more space proportionally.
+
+---
+
+# Question: Do `flex-grow` and `flex-shrink` work as simple on/off switches?
+
+**Answer:** No, they act as **multipliers** and determine the proportion of growing or shrinking **relative to other items**.
+
+---
+
+# Question: How can you prevent only the **first box** from shrinking in a layout?
+
+**Answer:** Assign `flex-shrink: 0` to the first box and leave the others at `flex-shrink: 1`.
+
+---
+
+# Question: How do you make a text element grow while its sibling elements (like buttons) stay the same size?
+
+**Answer:** Apply `flex-grow: 1` to the text element and `flex-grow: 0` to the others.
+
+---
+
+# Question: In the context of responsive design, why is `flex-grow` useful?
+
+**Answer:** It helps **dynamically allocate available space** to specific items, allowing layouts to **adapt smoothly to different screen sizes**.
+
+---
+
+# Question: Does setting `flex-grow: 5` guarantee that the item will be five times bigger?
+
+**Answer:** No, it means the item will grow **five times faster than other items**, not necessarily be five times the size.
+
+---
+
+
 
 
 
