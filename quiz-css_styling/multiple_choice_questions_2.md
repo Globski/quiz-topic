@@ -142,6 +142,133 @@
 
 ---
 
+# Question: What property enables wrapping behavior in a Flexbox container?
+
+**Answer:** `flex-wrap`.
+
+---
+
+# Question: What must be true for the `align-content` property to have any effect?
+
+**Answer:** The container must have `flex-wrap` set to `wrap`, and items must actually wrap to multiple lines.
+
+---
+
+# Question: What does the `align-content` property do in Flexbox?
+
+**Answer:** It aligns multiple lines of Flex items along the cross axis.
+
+---
+
+# Question: What values can `align-content` take?
+
+**Answer:** `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, and `space-evenly`.
+
+---
+
+# Question: How can you add spacing between Flex items?
+
+**Answer:** Use the `gap` property on the container.
+
+---
+
+# Question: Where should the `gap` property be applied to affect Flex items?
+
+**Answer:** On the Flex container.
+
+---
+
+# Question: Which Flexbox properties are applied to the **children** (Flex items) instead of the container?
+
+**Answer:** `flex-grow`, `flex-shrink`, `flex-basis`, `flex`, and `align-self`.
+
+---
+
+# Question: What does the `flex-grow` property do?
+
+**Answer:** It allows a Flex item to grow and take up remaining space in the container based on a proportional value.
+
+---
+
+# Question: What type of value does `flex-grow` accept?
+
+**Answer:** A unitless number representing proportion.
+
+---
+
+# Question: What happens if three Flex items all have `flex-grow: 1`?
+
+**Answer:** They will each grow equally and share the remaining space evenly.
+
+---
+
+# Question: What does the `flex-shrink` property control?
+
+**Answer:** It defines how quickly an item shrinks relative to other items when space is limited.
+
+---
+
+# Question: What value should `flex-shrink` be set to in order to prevent shrinking?
+
+**Answer:** `0`.
+
+---
+
+# Question: If `flex-shrink: 5` is applied to an item, what will happen?
+
+**Answer:** That item will shrink five times faster than items with `flex-shrink: 1`.
+
+---
+
+# Question: What does the `flex-basis` property define?
+
+**Answer:** The initial size of a Flex item before remaining space is distributed.
+
+---
+
+# Question: What happens if an item has both a `width` and a `flex-basis` value?
+
+**Answer:** The `flex-basis` value will override the `width`.
+
+---
+
+# Question: What happens if `flex-basis` is set to `0`?
+
+**Answer:** The item will shrink as much as possible before growing or distributing space.
+
+---
+
+# Question: What is the shorthand property for `flex-grow`, `flex-shrink`, and `flex-basis`?
+
+**Answer:** `flex`.
+
+---
+
+# Question: How many parameters can the `flex` shorthand accept?
+
+**Answer:** Up to three: `flex-grow`, `flex-shrink`, and `flex-basis`. The second and third are optional.
+
+---
+
+# Question: What happens when `flex` is set to a single value, like `flex: 1`?
+
+**Answer:** The `flex-shrink` and `flex-basis` values are automatically set to intelligent defaults.
+
+---
+
+# Question: What does the `align-self` property do?
+
+**Answer:** It overrides the `align-items` value on the container for a specific Flex item.
+
+---
+
+# Question: How would you align just one Flex item (e.g., the first item) to the center of the cross axis while others follow the container rule?
+
+**Answer:** Set `align-self: center` on that item.
+
+---
+
+
 
 
 
