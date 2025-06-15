@@ -1043,6 +1043,156 @@ gap: 10px;
 
 ---
 
+# Question: What is the key difference between Flexbox and CSS Grid in terms of layout dimensions?
+
+**Answer:** CSS Grid is two-dimensional, allowing positioning both horizontally and vertically at the same time.
+
+---
+
+# Question: What do the numbers on a CSS Grid represent?
+
+**Answer:** They represent **grid lines** — row lines and column lines used for positioning elements.
+
+---
+
+# Question: What are the three key components of a CSS Grid layout?
+
+**Answer:** **Cells**, **grid lines** (row and column lines), and **tracks** (rows and columns).
+
+---
+
+# Question: How do you begin creating a grid layout in HTML?
+
+**Answer:** By creating a container `<div>` with a class (e.g., `container`) and child `<div>`s with item classes (e.g., `item`, `item-1`, `item-2`, etc.).
+
+---
+
+# Question: What CSS property turns a container into a grid?
+
+**Answer:** `display: grid`
+
+---
+
+# Question: Why does setting `display: grid` not visually change anything by itself?
+
+**Answer:** Because no **rows** or **columns** have been defined yet.
+
+---
+
+# Question: How do you define rows and columns in a grid?
+
+**Answer:** Using the `grid-template-rows` and `grid-template-columns` properties.
+
+---
+
+# Question: How do `grid-template-rows` and `grid-template-columns` work?
+
+**Answer:** Each value defines one **track** (row or column); multiple values create multiple tracks.
+
+---
+
+# Question: What happens if you define `grid-template-columns: 100px 100px`?
+
+**Answer:** It creates two columns, each 100 pixels wide.
+
+---
+
+# Question: How do you create a grid with 6 rows and 6 columns of equal size?
+
+**Answer:** Set both `grid-template-rows` and `grid-template-columns` to six `100px` values.
+
+---
+
+# Question: How can you position an item using individual line number properties?
+
+**Answer:** Use `grid-row-start`, `grid-row-end`, `grid-column-start`, and `grid-column-end`.
+
+---
+
+# Question: How would you place an item starting on row line 1 and column line 1, ending at row line 3 and column line 5?
+
+**Answer:**
+
+```css
+grid-row-start: 1;  
+grid-row-end: 3;  
+grid-column-start: 1;  
+grid-column-end: 5;
+```
+
+---
+
+# Question: What happens to other items when you explicitly position one item in the grid?
+
+**Answer:** The unpositioned items are pushed out of the way automatically.
+
+---
+
+# Question: What is the shorthand for defining grid row and column start/end positions?
+
+**Answer:** Use the `grid-row` and `grid-column` shorthand properties.
+
+---
+
+# Question: What syntax is used with `grid-row` and `grid-column` shorthands?
+
+**Answer:** Two values separated by a slash: the **starting line** and the **ending line** (e.g., `grid-row: 1 / 3;`).
+
+---
+
+# Question: How do you use `grid-row` and `grid-column` to make an item span two rows and two columns?
+
+**Answer:**
+
+```css
+grid-row: 1 / 3;  
+grid-column: 5 / 7;
+```
+
+---
+
+# Question: What is the purpose of the `span` keyword in grid positioning?
+
+**Answer:** It allows an item to span a specific number of tracks from its current position without specifying start/end lines.
+
+---
+
+# Question: How would you use `span` to make an item span two columns?
+
+**Answer:** `grid-column: span 2;`
+
+---
+
+# Question: What is a downside of using the `span` keyword?
+
+**Answer:** You can't **explicitly define start and end positions**, so items may shift if nearby items change.
+
+---
+
+# Question: What can happen if you use `span` and a nearby item's size increases?
+
+**Answer:** The item using `span` can be pushed away from its intended position.
+
+---
+
+# Question: When is it okay to use the `span` keyword in CSS Grid?
+
+**Answer:** When you don’t need to anchor the item to a specific position.
+
+---
+
+# Question: What is the fastest way to position an item using four grid line values?
+
+**Answer:** Use the `grid-area` property.
+
+---
+
+# Question: What are the four values required for the `grid-area` shorthand?
+
+**Answer:** `grid-row-start`, `grid-column-start`, `grid-row-end`, and `grid-column-end`, in that order.
+
+---
+
 
 
 
