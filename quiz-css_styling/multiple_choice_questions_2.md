@@ -896,6 +896,81 @@ gap: 10px;
 
 ---
 
+# Question: When does a flex item with a higher `flex-grow` value take up more space?
+
+**Answer:** When **extra space becomes available**, the item with the higher `flex-grow` value takes a larger portion relative to others.
+
+---
+
+# Question: If a flex item has `flex-shrink: 5`, what does it mean?
+
+**Answer:** It will shrink **five times faster** than items with `flex-shrink: 1` when space is limited.
+
+---
+
+# Question: Why would you use `min-width` and `max-width` with Flexbox?
+
+**Answer:** To **limit how much an item can grow or shrink**, ensuring it doesn’t become too large or too small when resizing.
+
+---
+
+# Question: What happens if a flex item grows beyond its `max-width`?
+
+**Answer:** It **stops growing** once it reaches the `max-width` and will not get larger.
+
+---
+
+# Question: What happens if a flex item shrinks below its `min-width`?
+
+**Answer:** It will **overflow** the container instead of shrinking further.
+
+---
+
+# Question: How can you prevent shrinking but still allow items to wrap when the screen gets too small?
+
+**Answer:** Use `flex-shrink` with `min-width`, and then apply `flex-wrap: wrap` inside a **media query** when overflow starts.
+
+---
+
+# Question: Which CSS property lets you align a **single flex item** differently along the **cross axis**?
+
+**Answer:** `align-self`
+
+---
+
+# Question: How is `align-self` different from `align-items`?
+
+**Answer:**
+
+* `align-items` applies to **all flex items**,
+* `align-self` overrides that setting **for individual items**.
+
+---
+
+# Question: Can you use `justify-self` to align a single flex item along the **main axis**?
+
+**Answer:** No, `justify-self` **does not work in Flexbox** — it's a property used in **CSS Grid**.
+
+---
+
+# Question: If you want to position only the **first flex item** at the bottom while others stay at the top, which property do you use?
+
+**Answer:** `align-self: flex-end` on the first item (with `align-items: flex-start` on the container).
+
+---
+
+# Question: How can you isolate alignment of individual flex items?
+
+**Answer:** By applying the `align-self` property on the **specific item** you want to align differently.
+
+---
+
+# Question: Why is `justify-self` not available in Flexbox?
+
+**Answer:** Because Flexbox is designed to **distribute space across the main axis** using group-based properties like `justify-content`, and individual item justification is handled differently — such as with **margins**.
+
+---
+
 
 
 
