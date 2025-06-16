@@ -2992,6 +2992,255 @@ WHERE CategoryName = 'Beverages';
 
 ---
 
+# Question: How do you retrieve all sales records from the view "Category Sales For 1997" where the category is "Beverages"?
+
+**Answer:**
+`SELECT * FROM [Category Sales For 1997] WHERE CategoryName='Beverages'`
+
+---
+
+# Question: What SQL syntax is used to update a view?
+
+**Answer:**
+`CREATE OR REPLACE VIEW view_name AS SELECT column_name(s) FROM table_name WHERE condition`
+
+---
+
+# Question: How would you update the "Current Product List" view to include the "Category" column?
+
+**Answer:**
+
+```sql
+CREATE VIEW [Current Product List] AS  
+SELECT ProductID, ProductName, Category  
+FROM Products  
+WHERE Discontinued=No
+```
+
+---
+
+# Question: What SQL command is used to delete a view?
+
+**Answer:**
+`DROP VIEW view_name`
+
+---
+
+# Question: What is the most difficult part of working with dates in SQL?
+
+**Answer:**
+Ensuring the date format you insert matches the format expected by the date column in the database.
+
+---
+
+# Question: Why is it problematic to include time components when comparing dates?
+
+**Answer:**
+Because queries that filter by date alone (`WHERE OrderDate='YYYY-MM-DD'`) will fail if the date column includes time, resulting in no matches.
+
+---
+
+# Question: What is a tip to simplify queries involving date comparisons?
+
+**Answer:**
+Avoid including time components in date values.
+
+---
+
+# Question: What does `NOW()` return in MySQL?
+
+**Answer:**
+The current date and time.
+
+---
+
+# Question: What is returned by `CURDATE()` in MySQL?
+
+**Answer:**
+The current date.
+
+---
+
+# Question: What does the `CURTIME()` function return?
+
+**Answer:**
+The current time.
+
+---
+
+# Question: What is the purpose of the `DATE()` function in MySQL?
+
+**Answer:**
+It extracts the date part from a date or date/time expression.
+
+---
+
+# Question: Which MySQL function returns a single part of a date/time value?
+
+**Answer:**
+`EXTRACT()`
+
+---
+
+# Question: How does `DATE_ADD()` work in MySQL?
+
+**Answer:**
+It adds a specified time interval to a date.
+
+---
+
+# Question: What is the use of `DATE_SUB()` in MySQL?
+
+**Answer:**
+It subtracts a specified time interval from a date.
+
+---
+
+# Question: Which function returns the number of days between two dates in MySQL?
+
+**Answer:**
+`DATEDIFF()`
+
+---
+
+# Question: What is the purpose of `DATE_FORMAT()`?
+
+**Answer:**
+It displays date/time data in different formats.
+
+---
+
+# Question: What does `GETDATE()` return in SQL Server?
+
+**Answer:**
+The current date and time.
+
+---
+
+# Question: Which SQL Server function returns a single part of a date/time?
+
+**Answer:**
+`DATEPART()`
+
+---
+
+# Question: How does `DATEADD()` work in SQL Server?
+
+**Answer:**
+It adds or subtracts a specified time interval from a date.
+
+---
+
+# Question: What does `DATEDIFF()` return in SQL Server?
+
+**Answer:**
+The time (in specified units) between two dates.
+
+---
+
+# Question: How do you format date/time data in SQL Server?
+
+**Answer:**
+Using the `CONVERT()` function.
+
+---
+
+# Question: What are the MySQL date data types and their formats?
+
+**Answer:**
+
+* `DATE` - `YYYY-MM-DD`
+* `DATETIME` - `YYYY-MM-DD HH:MM:SS`
+* `TIMESTAMP` - `YYYY-MM-DD HH:MM:SS`
+* `YEAR` - `YYYY` or `YY`
+
+---
+
+# Question: What are the SQL Server date data types and their formats?
+
+**Answer:**
+
+* `DATE` - `YYYY-MM-DD`
+* `DATETIME` - `YYYY-MM-DD HH:MM:SS`
+* `SMALLDATETIME` - `YYYY-MM-DD HH:MM:SS`
+* `TIMESTAMP` - a unique number (not a date)
+
+---
+
+# Question: What query selects orders placed on "2008-11-11" from an `Orders` table with only dates (no time)?
+
+**Answer:**
+`SELECT * FROM Orders WHERE OrderDate='2008-11-11'`
+
+---
+
+# Question: What will happen if you run `SELECT * FROM Orders WHERE OrderDate='2008-11-11'` on a column that includes time?
+
+**Answer:**
+You will get no result, because the time component causes the values to differ from `'2008-11-11'`.
+
+---
+
+# Question: How can default date values be assigned using `NOW()` in a table definition?
+
+**Answer:**
+
+```sql
+CREATE TABLE Orders (
+  OrderId int NOT NULL,
+  ProductName varchar(50) NOT NULL,
+  OrderDate datetime NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (OrderId)
+)
+```
+
+---
+
+# Question: What happens when a row is inserted into a table where `OrderDate` has a default of `NOW()`?
+
+**Answer:**
+The current date and time are automatically inserted into the `OrderDate` column.
+
+---
+
+# Question: How do you insert a record with default `NOW()` value for `OrderDate`?
+
+**Answer:**
+`INSERT INTO Orders (ProductName) VALUES ('Jarlsberg Cheese')`
+
+---
+
+# Question: How is the result of `NOW()`, `CURDATE()`, and `CURTIME()` typically displayed in MySQL?
+
+**Answer:**
+NOW() → full datetime, CURDATE() → date only, CURTIME() → time only.
+Example: `2008-11-11 12:45:34`, `2008-11-11`, `12:45:34`
+
+---
+
+# Question: How do you set `CURDATE()` as the default value for a `datetime` column?
+
+**Answer:**
+
+```sql
+CREATE TABLE Orders (
+  OrderId int NOT NULL,
+  ProductName varchar(50) NOT NULL,
+  OrderDate datetime NOT NULL DEFAULT CURDATE(),
+  PRIMARY KEY (OrderId)
+)
+```
+
+---
+
+# Question: What is the result of inserting a record into a table where `OrderDate` defaults to `CURDATE()`?
+
+**Answer:**
+The current date (with time set to 00:00:00) is inserted automatically.
+
+---
+
+
 
 
 
