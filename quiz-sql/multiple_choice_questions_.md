@@ -1293,6 +1293,167 @@ It returns the person with `LastName` **"Hansen"** only, because "Pettersen" is 
 
 ---
 
+# Question: How does the `BETWEEN` operator behave differently across various databases?
+
+**Answer:** Some databases include both boundary values, others exclude both, and some include the first value and exclude the second.
+
+---
+
+# Question: Why is it important to check how your specific database treats the `BETWEEN` operator?
+
+**Answer:** Because the inclusion or exclusion of boundary values may affect which records are selected or omitted, potentially leading to incorrect query results.
+
+---
+
+# Question: How would you select all records with `LastName` not between 'Hansen' and 'Pettersen'?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons  
+WHERE LastName NOT BETWEEN 'Hansen' AND 'Pettersen';
+```
+
+---
+
+# Question: What is the purpose of using aliases in SQL?
+
+**Answer:** Aliases are used to give a table or column a temporary name, often to simplify complex queries or improve readability.
+
+---
+
+# Question: What is the syntax for giving an alias to a **table** in SQL?
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name AS alias_name;
+```
+
+---
+
+# Question: What is the syntax for giving an alias to a **column** in SQL?
+
+**Answer:**
+
+```sql
+SELECT column_name AS alias_name  
+FROM table_name;
+```
+
+---
+
+# Question: Provide an example of a SQL query using table aliases.
+
+**Answer:**
+
+```sql
+SELECT po.OrderID, p.LastName, p.FirstName  
+FROM Persons AS p, Product_Orders AS po  
+WHERE p.LastName='Hansen' AND p.FirstName='Ola';
+```
+
+---
+
+# Question: Rewrite the previous query **without aliases**.
+
+**Answer:**
+
+```sql
+SELECT Product_Orders.OrderID, Persons.LastName, Persons.FirstName  
+FROM Persons, Product_Orders  
+WHERE Persons.LastName='Hansen' AND Persons.FirstName='Ola';
+```
+
+---
+
+# Question: What are the benefits of using aliases in SQL queries?
+
+**Answer:** They make queries easier to write and read, especially when dealing with long or complex table or column names.
+
+---
+
+# Question: What is the purpose of SQL `JOIN` operations?
+
+**Answer:** To retrieve data from two or more tables based on relationships between columns in those tables.
+
+---
+
+# Question: What is a **primary key** in a database table?
+
+**Answer:** A column or a combination of columns with unique values for each row, used to uniquely identify records and create relationships across tables.
+
+---
+
+# Question: In the "Persons" table, which column is the primary key?
+
+**Answer:** `P_Id`
+
+---
+
+# Question: In the "Orders" table, which column refers to a person in the "Persons" table?
+
+**Answer:** `P_Id`
+
+---
+
+# Question: How does the `P_Id` column in "Orders" relate to the "Persons" table?
+
+**Answer:** It acts as a foreign key referencing the `P_Id` primary key in the "Persons" table.
+
+---
+
+# Question: What does the `JOIN` type return in SQL?
+
+**Answer:** Rows with at least one match in both tables.
+
+---
+
+# Question: What does a `LEFT JOIN` return?
+
+**Answer:** All rows from the left table and matched rows from the right table; unmatched right table fields will be `NULL`.
+
+---
+
+# Question: What does a `RIGHT JOIN` return?
+
+**Answer:** All rows from the right table and matched rows from the left table; unmatched left table fields will be `NULL`.
+
+---
+
+# Question: What does a `FULL JOIN` return?
+
+**Answer:** All rows with a match in **either** left or right table, combining results from `LEFT JOIN` and `RIGHT JOIN`.
+
+---
+
+# Question: What does the `INNER JOIN` keyword do?
+
+**Answer:** Returns rows with at least one match in both tables.
+
+---
+
+# Question: Is there a difference between `JOIN` and `INNER JOIN`?
+
+**Answer:** No, they are functionally equivalent.
+
+---
+
+# Question: Provide the syntax for an `INNER JOIN` in SQL.
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name1  
+INNER JOIN table_name2  
+ON table_name1.column_name = table_name2.column_name;
+```
+
+---
+
+
 
 
 
