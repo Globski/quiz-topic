@@ -1022,6 +1022,111 @@ SELECT * FROM Persons WHERE City LIKE '%nes%'
 
 ---
 
+# Question: What does the `_` wildcard do in a SQL `LIKE` clause?
+
+**Answer:** It substitutes for exactly **one character**.
+
+---
+
+# Question: Which SQL query selects persons with a `FirstName` where the second and third letters are "la"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE FirstName LIKE '_la'
+```
+
+---
+
+# Question: What is the result of `SELECT * FROM Persons WHERE FirstName LIKE '_la'` on the given `Persons` table?
+
+**Answer:**
+It returns the person with `FirstName` "Ola".
+
+---
+
+# Question: What SQL pattern matches a `LastName` starting with "S", followed by any character, then "end", another character, and ending with "on"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE LastName LIKE 'S_end_on'
+```
+
+---
+
+# Question: What result is returned by the query `SELECT * FROM Persons WHERE LastName LIKE 'S_end_on'`?
+
+**Answer:**
+It returns the person with `LastName` "Svendson".
+
+---
+
+# Question: What does `[charlist]` represent in SQL wildcard usage?
+
+**Answer:** It matches any single character **within the list**.
+
+---
+
+# Question: Which SQL query selects all persons whose `LastName` starts with **b**, **s**, or **p**?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE LastName LIKE '[bsp]%'
+```
+
+---
+
+# Question: What result is returned from `SELECT * FROM Persons WHERE LastName LIKE '[bsp]%'` on the given table?
+
+**Answer:**
+It returns persons with `LastName` **Svendson** and **Pettersen**.
+
+---
+
+# Question: What does `[!charlist]` (or `[^charlist]`) do in SQL wildcard usage?
+
+**Answer:** It matches any single character **not** in the list.
+
+---
+
+# Question: Which query returns persons whose `LastName` does **not** start with **b**, **s**, or **p**?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE LastName LIKE '[!bsp]%'
+```
+
+---
+
+# Question: What is the result of `SELECT * FROM Persons WHERE LastName LIKE '[!bsp]%'` on the provided data?
+
+**Answer:**
+It returns the person with `LastName` **Hansen**.
+
+---
+
+# Question: What is the purpose of the `LIKE` operator in SQL?
+
+**Answer:** It is used in a `WHERE` clause to search for a specified **pattern** in a column.
+
+---
+
+# Question: What is the correct syntax for using the `LIKE` operator?
+
+**Answer:**
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE column_name LIKE pattern
+```
+
+---
+
+
 
 
 
