@@ -315,4 +315,262 @@ Pettersen   Kari
 
 ---
 
+Here is the **next set of quiz questions** based on the most recent material you shared. This batch covers:
+
+* `SELECT DISTINCT`
+* `WHERE` clause
+* Correct use of quotes
+* SQL comparison operators
+
+---
+
+# Question: Write an SQL query to select only distinct values from the `City` column of the `Persons` table.
+
+**Answer:** `SELECT DISTINCT City FROM Persons`
+
+---
+
+# Question: What is the purpose of the `SELECT DISTINCT` statement?
+
+**Answer:** To return only distinct (non-duplicate) values from a column
+
+---
+
+# Question: What values would the query `SELECT DISTINCT City FROM Persons` return from a table with cities Sandnes, Sandnes, and Stavanger?
+
+**Answer:** Sandnes and Stavanger
+
+---
+
+# Question: What is the purpose of the `WHERE` clause in SQL?
+
+**Answer:** To filter records based on a specified condition
+
+---
+
+# Question: Write the syntax for a basic SQL `WHERE` clause.
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name  
+WHERE column_name operator value  
+```
+
+---
+
+# Question: Provide an SQL example to select all persons who live in the city "Sandnes" from the `Persons` table.
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons  
+WHERE City='Sandnes'  
+```
+
+---
+
+# Question: What would be the result-set of the query `SELECT * FROM Persons WHERE City='Sandnes'` based on a table where two records have the city 'Sandnes'?
+
+**Answer:**
+
+```
+P_Id  LastName  FirstName  Address     City  
+1     Hansen    Ola        Timoteivn10 Sandnes  
+2     Svendson  Tove       Borgvn 23   Sandnes  
+```
+
+---
+
+# Question: What type of values should be enclosed in single quotes in SQL statements?
+
+**Answer:** Text (string) values
+
+---
+
+# Question: Can SQL use double quotes for text values?
+
+**Answer:** Yes, most database systems accept double quotes as well
+
+---
+
+# Question: What is the correct way to write a query to find persons with the first name "Tove"?
+
+**Answer:** `SELECT * FROM Persons WHERE FirstName='Tove'`
+
+---
+
+# Question: What is wrong with the query `SELECT * FROM Persons WHERE FirstName=Tove`?
+
+**Answer:** Text values must be enclosed in quotes
+
+---
+
+# Question: Should numeric values be enclosed in quotes in SQL?
+
+**Answer:** No, numeric values should not be enclosed in quotes
+
+---
+
+# Question: What is the correct SQL syntax to find records where the `Year` is 1965?
+
+**Answer:** `SELECT * FROM Persons WHERE Year=1965`
+
+---
+
+# Question: What is wrong with the query `SELECT * FROM Persons WHERE Year='1965'`?
+
+**Answer:** Numeric values should not be enclosed in quotes
+
+---
+
+# Question: List all the comparison operators allowed in a SQL `WHERE` clause.
+
+**Answer:**
+
+* `=` (Equal)
+* `<>` (Not equal)
+* `>` (Greater than)
+* `<` (Less than)
+* `>=` (Greater than or equal)
+* `<=` (Less than or equal)
+* `BETWEEN` (Between an inclusive range)
+* `LIKE` (Search for a pattern)
+* `IN` (Match any of several values)
+
+---
+
+# Question: What alternative symbol can sometimes be used in place of `<>` in SQL?
+
+**Answer:** `!=`
+
+---
+
+# Question: What is the purpose of the `AND` operator in SQL?
+
+**Answer:** To filter records by requiring that **both** specified conditions are true
+
+---
+
+# Question: What is the purpose of the `OR` operator in SQL?
+
+**Answer:** To filter records where **either** one of the specified conditions is true
+
+---
+
+# Question: What result will the following SQL statement return?
+
+```sql
+SELECT * FROM Persons  
+WHERE FirstName='Tove' AND LastName='Svendson'  
+```
+
+**Answer:**
+
+```
+P_Id  LastName  FirstName  Address     City  
+2     Svendson  Tove       Borgvn 23   Sandnes  
+```
+
+---
+
+# Question: Write an SQL query to select records where the first name is "Tove" or "Ola".
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons  
+WHERE FirstName='Tove' OR FirstName='Ola'  
+```
+
+---
+
+# Question: What would be the result-set of the query `SELECT * FROM Persons WHERE FirstName='Tove' OR FirstName='Ola'`?
+
+**Answer:**
+
+```
+P_Id  LastName   FirstName  Address     City  
+1     Hansen     Ola        Timoteivn10 Sandnes  
+2     Svendson   Tove       Borgvn 23   Sandnes  
+```
+
+---
+
+# Question: How do you combine `AND` and `OR` conditions in SQL to avoid logical errors?
+
+**Answer:** Use parentheses `()` to group expressions and define evaluation order
+
+---
+
+# Question: Write an SQL query to select all persons whose last name is "Svendson" and whose first name is either "Tove" or "Ola".
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons  
+WHERE LastName='Svendson' AND (FirstName='Tove' OR FirstName='Ola')  
+```
+
+---
+
+# Question: What will be the result of the query:
+
+```sql
+SELECT * FROM Persons  
+WHERE LastName='Svendson' AND (FirstName='Tove' OR FirstName='Ola')  
+```
+
+**Answer:**
+
+```
+P_Id  LastName  FirstName  Address     City  
+2     Svendson  Tove       Borgvn 23   Sandnes  
+```
+
+---
+
+# Question: What is the purpose of the `ORDER BY` keyword in SQL?
+
+**Answer:** To sort the records in the result-set based on one or more columns
+
+---
+
+# Question: What is the default sort order when using `ORDER BY` in SQL?
+
+**Answer:** Ascending (`ASC`)
+
+---
+
+# Question: How do you sort records in descending order using SQL?
+
+**Answer:** Use the `DESC` keyword after the column name in the `ORDER BY` clause
+
+---
+
+# Question: Write the syntax for ordering records in SQL by a specific column in ascending or descending order.
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name  
+ORDER BY column_name(s) ASC|DESC  
+```
+
+---
+
+# Question: What is the result of the query `SELECT * FROM Persons ORDER BY LastName`?
+
+**Answer:** It returns all records sorted by `LastName` in ascending (A–Z) order
+
+---
+
+# Question: What clause would you add to an SQL `SELECT` statement to sort results from Z to A by `LastName`?
+
+**Answer:** `ORDER BY LastName DESC`
+
+---
+
 
