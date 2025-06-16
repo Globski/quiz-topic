@@ -3418,8 +3418,154 @@ MICROSECOND, SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, and composit
 
 ---
 
+# Question: What is the result of the following SQL query?
 
+```sql
+SELECT OrderId, DATE_SUB(OrderDate, INTERVAL 5 DAY) AS SubtractDate FROM Orders
+```
 
+Given `OrderDate = '2008-11-11 13:23:44.657'`
+**Answer:**
+`OrderId: 1`, `SubtractDate: 2008-11-06 13:23:44.657`
+
+---
+
+# Question: What does the `DATEDIFF()` function do in MySQL?
+
+**Answer:**
+It returns the number of days between two dates.
+
+---
+
+# Question: What is the syntax of the `DATEDIFF()` function?
+
+**Answer:**
+`DATEDIFF(date1, date2)`
+
+---
+
+# Question: Does `DATEDIFF()` consider the time portion of the date?
+
+**Answer:**
+No, it only considers the **date** parts.
+
+---
+
+# Question: What is the result of:
+
+```sql
+SELECT DATEDIFF('2008-11-30','2008-11-29') AS DiffDate
+```
+
+**Answer:**
+`DiffDate: 1`
+
+---
+
+# Question: What is the result of:
+
+```sql
+SELECT DATEDIFF('2008-11-29','2008-11-30') AS DiffDate
+```
+
+**Answer:**
+`DiffDate: -1`
+
+---
+
+# Question: What does the `DATE_FORMAT()` function do in MySQL?
+
+**Answer:**
+It formats a date value according to a specified format string.
+
+---
+
+# Question: What is the syntax for the `DATE_FORMAT()` function?
+
+**Answer:**
+`DATE_FORMAT(date, format)`
+
+---
+
+### 🔸 **`DATE_FORMAT` Placeholders**
+
+| Format       | Description                                           |
+| ------------ | ----------------------------------------------------- |
+| `%a`         | Abbreviated weekday name                              |
+| `%b`         | Abbreviated month name                                |
+| `%c`         | Month, numeric                                        |
+| `%D`         | Day of the month with English suffix (e.g., 1st, 2nd) |
+| `%d`         | Day of month, 2-digit (00–31)                         |
+| `%e`         | Day of month, numeric (0–31)                          |
+| `%f`         | Microseconds                                          |
+| `%H`         | Hour (00–23)                                          |
+| `%h` or `%I` | Hour (01–12)                                          |
+| `%i`         | Minutes (00–59)                                       |
+| `%j`         | Day of year (001–366)                                 |
+| `%k`         | Hour (0–23)                                           |
+| `%l`         | Hour (1–12)                                           |
+| `%M`         | Month name                                            |
+| `%m`         | Month, numeric (00–12)                                |
+| `%p`         | AM or PM                                              |
+| `%r`         | 12-hour time (hh\:mm\:ss AM or PM)                    |
+| `%S` or `%s` | Seconds (00–59)                                       |
+| `%T`         | 24-hour time (hh\:mm\:ss)                             |
+| `%U`         | Week (00–53), Sunday first                            |
+| `%u`         | Week (00–53), Monday first                            |
+| `%V`         | Week (01–53), used with `%X`                          |
+| `%v`         | Week (01–53), used with `%x`                          |
+| `%W`         | Weekday name                                          |
+| `%w`         | Day of week (0=Sunday, 6=Saturday)                    |
+| `%X`         | Year for week (Sunday start), 4-digit                 |
+| `%x`         | Year for week (Monday start), 4-digit                 |
+| `%Y`         | Year, four digits                                     |
+| `%y`         | Year, two digits                                      |
+
+---
+
+# Question: What is the output of the following expression:
+
+```sql
+DATE_FORMAT(NOW(), '%b %d %Y %h:%i %p')
+```
+
+**Answer:**
+Example output: `Nov 04 2008 11:45 PM`
+
+---
+
+# Question: What does this return?
+
+```sql
+DATE_FORMAT(NOW(), '%m-%d-%Y')
+```
+
+**Answer:**
+`11-04-2008`
+
+---
+
+# Question: What does this return?
+
+```sql
+DATE_FORMAT(NOW(), '%d %b %y')
+```
+
+**Answer:**
+`04 Nov 08`
+
+---
+
+# Question: What does this return?
+
+```sql
+DATE_FORMAT(NOW(), '%d %b %Y %T:%f')
+```
+
+**Answer:**
+`04 Nov 2008 11:45:34:243000` (with microseconds)
+
+---
 
 
 
