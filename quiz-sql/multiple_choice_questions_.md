@@ -1564,6 +1564,103 @@ ON table_name1.column_name = table_name2.column_name;
 
 ---
 
+# Question: What does the `RIGHT JOIN` keyword do in SQL?
+
+**Answer:** It returns all rows from the right table (e.g., `Orders`), and the matched rows from the left table (`Persons`). If there is no match, `NULL` is returned for the left table’s columns.
+
+---
+
+# Question: Provide the SQL syntax to use a `RIGHT JOIN`.
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name1  
+RIGHT JOIN table_name2  
+ON table_name1.column_name = table_name2.column_name;
+```
+
+---
+
+# Question: Write a SQL query to list all orders with their associated persons using `RIGHT JOIN`.
+
+**Answer:**
+
+```sql
+SELECT Persons.LastName, Persons.FirstName, Orders.OrderNo  
+FROM Persons  
+RIGHT JOIN Orders  
+ON Persons.P_Id = Orders.P_Id  
+ORDER BY Persons.LastName;
+```
+
+---
+
+# Question: In a `RIGHT JOIN` result, what will appear in the row if there’s an `OrderNo` without a matching person?
+
+**Answer:** The `LastName` and `FirstName` fields will be `NULL`, and only the `OrderNo` will be shown.
+
+---
+
+# Question: What is the output for `OrderNo 34764` when using `RIGHT JOIN` between `Persons` and `Orders`?
+
+**Answer:** The `OrderNo 34764` is displayed with `NULL` values for `LastName` and `FirstName` because `P_Id = 15` has no match in the `Persons` table.
+
+---
+
+# Question: What does the `FULL JOIN` keyword do in SQL?
+
+**Answer:** It returns all rows from both the left table and the right table. If a row has no match in the other table, it still appears in the result with `NULL` for missing values.
+
+---
+
+# Question: Provide the syntax for a `FULL JOIN` in SQL.
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name1  
+FULL JOIN table_name2  
+ON table_name1.column_name = table_name2.column_name;
+```
+
+---
+
+# Question: What is the difference between `RIGHT JOIN` and `FULL JOIN`?
+
+**Answer:** `RIGHT JOIN` returns all rows from the right table and matched rows from the left; `FULL JOIN` returns all rows from both tables, including unmatched rows from both sides.
+
+---
+
+# Question: Write a SQL query using `FULL JOIN` to list all persons and all orders, matched or not.
+
+**Answer:**
+
+```sql
+SELECT Persons.LastName, Persons.FirstName, Orders.OrderNo  
+FROM Persons  
+FULL JOIN Orders  
+ON Persons.P_Id = Orders.P_Id  
+ORDER BY Persons.LastName;
+```
+
+---
+
+# Question: In a `FULL JOIN`, what happens to persons who have not placed any orders?
+
+**Answer:** They appear in the result with `NULL` for the `OrderNo`.
+
+---
+
+# Question: In a `FULL JOIN`, what happens to orders that are not linked to any person?
+
+**Answer:** They appear in the result with `NULL` for `LastName` and `FirstName`.
+
+---
+
+
 
 
 
