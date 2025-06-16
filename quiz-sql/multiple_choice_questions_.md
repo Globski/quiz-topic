@@ -3790,7 +3790,394 @@ FROM Orders
 
 ---
 
+# Question: What does it mean if a column in a table is optional?
 
+**Answer:** It means we can insert or update a record without providing a value for that column, and it will be saved with a NULL value.
+
+---
+
+# Question: How are NULL values treated compared to other values in SQL?
+
+**Answer:** NULL values are treated differently from other values and represent unknown or inapplicable values.
+
+---
+
+# Question: Can NULL and 0 be compared as equivalent in SQL?
+
+**Answer:** No, NULL and 0 are not equivalent and cannot be compared directly.
+
+---
+
+# Question: Which SQL operator is used to test for NULL values?
+
+**Answer:** The `IS NULL` operator.
+
+---
+
+# Question: Write the SQL query to retrieve rows from the "Persons" table where the "Address" is NULL.
+
+**Answer:**
+
+```sql
+SELECT LastName, FirstName, Address FROM Persons
+WHERE Address IS NULL;
+```
+
+---
+
+# Question: What is the correct SQL operator to test for values that are NOT NULL?
+
+**Answer:** `IS NOT NULL`
+
+---
+
+# Question: Write the SQL query to retrieve records from "Persons" where "Address" is not NULL.
+
+**Answer:**
+
+```sql
+SELECT LastName, FirstName, Address FROM Persons
+WHERE Address IS NOT NULL;
+```
+
+---
+
+# Question: What will the result set look like for `WHERE Address IS NULL` in the given example?
+
+**Answer:**
+
+```
+LastName   FirstName   Address
+Hansen     Ola         
+Pettersen  Kari        
+```
+
+---
+
+# Question: What will the result set look like for `WHERE Address IS NOT NULL` in the example?
+
+**Answer:**
+
+```
+LastName   FirstName   Address
+Svendson   Tove        Borgvn 23
+```
+
+---
+
+# Question: What happens if a NULL value is involved in a mathematical expression?
+
+**Answer:** The result will be NULL.
+
+---
+
+# Question: What functions are used to handle NULL values in calculations?
+
+**Answer:** `ISNULL()`, `NVL()`, `IFNULL()`, and `COALESCE()`
+
+---
+
+# Question: What is the purpose of the `ISNULL()` function in SQL Server?
+
+**Answer:** It replaces NULL with a specified value, allowing calculations to proceed without NULLs interfering.
+
+---
+
+# Question: Provide an example SQL Server query using `ISNULL()` to treat NULL "UnitsOnOrder" as 0.
+
+**Answer:**
+
+```sql
+SELECT ProductName, UnitPrice * (UnitsInStock + ISNULL(UnitsOnOrder, 0))
+FROM Products;
+```
+
+---
+
+# Question: Which function replaces `ISNULL()` in Oracle?
+
+**Answer:** `NVL()`
+
+---
+
+# Question: Provide the Oracle SQL equivalent of the ISNULL() example.
+
+**Answer:**
+
+```sql
+SELECT ProductName, UnitPrice * (UnitsInStock + NVL(UnitsOnOrder, 0))
+FROM Products;
+```
+
+---
+
+# Question: What MySQL function is equivalent to ISNULL() for replacing NULL with a value?
+
+**Answer:** `IFNULL()`
+
+---
+
+# Question: Provide the MySQL SQL example using `IFNULL()` for treating NULL as 0.
+
+**Answer:**
+
+```sql
+SELECT ProductName, UnitPrice * (UnitsInStock + IFNULL(UnitsOnOrder, 0))
+FROM Products;
+```
+
+---
+
+# Question: Which ANSI-compliant function can be used across databases to handle NULLs?
+
+**Answer:** `COALESCE()`
+
+---
+
+# Question: Provide an example using `COALESCE()` in MySQL or SQL Server.
+
+**Answer:**
+
+```sql
+SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))
+FROM Products;
+```
+
+---
+
+# Question: What is the maximum number of characters for a `Text` data type in Access?
+
+**Answer:** 255 characters
+
+---
+
+# Question: Which data type should be used in Access for large amounts of text?
+
+**Answer:** `Memo`
+
+---
+
+# Question: What is a limitation of the `Memo` data type in Access?
+
+**Answer:** It cannot be sorted but is searchable.
+
+---
+
+# Question: What are the value ranges for the `Byte` data type in Access?
+
+**Answer:** 0 to 255
+
+---
+
+# Question: What are the value ranges for the `Integer` data type in Access?
+
+**Answer:** -32,768 to 32,767
+
+---
+
+# Question: What are the value ranges for the `Long` data type in Access?
+
+**Answer:** -2,147,483,648 to 2,147,483,647
+
+---
+
+# Question: Which data type in Access handles most decimal numbers with single precision?
+
+**Answer:** `Single`
+
+---
+
+# Question: Which Access data type is used for currency and supports up to 4 decimal places?
+
+**Answer:** `Currency`
+
+---
+
+# Question: What is the purpose of the `AutoNumber` data type?
+
+**Answer:** It automatically assigns a unique number to each record, usually starting at 1.
+
+---
+
+# Question: What values does a `Yes/No` data type accept in Access?
+
+**Answer:** Yes/No, True/False, or On/Off (internally represented as -1 and 0).
+
+---
+
+# Question: Can a `Yes/No` field contain NULL values in Access?
+
+**Answer:** No, NULL values are not allowed in `Yes/No` fields.
+
+---
+
+# Question: What is the use of the `Ole Object` type in Access?
+
+**Answer:** It stores images, audio, video, or other Binary Large Objects (BLOBs).
+
+---
+
+# Question: What does the `Hyperlink` data type store?
+
+**Answer:** Links to other files or web pages.
+
+---
+
+# Question: What is the purpose of the `Lookup Wizard` in Access?
+
+**Answer:** It creates a list of options that can be chosen from a drop-down menu.
+
+---
+
+# Question: What are the three main categories of MySQL data types?
+
+**Answer:** Text, Number, and Date/Time types.
+
+---
+
+# Question: What is the difference between `CHAR(size)` and `VARCHAR(size)` in MySQL?
+
+**Answer:** `CHAR` stores fixed-length strings; `VARCHAR` stores variable-length strings.
+
+---
+
+# Question: What happens if a `VARCHAR(size)` is set with a value above 255?
+
+**Answer:** It is converted to a `TEXT` type.
+
+---
+
+# Question: What is the max length of `TINYTEXT`?
+
+**Answer:** 255 characters
+
+---
+
+# Question: What is the max length of `TEXT` and `BLOB` types?
+
+**Answer:** 65,535 characters or bytes
+
+---
+
+# Question: How many characters can `MEDIUMTEXT` store?
+
+**Answer:** Up to 16,777,215 characters
+
+---
+
+# Question: What is the capacity of `LONGTEXT` and `LONGBLOB`?
+
+**Answer:** Up to 4,294,967,295 characters or bytes
+
+---
+
+# Question: What is the purpose of the `ENUM` type in MySQL?
+
+**Answer:** To define a fixed list of possible values, up to 65,535 entries.
+
+---
+
+# Question: What happens if an invalid value is inserted into an `ENUM` column?
+
+**Answer:** A blank value is inserted.
+
+---
+
+# Question: How is a `SET` type different from `ENUM`?
+
+**Answer:** `SET` allows multiple values (up to 64) to be selected from a list.
+
+---
+
+# Question: What is the range for `TINYINT` in MySQL (normal and UNSIGNED)?
+
+**Answer:** -128 to 127 normal; 0 to 255 UNSIGNED
+
+---
+
+# Question: What is the range for `SMALLINT` in MySQL (normal and UNSIGNED)?
+
+**Answer:** -32,768 to 32,767 normal; 0 to 65,535 UNSIGNED
+
+---
+
+# Question: What is the range of `INT` in MySQL?
+
+**Answer:** -2,147,483,648 to 2,147,483,647 normal; 0 to 4,294,967,295 UNSIGNED
+
+---
+
+# Question: What does the `UNSIGNED` attribute do in MySQL number types?
+
+**Answer:** It shifts the range to start from 0 instead of including negative values.
+
+---
+
+# Question: How does `FLOAT(size,d)` work in MySQL?
+
+**Answer:** It defines a floating-point number with `size` total digits and `d` digits after the decimal.
+
+---
+
+# Question: What is the difference between `FLOAT` and `DOUBLE` in MySQL?
+
+**Answer:** `FLOAT` is for small decimal numbers; `DOUBLE` handles larger or more precise decimal numbers.
+
+---
+
+# Question: What is a `DECIMAL(size,d)` in MySQL?
+
+**Answer:** A double stored as a string, allowing fixed-point arithmetic.
+
+---
+
+# Question: What is the format and range of the `DATE` type in MySQL?
+
+**Answer:** Format: `YYYY-MM-DD`; Range: '1000-01-01' to '9999-12-31'
+
+---
+
+# Question: What format does the `DATETIME` type use and what is its range?
+
+**Answer:** `YYYY-MM-DD HH:MM:SS`; Range: '1000-01-01 00:00:00' to '9999-12-31 23:59:59'
+
+---
+
+# Question: How is a `TIMESTAMP` stored and what is its format?
+
+**Answer:** Stored as seconds since Unix epoch ('1970-01-01 00:00:00' UTC); Format: `YYYY-MM-DD HH:MM:SS`
+
+---
+
+# Question: What is the auto-behavior of a `TIMESTAMP` in MySQL?
+
+**Answer:** It automatically sets to the current date and time during INSERT or UPDATE.
+
+---
+
+# Question: What is the supported range of the `TIME` data type?
+
+**Answer:** '-838:59:59' to '838:59:59'
+
+---
+
+# Question: What formats are accepted in the `YEAR()` data type?
+
+**Answer:** Two-digit or four-digit format.
+
+---
+
+# Question: What range of years are accepted in `YEAR(4)` format?
+
+**Answer:** 1901 to 2155
+
+---
+
+# Question: What range of years are accepted in `YEAR(2)` format?
+
+**Answer:** 1970 to 2069 (represented as 70 to 69)
+
+---
 
 
 
