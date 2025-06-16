@@ -573,4 +573,135 @@ ORDER BY column_name(s) ASC|DESC
 
 ---
 
+# Question: What is the purpose of `ORDER BY ... DESC` in an SQL `SELECT` statement?
+
+**Answer:** It sorts the result set in descending order based on the specified column(s).
+
+---
+
+# Question: What are the two forms of the `INSERT INTO` statement?
+
+**Answer:**
+
+1. Without column names: `INSERT INTO table_name VALUES (value1, value2, …)`
+2. With specified column names: `INSERT INTO table_name (col1, col2, …) VALUES (val1, val2, …)`
+
+---
+
+# Question: When using the first form of `INSERT INTO`, what is required?
+
+**Answer:** You must provide values for **all columns** in the exact order defined by the table schema.
+
+---
+
+# Question: What is the syntax to insert a complete row into a table called Persons without specifying column names?
+
+**Answer:** `INSERT INTO Persons VALUES (value1, value2, value3, value4, value5)`
+
+---
+
+# Question: SQL statement used to insert the row (4, 'Nilsen', 'Johan', 'Bakken 2', 'Stavanger') into the Persons table.
+
+**Answer:**
+
+```
+INSERT INTO Persons 
+VALUES (4,'Nilsen','Johan','Bakken 2','Stavanger')
+```
+
+---
+
+# Question: Why might you choose to specify column names in an `INSERT INTO` statement?
+
+**Answer:** To insert values into only specific columns, leaving others at default or NULL.
+
+---
+
+# Question: Write the SQL statement that inserts only the P\_Id, LastName, and FirstName columns with values (5, 'Tjessem', 'Jakob').
+
+**Answer:**
+
+```
+INSERT INTO Persons (P_Id, LastName, FirstName) 
+VALUES (5, 'Tjessem', 'Jakob')
+```
+
+---
+
+# Question: After inserting only specific columns, what are the values of Address and City for that row?
+
+**Answer:** They are left blank (NULL or default), as they were not provided.
+
+---
+
+# Question: True or False: You can omit columns and leave them out of an `INSERT` if you specify other columns by name.
+
+**Answer:** True.
+
+---
+
+# Question: In the example where only some columns are inserted, what is the P\_Id of the row that does not have Address or City values?
+
+**Answer:** 5 (LastName 'Tjessem', FirstName 'Jakob').
+
+---
+
+# Question: What will happen to the unspecified columns (Address, City) for the new row in the partially-specified `INSERT INTO`?
+
+**Answer:** They will either contain NULL or their default values defined in the table schema.
+
+---
+
+# Question: Does `ORDER BY DESC` modify the table data?
+
+**Answer:** No, it only affects the order of rows in the result set, not the table itself.
+
+---
+
+# Question: What would happen if you try `INSERT INTO Persons VALUES (...)` but provide too few values?
+
+**Answer:** The database will throw an error, because it expects a value for every column in the table in order.
+
+---
+
+# Question: If you specify column names in `INSERT INTO`, do you have to provide values for those columns in the same order?
+
+**Answer:** Yes, the values must match the column names in the order listed.
+
+---
+
+# Question: Can you use `ORDER BY` without specifying `ASC` or `DESC`? If so, what is the default order?
+
+**Answer:** Yes; the default is ascending (`ASC`).
+
+---
+
+# Question: Provide one example of when specifying column names in `INSERT` is necessary.
+
+**Answer:** When inserting into a table with columns that have default values or allow NULL, and you only want to set certain columns (e.g., inserting only id and name into a table with many optional fields).
+
+---
+
+# Question: Edge Case — What happens if the table has a NOT NULL column that you omit in a partial `INSERT`?
+
+**Answer:** The database will throw an error for violating NOT NULL constraint, unless a default value is defined.
+
+---
+
+# Question: Variation — How would you insert multiple rows at once using the full-values `INSERT` syntax?
+
+**Answer:**
+
+```
+INSERT INTO table_name VALUES 
+(val1, val2, …),
+(valA, valB, …),
+…
+```
+
+*(Note from material: single insert shown, but knowledge of multi-row variant is implied.)*
+
+---
+
+
 
