@@ -4675,6 +4675,158 @@ It returns the smallest value of the selected column.
 
 ---
 
+# Question: What does the `SUM()` function do in SQL?
+
+**Answer:**
+It returns the total sum of a numeric column.
+
+---
+
+# Question: What is the syntax for the SQL `SUM()` function?
+
+**Answer:**
+`SELECT SUM(column_name) FROM table_name`
+
+---
+
+# Question: Write the SQL statement to find the total sum of the `OrderPrice` column from the `Orders` table.
+
+**Answer:**
+`SELECT SUM(OrderPrice) AS OrderTotal FROM Orders`
+
+---
+
+# Question: When should you use the `GROUP BY` statement in SQL?
+
+**Answer:**
+When using aggregate functions to group the result set by one or more columns.
+
+---
+
+# Question: What is the syntax for the SQL `GROUP BY` statement?
+
+**Answer:**
+
+```sql
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+WHERE column_name operator value
+GROUP BY column_name
+```
+
+---
+
+# Question: Write a SQL query to get the total sum of `OrderPrice` for each customer in the `Orders` table.
+
+**Answer:**
+`SELECT Customer, SUM(OrderPrice) FROM Orders GROUP BY Customer`
+
+---
+
+# Question: What is the result of grouping the `Orders` table by `Customer` and summing `OrderPrice`?
+
+**Answer:**
+
+```
+Customer   SUM(OrderPrice)
+Hansen     2000  
+Nilsen     1700  
+Jensen     2000
+```
+
+---
+
+# Question: What happens if you omit the `GROUP BY` clause when selecting `Customer` and `SUM(OrderPrice)`?
+
+**Answer:**
+Each row returns the total `SUM(OrderPrice)` for the entire table, causing incorrect and repetitive results.
+
+---
+
+# Question: Why does `SELECT Customer, SUM(OrderPrice) FROM Orders` (without `GROUP BY`) give incorrect results?
+
+**Answer:**
+Because `SUM(OrderPrice)` returns a single total value, but `Customer` returns multiple rows, which causes a mismatch in aggregation.
+
+---
+
+# Question: How do you group by more than one column in SQL?
+
+**Answer:**
+By listing multiple column names in the `GROUP BY` clause, separated by commas.
+
+---
+
+# Question: Write a SQL query that groups by both `Customer` and `OrderDate` and returns the sum of `OrderPrice`.
+
+**Answer:**
+`SELECT Customer, OrderDate, SUM(OrderPrice) FROM Orders GROUP BY Customer, OrderDate`
+
+---
+
+# Question: What does the `UCASE()` function do in SQL?
+
+**Answer:**
+It converts the value of a field to uppercase.
+
+---
+
+# Question: What is the syntax of the `UCASE()` function in standard SQL?
+
+**Answer:**
+`SELECT UCASE(column_name) FROM table_name`
+
+---
+
+# Question: What is the equivalent of `UCASE()` in SQL Server?
+
+**Answer:**
+`SELECT UPPER(column_name) FROM table_name`
+
+---
+
+# Question: Write a SQL query to select the `LastName` in uppercase and the `FirstName` as-is from the `Persons` table.
+
+**Answer:**
+`SELECT UCASE(LastName) AS LastName, FirstName FROM Persons`
+
+---
+
+# Question: What is the result of applying `UCASE()` to the `LastName` column in the example?
+
+**Answer:**
+
+```
+LastName     FirstName  
+HANSEN       Ola  
+SVENDSON     Tove  
+PETTERSEN    Kari
+```
+
+---
+
+# Question: What does the `LCASE()` function do in SQL?
+
+**Answer:**
+It converts the value of a field to lowercase.
+
+---
+
+# Question: What is the syntax for the `LCASE()` function in standard SQL?
+
+**Answer:**
+`SELECT LCASE(column_name) FROM table_name`
+
+---
+
+# Question: What is the equivalent of `LCASE()` in SQL Server?
+
+**Answer:**
+`SELECT LOWER(column_name) FROM table_name`
+
+---
+
+
 
 
 
