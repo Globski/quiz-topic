@@ -4826,6 +4826,152 @@ It converts the value of a field to lowercase.
 
 ---
 
+# Question: What does the `LCASE()` function do in SQL?
+
+**Answer:**
+It converts the value of a field to lowercase.
+
+---
+
+# Question: Write a SQL query to select the `LastName` in lowercase and `FirstName` as-is from the `Persons` table.
+
+**Answer:**
+`SELECT LCASE(LastName) AS LastName, FirstName FROM Persons`
+
+---
+
+# Question: What is the result of applying `LCASE()` to the `LastName` column in the example?
+
+**Answer:**
+
+```
+LastName   FirstName  
+hansen     Ola  
+svendson   Tove  
+pettersen  Kari
+```
+
+---
+
+# Question: What does the `MID()` function do in SQL?
+
+**Answer:**
+It extracts characters from a text field.
+
+---
+
+# Question: What is the syntax of the `MID()` function in SQL?
+
+**Answer:**
+`SELECT MID(column_name, start[, length]) FROM table_name`
+
+---
+
+# Question: What does the `start` parameter in the `MID()` function specify?
+
+**Answer:**
+The starting position of the substring (starts at 1).
+
+---
+
+# Question: What happens if the `length` parameter is omitted in the `MID()` function?
+
+**Answer:**
+The function returns the rest of the text starting from the `start` position.
+
+---
+
+# Question: Write a SQL query to extract the first four characters from the `City` column in the `Persons` table.
+
+**Answer:**
+`SELECT MID(City, 1, 4) AS SmallCity FROM Persons`
+
+---
+
+# Question: What does the `LEN()` function do in SQL?
+
+**Answer:**
+It returns the length of the value in a text field.
+
+---
+
+# Question: Write a SQL query to get the length of the values in the `Address` column from the `Persons` table.
+
+**Answer:**
+`SELECT LEN(Address) AS LengthOfAddress FROM Persons`
+
+---
+
+# Question: What does the `ROUND()` function do in SQL?
+
+**Answer:**
+It rounds a numeric field to the number of decimals specified.
+
+---
+
+# Question: What is the syntax of the `ROUND()` function?
+
+**Answer:**
+`SELECT ROUND(column_name, decimals) FROM table_name`
+
+---
+
+# Question: Write a SQL query to show `ProductName` and the rounded `UnitPrice` to the nearest integer from the `Products` table.
+
+**Answer:**
+`SELECT ProductName, ROUND(UnitPrice, 0) AS UnitPrice FROM Products`
+
+---
+
+# Question: What does the `NOW()` function do in SQL?
+
+**Answer:**
+It returns the current system date and time.
+
+---
+
+# Question: What is the syntax for using the `NOW()` function?
+
+**Answer:**
+`SELECT NOW() FROM table_name`
+
+---
+
+# Question: Write a SQL query to display `ProductName`, `UnitPrice`, and the current date/time from the `Products` table.
+
+**Answer:**
+`SELECT ProductName, UnitPrice, NOW() AS PerDate FROM Products`
+
+---
+
+# Question: What does the `FORMAT()` function do in SQL?
+
+**Answer:**
+It formats how a field is displayed.
+
+---
+
+# Question: What is the syntax of the `FORMAT()` function?
+
+**Answer:**
+`SELECT FORMAT(column_name, format) FROM table_name`
+
+---
+
+# Question: What is the purpose of using `FORMAT(NOW(), 'YYYY-MM-DD')` in a SQL query?
+
+**Answer:**
+To return the current system date in the format `YYYY-MM-DD`.
+
+---
+
+# Question: Write a SQL query to display the product name, unit price, and today's date in `YYYY-MM-DD` format from the `Products` table.
+
+**Answer:**
+`SELECT ProductName, UnitPrice, FORMAT(NOW(), 'YYYY-MM-DD') AS PerDate FROM Products`
+
+---
+
 
 
 
