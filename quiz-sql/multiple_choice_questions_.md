@@ -1453,6 +1453,117 @@ ON table_name1.column_name = table_name2.column_name;
 
 ---
 
+# Question: How do you list all persons who have made any orders?
+
+**Answer:**
+
+```sql
+SELECT Persons.LastName, Persons.FirstName, Orders.OrderNo  
+FROM Persons INNER JOIN Orders ON Persons.P_Id = Orders.P_Id  
+ORDER BY Persons.LastName;
+```
+
+---
+
+# Question: What type of `JOIN` is used to select only persons who have at least one matching order?
+
+**Answer:** `INNER JOIN`
+
+---
+
+# Question: What is the behavior of `INNER JOIN` when some rows in the left table have no match in the right table?
+
+**Answer:** Those rows are not included in the result set.
+
+---
+
+# Question: What will be excluded from the result set of an `INNER JOIN` between `Persons` and `Orders`?
+
+**Answer:** Any person in the `Persons` table who does not have a matching `P_Id` in the `Orders` table.
+
+---
+
+# Question: What is the purpose of using `ORDER BY` in a `JOIN` query?
+
+**Answer:** To sort the result set by the specified column, such as `Persons.LastName`.
+
+---
+
+# Question: What does the `LEFT JOIN` keyword do in SQL?
+
+**Answer:** It returns all rows from the left table and the matched rows from the right table; unmatched rows from the right table are shown as `NULL`.
+
+---
+
+# Question: What is the syntax for a SQL `LEFT JOIN`?
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name1  
+LEFT JOIN table_name2  
+ON table_name1.column_name = table_name2.column_name;
+```
+
+---
+
+# Question: What is another name for `LEFT JOIN` in some databases?
+
+**Answer:** `LEFT OUTER JOIN`
+
+---
+
+# Question: How do you list all persons and their orders, even if some persons made no orders?
+
+**Answer:**
+
+```sql
+SELECT Persons.LastName, Persons.FirstName, Orders.OrderNo  
+FROM Persons LEFT JOIN Orders  
+ON Persons.P_Id = Orders.P_Id  
+ORDER BY Persons.LastName;
+```
+
+---
+
+# Question: What value appears in the `OrderNo` column for persons with no orders when using a `LEFT JOIN`?
+
+**Answer:** `NULL`
+
+---
+
+# Question: Based on the `LEFT JOIN` result, why does "Svendson Tove" appear without an `OrderNo`?
+
+**Answer:** Because there is no matching `P_Id` for "Svendson Tove" in the `Orders` table.
+
+---
+
+# Question: What does the `RIGHT JOIN` keyword do in SQL?
+
+**Answer:** It returns all rows from the right table and the matched rows from the left table; unmatched rows from the left table are shown as `NULL`.
+
+---
+
+# Question: What is the SQL syntax for a `RIGHT JOIN`?
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name1  
+RIGHT JOIN table_name2  
+ON table_name1.column_name = table_name2.column_name;
+```
+
+---
+
+# Question: What is another name for `RIGHT JOIN` in some databases?
+
+**Answer:** `RIGHT OUTER JOIN`
+
+---
+
 
 
 
