@@ -1126,6 +1126,94 @@ WHERE column_name LIKE pattern
 
 ---
 
+# Question: Which SQL query selects persons living in cities that start with "s"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE City LIKE 's%'
+```
+
+---
+
+# Question: What does the `%` wildcard mean when used **after** a character in a SQL `LIKE` clause?
+
+**Answer:** It matches any sequence of characters **after** the specified pattern.
+
+---
+
+# Question: What is the result of `SELECT * FROM Persons WHERE City LIKE 's%'` on the provided `Persons` table?
+
+**Answer:**
+All three persons are returned: Sandnes and Stavanger both start with "s".
+
+---
+
+# Question: What SQL query selects persons living in a city that **ends** with the letter "s"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE City LIKE '%s'
+```
+
+---
+
+# Question: What is the result of `SELECT * FROM Persons WHERE City LIKE '%s'` on the provided table?
+
+**Answer:**
+Only one person is returned: the one living in **Sandnes**.
+
+---
+
+# Question: What does the `%` wildcard mean when placed **before and after** a pattern in a `LIKE` clause?
+
+**Answer:** It matches any sequence of characters **before and after** the specified pattern.
+
+---
+
+# Question: What SQL query selects persons living in a city that **contains** the pattern "tav"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE City LIKE '%tav%'
+```
+
+---
+
+# Question: What is the result of `SELECT * FROM Persons WHERE City LIKE '%tav%'` on the table?
+
+**Answer:**
+It returns the person living in **Stavanger**.
+
+---
+
+# Question: Which SQL query returns persons **not** living in a city that contains "tav"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE City NOT LIKE '%tav%'
+```
+
+---
+
+# Question: What is the result of `SELECT * FROM Persons WHERE City NOT LIKE '%tav%'`?
+
+**Answer:**
+It returns the persons living in **Sandnes** (2 people).
+
+---
+
+# Question: What is the purpose of the `IN` operator in SQL?
+
+**Answer:**
+It allows you to specify **multiple values** in a `WHERE` clause.
+
+---
+
+
 
 
 
