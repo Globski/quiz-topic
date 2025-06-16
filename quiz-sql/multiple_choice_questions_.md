@@ -2267,6 +2267,222 @@ CREATE TABLE Orders (
 
 ---
 
+# Question: How do you define a named FOREIGN KEY constraint during table creation?
+
+**Answer:**
+
+```sql
+CREATE TABLE Orders (
+  O_Id int NOT NULL,
+  OrderNo int NOT NULL,
+  P_Id int,
+  PRIMARY KEY (O_Id),
+  CONSTRAINT fk_PerOrders FOREIGN KEY (P_Id)
+  REFERENCES Persons(P_Id)
+)
+```
+
+---
+
+# Question: How do you add a FOREIGN KEY constraint to an existing table?
+
+**Answer:**
+
+```sql
+ALTER TABLE Orders
+ADD FOREIGN KEY (P_Id)
+REFERENCES Persons(P_Id)
+```
+
+---
+
+# Question: How do you add a named FOREIGN KEY constraint using ALTER TABLE?
+
+**Answer:**
+
+```sql
+ALTER TABLE Orders
+ADD CONSTRAINT fk_PerOrders
+FOREIGN KEY (P_Id)
+REFERENCES Persons(P_Id)
+```
+
+---
+
+# Question: How do you drop a FOREIGN KEY constraint in MySQL?
+
+**Answer:**
+
+```sql
+ALTER TABLE Orders
+DROP FOREIGN KEY fk_PerOrders
+```
+
+---
+
+# Question: How do you drop a FOREIGN KEY constraint in SQL Server, Oracle, or MS Access?
+
+**Answer:**
+
+```sql
+ALTER TABLE Orders
+DROP CONSTRAINT fk_PerOrders
+```
+
+---
+
+# Question: What does the CHECK constraint do in SQL?
+
+**Answer:**
+It restricts the values that can be inserted into a column or combination of columns based on a condition.
+
+---
+
+# Question: How do you create a CHECK constraint on a column using CREATE TABLE in MySQL?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255),
+  CHECK (P_Id > 0)
+)
+```
+
+---
+
+# Question: How do you create a CHECK constraint on a column using CREATE TABLE in SQL Server, Oracle, or MS Access?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL CHECK (P_Id > 0),
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255)
+)
+```
+
+---
+
+# Question: How do you define a named CHECK constraint that checks multiple columns?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255),
+  CONSTRAINT chk_Person CHECK (P_Id > 0 AND City = 'Sandnes')
+)
+```
+
+---
+
+# Question: How do you add a CHECK constraint to a column after table creation?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+ADD CHECK (P_Id > 0)
+```
+
+---
+
+# Question: How do you add a named CHECK constraint using ALTER TABLE?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+ADD CONSTRAINT chk_Person CHECK (P_Id > 0 AND City = 'Sandnes')
+```
+
+---
+
+# Question: How do you drop a CHECK constraint in SQL Server, Oracle, or MS Access?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+DROP CONSTRAINT chk_Person
+```
+
+---
+
+# Question: What does the DEFAULT constraint do in SQL?
+
+**Answer:**
+It sets a default value for a column when no value is specified during an insert operation.
+
+---
+
+# Question: How do you define a DEFAULT constraint on a column when creating a table?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255) DEFAULT 'Sandnes'
+)
+```
+
+---
+
+# Question: How do you define a DEFAULT constraint using a system function like `GETDATE()`?
+
+**Answer:**
+
+```sql
+CREATE TABLE Orders (
+  O_Id int NOT NULL,
+  OrderNo int NOT NULL,
+  P_Id int,
+  OrderDate date DEFAULT GETDATE()
+)
+```
+
+---
+
+# Question: How do you set a DEFAULT constraint on a column using ALTER TABLE in MySQL?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+ALTER City SET DEFAULT 'SANDNES'
+```
+
+---
+
+# Question: How do you set a DEFAULT constraint on a column using ALTER TABLE in SQL Server, Oracle, or MS Access?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+ALTER COLUMN City SET DEFAULT 'SANDNES'
+```
+
+---
+
+
+
 
 
 
