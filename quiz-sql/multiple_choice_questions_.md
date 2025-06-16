@@ -4465,6 +4465,218 @@ FROM Products;
 
 ---
 
+# Question: What SQL statement is used to find customers whose `OrderPrice` is higher than the average?
+
+**Answer:**
+`SELECT Customer FROM Orders WHERE OrderPrice > (SELECT AVG(OrderPrice) FROM Orders)`
+
+---
+
+# Question: Which customers have an `OrderPrice` higher than the average in the provided example?
+
+**Answer:**
+Hansen, Nilsen, Jensen
+
+---
+
+# Question: What does the SQL `COUNT()` function do?
+
+**Answer:**
+It returns the number of rows that match a specified criteria.
+
+---
+
+# Question: What does `COUNT(column_name)` return?
+
+**Answer:**
+It returns the number of non-NULL values in the specified column.
+
+---
+
+# Question: What does `COUNT(*)` return?
+
+**Answer:**
+It returns the total number of rows in a table.
+
+---
+
+# Question: What does `COUNT(DISTINCT column_name)` return?
+
+**Answer:**
+It returns the number of unique (distinct) non-NULL values in the specified column.
+
+---
+
+# Question: Does `COUNT(DISTINCT column_name)` work with Microsoft Access?
+
+**Answer:**
+No, it does not work with Microsoft Access.
+
+---
+
+# Question: Write the SQL query to count the number of orders placed by the customer 'Nilsen'.
+
+**Answer:**
+`SELECT COUNT(Customer) AS CustomerNilsen FROM Orders WHERE Customer='Nilsen'`
+
+---
+
+# Question: What is the result of counting the orders made by Nilsen using the query?
+
+**Answer:**
+2
+
+---
+
+# Question: Write the SQL query to count the total number of records in the `Orders` table.
+
+**Answer:**
+`SELECT COUNT(*) AS NumberOfOrders FROM Orders`
+
+---
+
+# Question: What is the total number of records in the `Orders` table?
+
+**Answer:**
+6
+
+---
+
+# Question: Write the SQL query to count the number of unique customers in the `Orders` table.
+
+**Answer:**
+`SELECT COUNT(DISTINCT Customer) AS NumberOfCustomers FROM Orders`
+
+---
+
+# Question: How many unique customers are there in the `Orders` table?
+
+**Answer:**
+3
+
+---
+
+# Question: What does the SQL `FIRST()` function do?
+
+**Answer:**
+It returns the first value of the selected column.
+
+---
+
+# Question: Write the SQL syntax for using the `FIRST()` function.
+
+**Answer:**
+`SELECT FIRST(column_name) FROM table_name`
+
+---
+
+# Question: Write the SQL query to find the first `OrderPrice` in the `Orders` table.
+
+**Answer:**
+`SELECT FIRST(OrderPrice) AS FirstOrderPrice FROM Orders`
+
+---
+
+# Question: What is the result of `SELECT FIRST(OrderPrice)` in the provided example?
+
+**Answer:**
+1000
+
+---
+
+# Question: What is the SQL workaround if the `FIRST()` function is not supported?
+
+**Answer:**
+`SELECT OrderPrice FROM Orders ORDER BY O_Id LIMIT 1`
+
+---
+
+# Question: What does the SQL `LAST()` function do?
+
+**Answer:**
+It returns the last value of the selected column.
+
+---
+
+# Question: Write the SQL syntax for using the `LAST()` function.
+
+**Answer:**
+`SELECT LAST(column_name) FROM table_name`
+
+---
+
+# Question: Write the SQL query to find the last `OrderPrice` in the `Orders` table.
+
+**Answer:**
+`SELECT LAST(OrderPrice) AS LastOrderPrice FROM Orders`
+
+---
+
+# Question: What is the result of `SELECT LAST(OrderPrice)` in the provided example?
+
+**Answer:**
+100
+
+---
+
+# Question: What is the SQL workaround if the `LAST()` function is not supported?
+
+**Answer:**
+`SELECT OrderPrice FROM Orders ORDER BY O_Id DESC LIMIT 1`
+
+---
+
+# Question: What does the SQL `MAX()` function do?
+
+**Answer:**
+It returns the largest value of the selected column.
+
+---
+
+# Question: Write the SQL syntax for using the `MAX()` function.
+
+**Answer:**
+`SELECT MAX(column_name) FROM table_name`
+
+---
+
+# Question: Write the SQL query to find the highest `OrderPrice` in the `Orders` table.
+
+**Answer:**
+`SELECT MAX(OrderPrice) AS LargestOrderPrice FROM Orders`
+
+---
+
+# Question: What is the result of `SELECT MAX(OrderPrice)` in the provided example?
+
+**Answer:**
+2000
+
+---
+
+# Question: What does the SQL `MIN()` function do?
+
+**Answer:**
+It returns the smallest value of the selected column.
+
+---
+
+# Question: Write the SQL syntax for using the `MIN()` function.
+
+**Answer:**
+`SELECT MIN(column_name) FROM table_name`
+
+---
+
+# Question: Write the SQL query to find the smallest `OrderPrice` in the `Orders` table.
+
+**Answer:**
+`SELECT MIN(OrderPrice) AS SmallestOrderPrice FROM Orders`
+
+---
+
+
+
 
 
 
