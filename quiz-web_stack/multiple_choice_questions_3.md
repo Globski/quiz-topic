@@ -214,9 +214,103 @@
 
 ---
 
-# Question: What chapter is the elegant solution to mobile SEO discussed in?
+# Question: What is the name of Google’s machine learning technology used to influence search results?
 
-**Answer:** The mobile SEO section in the on-page SEO chapter.
+**Answer:** RankBrain.
 
 ---
+
+# Question: What was unique about the way RankBrain was introduced?
+
+**Answer:** It had been influencing search results secretly for several months before Google publicly announced it.
+
+---
+
+# Question: Why does Google need a system like RankBrain?
+
+**Answer:** Because over 15% of Google’s daily searches have never been searched before, and there’s no historical data to rely on.
+
+---
+
+# Question: What does RankBrain do when a user enters a never-before-seen query?
+
+**Answer:** It forms connections between words to better understand the meaning of the query and deliver relevant results.
+
+---
+
+# Question: How does RankBrain handle search queries that don’t use exact words from the best possible answers?
+
+**Answer:** It infers the actual intent behind the query and matches it to relevant content, even if the content doesn’t contain the exact search terms.
+
+---
+
+# Question: What example illustrates RankBrain’s ability to infer meaning?
+
+**Answer:** Searching “fastest runner” returns Usain Bolt as the top result, even though his name wasn’t mentioned in the query.
+
+---
+
+# Question: What does the “fastest runner” example demonstrate about RankBrain?
+
+**Answer:** That it can connect vague or partial queries to the most likely intended result using contextual understanding.
+
+---
+
+# Question: How does RankBrain adapt to changes in user behavior and trending topics?
+
+**Answer:** It applies its matching technology automatically and organically adjusts as new searches and trends arise.
+
+---
+
+# Question: How has Google expanded the use of machine learning since RankBrain’s release?
+
+**Answer:** Google has been gradually integrating new A.I. and machine learning technologies into its search engine.
+
+---
+
+# Question: What do the newer A.I. technologies in search aim to improve?
+
+**Answer:** Understanding more complex search queries and delivering more relevant answers.
+
+---
+
+# Question: What challenge has led Google to improve how it understands human queries?
+
+**Answer:** The increasing ambiguity of user searches and the fact that 15% of daily searches are entirely new.
+
+---
+
+# Question: What is the name of the machine-learning technology developed by Google after RankBrain to better understand language?
+
+**Answer:** BERT, which stands for **Bidirectional Encoder Representations from Transformers**.
+
+---
+
+# Question: What type of machine learning is BERT based on?
+
+**Answer:** Natural Language Processing (NLP).
+
+---
+
+# Question: What was a common failure of Google’s search engine before BERT?
+
+**Answer:** It struggled with understanding nuanced queries like “can you get medicine for someone pharmacy,” often returning generic or irrelevant results.
+
+---
+
+# Question: How did BERT improve the result for the query “can you get medicine for someone pharmacy”?
+
+**Answer:** It correctly returns a result about whether a patient can have a friend or family member pick up a prescription on their behalf.
+
+---
+
+# Question: What is the primary purpose of Google’s BERT technology?
+
+**Answer:** To better understand how humans communicate in natural language and deliver more accurate search results based on intent.
+
+---
+
+
+
+
 
