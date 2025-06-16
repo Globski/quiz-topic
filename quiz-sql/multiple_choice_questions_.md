@@ -158,3 +158,161 @@
 
 ---
 
+# Question: Into what two major categories can SQL be divided?
+
+**Answer:** Data Manipulation Language (DML) and Data Definition Language (DDL)
+
+---
+
+# Question: Which SQL commands are part of the DML?
+
+**Answer:** SELECT, UPDATE, DELETE, INSERT INTO
+
+---
+
+# Question: What is the purpose of the `SELECT` command in SQL?
+
+**Answer:** To extract data from a database
+
+---
+
+# Question: What does the `UPDATE` command do in SQL?
+
+**Answer:** It updates data in a database
+
+---
+
+# Question: Which SQL command deletes data from a database?
+
+**Answer:** DELETE
+
+---
+
+# Question: Which SQL command is used to insert new data into a database?
+
+**Answer:** INSERT INTO
+
+---
+
+# Question: What is the role of the Data Definition Language (DDL) in SQL?
+
+**Answer:** To create or delete database objects like tables and indexes, define keys, specify links between tables, and impose constraints
+
+---
+
+# Question: What SQL command creates a new database?
+
+**Answer:** CREATE DATABASE
+
+---
+
+# Question: Which SQL command is used to modify an existing database?
+
+**Answer:** ALTER DATABASE
+
+---
+
+# Question: What SQL command is used to create a new table?
+
+**Answer:** CREATE TABLE
+
+---
+
+# Question: Which command allows you to modify the structure of an existing table?
+
+**Answer:** ALTER TABLE
+
+---
+
+# Question: Which SQL statement deletes an entire table?
+
+**Answer:** DROP TABLE
+
+---
+
+# Question: What does the SQL `CREATE INDEX` command do?
+
+**Answer:** Creates an index (search key)
+
+---
+
+# Question: Which command is used to delete an index in SQL?
+
+**Answer:** DROP INDEX
+
+---
+
+# Question: What is the purpose of the `SELECT` statement in SQL?
+
+**Answer:** To select data from a database
+
+---
+
+# Question: Write the basic syntax of an SQL SELECT statement for specific columns.
+
+**Answer:** `SELECT column_name(s) FROM table_name`
+
+---
+
+# Question: What is the SQL syntax to select all columns from a table?
+
+**Answer:** `SELECT * FROM table_name`
+
+---
+
+# Question: Is SQL case-sensitive?
+
+**Answer:** No, SQL is not case-sensitive
+
+---
+
+# Question: What is the equivalent of `SELECT` in lowercase?
+
+**Answer:** `select`
+
+---
+
+# Question: Write an SQL query to select the columns `LastName` and `FirstName` from the `Persons` table.
+
+**Answer:** `SELECT LastName, FirstName FROM Persons`
+
+---
+
+# Question: What is the result of `SELECT LastName, FirstName FROM Persons` if the table contains Hansen Ola, Svendson Tove, and Pettersen Kari?
+
+**Answer:**
+
+```
+LastName    FirstName  
+Hansen      Ola  
+Svendson    Tove  
+Pettersen   Kari  
+```
+
+---
+
+# Question: Write the SQL query to select all the columns from the `Persons` table.
+
+**Answer:** `SELECT * FROM Persons`
+
+---
+
+# Question: What issue can arise with duplicate values in SQL tables, and how is it handled?
+
+**Answer:** Duplicate values may exist in columns, but the `DISTINCT` keyword can be used to return only different values
+
+---
+
+# Question: What is the SQL syntax to return only distinct column values?
+
+**Answer:** `SELECT DISTINCT column_name(s) FROM table_name`
+
+---
+
+# Question: In what scenario would you use `SELECT DISTINCT` in a query?
+
+**Answer:** When you want to return only the unique (non-duplicate) values from a column
+
+---
+
+
