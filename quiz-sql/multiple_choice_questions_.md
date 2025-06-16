@@ -2046,6 +2046,228 @@ CREATE TABLE Persons (
 
 ---
 
+# Question: How do you define a UNIQUE constraint on multiple columns during table creation?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255),
+  CONSTRAINT uc_PersonID UNIQUE (P_Id, LastName)
+)
+```
+
+---
+
+# Question: How do you add a UNIQUE constraint to a column after the table has been created?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons  
+ADD UNIQUE (P_Id)
+```
+
+---
+
+# Question: How do you add a named UNIQUE constraint on multiple columns using ALTER TABLE?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons  
+ADD CONSTRAINT uc_PersonID UNIQUE (P_Id, LastName)
+```
+
+---
+
+# Question: How do you drop a UNIQUE constraint in MySQL?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons  
+DROP INDEX uc_PersonID
+```
+
+---
+
+# Question: How do you drop a UNIQUE constraint in SQL Server, Oracle, or MS Access?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons  
+DROP CONSTRAINT uc_PersonID
+```
+
+---
+
+# Question: What does the PRIMARY KEY constraint do in SQL?
+
+**Answer:**
+It uniquely identifies each record in a table, ensures values are unique and not NULL, and enforces table-level integrity.
+
+---
+
+# Question: Can a table have multiple PRIMARY KEY constraints?
+
+**Answer:**
+No, a table can have only **one** PRIMARY KEY constraint.
+
+---
+
+# Question: What happens if you try to insert a NULL into a PRIMARY KEY column?
+
+**Answer:**
+The insertion will fail, as PRIMARY KEY columns **cannot contain NULL values**.
+
+---
+
+# Question: How do you define a PRIMARY KEY on a single column during table creation in MySQL?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255),
+  PRIMARY KEY (P_Id)
+)
+```
+
+---
+
+# Question: How do you define a PRIMARY KEY on a single column during table creation in SQL Server, Oracle, or MS Access?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL PRIMARY KEY,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255)
+)
+```
+
+---
+
+# Question: How do you name a PRIMARY KEY constraint on multiple columns in a CREATE TABLE statement?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255),
+  CONSTRAINT pk_PersonID PRIMARY KEY (P_Id, LastName)
+)
+```
+
+---
+
+# Question: How do you add a PRIMARY KEY constraint to an existing table on a single column?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons  
+ADD PRIMARY KEY (P_Id)
+```
+
+---
+
+# Question: How do you add a named PRIMARY KEY constraint on multiple columns using ALTER TABLE?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons  
+ADD CONSTRAINT pk_PersonID PRIMARY KEY (P_Id, LastName)
+```
+
+---
+
+# Question: What is required before adding a PRIMARY KEY using ALTER TABLE?
+
+**Answer:**
+The column(s) must already be defined with `NOT NULL`.
+
+---
+
+# Question: How do you drop a PRIMARY KEY constraint in MySQL?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons  
+DROP PRIMARY KEY
+```
+
+---
+
+# Question: How do you drop a named PRIMARY KEY constraint in SQL Server, Oracle, or MS Access?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons  
+DROP CONSTRAINT pk_PersonID
+```
+
+---
+
+# Question: What is the purpose of the FOREIGN KEY constraint?
+
+**Answer:**
+To maintain referential integrity between tables by preventing invalid data entry and disallowed deletions/updates.
+
+---
+
+# Question: What is the role of the P\_Id column in the "Persons" and "Orders" tables in the foreign key relationship?
+
+**Answer:**
+In `Persons`, P\_Id is the PRIMARY KEY.
+In `Orders`, P\_Id is the FOREIGN KEY referencing `Persons(P_Id)`.
+
+---
+
+# Question: How does the FOREIGN KEY constraint prevent invalid data?
+
+**Answer:**
+It requires the foreign key value to exist in the referenced primary key column.
+
+---
+
+# Question: Write the SQL to create an "Orders" table with a foreign key to the "Persons" table in MySQL.
+
+**Answer:**
+
+```sql
+CREATE TABLE Orders (
+  O_Id int NOT NULL,
+  OrderNo int NOT NULL,
+  P_Id int,
+  PRIMARY KEY (O_Id),
+  FOREIGN KEY (P_Id) REFERENCES Persons(P_Id)
+)
+```
+
+---
+
+
 
 
 
