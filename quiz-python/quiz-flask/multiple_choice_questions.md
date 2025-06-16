@@ -1037,6 +1037,103 @@ flask run
 
 ---
 
+# Question: What does the `current_app` variable represent in Flask?
+
+**Answer:** It represents the application instance for the active application.
+
+---
+
+# Question: What is the purpose of the `g` variable in Flask?
+
+**Answer:** `g` is an application context variable used for temporary storage during a request; it is reset with each new request.
+
+---
+
+# Question: What does the `request` variable contain?
+
+**Answer:** It encapsulates the contents of an HTTP request sent by the client.
+
+---
+
+# Question: What is the `session` variable used for in Flask?
+
+**Answer:** It is a dictionary used to store values that persist across requests in a user session.
+
+---
+
+# Question: In which context are `current_app` and `g` available?
+
+**Answer:** The **application context**.
+
+---
+
+# Question: In which context are `request` and `session` available?
+
+**Answer:** The **request context**.
+
+---
+
+# Question: When are the application and request contexts pushed in Flask?
+
+**Answer:** They are pushed before dispatching a request and removed after the request is handled.
+
+---
+
+# Question: What happens if you access `current_app`, `g`, `request`, or `session` without an active context?
+
+**Answer:** An error is generated.
+
+---
+
+# Question: How do you manually obtain an application context in Python?
+
+**Answer:** By invoking `app.app_context()` on the Flask application instance.
+
+---
+
+# Question: Why does `current_app.name` fail without an active context?
+
+**Answer:** Because `current_app` is only available when an application context is active.
+
+---
+
+# Question: What is the purpose of Flask's URL map?
+
+**Answer:** It maps URL paths to the corresponding view functions that handle them.
+
+---
+
+# Question: How does Flask build its URL map?
+
+**Answer:** Using the data from `@app.route` decorators or `app.add_url_rule()`.
+
+---
+
+# Question: How can you inspect the URL map in a Flask app using the Python shell?
+
+**Answer:** By importing the app and evaluating `app.url_map`.
+
+---
+
+# Question: What is an example of what `app.url_map` might contain?
+
+**Answer:**
+
+```python
+Map([<Rule '/' (HEAD, OPTIONS, GET) -> index>,
+      <Rule '/static/<filename>' (HEAD, OPTIONS, GET) -> static>,
+      <Rule '/user/<name>' (HEAD, OPTIONS, GET) -> user>])
+```
+
+---
+
+# Question: What does the route `/static/<filename>` represent in Flask?
+
+**Answer:** A special route automatically added by Flask to serve static files.
+
+---
+
+
 
 
 
