@@ -699,9 +699,147 @@ INSERT INTO table_name VALUES
 …
 ```
 
-*(Note from material: single insert shown, but knowledge of multi-row variant is implied.)*
+---
+
+# Question: What is the purpose of the SQL `UPDATE` statement?
+
+**Answer:** To modify or update existing records in a table.
 
 ---
+
+# Question: What is the syntax of the `UPDATE` statement in SQL?
+
+**Answer:**
+
+```sql
+UPDATE table_name  
+SET column1 = value1, column2 = value2, ...  
+WHERE some_column = some_value;
+```
+
+---
+
+# Question: Why is the `WHERE` clause important in an `UPDATE` statement?
+
+**Answer:** It specifies which records to update. If omitted, all rows in the table will be updated.
+
+---
+
+# Question: What is the result of omitting the `WHERE` clause in an `UPDATE` statement?
+
+**Answer:** All records in the table will be updated with the new values.
+
+---
+
+# Question: Provide the SQL statement used to update "Tjessem, Jakob" with a new address and city.
+
+**Answer:**
+
+```sql
+UPDATE Persons  
+SET Address='Nissestien 67', City='Sandnes'  
+WHERE LastName='Tjessem' AND FirstName='Jakob';
+```
+
+---
+
+# Question: What happens to the "Persons" table after executing the `UPDATE` on "Tjessem, Jakob"?
+
+**Answer:** His Address becomes "Nissestien 67" and City becomes "Sandnes".
+
+---
+
+# Question: What is the result of the following SQL command without a `WHERE` clause?
+
+```sql
+UPDATE Persons  
+SET Address='Nissestien 67', City='Sandnes';
+```
+
+**Answer:** All records in the Persons table will have their Address and City changed to "Nissestien 67" and "Sandnes".
+
+---
+
+# Question: Which record(s) would be affected by the following SQL?
+
+```sql
+UPDATE Persons  
+SET City = 'Oslo'  
+WHERE P_Id = 3;
+```
+
+**Answer:** Only the record with `P_Id = 3`.
+
+---
+
+# Question: What is the purpose of the SQL `DELETE` statement?
+
+**Answer:** To remove records (rows) from a table.
+
+---
+
+# Question: What is the syntax of the `DELETE` statement in SQL?
+
+**Answer:**
+
+```sql
+DELETE FROM table_name  
+WHERE some_column = some_value;
+```
+
+---
+
+# Question: Why must you be careful when using the `DELETE` statement without a `WHERE` clause?
+
+**Answer:** Because it will delete **all records** in the table.
+
+---
+
+# Question: What happens if you omit the `WHERE` clause in a `DELETE` statement?
+
+**Answer:** All rows in the table will be deleted.
+
+---
+
+# Question: Which SQL statement would delete "Tjessem, Jakob" from the "Persons" table?
+
+**Answer:**
+
+```sql
+DELETE FROM Persons  
+WHERE LastName='Tjessem' AND FirstName='Jakob';
+```
+
+---
+
+# Question: After deleting "Tjessem, Jakob", how many records remain in the "Persons" table?
+
+**Answer:** Four records (assuming no other deletions occurred).
+
+---
+
+# Question: What is the result of executing the following SQL command?
+
+```sql
+DELETE FROM Persons;
+```
+
+**Answer:** All records in the Persons table will be deleted.
+
+---
+
+# Question: True or False: The `UPDATE` and `DELETE` statements can modify or remove multiple records at once if the `WHERE` condition matches multiple rows.
+
+**Answer:** True.
+
+---
+
+# Question: What is a real risk when forgetting the `WHERE` clause in an `UPDATE` or `DELETE` statement?
+
+**Answer:** Unintended data loss or bulk updates across all records in the table.
+
+---
+
 
 
 
