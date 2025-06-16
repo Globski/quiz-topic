@@ -1133,6 +1133,182 @@ Map([<Rule '/' (HEAD, OPTIONS, GET) -> index>,
 
 ---
 
+# Question: What does the Flask `request` object represent?
+
+**Answer:** It is a context variable in Flask that contains all the information sent by the client in the HTTP request.
+
+---
+
+# Question: What type of data does `request.form` contain?
+
+**Answer:** A dictionary with all the form fields submitted with the request.
+
+---
+
+# Question: How is data passed in the query string of the URL accessed in Flask?
+
+**Answer:** Through the `request.args` dictionary.
+
+---
+
+# Question: What is the purpose of the `request.values` attribute?
+
+**Answer:** It is a dictionary that combines the data in `request.form` and `request.args`.
+
+---
+
+# Question: Which `request` attribute is used to access cookies sent by the client?
+
+**Answer:** `request.cookies`
+
+---
+
+# Question: How can you access the HTTP headers included in the request?
+
+**Answer:** By using the `request.headers` dictionary.
+
+---
+
+# Question: Which `request` attribute provides access to uploaded files?
+
+**Answer:** `request.files`
+
+---
+
+# Question: What does `request.get_data()` return?
+
+**Answer:** It returns the buffered data from the request body.
+
+---
+
+# Question: How do you retrieve JSON data from the request body as a Python dictionary?
+
+**Answer:** By using `request.get_json()`
+
+---
+
+# Question: What does the `request.blueprint` attribute return?
+
+**Answer:** It returns the name of the Flask blueprint that is handling the request.
+
+---
+
+# Question: What does `request.endpoint` return?
+
+**Answer:** It returns the name of the Flask endpoint handling the request, which defaults to the view function's name.
+
+---
+
+# Question: How can you determine the HTTP method used in the request?
+
+**Answer:** By accessing `request.method`.
+
+---
+
+# Question: What information does `request.scheme` provide?
+
+**Answer:** It gives the URL scheme used in the request, such as `http` or `https`.
+
+---
+
+# Question: What does `request.is_secure()` indicate?
+
+**Answer:** It returns `True` if the request was made over HTTPS.
+
+---
+
+# Question: What does `request.host` return?
+
+**Answer:** The host specified in the request, including the port number if provided.
+
+---
+
+# Question: How do you access just the path portion of a URL in a Flask request?
+
+**Answer:** Using `request.path`.
+
+---
+
+# Question: What type of value does `request.query_string` return?
+
+**Answer:** A raw binary value representing the query string part of the URL.
+
+---
+
+# Question: What does `request.full_path` include?
+
+**Answer:** The path and query string portions of the URL.
+
+---
+
+# Question: What is the difference between `request.url` and `request.base_url`?
+
+**Answer:** `request.url` includes the full URL with query string; `request.base_url` excludes the query string.
+
+---
+
+# Question: How do you access the complete URL requested by the client?
+
+**Answer:** With `request.url`.
+
+---
+
+# Question: How can you get the IP address of the client making the request?
+
+**Answer:** Using `request.remote_addr`.
+
+---
+
+# Question: What does `request.environ` provide?
+
+**Answer:** The raw WSGI environment dictionary for the request.
+
+---
+
+# Question: What is the purpose of Flask request hooks?
+
+**Answer:** To execute code before or after processing a request, often used for tasks like authentication or database setup.
+
+---
+
+# Question: What does the `@before_request` decorator do?
+
+**Answer:** Registers a function to run before each request is handled.
+
+---
+
+# Question: What is the role of the `@before_first_request` hook?
+
+**Answer:** It registers a function to run only once, before the first request is handled, useful for server initialization.
+
+---
+
+# Question: When is the `@after_request` hook executed?
+
+**Answer:** After each request, but only if no unhandled exceptions occurred.
+
+---
+
+# Question: What makes the `@teardown_request` hook different from `@after_request`?
+
+**Answer:** It runs after each request regardless of whether an unhandled exception occurred.
+
+---
+
+# Question: What is a common way to share data between request hook functions and view functions?
+
+**Answer:** By storing the data in the `g` context global.
+
+---
+
+# Question: How can `g.user` be used within request hooks?
+
+**Answer:** A `before_request` function can load the user from the database and assign it to `g.user` so view functions can access it later.
+
+---
+
+
+
 
 
 
