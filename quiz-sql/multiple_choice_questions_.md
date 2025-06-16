@@ -1660,6 +1660,145 @@ ORDER BY Persons.LastName;
 
 ---
 
+# Question: What is the purpose of the `UNION` operator in SQL?
+
+**Answer:** It combines the result sets of two or more `SELECT` statements and returns only distinct values by default.
+
+---
+
+# Question: What are the requirements for columns used in a SQL `UNION` operation?
+
+**Answer:** The columns must have similar data types and appear in the same order in all `SELECT` statements.
+
+---
+
+# Question: Provide the SQL syntax for using `UNION`.
+
+**Answer:**
+
+```sql
+SELECT column_name(s) FROM table_name1  
+UNION  
+SELECT column_name(s) FROM table_name2;
+```
+
+---
+
+# Question: How does `UNION` handle duplicate values?
+
+**Answer:** `UNION` removes duplicates and returns only distinct values by default.
+
+---
+
+# Question: How can you allow duplicate values when combining results from two tables?
+
+**Answer:** Use `UNION ALL` instead of `UNION`.
+
+---
+
+# Question: What is the SQL syntax for using `UNION ALL`?
+
+**Answer:**
+
+```sql
+SELECT column_name(s) FROM table_name1  
+UNION ALL  
+SELECT column_name(s) FROM table_name2;
+```
+
+---
+
+# Question: In a `UNION` query, what determines the column names in the final result-set?
+
+**Answer:** The column names from the first `SELECT` statement are used in the final result-set.
+
+---
+
+# Question: Given a `UNION` operation between two tables with duplicate names, what will happen?
+
+**Answer:** Only one of the duplicate names will appear in the result-set because `UNION` removes duplicates.
+
+---
+
+# Question: Given the tables `Employees_Norway` and `Employees_USA`, how can you list all **distinct** employee names from both?
+
+**Answer:**
+
+```sql
+SELECT E_Name FROM Employees_Norway  
+UNION  
+SELECT E_Name FROM Employees_USA;
+```
+
+---
+
+# Question: What would be the result of using `UNION` on two tables that both contain the name `Svendson, Stephen`?
+
+**Answer:** Only one `Svendson, Stephen` would appear in the result-set.
+
+---
+
+# Question: How would you list **all** employees, including duplicates, from `Employees_Norway` and `Employees_USA`?
+
+**Answer:**
+
+```sql
+SELECT E_Name FROM Employees_Norway  
+UNION ALL  
+SELECT E_Name FROM Employees_USA;
+```
+
+---
+
+# Question: What is the difference between `UNION` and `UNION ALL`?
+
+**Answer:** `UNION` removes duplicates and returns distinct values, while `UNION ALL` includes all values, including duplicates.
+
+---
+
+# Question: What is the purpose of the `SELECT INTO` statement in SQL?
+
+**Answer:** To copy data from one table into a new table, often used to create backup copies of tables.
+
+---
+
+# Question: What is the general syntax for copying all columns from one table to another using `SELECT INTO`?
+
+**Answer:**
+
+```sql
+SELECT *  
+INTO new_table_name  
+FROM old_tablename;
+```
+
+---
+
+# Question: How can you copy specific columns from one table into a new table using `SELECT INTO`?
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+INTO new_table_name  
+FROM old_tablename;
+```
+
+---
+
+# Question: In what scenario is `SELECT INTO` most often used?
+
+**Answer:** To create backup copies of tables.
+
+---
+
+# Question: What optional clause can be used with `SELECT INTO` to store the new table in another database?
+
+**Answer:** The `[IN externaldatabase]` clause.
+
+---
+
+
 
 
 
