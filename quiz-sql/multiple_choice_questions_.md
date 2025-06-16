@@ -1798,6 +1798,255 @@ FROM old_tablename;
 
 ---
 
+# Question: What SQL statement is used to create an exact copy of the data in the "Persons" table?
+
+**Answer:**
+`SELECT * INTO Persons_Backup FROM Persons`
+
+---
+
+# Question: How can you copy a table into another database using SQL?
+
+**Answer:**
+By using the `IN` clause:
+`SELECT * INTO Persons_Backup IN 'Backup.mdb' FROM Persons`
+
+---
+
+# Question: How can you copy only specific columns from a table into a new table?
+
+**Answer:**
+By specifying the columns in the SELECT statement:
+`SELECT LastName, FirstName INTO Persons_Backup FROM Persons`
+
+---
+
+# Question: How do you use a WHERE clause with SELECT INTO to filter records?
+
+**Answer:**
+`SELECT LastName, FirstName INTO Persons_Backup FROM Persons WHERE City='Sandnes'`
+
+---
+
+# Question: Can SELECT INTO be used with joined tables? If yes, give an example.
+
+**Answer:**
+Yes, it can. Example:
+
+```sql
+SELECT * INTO Persons_Order_Backup  
+FROM Persons  
+INNER JOIN Orders ON Persons.P_Id = Orders.P_Id
+```
+
+---
+
+# Question: What is the purpose of the CREATE DATABASE statement?
+
+**Answer:**
+To create a new database.
+
+---
+
+# Question: Write the SQL syntax for creating a new database.
+
+**Answer:**
+`CREATE DATABASE database_name`
+
+---
+
+# Question: How would you create a database named "my\_db"?
+
+**Answer:**
+`CREATE DATABASE my_db`
+
+---
+
+# Question: After creating a database, how can you add tables to it?
+
+**Answer:**
+By using the `CREATE TABLE` statement.
+
+---
+
+# Question: What is the purpose of the CREATE TABLE statement?
+
+**Answer:**
+To create a table in a database.
+
+---
+
+# Question: Write the general syntax of the CREATE TABLE statement.
+
+**Answer:**
+
+```sql
+CREATE TABLE table_name (
+  column_name1 data_type,
+  column_name2 data_type,
+  column_name3 data_type,
+  ...
+)
+```
+
+---
+
+# Question: In the CREATE TABLE statement, what does the data type specify?
+
+**Answer:**
+The type of data that a column can hold.
+
+---
+
+# Question: Write a SQL statement to create a "Persons" table with columns: P\_Id, LastName, FirstName, Address, and City.
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int,
+  LastName varchar(255),
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255)
+)
+```
+
+---
+
+# Question: What data type is used for the P\_Id column in the Persons table?
+
+**Answer:**
+`int`
+
+---
+
+# Question: What data type is used for the LastName, FirstName, Address, and City columns in the Persons table?
+
+**Answer:**
+`varchar(255)`
+
+---
+
+# Question: What SQL statement is used to insert data into an empty table?
+
+**Answer:**
+`INSERT INTO`
+
+---
+
+# Question: What are SQL constraints used for?
+
+**Answer:**
+To limit the type of data that can go into a table.
+
+---
+
+# Question: At what stages can constraints be defined in SQL?
+
+**Answer:**
+During table creation (`CREATE TABLE`) or after using `ALTER TABLE`.
+
+---
+
+# Question: List the six constraints focused on in the material.
+
+**Answer:**
+
+* NOT NULL
+* UNIQUE
+* PRIMARY KEY
+* FOREIGN KEY
+* CHECK
+* DEFAULT
+
+---
+
+# Question: What does the NOT NULL constraint enforce?
+
+**Answer:**
+It enforces a column to not accept NULL values; the field must always contain a value.
+
+---
+
+# Question: Write a CREATE TABLE statement with a NOT NULL constraint on P\_Id and LastName columns.
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255)
+)
+```
+
+---
+
+# Question: What does the UNIQUE constraint do in SQL?
+
+**Answer:**
+It uniquely identifies each record in a table.
+
+---
+
+# Question: How is the PRIMARY KEY constraint related to the UNIQUE constraint?
+
+**Answer:**
+A PRIMARY KEY constraint automatically has a UNIQUE constraint defined on it.
+
+---
+
+# Question: How many UNIQUE constraints can a table have?
+
+**Answer:**
+Multiple UNIQUE constraints per table.
+
+---
+
+# Question: How many PRIMARY KEY constraints can a table have?
+
+**Answer:**
+Only one PRIMARY KEY constraint per table.
+
+---
+
+# Question: Write the MySQL syntax for adding a UNIQUE constraint on the P\_Id column during table creation.
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255),
+  UNIQUE (P_Id)
+)
+```
+
+---
+
+# Question: Write the SQL Server / Oracle / MS Access syntax for defining the P\_Id column as UNIQUE during table creation.
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL UNIQUE,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255)
+)
+```
+
+---
+
+
 
 
 
