@@ -3240,6 +3240,183 @@ The current date (with time set to 00:00:00) is inserted automatically.
 
 ---
 
+# Question: What does the `CURTIME()` function return in MySQL?
+
+**Answer:**
+It returns the current time.
+
+---
+
+# Question: What is the syntax for the `CURTIME()` function?
+
+**Answer:**
+`CURTIME()`
+
+---
+
+# Question: What is the output of `SELECT NOW(), CURDATE(), CURTIME()`?
+
+**Answer:**
+It returns the current date and time, current date, and current time respectively.
+Example:
+`2008-11-11 12:45:34`, `2008-11-11`, `12:45:34`
+
+---
+
+# Question: What does the `DATE()` function do in MySQL?
+
+**Answer:**
+It extracts the date part from a date or date/time expression.
+
+---
+
+# Question: What is the syntax of the `DATE()` function?
+
+**Answer:**
+`DATE(date)`, where `date` is a valid date expression.
+
+---
+
+# Question: What is the result of the query:
+
+```sql
+SELECT ProductName, DATE(OrderDate) AS OrderDate FROM Orders WHERE OrderId=1
+```
+
+given `OrderDate = '2008-11-11 13:23:44.657'`?
+**Answer:**
+It returns `Jarlsberg Cheese`, `2008-11-11`
+
+---
+
+# Question: What is the use of the `EXTRACT()` function in MySQL?
+
+**Answer:**
+It returns a specific part (e.g., year, month, day) from a date/time value.
+
+---
+
+# Question: What is the syntax for the `EXTRACT()` function?
+
+**Answer:**
+`EXTRACT(unit FROM date)`, where `unit` is the part to extract.
+
+---
+
+# Question: Which units can be used with the `EXTRACT()` function?
+
+**Answer:**
+
+* MICROSECOND
+* SECOND
+* MINUTE
+* HOUR
+* DAY
+* WEEK
+* MONTH
+* QUARTER
+* YEAR
+* SECOND\_MICROSECOND
+* MINUTE\_MICROSECOND
+* MINUTE\_SECOND
+* HOUR\_MICROSECOND
+* HOUR\_SECOND
+* DAY\_MICROSECOND
+* DAY\_SECOND
+* DAY\_MINUTE
+* DAY\_HOUR
+* YEAR\_MONTH
+
+---
+
+# Question: What does the following query return?
+
+```sql
+SELECT EXTRACT(YEAR FROM OrderDate) AS OrderYear,  
+       EXTRACT(MONTH FROM OrderDate) AS OrderMonth,  
+       EXTRACT(DAY FROM OrderDate) AS OrderDay  
+FROM Orders WHERE OrderId=1
+```
+
+Given `OrderDate = '2008-11-11 13:23:44.657'`
+**Answer:**
+`OrderYear: 2008`, `OrderMonth: 11`, `OrderDay: 11`
+
+---
+
+# Question: What is the purpose of the `DATE_ADD()` function in MySQL?
+
+**Answer:**
+It adds a specified time interval to a date.
+
+---
+
+# Question: What is the syntax of the `DATE_ADD()` function?
+
+**Answer:**
+`DATE_ADD(date, INTERVAL expr type)`
+
+---
+
+# Question: What are valid types for `INTERVAL` in `DATE_ADD()`?
+
+**Answer:**
+
+* MICROSECOND
+* SECOND
+* MINUTE
+* HOUR
+* DAY
+* WEEK
+* MONTH
+* QUARTER
+* YEAR
+* SECOND\_MICROSECOND
+* MINUTE\_MICROSECOND
+* MINUTE\_SECOND
+* HOUR\_MICROSECOND
+* HOUR\_SECOND
+* HOUR\_MINUTE
+* DAY\_MICROSECOND
+* DAY\_SECOND
+* DAY\_MINUTE
+* DAY\_HOUR
+* YEAR\_MONTH
+
+---
+
+# Question: Given an order date of `'2008-11-11 13:23:44.657'`, what is the result of:
+
+```sql
+SELECT OrderId, DATE_ADD(OrderDate, INTERVAL 45 DAY) AS OrderPayDate FROM Orders
+```
+
+**Answer:**
+`OrderId: 1`, `OrderPayDate: 2008-12-26 13:23:44.657`
+
+---
+
+# Question: What does the `DATE_SUB()` function do in MySQL?
+
+**Answer:**
+It subtracts a specified time interval from a date.
+
+---
+
+# Question: What is the syntax of the `DATE_SUB()` function?
+
+**Answer:**
+`DATE_SUB(date, INTERVAL expr type)`
+
+---
+
+# Question: What interval types can be used with `DATE_SUB()`?
+
+**Answer:**
+Same as `DATE_ADD()`:
+MICROSECOND, SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, and composite types like DAY\_HOUR, YEAR\_MONTH, etc.
+
+---
 
 
 
