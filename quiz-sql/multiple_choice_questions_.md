@@ -1213,6 +1213,87 @@ It allows you to specify **multiple values** in a `WHERE` clause.
 
 ---
 
+# Question: What is the purpose of the `IN` operator in SQL?
+
+**Answer:** It allows you to specify **multiple values** in a `WHERE` clause for comparison.
+
+---
+
+# Question: What is the correct syntax for using the `IN` operator?
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name  
+WHERE column_name IN (value1, value2, ...)
+```
+
+---
+
+# Question: Which SQL query selects persons whose last name is either "Hansen" or "Pettersen"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons  
+WHERE LastName IN ('Hansen', 'Pettersen')
+```
+
+---
+
+# Question: What is the result of `SELECT * FROM Persons WHERE LastName IN ('Hansen', 'Pettersen')` on the provided table?
+
+**Answer:**
+It returns the persons with `LastName` "Hansen" and "Pettersen".
+
+---
+
+# Question: What does the `BETWEEN` operator do in SQL?
+
+**Answer:** It selects values within a **range**, inclusive of the **start and end** values.
+
+---
+
+# Question: What data types can be used with the `BETWEEN` operator in SQL?
+
+**Answer:** Numbers, text (strings), or dates.
+
+---
+
+# Question: What is the correct SQL syntax for using the `BETWEEN` operator?
+
+**Answer:**
+
+```sql
+SELECT column_name(s)  
+FROM table_name  
+WHERE column_name BETWEEN value1 AND value2
+```
+
+---
+
+# Question: Which SQL query selects persons whose last name is alphabetically between "Hansen" and "Pettersen"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons  
+WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'
+```
+
+---
+
+# Question: What is the result of `SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'`?
+
+**Answer:**
+It returns the person with `LastName` **"Hansen"** only, because "Pettersen" is not alphabetically between "Hansen" and "Pettersen" (it's equal to the upper bound, which may be included depending on DBMS collation rules).
+
+> ⚠️ If this result seems inconsistent, flag for `[Missing context]` as SQL collation and inclusivity may vary.
+
+---
+
+
 
 
 
