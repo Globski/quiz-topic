@@ -310,6 +310,25 @@
 
 ---
 
+# Question: How does BERT handle shorthand or conversational queries differently than previous search models?
+
+**Answer:** BERT uses its bidirectional context analysis to understand how each word affects the meaning of the entire query.
+
+---
+
+# Question: What example illustrates how a small phrase can significantly change the meaning of a search?
+
+**Answer:** The query “parking on a hill with no curb,” where the phrase “with no curb” completely transforms the search intent.
+
+---
+
+# Question: What aspect of BERT allows it to accurately interpret the query “parking on a hill with no curb”?
+
+**Answer:** The “Bidirectional” nature of BERT’s algorithm, which analyzes context both before and after each word.
+
+---
+
+
 
 
 
