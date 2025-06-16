@@ -2481,6 +2481,218 @@ ALTER COLUMN City SET DEFAULT 'SANDNES'
 
 ---
 
+# Question: How do you drop a DEFAULT constraint on a column in **MySQL**?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+ALTER City DROP DEFAULT
+```
+
+---
+
+# Question: How do you drop a DEFAULT constraint on a column in **SQL Server / Oracle / MS Access**?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+ALTER COLUMN City DROP DEFAULT
+```
+
+---
+
+# Question: What is the purpose of the `CREATE INDEX` statement in SQL?
+
+**Answer:**
+To create an index on a column to speed up searches and queries on large datasets.
+
+---
+
+# Question: How do you create an index that allows duplicate values?
+
+**Answer:**
+
+```sql
+CREATE INDEX index_name
+ON table_name (column_name)
+```
+
+---
+
+# Question: How do you create a **unique** index that disallows duplicate values?
+
+**Answer:**
+
+```sql
+CREATE UNIQUE INDEX index_name
+ON table_name (column_name)
+```
+
+---
+
+# Question: Write an example of creating an index named `PIndex` on multiple columns.
+
+**Answer:**
+
+```sql
+CREATE INDEX PIndex
+ON Persons (LastName, FirstName)
+```
+
+---
+
+# Question: How do you drop an index in **MS Access**?
+
+**Answer:**
+
+```sql
+DROP INDEX index_name ON table_name
+```
+
+---
+
+# Question: How do you drop an index in **MS SQL Server**?
+
+**Answer:**
+
+```sql
+DROP INDEX table_name.index_name
+```
+
+---
+
+# Question: How do you drop an index in **Oracle / DB2**?
+
+**Answer:**
+
+```sql
+DROP INDEX index_name
+```
+
+---
+
+# Question: How do you drop an index in **MySQL**?
+
+**Answer:**
+
+```sql
+ALTER TABLE table_name DROP INDEX index_name
+```
+
+---
+
+# Question: What is the purpose of the `DROP TABLE` statement?
+
+**Answer:**
+To delete a table and all of its data and structure permanently.
+
+---
+
+# Question: How do you delete a table in SQL?
+
+**Answer:**
+
+```sql
+DROP TABLE table_name
+```
+
+---
+
+# Question: What is the purpose of the `DROP DATABASE` statement?
+
+**Answer:**
+To delete a database, including all its tables and data.
+
+---
+
+# Question: How do you delete an entire database in SQL?
+
+**Answer:**
+
+```sql
+DROP DATABASE database_name
+```
+
+---
+
+# Question: How do you delete all rows from a table without deleting the table itself?
+
+**Answer:**
+
+```sql
+TRUNCATE TABLE table_name
+```
+
+---
+
+# Question: How do you add a new column to an existing table?
+
+**Answer:**
+
+```sql
+ALTER TABLE table_name
+ADD column_name datatype
+```
+
+---
+
+# Question: How do you delete a column from an existing table?
+
+**Answer:**
+
+```sql
+ALTER TABLE table_name
+DROP COLUMN column_name
+```
+
+---
+
+# Question: How do you change the data type of a column in an existing table?
+
+**Answer:**
+
+```sql
+ALTER TABLE table_name
+ALTER COLUMN column_name datatype
+```
+
+---
+
+# Question: Write SQL to add a column named `DateOfBirth` of type `date` to the `Persons` table.
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+ADD DateOfBirth date
+```
+
+---
+
+# Question: Write SQL to change the data type of `DateOfBirth` to `year` in the `Persons` table.
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+ALTER COLUMN DateOfBirth year
+```
+
+---
+
+# Question: Write SQL to delete the column `DateOfBirth` from the `Persons` table.
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons
+DROP COLUMN DateOfBirth
+```
+
+---
+
 
 
 
