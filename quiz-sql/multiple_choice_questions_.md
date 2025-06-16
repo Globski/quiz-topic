@@ -840,6 +840,111 @@ DELETE FROM Persons;
 
 ---
 
+# Question: What SQL statement deletes a specific row from a table where both `LastName` and `FirstName` match certain values?
+
+**Answer:**
+
+```sql
+DELETE FROM Persons WHERE LastName='Tjessem' AND FirstName='Jakob'
+```
+
+---
+
+# Question: After executing `DELETE FROM Persons WHERE LastName='Tjessem' AND FirstName='Jakob'`, what remains unchanged in the table?
+
+**Answer:** The table structure, attributes, and other rows remain unchanged.
+
+---
+
+# Question: How can you delete **all rows** in a table without deleting the table itself in SQL?
+
+**Answer:**
+
+```sql
+DELETE FROM table_name
+```
+
+---
+
+# Question: What is the purpose of the SQL `TOP` clause?
+
+**Answer:** It is used to specify the number or percentage of records to return, which is useful for large tables to improve performance.
+
+---
+
+# Question: Does every SQL database system support the `TOP` clause?
+
+**Answer:** No, not all database systems support the `TOP` clause.
+
+---
+
+# Question: What is the correct SQL Server syntax for selecting the top 5 rows from a table?
+
+**Answer:**
+
+```sql
+SELECT TOP 5 column_name(s) FROM table_name
+```
+
+---
+
+# Question: What is the MySQL equivalent of SQL Server’s `SELECT TOP` clause?
+
+**Answer:**
+
+```sql
+SELECT column_name(s) FROM table_name LIMIT number
+```
+
+---
+
+# Question: How do you select the first 5 records in MySQL?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons LIMIT 5
+```
+
+---
+
+# Question: What is the Oracle equivalent of SQL Server’s `SELECT TOP` clause?
+
+**Answer:**
+
+```sql
+SELECT column_name(s) FROM table_name WHERE ROWNUM <= number
+```
+
+---
+
+# Question: How do you retrieve the first 5 records in Oracle SQL?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE ROWNUM <= 5
+```
+
+---
+
+# Question: Given the `Persons` table, how do you select only the first two records using SQL Server syntax?
+
+**Answer:**
+
+```sql
+SELECT TOP 2 * FROM Persons
+```
+
+---
+
+# Question: Why might using the `TOP` clause be beneficial in large tables?
+
+**Answer:** Because retrieving a large number of records can degrade performance, the `TOP` clause allows limiting the result set for efficiency.
+
+---
+
+
 
 
 
