@@ -944,6 +944,88 @@ SELECT TOP 2 * FROM Persons
 
 ---
 
+# Question: What does the `TOP PERCENT` clause do in SQL Server?
+
+**Answer:** It selects a percentage of rows from the top of the result set based on the specified percentage.
+
+---
+
+# Question: What SQL Server query selects 50% of the records from the `Persons` table?
+
+**Answer:**
+
+```sql
+SELECT TOP 50 PERCENT * FROM Persons
+```
+
+---
+
+# Question: If the `Persons` table has 4 rows, how many rows will be returned by `SELECT TOP 50 PERCENT * FROM Persons`?
+
+**Answer:** 2 rows.
+
+---
+
+# Question: What are SQL wildcards used for?
+
+**Answer:** SQL wildcards are used to substitute characters in a `LIKE` clause to search for data in a database based on patterns.
+
+---
+
+# Question: What does the `%` wildcard represent in SQL?
+
+**Answer:** A substitute for **zero or more characters**.
+
+---
+
+# Question: What does the `_` wildcard represent in SQL?
+
+**Answer:** A substitute for **exactly one character**.
+
+---
+
+# Question: What does `[charlist]` do in a SQL `LIKE` clause?
+
+**Answer:** It matches **any single character** in the specified `charlist`.
+
+---
+
+# Question: What does `[^charlist]` or `[!charlist]` do in SQL wildcards?
+
+**Answer:** It matches **any single character not in** the specified `charlist`.
+
+---
+
+# Question: Which SQL query selects persons who live in cities starting with "sa"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE City LIKE 'sa%'
+```
+
+---
+
+# Question: What is the result of the query `SELECT * FROM Persons WHERE City LIKE 'sa%'` on the provided table?
+
+**Answer:** It returns persons from **Sandnes**, because the city name starts with "sa".
+
+---
+
+# Question: Which SQL statement selects persons who live in cities containing the pattern "nes"?
+
+**Answer:**
+
+```sql
+SELECT * FROM Persons WHERE City LIKE '%nes%'
+```
+
+---
+
+
+
+
+
 
 
 
