@@ -4179,6 +4179,293 @@ FROM Products;
 
 ---
 
+# Question: What happens when we insert a record without providing a value for an optional column in SQL?
+
+**Answer:** The field is saved with a NULL value.
+
+---
+
+# Question: What does NULL represent in SQL?
+
+**Answer:** NULL is a placeholder for unknown or inapplicable values.
+
+---
+
+# Question: Are NULL and 0 equivalent in SQL?
+
+**Answer:** No, NULL and 0 are not equivalent.
+
+---
+
+# Question: Can we use comparison operators such as =, <, or <> to check for NULL values?
+
+**Answer:** No, we must use `IS NULL` or `IS NOT NULL` to check for NULL values.
+
+---
+
+# Question: What SQL statement selects only the records with NULL values in the "Address" column from the "Persons" table?
+
+**Answer:**
+
+```sql
+SELECT LastName, FirstName, Address FROM Persons
+WHERE Address IS NULL;
+```
+
+---
+
+# Question: What will the result set contain when using `WHERE Address IS NULL` on the "Persons" table?
+
+**Answer:** Only rows where the Address is NULL (e.g., Hansen Ola and Pettersen Kari).
+
+---
+
+# Question: What SQL clause is used to select records where a column does not have a NULL value?
+
+**Answer:** `IS NOT NULL`
+
+---
+
+# Question: What SQL statement selects records from the "Persons" table where the "Address" column has a non-NULL value?
+
+**Answer:**
+
+```sql
+SELECT LastName, FirstName, Address FROM Persons
+WHERE Address IS NOT NULL;
+```
+
+---
+
+# Question: Why must we avoid using `=` to compare with NULL?
+
+**Answer:** Because NULL cannot be compared using standard comparison operators; it always results in UNKNOWN.
+
+---
+
+---
+
+### 🛠️ **SQL Functions for NULL Handling**
+
+# Question: What happens if we run a calculation involving a NULL value, such as `UnitsInStock + UnitsOnOrder` where UnitsOnOrder is NULL?
+
+**Answer:** The result will be NULL.
+
+---
+
+# Question: What is the purpose of SQL's ISNULL(), NVL(), IFNULL(), and COALESCE() functions?
+
+**Answer:** These functions are used to replace NULL values with a specified default value, often to avoid NULL results in expressions.
+
+---
+
+# Question: Write a SQL Server query that replaces NULL in UnitsOnOrder with 0.
+
+**Answer:**
+
+```sql
+SELECT ProductName, UnitPrice * (UnitsInStock + ISNULL(UnitsOnOrder, 0))
+FROM Products;
+```
+
+---
+
+# Question: Does Oracle support the ISNULL() function?
+
+**Answer:** No, Oracle does not support ISNULL(); it uses `NVL()` instead.
+
+---
+
+# Question: What Oracle query replaces NULL in UnitsOnOrder with 0?
+
+**Answer:**
+
+```sql
+SELECT ProductName, UnitPrice * (UnitsInStock + NVL(UnitsOnOrder, 0))
+FROM Products;
+```
+
+---
+
+# Question: What MySQL function replaces NULL with a default value in expressions?
+
+**Answer:** `IFNULL()` or `COALESCE()`
+
+---
+
+# Question: Write a MySQL query using IFNULL to handle NULL values in UnitsOnOrder.
+
+**Answer:**
+
+```sql
+SELECT ProductName, UnitPrice * (UnitsInStock + IFNULL(UnitsOnOrder, 0))
+FROM Products;
+```
+
+---
+
+# Question: Write a MySQL query using COALESCE to handle NULL values in UnitsOnOrder.
+
+**Answer:**
+
+```sql
+SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))
+FROM Products;
+```
+
+---
+
+# Question: What is the maximum length of a `Text` field in Microsoft Access?
+
+**Answer:** 255 characters.
+
+---
+
+# Question: What is the purpose of the `Memo` data type in Microsoft Access?
+
+**Answer:** To store large amounts of text, up to 65,536 characters; it cannot be sorted but is searchable.
+
+---
+
+# Question: What is the range of the `Byte` data type in Microsoft Access?
+
+**Answer:** 0 to 255.
+
+---
+
+# Question: What range of values can the `Integer` data type store in Microsoft Access?
+
+**Answer:** -32,768 to 32,767.
+
+---
+
+# Question: What is the range of the `Long` data type in Microsoft Access?
+
+**Answer:** -2,147,483,648 to 2,147,483,647.
+
+---
+
+# Question: What type of numbers do `Single` and `Double` store in Access?
+
+**Answer:** Floating-point decimals.
+
+---
+
+# Question: What is the precision of the `Currency` data type in Access?
+
+**Answer:** Up to 15 digits of whole dollars and 4 decimal places.
+
+---
+
+# Question: What is the purpose of the `AutoNumber` field in Access?
+
+**Answer:** To automatically generate a unique number for each record, usually starting at 1.
+
+---
+
+# Question: Can a `Yes/No` field in Access accept NULL values?
+
+**Answer:** No, NULL values are not allowed in `Yes/No` fields.
+
+---
+
+# Question: How is a logical `Yes/No` field represented in code?
+
+**Answer:** With the constants `True` (-1) and `False` (0).
+
+---
+
+# Question: What is stored in an `OLE Object` field in Microsoft Access?
+
+**Answer:** Pictures, audio, video, or other Binary Large OBjects (BLOBs).
+
+---
+
+# Question: What does the `Hyperlink` data type store in Microsoft Access?
+
+**Answer:** Links to other files, including web pages.
+
+---
+
+# Question: What does the `Lookup Wizard` do in Access?
+
+**Answer:** It lets users create a drop-down list of options to choose from.
+
+---
+
+# Question: What is the difference between CHAR and VARCHAR in MySQL?
+
+**Answer:** CHAR stores fixed-length strings, while VARCHAR stores variable-length strings, both up to 255 characters.
+
+---
+
+# Question: What happens if you define a VARCHAR field with size > 255?
+
+**Answer:** It will be automatically converted to a TEXT type.
+
+---
+
+# Question: What is the maximum length of a `TINYTEXT` field in MySQL?
+
+**Answer:** 255 characters.
+
+---
+
+# Question: What is the maximum length of a `TEXT` field in MySQL?
+
+**Answer:** 65,535 characters.
+
+---
+
+# Question: What is the size limit for a `MEDIUMTEXT` field?
+
+**Answer:** 16,777,215 characters.
+
+---
+
+# Question: What is the size limit for a `LONGTEXT` field?
+
+**Answer:** 4,294,967,295 characters.
+
+---
+
+# Question: What is the difference between TEXT and BLOB types in MySQL?
+
+**Answer:** TEXT is for character strings; BLOB is for binary data. Both have similar size limits.
+
+---
+
+# Question: How many values can be listed in an ENUM data type in MySQL?
+
+**Answer:** Up to 65,535 values.
+
+---
+
+# Question: What happens if a value not listed in an ENUM definition is inserted?
+
+**Answer:** A blank value is inserted.
+
+---
+
+# Question: What is the difference between ENUM and SET in MySQL?
+
+**Answer:** ENUM allows one value from a list, while SET allows multiple selections from up to 64 items.
+
+---
+
+# Question: What is the range of a signed TINYINT in MySQL?
+
+**Answer:** -128 to 127.
+
+---
+
+# Question: What is the range of an unsigned TINYINT in MySQL?
+
+**Answer:** 0 to 255.
+
+---
+
+
 
 
 
