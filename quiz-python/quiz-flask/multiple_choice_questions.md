@@ -743,6 +743,305 @@ if __name__ == '__main__':
 
 ---
 
+# Question: What does a personalized greeting in a Flask application typically use to generate dynamic content?
+
+**Answer:** It uses a dynamic argument, such as a name in the URL, which is passed to the view function to generate a personalized response.
+
+---
+
+# Question: What happens when you change the name in the URL of a Flask route that uses a dynamic argument?
+
+**Answer:** The view function dynamically generates a personalized response based on the new name provided in the URL.
+
+---
+
+# Question: What is the purpose of Flask's debug mode?
+
+**Answer:** Debug mode enables the reloader and the debugger, which assist in development by automatically restarting the server on file changes and displaying interactive error traces.
+
+---
+
+# Question: What does Flask’s reloader module do when enabled?
+
+**Answer:** It watches all source code files in the project and automatically restarts the server when any file is modified.
+
+---
+
+# Question: Why is Flask’s reloader useful during development?
+
+**Answer:** Because it eliminates the need to manually restart the server after making changes to source files, improving development speed and feedback.
+
+---
+
+# Question: What is the function of Flask’s debugger module?
+
+**Answer:** It displays an interactive stack trace in the browser when an unhandled exception occurs, allowing inspection of source code and evaluation of expressions in the call stack.
+
+---
+
+# Question: When does Flask’s debugger appear in the browser?
+
+**Answer:** It appears when the application raises an unhandled exception.
+
+---
+
+# Question: What interactive features does the Flask debugger provide?
+
+**Answer:** It allows inspecting the source code and evaluating expressions at any level of the call stack via a web interface.
+
+---
+
+# Question: What is the default state of Flask's debug mode?
+
+**Answer:** By default, debug mode is disabled.
+
+---
+
+# Question: How can you enable debug mode using environment variables in a Unix-based terminal?
+
+**Answer:** Set the environment variable `FLASK_DEBUG=1` before running `flask run`.
+
+---
+
+# Question: What command should you use to define the Flask application file before starting the server?
+
+**Answer:** `export FLASK_APP=hello.py`
+
+---
+
+# Question: What is the complete set of commands to run a Flask app in debug mode on Unix-based systems?
+
+**Answer:**
+
+```bash
+export FLASK_APP=hello.py
+export FLASK_DEBUG=1
+flask run
+```
+
+---
+
+# Question: What output indicates that Flask has started in debug mode?
+
+**Answer:** Messages such as:
+
+```
+* Forcing debug mode on
+* Debugger is active!
+* Debugger PIN: [PIN]
+```
+
+---
+
+# Question: How do you set environment variables in Windows to enable debug mode?
+
+**Answer:** Use `set` instead of `export`, e.g., `set FLASK_APP=hello.py` and `set FLASK_DEBUG=1`.
+
+---
+
+# Question: What happens if you start the Flask server using `app.run()` instead of `flask run`?
+
+**Answer:** The `FLASK_APP` and `FLASK_DEBUG` environment variables are ignored.
+
+---
+
+# Question: How can you enable debug mode programmatically in your Flask application?
+
+**Answer:** Pass the `debug=True` argument to `app.run()`, like `app.run(debug=True)`.
+
+---
+
+# Question: Why is it dangerous to enable debug mode on a production server?
+
+**Answer:** Because the debugger allows remote code execution, which makes the server vulnerable to attacks.
+
+---
+
+# Question: What simple security measure is in place to prevent unauthorized debugger access?
+
+**Answer:** A PIN is required to access the debugger, which is printed to the console when the server starts.
+
+---
+
+# Question: How do you see the available options for the `flask` command?
+
+**Answer:** Run `flask --help` or simply `flask` without arguments.
+
+---
+
+# Question: What does the `flask` shell command do?
+
+**Answer:** It acts as a general utility script that loads the configured Flask application and provides built-in and app-defined commands.
+
+---
+
+# Question: What environment variable must be set for the `flask` command to recognize the application?
+
+**Answer:** `FLASK_APP`
+
+---
+
+# Question: What are two of the most useful built-in Flask commands?
+
+**Answer:** `run` and `shell`
+
+---
+
+# Question: What command displays the current Flask version?
+
+**Answer:** `flask --version`
+
+---
+
+# Question: What command shows help for the `flask` CLI tool?
+
+**Answer:** `flask --help`
+
+---
+
+# Question: What is the function of the `flask run` command?
+
+**Answer:** It starts the development server for the Flask application.
+
+---
+
+# Question: What does the `flask shell` command do?
+
+**Answer:** It starts a Python shell session in the context of the Flask application.
+
+---
+
+# Question: When might the `flask shell` command be useful?
+
+**Answer:** It can be used for maintenance tasks, running tests, or debugging issues within the app context.
+
+---
+
+# Question: What does the `flask run` command do?
+
+**Answer:** It runs the Flask application using the development web server.
+
+---
+
+# Question: What is the default concurrency behavior of the `flask run` server?
+
+**Answer:** By default, it does not support any concurrency to simplify debugging.
+
+---
+
+# Question: Which option enables basic multithreading in the `flask run` server?
+
+**Answer:** `--with-threads`
+
+---
+
+# Question: When are the reloader and debugger automatically enabled in Flask?
+
+**Answer:** They are enabled if Flask's debug mode is enabled.
+
+---
+
+# Question: What option allows you to specify the host address for the Flask server?
+
+**Answer:** `-h` or `--host`
+
+---
+
+# Question: What option allows you to specify the port number for the Flask server?
+
+**Answer:** `-p` or `--port`
+
+---
+
+# Question: How do you enable or disable the reloader manually using `flask run`?
+
+**Answer:** Use the `--reload` or `--no-reload` options.
+
+---
+
+# Question: What does the `--host` argument do in the `flask run` command?
+
+**Answer:** It tells the Flask development server which network interface to listen on for incoming client connections.
+
+---
+
+# Question: By default, which network interface does Flask's development server listen on?
+
+**Answer:** `localhost` (127.0.0.1), which only allows connections from the same machine.
+
+---
+
+# Question: What does `flask run --host 0.0.0.0` do?
+
+**Answer:** It makes the Flask development server listen on all public network interfaces, allowing other computers in the network to connect.
+
+---
+
+# Question: After running `flask run --host 0.0.0.0`, how can other computers in the same network access the server?
+
+**Answer:** By visiting `http://a.b.c.d:5000`, where `a.b.c.d` is the server's IP address on the local network.
+
+---
+
+# Question: What do the `--reload`, `--no-reload`, `--debugger`, and `--no-debugger` options control?
+
+**Answer:** They provide fine-grained control over the reloader and debugger, even when debug mode is enabled or disabled.
+
+---
+
+# Question: Can the `--no-debugger` option disable the debugger while keeping debug mode and the reloader enabled?
+
+**Answer:** Yes.
+
+---
+
+# Question: What is the function of the `request` object in Flask?
+
+**Answer:** It provides access to the current request data, such as headers, form data, and query parameters.
+
+---
+
+# Question: How is the `request` object accessed inside a view function?
+
+**Answer:** It can be accessed as if it were a global variable, e.g., `request.headers.get('User-Agent')`.
+
+---
+
+# Question: Why can't `request` be a true global variable in Flask?
+
+**Answer:** Because in a multithreaded server, different threads handle different client requests simultaneously, and a global variable would cause conflicts.
+
+---
+
+# Question: How does Flask make `request` behave like a global variable without causing threading issues?
+
+**Answer:** By using **contexts**, which allow each thread to access its own isolated version of variables like `request`.
+
+---
+
+# Question: What is a thread in the context of a web server?
+
+**Answer:** A thread is the smallest sequence of instructions that can be managed independently, often used in pools by web servers to handle concurrent client requests.
+
+---
+
+# Question: What are the two main types of contexts in Flask?
+
+**Answer:** The **application context** and the **request context**.
+
+---
+
+# Question: What does the `application context` in Flask expose?
+
+**Answer:** It exposes variables related to the application itself, like `current_app`.
+
+---
+
+
+
+
+
+
 
 
 
