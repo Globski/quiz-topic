@@ -3567,6 +3567,229 @@ DATE_FORMAT(NOW(), '%d %b %Y %T:%f')
 
 ---
 
+# Question: What does the `GETDATE()` function return in SQL?
+
+**Answer:** The `GETDATE()` function returns the current date and time, including milliseconds.
+
+---
+
+# Question: What SQL command returns the current date and time with an alias?
+
+**Answer:** `SELECT GETDATE() AS CurrentDateTime`
+
+---
+
+# Question: In a SQL table, how do you set the current date and time as the default value for a column?
+
+**Answer:** Use `GETDATE()` in the `DEFAULT` clause of the column definition.
+
+---
+
+# Question: What happens when you insert a record into a table where the datetime column has `GETDATE()` as its default?
+
+**Answer:** The current date and time are automatically inserted into the datetime column.
+
+---
+
+# Question: Write the SQL command to insert a new order for 'Jarlsberg Cheese' into the `Orders` table with `GETDATE()` as default.
+
+**Answer:** `INSERT INTO Orders (ProductName) VALUES ('Jarlsberg Cheese')`
+
+---
+
+# Question: What SQL function is used to return a specific part of a date?
+
+**Answer:** `DATEPART()`
+
+---
+
+# Question: What is the syntax of the `DATEPART()` function?
+
+**Answer:** `DATEPART(datepart, date)`
+
+---
+
+# Question: Which abbreviations can be used for `year` in `DATEPART()`?
+
+**Answer:** `yy`, `yyyy`
+
+---
+
+# Question: Which `DATEPART()` abbreviation represents the quarter of the year?
+
+**Answer:** `qq`, `q`
+
+---
+
+# Question: Which `DATEPART()` abbreviation is used to extract the day?
+
+**Answer:** `dd`, `d`
+
+---
+
+# Question: Which `DATEPART()` abbreviation would return the hour from a datetime value?
+
+**Answer:** `hh`
+
+---
+
+# Question: Write a SQL command to return the year, month, and day from `OrderDate` in the `Orders` table where `OrderId = 1`.
+
+**Answer:**
+
+```sql
+SELECT DATEPART(yyyy, OrderDate) AS OrderYear,  
+       DATEPART(mm, OrderDate) AS OrderMonth,  
+       DATEPART(dd, OrderDate) AS OrderDay  
+FROM Orders  
+WHERE OrderId = 1
+```
+
+---
+
+# Question: What is the function of `DATEADD()` in SQL?
+
+**Answer:** It adds or subtracts a specified time interval from a date.
+
+---
+
+# Question: What is the syntax for `DATEADD()`?
+
+**Answer:** `DATEADD(datepart, number, date)`
+
+---
+
+# Question: What does a positive `number` argument in `DATEADD()` mean?
+
+**Answer:** It adds the interval to the date, resulting in a future date.
+
+---
+
+# Question: What does a negative `number` argument in `DATEADD()` mean?
+
+**Answer:** It subtracts the interval from the date, resulting in a past date.
+
+---
+
+# Question: Write a SQL command to add 45 days to the `OrderDate` for `OrderId = 1`.
+
+**Answer:**
+
+```sql
+SELECT OrderId, DATEADD(day, 45, OrderDate) AS OrderPayDate  
+FROM Orders
+```
+
+---
+
+# Question: What is the output of `DATEADD(day, 45, '2008-11-11 13:23:44.657')`?
+
+**Answer:** `'2008-12-26 13:23:44.657'`
+
+---
+
+# Question: What is the purpose of the `DATEDIFF()` function in SQL?
+
+**Answer:** It returns the difference between two dates in the specified date part.
+
+---
+
+# Question: What is the syntax for the `DATEDIFF()` function?
+
+**Answer:** `DATEDIFF(datepart, startdate, enddate)`
+
+---
+
+# Question: What is the result of `DATEDIFF(day, '2008-06-05', '2008-08-05')`?
+
+**Answer:** `61`
+
+---
+
+# Question: What is the result of `DATEDIFF(day, '2008-08-05', '2008-06-05')`?
+
+**Answer:** `-61`
+
+---
+
+# Question: What does the `CONVERT()` function do in SQL?
+
+**Answer:** It converts a value to a specified data type and optionally formats date/time values.
+
+---
+
+# Question: What is the syntax for the `CONVERT()` function?
+
+**Answer:** `CONVERT(data_type(length), data_to_be_converted, style)`
+
+---
+
+# Question: Which `CONVERT()` style ID gives the output format `mon dd yyyy hh:miAM`?
+
+**Answer:** `100` or `0`
+
+---
+
+# Question: Which style ID in `CONVERT()` gives the format `mm/dd/yy`?
+
+**Answer:** `101`
+
+---
+
+# Question: Which style ID gives the format `dd-mm-yy` in `CONVERT()`?
+
+**Answer:** `105`
+
+---
+
+# Question: What style ID should be used in `CONVERT()` to get the format `yyyy-mm-dd hh:mi:ss.mmm`?
+
+**Answer:** `121` or `21`
+
+---
+
+# Question: What is the output of `CONVERT(VARCHAR(10), GETDATE(), 110)`?
+
+**Answer:** A string in the format `mm-dd-yy`, e.g., `11-04-2008`
+
+---
+
+# Question: What is the output format of style ID `113` in `CONVERT()`?
+
+**Answer:** `dd mon yyyy hh:mm:ss:mmm` (24-hour format)
+
+---
+
+# Question: Write the SQL command to convert the current date to a 24-hour format with milliseconds.
+
+**Answer:** `CONVERT(VARCHAR(24), GETDATE(), 113)`
+
+---
+
+# Question: Which `CONVERT()` style format returns `04 Nov 08`?
+
+**Answer:** Style `106` with `VARCHAR(11)`
+
+---
+
+# Question: How do you convert `GETDATE()` to default `VARCHAR` without specifying style?
+
+**Answer:** `CONVERT(VARCHAR(19), GETDATE())`
+
+---
+
+# Question: Which style IDs return output in `yyyy-mm-dd` format?
+
+**Answer:** `120`, `121`, and `126`
+
+---
+
+# Question: Which style ID formats the output as `dd/mm/yy hh:mi:ss:mmmAM`?
+
+**Answer:** `131`
+
+---
+
 
 
 
