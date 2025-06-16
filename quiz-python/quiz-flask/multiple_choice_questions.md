@@ -231,4 +231,82 @@ app = Flask(__name__)
 
 ---
 
+# Question: What is the drawback of embedding HTML response strings directly in Python source files?
+
+**Answer:** It makes the code difficult to maintain.
+
+---
+
+# Question: How does Flask support variable sections in URLs?
+
+**Answer:** By using a special syntax with angle brackets in the `@app.route` decorator.
+
+---
+
+# Question: In the Flask route `@app.route('/user/<name>')`, what does `<name>` represent?
+
+**Answer:** It is a dynamic component of the URL that will be passed as an argument to the view function.
+
+---
+
+# Question: What happens when a URL matches the static portion of a Flask route that has a dynamic component?
+
+**Answer:** Flask maps the URL to the route, and the dynamic component is passed to the view function as an argument.
+
+---
+
+# Question: What happens when the Flask server starts?
+
+**Answer:** It enters a loop that accepts and services requests until the application is stopped.
+
+---
+
+# Question: How can the Flask server be stopped during development?
+
+**Answer:** By pressing `Ctrl+C`.
+
+---
+
+# Question: What URL should you enter in a browser to access a running Flask application on the local machine?
+
+**Answer:** `http://localhost:5000/`
+
+---
+
+# Question: What HTTP error code is returned if the URL path does not match any defined route in a Flask application?
+
+**Answer:** 404
+
+---
+
+# Question: What does a 404 error indicate in a Flask application?
+
+**Answer:** That the requested URL path does not exist in the application.
+
+---
+
+# Question: What is the intended use of the Flask development server?
+
+**Answer:** It is intended only for development and testing purposes.
+
+---
+
+# Question: How can the Flask development server be started programmatically?
+
+**Answer:** By invoking the `app.run()` method.
+
+---
+
+# Question: What was required in older versions of Flask to start the development server?
+
+**Answer:** The application's main script had to include the `if __name__ == '__main__': app.run()` block.
+
+---
+
+# Question: Why is the `if __name__ == '__main__': app.run()` block no longer necessary in modern Flask?
+
+**Answer:** Because the `flask run` command now starts the development server without needing that code.
+
+---
+
 
