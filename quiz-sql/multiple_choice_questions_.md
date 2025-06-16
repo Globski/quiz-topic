@@ -2693,6 +2693,306 @@ DROP COLUMN DateOfBirth
 
 ---
 
+# Question: What keyword does MySQL use to create an auto-increment field?
+
+**Answer:** `AUTO_INCREMENT`
+
+---
+
+# Question: What is the default starting value for `AUTO_INCREMENT` in MySQL?
+
+**Answer:** 1
+
+---
+
+# Question: What is the default increment step for `AUTO_INCREMENT` in MySQL?
+
+**Answer:** 1
+
+---
+
+# Question: Write the MySQL syntax to make a column `P_Id` an auto-incrementing primary key.
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int NOT NULL AUTO_INCREMENT,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255),
+  PRIMARY KEY (P_Id)
+)
+```
+
+---
+
+# Question: How can you set the auto-increment value to start from 100 in MySQL?
+
+**Answer:**
+
+```sql
+ALTER TABLE Persons AUTO_INCREMENT = 100;
+```
+
+---
+
+# Question: In MySQL, do you need to specify a value for the `AUTO_INCREMENT` field when inserting a record?
+
+**Answer:** No, a unique value is added automatically.
+
+---
+
+# Question: Write a valid `INSERT` SQL statement in MySQL that auto-generates the primary key.
+
+**Answer:**
+
+```sql
+INSERT INTO Persons (FirstName, LastName)
+VALUES ('Lars', 'Monsen');
+```
+
+---
+
+# Question: What keyword does SQL Server use for auto-increment?
+
+**Answer:** `IDENTITY`
+
+---
+
+# Question: What is the default starting value and increment step for `IDENTITY` in SQL Server?
+
+**Answer:** Starting value is 1 and it increments by 1.
+
+---
+
+# Question: How do you define a column `P_Id` in SQL Server to start at 10 and increment by 5?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id int PRIMARY KEY IDENTITY(10,5),
+  Address varchar(255),
+  City varchar(255)
+)
+```
+
+---
+
+# Question: Can you omit the `P_Id` column when inserting into a SQL Server table with `IDENTITY`?
+
+**Answer:** Yes, the value is generated automatically.
+
+---
+
+# Question: Write the SQL Server `INSERT` statement that auto-generates `P_Id`.
+
+**Answer:**
+
+```sql
+INSERT INTO Persons (FirstName, LastName)
+VALUES ('Lars', 'Monsen');
+```
+
+---
+
+# Question: What keyword does MS Access use for auto-increment?
+
+**Answer:** `AUTOINCREMENT`
+
+---
+
+# Question: What is the syntax to define an auto-incrementing primary key field in MS Access?
+
+**Answer:**
+
+```sql
+CREATE TABLE Persons (
+  P_Id PRIMARY KEY AUTOINCREMENT,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Address varchar(255),
+  City varchar(255)
+)
+```
+
+---
+
+# Question: How do you set `P_Id` to start at 10 and increment by 5 in MS Access?
+
+**Answer:** Use `AUTOINCREMENT(10,5)`
+
+---
+
+# Question: What keyword does Oracle use for auto-increment?
+
+**Answer:** Oracle does not use a keyword; it uses a sequence object.
+
+---
+
+# Question: Write the Oracle SQL syntax to create an auto-increment sequence called `seq_person`.
+
+**Answer:**
+
+```sql
+CREATE SEQUENCE seq_person
+MINVALUE 1
+START WITH 1
+INCREMENT BY 1
+CACHE 10;
+```
+
+---
+
+# Question: In Oracle, how do you retrieve the next value from a sequence?
+
+**Answer:** Use the `sequence_name.nextval` function.
+
+---
+
+# Question: Write the Oracle SQL `INSERT` statement to add a record using an auto-incremented primary key.
+
+**Answer:**
+
+```sql
+INSERT INTO Persons (P_Id, FirstName, LastName)
+VALUES (seq_person.nextval, 'Lars', 'Monsen');
+```
+
+---
+
+# Question: What is the purpose of `CACHE 10` in an Oracle sequence?
+
+**Answer:** It stores 10 sequence values in memory for faster access.
+
+---
+
+# Question: What is a view in SQL?
+
+**Answer:** A view is a virtual table based on the result-set of an SQL statement.
+
+---
+
+# Question: Can a SQL view contain rows and columns from multiple tables?
+
+**Answer:** Yes
+
+---
+
+# Question: Does a SQL view always return up-to-date data?
+
+**Answer:** Yes, because the database engine executes the view’s SQL statement every time it’s queried.
+
+---
+
+# Question: What is the syntax for creating a view?
+
+**Answer:**
+
+```sql
+CREATE VIEW view_name AS
+SELECT column_name(s)
+FROM table_name
+WHERE condition;
+```
+
+---
+
+# Question: What SQL functions or clauses can be used in a view definition?
+
+**Answer:** SQL functions, `WHERE`, and `JOIN` statements.
+
+---
+
+# Question: Write the SQL to create a view showing active products from the `Products` table.
+
+**Answer:**
+
+```sql
+CREATE VIEW [Current Product List] AS
+SELECT ProductID, ProductName
+FROM Products
+WHERE Discontinued = No;
+```
+
+---
+
+# Question: How do you query data from the `[Current Product List]` view?
+
+**Answer:**
+
+```sql
+SELECT * FROM [Current Product List];
+```
+
+---
+
+# Question: Write a SQL view that shows products with a unit price above average.
+
+**Answer:**
+
+```sql
+CREATE VIEW [Products Above Average Price] AS
+SELECT ProductName, UnitPrice
+FROM Products
+WHERE UnitPrice > (SELECT AVG(UnitPrice) FROM Products);
+```
+
+---
+
+# Question: How do you retrieve all records from `[Products Above Average Price]`?
+
+**Answer:**
+
+```sql
+SELECT * FROM [Products Above Average Price];
+```
+
+---
+
+# Question: Write the SQL to create a view called `[Category Sales For 1997]` that calculates total sales by category.
+
+**Answer:**
+
+```sql
+CREATE VIEW [Category Sales For 1997] AS
+SELECT DISTINCT CategoryName, SUM(ProductSales) AS CategorySales
+FROM [Product Sales for 1997]
+GROUP BY CategoryName;
+```
+
+---
+
+# Question: How do you query `[Category Sales For 1997]`?
+
+**Answer:**
+
+```sql
+SELECT * FROM [Category Sales For 1997];
+```
+
+---
+
+# Question: Can you add a `WHERE` condition when querying a view?
+
+**Answer:** Yes
+
+---
+
+# Question: How would you query `[Category Sales For 1997]` to get sales only for the "Beverages" category?
+
+**Answer:**
+
+```sql
+SELECT * FROM [Category Sales For 1997]
+WHERE CategoryName = 'Beverages';
+```
+
+---
+
+
 
 
 
