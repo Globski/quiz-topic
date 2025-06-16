@@ -309,4 +309,113 @@ app = Flask(__name__)
 
 ---
 
+# Question: What is the purpose of Flask's debug mode?
+
+**Answer:** To enable the reloader and debugger modules, which improve the development experience.
+
+---
+
+# Question: What does the Flask reloader do?
+
+**Answer:** It monitors all source code files and automatically restarts the server when any file is modified.
+
+---
+
+# Question: Why is the reloader useful during development?
+
+**Answer:** It ensures that any saved changes are picked up immediately by restarting the server automatically.
+
+---
+
+# Question: What does the Flask debugger do?
+
+**Answer:** It provides an interactive, browser-based stack trace when an unhandled exception occurs.
+
+---
+
+# Question: What can developers do using the Flask debugger?
+
+**Answer:** Inspect source code and evaluate expressions anywhere in the call stack.
+
+---
+
+# Question: When does the Flask debugger appear?
+
+**Answer:** When the application raises an unhandled exception during development.
+
+---
+
+# Question: What happens if you start the Flask server using `app.run()` instead of the `flask` command?
+
+**Answer:** The `FLASK_APP` and `FLASK_DEBUG` environment variables are not used.
+
+---
+
+# Question: How can you enable debug mode programmatically when using `app.run()`?
+
+**Answer:** By passing `debug=True` as an argument: `app.run(debug=True)`.
+
+---
+
+# Question: Why should debug mode **never** be enabled on a production server?
+
+**Answer:** Because the debugger allows remote code execution, making the server vulnerable to attacks.
+
+---
+
+# Question: What protection does Flask provide to limit access to the debugger?
+
+**Answer:** The debugger requires activation with a PIN, which is printed to the console by the `flask run` command.
+
+---
+
+# Question: What does the command `flask --help` do?
+
+**Answer:** It displays available options and commands supported by the `flask` CLI tool.
+
+---
+
+# Question: What environment variable must be set to specify the Flask application to run?
+
+**Answer:** `FLASK_APP`
+
+---
+
+# Question: What environment variable can be set to enable debug mode when using the `flask run` command?
+
+**Answer:** `FLASK_DEBUG`
+
+---
+
+# Question: What is the purpose of the `flask` shell command?
+
+**Answer:** It runs an interactive shell in the Flask application context.
+
+---
+
+# Question: What are the two most useful commands provided by the `flask` CLI?
+
+**Answer:** `run` and `shell`
+
+---
+
+# Question: What does the command `flask run` do?
+
+**Answer:** It runs the Flask development server.
+
+---
+
+# Question: What will be displayed if you run `flask` without any arguments?
+
+**Answer:** A help message listing usage, options, and available commands.
+
+---
+
+# Question: How does the `flask` command identify which application to load?
+
+**Answer:** It uses the `FLASK_APP` environment variable.
+
+---
+
+
 
