@@ -85,12 +85,6 @@
 
 ---
 
-# Question: In the "Persons" table example, how many records and columns are shown?
-
-**Answer:** Three records and five columns
-
----
-
 # Question: Write the SQL statement that selects all records from a table named "Persons".
 
 **Answer:** `SELECT * FROM Persons`
@@ -130,19 +124,6 @@
 # Question: Based on the example query, what is the symbol `<>` used for in SQL?
 
 **Answer:** It means "not equal to"
-
----
-
-# Question: What was the result set (Company and Country) returned from the `SELECT ... WHERE Country <> 'USA'` query?
-
-**Answer:**
-
-* Island Trading, UK
-* Galería del gastrónomo, Spain
-* Laughing Bacchus Wine Cellars, Canada
-* Paris spécialités, France
-* Simons bistro, Denmark
-* Wolski Zajazd, Poland
 
 ---
 
@@ -260,12 +241,6 @@
 
 ---
 
-# Question: Is SQL case-sensitive?
-
-**Answer:** No, SQL is not case-sensitive
-
----
-
 # Question: What is the equivalent of `SELECT` in lowercase?
 
 **Answer:** `select`
@@ -275,19 +250,6 @@
 # Question: Write an SQL query to select the columns `LastName` and `FirstName` from the `Persons` table.
 
 **Answer:** `SELECT LastName, FirstName FROM Persons`
-
----
-
-# Question: What is the result of `SELECT LastName, FirstName FROM Persons` if the table contains Hansen Ola, Svendson Tove, and Pettersen Kari?
-
-**Answer:**
-
-```
-LastName    FirstName  
-Hansen      Ola  
-Svendson    Tove  
-Pettersen   Kari  
-```
 
 ---
 
@@ -312,15 +274,6 @@ Pettersen   Kari
 # Question: In what scenario would you use `SELECT DISTINCT` in a query?
 
 **Answer:** When you want to return only the unique (non-duplicate) values from a column
-
----
-
-Here is the **next set of quiz questions** based on the most recent material you shared. This batch covers:
-
-* `SELECT DISTINCT`
-* `WHERE` clause
-* Correct use of quotes
-* SQL comparison operators
 
 ---
 
@@ -367,18 +320,6 @@ WHERE column_name operator value
 ```sql
 SELECT * FROM Persons  
 WHERE City='Sandnes'  
-```
-
----
-
-# Question: What would be the result-set of the query `SELECT * FROM Persons WHERE City='Sandnes'` based on a table where two records have the city 'Sandnes'?
-
-**Answer:**
-
-```
-P_Id  LastName  FirstName  Address     City  
-1     Hansen    Ola        Timoteivn10 Sandnes  
-2     Svendson  Tove       Borgvn 23   Sandnes  
 ```
 
 ---
