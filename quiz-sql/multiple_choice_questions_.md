@@ -553,12 +553,6 @@ VALUES (5, 'Tjessem', 'Jakob')
 
 ---
 
-# Question: In the example where only some columns are inserted, what is the P\_Id of the row that does not have Address or City values?
-
-**Answer:** 5 (LastName 'Tjessem', FirstName 'Jakob').
-
----
-
 # Question: What will happen to the unspecified columns (Address, City) for the new row in the partially-specified `INSERT INTO`?
 
 **Answer:** They will either contain NULL or their default values defined in the table schema.
@@ -656,12 +650,6 @@ WHERE LastName='Tjessem' AND FirstName='Jakob';
 
 ---
 
-# Question: What happens to the "Persons" table after executing the `UPDATE` on "Tjessem, Jakob"?
-
-**Answer:** His Address becomes "Nissestien 67" and City becomes "Sandnes".
-
----
-
 # Question: What is the result of the following SQL command without a `WHERE` clause?
 
 ```sql
@@ -722,12 +710,6 @@ WHERE some_column = some_value;
 DELETE FROM Persons  
 WHERE LastName='Tjessem' AND FirstName='Jakob';
 ```
-
----
-
-# Question: After deleting "Tjessem, Jakob", how many records remain in the "Persons" table?
-
-**Answer:** Four records (assuming no other deletions occurred).
 
 ---
 
