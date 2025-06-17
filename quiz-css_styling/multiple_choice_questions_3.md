@@ -124,6 +124,90 @@
 
 ---
 
+# Question: What is the key layout behavior of block-level elements?
+
+**Answer:** Block-level elements stack vertically and always create a new line.
+
+---
+
+# Question: What is the key layout behavior of inline elements?
+
+**Answer:** Inline elements do not create a new line and only take up as much width as their content.
+
+---
+
+# Question: When does an inline element take up more space than its content?
+
+**Answer:** When padding is added, which increases the element's visible width.
+
+---
+
+# Question: What layout behavior does `inline-block` offer?
+
+**Answer:** It allows the element to remain inline with surrounding content while accepting block-level properties like `margin`, `padding`, and `height`.
+
+---
+
+# Question: Give two practical use cases for using `inline-block`.
+
+**Answer:** Styling links as buttons and displaying list items in a horizontal row.
+
+---
+
+# Question: What elements were used to create navigation links?
+
+**Answer:** A `<nav>` element containing an unordered list `<ul>` with `<li>` items, each holding an anchor `<a>` tag.
+
+---
+
+# Question: What is the default display behavior of an anchor `<a>` tag?
+
+**Answer:** It is an inline element.
+
+---
+
+# Question: What is the default display behavior of list items `<li>`?
+
+**Answer:** They are block-level elements, each occupying 100% of the parent container's width.
+
+---
+
+# Question: What default spacing does the `<ul>` have that needed to be removed?
+
+**Answer:** Left padding.
+
+---
+
+# Question: What CSS property and value were used to remove default padding from the list?
+
+**Answer:** `padding-left: 0;`
+
+---
+
+# Question: What CSS property was used to align list items to the right?
+
+**Answer:** `text-align: right;`
+
+---
+
+# Question: How was the `ul`’s full width visually confirmed?
+
+**Answer:** By setting a background color (light gray) to make the full width visible.
+
+---
+
+# Question: Why did aligning the text to the right affect all the list items?
+
+**Answer:** Because the `<ul>` spans 100% width and `text-align: right` aligns its child content accordingly.
+
+---
+
+# Question: What CSS property was applied last to the unordered list for spacing?
+
+**Answer:** `margin: 0;`
+
+---
+
 
 
 
