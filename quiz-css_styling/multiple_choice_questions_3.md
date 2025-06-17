@@ -208,6 +208,117 @@
 
 ---
 
+# Question: What three CSS properties are commonly used together to center content in a flex container?
+
+**Answer:** `display: flex;`, `justify-content: center;`, and `align-items: center;`
+
+---
+
+# Question: What happens when you apply `display: flex; justify-content: center; align-items: center;` to a container?
+
+**Answer:** The child elements are centered both vertically and horizontally within the container.
+
+---
+
+# Question: Can the `<body>` tag be used as a flex container for centering elements on the entire page?
+
+**Answer:** Yes, the `<body>` can act as a flex container to center elements on the page.
+
+---
+
+# Question: What does setting `display: flex` on a child element do?
+
+**Answer:** It makes the child element a flex container itself, allowing it to control its own children.
+
+---
+
+# Question: What is the effect of not setting a width or min-width on flex items?
+
+**Answer:** The items only take up the width of their content.
+
+---
+
+# Question: What does the CSS `flex-basis` property control?
+
+**Answer:** It defines the initial main size of a flex item before any extra space is distributed.
+
+---
+
+# Question: What type of values can `flex-basis` accept?
+
+**Answer:** Absolute values (e.g., `100px`) or percentages.
+
+---
+
+# Question: How does `flex-basis` behave similarly to `min-width`?
+
+**Answer:** It sets an initial size the item will not shrink below, though it is not exactly the same as `min-width`.
+
+---
+
+# Question: What is the role of the `flex-grow` property?
+
+**Answer:** It defines how much a flex item will grow relative to the rest of the flex items when there is extra space.
+
+---
+
+# Question: What kind of value does `flex-grow` accept?
+
+**Answer:** A unitless number.
+
+---
+
+# Question: What happens when all flex items have the same `flex-grow` value?
+
+**Answer:** They grow at the same rate and fill the remaining space equally.
+
+---
+
+# Question: How is a specific `.box` element targeted in CSS using a pseudo-class?
+
+**Answer:** By combining the class selector with `:nth-child()`, e.g., `.box:nth-child(2)`.
+
+---
+
+# Question: What happens when one `.box` has `flex-grow: 2` and another has `flex-grow: 1`?
+
+**Answer:** After applying their flex-basis, the remaining space is divided such that the second box gets twice as much space as the first.
+
+---
+
+# Question: Does `flex-grow: 2` make a box exactly twice as wide as one with `flex-grow: 1`?
+
+**Answer:** No, it only applies to the **extra space** after flex-basis; not the total width.
+
+---
+
+# Question: What is the purpose of the `flex-shrink` property?
+
+**Answer:** It defines how much a flex item will shrink relative to other items when there's not enough space.
+
+---
+
+# Question: What must be done to observe the effect of `flex-shrink`?
+
+**Answer:** Set `flex-wrap: nowrap` on the container to prevent wrapping.
+
+---
+
+# Question: How is `flex-shrink` behavior observed in an example?
+
+**Answer:** By setting `flex-shrink: 2` on one item and `flex-shrink: 1` on another, the first item will shrink twice as much when needed.
+
+---
+
+# Question: Why might increasing the box size help observe `flex-shrink` better?
+
+**Answer:** Larger boxes will more clearly demonstrate how the items shrink relative to one another when space is constrained.
+
+---
+
+
+
+
 
 
 
