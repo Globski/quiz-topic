@@ -124,12 +124,6 @@
 
 ---
 
-# Question: Which pseudo-classes are styled after visited links?
-
-**Answer:** The `:hover` pseudo-class
-
----
-
 
 
 
