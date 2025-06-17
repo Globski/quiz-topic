@@ -400,22 +400,6 @@ WHERE City='Sandnes'
 
 ---
 
-# Question: What result will the following SQL statement return?
-
-```sql
-SELECT * FROM Persons  
-WHERE FirstName='Tove' AND LastName='Svendson'  
-```
-
-**Answer:**
-
-```
-P_Id  LastName  FirstName  Address     City  
-2     Svendson  Tove       Borgvn 23   Sandnes  
-```
-
----
-
 # Question: Write an SQL query to select records where the first name is "Tove" or "Ola".
 
 **Answer:**
@@ -423,18 +407,6 @@ P_Id  LastName  FirstName  Address     City
 ```sql
 SELECT * FROM Persons  
 WHERE FirstName='Tove' OR FirstName='Ola'  
-```
-
----
-
-# Question: What would be the result-set of the query `SELECT * FROM Persons WHERE FirstName='Tove' OR FirstName='Ola'`?
-
-**Answer:**
-
-```
-P_Id  LastName   FirstName  Address     City  
-1     Hansen     Ola        Timoteivn10 Sandnes  
-2     Svendson   Tove       Borgvn 23   Sandnes  
 ```
 
 ---
