@@ -1,3 +1,57 @@
+# Question: What CSS property is used to create rounded corners on an element?
+
+**Answer:** `border-radius`
+
+---
+
+# Question: What value was set for `border-radius` to create slightly rounded corners?
+
+**Answer:** `2rem`
+
+---
+
+# Question: What effect does setting `margin-left` and `margin-right` to `auto` have when combined with a fixed `max-width`?
+
+**Answer:** It centers the element horizontally within its container.
+
+---
+
+# Question: Why is `margin: 0 auto 1rem` not visually noticeable when the `nav` element is set to `display: block` and takes full width?
+
+**Answer:** Because a block-level element takes 100% width by default, there is no remaining space for the auto margins to distribute unless `max-width` is also set.
+
+---
+
+# Question: What happens when a `max-width` of `600px` is applied to a `nav` element?
+
+**Answer:** The `nav` no longer expands to the full width of the page and is limited to a maximum width of 600px.
+
+---
+
+# Question: How does setting `margin: 0 auto` on an element with a `max-width` of 600px affect its layout?
+
+**Answer:** It centers the element within its parent container horizontally.
+
+---
+
+# Question: Why do list items (`li`) show bullet points by default in a `nav`?
+
+**Answer:** Because unordered lists (`ul`) have a default `list-style` of `disc`, and bullets are placed outside the content area by default.
+
+---
+
+# Question: What must be done to remove bullet points from a list in a `nav`?
+
+**Answer:** The `list-style` property should be set to `none`.
+
+---
+
+# Question: Why does an `h2` inside the `nav` take up the full width of the `nav` container?
+
+**Answer:** Because it is a block-level element, which defaults to 100% width of its parent.
+
+---
+
 # Question: What is the purpose of media queries in CSS?
 
 **Answer:** Media queries allow CSS to adapt the layout and styling of a webpage based on characteristics of the user's device, such as screen width, enabling mobile-responsive design.
