@@ -52,6 +52,89 @@
 
 ---
 
+# Question: What CSS property is used to change the font used throughout the page?
+
+**Answer:** `font-family`
+
+---
+
+# Question: What property is used to align all text content on the page to the center?
+
+**Answer:** `text-align: center;`
+
+---
+
+# Question: What CSS property is used to apply a border around the `<nav>` element?
+
+**Answer:** `border`
+
+---
+
+# Question: Why was color `#333` used instead of `#000` for the border?
+
+**Answer:** To use a slightly lighter shade of black.
+
+---
+
+# Question: What property controls the position of bullet points in a list?
+
+**Answer:** `list-style-position`
+
+---
+
+# Question: What property and value remove bullet points from an unordered list?
+
+**Answer:** `list-style-type: none;`
+
+---
+
+# Question: How was a visual separation added between list items in the navigation?
+
+**Answer:** By applying `border-top: 1px solid #333;` to each `<li>` element.
+
+---
+
+# Question: Why was `border-top` used instead of `border` or `border-bottom` for list items?
+
+**Answer:** To create a consistent visual separation between each item without adding borders to all sides.
+
+---
+
+# Question: How are anchor tags inside only list items selected in CSS?
+
+**Answer:** Using the selector `li a` (and `li a:visited` for visited links).
+
+---
+
+# Question: What text decoration is removed from the anchor tags inside the list?
+
+**Answer:** `text-decoration: none;`
+
+---
+
+# Question: What color is applied to anchor tags and visited links inside list items?
+
+**Answer:** `#333`
+
+---
+
+# Question: What effect was demonstrated when visiting a link, then returning to the page?
+
+**Answer:** The link’s color remained the same due to the `:visited` styling.
+
+---
+
+# Question: Which pseudo-classes are styled after visited links?
+
+**Answer:** The `:hover` pseudo-class
+
+---
+
+
+
+
+
+
 # Question: What is the purpose of media queries in CSS?
 
 **Answer:** Media queries allow CSS to adapt the layout and styling of a webpage based on characteristics of the user's device, such as screen width, enabling mobile-responsive design.
