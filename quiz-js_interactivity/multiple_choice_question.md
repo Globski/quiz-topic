@@ -281,4 +281,69 @@
 
 ---
 
+# Question: What does `expect(2 + 2).toBe(4);` test for?
+
+**Answer:** It tests whether the result of `2 + 2` is strictly equal to `4` using the `toBe` matcher for primitive values.
+
+---
+
+# Question: Which types of values should be compared using the `toBe` matcher in Jest?
+
+**Answer:** Primitive values like numbers, strings, and booleans.
+
+---
+
+# Question: What output confirms a passing test in Jest after running a `toBe` matcher?
+
+**Answer:** `1 passed, 1 total`
+
+---
+
+# Question: When comparing objects or arrays in Jest, which matcher should be used instead of `toBe`?
+
+**Answer:** `toEqual`
+
+---
+
+# Question: What does the `toEqual` matcher do?
+
+**Answer:** It checks for deep equality between two objects or arrays.
+
+---
+
+# Question: Why can't `toBe` be used for object or array comparison in Jest?
+
+**Answer:** Because `toBe` uses strict equality (`===`), which only returns true if the operands reference the same object in memory.
+
+---
+
+# Question: How was the deep equality of the `data` object asserted in the test?
+
+**Answer:** `expect(data).toEqual({ one: 1, two: 2 });`
+
+---
+
+# Question: What does a successful test involving an object and `toEqual` indicate?
+
+**Answer:** That the object structure and values matched exactly as expected.
+
+---
+
+# Question: What are `toBeTruthy` and `toBeFalsy` used for in Jest?
+
+**Answer:** They test whether a value evaluates to `true` or `false` in a boolean context.
+
+---
+
+# Question: What matcher should be used to test for falsy values in Jest?
+
+**Answer:** `toBeFalsy`
+
+---
+
+# Question: What is the syntax for checking if a value is falsy using Jest?
+
+**Answer:** `expect(value).toBeFalsy();`
+
+---
 
