@@ -160,4 +160,71 @@
 
 ---
 
+# Question: What are the two parts passed into the `test()` function in Jest?
+
+**Answer:** A description string and a test function (callback).
+
+---
+
+# Question: What is the purpose of the test description in the `test()` function?
+
+**Answer:** It provides a human-readable explanation of what the test is checking; in this case, that adding 1 and 2 should equal 3.
+
+---
+
+# Question: What is the syntax structure of a Jest `test()` function?
+
+**Answer:** `test('description', () => { test logic });`
+
+---
+
+# Question: What does the `expect` function do in Jest?
+
+**Answer:** It asserts that a value matches an expected result.
+
+---
+
+# Question: What is the purpose of `toBe(3)` in the test?
+
+**Answer:** It asserts that the result of `sum(1, 2)` should strictly equal `3`.
+
+---
+
+# Question: What does `expect(sum(1, 2)).toBe(3);` test?
+
+**Answer:** It checks whether the `sum` function correctly returns `3` when passed `1` and `2`.
+
+---
+
+# Question: Why is it important to use a semicolon after the Jest assertion?
+
+**Answer:** To properly terminate the JavaScript statement and avoid syntax errors.
+
+---
+
+
+# Question: How do you run the test from the terminal?
+
+**Answer:** By executing `npm test`.
+
+---
+
+# Question: What does the error message `"echo error no test specified"` indicate?
+
+**Answer:** That the `test` script is not defined in the `package.json` file.
+
+---
+
+# Question: What must be checked if `npm test` returns an error about no test being specified?
+
+**Answer:** Ensure that the `test` script is correctly defined in the `scripts` section of `package.json`.
+
+---
+
+# Question: How do you confirm you are in the correct folder before running tests in the terminal?
+
+**Answer:** By checking the current directory and confirming it contains the `sum.js` and `sum.test.js` files.
+
+---
+
 
