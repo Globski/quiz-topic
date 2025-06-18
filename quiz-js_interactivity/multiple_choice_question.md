@@ -100,3 +100,64 @@
 
 ---
 
+# Question: What is unit testing?
+
+**Answer:** Unit testing is the process of checking small pieces of code, such as basic functions or classes, to identify bugs early and often.
+
+---
+
+# Question: Why is unit testing preferred over testing the entire code at once?
+
+**Answer:** Unit testing allows developers to identify errors early, making it easier to trace bugs within small code blocks rather than debugging the entire codebase later.
+
+---
+
+# Question: How does JavaScript identify a file as a test file?
+
+**Answer:** By including `.test.js` in the filename, JavaScript (with Jest) recognizes it as a test file.
+
+---
+
+# Question: What  is Jest?
+
+**Answer:** Jest is a testing framework.
+
+---
+
+# Question: What keyword is used to define a unit test in Jest?
+
+**Answer:** The `test` keyword is used.
+
+---
+
+# Question: What are the two components passed into the `test()` function in Jest?
+
+**Answer:** A description string and a test function (i.e., a callback that runs the actual test).
+
+---
+
+# Question: What does the term “exporting a function” mean in Node.js?
+
+**Answer:** Making the function accessible to other files/modules via `module.exports`.
+
+---
+
+# Question: What happens if you don’t export a function in Node.js?
+
+**Answer:** The function will not be accessible from other files, making it impossible to test or reuse.
+
+---
+
+# Question: At what stage should unit testing ideally occur in the development process?
+
+**Answer:** During the development of small code blocks (early stages), not after the full code is written.
+
+---
+
+# Question: What advantage does unit testing provide during debugging?
+
+**Answer:** It helps locate the source of bugs more precisely since only small code blocks are tested individually.
+
+---
+
+
