@@ -227,4 +227,58 @@
 
 ---
 
+# Question: What error occurs if the `test` script in `package.json` is not correctly set?
+
+**Answer:** `"no test specified"` is shown because the key was incorrectly set to `just` instead of `test`.
+
+---
+
+# Question: How should the `scripts` section be correctly written in `package.json` to run tests with Jest?
+
+**Answer:** `"scripts": { "test": "jest" }`
+
+---
+
+# Question: What command runs the unit tests in a Node.js project using Jest?
+
+**Answer:** `npm test`
+
+---
+
+# Question: What does the output `1 passed, 1 total` from Jest mean?
+
+**Answer:** One test was run and it passed successfully.
+
+---
+
+# Question: What are matchers in Jest?
+
+**Answer:** Matchers are functions used with `expect()` to assert various conditions about test values.
+
+---
+
+# Question: In the example `expect(sum(1, 2)).toBe(3);`, which part is the matcher?
+
+**Answer:** `toBe(3)` is the matcher.
+
+---
+
+# Question: What is the purpose of the `toBe` matcher in Jest?
+
+**Answer:** It checks for exact equality using `===` and is used for primitive values like numbers, strings, and booleans.
+
+---
+
+# Question: When should you use the `toBe` matcher?
+
+**Answer:** For asserting equality of primitive values such as numbers, strings, and booleans.
+
+---
+
+# Question: What are some other matchers mentioned in Jest besides `toBe`?
+
+**Answer:** `toEqual`, `toBeTruthy`, `toBeFalsy`, `toThrow`
+
+---
+
 
