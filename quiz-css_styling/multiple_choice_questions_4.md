@@ -1,3 +1,80 @@
+# Question: What HTML tag is use to group e.g four paragraphs?
+
+**Answer:** The `<section>` tag.
+
+---
+
+# Question: What is the purpose of assigning a `class` to the section element?
+
+**Answer:** The class e.g `columns` was assigned to apply CSS styling that enables column-based layout for the section's content.
+
+---
+
+# Question: What does the `.columns` CSS class define?
+
+**Answer:** It defines `column-count: 4;`, which attempts to create four columns within the section.
+
+---
+
+# Question: What visual behavior occurs in the browser when `column-count: 4` is applied?
+
+**Answer:** The first four paragraphs are displayed in four separate columns, while the fifth paragraph (outside the section) is not affected and remains in a single column.
+
+---
+
+# Question: How does the column layout behave when the browser window is resized?
+
+**Answer:** The number of visible columns adjusts responsively; initially one paragraph per column, but changes dynamically as the viewport width changes.
+
+---
+
+# Question: What property ensures that a column does not become smaller than a specific width?
+
+**Answer:** The `column-width` property ensures each column is not smaller than a specified width (e.g., 250px).
+
+---
+
+# Question: What happens when both `column-count` and `column-width` are specified?
+
+**Answer:** The browser respects the `column-width` and only creates as many columns as the available width allows, up to the maximum defined by `column-count`.
+
+---
+
+# Question: What is the expected behavior when the screen can only fit columns narrower than 250px?
+
+**Answer:** The browser reduces the number of columns shown, adhering to the minimum width of 250px per column.
+
+---
+
+# Question: What shorthand property can replace both `column-count` and `column-width`?
+
+**Answer:** The `columns` shorthand property can replace both, e.g., `columns: 4 250px;`.
+
+---
+
+# Question: What is the result of replacing `column-count` and `column-width` with the shorthand `columns`?
+
+**Answer:** The visual result remains the same; it simplifies the CSS while maintaining column behavior.
+
+---
+
+# Question: How can you add visual dividers between columns?
+
+**Answer:** By using the `column-rule` property, e.g., `column-rule: 3px solid black;`.
+
+---
+
+# Question: How does `column-rule` behave in CSS?
+
+**Answer:** It works similarly to a `border` property, combining width, style, and color to create lines between columns.
+
+---
+
+
+
+
+
+
 # Question: What are media queries in CSS3?
 
 **Answer:**
