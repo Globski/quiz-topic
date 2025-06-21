@@ -807,4 +807,71 @@ Yes, it’s commonly applied to full paragraphs, headlines, and blocks of text t
 
 ---
 
- 
+# Question: What does the `column-rule` property do in a multi-column layout?
+
+**Answer:** The `column-rule` adds visual dividers between columns, similar to borders, and accepts width, style, and color values (e.g., `3px solid black`).
+
+---
+
+# Question: When are `column-rule` lines visible in a column layout?
+
+**Answer:** Only when two or more columns are present; the rule lines disappear when the layout collapses to a single column.
+
+---
+
+# Question: If four columns are displayed, how many column rules will appear?
+
+**Answer:** Three column rules will appear—one between each adjacent pair of columns.
+
+---
+
+# Question: Which CSS property sets spacing between columns?
+
+**Answer:** `column-gap` sets the space between columns.
+
+---
+
+# Question: How does increasing `column-gap` affect the number of visible columns?
+
+**Answer:** A larger `column-gap` can reduce the number of columns that fit within the available width, resulting in fewer columns being displayed.
+
+---
+
+# Question: What causes inconsistent vertical spacing between the top of the first paragraph and the top of the columns?
+
+**Answer:** Default `margin-top` on the first paragraph causes extra space above it, making it appear offset from the top of the container.
+
+---
+
+# Question: Why is there vertical spacing between paragraphs in the columns?
+
+**Answer:** Each paragraph has a default `margin-top` and `margin-bottom`, creating space above and below each element.
+
+---
+
+# Question: What CSS rule removes the top margin from all paragraphs inside the `.columns` container?
+
+**Answer:** `.columns p { margin-top: 0; }`
+
+---
+
+# Question: What visual effect does removing `margin-top` from all paragraphs in `.columns` have?
+
+**Answer:** It aligns the first paragraph flush with the top of the container while preserving spacing between other paragraphs.
+
+---
+
+# Question: Why does spacing between paragraphs remain consistent even after removing `margin-top`?
+
+**Answer:** Because of **margin collapsing**, only one margin value (the larger of the two adjacent margins) is applied between elements.
+
+---
+
+# Question: What CSS behavior ensures that adjacent vertical margins don't accumulate additively?
+
+**Answer:** Margin collapsing — adjacent top and bottom margins collapse into a single margin.
+
+---
+
+
+
