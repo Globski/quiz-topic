@@ -1431,3 +1431,78 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 
 ---
 
+# Question: How do you start a FastAPI server using the `uvicorn` command?
+
+**Answer:** By typing `uvicorn filename:app`, where `filename` is the Python file (without `.py`) and `app` is the FastAPI instance.
+
+---
+
+# Question: What message indicates the FastAPI server started successfully?
+
+**Answer:** A line showing the server is running at `http://127.0.0.1:8000`.
+
+---
+
+# Question: What does the IP address `127.0.0.1` represent?
+
+**Answer:** It refers to the local machine, also known as localhost.
+
+---
+
+# Question: On what port does the FastAPI development server run by default?
+
+**Answer:** Port `8000`.
+
+---
+
+# Question: What output is displayed when visiting `http://127.0.0.1:8000` in the browser after starting the server?
+
+**Answer:** `{"message": "Hello World"}`
+
+---
+
+# Question: What is the term used in FastAPI documentation for a route or endpoint?
+
+**Answer:** Path operation
+
+---
+
+# Question: What two components make up a FastAPI path operation?
+
+**Answer:** The function and the decorator.
+
+---
+
+# Question: What is the purpose of the decorator in a FastAPI path operation?
+
+**Answer:** It maps the function to a specific route and HTTP method, defining how FastAPI should respond to a request.
+
+---
+
+# Question: Is the `async` keyword required when defining a FastAPI route handler?
+
+**Answer:** No, it is optional unless performing asynchronous tasks like API calls or database access.
+
+---
+
+# Question: What happens if the `async` keyword is removed from a FastAPI route handler that doesn’t use asynchronous operations?
+
+**Answer:** The code behaves exactly the same, as `async` is not required in this case.
+
+---
+
+# Question: Does the name of a FastAPI route handler function affect its behavior?
+
+**Answer:** No, the function name is arbitrary and does not impact functionality.
+
+---
+
+# Question: Why is it recommended to use descriptive names for FastAPI path operation functions?
+
+**Answer:** To make the code more readable and reflect the operation's purpose (e.g., `get_user`, `login_user`).
+
+---
+
+
+
+
