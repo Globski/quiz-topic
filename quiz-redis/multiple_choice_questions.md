@@ -1503,6 +1503,97 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 
 ---
 
+# Question: Does the name of a FastAPI route function affect the behavior of the API?
+
+**Answer:** No, the function name is arbitrary and does not impact API behavior.
+
+---
+
+# Question: What is recommended when naming FastAPI route functions?
+
+**Answer:** Use descriptive names that reflect the purpose of the function (e.g., `login_user`, `get_user`).
+
+---
+
+# Question: Where should the logic for operations like user authentication be placed in FastAPI?
+
+**Answer:** Inside the function defined for the path operation.
+
+---
+
+# Question: What does a FastAPI path operation typically return?
+
+**Answer:** Any return value, commonly a Python dictionary, which FastAPI automatically converts to JSON.
+
+---
+
+# Question: What is JSON and why is it important in APIs?
+
+**Answer:** JSON (JavaScript Object Notation) is a universal data format used to send and receive data between APIs and clients.
+
+---
+
+# Question: What happens if the decorator is removed from a FastAPI route function?
+
+**Answer:** The function no longer behaves as an API endpoint; it becomes a plain Python function.
+
+---
+
+# Question: What does the decorator do in a FastAPI route?
+
+**Answer:** It registers the function as an API endpoint (a path operation) that can respond to HTTP requests.
+
+---
+
+# Question: What symbol is used in Python to define a decorator?
+
+**Answer:** The `@` symbol.
+
+---
+
+# Question: In FastAPI, what does the decorator typically reference?
+
+**Answer:** The FastAPI app instance followed by the HTTP method and route path (e.g., `@app.get("/")`).
+
+---
+
+# Question: What is the purpose of the HTTP method in a FastAPI decorator?
+
+**Answer:** It specifies which type of HTTP request (e.g., GET, POST) the endpoint should handle.
+
+---
+
+# Question: What are the four main HTTP methods supported in FastAPI?
+
+**Answer:** `GET`, `POST`, `PUT`, and `DELETE`.
+
+---
+
+# Question: Where can a user learn more about HTTP methods?
+
+**Answer:** The Mozilla Developer Network (MDN) HTTP methods documentation page.
+
+---
+
+# Question: In FastAPI, what is the path argument in a decorator?
+
+**Answer:** It defines the URL path after the domain name that maps to the route (e.g., `"/"` for the root path).
+
+---
+
+# Question: What does the root path (`"/"`) represent in a FastAPI route?
+
+**Answer:** It corresponds to the base URL of the API, meaning no additional path after the domain is required.
+
+---
+
+# Question: Does adding or omitting a trailing slash in the root path change the behavior?
+
+**Answer:** No, using or omitting the trailing slash (`/`) in the root path does not affect the behavior.
+
+---
+
+
 
 
 
