@@ -690,4 +690,171 @@ It means writing the base styles for the smallest or least capable devices first
 
 ---
 
+# Question: List four core features added to API that make it “fully featured.”
+
+**Answer:** Authentication, CRUD operations, schema validation, and auto-generated documentation.
+
+---
+
+# Question: Two distinct ways to integrate a SQL database into a Python API. What are they?
+
+**Answer:** Using raw SQL queries and using an ORM (Object-Relational Mapper).
+
+---
+
+# Question: Which migration tool is for making incremental, Git-trackable changes to the database schema?
+
+**Answer:** Alembic.
+
+---
+
+# Question: What purpose does Postman serve?
+
+**Answer:** Constructing and sending HTTP requests to test the API throughout development.
+
+---
+
+# Question: Deployment covers two scenarios. What is the first, and which operating system does it target?
+
+**Answer:** Deploying the application to an Ubuntu machine hosted on a cloud provider.
+
+---
+
+# Question: Name four cloud providers that can host the Ubuntu deployment scenario.
+
+**Answer:** AWS, Google Cloud Platform (GCP), Microsoft Azure, and Digital Ocean.
+
+---
+
+# Question: In Ubuntu deployment, which software is configured to act as a reverse proxy in front of the API server?
+
+**Answer:** Nginx.
+
+---
+
+# Question: What Linux service manager is used to run API as a persistent background service?
+
+**Answer:** systemd (via a custom systemd service unit).
+
+---
+
+# Question: What firewall rule is configured for Ubuntu deployment?
+
+**Answer:** A rule that blocks all traffic except HTTP(S), i.e., all non-HTTP traffic is denied.
+
+---
+
+# Question: Why is SSL/TLS configured during deployment, and what protocol does it enable?
+
+**Answer:** To secure communications by encrypting traffic, enabling HTTPS.
+
+---
+
+# Question: What is the main benefit of automated integration tests when making code changes?
+
+**Answer:** They provide rapid feedback that newly introduced changes have not broken existing API functionality.
+
+---
+
+# Question: Which tool lets you model HTTP packets by hand for exploratory or manual testing?
+
+**Answer:** Postman.
+
+---
+
+# Question: Explain the relationship between Alembic migrations and Git version control.
+
+**Answer:** Alembic creates incremental migration scripts that can be committed to Git, allowing database schema evolution to be tracked alongside code changes.
+
+---
+
+# Question: What security enhancement is implemented after setting up reverse proxy on Ubuntu server?
+
+**Answer:** Enabling SSL certificates so the API serves traffic over HTTPS.
+
+---
+
+# Question: List four core features added to API that make it “fully featured.”
+
+**Answer:** Authentication, CRUD operations, schema validation, and auto-generated documentation.
+
+---
+
+# Question: SQL name three specific skills expected to have.
+
+**Answer:** (1) Generating accurate database schemas, (2) understanding core SQL concepts such as primary keys, foreign keys, and table constraints, and (3) writing SQL queries that retrieve precisely the desired data.
+
+---
+
+# Question: The two distinct ways to integrate a SQL database into a Python API. What are they?
+
+**Answer:** Using raw SQL queries and using an ORM (Object-Relational Mapper).
+
+---
+
+# Question: Which migration tool is for making incremental, Git-trackable changes to database schema?
+
+**Answer:** Alembic.
+
+---
+
+# Question: What purpose does Postman serve?
+
+**Answer:** Constructing and sending HTTP requests to test the API throughout development.
+
+---
+
+# Question: Automated integration testing why are these tests important?
+
+**Answer:** The tests automatically verify that new code changes do not break existing functionality.
+
+---
+
+# Question: In Ubuntu deployment, which software is configured to act as a reverse proxy in front of the API server?
+
+**Answer:** Nginx.
+
+---
+
+# Question: What Linux service manager is used to run API as a persistent background service?
+
+**Answer:** systemd (via a custom systemd service unit).
+
+---
+
+# Question: What firewall rule is configured for Ubuntu deployment?
+
+**Answer:** A rule that blocks all traffic except HTTP(S), i.e., all non-HTTP traffic is denied.
+
+---
+
+# Question: Why is SSL/TLS configured during deployment, and what protocol does it enable?
+
+**Answer:** To secure communications by encrypting traffic, enabling HTTPS.
+
+---
+
+# Question: What is the main benefit of automated integration tests when making code changes?
+
+**Answer:** They provide rapid feedback that newly introduced changes have not broken existing API functionality.
+
+---
+
+# Question: Which tool lets you model HTTP packets by hand for exploratory or manual testing?
+
+**Answer:** Postman.
+
+---
+
+# Question: Explain the relationship between Alembic migrations and Git version control.
+
+**Answer:** Alembic creates incremental migration scripts that can be committed to Git, allowing database schema evolution to be tracked alongside code changes.
+
+---
+
+# Question: What security enhancement is implemented after setting up the reverse proxy on the Ubuntu server?
+
+**Answer:** Enabling SSL certificates so the API serves traffic over HTTPS.
+
+---
 
