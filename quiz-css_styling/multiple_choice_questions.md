@@ -1150,3 +1150,21 @@ Answer:
 It is converted into standard CSS that browsers can understand and render.
 
 ---
+
+# Question: What is the purpose of using `repeat(9, 1fr)` in grid template?
+
+**Answer:** It creates nine equally sized columns across the page layout.
+
+---
+
+# Question: How are the row sizes defined in the grid layout?
+
+**Answer:** Using `grid-auto-rows: 75px auto 75px;`.
+
+---
+
+# Question: What does the row configuration `75px auto 75px` imply in grid layout?
+
+**Answer:** The first and last rows are fixed at 75 pixels, and the middle row will expand automatically based on content.
+
+---
