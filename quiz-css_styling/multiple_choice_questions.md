@@ -1168,3 +1168,63 @@ It is converted into standard CSS that browsers can understand and render.
 **Answer:** The first and last rows are fixed at 75 pixels, and the middle row will expand automatically based on content.
 
 ---
+
+# Question: What is the default font size in most browsers?
+
+**Answer:** 16 pixels.
+
+---
+
+# Question: How do you convert rem values to pixels in a media query condition?
+
+**Answer:** Multiply the rem value by 16 pixels (e.g., `31.25rem * 16 = 500px`), since media query conditions use the **default font size** of 16px for `rem` units.
+
+---
+
+# Question: If `html { font-size: 62.5%; }` is used, how many pixels is `1rem` in the body of the CSS (outside media queries)?
+
+**Answer:** 10 pixels.
+
+---
+
+# Question: Why does changing the `html` font size not affect the rem value inside media query conditions?
+
+**Answer:** Because media query conditions do not inherit the CSS-defined `font-size` of the root `html` element; they continue to use the browser's default (16px) for `rem` calculations.
+
+---
+
+# Question: How would you write a media query for `max-width: 1000px` using `rem`?
+
+**Answer:** `@media (max-width: 62.5rem)` because `1000px / 16 = 62.5rem`.
+
+---
+
+# Question: Why is using `rem` inside media query conditions potentially confusing?
+
+**Answer:** Because developers might assume the rem value is based on the adjusted `html` font size (e.g., 10px), but it still uses the default 16px, which can lead to incorrect calculations if not understood.
+
+---
+
+# Question: What mistake might a developer make if they forget that media query rems use 16px as the base?
+
+**Answer:** They might divide by 10 (the adjusted `html` font size) instead of 16, resulting in a media query that applies at the wrong screen width.
+
+---
+
+# Question: If a developer writes `@media (max-width: 100rem)` after setting `html { font-size: 62.5%; }`, what is the actual pixel value this refers to?
+
+**Answer:** `100rem * 16 = 1600px`, not `1000px`.
+
+---
+
+# Question: How do you properly convert `500px` into `rem` for a media query?
+
+**Answer:** Divide 500 by 16, resulting in `31.25rem`.
+
+---
+
+# Question: Why is using `62.5%` instead of setting `font-size: 10px` directly considered better practice?
+
+**Answer:** Because it maintains responsiveness and respects browser accessibility settings instead of overriding them.
+
+---
