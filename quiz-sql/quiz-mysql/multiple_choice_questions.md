@@ -352,3 +352,92 @@
 
 ---
 
+# Question: What are some examples of relational database software packages?
+
+**Answer:** MySQL, PostgreSQL, SQLite, Microsoft SQL Server, MariaDB, Oracle, and IBM DB2.
+
+---
+
+# Question: What is the licensing model of MySQL?
+
+**Answer:** MySQL is open source and free, but it also has a paid version.
+
+---
+
+# Question: What distinguishes free/open-source databases from proprietary ones?
+
+**Answer:** Free/open-source databases are available for use without payment and their source code is often accessible, whereas proprietary databases require a license and are not open-source.
+
+---
+
+# Question: How can you look up SQL syntax differences between databases like MySQL and PostgreSQL?
+
+**Answer:** By reading official documentation or searching for answers on platforms like Stack Overflow.
+
+---
+
+# Question: Why is it important to become comfortable with a particular SQL variant in a company?
+
+**Answer:** Most companies use only one type of database, so developers usually become proficient in the specific SQL syntax required by that software package.
+
+---
+
+# Question: What is the main use case of SQL?
+
+**Answer:** Interacting with relational databases, including inserting, retrieving, and modifying data.
+
+---
+
+# Question: List four tasks that SQL cannot be used for.
+
+**Answer:** Data visualization, building software, building web applications, and machine learning.
+
+---
+
+# Question: What is a prerequisite for using SQL?
+
+**Answer:** A relational database must be set up; SQL cannot function without a database.
+
+---
+
+# Question: What are the basic operations that SQL is used for?
+
+**Answer:** Putting data into tables, retrieving data from tables, and modifying data within relational database tables.
+
+---
+
+# Question: What marks the end of an SQL statement?
+
+**Answer:** A semicolon (`;`).
+
+---
+
+# Question: What makes SQL a readable language?
+
+**Answer:** Its syntax is close to plain English, making it easy to understand what each statement is doing.
+
+---
+
+# Question: What does `SELECT TOP 3` do?
+
+**Answer:** It selects the first three rows from the result set.
+
+---
+
+# Question: What is the role of `JOIN`?
+
+**Answer:** To combine data from multiple tables based on a related column.
+
+---
+
+# Question: What SQL operation is used to aggregate data?
+
+**Answer:** `SUM()` and `GROUP BY`.
+
+---
+
+# Question: What clause is used to sort the data?
+
+**Answer:** `ORDER BY`.
+
+---
