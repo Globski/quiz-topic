@@ -327,3 +327,28 @@
 **Answer:** That the field is **required** (non-nullable).
 
 ---
+
+# Question: What does an empty field in an ERD indicate?
+
+**Answer:** It indicates that the field is optional and may not be filled in for all records.
+
+---
+
+# Question: Does the ERD specify data types for each field?
+
+**Answer:** No, the ERD does not specify data types, but they can be inferred.
+
+---
+
+# Question: What are the likely data types for the fields `officeCode`, `city`, and `phone`?
+
+**Answer:** `officeCode` might be a string or number; `city` and `phone` are likely strings.
+
+---
+
+# Question: What is the first step toward understanding a database structure?
+
+**Answer:** Understanding the Entity Relationship Diagram (ERD).
+
+---
+
