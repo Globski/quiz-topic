@@ -766,3 +766,75 @@
 
 ---
 
+# Question: What is the endpoint used to retrieve all of an artist's albums?
+
+**Answer:** `artists/{id}/albums` is used to retrieve all albums of a specific artist by ID.
+
+---
+
+# Question: How is the artist ID passed into the albums endpoint during an API call?
+
+**Answer:** The artist ID is piped into the `artists/{id}/albums` URL from a previously retrieved ID.
+
+---
+
+# Question: What is the default format of data returned by Spotify's API when requesting albums?
+
+**Answer:** JSON.
+
+---
+
+# Question: What does the Spotify API allow developers to access?
+
+**Answer:** Spotify’s entire music library, including data on artists, albums, tracks, playlists, and audio features like danceability.
+
+---
+
+# Question: What is one of the advantages of Spotify’s fast API responses?
+
+**Answer:** Results are cacheable, improving performance by reducing redundant requests.
+
+---
+
+# Question: Why might the Spotify API return results quickly even without frequent updates?
+
+**Answer:** Because the data is often cacheable and likely served from a server-side cache.
+
+---
+
+# Question: What caching behavior does Spotify likely implement?
+
+**Answer:** Server-side caching of frequently accessed data to improve response time.
+
+---
+
+# Question: What does “cacheable” mean in the context of Spotify API results?
+
+**Answer:** The data can be stored temporarily and reused, avoiding repeated fetching of the same data.
+
+---
+
+# Question: What command-line tool is recommended for sending API requests locally?
+
+**Answer:** `curl`.
+
+---
+
+# Question: What is `curl`?
+
+**Answer:** An open-source command-line tool used to send and receive data over various protocols, commonly used to test APIs.
+
+---
+
+# Question: On macOS, what application allows you to run `curl`?
+
+**Answer:** Terminal.
+
+---
+
+# Question: What is the purpose of the Terminal on macOS?
+
+**Answer:** It allows users to run command-line operations, such as using `curl` or other system-level commands.
+
+---
+
