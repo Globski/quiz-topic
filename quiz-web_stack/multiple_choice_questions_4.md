@@ -148,3 +148,98 @@
 
 ---
 
+# Question: Why is it significant that web code works across different browsers like Chrome, Edge, Safari, Firefox, and Brave?
+
+**Answer:** Because all web browsers implement a set of common web APIs that ensure consistent behavior, allowing developers to write code once and have it work across all major browsers.
+
+---
+
+# Question: What is the main benefit of APIs in terms of operating system differences?
+
+**Answer:** APIs abstract away the differences between operating systems, making it easier for developers to build software without worrying about OS-specific implementations.
+
+---
+
+# Question: What role do libraries play in software development?
+
+**Answer:** Libraries package up code to solve common problems, allowing developers to import and use complex functionality (e.g., image processing) without needing to implement it themselves.
+
+---
+
+# Question: What is an example of using a library for image manipulation?
+
+**Answer:** A developer can import an image package and call a method to convert a photo to black and white, without knowing how the transformation works internally.
+
+---
+
+# Question: How do frameworks help developers extend functionality?
+
+**Answer:** Frameworks provide APIs that allow developers to build on top of existing functionality, such as adding routes or dynamic data rendering in web applications.
+
+---
+
+# Question: What is expected from the developer when using a framework’s API?
+
+**Answer:** Developers must write implementations that conform to the API's contract or structure, even if they don’t fully understand the underlying mechanisms.
+
+---
+
+# Question: Are the APIs provided by libraries and frameworks usually local or remote?
+
+**Answer:** They are usually local, existing within the codebase, and used to simplify development by avoiding reimplementation of common tasks.
+
+---
+
+# Question: Why should developers focus on leveraging APIs?
+
+**Answer:** Because APIs handle lower-level complexities, enabling developers to concentrate on solving business problems more efficiently.
+
+---
+
+# Question: What is the key difference between local and remote APIs?
+
+**Answer:** Local APIs run within the codebase, while remote APIs are accessed over a network and can provide functionality or data from external sources.
+
+---
+
+# Question: How is a TV remote an analogy for a remote API?
+
+**Answer:** The remote sends commands to the TV, changing channels or volume without physical interaction—just like a remote API sends commands to another system to control behavior.
+
+---
+
+# Question: What types of objects can remote APIs control?
+
+**Answer:** Both physical objects (like robots, traffic signs, and drones) and software systems can be controlled via remote APIs.
+
+---
+
+# Question: How does a song recognition app demonstrate the value of remote APIs?
+
+**Answer:** It sends a small audio clip to a remote server, which processes the data and returns the song’s identity—something that wouldn’t be feasible to do locally due to space and power limitations.
+
+---
+
+# Question: What is another major benefit of remote APIs besides storage?
+
+**Answer:** Access to vast computational power beyond what the local device can handle.
+
+---
+
+# Question: How does Google Translate’s AR feature demonstrate the power of remote APIs?
+
+**Answer:** It uses the phone’s camera to translate text in real time by offloading the heavy processing to remote servers.
+
+---
+
+# Question: What phrase is used to describe where this remote processing occurs?
+
+**Answer:** "En la Nube," which means "in the Cloud."
+
+---
+
+# Question: What is an essential characteristic of a well-designed remote API interface?
+
+**Answer:** It allows users to interact efficiently with powerful remote systems through a simple and intuitive local interface.
+
+---
