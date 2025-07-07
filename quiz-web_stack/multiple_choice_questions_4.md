@@ -688,4 +688,81 @@
 
 ---
 
+# Question: What does a 500 error in the context of using an API typically indicate?
+
+**Answer:** A 500 error indicates that the developer made an error on the server side.
+
+---
+
+# Question: What HTTP method is used when searching the Spotify API?
+
+**Answer:** The HTTP method used is `GET`.
+
+---
+
+# Question: What is the endpoint used when performing a search in the Spotify API?
+
+**Answer:** The endpoint used is `/search`.
+
+---
+
+# Question: In the Spotify API search query, what does the `type` parameter specify?
+
+**Answer:** The `type` parameter specifies what kind of result to search for, such as `artist` or `track`.
+
+---
+
+# Question: When constructing a Spotify API search query for an artist like Beyonce, which parameter is used to pass the search term?
+
+**Answer:** The `q` parameter is used to pass the search term, such as `q=Beyonce`.
+
+---
+
+# Question: Why is the OAuth token necessary when using the Spotify API?
+
+**Answer:** The OAuth token is required to authenticate and authorize API requests.
+
+---
+
+# Question: Can a developer use the Spotify API without having a Spotify account?
+
+**Answer:** Yes, a developer can still generate an OAuth token and use the API without having a Spotify account.
+
+---
+
+# Question: What is one feature of the Spotify API console that makes it user-friendly for developers?
+
+**Answer:** The console allows developers to build and test queries directly with a visual interface, including auto-generating curl commands.
+
+---
+
+# Question: What is the significance of the "Get Token" button in the Spotify API console?
+
+**Answer:** It allows the user to generate an OAuth token required for making authenticated API requests.
+
+---
+
+# Question: What happens after signing up or logging into a Spotify account in the developer console?
+
+**Answer:** An OAuth token is created and inserted into the console to be used for making API calls.
+
+---
+
+# Question: Why should a developer avoid sharing their OAuth token?
+
+**Answer:** If someone else obtains the token, they can perform actions on behalf of the developer, potentially compromising their account.
+
+---
+
+# Question: After obtaining Beyonce’s artist ID from a search, what endpoint can be used to retrieve more information about her?
+
+**Answer:** The `/artists/{id}` endpoint can be used to retrieve more information using her artist ID.
+
+---
+
+# Question: What kind of data is returned when searching for an artist in the Spotify API?
+
+**Answer:** The API returns a list of artist objects including name, genre, followers, external URLs, and Spotify ID.
+
+---
 
