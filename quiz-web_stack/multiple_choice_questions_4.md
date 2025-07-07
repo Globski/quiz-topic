@@ -243,3 +243,125 @@
 **Answer:** It allows users to interact efficiently with powerful remote systems through a simple and intuitive local interface.
 
 ---
+
+# Question: What architectural style became dominant for web-based API development and revolutionized how developers interact with resources?
+
+**Answer:** REST (Representational State Transfer)
+
+---
+
+# Question: What does it mean for an API to be RESTful?
+
+**Answer:** It means the API embraces the style and constraints of REST.
+
+---
+
+# Question: What other remote API approach is mentioned as an evolution beyond REST?
+
+**Answer:** GraphQL
+
+---
+
+# Question: What foundational web technology does REST sit on top of?
+
+**Answer:** REST sits on top of web technologies, such as HTTP.
+
+---
+
+# Question: What is the role of a browser in the context of RESTful API interaction?
+
+**Answer:** The browser acts as a web client that sends HTTP requests to a server.
+
+---
+
+# Question: What is a URL and how does it relate to a URI?
+
+**Answer:** A URL (Uniform Resource Locator) is a specific type of URI (Uniform Resource Identifier).
+
+---
+
+# Question: What does HTTP stand for?
+
+**Answer:** Hypertext Transfer Protocol
+
+---
+
+# Question: In the context of web technologies, what is a protocol?
+
+**Answer:** A protocol defines the expectations of how to communicate; it's like a contract.
+
+---
+
+# Question: What HTTP verb is typically used when requesting data without making changes?
+
+**Answer:** GET
+
+---
+
+# Question: What is the sequence of events in a basic HTTP request and response cycle?
+
+**Answer:** The client sends an HTTP request → the server processes it → the server returns a response → the browser renders the result.
+
+---
+
+# Question: What is the most important part of an HTTP response for a webpage?
+
+**Answer:** The body, which contains the HTML.
+
+---
+
+# Question: What is HTML and what does it allow developers to do?
+
+**Answer:** HTML (HyperText Markup Language) structures content and allows for linking via anchor tags.
+
+---
+
+# Question: What happens when a user clicks a hyperlink in a web page?
+
+**Answer:** A new HTTP GET request is sent, repeating the request-response cycle.
+
+---
+
+# Question: Why is HTTP considered stateless?
+
+**Answer:** Because once a request and its response are completed, no information about that transaction is retained by the protocol.
+
+---
+
+# Question: How is state maintained across multiple HTTP requests?
+
+**Answer:** The client must manage state and send it with each new request.
+
+---
+
+# Question: What HTTP verb is commonly used when submitting form data to a server?
+
+**Answer:** POST
+
+---
+
+# Question: What are query string parameters and where are they located in a URL?
+
+**Answer:** They are key-value pairs used to pass information and appear after the `?` in a URL.
+
+---
+
+# Question: What are headers in the context of HTTP requests and responses?
+
+**Answer:** Headers are key-value pairs that provide additional information about the request or response.
+
+---
+
+# Question: What can request headers specify?
+
+**Answer:** Content type, language preferences, or request conditions (e.g., only if modified since a certain time).
+
+---
+
+# Question: What is caching and how does HTTP support it?
+
+**Answer:** Caching stores responses locally; headers can request data only if it's changed, reducing redundant data transfers.
+
+---
+
+
