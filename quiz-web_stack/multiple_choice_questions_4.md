@@ -364,4 +364,125 @@
 
 ---
 
+# Question: How can authentication information be embedded in a request?
+
+**Answer:** By including it in the request headers, which allows the client to stay logged in across requests.
+
+---
+
+# Question: What is the purpose of HTTP status codes in a response?
+
+**Answer:** They indicate what happened on the server side, such as success (200 OK), missing documents (404), or moved pages.
+
+---
+
+# Question: What types of information can HTTP headers provide in a response?
+
+**Answer:** Content type, size of returned data, status codes, and other metadata about the response.
+
+---
+
+# Question: Why is it important to understand HTTP when working with REST?
+
+**Answer:** Because REST is built on top of web technologies like HTTP and relies on these foundational concepts to expose and manipulate resources.
+
+---
+
+# Question: What does REST stand for?
+
+**Answer:** Representational State Transfer.
+
+---
+
+# Question: What qualifies an API as RESTful?
+
+**Answer:** It must meet the constraints defined by the REST architectural style.
+
+---
+
+# Question: How does a REST API utilize web technology?
+
+**Answer:** Like the web, the client sends a request to a server over HTTP, and the server responds accordingly.
+
+---
+
+# Question: What is the role of the client in a RESTful architecture?
+
+**Answer:** It makes HTTP requests to the server, usually using a library, and receives responses.
+
+---
+
+# Question: What protocol does REST use, and what is its key property?
+
+**Answer:** It uses HTTP, which is stateless, meaning the server does not retain any information about the client between requests.
+
+---
+
+# Question: How is state maintained in a stateless HTTP protocol?
+
+**Answer:** By including necessary state information, such as login details, in every request using headers.
+
+---
+
+# Question: What is a resource in the context of REST?
+
+**Answer:** An abstract representation of an object, typically identified by a URI or URL, which can be anything meaningful to the application.
+
+---
+
+# Question: What is the significance of resources in a RESTful API?
+
+**Answer:** Resources are the core entities that APIs expose and manipulate; everything in the system can be modeled as a resource.
+
+---
+
+# Question: What common operations can be performed on resources in a RESTful API?
+
+**Answer:** Creating, reading, updating, and deleting (CRUD).
+
+---
+
+# Question: What does the acronym CRUD stand for in REST?
+
+**Answer:** Create, Read, Update, Delete.
+
+---
+
+# Question: In e-book store example, what kind of request was made to get the author page?
+
+**Answer:** A GET request.
+
+---
+
+# Question: What does a RESTful GET request do?
+
+**Answer:** It retrieves a resource from a specific URI without modifying it.
+
+---
+
+# Question: What is typically included in the response from a RESTful GET request?
+
+**Answer:** Data about the requested resource and HTTP headers.
+
+---
+
+# Question: What format is most commonly used for the body of REST API responses today?
+
+**Answer:** JSON (JavaScript Object Notation).
+
+---
+
+# Question: Why is JSON widely used in REST APIs?
+
+**Answer:** Because it provides a structured and nestable way to represent data and is easily parsed into native objects in most programming languages.
+
+---
+
+# Question: What is the role of content-type headers in REST responses?
+
+**Answer:** They specify the format of the data being returned, such as `application/json`.
+
+---
+
+
 
