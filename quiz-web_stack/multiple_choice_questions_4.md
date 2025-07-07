@@ -484,5 +484,208 @@
 
 ---
 
+# Question: What HTTP method is used to add an author in a REST API?
+
+**Answer:** The `POST` method is used to add an author, typically sent to the `/authors` endpoint with data in the request body.
+
+---
+
+# Question: Which HTTP verb is typically used to remove a resource like an author?
+
+**Answer:** The `DELETE` method is used to remove a specific resource.
+
+---
+
+# Question: Which HTTP method is typically used for updates in REST APIs?
+
+**Answer:** The `PATCH` method is typically used for updates in REST APIs.
+
+---
+
+# Question: What does CRUD stand for, and how is it represented in REST?
+
+**Answer:** CRUD stands for Create, Read, Update, Delete and is represented in REST using HTTP methods: POST (Create), GET (Read), PATCH/PUT (Update), and DELETE (Delete).
+
+---
+
+# Question: What is a mashup in the context of REST APIs?
+
+**Answer:** A mashup refers to combining data or functionality from multiple APIs to create a new application or service.
+
+---
+
+# Question: What makes RESTful APIs feel similar to use across different services?
+
+**Answer:** RESTful APIs follow consistent HTTP methods and principles, making them intuitive and familiar across services.
+
+---
+
+# Question: What music streaming service is highlighted as an example of a RESTful API?
+
+**Answer:** Spotify is used as the example RESTful API.
+
+---
+
+# Question: Where on a typical website can developers often find links to technical resources like APIs?
+
+**Answer:** Developer-related links are often located at the bottom of the webpage.
+
+---
+
+# Question: What section of the Spotify site is recommended for developers?
+
+**Answer:** The "Spotify for Developers" section.
+
+---
+
+# Question: What can you use the Spotify API to find out about a song?
+
+**Answer:** You can use the API to retrieve data such as beats, sections, bars, and even whether a song is danceable.
+
+---
+
+# Question: What are SDKs and how are they related to APIs?
+
+**Answer:** SDKs (Software Development Kits) are tools that provide APIs and other utilities to build applications for specific platforms.
+
+---
+
+# Question: Which version of the Spotify API?
+
+**Answer:** The Web API.
+
+---
+
+# Question: What data format does the Spotify Web API return?
+
+**Answer:** JSON (JavaScript Object Notation).
+
+---
+
+# Question: What types of data can be retrieved from the Spotify Web API?
+
+**Answer:** Data about music, artists, albums, and tracks.
+
+---
+
+# Question: What is the base URL for Spotify’s Web API?
+
+**Answer:** `https://api.spotify.com`
+
+---
+
+# Question: How are different resources accessed in the Spotify Web API?
+
+**Answer:** Via unique endpoints and URIs appended to the base URL.
+
+---
+
+# Question: Why is authorization necessary when using the Spotify API?
+
+**Answer:** To prevent unauthorized changes like adding to someone else’s playlist.
+
+---
+
+# Question: What are examples of resources in the Spotify API?
+
+**Answer:** Songs, artists, tracks, and playlists.
+
+---
+
+# Question: What HTTP method is used to retrieve resources?
+
+**Answer:** `GET`
+
+---
+
+# Question: What HTTP method is used to create resources in Spotify’s API?
+
+**Answer:** `POST`
+
+---
+
+# Question: What HTTP method is used to change existing resources?
+
+**Answer:** `PUT`
+
+---
+
+# Question: What HTTP method deletes a resource in Spotify’s API?
+
+**Answer:** `DELETE`
+
+---
+
+# Question: What is a Spotify URI and what does it typically include?
+
+**Answer:** A Spotify URI uniquely identifies a resource like a track and includes the Spotify ID.
+
+---
+
+# Question: What is a Spotify URL used for?
+
+**Answer:** It allows users to view or access the resource (e.g., track, artist) directly in a browser.
+
+---
+
+# Question: In what format are the responses from the Spotify Web API returned?
+
+**Answer:** JSON
+
+---
+
+# Question: What command-line tool is introduced for testing API requests?
+
+**Answer:** Curl
+
+---
+
+# Question: What symbol is used to indicate command-line input when using curl?
+
+**Answer:** `$`
+
+---
+
+# Question: How does Spotify handle large sets of data like many artists in API responses?
+
+**Answer:** By paginating the results.
+
+---
+
+# Question: What does pagination in API responses mean?
+
+**Answer:** It breaks down the data into manageable chunks or pages instead of returning everything at once.
+
+---
+
+# Question: What is caching in the context of API responses?
+
+**Answer:** A method to check if the resource has changed or not, reducing unnecessary data transfer.
+
+---
+
+# Question: What HTTP status code indicates a successful API request?
+
+**Answer:** `200`
+
+---
+
+# Question: What status code is returned for a bad API request?
+
+**Answer:** `400` (Bad Request)
+
+---
+
+# Question: What does a 404 status code mean in an API response?
+
+**Answer:** The requested resource was not found.
+
+---
+
+# Question: What does a 401 status code indicate in an API response?
+
+**Answer:** Unauthorized access due to missing or invalid credentials.
+
+---
 
 
