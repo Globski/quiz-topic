@@ -838,3 +838,74 @@
 
 ---
 
+# Question: What command can be used to verify that `curl` is installed on your machine?
+
+**Answer:** `curl --help`
+
+---
+
+# Question: What is `curl` primarily used for?
+
+**Answer:** Transferring data over HTTP from the command line
+
+---
+
+# Question: What test URL is used to confirm that `curl` is working properly?
+
+**Answer:** `https://icanhazdadjoke.com`
+
+---
+
+# Question: What type of data is returned from `https://icanhazdadjoke.com` using curl?
+
+**Answer:** A random dad joke
+
+---
+
+# Question: What is the API endpoint used to search Spotify from the command line?
+
+**Answer:** `https://api.spotify.com/v1/search`
+
+---
+
+# Question: What query string parameters are passed in the Spotify curl search command?
+
+**Answer:** `q=Beyonce&type=artist`
+
+---
+
+# Question: What does the `-H` flag represent in a curl command?
+
+**Answer:** It specifies an HTTP header
+
+---
+
+# Question: What type of header is used to authenticate with Spotify's API?
+
+**Answer:** `Authorization` header containing a token
+
+---
+
+# Question: What does the `Accept: application/json` header indicate in the curl request?
+
+**Answer:** The client expects the response to be in JSON format
+
+---
+
+# Question: What tool is used to format the JSON output of curl commands?
+
+**Answer:** `jq`
+
+---
+
+# Question: What does the pipe `|` symbol do in a shell command?
+
+**Answer:** It sends the output of the command on the left as input to the command on the right
+
+---
+
+# Question: What does the `jq` command do when used as `jq '.items[].name'`?
+
+**Answer:** It extracts and displays the `name` field from each item in the JSON `items` array
+
+---
