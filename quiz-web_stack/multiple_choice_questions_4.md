@@ -909,3 +909,33 @@
 **Answer:** It extracts and displays the `name` field from each item in the JSON `items` array
 
 ---
+
+# Question: What does the `jq` program allow you to do when working from the command line?
+
+**Answer:** It allows you to parse and manipulate JSON data, such as retrieving a list of an artist’s albums from an API response.
+
+---
+
+# Question: What must be considered when using spaces in a search query for an API from the command line?
+
+**Answer:** Spaces must be URL-encoded as plus signs (`+`) to ensure the query is interpreted correctly.
+
+---
+
+# Question: When using `curl` to interact with an API, how can you verify that the returned track is the correct one?
+
+**Answer:** By manually inspecting the API response and checking if the song name and artist match the expected result.
+
+---
+
+# Question: What recommend doing when you get a large set of JSON results and want to find a specific item?
+
+**Answer:** Scroll to the top of the results or use parsing tools like `jq` to extract relevant fields like the track name.
+
+---
+
+# Question: Why is `curl` frequently used in API documentation?
+
+**Answer:** Because it’s a simple and effective tool to demonstrate how to interact with APIs directly from the terminal.
+
+---
