@@ -1228,3 +1228,97 @@ It is converted into standard CSS that browsers can understand and render.
 **Answer:** Because it maintains responsiveness and respects browser accessibility settings instead of overriding them.
 
 ---
+
+# Question: What is the primary goal of responsive design?
+
+**Answer:** To ensure web pages adapt to different screen sizes for a more functional user experience.
+
+---
+
+# Question: Why did web pages originally not consider different screen sizes?
+
+**Answer:** Because they were designed only for desktop computers, which were the only devices available to access the internet at the time.
+
+---
+
+# Question: What are examples of devices that require responsive design due to varying screen sizes?
+
+**Answer:** Desktops, laptops, tablets, and smart mobile devices.
+
+---
+
+# Question: How can developers simulate different screen sizes in a browser?
+
+**Answer:** By using DevTools and clicking the toggle device icon to change the browser width.
+
+---
+
+# Question: What are the visible changes in a web page as the browser width decreases?
+
+**Answer:** Changes in layout, image positioning, button widths, font sizes, and spacing properties like margin and padding.
+
+---
+
+# Question: What are the three main pillars of responsive design?
+
+**Answer:** 1. Relative units (like rems and percentages), 2. Fluid layouts (like Flexbox and CSS Grid), 3. Media queries.
+
+---
+
+# Question: What is the role of media queries in responsive design?
+
+**Answer:** Media queries apply styles to a web page based on specific conditions, such as screen width.
+
+---
+
+# Question: How is a media query written in CSS?
+
+**Answer:** Using `@media` followed by a condition in parentheses (e.g., `(max-width: 500px)`) and CSS rules inside curly brackets.
+
+---
+
+# Question: What does the following media query do?
+
+```css
+@media (max-width: 500px) {
+  h2 {
+    font-size: 14px;
+  }
+}
+```
+
+**Answer:** It applies a font size of 14px to all `<h2>` elements when the screen width is less than 500 pixels.
+
+---
+
+# Question: What is an `@media` rule in CSS?
+
+**Answer:** A special at-rule used to apply styles based on conditions like screen width or device type.
+
+---
+
+# Question: How do global styles differ from media query styles?
+
+**Answer:** Global styles apply regardless of screen size and are defined outside media queries.
+
+---
+
+# Question: Why is the order of media queries in CSS important?
+
+**Answer:** Because multiple media queries can apply simultaneously, and due to the CSS Cascade, the last matching rule overrides earlier ones.
+
+---
+
+# Question: What order should media queries be written in to ensure correct overrides?
+
+**Answer:** In descending order of max-width values (e.g., 1500px, 1000px, 500px).
+
+---
+
+# Question: How does the CSS Cascade affect media query application?
+
+**Answer:** Later rules in the CSS override earlier ones when multiple conditions are met.
+
+---
+
+
