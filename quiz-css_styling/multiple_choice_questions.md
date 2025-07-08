@@ -1327,3 +1327,98 @@ It is converted into standard CSS that browsers can understand and render.
 **Answer:** They are overridden by later media query rules that match the current browser width.
 
 ---
+
+# Question: How do you activate CSS Grid on a container using CSS?
+
+**Answer:** By setting the container’s `display` property to `grid`.
+
+---
+
+# Question: How do you define two equally spaced columns in a CSS Grid layout?
+
+**Answer:** Use `grid-template-columns: 1fr 1fr;`.
+
+---
+
+# Question: What property is used to define spacing between columns and rows in a grid?
+
+**Answer:** The `gap` property.
+
+---
+
+# Question: How do you center a grid within a page while limiting its maximum width?
+
+**Answer:** Set `max-width: 1200px` on the grid and use `margin: 100px auto;`.
+
+---
+
+# Question: What does the value `auto` do in the `margin` property?
+
+**Answer:** It distributes the remaining horizontal space equally to the left and right, centering the element.
+
+---
+
+# Question: How is responsiveness introduced to the layout using media queries?
+
+**Answer:** By applying style changes based on screen width breakpoints using `@media`.
+
+---
+
+# Question: What happens visually when the screen width is reduced below 1000px?
+
+**Answer:** Padding and font sizes are reduced, improving the layout for medium-sized screens.
+
+---
+
+# Question: What breakpoint is used for smaller screens after 1000px?
+
+**Answer:** `@media (max-width: 500px)`
+
+---
+
+# Question: How does the UI behavior change when resizing to under 500px width?
+
+**Answer:** Font sizes, padding, and spacing reduce again, making the layout suitable for small mobile screens.
+
+---
+
+# Question: What is the main drawback of manually adjusting all properties in media queries?
+
+**Answer:** It's time-consuming and repetitive to manually change sizes for each breakpoint and every property.
+
+---
+
+# Question: What design approach can reduce the need for manual media queries?
+
+**Answer:** Using **relative units** such as percentages and `rem`.
+
+---
+
+# Question: What are the two main types of relative units in responsive design?
+
+**Answer:**
+
+1. Based on **parent container size** (e.g., percentages)
+2. Based on **scalable reference points** (e.g., `rem` units)
+
+---
+
+# Question: How do percentage-based units help with layout on smaller screens?
+
+**Answer:** They allow elements like containers and images to scale down while maintaining margin, preventing content from touching screen edges.
+
+---
+
+# Question: What are rem units commonly used for in responsive design?
+
+**Answer:** For defining scalable spacing such as font size, padding, and margins.
+
+---
+
+# Question: What is one advantage of using relative units over fixed pixel values?
+
+**Answer:** They scale proportionally across devices, reducing the need for frequent media queries.
+
+---
+
+
