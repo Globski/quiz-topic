@@ -1322,3 +1322,8 @@ It is converted into standard CSS that browsers can understand and render.
 ---
 
 
+# Question: In DevTools, why are some CSS rules crossed out when media queries apply?
+
+**Answer:** They are overridden by later media query rules that match the current browser width.
+
+---
