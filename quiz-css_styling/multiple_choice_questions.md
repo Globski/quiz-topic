@@ -1421,4 +1421,93 @@ It is converted into standard CSS that browsers can understand and render.
 
 ---
 
+# Question: What effect does margin have between a navigation bar and a heading on a desktop vs. mobile layout?
+
+**Answer:** On desktop, there is more margin between the navigation bar and heading; on mobile, the margin is reduced to better fit the smaller screen.
+
+---
+
+# Question: Why are `rem` units commonly used for text sizing?
+
+**Answer:** `Rem` units scale proportionally and provide consistent sizing across devices, making it easier to maintain layout responsiveness and readability.
+
+---
+
+# Question: How is content centered within a main container using CSS?
+
+**Answer:** By setting `margin: 0 auto;` on the container, it is centered horizontally with no vertical margin.
+
+---
+
+# Question: What max-width value is used to prevent content from stretching too wide on large screens?
+
+**Answer:** A max-width of `1200px` is used.
+
+---
+
+# Question: What width percentage is applied to the main container and why?
+
+**Answer:** A width of `90%` is applied to ensure that on smaller browser windows, there is spacing on both sides of the content.
+
+---
+
+# Question: What visual issue is fixed by applying a max-width and percentage width to the main container?
+
+**Answer:** It prevents the content from going all the way to the edges of the screen on smaller devices, improving the viewing experience.
+
+---
+
+# Question: Why is using `rem` values preferred over `px` in media query conditions?
+
+**Answer:** Because `rem` values maintain consistency throughout the project and adapt to changes in root font size, whereas pixel values do not scale dynamically.
+
+---
+
+# Question: How does a max-width media query of `62.5rem` translate in pixels, and why?
+
+**Answer:** It equals `1000px` because `62.5 * 16 = 1000`. Media query conditions are based on the browser’s default font size, not the user-defined `rem`.
+
+---
+
+# Question: What happens to a font size of `10rem` and padding of `5rem` when the root font size is reduced to 50% inside a media query?
+
+**Answer:** The font size shrinks from `100px` to `80px`, and padding from `50px` to `40px`, as `1rem` now equals `8px`.
+
+---
+
+# Question: How are pre-defined CSS properties using `rem` affected inside a media query when the root font size is reduced?
+
+**Answer:** They automatically scale down in proportion to the new `rem` size.
+
+---
+
+# Question: Why is updating the root font size inside a media query a better approach than manually adjusting each property?
+
+**Answer:** It avoids repetitive manual resizing for every element, making the CSS more maintainable, especially in large projects.
+
+---
+
+# Question: Which CSS properties are commonly left in `px` rather than changed to `rem`?
+
+**Answer:** Border width and border radius are typically left in pixels.
+
+---
+
+# Question: What is the converted `rem` value for a `20px` gap?
+
+**Answer:** `2rem`, assuming `1rem = 10px`.
+
+---
+
+# Question: How is `100px` margin converted using rem units?
+
+**Answer:** It is converted to `10rem`.
+
+---
+
+# Question: What is the `rem` equivalent of a `20px` corner radius for review cards?
+
+**Answer:** It remains `20px`, as border-radius is usually not converted to rem.
+
+---
 
