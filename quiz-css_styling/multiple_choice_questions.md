@@ -1511,3 +1511,38 @@ It is converted into standard CSS that browsers can understand and render.
 
 ---
 
+# Question: Why is it not advisable to manually calculate rem values for every media query?
+
+**Answer:** Because the rem value changes with each media query, manually recalculating is error-prone and unnecessary. The browser scales it automatically.
+
+---
+
+# Question: How should you define rem values for new properties in a media query?
+
+**Answer:** Use the same values as in the base case (1rem = 10px), and let the scaling happen automatically based on the root font size.
+
+---
+
+# Question: What is the best mental approach when fine-tuning existing properties using rem inside a media query?
+
+**Answer:** Think in terms of base case (10px per rem), tweak the values, preview results in the browser, and adjust as needed.
+
+---
+
+# Question: If padding is changed to 3rem inside a media query where 1rem = 8px, what is the resulting pixel value?
+
+**Answer:** 3rem × 8px = 24px
+
+---
+
+# Question: If you set a card’s padding to 4rem in a media query where 1rem = 8px, what is the resulting padding?
+
+**Answer:** 4rem × 8px = 32px
+
+---
+
+# Question: Why is rem considered ideal for responsive design compared to using fixed pixels?
+
+**Answer:** Rem allows all spacing, font size, and layout dimensions to scale dynamically with the root font size, making responsiveness easier.
+
+---
