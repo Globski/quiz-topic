@@ -1593,6 +1593,144 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 
 ---
 
+# Question: What happens when a `WATCH` is set on a key and a transaction is created in Redis?
+
+**Answer:** If the watched key remains unchanged by other clients, the transaction executes successfully; if the key is changed by another client before the transaction executes, the transaction is aborted.
+
+---
+
+# Question: Will a transaction be aborted if the watched key is modified by the same client that initiated the transaction?
+
+**Answer:** No, the transaction is only aborted if the watched key is changed by a **different client**.
+
+---
+
+# Question: In Redis, what does the `MULTI` command do?
+
+**Answer:** It marks the start of a transaction block.
+
+---
+
+# Question: What is the role of the `EXEC` command in Redis transactions?
+
+**Answer:** It executes all queued commands in the transaction if the watched keys were not modified by other clients.
+
+---
+
+# Question: What command is used to clear all data from the Redis database?
+
+**Answer:** `FLUSHALL`
+
+---
+
+# Question: What does Redis Pub/Sub stand for, and what is its purpose?
+
+**Answer:** Pub/Sub stands for Publisher/Subscriber model, used for broadcasting messages to multiple subscribers via channels.
+
+---
+
+# Question: Can you subscribe to a Redis channel before it is created?
+
+**Answer:** Yes, Redis allows subscribing to a channel even if it hasn’t been created yet.
+
+---
+
+# Question: What command is used to subscribe to a Redis channel?
+
+**Answer:** `SUBSCRIBE <channel_name>`
+
+---
+
+# Question: What command is used to publish a message to a Redis channel?
+
+**Answer:** `PUBLISH <channel_name> <message>`
+
+---
+
+# Question: What is the output of the `PUBLISH` command?
+
+**Answer:** It returns the number of subscribers that received the message.
+
+---
+
+# Question: How do you exit from a Redis client that is in `SUBSCRIBE` mode?
+
+**Answer:** By pressing `Ctrl + C` or quitting the client.
+
+---
+
+# Question: If two clients are subscribed to the `news` channel and a message is published, what output does `PUBLISH` return?
+
+**Answer:** It returns `2`, indicating the message was sent to two subscribers.
+
+---
+
+# Question: Can a Redis client subscribe to multiple channels at once?
+
+**Answer:** Yes, a client can subscribe to multiple channels simultaneously.
+
+---
+
+# Question: What command is used in Redis for subscribing to multiple channels with pattern matching?
+
+**Answer:** `PSUBSCRIBE <pattern>`
+
+---
+
+# Question: In pattern-based subscriptions, what does the `*` wildcard character do?
+
+**Answer:** It matches zero or more characters, allowing subscription to multiple channels with similar names (e.g., `news*` matches `news1`, `news2`, etc.).
+
+---
+
+# Question: What does the `?` wildcard character do in `PSUBSCRIBE`?
+
+**Answer:** It matches exactly one character at that position in the channel name (e.g., `h?llo` matches `hello`, `hxllo`).
+
+---
+
+# Question: How can you subscribe to specific named channels like `ball` and `bill` using pattern matching?
+
+**Answer:** Use a pattern like `b[ai]ll` which matches both `ball` and `bill`.
+
+---
+
+# Question: What happens when a message is published to a channel that no client is subscribed to?
+
+**Answer:** `PUBLISH` returns `0`, indicating no clients received the message.
+
+---
+
+# Question: If a client subscribes with the pattern `news*`, will it receive messages from `news`, `news1`, and `newsUpdate`?
+
+**Answer:** Yes, it will receive messages from all channels matching that pattern.
+
+---
+
+# Question: Will the `PSUBSCRIBE` pattern `h?llo` match the channel `hxllo`?
+
+**Answer:** Yes, because `?` matches any single character.
+
+---
+
+# Question: What command is used to re-open the Redis CLI after quitting a client session?
+
+**Answer:** `redis-cli`
+
+---
+
+# Question: Can you mix standard and pattern-based subscriptions across different clients in Redis?
+
+**Answer:** Yes, clients can use `SUBSCRIBE` and `PSUBSCRIBE` independently to consume messages in different formats.
+
+---
+
+# Question: What is the effect of `PUBLISH broadcast "new broadcast"` when a client is subscribed to the `broadcast` channel?
+
+**Answer:** The message `"new broadcast"` will be delivered to all subscribers of the `broadcast` channel.
+
+---
+
 
 
 
