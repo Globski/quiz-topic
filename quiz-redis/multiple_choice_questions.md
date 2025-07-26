@@ -1731,7 +1731,99 @@ You will receive a `(nil)` response or no value, indicating the key no longer ex
 
 ---
 
+# Question: What does the `PUBSUB CHANNELS` command return?
 
+**Answer:** It returns all non-pattern-based channels that have active subscriptions.
 
+---
 
+# Question: Why are some channels like "hello" or "bail" not returned by `PUBSUB CHANNELS`?
+
+**Answer:** Because they are subscribed using pattern-based subscriptions, which are not included in the output of `PUBSUB CHANNELS`.
+
+---
+
+# Question: What does the `PUBSUB NUMSUB` command do?
+
+**Answer:** It returns the number of subscribers for each specified non-pattern-based channel.
+
+---
+
+# Question: What kind of channels are **excluded** from `PUBSUB NUMSUB` results?
+
+**Answer:** Pattern-based subscribed channels are excluded.
+
+---
+
+# Question: What is the purpose of the `PUBSUB NUMPAT` command?
+
+**Answer:** It returns the number of subscriptions to pattern-based channels.
+
+---
+
+# Question: What is the main purpose of scripting in Redis using Lua?
+
+**Answer:** To perform multiple Redis operations atomically and potentially improve performance by running the logic inside Redis itself.
+
+---
+
+# Question: Which Redis command is used to execute Lua scripts?
+
+**Answer:** `EVAL`
+
+---
+
+# Question: What Lua function is used inside Redis scripts to execute Redis commands?
+
+**Answer:** `redis.call`
+
+---
+
+# Question: In Lua scripting within Redis, what do `KEYS` and `ARGV` refer to?
+
+**Answer:** `KEYS` refers to key arguments, and `ARGV` refers to other argument variables passed into the script.
+
+---
+
+# Question: How many arguments must be passed with the `EVAL` command?
+
+**Answer:** At least three: the script itself, the number of keys, followed by the keys and arguments.
+
+---
+
+# Question: What does the command `EVAL "return redis.call('SET', KEYS[1], ARGV[1])" 1 name Shabbir` do?
+
+**Answer:** It sets the Redis key `name` to the value `Shabbir` using a Lua script.
+
+---
+
+# Question: What does the number following the Lua script in `EVAL` represent?
+
+**Answer:** The number of keys that will be passed into the script.
+
+---
+
+# Question: How does `redis.call('SET', KEYS[1], ARGV[1])` behave compared to the standard `SET` command?
+
+**Answer:** It behaves identically to the `SET` command but is executed atomically inside a Lua script.
+
+---
+
+# Question: What is the correct way to pass multiple key-value pairs using Lua and `MSET` in Redis?
+
+**Answer:** Use `EVAL` with `redis.call('MSET', KEYS[1], ARGV[1], KEYS[2], ARGV[2])`, specify 2 as the number of keys, and pass two key-value pairs accordingly.
+
+---
+
+# Question: What was the result of executing `MSET` using Lua with keys `name`, `lastname` and values `Shabbir`, `Dawood`?
+
+**Answer:** The keys `name` and `lastname` were set to `Shabbir` and `Dawood` respectively.
+
+---
+
+# Question: What does the `ZRANGE` command return?
+
+**Answer:** It returns the elements in a sorted set within a given range, from lowest to highest score.
+
+---
 
