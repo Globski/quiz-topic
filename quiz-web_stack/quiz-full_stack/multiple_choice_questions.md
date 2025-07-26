@@ -1081,3 +1081,220 @@ const [state, setState] = useState(initialValue);
 
 ---
 
+# Question: What is the primary purpose of the `useEffect` Hook in React?
+
+**Answer:** To handle side effects like fetching data, updating the DOM, or managing subscriptions in functional components.
+
+---
+
+# Question: What arguments does `useEffect` accept?
+
+**Answer:** A callback function and an optional dependency array.
+
+---
+
+# Question: Which class lifecycle methods does `useEffect` replace in functional components?
+
+**Answer:** `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
+
+---
+
+# Question: What does an empty dependency array (`[]`) in `useEffect` signify?
+
+**Answer:** The effect runs only once, when the component is first mounted.
+
+---
+
+# Question: What is the result of passing a state variable to the `useEffect` dependency array?
+
+**Answer:** The effect re-runs whenever the specified state changes.
+
+---
+
+# Question: How does `useEffect(() => {...}, [data])` behave?
+
+**Answer:** The effect runs whenever the `data` state is updated.
+
+---
+
+# Question: What role does a cleanup function in `useEffect` play?
+
+**Answer:** It runs when the component unmounts or when dependencies change, preventing memory leaks.
+
+---
+
+# Question: Why is an `isMounted` flag useful in a `useEffect` data fetch?
+
+**Answer:** It prevents calling `setData` on an unmounted component, avoiding memory leaks or errors.
+
+---
+
+# Question: What is the function of the `fetchSpeakers()`?
+
+**Answer:** It asynchronously fetches data from an API and updates the state with `setData`.
+
+---
+
+# Question: What does the `map()` method do in the render logic?
+
+**Answer:** It iterates over the `data` array and displays each speaker's first and last name.
+
+---
+
+# Question: What problem does `useContext` solve in React?
+
+**Answer:** It eliminates the need for props drilling by enabling state sharing across deeply nested components.
+
+---
+
+# Question: What is the syntax for using `useContext`?
+
+**Answer:** `const value = useContext(Context)`
+
+---
+
+# Question: What is props drilling?
+
+**Answer:** Passing data through multiple intermediary components to reach a deeply nested component.
+
+---
+
+# Question: How is context created in React?
+
+**Answer:** With `createContext(initialValue)`
+
+---
+
+# Question: How is a context value provided to child components?
+
+**Answer:** By wrapping them with `<Context.Provider value={...}>...</Context.Provider>`
+
+---
+
+# Question: How do components consume context values?
+
+**Answer:** By calling `useContext(Context)` within the component.
+
+---
+
+# Question: What are the two main uses of the `useRef` Hook?
+
+**Answer:** Accessing DOM elements directly and persisting state values across renders without re-rendering.
+
+---
+
+# Question: Why is `useRef` preferable to `useState` for storing mutable values without triggering re-renders?
+
+**Answer:** Because `useRef` updates the `.current` property without causing a component re-render.
+
+---
+
+# Question: How can you use `useRef` to autofocus an input?
+
+**Answer:** Attach `ref={inputRef}` to the input element and call `inputRef.current.focus()` in a function.
+
+---
+
+# Question: What is the effect of calling `useRef(null)`?
+
+**Answer:** It creates a mutable ref object with an initial `current` value of `null`.
+
+---
+
+# Question: What does the `useReducer` Hook return?
+
+**Answer:** An array with the current state and a `dispatch` function: `[state, dispatch]`
+
+---
+
+# Question: What are the two arguments passed to `useReducer`?
+
+**Answer:** A `reducer` function and an `initialState` object.
+
+---
+
+# Question: What is a reducer function in React?
+
+**Answer:** A function that determines how the state is updated based on the received action type and payload.
+
+---
+
+# Question: What is `dispatch` used for in `useReducer`?
+
+**Answer:** To send actions to the reducer function to modify the state.
+
+---
+
+# Question: What is the purpose of the `initialState` in `useReducer`?
+
+**Answer:** To define the initial values for the component's state.
+
+---
+
+# Question: What are the typical properties of an action in `useReducer`?
+
+**Answer:** `type` (required) and `payload` (optional data).
+
+---
+
+# Question: What action is dispatched when fetching event schedules begins?
+
+**Answer:** `{ type: "getEventSchedule" }`
+
+---
+
+# Question: What happens in the `"getEventSchedule"` case in the reducer?
+
+**Answer:** The `isLoading` property is set to `true` and `error` to `null`.
+
+---
+
+# Question: What action type is dispatched on successful data fetch?
+
+**Answer:** `{ type: "getEventScheduleSuccess", payload: response.data }`
+
+---
+
+# Question: What state update occurs on `getEventScheduleSuccess`?
+
+**Answer:** `isLoading` is set to `false`, and `data` is set to the fetched payload.
+
+---
+
+# Question: What happens when the data fetch fails?
+
+**Answer:** The `getEventScheduleFailure` action is dispatched, setting the `error` state.
+
+---
+
+# Question: How is `useEffect` used in the `useReducer` example?
+
+**Answer:** It dispatches `getEventSchedule` and fetches data using Axios, then dispatches success or failure based on the result.
+
+---
+
+# Question: What endpoint is used to fetch schedule data?
+
+**Answer:** `http://localhost:8000/schedules/`
+
+---
+
+# Question: How is JSON Server installed?
+
+**Answer:** With the command `npm i -g json-server`
+
+---
+
+# Question: How is the JSON Server started on port 8000?
+
+**Answer:** With `json-server --watch db.json --port=8000`
+
+---
+
+# Question: What condition displays the message "No schedules available."?
+
+**Answer:** When `state.data` exists and its length is `0`.
+
+---
+
+
