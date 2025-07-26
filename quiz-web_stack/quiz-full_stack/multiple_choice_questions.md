@@ -666,3 +666,258 @@ Yes.
 `import { FirstComponent, SecondComponent } from './ThirdComponent';`
 
 ---
+
+# Question: What is a React component?
+
+**Answer:** A React component is a reusable, maintainable, and self-contained block of code that returns a UI element, typically written in JavaScript with JSX syntax.
+
+---
+
+# Question: What are the two main types of React components?
+
+**Answer:** Class components and function components.
+
+---
+
+# Question: Why are function components considered the present and future of React?
+
+**Answer:** Function components are simpler to write, easier to maintain, and support Hooks, which enable state and lifecycle features without the complexity of classes.
+
+---
+
+# Question: What does JSX stand for in React?
+
+**Answer:** JSX stands for JavaScript XML. It's a syntax extension that allows writing HTML-like elements within JavaScript code.
+
+---
+
+# Question: In React, what is returned by a component?
+
+**Answer:** A React component returns HTML elements written in JSX.
+
+---
+
+# Question: How do you define a basic function component in React?
+
+**Answer:**
+
+```javascript
+function App() {
+  return (
+    <div>
+      <h1>Welcome</h1>
+    </div>
+  );
+}
+```
+
+---
+
+# Question: What is the difference between declaring a variable inside and outside a function component?
+
+**Answer:** Variables declared inside the function component are redefined every render, while those outside persist across renders and do not access internal component data.
+
+--
+
+# Question: What problem does the virtual DOM solve in React?
+
+**Answer:** It minimizes direct DOM manipulation by updating only the changed parts of the DOM, improving performance and efficiency.
+
+---
+
+# Question: What must a React class component extend?
+
+**Answer:** `React.Component`
+
+---
+
+# Question: What method is required in a class component to return HTML?
+
+**Answer:** The `render()` method.
+
+---
+
+# Question: How do you define a minimal React class component?
+
+**Answer:**
+
+```javascript
+import React from 'react';
+class MyComponent extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+```
+
+---
+
+# Question: What is the function component equivalent of a class component with a render method?
+
+**Answer:**
+
+```javascript
+const MyComponent = () => {
+  return <h1>Hello</h1>;
+}
+```
+
+---
+
+# Question: What is the main structural difference between class and function components?
+
+**Answer:** Class components use a `render()` method and extend `React.Component`; function components are simpler and directly return JSX.
+
+---
+
+# Question: Which component type supports lifecycle methods directly?
+
+**Answer:** Class components.
+
+---
+
+# Question: Before React 16.8, how could you make function components stateful?
+
+**Answer:** You had to rewrite them as class components.
+
+---
+
+# Question: Which React feature allows function components to be stateful?
+
+**Answer:** Hooks, such as `useState`.
+
+---
+
+# Question: What are some React class lifecycle methods?
+
+**Answer:** `constructor()`, `static getDerivedStateFromProps()`, `render()`, `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnmount()`.
+
+---
+
+# Question: What are the three phases of a React component lifecycle?
+
+**Answer:** Mounting, updating, and unmounting.
+
+---
+
+# Question: What is the purpose of the `constructor()` method in class components?
+
+**Answer:** To initialize state and bind event handlers, and it is called before the component is mounted.
+
+---
+
+# Question: What does `componentDidMount()` do?
+
+**Answer:** It runs after the component is inserted into the DOM, allowing for data fetching or event binding.
+
+---
+
+# Question: When is `componentDidUpdate()` called?
+
+**Answer:** After the component updates due to a change in state or props.
+
+---
+
+# Question: When is `componentWillUnmount()` called?
+
+**Answer:** Just before the component is removed from the DOM.
+
+---
+
+# Question: What are props in React?
+
+**Answer:** Props are read-only objects passed from a parent component to a child component to configure or customize behavior and content.
+
+---
+
+# Question: Are props mutable inside child components?
+
+**Answer:** No, props are read-only and cannot be modified directly by the receiving component.
+
+---
+
+# Question: How do you pass props from a parent to a child component?
+
+**Answer:**
+
+```jsx
+<ChildComponent name="Alice" />
+```
+
+---
+
+# Question: How do you access props in a function component?
+
+**Answer:**
+
+```javascript
+function ChildComponent(props) {
+  return <h3>{props.name}</h3>;
+}
+```
+
+---
+
+# Question: What is the direction of data flow in React using props?
+
+**Answer:** Unidirectional — from parent to child.
+
+--
+
+# Question: What is `state` in React?
+
+**Answer:** State is an internal object used by components to store dynamic data that may change over time and trigger re-renders.
+
+---
+
+# Question: What hook is used to manage state in function components?
+
+**Answer:** `useState`.
+
+---
+
+# Question: How does `useState` work?
+
+**Answer:** It returns an array with two values: the current state and a function to update that state.
+
+---
+
+# Question: What is the syntax for declaring state using `useState`?
+
+**Answer:**
+
+```javascript
+const [state, setState] = useState(initialValue);
+```
+
+---
+
+# Question: When does a component re-render in React?
+
+**Answer:** When its state or props change.
+
+---
+
+# Question: What is the default state in a search field implemented using `useState('')`?
+
+**Answer:** An empty string.
+
+---
+
+# Question: What happens when the `setSearchText` function is called?
+
+**Answer:** The `searchText` state is updated and the component re-renders to reflect the new state.
+
+---
+
+# Question: Which file is typically modified to define the main app component in a React project?
+
+**Answer:** `src/App.js`
+
+---
+
+# Question: How do you start a React development server from the command line?
+
+**Answer:** Run `npm start`.
+
+---
