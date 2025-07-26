@@ -375,8 +375,6 @@ FLASK_DEBUG=true
 
 ---
 
-### 📘 SECTION 3: **Creating a Local Repository**
-
 # Question: What command creates a new working directory for a Git project?
 
 **Answer:** `mkdir local_repository`
@@ -401,8 +399,6 @@ FLASK_DEBUG=true
 
 ---
 
-### 📘 SECTION 4: **Creating a Remote Repository on GitHub**
-
 # Question: What command links a local Git repository to a remote GitHub repository?
 
 **Answer:** `git remote add origin https://github.com/your-git-username/your-repository-name.git`
@@ -424,5 +420,249 @@ FLASK_DEBUG=true
 # Question: Why are React and Flask considered good tools for full stack development?
 
 **Answer:** Due to their simplicity, efficiency, and high performance compared to alternatives.
+
+---
+
+# Question: What is the purpose of the `create-react-app` tool in React development?
+
+**Answer:**
+It is used to generate a boilerplate React application without requiring manual configuration of tools like Webpack or Babel.
+
+---
+
+# Question: What command is used to create a new React project with Create React App?
+
+**Answer:**
+`npx create-react-app frontend`
+
+---
+
+# Question: After creating a React app, what command do you use to enter the project directory?
+
+**Answer:**
+`cd frontend`
+
+---
+
+# Question: How do you open a newly created React project in VS Code from the terminal?
+
+**Answer:**
+By typing `code .` in the terminal inside the project directory.
+
+---
+
+# Question: What is the purpose of the `node_modules/` folder in a React project?
+
+**Answer:**
+It contains all installed Node packages, including dependencies and devDependencies.
+
+---
+
+# Question: What is the purpose of the `public/index.html` file in a React project?
+
+**Answer:**
+It serves as the HTML template where the React app is rendered, displaying on `localhost:3000` in development.
+
+---
+
+# Question: What does the `public/manifest.json` file contain?
+
+**Answer:**
+It contains application metadata and settings for responsive screen display.
+
+---
+
+# Question: Which folder in a React project is considered the most important for development?
+
+**Answer:**
+The `src/` folder.
+
+---
+
+# Question: What is the `src/App.js` file used for?
+
+**Answer:**
+To implement React components; for small projects, it can hold all the component logic.
+
+---
+
+# Question: What is the purpose of `src/App.css` and `src/index.css`?
+
+**Answer:**
+They are used to style components and the overall application respectively.
+
+---
+
+# Question: What is the function of the `src/App.test.js` file?
+
+**Answer:**
+It is used to write unit tests for the React application.
+
+---
+
+# Question: What is the entry point to a React application?
+
+**Answer:**
+`src/index.js`
+
+---
+
+# Question: What is the purpose of the `.gitignore` file?
+
+**Answer:**
+It lists files and folders that should not be tracked by Git, such as `node_modules/`.
+
+---
+
+# Question: What is stored in `package.json`?
+
+**Answer:**
+It contains metadata and a list of dependencies required for the project.
+
+---
+
+# Question: What is the purpose of `package-lock.json`?
+
+**Answer:**
+It locks the installed package versions to ensure consistent installations across environments.
+
+---
+
+# Question: What is the function of the `README.md` file?
+
+**Answer:**
+It provides documentation and instructions about the project for developers, typically displayed on GitHub.
+
+---
+
+# Question: What does the command `npm start` do?
+
+**Answer:**
+It starts the development server and runs the app on `localhost:3000`.
+
+---
+
+# Question: What does the command `npm run build` do?
+
+**Answer:**
+It bundles the React app into static files for production.
+
+---
+
+# Question: What does the command `npm test` do?
+
+**Answer:**
+It runs the test suite for the React application.
+
+---
+
+# Question: What are arrow functions in JavaScript?
+
+**Answer:**
+A concise syntax for writing functions using the `=>` operator introduced in ES6.
+
+---
+
+# Question: Write an arrow function that adds two numbers.
+
+**Answer:**
+`const addNumbers = (a, b) => a + b;`
+
+---
+
+# Question: What are the two syntax forms for defining arrow functions?
+
+**Answer:**
+
+1. With braces and return: `const fn = (x) => { return x * 2; }`
+2. With implicit return: `const fn = (x) => x * 2;`
+
+---
+
+# Question: What is one major limitation of arrow functions?
+
+**Answer:**
+They do not have their own `this` context, which can cause issues in object methods.
+
+---
+
+# Question: What is destructuring in JavaScript?
+
+**Answer:**
+A syntax for extracting values from arrays or properties from objects into separate variables.
+
+---
+
+# Question: Can you destructure nested properties in objects?
+
+**Answer:**
+Yes, by accessing the nested object first and then destructuring its properties.
+
+---
+
+# Question: Provide an example of nested object destructuring for an address property.
+
+**Answer:**
+
+```js
+const { address } = speakers;  
+const { street, city, state, country } = address;
+```
+
+---
+
+# Question: What is one benefit of destructuring in React?
+
+**Answer:**
+It reduces repetitive code and improves readability when accessing props and state.
+
+---
+
+# Question: How do you provide default values during destructuring?
+
+**Answer:**
+`const { name = 'Anonymous', age = 0 } = speaker;`
+
+---
+
+# Question: What ES6 feature allows splitting code into modules?
+
+**Answer:**
+`export` and `import` syntax.
+
+---
+
+# Question: What is the rule for default exports in a file?
+
+**Answer:**
+Each file can only have **one** default export.
+
+---
+
+# Question: Show how to export a default component.
+
+**Answer:**
+`export default App;`
+
+---
+
+# Question: How do you import a default export?
+
+**Answer:**
+`import App from './App';`
+
+---
+
+# Question: Can you have multiple named exports in a file?
+
+**Answer:**
+Yes.
+
+---
+
+# Question: How do you import multiple named exports?
+
+**Answer:**
+`import { FirstComponent, SecondComponent } from './ThirdComponent';`
 
 ---
