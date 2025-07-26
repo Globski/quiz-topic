@@ -921,3 +921,163 @@ const [state, setState] = useState(initialValue);
 **Answer:** Run `npm start`.
 
 ---
+
+# Question: What is the primary purpose of state in React?
+
+**Answer:** State in React is used to add interactivity to user interfaces by holding and managing dynamic data.
+
+---
+
+# Question: Before React v16.8, how was state added to components?
+
+**Answer:** Before React v16.8, state could only be added through class components.
+
+---
+
+# Question: What major change did React Hooks bring to functional components?
+
+**Answer:** React Hooks allowed functional components to use state and lifecycle features without needing to convert them into class components.
+
+---
+
+# Question: What are the core React Hooks introduced for stateful functional components?
+
+**Answer:** useState, useEffect, useContext, useMemo, useReducer, useRef, useCallback.
+
+---
+
+# Question: What is a Hook in React?
+
+**Answer:** A Hook is a special function that lets you use React features like state and lifecycle methods inside functional components.
+
+---
+
+# Question: What are the three cyclic phases in a React component's lifecycle?
+
+**Answer:** Mounting, updating, and unmounting.
+
+---
+
+# Question: Name four lifecycle methods used in class components.
+
+**Answer:** componentWillMount(), componentDidMount(), componentWillUpdate(), componentDidUpdate().
+
+---
+
+# Question: How do Hooks differ from class lifecycle methods?
+
+**Answer:** Hooks replace class lifecycle methods by allowing similar functionality within functional components using simpler, more modular syntax.
+
+---
+
+# Question: What does `this.updateNameState.bind(this)` do in a class component?
+
+**Answer:** It binds the updateNameState function to the current instance of the component to preserve the correct `this` context.
+
+---
+
+# Question: What are the two rules of using React Hooks?
+
+**Answer:**
+
+1. Hooks must be called at the top level of a functional component.
+2. Hooks must only be called from functional components or custom Hooks, not regular JavaScript functions or class components.
+
+---
+
+# Question: Why were React Hooks introduced?
+
+**Answer:** Hooks were introduced to simplify stateful logic in React components, improve reusability, and eliminate the complexity of class components.
+
+---
+
+# Question: Why are class components considered difficult for beginners?
+
+**Answer:** Because they require understanding OOP concepts, managing `this`, and using methods like `.bind()`.
+
+---
+
+# Question: How do Hooks promote code reusability?
+
+**Answer:** Hooks separate stateful logic from UI logic, enabling the creation of custom Hooks that can be reused across components.
+
+---
+
+# Question: What does the useState Hook do?
+
+**Answer:** It allows functional components to hold and update state variables.
+
+---
+
+# Question: What is the syntax for useState?
+
+**Answer:** `const [state, stateUpdater] = useState(initialState);`
+
+---
+
+# Question: What does the resetCountHandler() function do?
+
+**Answer:** It resets the count state variable to 0.
+
+---
+
+# Question: What are the values returned by useState?
+
+**Answer:** The current state value and a state updater function.
+
+---
+
+# Question: Can useState handle objects or only primitives?
+
+**Answer:** useState can handle any data type, including primitives, arrays, and objects.
+
+---
+
+# Question: How does destructuring help when using useState?
+
+**Answer:** It allows concise assignment of the current state value and its updater function in one line.
+
+---
+
+# Question: What is required before using the useState Hook in a component?
+
+**Answer:** You must import it from React using `import { useState } from 'react';`.
+
+---
+
+# Question: How do you pass state from a parent to a child component?
+
+**Answer:** By passing it as a prop to the child component.
+
+---
+
+# Question: What is conditional rendering in React?
+
+**Answer:** It's the technique of displaying or hiding UI elements based on the current state.
+
+---
+
+# Question: Can Hooks be invoked inside loops or nested functions?
+
+**Answer:** No, Hooks must be called at the top level of functional components.
+
+---
+
+# Question: Can Hooks be used inside class components?
+
+**Answer:** No, Hooks can only be used in functional components and custom Hooks.
+
+---
+
+# Question: What advantage do custom Hooks offer?
+
+**Answer:** They allow developers to extract and reuse stateful logic across multiple components and projects.
+
+---
+
+# Question: What future direction does the React team recommend?
+
+**Answer:** Embracing functional component architecture and using Hooks over class components.
+
+---
+
