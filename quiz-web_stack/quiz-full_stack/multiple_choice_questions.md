@@ -242,3 +242,187 @@ FLASK_DEBUG=true
 `$ deactivate`
 
 ---
+
+# Question: What is the primary purpose of version control in software development?
+
+**Answer:** To track and manage changes in a code base, enabling developers to monitor updates, identify contributors, and reverse undesirable changes.
+
+---
+
+# Question: In what way does version control improve team collaboration?
+
+**Answer:** It allows tracking of who made changes and when, simplifies merging contributions, and enables easy reversion of undesirable edits.
+
+---
+
+# Question: Which tool is currently the market leader for version control?
+
+**Answer:** Git.
+
+---
+
+# Question: What are the three primary file states in Git?
+
+**Answer:** Modified, Staged, and Committed.
+
+---
+
+# Question: What does the "Modified" state mean in Git?
+
+**Answer:** A file has been changed since the last commit but is not yet tracked for inclusion in the Git local database.
+
+---
+
+# Question: What is the meaning of the "Staged" state in Git?
+
+**Answer:** Changes are tracked and prepared to be added to the Git local database in the next commit.
+
+---
+
+# Question: What does the "Committed" state indicate in Git?
+
+**Answer:** Changes have been added to the Git local database and are now part of version history.
+
+---
+
+# Question: What is a local repository in Git?
+
+**Answer:** A complete copy of the source code and Git history stored on a contributor’s local machine.
+
+---
+
+# Question: How does Git simplify managing multiple versions of a project?
+
+**Answer:** By tracking all changes within one repository instead of needing multiple separate directories.
+
+---
+
+# Question: What is Git classified as, in terms of version control system architecture?
+
+**Answer:** A distributed version control system.
+
+---
+
+# Question: What command initializes a new Git repository?
+
+**Answer:** `git init`
+
+---
+
+# Question: What folder is created after running `git init`, and what does it contain?
+
+**Answer:** A hidden `.git` folder containing metadata to track changes in the working directory.
+
+---
+
+# Question: What command adds a file to the staging area in Git?
+
+**Answer:** `git add [filename]` (e.g., `git add index.html`)
+
+---
+
+# Question: What Git command shows the current status of files in the repository?
+
+**Answer:** `git status`
+
+---
+
+# Question: What command is used to commit staged changes with a message?
+
+**Answer:** `git commit -m "commit message"`
+
+---
+
+# Question: Why is it best practice to include a message in a Git commit?
+
+**Answer:** It helps track the purpose of changes and provides a reference point for future reversions.
+
+--
+
+# Question: What is Git?
+
+**Answer:** An open-source version control tool used to track changes in code and manage collaboration.
+
+---
+
+# Question: What is GitHub?
+
+**Answer:** A cloud-based source code hosting and project management platform that works with Git.
+
+---
+
+# Question: How does GitHub complement Git?
+
+**Answer:** It enables cloud storage of Git repositories and facilitates online collaboration among developers.
+
+---
+
+# Question: What role does Git play on a local machine during development?
+
+**Answer:** It tracks all activities including adding, updating, or deleting files in the project directory.
+
+---
+
+# Question: What command sets the global Git username?
+
+**Answer:** `git config --global user.name "Name of User"`
+
+---
+
+# Question: What command sets the global Git email?
+
+**Answer:** `git config --global user.email "test@test.com"`
+
+---
+
+### 📘 SECTION 3: **Creating a Local Repository**
+
+# Question: What command creates a new working directory for a Git project?
+
+**Answer:** `mkdir local_repository`
+
+---
+
+# Question: What command changes the current directory to the working directory?
+
+**Answer:** `cd local_repository`
+
+---
+
+# Question: What command creates an HTML file inside the working directory?
+
+**Answer:** `touch index.html`
+
+---
+
+# Question: What should you do if `touch` is not recognized in your terminal?
+
+**Answer:** Run `npm install -g touch-cli` (requires Node.js).
+
+---
+
+### 📘 SECTION 4: **Creating a Remote Repository on GitHub**
+
+# Question: What command links a local Git repository to a remote GitHub repository?
+
+**Answer:** `git remote add origin https://github.com/your-git-username/your-repository-name.git`
+
+---
+
+# Question: What command renames the current branch to `main`?
+
+**Answer:** `git branch -M main`
+
+---
+
+# Question: What command pushes the local repository to GitHub?
+
+**Answer:** `git push -u origin main`
+
+---
+
+# Question: Why are React and Flask considered good tools for full stack development?
+
+**Answer:** Due to their simplicity, efficiency, and high performance compared to alternatives.
+
+---
