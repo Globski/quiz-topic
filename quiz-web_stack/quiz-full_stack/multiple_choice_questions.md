@@ -1295,6 +1295,191 @@ const [state, setState] = useState(initialValue);
 
 **Answer:** When `state.data` exists and its length is `0`.
 
+--
+
+# Question: What is the main purpose of the `useMemo` Hook in React?
+
+**Answer:** To optimize performance by memoizing the result of resource-intensive computations and returning cached output when inputs do not change.
+
 ---
 
+# Question: What software development technique does `useMemo` implement?
 
+**Answer:** Memoization.
+
+---
+
+# Question: What are the two major performance benefits of `useMemo` in React applications?
+
+**Answer:** Preventing unnecessary component re-renders and memoizing the return value of expensive computations.
+
+---
+
+# Question: Write the correct syntax for applying `useMemo` to filter speakers by `searchTerm`.
+
+**Answer:**
+
+```js
+const filteredSpeakers = useMemo(() =>
+  speakers.filter((speaker) =>
+    speaker.name.toLowerCase().includes(searchTerm.toLowerCase())
+  ),
+[searchTerm]);
+```
+
+---
+
+# Question: Why does the filtered function not re-run when `text` changes in the `useMemo` example?
+
+**Answer:** Because `text` is not included in the `useMemo` dependency array.
+
+---
+
+# Question: What console output helps confirm that re-rendering is happening unnecessarily?
+
+**Answer:** `"Filtering speakers..."` is printed to the console during each render, even when not needed.
+
+---
+
+# Question: What is the main difference between `useMemo` and `useCallback`?
+
+**Answer:** `useMemo` returns a memoized value, while `useCallback` returns a memoized function.
+
+---
+
+# Question: What problem does `useCallback` solve in React applications?
+
+**Answer:** It prevents unnecessary re-rendering of components due to referential inequality of functions.
+
+---
+
+# Question: When is the function inside `useCallback` re-created?
+
+**Answer:** Only when one of its dependencies changes.
+
+---
+
+# Question: Write an example of a `useCallback` function that removes a speaker from a list.
+
+**Answer:**
+
+```js
+const handleRemoveSpeaker = useCallback(
+  (id) => setSpeakers(speakers.filter((user) => user.id !== id)),
+  [speakers]
+);
+```
+
+---
+
+# Question: Why does using `useCallback` help when rendering `App`, `List`, and `ListItem` components?
+
+**Answer:** It ensures that the same function instance is used across renders unless dependencies change, avoiding unnecessary re-renders.
+
+---
+
+# Question: What is the role of referential equality in React component re-rendering?
+
+**Answer:** React compares function references to determine changes; different references cause unnecessary re-renders even if the function body is unchanged.
+
+---
+
+# Question: What is a custom Hook in React?
+
+**Answer:** A regular JavaScript function that starts with `use` and internally calls one or more React built-in Hooks.
+
+---
+
+# Question: Why must a custom Hook name begin with `use`?
+
+**Answer:** It signals to React that the function follows Hook rules and can be validated by the linter and React engine.
+
+---
+
+# Question: What are three benefits of using custom Hooks in React?
+
+**Answer:** Reusability of logic across components, separation of concerns between logic and UI, and easier debugging.
+
+---
+
+# Question: Write an example of importing and using a custom Hook named `useFetchSpeakers`.
+
+**Answer:**
+
+```js
+import useFetchSpeakers from "./useFetchSpeakers";
+const [data] = useFetchSpeakers(API_URL);
+```
+
+---
+
+# Question: What argument does the `useFetchSpeakers` custom Hook receive?
+
+**Answer:** A URL string representing the endpoint to fetch data from.
+
+---
+
+# Question: What React Hooks are used inside `useFetchSpeakers`?
+
+**Answer:** `useState` and `useEffect`.
+
+---
+
+# Question: Describe the key steps taken in the `useFetchSpeakers` custom Hook.
+
+**Answer:** Accepts a `url`, fetches data in `useEffect`, converts it to JSON, stores it with `setData`, and returns the `data` state.
+
+---
+
+# Question: What causes the custom Hook `useFetchSpeakers` to re-run?
+
+**Answer:** A change in the `url` dependency passed to `useEffect`.
+
+---
+
+# Question: What structure does `useFetchSpeakers` return?
+
+**Answer:** An array containing the fetched `data`.
+
+---
+
+# Question: How does using a custom Hook promote separation of concerns?
+
+**Answer:** It isolates logic like data fetching from the UI rendering code in the component.
+
+---
+
+# Question: What does the following code do?
+
+```js
+useEffect(() => {
+  const fetchSpeakers = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setData(data.users);
+  };
+  fetchSpeakers();
+}, [url]);
+```
+
+**Answer:** It defines an asynchronous function to fetch data from a given URL and stores the result in state, re-running only when the URL changes.
+
+---
+
+# Question: What version of React introduced Hooks?
+
+**Answer:** React 16.8.
+
+---
+
+# Question: Before Hooks, what type of component was needed to use state in React?
+
+**Answer:** Class components.
+
+---
+
+# Question: How do Hooks improve the development experience in React?
+
+**Answer:** By enabling elegant, concise, and stateful function components.
+
+---
