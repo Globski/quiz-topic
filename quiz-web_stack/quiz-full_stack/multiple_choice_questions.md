@@ -1483,3 +1483,267 @@ useEffect(() => {
 **Answer:** By enabling elegant, concise, and stateful function components.
 
 ---
+
+# Question: Why is there an increasing demand for database-driven web applications?
+
+**Answer:** Because of the abundance of available data and the widespread use of web applications by businesses to interact with stakeholders.
+
+---
+
+# Question: What is the role of a frontend developer in full-stack development related to data?
+
+**Answer:** To consume data from either internal or third-party APIs and display it in the UI.
+
+---
+
+# Question: What is an API in the context of web development?
+
+**Answer:** An API allows communication among systems using a set of rules, often based on HTTP protocols.
+
+---
+
+# Question: What are the two major formats for data exchange over the internet?
+
+**Answer:** XML and JSON.
+
+---
+
+# Question: Why is JSON preferred over XML in web development?
+
+**Answer:** JSON is specifically designed for data interchange, handles arrays seamlessly, and is widely adopted by developers.
+
+---
+
+# Question: What is the purpose of React’s exposed interfaces for data fetching?
+
+**Answer:** To help developers fetch data efficiently and build intuitive user interfaces.
+
+---
+
+# Question: What is the Fetch API?
+
+**Answer:** An inbuilt web API in browsers that provides a JavaScript interface for HTTP communication.
+
+---
+
+# Question: Why is understanding JavaScript essential for React developers?
+
+**Answer:** Because the React ecosystem relies on JavaScript, including its APIs like `fetch()` for networking.
+
+---
+
+# Question: What does the `fetch()` function return?
+
+**Answer:** A Promise that resolves to a Response object representing the response to the request.
+
+---
+
+# Question: What React Hook is commonly used to handle side effects like data fetching?
+
+**Answer:** `useEffect`.
+
+---
+
+# Question: What does `response.json()` do in a Fetch API call?
+
+**Answer:** It parses the response body as JSON and returns a promise with the result.
+
+---
+
+# Question: What does `map()` do in the context of displaying fetched data?
+
+**Answer:** It iterates through the data array and renders UI elements for each item.
+
+---
+
+# Question: What is a best practice when fetching data in real-world React apps?
+
+**Answer:** Managing network errors and implementing a loading state for better UX.
+
+---
+
+# Question: What are the three main ways to handle asynchronous code in JavaScript?
+
+**Answer:** Callbacks, Promises, and async/await.
+
+---
+
+# Question: How does async/await improve on Promises?
+
+**Answer:** It provides cleaner syntax and better code organization for asynchronous operations.
+
+---
+
+# Question: What is the structure of an async function that fetches data in React?
+
+**Answer:** Define an async function, use `await fetch()`, `await .json()`, and call `setData()` inside a `try/catch`.
+
+---
+
+# Question: What does the `catch` block do in async/await data fetching?
+
+**Answer:** It handles any errors that occur during the fetch operation.
+
+---
+
+# Question: Why is the dependency array `[data]` used in the `useEffect` Hook in async/await
+
+**Answer:** So the effect re-runs when `data` changes, triggering a re-fetch and re-render.
+
+---
+
+# Question: What does `setData(data.users)` mean in async/await 
+
+**Answer:** It updates the `data` state with the array of users from the response JSON.
+
+---
+
+# Question: How does async/await improve performance in data fetching?
+
+**Answer:** It allows code to run in non-blocking mode, improving responsiveness.
+
+---
+
+# Question: What is Axios?
+
+**Answer:** A lightweight JavaScript HTTP client used to make Promise-based API requests in browsers and Node.js.
+
+---
+
+# Question: What command is used to install Axios?
+
+**Answer:** `npm install axios`
+
+---
+
+# Question: What function is used in Axios to make GET requests?
+
+**Answer:** `axios.get(URL)`
+
+---
+
+# Question: In Axios, how is the fetched data accessed from the response?
+
+**Answer:** Through `response.data`.
+
+---
+
+# Question: How does Axios simplify data fetching compared to Fetch API?
+
+**Answer:** It abstracts response parsing and has built-in features like automatic JSON transformation.
+
+---
+
+# Question: Does Axios return a Promise?
+
+**Answer:** Yes, it returns a Promise that resolves to a response object.
+
+---
+
+# Question: How is the `useEffect` Hook used with Axios?
+
+**Answer:** To call the data-fetching function once the component mounts.
+
+---
+
+# Question: What is React Query?
+
+**Answer:** A data-fetching library for React that includes features like caching, retries, and pre-fetching out of the box.
+
+---
+
+# Question: What command installs React Query?
+
+**Answer:** `npm install react-query`
+
+---
+
+# Question: What Hook does React Query provide for fetching data?
+
+**Answer:** `useQuery()`
+
+---
+
+# Question: What arguments does `useQuery` accept?
+
+**Answer:** A query key (e.g., `"speakers"`) and a callback function that returns a Promise.
+
+---
+
+# Question: What properties are returned by `useQuery()`?
+
+**Answer:** `data`, `isLoading`, and `error`.
+
+---
+
+# Question: What does `isLoading` indicate in `useQuery()`?
+
+**Answer:** Whether the query is currently fetching data.
+
+---
+
+# Question: How does React Query handle caching?
+
+**Answer:** It automatically caches query results using the query key.
+
+---
+
+# Question: What does `QueryClient` do in React Query?
+
+**Answer:** It manages default settings and configurations for all queries.
+
+---
+
+# Question: What does `QueryClientProvider` do?
+
+**Answer:** It provides the `QueryClient` instance to the application’s React tree.
+
+---
+
+# Question: How does React Query improve over manual `useState` and `useEffect`?
+
+**Answer:** It abstracts away boilerplate logic for fetching, caching, and managing states like loading and error.
+
+---
+
+# Question: What is the advantage of using React Query’s declarative API?
+
+**Answer:** It simplifies the logic and reduces the amount of code required to fetch and manage data.
+
+---
+
+# Question: What is the role of `data.data.map(...)` in React Query
+
+**Answer:** It iterates over the fetched users array nested inside the `data` object returned by Axios.
+
+---
+
+# Question: What should be displayed when an error occurs in React Query?
+
+**Answer:** An error message such as `<h4>Error: {error.message}, retry again</h4>`.
+
+---
+
+# Question: What should be displayed when data is loading in React Query?
+
+**Answer:** A loading indicator such as `<h4>...Loading data</h4>`.
+
+---
+
+# Question: What four tools for data fetching in React?
+
+**Answer:** Fetch API, async/await, Axios, and React Query.
+
+---
+
+# Question: What does React Query radically change in data fetching?
+
+**Answer:** It introduces powerful features like transparent caching, retries, and simplified state management.
+
+---
+
+# Question: Why is effective data handling critical in React applications?
+
+**Answer:** Because most modern applications are data-driven and depend on external or internal APIs to function.
+
+---
