@@ -1747,3 +1747,184 @@ useEffect(() => {
 **Answer:** Because most modern applications are data-driven and depend on external or internal APIs to function.
 
 ---
+
+# Question: What is JSX in React?
+
+**Answer:** JSX is an XML-like syntax extension for JavaScript that allows developers to write HTML-like code inside JavaScript to describe user interfaces.
+
+---
+
+# Question: What is the main purpose of JSX in React?
+
+**Answer:** JSX allows mixing HTML elements with JavaScript to build reusable UI components in a declarative and efficient manner.
+
+---
+
+# Question: How is JSX different from HTML in terms of browser support?
+
+**Answer:** HTML is natively understood by browsers, while JSX must be transpiled into JavaScript using Babel before browsers can interpret it.
+
+---
+
+# Question: What tool is responsible for transforming JSX into browser-readable JavaScript?
+
+**Answer:** Babel.
+
+---
+
+# Question: What is the significance of the `className` attribute in JSX?
+
+**Answer:** JSX uses `className` instead of `class` to define CSS classes due to `class` being a reserved keyword in JavaScript.
+
+---
+
+# Question: In JSX, how are JavaScript expressions embedded in HTML elements?
+
+**Answer:** JavaScript expressions are wrapped in curly braces `{}` inside JSX.
+
+---
+
+# Question: What will the JSX expression `<h2>{5 + 5}</h2>` render in the browser?
+
+**Answer:** It will render the number `10`.
+
+---
+
+# Question: Why is the use of a single parent element necessary in JSX?
+
+**Answer:** JSX requires a single parent element to wrap all child elements, or else it throws a syntax error.
+
+---
+
+# Question: What are fragments in JSX used for?
+
+**Answer:** Fragments (`<> </>`) allow multiple elements to be returned without adding extra nodes to the DOM.
+
+---
+
+# Question: How does the virtual DOM (VDOM) improve performance in React?
+
+**Answer:** React uses the virtual DOM to detect and re-render only changed nodes, making updates more efficient.
+
+---
+
+# Question: What are the parameters of the `React.createElement()` function?
+
+**Answer:** The HTML tag or component, a props object (or null), and the child content or components.
+
+---
+
+# Question: Write the JSX equivalent of `React.createElement('div', {}, 'React Conference 2024')`.
+
+**Answer:** `<div>React Conference 2024</div>`
+
+---
+
+# Question: Why is JSX preferred over using `React.createElement()` directly?
+
+**Answer:** JSX is easier to write, more readable, less error-prone, and abstracts away low-level DOM operations.
+
+---
+
+# Question: What is the purpose of `ReactDOM.createRoot(document.getElementById('root'))`?
+
+**Answer:** It initializes a React root and attaches it to the DOM element with id `'root'`.
+
+---
+
+# Question: What is `SyntheticEvent` in React?
+
+**Answer:** It's React's wrapper around the browser's native events, providing consistent behavior across all browsers.
+
+---
+
+# Question: What is the naming convention for event handlers in JSX?
+
+**Answer:** Event handler names follow camelCase, such as `onClick`, `onChange`, `onSubmit`.
+
+---
+
+# Question: Write the JSX syntax to handle an input change for a username field.
+
+**Answer:** `<input onChange={(e) => setUsername(e.target.value)} />`
+
+---
+
+# Question: What React hook is used to manage state?
+
+**Answer:** `useState`
+
+---
+
+# Question: What must always wrap all JSX returned from a component?
+
+**Answer:** A single parent element like a `<div>` or a fragment (`<> </>`).
+
+---
+
+# Question: How does JSX handle self-closing tags compared to HTML?
+
+**Answer:** In JSX, self-closing tags must include a forward slash, e.g., `<br />`.
+
+---
+
+# Question: In JSX, what attribute is used instead of `for` in a `<label>` tag?
+
+**Answer:** `htmlFor`
+
+---
+
+# Question: What are the three parameters used in the `React.createElement()` function?
+
+**Answer:** The element type (string or component), props (object or null), and children (text or components).
+
+---
+
+# Question: Give an example of a JSX fragment wrapping two elements.
+
+**Answer:**
+
+```jsx
+<>
+  <p>Hello</p>
+  <ul><li>Item</li></ul>
+</>
+```
+
+---
+
+# Question: How do you access the value from an input element in JSX?
+
+**Answer:** Using `e.target.value` inside the event handler.
+
+---
+
+# Question: What is the output of this JSX snippet? `<h2>{speakerName}</h2>` where `const speakerName = "John Holt"`?
+
+**Answer:** `John Holt`
+
+---
+
+# Question: In HTML, you can return multiple top-level elements. What happens if you do the same in JSX?
+
+**Answer:** It results in a JSX compilation error due to the lack of a single parent element.
+
+---
+
+# Question: In what file do you typically render the root React component?
+
+**Answer:** `src/index.js`
+
+---
+
+# Question: In React, where do you typically define the UI for your app?
+
+**Answer:** In components, often inside files like `App.js` using JSX.
+
+---
+
+# Question: What does `export function App()` do in a React file?
+
+**Answer:** It defines a named React component that can be imported and rendered elsewhere.
+
+---
