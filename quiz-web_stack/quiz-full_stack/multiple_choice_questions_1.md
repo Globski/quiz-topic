@@ -250,3 +250,40 @@
 
 ---
 
+# Question: What is Vite, and who created it?
+
+**Answer:** Vite is a modern frontend build tool created by Evan You, the developer behind Vue.js.
+
+---
+
+# Question: What are the two primary goals of Vite?
+
+**Answer:** Vite focuses on Fast Development and Optimized Production Builds.
+
+---
+
+# Question: How does Vite achieve fast development?
+
+**Answer:** Vite achieves fast development through instant server start and blazing-fast Hot Module Replacement (HMR).
+
+---
+
+# Question: What does Vite use to ensure optimized production builds?
+
+**Answer:** Vite uses native support for ES modules and efficient bundling through Rollup to ensure optimized production builds.
+
+---
+
+# Question: What advantage does Vite’s Hot Module Replacement (HMR) provide?
+
+**Answer:** Vite’s HMR provides a smoother development workflow by enabling instant updates without full page reloads.
+
+---
+
+# Question: Why are Vite’s production builds described as lean and performant?
+
+**Answer:** Because Vite uses Rollup for bundling and supports native ES modules, resulting in minimal and optimized output.
+
+---
+
+
