@@ -2133,4 +2133,241 @@ useEffect(() => {
 
 ---
 
+# Question: What is the initial structure of a typical React project when created with Vite?
+
+**Answer:** It starts with a `src/` folder and a single file like `src/App.js` or `src/App.tsx` containing the main component.
+
+---
+
+# Question: What is the initial structure when using Next.js for a React project?
+
+**Answer:** The starting point is typically `src/app/page.js`.
+
+---
+
+# Question: What is the main drawback of having all components in a single React file?
+
+**Answer:** As features are added, the file becomes too large and unmanageable, necessitating separation into smaller components.
+
+---
+
+# Question: Under what condition is it acceptable to have multiple components in one file?
+
+**Answer:** When the components are closely related and the application is still small.
+
+---
+
+# Question: How should reusable components be treated in terms of file separation?
+
+**Answer:** Reusable components should be extracted into their own files to make them accessible to other components.
+
+---
+
+# Question: When is it not necessary to extract a component like `ListItem` into its own file?
+
+**Answer:** When it's tightly coupled to a parent component like `List` and not reused elsewhere.
+
+---
+
+# Question: What is the purpose of using an `index.js` file in a component folder?
+
+**Answer:** It serves as a public API (barrel file), exporting only what should be accessible externally.
+
+---
+
+# Question: Why are barrel files controversial in JavaScript?
+
+**Answer:** Because they make tree shaking harder for bundlers by potentially exporting unused code.
+
+---
+
+# Question: How can you avoid leaking implementation details in a barrel file?
+
+**Answer:** By explicitly exporting only the public API (e.g., the main component), not internal files like styles.
+
+---
+
+# Question: How should file extensions differ when using TypeScript or JSX?
+
+**Answer:** Use `.ts`, `.tsx`, or `.jsx` instead of `.js`.
+
+---
+
+# Question: What is the drawback of keeping all files (e.g., test, style) in the `src/` folder?
+
+**Answer:** It becomes cluttered and difficult to track individual components and their related files.
+
+---
+
+# Question: How does using folders for each component improve scalability?
+
+**Answer:** It organizes all related files (component, test, style) into one place, reducing clutter and improving maintainability.
+
+---
+
+# Question: What is the rule of thumb regarding folder nesting depth for components?
+
+**Answer:** Avoid nesting more than two levels to prevent unnecessary complexity.
+
+---
+
+# Question: What is a good practice when a component grows in size and technical concerns (e.g., styles, tests) increase?
+
+**Answer:** Move the component into its own folder and extract styles, tests, types, and utilities into separate files.
+
+---
+
+# Question: What are some valid alternatives for naming `test.js` and `style.css` files?
+
+**Answer:** `test.js` can be `spec.js`, and `style.css` can be `styles.css` or `style.module.css` (for CSS Modules).
+
+---
+
+# Question: How can you locate specific files in an IDE when using structured folders?
+
+**Answer:** Use fuzzy search like "list component" or "app test" to quickly find the desired file.
+
+---
+
+# Question: What is the main idea behind moving from components to technical folders like `hooks/`, `context/`, and `services/`?
+
+**Answer:** To separate reusable logic (like hooks or services) from UI components for better modularity and reuse.
+
+---
+
+# Question: Where should hooks that are reused by multiple components be placed?
+
+**Answer:** In a dedicated `hooks/` folder.
+
+---
+
+# Question: Where should hooks that are used only by one component reside?
+
+**Answer:** Inside that component's folder, possibly in a `hooks.js` file.
+
+---
+
+# Question: How should you structure a reusable hook that has multiple files?
+
+**Answer:** Place it in its own folder under `hooks/`, with files like `index.js`, `hook.js`, and `test.js`.
+
+---
+
+# Question: Where should context logic be placed in a React project?
+
+**Answer:** In a `context/` folder, as it needs to be accessible by multiple components.
+
+---
+
+# Question: What is the purpose of a `services/` folder?
+
+**Answer:** To store utility functions or modules (e.g., formatting or error tracking) that are used across the application.
+
+---
+
+# Question: Provide an example of a file path to access a date formatting utility from the services folder.
+
+**Answer:** `import { formatMonth } from '../../services/format/date-time';`
+
+---
+
+# Question: What is the preferred import method for using grouped services?
+
+**Answer:** Import the entire service module: `import * as dateTimeService from '@/services/format/date-time';`
+
+---
+
+# Question: What is the advantage of using import aliases (e.g., `@/services/...`)?
+
+**Answer:** They simplify import paths and avoid complex relative paths.
+
+---
+
+# Question: How should deeply nested services (e.g., date and time) be structured for fine-grained control?
+
+**Answer:** Organize into subfolders like `services/format/date-time/date/` and `services/format/date-time/time/`.
+
+---
+
+# Question: What is the purpose of `components/` vs. `feature/` folders in large React projects?
+
+**Answer:** `components/` holds reusable UI components; `feature/` holds domain-specific or page-specific components.
+
+---
+
+# Question: Where should a reusable `Button` component be placed?
+
+**Answer:** Inside the `components/` folder.
+
+---
+
+# Question: Where should a one-time-use component like `PaymentForm` be placed?
+
+**Answer:** Inside the appropriate feature folder (e.g., `feature/payment/`).
+
+---
+
+# Question: What should you do with services that are tightly coupled to a specific feature?
+
+**Answer:** Place them inside a `services/` subfolder within the respective feature folder.
+
+---
+
+# Question: How can you further separate concerns within a single feature folder?
+
+**Answer:** Add subfolders like `components/`, `services/`, `hooks/`, or `context/` inside the feature folder.
+
+---
+
+# Question: What is the main benefit of grouping related technical concerns under the same feature folder?
+
+**Answer:** It allows teams to work independently on features without touching global code, improving modularity and collaboration.
+
+---
+
+# Question: In a page-driven structure using Next.js, where are pages typically placed?
+
+**Answer:** Inside the `app/` folder, where each file represents a route.
+
+---
+
+# Question: What does `app/posts/page.tsx` represent in a Next.js project?
+
+**Answer:** A route to the `/posts` page.
+
+---
+
+# Question: What does `app/posts/[postId]/page.tsx` represent in a Next.js project?
+
+**Answer:** A dynamic route to a specific post based on `postId`.
+
+---
+
+# Question: Where should shared UI components be placed if used by multiple features?
+
+**Answer:** In the global `components/` folder.
+
+---
+
+# Question: Under what condition can a feature like `comment` be nested inside another feature like `post`?
+
+**Answer:** Only if the `comment` feature is exclusively used by the `post` feature.
+
+---
+
+# Question: Why should feature folders not be nested in the `pages/` or `app/` folder?
+
+**Answer:** It creates inconsistent structure and makes future reuse harder if the feature needs to be moved.
+
+---
+
+# Question: What is the core idea of the 5-step React folder structure strategy?
+
+**Answer:** To progressively scale and organize a React project by separating files into meaningful folders based on size, complexity, and reusability.
+
+---
+
+
+
+
 
