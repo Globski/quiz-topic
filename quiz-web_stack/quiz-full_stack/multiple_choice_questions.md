@@ -1973,7 +1973,7 @@ useEffect(() => {
 
 # Question: What performance issue can occur if state is placed in the wrong component?
 
-**Answer:** Placing state in the wrong component, especially higher up in the component tree, can trigger wider and unnecessary re-renders.
+**Answer:** Placing state in the wrong component, especially higher up in the component tree, can trigger wider and unnecessary re-renders instead, manage it inside the component itself.
 
 ---
 
