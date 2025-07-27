@@ -2073,3 +2073,64 @@ useEffect(() => {
 
 ---
 
+# Question: Why is it not ideal to build a full-fledged app using only React?
+
+**Answer:** Because React alone lacks built-in solutions for critical needs like state management, routing, and form handling, making it inefficient for building complete applications.
+
+---
+
+# Question: What kind of functionality do developers commonly add to React through external libraries?
+
+**Answer:** State management, UI components, routing, and form handling.
+
+---
+
+# Question: What is MobX used for in React development?
+
+**Answer:** MobX is used for efficient and scalable state management in React applications.
+
+---
+
+# Question: How does MobX improve the developer experience in React projects?
+
+**Answer:** MobX simplifies state management by using observable data and automatically updating UI components when state changes.
+
+---
+
+# Question: What is Redux?
+
+**Answer:** Redux is a JavaScript library for managing state in JavaScript applications, especially React.
+
+---
+
+# Question: In what types of applications is Redux most commonly used?
+
+**Answer:** Redux is commonly used in large-scale React applications that require predictable state containers.
+
+---
+
+# Question: What is the role of React Router in a React project?
+
+**Answer:** React Router is a library used for handling routing and navigation in React applications.
+
+---
+
+# Question: What does React Router allow developers to implement?
+
+**Answer:** It allows developers to define routes and manage URL-based navigation between components or pages.
+
+---
+
+# Question: What is Final Form used for in React?
+
+**Answer:** Final Form is a library used for building and managing complex, customizable forms in React.
+
+---
+
+# Question: What makes Final Form stand out among form libraries?
+
+**Answer:** It is easier to implement and customize, making it suitable for handling complex form logic.
+
+---
+
+
