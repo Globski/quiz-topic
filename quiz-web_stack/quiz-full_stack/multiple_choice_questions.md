@@ -1927,4 +1927,59 @@ useEffect(() => {
 
 **Answer:** It defines a named React component that can be imported and rendered elsewhere.
 
+--
+
+# Question: What are common causes of performance bottlenecks in React applications?
+
+**Answer:** Unnecessary re-renders and poor state management.
+
 ---
+
+# Question: What is one method to prevent unnecessary re-renders in React components?
+
+**Answer:** Using `React.memo` to memoize functional components and avoid re-rendering unless props change.
+
+---
+
+# Question: How can functions be optimized in React to avoid unnecessary renders?
+
+**Answer:** By wrapping functions in `useCallback` to memoize them and prevent re-creation on every render.
+
+---
+
+# Question: What hook should you use to memoize functions in React?
+
+**Answer:** `useCallback`.
+
+---
+
+# Question: What should developers avoid to boost React performance related to state?
+
+**Answer:** Avoid unnecessary state updates that can trigger component re-renders.
+
+---
+
+# Question: What is the purpose of `React.memo` in optimizing React apps?
+
+**Answer:** `React.memo` prevents a component from re-rendering if its props have not changed.
+
+---
+
+# Question: Why should you avoid putting state in the parent component unnecessarily in React?
+
+**Answer:** Because placing state in the parent component when not needed can cause unnecessary re-renders of child components, leading to performance issues.
+
+---
+
+# Question: What performance issue can occur if state is placed in the wrong component?
+
+**Answer:** Placing state in the wrong component, especially higher up in the component tree, can trigger wider and unnecessary re-renders.
+
+---
+
+# Question: How does improper state placement affect a React app's rendering behavior?
+
+**Answer:** It increases the number of components that re-render, reducing performance and efficiency.
+
+---
+
