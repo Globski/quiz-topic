@@ -2055,3 +2055,21 @@ useEffect(() => {
 
 ---
 
+# Question: What is Bulma in the context of front-end development?
+
+**Answer:** Bulma is a modern CSS framework based on Flexbox that provides reusable, responsive components with no JavaScript dependency.
+
+---
+
+# Question: What type of components does Bulma offer?
+
+**Answer:** Bulma offers responsive, reusable UI components such as buttons, forms, navbars, and layout grids, all styled with utility classes.
+
+---
+
+# Question: Does Bulma require JavaScript to function?
+
+**Answer:** No, Bulma is a pure CSS framework and does not require JavaScript for its components to work.
+
+---
+
