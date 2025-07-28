@@ -765,3 +765,265 @@ printf("%c", myChar);
 
 ---
 
+# Question: What is a constant in the context of a C program?
+
+**Answer:** A constant is a value that does not change during the execution of the program, such as a hardcoded number (e.g., `77`) or string (e.g., `"Hello"`).
+
+---
+
+# Question: What is the first step in getting user input in a C program?
+
+**Answer:** Prompt the user using the `printf()` function to indicate what input is expected.
+
+---
+
+# Question: Which function in C is used to get input from the user?
+
+**Answer:** `scanf()`
+
+---
+
+# Question: What is the purpose of `scanf()` in C?
+
+**Answer:** It reads input from the user and stores it in a specified variable.
+
+---
+
+# Question: How do you declare an integer variable `age` without assigning it a value?
+
+**Answer:** `int age;`
+
+---
+
+# Question: Why do we not assign a value to the variable `age` initially in the user input?
+
+**Answer:** Because we expect the user to provide the value at runtime.
+
+---
+
+# Question: What format specifier should you use with `scanf()` to read an integer?
+
+**Answer:** `%d`
+
+---
+
+# Question: Why do we use `&age` instead of just `age` with `scanf()`?
+
+**Answer:** Because `scanf()` needs the memory address of the variable to store the input.
+
+---
+
+# Question: What does the `&` symbol represent in C?
+
+**Answer:** It is the address-of operator and is used to pass the memory address of a variable (pointer).
+
+---
+
+# Question: How would you print the value of `age` after reading it from the user?
+
+**Answer:** `printf("You are %d years old", age);`
+
+---
+
+# Question: How do `printf()` and `scanf()` differ in terms of purpose?
+
+**Answer:** `printf()` displays output, while `scanf()` receives input.
+
+---
+
+# Question: What data type is used to store a floating-point number like GPA?
+
+**Answer:** `double`
+
+---
+
+# Question: What format specifier is used in `scanf()` to read a `double`?
+
+**Answer:** `%lf`
+
+---
+
+# Question: What format specifier is used in `printf()` to print a `double`?
+
+**Answer:** `%f`
+
+---
+
+# Question: How do you declare a double variable named `GPA`?
+
+**Answer:** `double GPA;`
+
+---
+
+# Question: What function call would read a `double` into `GPA`?
+
+**Answer:** `scanf("%lf", &GPA);`
+
+---
+
+# Question: How do you print the value of a double `GPA`?
+
+**Answer:** `printf("Your GPA is %f", GPA);`
+
+---
+
+# Question: Which format specifier is used in `scanf()` to read a character?
+
+**Answer:** `%c`
+
+---
+
+# Question: Which format specifier is used in `printf()` to display a character?
+
+**Answer:** `%c`
+
+---
+
+# Question: How do you declare a `char` variable named `grade`?
+
+**Answer:** `char grade;`
+
+---
+
+# Question: What function call reads a character into `grade`?
+
+**Answer:** `scanf("%c", &grade);`
+
+---
+
+# Question: How do you print the value of a character variable `grade`?
+
+**Answer:** `printf("Your grade is %c", grade);`
+
+---
+
+# Question: How do you declare a string variable `name` that can hold up to 20 characters?
+
+**Answer:** `char name[20];`
+
+---
+
+# Question: Why do we specify a size like `20` when declaring a string for user input?
+
+**Answer:** Because we are not assigning an initial value, so we must allocate memory for the string.
+
+---
+
+# Question: What format specifier do you use in `scanf()` to read a string?
+
+**Answer:** `%s`
+
+---
+
+# Question: Why do we not use `&` with a string variable in `scanf()`?
+
+**Answer:** Because the array name already represents the memory address of the string.
+
+---
+
+# Question: What is the limitation of using `scanf("%s", name)` to get a string?
+
+**Answer:** It stops reading input at the first space.
+
+---
+
+# Question: Which function allows reading an entire line, including spaces, into a string?
+
+**Answer:** `fgets()`
+
+---
+
+# Question: What are the three arguments required by `fgets()`?
+
+**Answer:** The string variable, the maximum number of characters to read, and the input stream (e.g., `stdin`).
+
+---
+
+# Question: Write a valid `fgets()` call to read up to 20 characters into a variable `name`.
+
+**Answer:** `fgets(name, 20, stdin);`
+
+---
+
+# Question: What does `stdin` represent in C?
+
+**Answer:** The standard input stream, typically the keyboard input.
+
+---
+
+# Question: Why is specifying a max length (like 20) in `fgets()` important?
+
+**Answer:** To prevent buffer overflow if the user enters too many characters.
+
+---
+
+# Question: What unwanted character might `fgets()` include at the end of the string?
+
+**Answer:** A newline character (`\n`).
+
+---
+
+# Question: What causes the newline character to be included when using `fgets()`?
+
+**Answer:** Pressing Enter when submitting input adds `\n`, which `fgets()` stores.
+
+---
+
+# Question: What is one drawback of using `fgets()` over `scanf()`?
+
+**Answer:** It may include the newline character (`\n`) in the string.
+
+---
+
+# Question: How does `scanf()` handle input with spaces when reading a string?
+
+**Answer:** It stops reading at the first space, only capturing the first word.
+
+---
+
+# Question: In what situation would `fgets()` be preferred over `scanf()` for string input?
+
+**Answer:** When input may contain spaces (e.g., full names or sentences).
+
+---
+
+# Question: How can you print a string variable `name` using `printf()`?
+
+**Answer:** `printf("Your name is %s", name);`
+
+---
+
+# Question: What kind of variable must be used with `fgets()` to store input?
+
+**Answer:** A character array (string) with a predefined size.
+
+---
+
+# Question: What does the `%s` format specifier represent in `printf()`?
+
+**Answer:** It represents a string (character array).
+
+---
+
+# Question: Why can't you use `&name` with `fgets()`?
+
+**Answer:** Because `fgets()` expects the actual array (pointer), not the address of the array.
+
+---
+
+# Question: What is the general purpose of `fgets()` in C?
+
+**Answer:** To read a full line of text input (including spaces) into a string.
+
+---
+
+# Question: What does the following code do?
+
+```c
+char name[20];  
+fgets(name, 20, stdin);  
+```
+
+**Answer:** It reads up to 19 characters (plus `\0`) including spaces from user input and stores it in `name`.
+
+---
