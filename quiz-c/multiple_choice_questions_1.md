@@ -394,3 +394,205 @@
 
 ---
 
+# Question: What data type in C allows you to store a single character?
+
+**Answer:** The `char` data type allows you to store a single character in C.
+
+---
+
+# Question: How do you store a string of characters in C using the `char` data type?
+
+**Answer:** You declare a `char` variable with square brackets (e.g., `char phrase[]`) and assign it a string using double quotes (e.g., `"Hello"`), which creates an array of characters.
+
+---
+
+# Question: What do square brackets `[]` indicate when declaring a `char` variable for a string?
+
+**Answer:** They indicate that the variable is an array, allowing storage of multiple characters as a string.
+
+---
+
+# Question: What is the difference between using single quotes and double quotes for characters in C?
+
+**Answer:** Single quotes are used for single characters (e.g., `'A'`), while double quotes are used for strings (e.g., `"Hello"`).
+
+---
+
+# Question: Can you reassign a string stored using the `char phrase[]` syntax in the same way as a regular variable?
+
+**Answer:** No, strings created this way act differently and cannot be reassigned like regular variables.
+
+---
+
+# Question: What is `printf` in C?
+
+**Answer:** `printf` is a function that prints text or formatted output to the screen.
+
+---
+
+# Question: How do you write a basic `printf` function to display text?
+
+**Answer:** `printf("Hello, World!");` prints the string "Hello, World!" to the screen.
+
+---
+
+# Question: What does the `\n` escape sequence do inside a `printf` statement?
+
+**Answer:** It creates a new line in the output.
+
+---
+
+# Question: How can you print a quotation mark `"` within a `printf` string?
+
+**Answer:** Use the escape character `\"` (e.g., `printf("\"Hello\"");`).
+
+---
+
+# Question: What is a format specifier in C `printf`?
+
+**Answer:** A format specifier is a placeholder in a string (e.g., `%d`, `%s`, `%f`) that tells `printf` to print a specific data type.
+
+---
+
+# Question: What does `%d` represent in a `printf` function?
+
+**Answer:** `%d` is a format specifier used to print an integer.
+
+---
+
+# Question: What does `%s` represent in a `printf` function?
+
+**Answer:** `%s` is a format specifier used to print a string.
+
+---
+
+# Question: What does `%f` represent in a `printf` function?
+
+**Answer:** `%f` is a format specifier used to print a floating-point (decimal) number.
+
+---
+
+# Question: What does `%c` represent in a `printf` function?
+
+**Answer:** `%c` is a format specifier used to print a single character.
+
+---
+
+# Question: How do you use multiple format specifiers in one `printf` statement?
+
+**Answer:** Include each format specifier in the string, and separate their values by commas in the same order (e.g., `printf("Name: %s, Age: %d", name, age);`).
+
+---
+
+# Question: What happens if the order of arguments does not match the order of format specifiers in `printf`?
+
+**Answer:** The output will be incorrect because `printf` substitutes values in the order they appear.
+
+---
+
+# Question: Can `printf` output variables instead of literals?
+
+**Answer:** Yes, you can pass variables as arguments after the format string to print their values (e.g., `printf("%d", fav_num);`).
+
+---
+
+# Question: What output will this produce: `printf("My favorite number is %d", 500);`?
+
+**Answer:** `My favorite number is 500`
+
+---
+
+# Question: How can you mix text and format specifiers in `printf`?
+
+**Answer:** By including format specifiers inside the string and passing corresponding values, e.g., `printf("My score is %d out of %d", score, total);`
+
+---
+
+# Question: What happens when you use `%f` to print a floating-point number like `8.9`?
+
+**Answer:** It prints the number with high precision (e.g., `8.900000`).
+
+---
+
+# Question: What kind of precision does `printf` default to when using `%f`?
+
+**Answer:** It defaults to printing six digits after the decimal point.
+
+---
+
+# Question: What result is printed by: `printf("%f", 5.0 + 4.5);`?
+
+**Answer:** `9.500000`
+
+---
+
+# Question: What operator is used for addition in C?
+
+**Answer:** The `+` operator.
+
+---
+
+# Question: What operator is used for subtraction in C?
+
+**Answer:** The `-` operator.
+
+---
+
+# Question: What operator is used for multiplication in C?
+
+**Answer:** The `*` (asterisk) operator.
+
+---
+
+# Question: What operator is used for division in C?
+
+**Answer:** The `/` (forward slash) operator.
+
+---
+
+# Question: Can `printf` evaluate arithmetic expressions like `5.0 + 4.5` before printing?
+
+**Answer:** Yes, it evaluates the expression first and prints the result.
+
+---
+
+# Question: What data types can `%f` handle in C?
+
+**Answer:** It can handle both `float` and `double` types.
+
+---
+
+# Question: What will be the output of:
+
+```c
+char myChar = 'i';
+printf("%c", myChar);
+```
+
+**Answer:** `i`
+
+---
+
+# Question: What keyword is used to declare a double-precision decimal number in C?
+
+**Answer:** `double`
+
+---
+
+# Question: What happens when you use `%f` with a `double` value like `500.98754`?
+
+**Answer:** It prints the number with six decimal places by default: `500.987540`
+
+---
+
+# Question: What is the primary purpose of using `printf` during program execution?
+
+**Answer:** To display information and help understand the behavior of the program during runtime.
+
+---
+
+# Question: Can `printf` help in debugging a program?
+
+**Answer:** Yes, it can help you see variable values and flow of execution.
+
+---
