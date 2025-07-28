@@ -358,3 +358,276 @@
 
 ---
 
+# Question: What are the three vital components required to run PHP web pages on a local system?
+
+**Answer:** A Web Server, a Database, and a PHP Parser.
+
+---
+
+# Question: Which web server is most commonly used for PHP development?
+
+**Answer:** Apache Server.
+
+---
+
+# Question: Which database software is most commonly used with PHP?
+
+**Answer:** MySQL.
+
+---
+
+# Question: What is the purpose of a PHP Parser in a PHP environment?
+
+**Answer:** It processes PHP script instructions and generates HTML output sent to the web browser.
+
+---
+
+# Question: Why might beginners prefer using an all-in-one package like XAMPP over installing components separately?
+
+**Answer:** Because installing and configuring Apache, MySQL, and PHP separately is complex.
+
+---
+
+# Question: From where can you download the latest PHP x64 Thread Safe ZIP package for Windows?
+
+**Answer:** [https://windows.php.net/download/](https://windows.php.net/download/)
+
+---
+
+# Question: What should you do if the `php.ini` file is not present after extraction?
+
+**Answer:** Copy `php.ini-development` to `php.ini`.
+
+---
+
+# Question: Which PHP extensions should typically be enabled for common use, including WordPress support?
+
+**Answer:**
+
+* `extension=curl`
+* `extension=gd`
+* `extension=mbstring`
+* `extension=pdo_mysql`
+
+---
+
+# Question: How do you uncomment a configuration line in `php.ini`?
+
+**Answer:** Remove the leading semicolon `;`.
+
+---
+
+# Question: What SMTP setting should be added to `php.ini` to enable PHP's `mail()` function?
+
+**Answer:**
+
+```ini
+[mail function]
+SMTP = mail.myisp.com
+smtp_port = 25
+sendmail_from = my@emailaddress.com
+```
+
+---
+
+# Question: Why is it necessary to add `C:\php` to the PATH environment variable?
+
+**Answer:** So that Windows can locate and execute the PHP binary from the command line.
+
+---
+
+# Question: What command checks Apache’s configuration after adding PHP as a module?
+
+**Answer:**
+
+```bash
+cd C:\Apache24\bin
+httpd -t
+```
+
+---
+
+# Question: Where should you place the PHP module configuration in the Apache `httpd.conf` file?
+
+**Answer:** At the bottom of the file using forward slashes in paths.
+
+---
+
+# Question: What lines should be added to `httpd.conf` to load PHP as a module?
+
+**Answer:**
+
+```apache
+# PHP8 module
+PHPIniDir "C:/php"
+LoadModule php_module "C:/php/php8apache2_4.dll"
+AddType application/x-httpd-php .php
+```
+
+---
+
+# Question: How should you modify the `DirectoryIndex` directive to prioritize `index.php` over `index.html`?
+
+**Answer:**
+
+```apache
+<IfModule dir_module>
+   DirectoryIndex index.php index.html
+</IfModule>
+```
+
+---
+
+# Question: What code should be placed inside `index.php` to test the PHP installation?
+
+**Answer:**
+
+```php
+<?php
+   phpinfo();
+?>
+```
+
+---
+
+# Question: What does the “X” in XAMPP stand for?
+
+**Answer:** Cross-platform
+
+---
+
+# Question: What components are included in the XAMPP package?
+
+**Answer:** Apache, MariaDB, PHP, and Perl
+
+---
+
+# Question: What is MariaDB in the context of XAMPP?
+
+**Answer:** A fork of MySQL with no functional differences.
+
+---
+
+# Question: What is the default installation directory for XAMPP on Windows?
+
+**Answer:** `C:\xampp`
+
+---
+
+# Question: What command changes permissions to allow XAMPP installer execution on Linux?
+
+**Answer:**
+
+```bash
+chmod 755 xampp-linux-*-installer.run
+```
+
+---
+
+# Question: What command is used to install XAMPP on Linux?
+
+**Answer:**
+
+```bash
+sudo ./xampp-linux-*-installer.run
+```
+
+---
+
+# Question: After installation, what is the default directory where XAMPP is installed on Linux?
+
+**Answer:** `/opt/lampp`
+
+---
+
+# Question: What command starts XAMPP on Linux?
+
+**Answer:**
+
+```bash
+sudo /opt/lampp/lampp start
+```
+
+---
+
+# Question: What output indicates that Apache and MySQL have started successfully with XAMPP?
+
+**Answer:**
+
+```
+Starting XAMPP ...
+LAMPP: Starting Apache...
+LAMPP: Starting MySQL...
+LAMPP started.
+```
+
+---
+
+# Question: What graphical tool allows Linux users to manage XAMPP services?
+
+**Answer:**
+
+```bash
+cd /opt/lampp
+sudo ./manager-linux.run
+```
+
+---
+
+# Question: What command stops XAMPP services on Linux?
+
+**Answer:**
+
+```bash
+sudo /opt/lampp/lampp stop
+```
+
+---
+
+# Question: How do you launch the GUI control panel for XAMPP on macOS?
+
+**Answer:** Open "manager-osx" from the DMG package and use it to start/stop services.
+
+---
+
+# Question: What services can be started/stopped using the XAMPP Control Panel?
+
+**Answer:** Apache, MySQL, and ProFTPD.
+
+---
+
+# Question: What URL should you visit in a browser to verify PHP is working locally?
+
+**Answer:** [http://127.0.0.1/info.php](http://127.0.0.1/info.php)
+
+---
+
+# Question: What indicates a successful PHP and web server setup when visiting `http://127.0.0.1/info.php`?
+
+**Answer:** A page displaying PHP installation information.
+
+--
+
+# Question: What is the purpose of the `php.ini` file?
+
+**Answer:** It is the main configuration file that controls PHP's functionality.
+
+---
+
+# Question: Where can you find guidance on configuring PHP with Apache?
+
+**Answer:** Check the section “PHP Configuration in Apache Server.”
+
+---
+
+# Question: Where can you find guidance on modifying `php.ini` settings?
+
+**Answer:** In the section titled “PHP.INI File Configuration.”
+
+---
+
+# Question: What resource should be referred to for configuring PHP with IIS on Windows?
+
+**Answer:** The IIS Reference Manual.
+
+---
