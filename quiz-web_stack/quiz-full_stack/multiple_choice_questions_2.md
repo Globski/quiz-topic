@@ -1479,3 +1479,201 @@ def square_numbers(numbers: List[int]) -> List[int]:
 **Answer:** Because FastAPI depends on type hints for functionality like validation, documentation, and runtime safety.
 
 ---
+
+# Question: What is the purpose of `Literal` in Python type hinting?
+
+**Answer:** It restricts a variable's value to a predefined set of admissible states.
+
+---
+
+# Question: What happens if you assign a value not included in a `Literal` type's admissible states?
+
+**Answer:** Mypy will raise an `Incompatible types in assignment` error.
+
+---
+
+# Question: What is the output of `format_datetime(datetime.now())`?
+
+**Answer:** A formatted string in the form of `"YYYY-MM-DD HH:MM:SS"`.
+
+---
+
+# Question: What does autocompletion suggest when you type `dt.` on a `datetime` object in VS Code?
+
+**Answer:** All the methods and properties available to the `datetime` object.
+
+---
+
+# Question: How do you annotate a function returning a list of dictionaries in Python?
+
+**Answer:** `def get_users(id: int) -> list[dict]:`
+
+---
+
+# Question: What is the purpose of type hints in Python?
+
+**Answer:** They enhance code readability, maintainability, and help prevent illegal or impossible states.
+
+---
+
+# Question: What does the `Optional` type indicate in Python type hinting?
+
+**Answer:** That a variable can either have a specific type or be `None`.
+
+---
+
+# Question: How is the `Union` type expressed in modern Python?
+
+**Answer:** Using the pipe (`|`) operator, e.g., `str | int`.
+
+---
+
+# Question: What does the `self` type represent in Python typing?
+
+**Answer:** It indicates that a value will be an instance of a certain class.
+
+---
+
+# Question: What does the `NewType` function allow in Python?
+
+**Answer:** Creating completely new types based on existing ones.
+
+---
+
+# Question: What is Pydantic used for?
+
+**Answer:** Data validation and parsing using Python type hints.
+
+---
+
+# Question: What language is Pydantic V2 partially rewritten in and why?
+
+**Answer:** Rust, for performance and speed.
+
+---
+
+# Question: Why is Pydantic widely used in the Python ecosystem?
+
+**Answer:** It has wide adoption, strong community support, emits JSON schema, and supports strict/lax coercion modes.
+
+---
+
+# Question: What are some popular libraries that benefit from Pydantic knowledge?
+
+**Answer:** Django Ninja, SQLModel, LangChain.
+
+---
+
+# Question: What are the two main libraries FastAPI relies on?
+
+**Answer:** Starlette (for web handling) and Pydantic (for data validation).
+
+---
+
+# Question: When does Pydantic perform validation?
+
+**Answer:** At runtime, during model instantiation.
+
+---
+
+# Question: What happens when you pass invalid data to a Pydantic model?
+
+**Answer:** A `ValidationError` is raised listing all encountered validation errors.
+
+---
+
+# Question: What is the purpose of `BaseModel` in Pydantic?
+
+**Answer:** It enables validation and parsing through inheritance.
+
+---
+
+# Question: What is validated automatically when instantiating a `User` model using Pydantic?
+
+**Answer:** Types and presence of all declared fields.
+
+---
+
+# Question: What does the `ValidationError` output include when multiple fields are incorrect?
+
+**Answer:** A complete list of all validation errors encountered.
+
+---
+
+# Question: What does setting `fav_colors: list[str] | None = ["red", "blue"]` imply?
+
+**Answer:** The field can be either a list of strings or `None`, with a default list value provided.
+
+---
+
+# Question: What is the behavior of Pydantic in lax mode?
+
+**Answer:** It coerces input types to match the declared field types.
+
+---
+
+# Question: Why should you avoid mutating fields like `user.id = "five"` after model creation?
+
+**Answer:** Because field validation is not re-applied during mutation.
+
+---
+
+# Question: What is deserialization in Pydantic?
+
+**Answer:** The process of ingesting and validating input data into a model.
+
+---
+
+# Question: What is serialization in Pydantic?
+
+**Answer:** Outputting validated model data into Python structures or JSON.
+
+---
+
+# Question: What method is used to create a model from a dictionary in Pydantic?
+
+**Answer:** `User.model_validate({ ... })`
+
+---
+
+# Question: What method is used to create a model from a JSON string in Pydantic?
+
+**Answer:** `User.model_validate_json(json_str)`
+
+---
+
+# Question: What method bypasses validation when creating a model instance?
+
+**Answer:** `model_construct()`
+
+---
+
+# Question: Why is using `model_construct()` not recommended in most cases?
+
+**Answer:** It bypasses all validation and can lead to illegal or inconsistent model states.
+
+---
+
+# Question: How do you declare a field with `Literal` values in a Pydantic model?
+
+**Answer:** `account: Literal["personal", "business"]`
+
+---
+
+# Question: What does setting a field like `nickname: str | None = None` mean?
+
+**Answer:** The field is optional and can either be a string or `None`.
+
+---
+
+# Question: What does `model_fields` return in a Pydantic model?
+
+**Answer:** A dictionary of all fields with type annotations and metadata, including default values and required status.
+
+---
+
+# Question: What is the output of `print(UserModel.model_fields)` for a model with default and optional fields?
+
+**Answer:** A dictionary showing each field's annotation, required status, and default values.
+
+---
