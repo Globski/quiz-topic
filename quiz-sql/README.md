@@ -1,4 +1,5 @@
 # Quiz SQL
+![image](https://github.com/user-attachments/assets/58cc0886-4b99-4870-874f-2285d539d380)
 
 ## Description
 
