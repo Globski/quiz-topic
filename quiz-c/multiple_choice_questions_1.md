@@ -105,3 +105,130 @@
 **Answer:** The console window may not appear because there's nothing to display.
 
 ---
+
+# Question: What is a C program essentially composed of?
+
+**Answer:** A set of instructions that, when executed correctly, perform tasks for the computer.
+
+---
+
+# Question: How is writing a C program similar to writing a recipe?
+
+**Answer:** Both are sets of instructions that, when followed in order, produce a desired result.
+
+---
+
+# Question: What does the `printf` function do in C?
+
+**Answer:** It prints text output to the screen.
+
+---
+
+# Question: Why is a semicolon important in a C instruction?
+
+**Answer:** It tells the compiler that the instruction is complete and allows the next instruction to be interpreted.
+
+---
+
+# Question: What happens if you copy and paste a `printf` instruction multiple times?
+
+**Answer:** The instruction will be executed multiple times, printing its output repeatedly.
+
+---
+
+# Question: What is the purpose of `\n` in a C string?
+
+**Answer:** It is a newline character that moves the output cursor to a new line.
+
+---
+
+# Question: In what order are instructions in the `main` function executed?
+
+**Answer:** From top to bottom, in the order they appear.
+
+---
+
+# Question: What happens when the order of instructions in a C program is changed?
+
+**Answer:** The output changes accordingly because the computer executes them in the new order.
+
+---
+
+# Question: What kind of shape can be drawn using `printf` and characters like `/`, `|`, and `_`?
+
+**Answer:** A triangle shape can be drawn using slashes, vertical bars, and underscores printed on new lines.
+
+---
+
+# Question: What effect does reordering drawing instructions have on the output shape?
+
+**Answer:** It changes the appearance of the shape, potentially creating incorrect or distorted figures.
+
+---
+
+# Question: What is the fundamental principle behind how a C program works?
+
+**Answer:** A C program specifies a list of instructions to be executed in sequence by the computer.
+
+---
+
+# Question: What are variables used for in C programming?
+
+**Answer:** To store and manage data values like numbers, text, or characters in a program.
+
+---
+
+# Question: Why is using variables better than hardcoding values multiple times?
+
+**Answer:** Variables make it easier to manage and update data by changing the value in one place rather than everywhere it appears.
+
+---
+
+# Question: What type of data is typically used to store a name in C?
+
+**Answer:** A string of characters stored using the `char` type and square brackets to indicate multiple characters.
+
+---
+
+# Question: What is the syntax to declare a character variable that stores a name?
+
+**Answer:** `char variable_name[] = "value";`
+
+---
+
+# Question: Why do we use square brackets `[]` when declaring `char characterName[]`?
+
+**Answer:** To indicate that the variable will store multiple characters, forming a string.
+
+---
+
+# Question: What is the keyword used in C to declare a variable that stores characters?
+
+**Answer:** `char`
+
+---
+
+# Question: Why is it helpful to use descriptive variable names?
+
+**Answer:** Descriptive names help indicate the purpose or content of the variable, making the code more readable and maintainable.
+
+---
+
+# Question: What would happen in a large program if you didn’t use variables for repeated data like names or ages?
+
+**Answer:** You would have to manually search and replace every occurrence, which is time-consuming and error-prone.
+
+---
+
+# Question: What does assigning a value to a variable look like in C?
+
+**Answer:** `type variable_name[] = "value";` (e.g., `char characterName[] = "John";`)
+
+---
+
+# Question: What must always be placed at the end of a variable declaration in C?
+
+**Answer:** A semicolon (`;`)
+
+---
+
