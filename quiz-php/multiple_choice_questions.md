@@ -1785,3 +1785,221 @@ x=20 y=20 z = 40
 
 ---
 
+# Question: What are `echo` and `print` in PHP?
+
+**Answer:** They are language constructs in PHP used to display output in the browser or console.
+
+---
+
+# Question: Are parentheses required when using `echo` or `print` in PHP?
+
+**Answer:** No, parentheses are optional because both `echo` and `print` are language constructs.
+
+---
+
+# Question: What types of content can `echo` and `print` output in PHP?
+
+**Answer:** They can output text, numbers, variables, and even HTML content.
+
+---
+
+# Question: What is the syntax of the `echo` statement in PHP?
+
+**Answer:** `echo(string ...$expressions): void`
+
+---
+
+# Question: What is the return value of the `echo` statement?
+
+**Answer:** `echo` does not return a value.
+
+---
+
+# Question: Can `echo` output multiple expressions?
+
+**Answer:** Yes, `echo` can accept and output multiple expressions separated by commas.
+
+---
+
+# Question: Write a basic example of `echo` in PHP.
+
+**Answer:**
+
+```php
+$name = "Rahul";
+echo "Hello " . $name . " How are you?";
+```
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$name = "Rahul";
+echo "Hello $name How are you?";
+```
+
+**Answer:** Hello Rahul How are you?
+
+---
+
+# Question: How do double-quoted and single-quoted strings differ when using variables in `echo`?
+
+**Answer:** Double-quoted strings parse and display variable values; single-quoted strings treat variables as plain text.
+
+---
+
+# Question: What is the output of this code?
+
+```php
+$name = "Rahul";
+echo 'Hello $name How are you?';
+```
+
+**Answer:** Hello \$name How are you?
+
+---
+
+# Question: How can multiple arguments be passed to `echo`?
+
+**Answer:** Either by separating them with commas or by concatenating them with the dot (`.`) operator.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+echo 'Hello ', 'how ', 'are ', 'you?', "\n";
+echo 'Hello ' . 'how ' . 'are ' . 'you?' . "\n";
+```
+
+**Answer:**
+
+```
+Hello how are you?
+Hello how are you?
+```
+
+---
+
+# Question: What happens if two `echo` statements are used successively without a newline character?
+
+**Answer:** The outputs will appear on the same line with no space in between.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+echo "hello";
+echo "world";
+```
+
+**Answer:** helloworld
+
+---
+
+# Question: What is the syntax of the `print` statement in PHP?
+
+**Answer:** `print(string $expression): int`
+
+---
+
+# Question: What is the return value of the `print` statement in PHP?
+
+**Answer:** It always returns 1.
+
+---
+
+# Question: Can `print` output multiple arguments?
+
+**Answer:** No, `print` only accepts a single argument.
+
+---
+
+# Question: Write a basic example of `print` in PHP.
+
+**Answer:**
+
+```php
+$name = "Rajesh";
+print "Hello " . $name . " How are you?\n";
+```
+
+---
+
+# Question: Can both `echo` and `print` output multi-line strings?
+
+**Answer:** Yes, both can output multi-line strings that span several lines.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+print "
+Multi-line
+string can be output  
+by echo as well as 
+print statement in PHP
+";
+```
+
+**Answer:**
+
+```
+Multi-line
+string can be output
+by echo as well as
+print statement in PHP
+```
+
+---
+
+# Question: What is one performance difference between `echo` and `print`?
+
+**Answer:** `echo` is faster than `print`.
+
+---
+
+# Question: Which PHP statement returns a value: `echo` or `print`?
+
+**Answer:** `print` returns a value (1), while `echo` does not.
+
+---
+
+# Question: Which statement can accept multiple arguments: `echo` or `print`?
+
+**Answer:** `echo` can accept multiple arguments; `print` cannot.
+
+---
+
+# Question: When should you prefer `echo` over `print`?
+
+**Answer:** Use `echo` when performance is important or when you need to output multiple strings efficiently.
+
+---
+
+# Question: When should you prefer `print` over `echo`?
+
+**Answer:** Use `print` when a return value is needed within an expression.
+
+---
+
+# Question: Why is `print` considered slower than `echo`?
+
+**Answer:** Because it returns a value and can only handle one argument, making it less efficient for simple output.
+
+---
+
+# Question: What are the key differences between `echo` and `print`?
+
+**Answer:**
+
+* `echo` is faster, returns no value, and accepts multiple arguments.
+* `print` is slower, returns 1, and accepts only a single argument.
+
+---
+
+
+
