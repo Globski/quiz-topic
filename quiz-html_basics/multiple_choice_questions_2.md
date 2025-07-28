@@ -470,3 +470,225 @@ Yes, single quotes can be used, especially when the attribute value contains dou
 
 ---
 
+# Question: Who initially developed HTML and in what year?
+
+**Answer:** HTML was initially developed by Sir Tim Berners-Lee in late 1991.
+
+---
+
+# Question: What was HTML originally designed for?
+
+**Answer:** HTML was designed as a standard language for creating and formatting documents on the World Wide Web.
+
+---
+
+# Question: Where did HTML development start and which organization later took over?
+
+**Answer:** HTML development started at CERN and was later taken over by the IETF, before the W3C became the main body for HTML development.
+
+---
+
+# Question: What concept influenced the creation of HTML?
+
+**Answer:** The concept of hypertext influenced the creation of HTML.
+
+---
+
+# Question: Who proposed the early concept of hypertext and what was the proposed machine called?
+
+**Answer:** Vannevar Bush proposed the early concept of hypertext with a machine called the "memex."
+
+---
+
+# Question: Who coined the term “hypertext” and in which decade?
+
+**Answer:** Ted Nelson coined the term "hypertext" in the 1960s.
+
+---
+
+# Question: What was Ted Nelson's vision of hypertext?
+
+**Answer:** Ted Nelson envisioned hypertext as a network of connected text and multimedia that allowed non-linear navigation.
+
+---
+
+# Question: What happened in HTML development in 1991?
+
+**Answer:** In 1991, Tim Berners-Lee created HyperText Markup Language, but it was not officially released.
+
+---
+
+# Question: When was the first public version of HTML made available?
+
+**Answer:** The first public version of HTML was published in 1993.
+
+---
+
+# Question: What was significant about HTML 2.0 released in 1995?
+
+**Answer:** HTML 2.0 was released with a few additional features added to the original specification.
+
+---
+
+# Question: Why was HTML 3.0 not widely adopted?
+
+**Answer:** HTML 3.0 was replaced by the more practical HTML 3.2.
+
+---
+
+# Question: What was the focus of the W3C in 1998 regarding HTML?
+
+**Answer:** In 1998, the W3C shifted focus to an XML-based HTML equivalent called XHTML.
+
+---
+
+# Question: What made HTML 4.01 significant when it was released in 1999?
+
+**Answer:** HTML 4.01 became an official standard and was the most widely used version in the early 2000s.
+
+---
+
+# Question: What was XHTML 1.0 and when was it completed?
+
+**Answer:** XHTML 1.0, completed in 2000, was a combination of HTML4 and XML.
+
+---
+
+# Question: What event in 2003 influenced the decision to evolve HTML instead of replacing it?
+
+**Answer:** The introduction of XForms in 2003 shifted focus back to evolving HTML rather than replacing it with XML-based technologies.
+
+---
+
+# Question: What happened at the 2004 W3C workshop regarding HTML?
+
+**Answer:** Mozilla and Opera presented principles that influenced HTML5 during the 2004 W3C workshop.
+
+---
+
+# Question: When did W3C show renewed interest in HTML5, and what collaboration followed?
+
+**Answer:** In 2006, W3C showed renewed interest in HTML5 and formed a working group to collaborate with the WHATWG.
+
+---
+
+# Question: What were the differing goals of W3C and WHATWG regarding HTML5?
+
+**Answer:** W3C aimed to publish a "finished" version of HTML5, while WHATWG focused on maintaining HTML as a Living Standard.
+
+---
+
+# Question: When was HTML5 officially published?
+
+**Answer:** HTML5 was officially published in 2012.
+
+---
+
+# Question: What is the difference in approach between a “finished” HTML5 and a “Living Standard” HTML5?
+
+**Answer:** A “finished” version is a static publication by W3C, while the “Living Standard” is continuously updated and maintained by WHATWG.
+
+---
+
+# Question: Which HTML version introduced support for the `<table>` element?
+
+**Answer:** HTML 4.01 introduced support for the `<table>` element.
+
+---
+
+# Question: In which version of HTML was support for the `<style>` and `<script>` elements introduced?
+
+**Answer:** HTML 4.01 introduced both `<style>` and `<script>` elements.
+
+---
+
+# Question: What version of HTML introduced multimedia elements like `<audio>` and `<video>`?
+
+**Answer:** HTML5 introduced the `<audio>` and `<video>` elements.
+
+---
+
+# Question: Which HTML version introduced the `<canvas>` element?
+
+**Answer:** HTML5 introduced the `<canvas>` element.
+
+---
+
+# Question: Which HTML elements were supported starting from HTML 1.2?
+
+**Answer:** Elements like `<img>`, `<p>`, `<h1>`–`<h6>`, `<address>`, `<a>`, and `<ul>`/`<ol>` were supported from HTML 1.2.
+
+---
+
+# Question: What does the `<img>` tag do in HTML?
+
+**Answer:** The `<img>` tag is used to add images to an HTML document.
+
+---
+
+# Question: What is the purpose of the `<p>` tag?
+
+**Answer:** The `<p>` tag represents a paragraph of text on a webpage.
+
+---
+
+# Question: What do heading tags (`<h1>` to `<h6>`) define in HTML?
+
+**Answer:** Heading tags define variable-length headings in HTML.
+
+---
+
+# Question: What is the `<address>` tag used for?
+
+**Answer:** The `<address>` tag is used to contain the contact information of the user.
+
+---
+
+# Question: What is the purpose of the `<a>` tag in HTML?
+
+**Answer:** The `<a>` tag is used to define hyperlinks in a webpage.
+
+---
+
+# Question: What is the use of lists (`<ul>`, `<ol>`) in HTML?
+
+**Answer:** Lists are used to display related items in an ordered or unordered format.
+
+---
+
+# Question: What does the `<table>` tag allow developers to do?
+
+**Answer:** The `<table>` tag allows developers to organize data into rows and columns.
+
+---
+
+# Question: What is the role of the `<style>` tag in an HTML document?
+
+**Answer:** The `<style>` tag is used to add CSS styling to a webpage.
+
+---
+
+# Question: What is the function of the `<script>` tag in HTML?
+
+**Answer:** The `<script>` tag is used to add JavaScript to an HTML document.
+
+---
+
+# Question: What does the `<audio>` tag do in HTML5?
+
+**Answer:** The `<audio>` tag enables the introduction of audio to a webpage.
+
+---
+
+# Question: What is the role of the `<video>` tag in HTML5?
+
+**Answer:** The `<video>` tag enables the introduction of video to a webpage.
+
+---
+
+# Question: What does the `<canvas>` element allow in HTML5?
+
+**Answer:** The `<canvas>` element allows the introduction of graphic elements to a webpage.
+
+---
+
