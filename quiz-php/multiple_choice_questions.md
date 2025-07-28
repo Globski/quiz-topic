@@ -891,3 +891,161 @@ class FooBar {
 
 ---
 
+# Question: What does PHP stand for?
+
+**Answer:** PHP stands for "PHP: Hypertext Preprocessor."
+
+---
+
+# Question: What type of language is PHP and what is its primary use?
+
+**Answer:** PHP is an open-source server-side scripting language primarily used for web development.
+
+---
+
+# Question: How can PHP be embedded in web development?
+
+**Answer:** PHP can be embedded into HTML code.
+
+---
+
+# Question: What happens when a PHP script is run on the server?
+
+**Answer:** The script runs on the web server, processes HTML, and then sends the result to the client’s web browser.
+
+---
+
+# Question: What types of web application functionality can PHP handle?
+
+**Answer:** PHP can manage sessions, handle forms, communicate with databases, and support other tasks needed in online applications.
+
+---
+
+# Question: Why is PHP considered simple and easy to learn?
+
+**Answer:** PHP’s syntax is similar to C, Java, and Perl, making it easy for developers familiar with those languages to learn quickly.
+
+---
+
+# Question: What contributes to fast development in PHP?
+
+**Answer:** PHP’s generous set of pre-defined functions contributes to rapid development.
+
+---
+
+# Question: What does it mean that PHP is open-source?
+
+**Answer:** PHP is free to download, use, modify, and distribute.
+
+---
+
+# Question: How does PHP benefit from being open-source?
+
+**Answer:** It has a large and active developer community that contributes through forums, tutorials, and documentation.
+
+---
+
+# Question: What operating systems are compatible with PHP?
+
+**Answer:** PHP is compatible with Windows, Linux, macOS, and UNIX.
+
+---
+
+# Question: What databases are compatible with PHP?
+
+**Answer:** PHP is compatible with MongoDB, PostgreSQL, MySQL, and others.
+
+---
+
+# Question: What does PHP's cross-platform compatibility enable?
+
+**Answer:** It allows PHP-based applications to operate in multiple environments without modification.
+
+---
+
+# Question: What is the main scripting approach used in PHP?
+
+**Answer:** Server-side scripting.
+
+---
+
+# Question: What are two common use cases of PHP server-side scripting?
+
+**Answer:** Form submission and session management.
+
+---
+
+# Question: How does PHP support interaction with databases?
+
+**Answer:** Through numerous built-in functions for connecting to various DBMS.
+
+---
+
+# Question: What is PHP’s database abstraction layer?
+
+**Answer:** It integrates communication between the application and the database, simplifying database-driven web application development.
+
+---
+
+# Question: What are some examples of PHP’s extensive library support?
+
+**Answer:** Image processing, encryption, PDF generation, XML and JSON parsing, session and cookie handling.
+
+---
+
+# Question: How does PHP provide security?
+
+**Answer:** PHP includes built-in functions for encryption and supports third-party applications for security.
+
+---
+
+# Question: What encryption algorithms are supported by PHP?
+
+**Answer:** Sha1 and MD5.
+
+---
+
+# Question: What functions in PHP help in maintaining a secure environment?
+
+**Answer:** `filter_var` and `strip_tags`.
+
+---
+
+# Question: Which secure communication protocol is supported by PHP?
+
+**Answer:** HTTPS.
+
+---
+
+# Question: How does PHP handle memory management?
+
+**Answer:** PHP avoids unnecessary memory allocation and runs in its own memory space for efficiency.
+
+---
+
+# Question: How does PHP’s memory management affect performance?
+
+**Answer:** It makes PHP faster and more efficient than many other scripting languages.
+
+---
+
+# Question: What role does PHP play in session management?
+
+**Answer:** PHP efficiently manages sessions, maintaining data across multiple user requests.
+
+---
+
+# Question: Why is PHP considered fast in terms of database connections?
+
+**Answer:** PHP handles database connections efficiently, contributing to overall performance.
+
+---
+
+# Question: How does PHP stay up-to-date?
+
+**Answer:** Through consistent updates and contributions from its developer community.
+
+---
+
+
+
