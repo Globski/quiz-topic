@@ -933,3 +933,327 @@ echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gp
 **Answer:** `comments`, `embedded_movies`, `movies`, `sessions`, `theatres`, and `users`.
 
 ---
+
+# Question: What MongoDB method is used to retrieve documents from a collection based on criteria?
+
+**Answer:** `find()`
+
+---
+
+# Question: What does the `find()` method return in MongoDB?
+
+**Answer:** A cursor, not the actual results.
+
+---
+
+# Question: What is the purpose of the cursor returned by `find()`?
+
+**Answer:** It allows performing operations such as limiting results, ordering, and skipping records.
+
+---
+
+# Question: How many documents are printed by default when using `find()` in the MongoDB Shell?
+
+**Answer:** 20 documents.
+
+---
+
+# Question: What does the console message "Type 'it' for more" indicate in MongoDB Shell?
+
+**Answer:** That more documents can be printed using the cursor.
+
+---
+
+# Question: Write a query to find all movies released in 1969 and limit the result to 5.
+
+**Answer:**
+
+```js
+db.movies.find({"year": 1969}).limit(5)
+```
+
+---
+
+# Question: Which MongoDB method counts how many documents match a query?
+
+**Answer:** `countDocuments()`
+
+---
+
+# Question: What will the following command return: `db.movies.countDocuments({"year": 1969})`?
+
+**Answer:** 107
+
+---
+
+# Question: What is a filter in MongoDB queries?
+
+**Answer:** A JSON object with key-value pairs that define query criteria.
+
+---
+
+# Question: What does the `$gt` operator do in MongoDB?
+
+**Answer:** Selects documents where the field value is greater than the specified value.
+
+---
+
+# Question: What does the `$lt` operator do in MongoDB?
+
+**Answer:** Selects documents where the field value is less than the specified value.
+
+---
+
+# Question: What does the `$in` operator do in MongoDB?
+
+**Answer:** Matches any of the values specified in an array.
+
+---
+
+# Question: Write a query to find all Comedy movies released in the USA after 1945.
+
+**Answer:**
+
+```js
+db.movies.find({"year": {$gt: 1945}, "countries": "USA", "genres": "Comedy"})
+```
+
+---
+
+# Question: What type of logical operation is implied by multiple fields in a `find()` query?
+
+**Answer:** AND operation.
+
+---
+
+# Question: What is projection in MongoDB?
+
+**Answer:** A way to include or exclude specific fields in the returned documents.
+
+---
+
+# Question: How do you exclude the `_id` field in a projection?
+
+**Answer:** Set `_id: 0` in the projection object.
+
+---
+
+# Question: Write a query to show only the title, country, and year of Comedy movies from the USA after 1945, sorted by year and limited to 5.
+
+**Answer:**
+
+```js
+db.movies.find({"year": {$gt: 1945}, "countries": "USA", "genres": "Comedy"}, {"_id":0, "title": 1, "countries": 1, "year": 1}).sort({"year": 1}).limit(5)
+```
+
+---
+
+# Question: What method is used to insert a single document in MongoDB?
+
+**Answer:** `insertOne()`
+
+---
+
+# Question: Write a query to insert a test movie titled "Once upon a time on Moon" released in 2024.
+
+**Answer:**
+
+```js
+db.movies.insertOne({"title": "Once upon a time on Moon", "genres":["Test"], year: 2024})
+```
+
+---
+
+# Question: What is `insertedId` in the `insertOne()` result?
+
+**Answer:** The ObjectId automatically generated for the inserted document.
+
+---
+
+# Question: Which method inserts multiple documents at once?
+
+**Answer:** `insertMany()`
+
+---
+
+# Question: What does MongoDB do if a document contains a new field not present in other documents?
+
+**Answer:** It allows the insertion due to its flexible schema.
+
+---
+
+# Question: Write a query to insert three movies with varying years and a custom rating field.
+
+**Answer:**
+
+```js
+db.movies.insertMany([
+  {"title": "Once upon a time on Moon", "genres":["Test"], year: 2024},
+  {"title": "Once upon a time on Mars", "genres":["Test"], year: 2023},
+  {"title": "Tiger Force in Paradise", "genres":["Test"], year: 2019, rating: "G"}
+])
+```
+
+---
+
+# Question: Which method updates the first document that matches a filter?
+
+**Answer:** `updateOne()`
+
+---
+
+# Question: What operator is used to modify field values in an update?
+
+**Answer:** `$set`
+
+---
+
+# Question: Write a command to change the first movie genre from "Test" to "PlaceHolder".
+
+**Answer:**
+
+```js
+db.movies.updateOne({genres: "Test"}, {$set: {"genres.$": "PlaceHolder"}})
+```
+
+---
+
+# Question: Which method updates all documents matching a filter?
+
+**Answer:** `updateMany()`
+
+---
+
+# Question: What does the `$inc` operator do?
+
+**Answer:** Increments the value of a field by a specified amount.
+
+---
+
+# Question: Write a command to update all movies with genre "Test" to "PlaceHolder" and increment their year by 1.
+
+**Answer:**
+
+```js
+db.movies.updateMany({ "genres": "Test" }, { $set: { "genres.$": "PlaceHolder" }, $inc: { "year": 1 } })
+```
+
+---
+
+# Question: Are updates in MongoDB atomic?
+
+**Answer:** Yes, updates are atomic per document.
+
+---
+
+# Question: What method replaces an entire document with a new one?
+
+**Answer:** `replaceOne()`
+
+---
+
+# Question: Which method deletes all documents matching a filter?
+
+**Answer:** `deleteMany()`
+
+---
+
+# Question: Write a command to delete all documents with genre "PlaceHolder".
+
+**Answer:**
+
+```js
+db.movies.deleteMany({genres: "PlaceHolder"})
+```
+
+---
+
+# Question: What result does MongoDB return after a delete operation?
+
+**Answer:** A result object with `deletedCount`.
+
+---
+
+# Question: Which method deletes the first document that matches a filter?
+
+**Answer:** `deleteOne()`
+
+---
+
+# Question: What command permanently deletes an entire MongoDB collection?
+
+**Answer:** `db.collection.drop()`
+
+---
+
+# Question: Why is dropping a collection discouraged without caution?
+
+**Answer:** Because it deletes all data and associated indexes.
+
+---
+
+# Question: What should you do if you accidentally delete all documents in the `movies` collection?
+
+**Answer:** Re-import the data via MongoDB Atlas.
+
+---
+
+# Question: What is the MongoDB aggregation framework used for?
+
+**Answer:** To perform complex calculations and data aggregations on the server side.
+
+---
+
+# Question: What is a pipeline in MongoDB aggregation?
+
+**Answer:** A sequence of stages that process documents in steps.
+
+---
+
+# Question: Write a basic aggregation to find all Comedy movies.
+
+**Answer:**
+
+```js
+db.movies.aggregate([{$match: {"genres": "Comedy"}}])
+```
+
+---
+
+# Question: What does the `$match` stage do in an aggregation pipeline?
+
+**Answer:** Filters documents based on specified criteria.
+
+---
+
+# Question: Write an aggregation to find average runtime of all Comedy movies of type "movie".
+
+**Answer:**
+
+```js
+db.movies.aggregate([
+  {$match: {type: "movie", genres: "Comedy"}},
+  {$group: {_id: null, averageRuntime: { $avg: "$runtime" }}}
+])
+```
+
+---
+
+# Question: What does `_id: null` mean in a `$group` stage?
+
+**Answer:** All documents are grouped into a single group.
+
+---
+
+# Question: What does `$avg: "$runtime"` do?
+
+**Answer:** Calculates the average of the `runtime` field across grouped documents.
+
+---
+
+# Question: Where can you find more information on MongoDB aggregation methods?
+
+**Answer:** [https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/](https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/)
+
+---
+
