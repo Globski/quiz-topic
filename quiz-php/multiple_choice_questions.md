@@ -1567,9 +1567,221 @@ php hello.php
 
 ---
 
+# Question: What are variables used for in PHP?
 
+**Answer:** To store data that can be accessed and modified throughout the program.
 
+---
 
+# Question: What types of values can PHP variables store?
 
+**Answer:** Numbers, text, arrays, objects, and more.
 
+---
+
+# Question: What does it mean that PHP is a loosely typed language?
+
+**Answer:** You do not need to declare the data type of a variable; PHP determines it based on the assigned value.
+
+---
+
+# Question: How do you declare a variable in PHP?
+
+**Answer:** By typing the `$` symbol followed by the variable name and assigning a value, e.g., `$variable_name = value;`
+
+---
+
+# Question: What is the syntax for declaring a string, integer, and float in PHP?
+
+**Answer:**
+
+```php
+$name = "John";  
+$age = 25;       
+$price = 12.50;
+```
+
+---
+
+# Question: What symbol must every PHP variable begin with?
+
+**Answer:** The dollar sign (`$`).
+
+---
+
+# Question: What are the rules for naming a variable in PHP?
+
+**Answer:**
+
+1. Must start with `$`.
+2. The name must start with a letter or underscore.
+3. Cannot start with a number.
+4. Can contain letters, numbers, or underscores.
+
+---
+
+# Question: Is PHP case-sensitive with variable names?
+
+**Answer:** Yes, `$Name` and `$name` are treated as different variables.
+
+---
+
+# Question: What will the following code output?
+
+```php
+$Name = "Amit";
+$name = "Samay";
+echo $Name;
+echo $name;
+```
+
+**Answer:**
+
+```
+AmitSamay
+```
+
+---
+
+# Question: List the primary variable types in PHP.
+
+**Answer:** String, Integer, Float (Double), Boolean, Array, Object, NULL, and Resource.
+
+---
+
+# Question: What does a string variable represent in PHP?
+
+**Answer:** A sequence of characters.
+
+---
+
+# Question: What is an integer in PHP?
+
+**Answer:** A whole number without decimals.
+
+---
+
+# Question: What is a float (or double) in PHP?
+
+**Answer:** A number with decimal points.
+
+---
+
+# Question: What does a Boolean represent in PHP?
+
+**Answer:** A true or false value.
+
+---
+
+# Question: What is an array in PHP?
+
+**Answer:** A variable that stores multiple values.
+
+---
+
+# Question: What does the `NULL` type represent in PHP?
+
+**Answer:** A variable with no value.
+
+---
+
+# Question: What does PHP automatically do when mixing types in operations?
+
+**Answer:** It converts types as needed (automatic type conversion).
+
+---
+
+# Question: What is the output of this code?
+
+```php
+$x = 10;
+$y = "20";
+echo "x + y is: ", $x+$y;
+```
+
+**Answer:**
+
+```
+x + y is: 30
+```
+
+---
+
+# Question: How does PHP assign variables by default?
+
+**Answer:** By value. The value is copied, and changes to one variable do not affect the other.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$x = 10;
+$y = 20;
+$z = $x + $y;
+echo "(before) z = ". $z . "\n";
+
+$y = 5;
+echo "(after) z = ". $z . "";
+```
+
+**Answer:**
+
+```
+(before) z = 30
+(after) z = 30
+```
+
+---
+
+# Question: What does it mean to assign a variable by reference in PHP?
+
+**Answer:** The new variable points to the original variable, so changes to one affect the other.
+
+---
+
+# Question: What operator is used to assign a variable by reference?
+
+**Answer:** The ampersand (`&`).
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$x = 10;
+$y = &$x;
+$z = $x + $y;
+echo "x=" . $x . " y=" . $y . " z = " . $z . "\n";
+
+$y = 20;
+$z = $x + $y;
+echo "x=" . $x . " y=" . $y . " z = " . $z . "";
+```
+
+**Answer:**
+
+```
+x=10 y=10 z = 20
+x=20 y=20 z = 40
+```
+
+---
+
+# Question: What is variable scope in PHP?
+
+**Answer:** The range within the program where a variable is accessible.
+
+---
+
+# Question: What are the four types of variable scope in PHP?
+
+**Answer:**
+
+1. Local variables
+2. Global variables
+3. Static variables
+4. Function parameters
+
+---
 
