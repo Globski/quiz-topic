@@ -596,3 +596,172 @@ printf("%c", myChar);
 **Answer:** Yes, it can help you see variable values and flow of execution.
 
 ---
+
+# Question: What is the result of adding an integer (`5`) and a floating-point number (`4.5`) in C?
+
+**Answer:** `9.5`, a floating-point number, because operations between an integer and a floating-point number return a floating-point result.
+
+---
+
+# Question: What is the result type when performing arithmetic between two integers in C?
+
+**Answer:** An integer.
+
+---
+
+# Question: What type of result will `5 / 4` return in C, and why?
+
+**Answer:** `1` as an integer, because both operands are integers, so the result is truncated to an integer.
+
+---
+
+# Question: What is the result of `5 / 4.0` in C?
+
+**Answer:** `1.25` as a floating-point number, because one operand is a float, so the result is a float.
+
+---
+
+# Question: If a floating-point result is printed with `%d` instead of `%f`, what is likely to happen?
+
+**Answer:** The output will be incorrect or undefined because `%d` is for integers, not floating-point numbers.
+
+---
+
+# Question: How can arithmetic results be stored in variables?
+
+**Answer:** By assigning the result of the arithmetic expression to a variable, such as `int num = 6;`.
+
+---
+
+# Question: What is the purpose of the `pow` function in C?
+
+**Answer:** It raises the first number to the power of the second number, e.g., `pow(2, 3)` returns `8.0`.
+
+---
+
+# Question: What data type does `pow` return, and what format specifier should be used to print it?
+
+**Answer:** It returns a `double`, so `%f` should be used to print the result.
+
+---
+
+# Question: What is the output of `pow(4, 3)`?
+
+**Answer:** `64.0`.
+
+---
+
+# Question: What does the `sqrt` function do?
+
+**Answer:** It returns the square root of a number, e.g., `sqrt(36)` returns `6.0`.
+
+---
+
+# Question: What does the `ceil` function do in C?
+
+**Answer:** It rounds a floating-point number up to the nearest integer, e.g., `ceil(36.356)` returns `37.0`.
+
+---
+
+# Question: What does the `floor` function do in C?
+
+**Answer:** It rounds a floating-point number down to the nearest integer, e.g., `floor(36.656)` returns `36.0`.
+
+---
+
+# Question: Are math functions like `pow`, `sqrt`, `ceil`, and `floor` available by default in C?
+
+**Answer:** Yes, but you typically need to include the `math.h` header file to use them.
+
+---
+
+# Question: How are multiple arguments passed to functions like `pow` in C?
+
+**Answer:** By separating the values with a comma inside the parentheses, e.g., `pow(2, 3)`.
+
+---
+
+# Question: What is the purpose of a comment in C?
+
+**Answer:** To include text that is ignored during program execution, often used for documentation or disabling code.
+
+---
+
+# Question: How do you start and end a multiline comment in C?
+
+**Answer:** Start with `/*` and end with `*/`.
+
+---
+
+# Question: What happens to code enclosed in `/* ... */`?
+
+**Answer:** It is ignored by the C compiler and not executed.
+
+---
+
+# Question: Can comments be used to disable specific lines of code?
+
+**Answer:** Yes, by surrounding the line(s) with comment syntax (`/* code */`), they are ignored during execution.
+
+---
+
+# Question: What is a best practice when using comments in C code?
+
+**Answer:** Use comments sparingly and only when necessary to explain complex logic or mark to-do items.
+
+---
+
+# Question: Why might excessive use of comments be discouraged?
+
+**Answer:** It can clutter the code and make it harder to read.
+
+---
+
+# Question: What keyword is used to declare a constant in C?
+
+**Answer:** `const`
+
+---
+
+# Question: What happens if you try to modify a variable declared as `const` in C?
+
+**Answer:** A compile-time error occurs because constants cannot be modified after declaration.
+
+---
+
+# Question: Where can the `const` keyword be placed in a declaration?
+
+**Answer:** Before or after the data type, but it's commonly placed before (e.g., `const int num = 5;`).
+
+---
+
+# Question: What naming convention is commonly used for constants in C?
+
+**Answer:** Constants are often written in all uppercase letters, e.g., `FAV_NUM`.
+
+---
+
+# Question: Is the uppercase naming for constants required by the C language?
+
+**Answer:** No, it's a convention or best practice, not a requirement.
+
+---
+
+# Question: What is the difference between a regular variable and a constant variable in C?
+
+**Answer:** A regular variable can be modified after declaration, while a constant cannot.
+
+---
+
+# Question: Can string literals or numeric literals also be considered constants in C?
+
+**Answer:** Yes, any fixed value used directly in code (e.g., `"Hello"` or `42`) is also a constant.
+
+---
+
+# Question: What happens when a `const int num = 5;` is followed by `num = 8;`?
+
+**Answer:** The program will produce a compile-time error because `num` is a constant and cannot be reassigned.
+
+---
+
