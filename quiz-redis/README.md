@@ -1,4 +1,5 @@
 # Quiz Redis
+<img width="1200" height="464" alt="image" src="https://github.com/user-attachments/assets/54d1018f-1167-49fd-8a98-19a4f560ae0f" />
 
 ## Description
 
