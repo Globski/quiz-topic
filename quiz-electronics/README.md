@@ -1,4 +1,5 @@
 # Quiz Electronics
+![image](https://github.com/user-attachments/assets/132b7948-8443-4ce2-b6a2-70d168f48bf9)
 
 ## Description
 A quiz project aimed at students who want to test and improve their knowledge of electronics fundamentals. This quiz covers circuit theory, components, signal processing, digital electronics, and practical applications.
