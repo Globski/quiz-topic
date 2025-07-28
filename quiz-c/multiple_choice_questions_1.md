@@ -1196,4 +1196,142 @@ I love [celebrity]
 
 ---
 
+# Question: What happens when `scanf` is used to take input with whitespace, like a full name?
+
+**Answer:** `scanf` stops reading input at the first whitespace, so it will not capture anything beyond the first word.
+
+---
+
+# Question: How can we modify a C program to read a full name using `scanf`?
+
+**Answer:** By using two separate variables (e.g., `celebrityF` and `celebrityL`) and two `%s` format specifiers in `scanf` to capture first and last names separately.
+
+---
+
+# Question: What issue occurs if a user enters only one name when using two `%s` format specifiers in `scanf`?
+
+**Answer:** The program will pause and wait for the second input, potentially causing confusion if only one name was intended.
+
+---
+
+# Question: What must you consider when using `scanf` for multiple words of input?
+
+**Answer:** You must be explicit about the number of words the user is expected to input, as `scanf` handles space-separated inputs as separate values.
+
+---
+
+# Question: Why must programmers be specific about user input in C?
+
+**Answer:** Because C does not automatically handle ambiguous input formats, and improper handling can cause runtime issues or incorrect data capture.
+
+---
+
+# Question: What is an array in C?
+
+**Answer:** An array is a container that stores multiple values of the same data type in a contiguous memory block.
+
+---
+
+# Question: Why are arrays useful in C programming?
+
+**Answer:** Arrays allow storage and management of large, related data sets without needing to create multiple individual variables.
+
+---
+
+# Question: How do you declare an array of integers in C?
+
+**Answer:** `int luckyNumbers[] = {4, 8, 15, 16, 23, 42};`
+
+---
+
+# Question: What symbol indicates to C that a variable is an array?
+
+**Answer:** Square brackets `[]` following the variable name.
+
+---
+
+# Question: How are array elements separated in an initializer list?
+
+**Answer:** By commas.
+
+---
+
+# Question: What is each value inside an array called?
+
+**Answer:** An element.
+
+---
+
+# Question: What data types can be used to create arrays?
+
+**Answer:** Any primitive type, such as `int`, `char`, or `double`.
+
+---
+
+# Question: How do you access the first element of an array?
+
+**Answer:** Using index 0, e.g., `luckyNumbers[0]`.
+
+---
+
+# Question: What value does `luckyNumbers[2]` refer to in the array `{4, 8, 15, 16, 23, 42}`?
+
+**Answer:** `15`
+
+---
+
+# Question: What is the index of the last element in a 6-element array?
+
+**Answer:** `5`, because array indexing starts at `0`.
+
+---
+
+# Question: Why does array indexing in C start at 0?
+
+**Answer:** It reflects how memory addresses are calculated, where the base address represents index 0.
+
+---
+
+# Question: How can you print a specific value from an array in C?
+
+**Answer:** Using `printf("%d", arrayName[index]);`
+
+---
+
+# Question: How do you modify an element in a C array?
+
+**Answer:** Assign a new value to the indexed element, e.g., `luckyNumbers[1] = 200;`
+
+---
+
+# Question: After executing `luckyNumbers[1] = 200;`, what does `luckyNumbers[1]` contain?
+
+**Answer:** `200`
+
+---
+
+# Question: Can arrays in C store different data types in the same array?
+
+**Answer:** No, all elements in an array must be of the same data type.
+
+---
+
+# Question: What is the syntax to access an array element?
+
+**Answer:** `arrayName[index]`, where `index` is an integer.
+
+---
+
+# Question: How many elements does this array store? `int luckyNumbers[] = {4, 8, 15, 16, 23, 42};`
+
+**Answer:** 6 elements.
+
+---
+
+# Question: What happens if you try to access an array index that is out of bounds?
+
+**Answer:** Undefined behavior; it may crash the program or return unpredictable results.
+
+---
+
 
