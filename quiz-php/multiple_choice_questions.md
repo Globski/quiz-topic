@@ -1423,6 +1423,151 @@ php hello.php
 
 ---
 
+# Question: What is the purpose of comments in a PHP program?
+
+**Answer:** To provide explanatory text ignored by the interpreter, helping users understand the logic, document the code, and assist in debugging or modifying the program.
+
+---
+
+# Question: Are comments essential in a PHP program?
+
+**Answer:** No, but they are highly recommended for clarity and maintainability.
+
+---
+
+# Question: What are the three types of comments supported in PHP?
+
+**Answer:** Single-line comments, multi-line comments, and DocBlock comments.
+
+---
+
+# Question: What symbols are used to create a single-line comment in PHP?
+
+**Answer:** `#` and `//`
+
+---
+
+# Question: How does the `#` symbol function in PHP code?
+
+**Answer:** It starts a single-line comment; the comment continues until the end of that line.
+
+---
+
+# Question: How does the `//` symbol function in PHP?
+
+**Answer:** It also starts a single-line comment, and the comment continues until the end of the physical line.
+
+---
+
+# Question: Do single-line comments in PHP require a closing symbol?
+
+**Answer:** No, they automatically end at the end of the physical line.
+
+---
+
+# Question: What happens to the next line after a `#` or `//` comment?
+
+**Answer:** It is treated as a PHP statement, not part of the comment.
+
+---
+
+# Question: When should single-line comments be used in PHP?
+
+**Answer:** For short explanations or notes relevant to the local code.
+
+---
+
+# Question: How do you write a multi-line comment in PHP?
+
+**Answer:** By enclosing the comment within `/*` and `*/`.
+
+---
+
+# Question: What is the typical use of multi-line comments in PHP?
+
+**Answer:** For pseudocode, algorithms, or detailed explanations.
+
+---
+
+# Question: Can a single line be placed inside `/* ... */` in PHP?
+
+**Answer:** Yes, a single line can be enclosed within `/* ... */`.
+
+---
+
+# Question: What happens if a `/*` multi-line comment is not closed with `*/`?
+
+**Answer:** A parse error will occur, e.g., "Unterminated comment" error.
+
+---
+
+# Question: What is the error message shown for an unclosed multi-line comment in PHP?
+
+**Answer:** `PHP Parse error:  Unterminated comment starting line X in file_name.php on line X`
+
+---
+
+# Question: What is a DocBlock comment in PHP?
+
+**Answer:** A comment block starting with `/**`, typically used for documenting functions, classes, or variables.
+
+---
+
+# Question: What symbols are used to start and format a DocBlock comment?
+
+**Answer:** Starts with `/**` and uses `*` at the beginning of each line.
+
+---
+
+# Question: What is the purpose of using DocBlock comments in PHP?
+
+**Answer:** To provide structured documentation for code elements, enabling automatic API documentation generation.
+
+---
+
+# Question: What are common tags used in DocBlock comments?
+
+**Answer:** `@param`, `@return`
+
+---
+
+# Question: What does the `@return int` tag in a DocBlock indicate?
+
+**Answer:** That the function returns an integer value.
+
+---
+
+# Question: Where should comments be placed in relation to the code they describe?
+
+**Answer:** Above the code block they refer to.
+
+---
+
+# Question: How can comments assist in debugging?
+
+**Answer:** By marking areas that need improvement or attention.
+
+---
+
+# Question: When should block comments be used in PHP?
+
+**Answer:** When explaining complex logic or functions in detail.
+
+---
+
+# Question: What should you do with comments when the associated code changes?
+
+**Answer:** Update the comments accordingly.
+
+---
+
+# Question: What is the benefit of using DocBlocks with functions and classes?
+
+**Answer:** It improves clarity and supports automated documentation generation.
+
+---
+
+
 
 
 
