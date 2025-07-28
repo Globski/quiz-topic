@@ -296,3 +296,177 @@ Yes, single quotes can be used, especially when the attribute value contains dou
 
 ---
 
+# Question: What does HTML stand for?
+
+**Answer:** HyperText Markup Language
+
+---
+
+# Question: Is HTML a programming language?
+
+**Answer:** No, HTML is a markup language used to structure the content of webpages.
+
+---
+
+# Question: What does "HyperText" refer to in HTML?
+
+**Answer:** It refers to the "links" that connect web pages, enabling internet navigation.
+
+---
+
+# Question: What does "Markup Language" mean in HTML?
+
+**Answer:** It refers to the use of "tags" to define the layout and elements of webpage content.
+
+---
+
+# Question: Why is HTML considered the skeleton of a webpage?
+
+**Answer:** Because it provides the structure that shapes the content and layout of the webpage.
+
+---
+
+# Question: Why is learning HTML essential for web development or design?
+
+**Answer:** Because HTML is the foundational language used to build all websites.
+
+---
+
+# Question: Which career roles require knowledge of HTML?
+
+**Answer:** Front-End Developer, Web Designer, Full-Stack Developer, and Email Developer.
+
+---
+
+# Question: How does learning HTML help with learning CSS and JavaScript?
+
+**Answer:** HTML provides the structure, which makes it easier to learn CSS for styling and JavaScript for functionality.
+
+---
+
+# Question: What two tools are needed to create and view an HTML file?
+
+**Answer:** A text editor and a web browser.
+
+---
+
+# Question: Give examples of simple text editors and advanced editors for HTML.
+
+**Answer:** Notepad (Windows), TextEdit (Mac), and VS Code (advanced).
+
+---
+
+# Question: How do you save an HTML file in your text editor?
+
+**Answer:** Use "Save As" and save the file with a `.html` extension (e.g., `index.html`).
+
+---
+
+# Question: How do you view an HTML file in your browser after saving it?
+
+**Answer:** Locate the file on your computer and double-click it to open in your default browser.
+
+---
+
+# Question: What is the purpose of the `<!DOCTYPE html>` declaration?
+
+**Answer:** It defines that the document is an HTML5 document and must be the first line in the code.
+
+---
+
+# Question: What is the `<html>` tag used for?
+
+**Answer:** It is the root element that contains all other HTML elements.
+
+---
+
+# Question: What does the `<head>` section contain?
+
+**Answer:** Meta-information like the page title and links to CSS stylesheets, not visible on the page.
+
+---
+
+# Question: What does the `<title>` tag do?
+
+**Answer:** Sets the webpage’s title, shown in the browser tab and used by search engines.
+
+---
+
+# Question: What is placed inside the `<body>` tag?
+
+**Answer:** All the visible content of the webpage, such as text, images, and links.
+
+---
+
+# Question: What are HTML headings, and how are they used?
+
+**Answer:** Headings range from `<h1>` to `<h6>`, with `<h1>` being the most important and `<h6>` the least.
+
+---
+
+# Question: What is the purpose of the `<p>` tag?
+
+**Answer:** It defines a paragraph of text with space automatically added before and after.
+
+---
+
+# Question: What does the `<a>` tag do?
+
+**Answer:** It creates a hyperlink to another webpage or URL.
+
+---
+
+# Question: What attribute is required for an anchor (`<a>`) tag to function?
+
+**Answer:** The `href` attribute, which specifies the destination URL.
+
+---
+
+# Question: How do you create a hyperlink in HTML that points to Google?
+
+**Answer:** `<a href="https://www.google.com">Click here to visit Google</a>`
+
+---
+
+# Question: What is the purpose of HTML comments?
+
+**Answer:** To leave notes in the code that are ignored by the browser.
+
+---
+
+# Question: How do you write a comment in HTML?
+
+**Answer:** `<!--This is a comment-->`
+
+---
+
+# Question: What are semantic HTML elements?
+
+**Answer:** Elements like `<header>`, `<footer>`, `<nav>`, and `<article>` that give meaning to content structure.
+
+---
+
+# Question: Why should semantic HTML elements be used?
+
+**Answer:** To improve accessibility and SEO by making the content structure more meaningful.
+
+---
+
+# Question: What is the difference between `<head>` and `<header>`?
+
+**Answer:** `<head>` contains metadata not visible on the page; `<header>` is visible and used inside `<body>` for introductory content or navigation.
+
+---
+
+# Question: What modern elements were introduced in HTML5?
+
+**Answer:** Elements like `<video>`, `<audio>`, and semantic tags.
+
+---
+
+# Question: What is the latest major version of HTML?
+
+**Answer:** HTML5
+
+---
+
