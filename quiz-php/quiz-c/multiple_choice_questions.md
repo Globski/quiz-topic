@@ -631,3 +631,263 @@ sudo /opt/lampp/lampp stop
 **Answer:** The IIS Reference Manual.
 
 ---
+
+# Question: Who created the first version of PHP, and in what year?
+
+**Answer:** Rasmus Lerdorf created the first version of PHP in 1994.
+
+---
+
+# Question: What was the original name and purpose of PHP?
+
+**Answer:** PHP originally stood for "Personal Home Page" and was used by Rasmus Lerdorf to maintain his personal homepage.
+
+---
+
+# Question: What does PHP/FI stand for, and what was its functionality?
+
+**Answer:** PHP/FI stands for "Personal Home Page / Forms Interpreter", and it allowed building simple, dynamic web applications with database support.
+
+---
+
+# Question: What was the purpose of PHP 1.0, and when was it released?
+
+**Answer:** PHP 1.0 was released on 8 June 1995 to track visits to Rasmus Lerdorf’s online resume.
+
+---
+
+# Question: When was PHP 2.0 released, and what features did it introduce?
+
+**Answer:** PHP 2.0 was released on 1 November 1997, and it introduced form handling, database support, and built-in variables.
+
+---
+
+# Question: What was the major contribution of Zeev Suraski and Andi Gutmans to PHP?
+
+**Answer:** In 1997, Zeev Suraski and Andi Gutmans rewrote the PHP parser and created the base for PHP 3, as well as the Zend Engine.
+
+---
+
+# Question: What does the recursive acronym “PHP” stand for?
+
+**Answer:** PHP: Hypertext Preprocessor.
+
+---
+
+# Question: Which engine powered PHP 4, and when was it released?
+
+**Answer:** PHP 4 was powered by the Zend Engine and released in May 2000.
+
+---
+
+# Question: What are the notable features introduced in PHP 5?
+
+**Answer:** PHP 5 introduced OOP support, PHP Data Objects (PDO), and performance enhancements.
+
+---
+
+# Question: What year was PHP 5 released?
+
+**Answer:** PHP 5 was released in 2004.
+
+--
+
+# Question: When was PHP 7.0 released and what engine did it use?
+
+**Answer:** PHP 7.0 was released on 3 December 2015 and used Zend Engine 3.
+
+---
+
+# Question: Name at least three new features introduced in PHP 7.0.
+
+**Answer:** Return type declarations, scalar type declarations, null coalescing operator (??), and the spaceship operator (<=>).
+
+---
+
+# Question: What version introduced the "Closure::call()" method?
+
+**Answer:** PHP 7.0.
+
+---
+
+# Question: What syntax flexibility was introduced in PHP 7.3?
+
+**Answer:** Flexible Heredoc and Nowdoc syntax.
+
+---
+
+# Question: When was PHP 8.0 released?
+
+**Answer:** PHP 8.0 was released on 26 November 2020.
+
+---
+
+# Question: What is the purpose of the JIT compiler introduced in PHP 8?
+
+**Answer:** The JIT compiler improves performance, especially for mathematical operations, and opens the possibility of rewriting some C code in PHP.
+
+---
+
+# Question: What is a match expression in PHP 8 and how does it differ from switch?
+
+**Answer:** A match expression is a more concise alternative to switch, and as an expression, its result can be assigned to a variable or returned from a function.
+
+---
+
+# Question: What is an example of a match expression in PHP?
+
+**Answer:**
+
+```php
+$num = 2;
+echo match($num) {
+   1 => "One",
+   2 => "Two",
+   3 => "Three",
+   default => "Other",
+};
+```
+
+---
+
+# Question: What are union types in PHP?
+
+**Answer:** Union types allow a parameter or return value to accept multiple specified types, such as `int|string`.
+
+---
+
+# Question: Provide an example of a PHP function using union types.
+
+**Answer:**
+
+```php
+function printData(int|string $data) {
+   echo $data;
+}
+```
+
+---
+
+# Question: What are named arguments in PHP, and how do they improve function calls?
+
+**Answer:** Named arguments allow passing values to function parameters by name instead of order, improving readability and flexibility.
+
+---
+
+# Question: Provide an example of using named arguments in a function call.
+
+**Answer:**
+
+```php
+function greet($name, $age) {
+   echo "Hello, $name. You are $age years old.";
+}
+greet(age: 25, name: "Alia");
+```
+
+---
+
+# Question: What are Attributes (Annotations) in PHP 8?
+
+**Answer:** Attributes allow attaching metadata to classes and other structures using a cleaner syntax than comments.
+
+---
+
+# Question: Provide a basic example of an attribute in PHP.
+
+**Answer:**
+
+```php
+#[CustomAttribute]
+class MyClass { }
+```
+
+---
+
+# Question: What is a static return type in PHP 8?
+
+**Answer:** A static return type ensures a function returns a static value, useful in class inheritance and late static binding.
+
+---
+
+# Question: What is a WeakMap in PHP and how is it different from a regular map?
+
+**Answer:** A WeakMap does not retain objects in memory if they are no longer needed, unlike regular arrays or dictionaries.
+
+---
+
+# Question: Provide a basic usage example of a WeakMap in PHP.
+
+**Answer:**
+
+```php
+class FooBar {
+   private WeakMap $cache;
+   public function getSomethingWithCaching(object $obj) {
+      return $this->cache[$obj] ??= $this->computeSomethingExpensive($obj);
+   }
+}
+```
+
+---
+
+# Question: What is the “mixed” type in PHP 8?
+
+**Answer:** It is a type declaration that allows a function to accept or return any type of value.
+
+---
+
+# Question: What features were introduced in PHP 8.1?
+
+**Answer:** Enumerations (Enums), Readonly Properties, new functions like `fsync`, `fdatasync`, `array_is_list`, Final class constants, and explicit octal numeral notation.
+
+---
+
+# Question: What’s new in PHP 8.2?
+
+**Answer:** Standalone types (null, false, true), Disjunctive Normal Form (DNF) types, new random extension, dynamic property deprecation, and performance improvements.
+
+---
+
+# Question: What are standalone types in PHP 8.2?
+
+**Answer:** Types like `null`, `false`, and `true` can now be used independently in type declarations.
+
+---
+
+# Question: List at least three features added in PHP 8.3.
+
+**Answer:** Typed class constants, `json_validate()` function, deep cloning of readonly properties, dynamic class constant fetch, override attribute.
+
+---
+
+# Question: What are some new features added in PHP 8.4?
+
+**Answer:** Property Hooks, Asymmetric Visibility, chaining new expressions without parentheses, and new array functions like `array_find()`, `array_find_key()`, `array_any()`, `array_all()`.
+
+---
+
+# Question: Which PHP version was never released and why?
+
+**Answer:** PHP 6.x was never released; it was abandoned due to the complexity of implementing native Unicode support.
+
+---
+
+# Question: What engine was used in PHP 5.0 and what improvements did it bring?
+
+**Answer:** PHP 5.0 used Zend Engine II, introducing a new object model and better performance.
+
+---
+
+# Question: When was PHP 3.0 released and what was its key milestone?
+
+**Answer:** PHP 3.0 was released on 6 June 1998; it marked the transition to a collaborative development model and included a rewritten core by Suraski and Gutmans.
+
+---
+
+# Question: Which PHP version introduced the two-stage parse/execute system?
+
+**Answer:** PHP 4.0 introduced the Zend Engine with a two-stage parse/execute system.
+
+---
+
