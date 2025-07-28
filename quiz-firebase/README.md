@@ -1,4 +1,5 @@
 # Quiz Firebase
+<img width="739" height="415" alt="image" src="https://github.com/user-attachments/assets/655c39c9-751c-480a-870f-f76ecee49e61" />
 
 ## Description
 
