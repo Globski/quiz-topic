@@ -1257,3 +1257,225 @@ db.movies.aggregate([
 
 ---
 
+# Question: What is the purpose of Python type hints in development?
+
+**Answer:** To enhance code readability, maintainability, and robustness by indicating the expected types of variables, which helps with editor support, static analysis, and documentation.
+
+---
+
+# Question: What role do type hints play in FastAPI?
+
+**Answer:** FastAPI heavily relies on type hints to validate request and response data, generate automatic documentation, and ensure data type consistency across the application.
+
+---
+
+# Question: What is Pydantic used for?
+
+**Answer:** Pydantic is used to enforce type hints at runtime, validate and parse data, define data structures with Python annotations, and provide customizable error messages.
+
+---
+
+# Question: What command installs Pydantic and pydantic\_settings in a virtual environment?
+
+**Answer:** `pip install pydantic==2.7.1 pydantic_settings==2.2.1`
+
+---
+
+# Question: How does dynamic typing work in Python?
+
+**Answer:** Variable types are determined at runtime and can be changed during execution, which offers flexibility but increases the risk of type-related errors in large codebases.
+
+---
+
+# Question: What distinguishes statically typed languages from dynamically typed ones?
+
+**Answer:** In statically typed languages, variable types are known and fixed at compile time, while in dynamically typed languages like Python, types are determined at runtime.
+
+---
+
+# Question: Is Python considered strongly or weakly typed?
+
+**Answer:** Strongly typed, as it prevents operations between incompatible types and raises runtime errors for such violations.
+
+---
+
+# Question: What happens when you try to add a `dict` to an `int` in Python?
+
+**Answer:** A `TypeError` is raised at runtime.
+
+Example:
+
+```python
+>>> {} + 3
+TypeError: unsupported operand type(s) for +: 'dict' and 'int'
+```
+
+---
+
+# Question: When were type annotations introduced in Python?
+
+**Answer:** In Python 3.5 via [PEP 484](https://peps.python.org/pep-0484/).
+
+---
+
+# Question: Do type hints affect program execution in Python?
+
+**Answer:** No, they are ignored at runtime and serve only for documentation, tooling, and static analysis.
+
+---
+
+# Question: List five key benefits of using type hints in Python.
+
+**Answer:**
+
+1. Faster development
+2. Method/property knowledge
+3. IDE auto-completion
+4. Static analysis with type checkers
+5. Easier readability and reduced cognitive load
+
+---
+
+# Question: How does FastAPI utilize type hints to generate documentation?
+
+**Answer:** FastAPI uses type hints to generate automatic and interactive REST API documentation.
+
+---
+
+# Question: What is a type checker?
+
+**Answer:** A tool that performs static analysis to catch type-related issues; e.g `mypy`.
+
+---
+
+# Question: What is the syntax to annotate a function parameter and its return type?
+
+**Answer:** `def function_name(param: type) -> return_type:`
+
+Example:
+
+```python
+def print_name_x_times(name: str, times: int) -> None:
+    for _ in range(times):
+        print(name)
+```
+
+---
+
+# Question: How do you check the types in a Python file using `mypy`?
+
+**Answer:** Run the command: `mypy filename.py`
+
+---
+
+# Question: What errors does `mypy` return if wrong argument types are passed to a function?
+
+**Answer:**
+
+```text
+error: Argument 1 to "function" has incompatible type "actual"; expected "expected" [arg-type]
+```
+
+---
+
+# Question: What is the recommended formatting for type-annotated variables?
+
+**Answer:** Use `var_name: type = value`, with no space before the colon and one space after it.
+
+Example:
+
+```python
+text: str = "John"
+```
+
+---
+
+# Question: How should the return type of a function be annotated?
+
+**Answer:** Use `-> return_type` with one space on each side of the arrow.
+
+Example:
+
+```python
+def count_users(users: list[str]) -> int:
+    return len(users)
+```
+
+---
+
+# Question: How can a variable accept multiple types using the typing module?
+
+**Answer:**
+
+```python
+from typing import Union
+x: Union[str, int]
+```
+
+---
+
+# Question: What is the modern syntax for allowing multiple types for a variable?
+
+**Answer:** `x: str | int`
+
+---
+
+# Question: What module provides support for generic type annotations?
+
+**Answer:** `typing` module.
+
+---
+
+# Question: List at least five generic types from the `typing` module.
+
+**Answer:**
+
+* `List`
+* `Dict`
+* `Sequence`
+* `Callable`
+* `Iterator`
+
+---
+
+# Question: Provide an example of using `List` in a function with type hints.
+
+**Answer:**
+
+```python
+from typing import List
+def square_numbers(numbers: List[int]) -> List[int]:
+    return [number ** 2 for number in numbers]
+```
+
+---
+
+# Question: What does the `square_numbers` function return when given `[1, 2, 3, 4, 5]`?
+
+**Answer:** `[1, 4, 9, 16, 25]`
+
+---
+
+# Question: What are tools like Black or Ruff used for in relation to Python typing?
+
+**Answer:** They are tools for formatting, linting, and optionally enforcing type rules in source code.
+
+---
+
+# Question: Why is type hinting particularly important in FARM stack development?
+
+**Answer:** It ensures consistent and correct data types across the application, especially with MongoDB’s flexible schema.
+
+---
+
+# Question: What does PEP 8 recommend for type hinting syntax?
+
+**Answer:** No space before the colon, one space after the colon, and spaces around the `=` when assigning values.
+
+---
+
+# Question: Why is type hinting recommended even for small FastAPI projects?
+
+**Answer:** Because FastAPI depends on type hints for functionality like validation, documentation, and runtime safety.
+
+---
