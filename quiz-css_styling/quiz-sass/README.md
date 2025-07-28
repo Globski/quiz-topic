@@ -1,4 +1,5 @@
 # Quiz Sass (SCSS)
+![image](https://github.com/user-attachments/assets/b06adecb-c81c-4dcb-b455-da7c37042988)
 
 ## Description
 A quiz project aimed at developers who want to test and reinforce their knowledge of Sass (SCSS syntax). This quiz covers Sass fundamentals like variables, nesting, mixins, inheritance, partials, functions, and the use of control directives.
