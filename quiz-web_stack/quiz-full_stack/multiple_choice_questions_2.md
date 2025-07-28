@@ -690,3 +690,246 @@ const [brand, setBrand] = useState("");
 **Answer:** `admin`, `local`, and `config`; they are essential for MongoDB's internal operations.
 
 ---
+
+# Question: How do you begin installing the MongoDB Shell on Windows?
+
+**Answer:** By selecting the Windows version and the `.msi` package from the MongoDB Download Center and clicking "Download."
+
+---
+
+# Question: What do you do after downloading the `.msi` package for MongoDB Shell?
+
+**Answer:** Locate and execute the `.msi` file, confirm any security prompt, and proceed through the MongoDB setup wizard.
+
+---
+
+# Question: During installation via the setup wizard, what should you do when selecting the destination folder?
+
+**Answer:** Either choose a custom destination or leave the default option.
+
+---
+
+# Question: How do you test if MongoDB is installed and running on Windows?
+
+**Answer:** Open the command prompt and enter the command `mongosh`.
+
+---
+
+# Question: What output confirms a successful connection to MongoDB Shell?
+
+**Answer:** A prompt with `>` appears, and running `show dbs` displays the default databases: `admin`, `config`, and `local`.
+
+---
+
+# Question: Where can you find MongoDB Compass on Windows after installation?
+
+**Answer:** In the Start menu under "MongoDBCompass" (no spacing).
+
+---
+
+# Question: What happens if you open Compass and click "Connect" without modifying the connection string?
+
+**Answer:** Compass connects to the local MongoDB service running on port 27017 and shows `admin`, `config`, and `local` databases.
+
+---
+
+# Question: What is `mongoimport` used for?
+
+**Answer:** To import data from extended JSON, CSV, or TSV files into a MongoDB database.
+
+---
+
+# Question: What does `mongoexport` do?
+
+**Answer:** It exports MongoDB data into JSON or CSV formats.
+
+---
+
+# Question: What is the purpose of `mongodump`?
+
+**Answer:** It creates a binary export (backup) of a MongoDB database.
+
+---
+
+# Question: Name additional tools included in MongoDB Database Tools.
+
+**Answer:** `mongorestore`, `bsondump`, `mongostat`, `mongotop`, and `mongofiles`.
+
+---
+
+# Question: Where can you download the MongoDB Database Tools?
+
+**Answer:** From the MongoDB Download Center: [https://www.mongodb.com/try/download/database-tools](https://www.mongodb.com/try/download/database-tools)
+
+---
+
+# Question: What installer formats are available for MongoDB Database Tools?
+
+**Answer:** MSI installer and ZIP archive.
+
+---
+
+# Question: What command installs `gnupg` and `curl` on Ubuntu?
+
+**Answer:** `sudo apt-get install gnupg curl`
+
+---
+
+# Question: How do you import the MongoDB GPG public key for Ubuntu 22.04?
+
+**Answer:**
+
+```bash
+curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
+sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
+```
+
+---
+
+# Question: What is the command to create the MongoDB list file for APT?
+
+**Answer:**
+
+```bash
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+```
+
+---
+
+# Question: What command updates the local package database?
+
+**Answer:** `sudo apt-get update`
+
+---
+
+# Question: How do you install MongoDB on Ubuntu?
+
+**Answer:** Run `sudo apt-get install -y mongodb-org`
+
+---
+
+# Question: What command starts the `mongod` process on Ubuntu?
+
+**Answer:** `sudo systemctl start mongod`
+
+---
+
+# Question: What should you do if you receive "Unit mongod.service not found"?
+
+**Answer:** Run `sudo systemctl daemon-reload` and then re-run `sudo systemctl start mongod`.
+
+---
+
+# Question: After installation, how do you launch the MongoDB shell on Ubuntu?
+
+**Answer:** Use the command `mongosh`.
+
+---
+
+# Question: What is MongoDB Atlas?
+
+**Answer:** A fully managed cloud database service provided by MongoDB that handles infrastructure, setup, configuration, and maintenance.
+
+---
+
+# Question: What are the two ways to set up a MongoDB Atlas account?
+
+**Answer:** Using the Atlas UI or the Atlas CLI.
+
+---
+
+# Question: Where do you register for a MongoDB Atlas account?
+
+**Answer:** [https://www.mongodb.com/cloud/atlas/register](https://www.mongodb.com/cloud/atlas/register)
+
+---
+
+# Question: What is the free cluster tier called in MongoDB Atlas?
+
+**Answer:** M0 sandbox cluster.
+
+---
+
+# Question: What features should you enable when creating an Atlas cluster?
+
+**Answer:** Automate security setup and Add sample dataset.
+
+---
+
+# Question: Why should you choose a region close to your location when creating a cluster?
+
+**Answer:** To minimize latency.
+
+---
+
+# Question: What default IP access rule is set during Atlas setup?
+
+**Answer:** The current IP address is added for local connectivity.
+
+---
+
+# Question: What is the risk of allowing access from 0.0.0.0/0 in Atlas?
+
+**Answer:** It allows connections from anywhere, which is insecure.
+
+---
+
+# Question: How do you get the connection string for your Atlas cluster?
+
+**Answer:** From the Atlas dashboard, click the green “Connect” button, select Compass, and copy the connection string shown.
+
+---
+
+# Question: What should you modify in the Compass connection string before use?
+
+**Answer:** Replace `<password>` with your Atlas user password.
+
+---
+
+# Question: How do you connect to Atlas using Compass?
+
+**Answer:** Paste the connection string into the URI field and click "Connect".
+
+---
+
+# Question: What sample dataset is preloaded in the Atlas cluster?
+
+**Answer:** `sample_mflix` with collections: `comments`, `embedded_movies`, `movies`, `sessions`, `theatres`, and `users`.
+
+---
+
+# Question: How do you connect to your Atlas cluster using mongosh?
+
+**Answer:** Paste the mongosh connection string into your terminal, enter your password when prompted, or use `--password` option.
+
+---
+
+# Question: What does the command `show dbs` do in mongosh?
+
+**Answer:** Lists all available databases in the cluster.
+
+---
+
+# Question: How do you switch to a specific database in mongosh?
+
+**Answer:** Use the command `use <database_name>`, e.g., `use sample_mflix`.
+
+---
+
+# Question: What does the response “switched to db sample\_mflix” mean?
+
+**Answer:** It indicates that the `sample_mflix` database is now active for operations.
+
+---
+
+# Question: What does the command `show collections` do?
+
+**Answer:** Lists all collections in the currently selected database.
+
+---
+
+# Question: Which collections should appear in `sample_mflix` after setup?
+
+**Answer:** `comments`, `embedded_movies`, `movies`, `sessions`, `theatres`, and `users`.
+
+---
