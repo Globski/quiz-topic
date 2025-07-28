@@ -232,3 +232,165 @@
 
 ---
 
+# Question: How do you declare a variable in C to store a collection of characters?
+
+**Answer:** Use square brackets to indicate an array of characters, e.g., `char characterName[] = "John";`.
+
+---
+
+# Question: Which data type should you use to store a whole number in C?
+
+**Answer:** Use the `int` data type to store whole numbers (integers).
+
+---
+
+# Question: How do you declare an integer variable and assign it a value in C?
+
+**Answer:** Use the syntax `int variableName = value;`, e.g., `int characterAge = 35;`.
+
+---
+
+# Question: What does the `%s` placeholder in a `printf()` statement represent?
+
+**Answer:** `%s` is a placeholder used to insert a string (a collection of characters) into the output.
+
+---
+
+# Question: What does the `%d` placeholder in a `printf()` statement represent?
+
+**Answer:** `%d` is a placeholder used to insert an integer value into the output.
+
+---
+
+# Question: How do you use a variable inside a `printf()` statement with a placeholder?
+
+**Answer:** Include the placeholder in the string, then list the variable after the string, separated by a comma, e.g., `printf("Name: %s", characterName);`.
+
+---
+
+# Question: What happens when you run a program with `%s` in a `printf()` statement and provide a string variable?
+
+**Answer:** The `%s` is replaced at runtime with the value stored in the string variable.
+
+---
+
+# Question: What are the benefits of using variables instead of hard-coding values into strings?
+
+**Answer:** Variables allow centralized updates—changing the value in one place automatically updates all references throughout the program.
+
+---
+
+# Question: How can you update the value stored in a variable during the execution of a C program?
+
+**Answer:** Reassign a new value to the variable using the assignment operator, e.g., `characterAge = 30;`.
+
+---
+
+# Question: What will happen if you change a variable’s value before another `printf()` statement that references it?
+
+**Answer:** The new value will be used in the subsequent output.
+
+---
+
+# Question: Why is it advantageous to use variables when the same data appears multiple times in a program?
+
+**Answer:** It reduces redundancy and simplifies maintenance, as changes only need to be made in one location.
+
+---
+
+# Question: What are data types in the C programming language?
+
+**Answer:** Data types define the type of information a variable can store, such as integers, decimals, or characters.
+
+---
+
+# Question: What are the two primary categories of numeric data types in C?
+
+**Answer:** `int` for whole numbers and `double` (or `float`) for decimal numbers.
+
+---
+
+# Question: How do you declare an integer variable in C?
+
+**Answer:** Use `int` followed by the variable name and an optional initialization, e.g., `int age = 40;`.
+
+---
+
+# Question: How do you declare a decimal number in C?
+
+**Answer:** Use `double` (or `float`) followed by the variable name, e.g., `double gpa = 3.7;`.
+
+---
+
+# Question: What's the difference between `40` and `40.0` in C?
+
+**Answer:** `40` is an integer, while `40.0` is a double (a decimal number).
+
+---
+
+# Question: Can decimal numbers be stored in an `int` variable?
+
+**Answer:** No, only whole numbers can be stored in an `int`. Decimal numbers must use `double` or `float`.
+
+---
+
+# Question: What syntax is used to declare a single character in C?
+
+**Answer:** Use the `char` data type and enclose the character in single quotes, e.g., `char grade = 'A';`.
+
+---
+
+# Question: Can you store multiple characters in a `char` variable?
+
+**Answer:** No, `char` can only store a single character.
+
+---
+
+# Question: What is the correct way to declare and assign a character variable in C?
+
+**Answer:** `char grade = 'A';`
+
+---
+
+# Question: What happens if you assign multiple characters to a `char` variable?
+
+**Answer:** The compiler will throw an error because `char` can store only one character.
+
+---
+
+# Question: What are the three basic data types?
+
+**Answer:** `int` for integers, `double` for decimal numbers, and `char` for single characters.
+
+---
+
+# Question: What is a “string variable” in C?
+
+**Answer:** It's an array of characters declared using `char variableName[] = "value";`.
+
+---
+
+# Question: Is "string" an official data type in C?
+
+**Answer:** No, C does not have a built-in `string` type; it uses arrays of `char` to represent strings.
+
+---
+
+# Question: How can a string variable be used in a `printf()` statement?
+
+**Answer:** By using the `%s` placeholder and passing the string variable as an argument.
+
+---
+
+# Question: How can a character variable be used in a `printf()` statement?
+
+**Answer:** By using the `%c` placeholder and passing the `char` variable as an argument (though `%c` wasn't explicitly covered, this complements `%s` and `%d`).
+
+---
+
+# Question: What allows C to interpret how to store and format a variable?
+
+**Answer:** The data type declared before the variable name.
+
+---
+
