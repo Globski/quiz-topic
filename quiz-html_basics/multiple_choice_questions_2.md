@@ -692,3 +692,266 @@ Yes, single quotes can be used, especially when the attribute value contains dou
 
 ---
 
+# Question: What is the primary purpose of HTML editors?
+
+**Answer:** To create, edit, manage, and sometimes run HTML documents.
+
+---
+
+# Question: What file extensions should be used to save HTML documents?
+
+**Answer:** `.htm` or `.html`
+
+---
+
+# Question: List at least three features commonly provided by HTML editors.
+
+**Answer:** Auto-indenting, syntax highlighting, autocompletion.
+
+---
+
+# Question: What are the four main types of HTML editors?
+
+**Answer:** Text Editors, WYSIWYG Editors, Online HTML Editors, Integrated Development Environments (IDEs).
+
+---
+
+# Question: What are text editors, and what are their limitations?
+
+**Answer:** Text editors are basic HTML editors where code must be written manually; they lack full features for managing HTML but may support syntax highlighting and basic tools.
+
+---
+
+# Question: Give two examples of text editors used for HTML.
+
+**Answer:** Notepad, Notepad++
+
+---
+
+# Question: What does WYSIWYG stand for, and what is its purpose in HTML editing?
+
+**Answer:** "What You See Is What You Get"; it allows visual creation of web pages without manual coding.
+
+---
+
+# Question: Name two WYSIWYG editors mentioned.
+
+**Answer:** Adobe Dreamweaver, BlueGriffon.
+
+---
+
+# Question: What are online HTML editors, and what is a key advantage?
+
+**Answer:** Web-based tools to write, manage, and run HTML in-browser; they offer live previews and features like syntax highlighting and code beautification.
+
+---
+
+# Question: What distinguishes IDEs from other HTML editors?
+
+**Answer:** IDEs provide a full development environment for writing, managing, and debugging larger projects.
+
+---
+
+# Question: Name three examples of IDEs that support HTML editing.
+
+**Answer:** JetBrains, WebStorm, Eclipse.
+
+---
+
+# Question: What is Notepad, and what OS is it preinstalled on?
+
+**Answer:** A basic free text editor preinstalled on Windows.
+
+---
+
+# Question: What are the steps to run HTML code in Notepad?
+
+**Answer:** Open Notepad → Write HTML → Save with `.htm` or `.html` and UTF-8 encoding → Open in browser.
+
+---
+
+# Question: What OS comes with TextEdit by default?
+
+**Answer:** macOS.
+
+---
+
+# Question: What limitation does TextEdit have as an HTML browser?
+
+**Answer:** It doesn’t display images when used to browse webpages.
+
+---
+
+# Question: What mode should be enabled to write HTML in TextEdit?
+
+**Answer:** Make Plain Text mode under the Format menu.
+
+---
+
+# Question: List the steps to run HTML in TextEdit.
+
+**Answer:** Open TextEdit → Create new file → Format → Make Plain Text → Write HTML → Save as `.htm` or `.html`.
+
+---
+
+# Question: What programming language is Notepad++ written in?
+
+**Answer:** C++
+
+---
+
+# Question: List two features supported by Notepad++.
+
+**Answer:** Syntax highlighting, limited autocompletion.
+
+---
+
+# Question: Is Notepad++ preinstalled?
+
+**Answer:** No, it must be manually downloaded from [notepad-plus-plus.org](https://notepad-plus-plus.org).
+
+---
+
+# Question: How do you run HTML in Notepad++?
+
+**Answer:** Write and save code as `.html`/`.htm` → Right-click file → Open with preferred browser.
+
+---
+
+# Question: What languages is Sublime Text written in?
+
+**Answer:** C++ and Python.
+
+---
+
+# Question: What advanced features does Sublime support?
+
+**Answer:** Quick navigation to files/symbols/lines, simultaneous multi-area editing.
+
+---
+
+# Question: Who developed Visual Studio Code?
+
+**Answer:** Microsoft.
+
+---
+
+# Question: What platforms does VS Code support?
+
+**Answer:** Windows, Linux, macOS.
+
+---
+
+# Question: Name three major features of VS Code.
+
+**Answer:** Debugging support, intelligent code completion, code refactoring.
+
+---
+
+# Question: Where can VS Code be downloaded?
+
+**Answer:** [code.visualstudio.com/download](https://code.visualstudio.com/download)
+
+---
+
+# Question: What OS is Atom primarily built for, and where else can it run?
+
+**Answer:** macOS; can also run on Windows after installation.
+
+---
+
+# Question: Mention four features provided by Atom editor.
+
+**Answer:** Syntax highlighting, code completion, find and replace, theme support.
+
+---
+
+# Question: What is the keyboard shortcut to run HTML in Atom on Windows?
+
+**Answer:** `CTRL + Shift + B`
+
+---
+
+# Question: Who developed Brackets?
+
+**Answer:** Adobe.
+
+---
+
+# Question: List two features of Brackets.
+
+**Answer:** Live preview, code beautification.
+
+---
+
+# Question: Describe the steps to run HTML in Brackets.
+
+**Answer:** Download & install → Create new file → Write HTML → Save as `.htm` or `.html`.
+
+---
+
+# Question: What type of application is Adobe Dreamweaver CC?
+
+**Answer:** A premium IDE for web development and HTML editing.
+
+---
+
+# Question: What are some features of Adobe Dreamweaver CC?
+
+**Answer:** Visual design interface + code editor, Git support, regular updates via subscription.
+
+---
+
+# Question: Is Dreamweaver free or paid?
+
+**Answer:** Paid (subscription-based model).
+
+---
+
+# Question: What type of HTML editor is CoffeeCup?
+
+**Answer:** Paid HTML editor with a user-friendly interface and powerful features.
+
+---
+
+# Question: Name three tools included in CoffeeCup.
+
+**Answer:** Code editing, site management, responsive design support.
+
+---
+
+# Question: What key features are available in CoffeeCup?
+
+**Answer:** Live previews, code validation, integrated FTP client.
+
+---
+
+# Question: How do HTML editors help reduce errors?
+
+**Answer:** By identifying and correcting syntax errors during code writing.
+
+---
+
+# Question: What is syntax highlighting?
+
+**Answer:** A feature that color-codes tags, attributes, and content to improve code readability.
+
+---
+
+# Question: What is code autocompletion, and give an example.
+
+**Answer:** A feature that automatically completes tags; e.g., typing `<p>` inserts `</p>`.
+
+---
+
+# Question: How does code validation in editors benefit users?
+
+**Answer:** It checks for errors without needing external tools.
+
+---
+
+# Question: What collaboration features may be built into HTML editors?
+
+**Answer:** Version control systems for tracking changes and team collaboration.
+
+---
