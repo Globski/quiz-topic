@@ -955,3 +955,136 @@ Yes, single quotes can be used, especially when the attribute value contains dou
 **Answer:** Version control systems for tracking changes and team collaboration.
 
 ---
+
+# Question: What are HTML tags and how are they represented?
+
+**Answer:** HTML tags are fundamental elements used to define the structure of a document. They are letters or words enclosed in angle brackets `<` and `>`.
+
+---
+
+# Question: What is the typical structure of an HTML tag?
+
+**Answer:** Most HTML tags have an opening tag and a closing tag, where the closing tag includes a forward slash `/` before the tag name.
+
+---
+
+# Question: What does the `<p>` tag do in HTML?
+
+**Answer:** The `<p>` tag structures text into paragraphs, with each paragraph enclosed between `<p>` and `</p>` tags.
+
+---
+
+# Question: What happens when text is wrapped in a `<p>` tag?
+
+**Answer:** The browser displays it as a separate paragraph.
+
+---
+
+# Question: How many heading levels does HTML provide and what are they?
+
+**Answer:** HTML provides six heading levels: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`.
+
+---
+
+# Question: What default behavior does the browser apply to heading tags?
+
+**Answer:** The browser adds one line before and one line after each heading for visual spacing.
+
+---
+
+# Question: What does the `<br>` tag do?
+
+**Answer:** The `<br>` tag inserts a line break in the text, forcing the content after it to appear on the next line.
+
+---
+
+# Question: Does the `<br>` tag require a closing tag?
+
+**Answer:** No, it is an empty tag and does not need a closing tag.
+
+---
+
+# Question: What is the purpose of the `<center>` tag and what is its current status?
+
+**Answer:** The `<center>` tag was used to align content to the center of the page, but it is deprecated in HTML5.
+
+---
+
+# Question: What should be used instead of the `<center>` tag in modern HTML?
+
+**Answer:** Use CSS, specifically the `text-align: center;` property, to center text or inline elements.
+
+---
+
+# Question: How can you center text using CSS in HTML?
+
+**Answer:** Apply the `text-align: center;` style to a class and assign that class to the desired HTML element.
+
+---
+
+# Question: What does the `<hr>` tag do in HTML?
+
+**Answer:** It inserts a horizontal line across the page to visually separate sections of content.
+
+---
+
+# Question: Is the `<hr>` tag a self-closing tag?
+
+**Answer:** Yes, it is an empty tag and does not require a closing tag.
+
+---
+
+# Question: What is the difference between `<hr>` and `<hr />`?
+
+**Answer:** `<hr />` is XHTML-compliant. Omitting the forward slash (`/`) may cause rendering issues in older browsers. Adding a space before the slash (`<hr />`) is safer for compatibility.
+
+---
+
+# Question: What is the `<pre>` tag used for?
+
+**Answer:** The `<pre>` tag preserves formatting, such as whitespace, line breaks, and indentation, exactly as written in the HTML document.
+
+---
+
+# Question: When should you use the `<pre>` tag?
+
+**Answer:** When you want to display content like source code or text that requires exact formatting.
+
+---
+
+# Question: How does the browser render text inside a `<pre>` tag?
+
+**Answer:** It displays the text exactly as written, preserving line breaks and spacing.
+
+---
+
+# Question: What is a non-breaking space and how is it represented in HTML?
+
+**Answer:** A non-breaking space prevents automatic line breaks and is represented by the `&nbsp;` entity.
+
+---
+
+# Question: When should you use `&nbsp;` instead of a regular space?
+
+**Answer:** When you want to prevent a browser from splitting text across lines, such as in the phrase "12 Angry Men."
+
+---
+
+# Question: What will the browser display if you use three `&nbsp;` between words?
+
+**Answer:** It will render three visible spaces between the words.
+
+---
+
+# Question: What tags are used to create unordered and ordered lists in HTML?
+
+**Answer:** `<ul>` is used for unordered lists and `<ol>` is used for ordered lists.
+
+---
+
+# Question: What tag is used to define items in a list?
+
+**Answer:** The `<li>` tag is used to define list items in both ordered and unordered lists.
+
+---
+
