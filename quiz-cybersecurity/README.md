@@ -1,4 +1,6 @@
 # Quiz Cybersecurity
+![image](https://github.com/user-attachments/assets/7d0f9393-50b5-4698-ad2e-5128468d08bb)
+
 
 ## Description
 A quiz project focused on cybersecurity concepts, practices, and technologies. This module tests your understanding of key security topics including cryptography, network security, vulnerabilities, ethical hacking, secure coding, and cybersecurity tools.
