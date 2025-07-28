@@ -1,4 +1,5 @@
 # Quiz Angular
+![image](https://github.com/user-attachments/assets/87b95c24-f2e1-43d2-ba78-408881ae8402)
 
 ## Description
 A quiz application designed to help developers and learners test their knowledge of Angular — a popular front-end framework for building dynamic single-page applications. This quiz covers Angular fundamentals, components, data binding, directives, services, routing, and more.
