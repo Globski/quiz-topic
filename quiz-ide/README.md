@@ -1,4 +1,5 @@
 # Quiz IDE
+<img width="829" height="370" alt="image" src="https://github.com/user-attachments/assets/c80fcc86-e8cd-4856-b4fe-336276baf69e" />
 
 ## Description
 
