@@ -1264,6 +1264,166 @@ if (3 == 2 + 1) {
 
 ---
 
+# Question: What is the purpose of writing a "Hello World" program when learning a new language or framework?
+
+**Answer:** To verify if the software has been installed correctly and is functioning as expected.
+
+---
+
+# Question: What components must be installed to run a PHP Hello World program?
+
+**Answer:** Apache server along with the PHP module.
+
+---
+
+# Question: Where must PHP code reside to be accessible via the web server?
+
+**Answer:** In the document root of the web server.
+
+---
+
+# Question: What is the document root directory for XAMPP on Windows?
+
+**Answer:** `C:\xampp\htdocs\`
+
+---
+
+# Question: What is the document root directory for XAMPP on Linux?
+
+**Answer:** `/opt/lamp/htdocs/`
+
+---
+
+# Question: How can the default document root be changed in Apache?
+
+**Answer:** By modifying the `DocumentRoot` setting in Apache's `httpd.conf` configuration file.
+
+---
+
+# Question: How do you start the Apache server on Windows using XAMPP?
+
+**Answer:** From the XAMPP control panel.
+
+---
+
+# Question: What steps are required to create and save a PHP "Hello World" script?
+
+**Answer:**
+
+1. Locate the `htdocs` folder.
+2. Add a new file named `hello.php`.
+3. Open it in a text editor.
+4. Enter PHP code:
+
+   ```php
+   <?php
+      echo "Hello World!";
+   ?>
+   ```
+
+---
+
+# Question: What URL should you enter in a browser to see the "Hello World" output?
+
+**Answer:** `http://localhost/hello.php`
+
+---
+
+# Question: What does the `echo` statement do in PHP?
+
+**Answer:** It outputs text to the browser or console.
+
+---
+
+# Question: Can HTML and PHP be mixed in the same file?
+
+**Answer:** Yes, PHP allows mixing HTML and PHP code within the same file.
+
+---
+
+# Question: What is the benefit of combining HTML with PHP?
+
+**Answer:** It allows the creation of dynamic web pages that respond to user input or database content.
+
+---
+
+# Question: In the given example, what does this code do?
+
+```php
+<!DOCTYPE html>
+<html>
+<body>
+   <h1>My PHP Website</h1>
+   <?php
+      echo "Hello World!";
+   ?>
+</body>
+</html>
+```
+
+**Answer:** It renders an HTML page with a heading "My PHP Website" and outputs "Hello World!" using PHP.
+
+---
+
+# Question: What happens when HTML tags are included in the string passed to `echo`?
+
+**Answer:** The browser interprets and renders the HTML tags accordingly.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+<?php
+   echo "<h1 align='center'>Hello World!</h1>";
+?>
+```
+
+**Answer:** "Hello World!" displayed as a centered `<h1>` heading in the browser.
+
+---
+
+# Question: Can PHP scripts be run from the command prompt?
+
+**Answer:** Yes.
+
+---
+
+# Question: What should you do before running PHP scripts from the command prompt?
+
+**Answer:** Add the path of the PHP executable to the system's PATH environment variable.
+
+---
+
+# Question: Where is the PHP executable located in a typical XAMPP installation on Windows?
+
+**Answer:** `C:\xampp\php\php.exe`
+
+---
+
+# Question: What command is used to run a PHP script from the command line in XAMPP?
+
+**Answer:**
+
+```bash
+php hello.php
+```
+
+---
+
+# Question: What is the output of the following script when run from the command line?
+
+```php
+<?php
+   echo "Hello PHP!!!!!";
+?>
+```
+
+**Answer:** `Hello PHP!!!!!`
+
+---
+
+
 
 
 
