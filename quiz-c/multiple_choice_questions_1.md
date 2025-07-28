@@ -1027,3 +1027,173 @@ fgets(name, 20, stdin);
 **Answer:** It reads up to 19 characters (plus `\0`) including spaces from user input and stores it in `name`.
 
 ---
+
+# Question: What function is used in C to print a prompt to the user?
+
+**Answer:** `printf`
+
+---
+
+# Question: How do you declare two integer variables named `num1` and `num2` in C?
+
+**Answer:** `int num1; int num2;`
+
+---
+
+# Question: Which function is used in C to read user input?
+
+**Answer:** `scanf`
+
+---
+
+# Question: What format specifier is used in `scanf` to read an integer?
+
+**Answer:** `%d`
+
+---
+
+# Question: Why is the ampersand (`&`) used in `scanf` when reading integers?
+
+**Answer:** Because `scanf` needs the memory address of the variable to store the input value.
+
+---
+
+# Question: What is the correct syntax to read an integer into the variable `num1` using `scanf`?
+
+**Answer:** `scanf("%d", &num1);`
+
+---
+
+# Question: What format specifier is used in `scanf` to read a double value?
+
+**Answer:** `%lf`
+
+---
+
+# Question: What is the format specifier for printing a double using `printf`?
+
+**Answer:** `%f`
+
+---
+
+# Question: What is the difference between format specifiers in `printf` and `scanf` for doubles?
+
+**Answer:** In `scanf`, doubles use `%lf`; in `printf`, doubles use `%f`.
+
+---
+
+# Question: What happens if a user enters a float like `6.8` when using `%d` in `scanf`?
+
+**Answer:** The decimal part is discarded, and the input is incorrectly parsed as an integer.
+
+---
+
+# Question: How do you change the program to handle decimal number inputs correctly?
+
+**Answer:** Declare the variables as `double` and use `%lf` in `scanf`.
+
+---
+
+# Question: What is the output of adding 4.5 and 6.7 using doubles?
+
+**Answer:** `11.2`
+
+---
+
+# Question: What is a limitation of using `scanf` to get numeric input from the user?
+
+**Answer:** It does not handle invalid input types like strings gracefully and can crash or misbehave.
+
+---
+
+# Question: How does `scanf` behave if the user inputs a string instead of a number?
+
+**Answer:** The program may crash or fail to store the input correctly.
+
+---
+
+# Question: What are the steps for building a basic calculator in C that adds two numbers?
+
+**Answer:** Prompt for two numbers, store them using `scanf`, add the numbers, and display the result using `printf`.
+
+---
+
+# Question: In Libs program, what type of variables are used to store user input like color, plural noun, and celebrity?
+
+**Answer:** Character arrays (strings)
+
+---
+
+# Question: How do you declare a string variable `color` in C that can hold up to 20 characters?
+
+**Answer:** `char color[20];`
+
+---
+
+# Question: Why do we specify a size (e.g., 20) for character arrays in C?
+
+**Answer:** To allocate enough memory for the input string including the null terminator.
+
+---
+
+# Question: What format specifier is used in `scanf` to read a string?
+
+**Answer:** `%s`
+
+---
+
+# Question: Do you need to use the ampersand (`&`) when reading a string with `scanf`?
+
+**Answer:** No, because the array name already acts as a pointer.
+
+---
+
+# Question: What is the correct syntax to read input into the `color` variable using `scanf`?
+
+**Answer:** `scanf("%s", color);`
+
+---
+
+# Question: How do you print a string stored in the variable `color` using `printf`?
+
+**Answer:** `printf("%s", color);`
+
+---
+
+# Question: In the  Libs program, how are the user-provided values inserted into the story?
+
+**Answer:** By using `printf` with `%s` format specifiers and passing the string variables as arguments.
+
+---
+
+# Question: What does the final printed story look like in the Libs example?
+
+**Answer:**
+
+```
+Roses are [color]  
+[Plural noun] are blue  
+I love [celebrity]
+```
+
+---
+
+# Question: Why are newline characters (`\n`) used in the final `printf` statements of the Libs program?
+
+**Answer:** To format the output with line breaks for better readability.
+
+---
+
+# Question: What is a key difference in using `scanf` for strings versus numbers?
+
+**Answer:** Strings do not require the ampersand (`&`), whereas numbers do.
+
+---
+
+# Question: Why is the calculator program updated to use `double` instead of `int`?
+
+**Answer:** To correctly handle decimal (floating-point) input and addition.
+
+---
+
+
