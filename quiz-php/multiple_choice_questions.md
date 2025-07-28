@@ -1047,5 +1047,224 @@ class FooBar {
 
 ---
 
+# Question: What is the file extension used for PHP files?
+
+**Answer:** `.php`
+
+---
+
+# Question: How is PHP code typically embedded in web pages?
+
+**Answer:** PHP code is embedded in HTML documents using PHP tags interspersed within the HTML script.
+
+---
+
+# Question: What protocol must be used to view PHP code correctly in a browser?
+
+**Answer:** HTTP protocol (e.g., `http://localhost/index.php`)
+
+---
+
+# Question: What happens when you double-click a `.php` file to open it directly?
+
+**Answer:** It opens using the file protocol and may display the raw PHP code instead of executing it.
+
+---
+
+# Question: What are the two main types of PHP tags?
+
+**Answer:** Canonical PHP tags and Short-open (SGML-style) tags
+
+---
+
+# Question: What is the syntax for canonical PHP tags?
+
+**Answer:** `<?php ... ?>`
+
+---
+
+# Question: Why are canonical PHP tags preferred?
+
+**Answer:** They are supported on all servers without requiring additional configuration.
+
+---
+
+# Question: What is an example of using a canonical PHP tag?
+
+**Answer:**
+
+```php
+<?php
+   echo "Hello World!";
+?>
+```
+
+---
+
+# Question: What is the syntax for short-open PHP tags?
+
+**Answer:** `<? ... ?>`
+
+---
+
+# Question: What configuration must be enabled for short-open tags to work?
+
+**Answer:** The `short_open_tag` setting in `php.ini` must be set to `on`, or PHP must be built with `--enable-short-tags`.
+
+---
+
+# Question: Why might short-open tags be disabled by default?
+
+**Answer:** They conflict with XML tags which use similar syntax.
+
+---
+
+# Question: What is the configuration line to enable short-open tags in `php.ini`?
+
+**Answer:** `short_open_tag=on`
+
+---
+
+# Question: Which two deprecated PHP tag styles are no longer supported?
+
+**Answer:** ASP-style tags (`<% ... %>`) and HTML script tags (`<script language="PHP"> ... </script>`)
+
+---
+
+# Question: What does the PHP parser do with content outside of PHP tags?
+
+**Answer:** It ignores everything outside of the opening and closing PHP tags.
+
+---
+
+# Question: How can PHP code be mixed with HTML?
+
+**Answer:**
+
+```html
+<p>This is a HTML statement</p>
+<?php echo 'This is a PHP statement.'; ?>
+<p>This is another HTML statement.</p>
+```
+
+---
+
+# Question: How can you use conditionals with embedded PHP and HTML?
+
+**Answer:**
+
+```php
+<?php if ($expression == true): ?>
+   This HTML statement will be rendered.
+<?php else: ?>
+   Otherwise this HTML statement will be rendered.
+<?php endif; ?>
+```
+
+---
+
+# Question: How does PHP handle blocks of HTML inside conditional PHP logic?
+
+**Answer:** PHP skips the blocks that do not meet the condition, even if they are outside PHP tags.
+
+---
+
+# Question: What is a more efficient way to output large blocks of text in PHP?
+
+**Answer:** Dropping out of PHP parsing mode instead of using `echo` or `print`.
+
+---
+
+# Question: What is the syntax rule for statements in PHP?
+
+**Answer:** Every statement must end with a semicolon (`;`).
+
+---
+
+# Question: Can a PHP file have multiple statements on one line or a statement on multiple lines?
+
+**Answer:** Yes, multiple semicolon-terminated statements can be on one line, and a single statement can span multiple lines.
+
+---
+
+# Question: What is an expression in PHP?
+
+**Answer:** A combination of values, variables, and operators that produces a result.
+
+---
+
+# Question: What are tokens in PHP?
+
+**Answer:** The most basic building blocks such as numbers, strings, variables, constants, keywords, and braces.
+
+---
+
+# Question: Provide examples of different types of tokens in PHP.
+
+**Answer:**
+
+* Numbers: `3.14159`
+* Strings: `"Hello"`
+* Variables: `$name`
+* Constants: `TRUE`, `FALSE`
+* Keywords: `if`, `else`, `while`, `for`
+* Braces: `{}`
+
+---
+
+# Question: How can multiple statements be grouped in PHP?
+
+**Answer:** By enclosing them in curly braces `{}`.
+
+---
+
+# Question: Are the following two PHP conditionals equivalent?
+
+```php
+if (3 == 2 + 1)
+   print("Good - I haven't totally lost my mind.");
+
+if (3 == 2 + 1) {
+   print("Good - I haven't totally");
+   print("lost my mind.<br>");
+}
+```
+
+**Answer:** Yes, both are functionally equivalent.
+
+---
+
+# Question: Is PHP a case-sensitive language?
+
+**Answer:** Yes, PHP is case-sensitive.
+
+---
+
+# Question: Are `$age` and `$Age` the same variable in PHP?
+
+**Answer:** No, they are treated as different variables.
+
+---
+
+# Question: What error might you encounter if you use `$Age` after defining `$age`?
+
+**Answer:** `Undefined variable $Age`
+
+---
+
+# Question: Can a `.php` file contain other web technologies?
+
+**Answer:** Yes, it can include HTML, CSS, and JavaScript code blocks.
+
+---
+
+# Question: How does the PHP parser interact with other technologies in a `.php` file?
+
+**Answer:** The browser renders the HTML/CSS/JavaScript, and the PHP parser processes PHP code blocks and sends the response to the browser.
+
+---
+
+
+
 
 
