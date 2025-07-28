@@ -1,4 +1,5 @@
 # Quiz Kotlin
+![image](https://github.com/user-attachments/assets/af1de242-6077-43ef-95f7-f791512fce8b)
 
 ## Description
 A quiz project to help developers and learners test their knowledge of Kotlin — a modern, concise, and expressive programming language widely used for Android development and beyond. This quiz covers Kotlin syntax, null safety, coroutines, object-oriented features, and functional programming aspects.
