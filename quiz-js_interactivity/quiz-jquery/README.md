@@ -1,4 +1,5 @@
 # Quiz jQuery
+![image](https://github.com/user-attachments/assets/14c69d82-e1cb-45c5-8de6-df5c473dba6c)
 
 ## Description
 A quiz designed to test your understanding of jQuery — the popular JavaScript library that simplifies HTML DOM manipulation, event handling, animation, and AJAX interactions. This quiz is perfect for beginners and developers brushing up on their jQuery skills.
