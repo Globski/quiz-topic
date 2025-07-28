@@ -1334,4 +1334,142 @@ I love [celebrity]
 
 ---
 
+# Question: What is printed when you assign `luckyNumbers[1] = 200` and print it?
+
+**Answer:** 200 is printed.
+
+---
+
+# Question: How can you modify individual elements inside an array in C?
+
+**Answer:** By referring to the element's index and assigning a new value to it.
+
+---
+
+# Question: Conceptually, what does an array represent in C?
+
+**Answer:** An array is a structure that holds multiple variables of the same type without individual names, accessible by index.
+
+---
+
+# Question: What data types can arrays store in C?
+
+**Answer:** Arrays can store any data type including `int`, `double`, `float`, etc.
+
+---
+
+# Question: What should you do when creating an array without knowing the initial elements?
+
+**Answer:** You must still define the number of elements (capacity) the array can hold.
+
+---
+
+# Question: How do you declare an integer array with capacity to hold 10 elements?
+
+**Answer:** `int luckyNumbers[10];`
+
+---
+
+# Question: What happens if you print an uninitialized element like `luckyNumbers[0]`?
+
+**Answer:** It may print a garbage value such as `-2`, indicating the value is uninitialized.
+
+---
+
+# Question: How do you assign a value to the first element of an array?
+
+**Answer:** `luckyNumbers[0] = value;` where `value` is the integer to assign.
+
+---
+
+# Question: Why must you specify the size of an array when declaring it without initializing elements?
+
+**Answer:** So that C can allocate the correct amount of memory for the array.
+
+---
+
+# Question: What happens if you assign a value to `luckyNumbers[0] = 90` and then print it?
+
+**Answer:** It prints `90`.
+
+---
+
+# Question: Why is it common to initialize arrays with values up front?
+
+**Answer:** To avoid using uninitialized values and to make the array immediately usable.
+
+---
+
+# Question: What happens if you try to use an array in C without defining its size?
+
+**Answer:** The program will not compile because C needs the size for memory allocation.
+
+---
+
+# Question: Why does C require the size of an array at declaration?
+
+**Answer:** Because it uses the size to allocate the necessary memory during compilation.
+
+---
+
+# Question: What is a string in C in terms of data structures?
+
+**Answer:** A string is an array of characters.
+
+---
+
+# Question: What is the syntax to declare a string in C?
+
+**Answer:** `char phrase[] = "Giraffe Academy";`
+
+---
+
+# Question: How does C treat strings differently from integer arrays?
+
+**Answer:** Strings are treated specially in C because they are so common, making them easier to declare and use.
+
+---
+
+# Question: What does a string like `char phrase[] = "Giraffe Academy";` actually represent?
+
+**Answer:** It represents an array of characters with a null terminator (`\0`) at the end.
+
+---
+
+# Question: In a game example, how was user input stored in C?
+
+**Answer:** By creating an array of characters (string) and storing the user input inside it.
+
+---
+
+# Question: How is the `main` function defined in C?
+
+**Answer:** `int main()` followed by `{ }`, which contains the program's main logic.
+
+---
+
+# Question: What is a function in C?
+
+**Answer:** A collection of code that performs a specific task and can be called when needed.
+
+---
+
+# Question: What is the purpose of a function in C?
+
+**Answer:** To group related code together for reuse, modularity, and better structure.
+
+---
+
+# Question: How do you define a function in C outside of `main`?
+
+**Answer:** By specifying the return type, function name, parameters (if any), and the function body in `{ }`.
+
+---
+
+# Question: What is another term sometimes used to refer to functions?
+
+**Answer:** Methods (though technically more common in object-oriented programming).
+
+---
+
 
