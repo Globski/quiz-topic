@@ -1,4 +1,5 @@
 # Quiz PHP
+<img width="680" height="350" alt="image" src="https://github.com/user-attachments/assets/368c6cf4-0896-4dff-b281-f43e0f0c8474" />
 
 ## Description
 A quiz project to help developers and learners test their knowledge of PHP — a popular server-side scripting language widely used for web development. This quiz covers PHP basics, syntax, functions, OOP concepts, and common web programming topics.
