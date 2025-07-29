@@ -1566,3 +1566,109 @@ These functions are part of the PHP core — no installation required.
 
 ---
 
+# Question: What are PHP Regular Expressions and how are they used?
+
+---
+
+## 🔍 PHP Regular Expression Introduction
+
+Regular expressions allow you to **search**, **match**, and **replace** patterns in strings.
+
+---
+
+## ⚙️ Installation
+
+The PHP regular expression functions are part of the **PHP core**.
+**No additional installation is required**.
+
+---
+
+## 🧪 Runtime Configuration (`php.ini` Settings)
+
+These `php.ini` directives can limit the time or memory used when evaluating regex patterns:
+
+| Name                   | Default     | Description                                             | Changeable    |
+| ---------------------- | ----------- | ------------------------------------------------------- | ------------- |
+| `pcre.backtrack_limit` | `"1000000"` | Max number of backtracks allowed (since PHP 5.2)        | `PHP_INI_ALL` |
+| `pcre.recursion_limit` | `"100000"`  | Max recursion depth allowed (since PHP 5.2)             | `PHP_INI_ALL` |
+| `pcre.jit`             | `"1"`       | Enables PCRE's just-in-time compilation (since PHP 7.0) | `PHP_INI_ALL` |
+
+---
+
+## 🧩 PHP Regular Expression Functions
+
+| Function                        | Description                                                  |
+| ------------------------------- | ------------------------------------------------------------ |
+| `preg_filter()`                 | Replace matches **only if found**, returns string or array   |
+| `preg_grep()`                   | Returns array of elements that match pattern                 |
+| `preg_last_error()`             | Returns last error code from regex evaluation                |
+| `preg_match()`                  | Finds **first match** of a pattern in a string               |
+| `preg_match_all()`              | Finds **all matches** of a pattern                           |
+| `preg_replace()`                | Replaces matches of pattern(s) with replacement(s)           |
+| `preg_replace_callback()`       | Replaces matches using a **callback function**               |
+| `preg_replace_callback_array()` | Uses an **array of callbacks**, one per pattern              |
+| `preg_split()`                  | Splits string into array using pattern matches as delimiters |
+| `preg_quote()`                  | Escapes regex metacharacters with backslashes                |
+
+---
+
+## ✏️ Regular Expression Modifiers
+
+Modifiers alter how the regex engine interprets the pattern:
+
+| Modifier | Description                                                                   |
+| -------- | ----------------------------------------------------------------------------- |
+| `i`      | Case-insensitive search                                                       |
+| `m`      | Multiline mode: `^` and `$` match start/end of each line, not just the string |
+| `u`      | Enables UTF-8 pattern matching                                                |
+
+---
+
+## 🔣 Regular Expression Patterns
+
+### Bracket Expressions
+
+| Expression | Description                                   |
+| ---------- | --------------------------------------------- |
+| `[abc]`    | Matches any **one character** inside brackets |
+| `[^abc]`   | Matches any character **not** inside brackets |
+| `[0-9]`    | Matches any **digit from 0 to 9**             |
+
+---
+
+## ⚡ Metacharacters
+
+These characters have special meanings in patterns:
+
+| Metacharacter | Description                                                       |                                                         |     |         |
+| ------------- | ----------------------------------------------------------------- | ------------------------------------------------------- | --- | ------- |
+| \`            | \`                                                                | Alternation: matches **any one** of the patterns (\`cat | dog | fish\`) |
+| `.`           | Matches **any one character**                                     |                                                         |     |         |
+| `^`           | Matches **start of string** (`^Hello`)                            |                                                         |     |         |
+| `$`           | Matches **end of string** (`World$`)                              |                                                         |     |         |
+| `\d`          | Matches any **digit**                                             |                                                         |     |         |
+| `\s`          | Matches any **whitespace**                                        |                                                         |     |         |
+| `\b`          | Matches **word boundary** (`\bword\b`)                            |                                                         |     |         |
+| `\uxxxx`      | Matches **Unicode character** specified by 4-digit hex (`\u00E9`) |                                                         |     |         |
+
+---
+
+## 🔁 Quantifiers
+
+Quantifiers define **how many** times a pattern can match:
+
+| Quantifier | Description                            |
+| ---------- | -------------------------------------- |
+| `n+`       | One or more `n`                        |
+| `n*`       | Zero or more `n`                       |
+| `n?`       | Zero or one `n`                        |
+| `n{x}`     | Exactly `x` occurrences of `n`         |
+| `n{x,y}`   | Between `x` and `y` occurrences of `n` |
+| `n{x,}`    | At least `x` occurrences of `n`        |
+
+> 💡 Use a **backslash (\\)** to escape special characters.
+> Example: to match `?` one or more times, use `'/\?+/'`.
+
+---
+
+
