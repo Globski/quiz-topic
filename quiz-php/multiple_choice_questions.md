@@ -3285,7 +3285,244 @@ array
 
 ---
 
+# Question: What is type casting in PHP?
 
+**Answer:** Type casting in PHP refers to converting one data type to another, either implicitly (coercion) or explicitly using casting operators or functions.
+
+---
+
+# Question: What type of language is PHP in terms of typing, and what does that imply about type casting?
+
+**Answer:** PHP is a weakly typed language, meaning it often performs implicit type casting when necessary during operations.
+
+---
+
+# Question: What happens when an integer and a numeric string are added in PHP?
+
+**Answer:** The string is implicitly cast to an integer, and the values are added numerically.
+
+---
+
+# Question: What is the output of `$a = 10; $b = '20'; $c = $a + $b;`?
+
+**Answer:** `c = 30`
+
+---
+
+# Question: What is the output of `$a = 10; $b = '20'; $c = $a . $b;`?
+
+**Answer:** `c = 1020`
+
+---
+
+# Question: What is the syntax for explicitly casting a variable in PHP?
+
+**Answer:** `(type)$expression`, where `type` is the target data type.
+
+---
+
+# Question: List all PHP type casting operators.
+
+**Answer:**
+
+* (int) or (integer)
+* (bool) or (boolean)
+* (float), (double), or (real)
+* (string)
+* (array)
+* (object)
+
+---
+
+# Question: What is the result of casting `9.99` to an integer using `(int)`?
+
+**Answer:** `int(9)`, as it truncates the decimal part.
+
+---
+
+# Question: What is the result of `(int)"99"`?
+
+**Answer:** `int(99)`
+
+---
+
+# Question: How does `(int)` handle strings with both digits and characters like `"10 Rs."`?
+
+**Answer:** It returns the initial digit portion as an integer, so `(int)"10 Rs."` gives `int(10)`.
+
+---
+
+# Question: What is the output of casting `"$100"` to `(int)`?
+
+**Answer:** `int(0)` because it starts with a non-numeric character.
+
+---
+
+# Question: What are the operators used to cast to float in PHP?
+
+**Answer:** `(float)`, `(double)`, or `(real)`
+
+---
+
+# Question: What is the output of `(double)"100"`?
+
+**Answer:** `float(100)`
+
+---
+
+# Question: What is the output of `(float)"9.99"`?
+
+**Answer:** `float(9.99)`
+
+---
+
+# Question: Can PHP cast strings in scientific notation to float? Give an example.
+
+**Answer:** Yes. `(float)"1.23E01"` results in `float(12.3)`
+
+---
+
+# Question: What happens when a string like `"295.95 only"` is cast to float?
+
+**Answer:** The numeric portion is converted; output is `float(295.95)`
+
+---
+
+# Question: What is the result of casting `"$2.50"` to float?
+
+**Answer:** `float(0)`, since the string starts with a non-numeric character.
+
+---
+
+# Question: What is the output of casting the integer `100` to string?
+
+**Answer:** `string(3) "100"`
+
+---
+
+# Question: What is the output of casting the float `55.50` to string?
+
+**Answer:** `string(4) "55.5"`
+
+---
+
+# Question: How does PHP cast non-zero numbers to boolean?
+
+**Answer:** Any non-zero integer or float casts to `true`.
+
+---
+
+# Question: What is the result of casting `0` to `(bool)`?
+
+**Answer:** `bool(false)`
+
+---
+
+# Question: What is the result of casting a non-empty string like `"Hello"` to `(bool)`?
+
+**Answer:** `bool(true)`
+
+---
+
+# Question: List the main PHP functions used for type casting.
+
+**Answer:**
+
+* `intval()`
+* `floatval()` (alias: `doubleval()`)
+* `strval()`
+
+---
+
+# Question: What does `intval()` do?
+
+**Answer:** Converts a mixed-type value to an integer, optionally using a specified base.
+
+---
+
+# Question: What is the default base for `intval()`?
+
+**Answer:** Base 10
+
+---
+
+# Question: What is the result of `intval(4.2)`?
+
+**Answer:** `4`, as it truncates the fractional part.
+
+---
+
+# Question: How does `intval('042', 0)` behave?
+
+**Answer:** Returns `34` as it interprets the string as octal.
+
+---
+
+# Question: What is the output of `intval('0x1A', 0)`?
+
+**Answer:** `26`, interpreting it as a hexadecimal.
+
+---
+
+# Question: What does `intval(true)` return?
+
+**Answer:** `1`
+
+---
+
+# Question: What does `intval(false)` return?
+
+**Answer:** `0`
+
+---
+
+# Question: What does `floatval()` return for `'99.90 Rs'`?
+
+**Answer:** `99.9`
+
+---
+
+# Question: What is the result of `floatval('$100.50')`?
+
+**Answer:** `0`, due to starting with non-numeric character.
+
+---
+
+# Question: What is the float value of `'ABC123!@#'`?
+
+**Answer:** `0`
+
+---
+
+# Question: Is `doubleval()` different from `floatval()`?
+
+**Answer:** No, `doubleval()` is an alias of `floatval()`.
+
+---
+
+# Question: What is `strval(4.2E5)`?
+
+**Answer:** `"420000"`
+
+---
+
+# Question: What is the string value of `NULL` using `strval()`?
+
+**Answer:** An empty string `""`
+
+---
+
+# Question: Can `strval()` convert an object to string?
+
+**Answer:** Yes, if the object implements the `__toString()` method.
+
+---
+
+# Question: What is the output of `strval(new myclass)` where `myclass` implements `__toString()` returning `__CLASS__`?
+
+**Answer:** `"myclass"`
+
+---
 
 
 
