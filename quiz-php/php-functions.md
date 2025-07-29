@@ -184,3 +184,33 @@
 | `unixtojd()`          | Converts a Unix timestamp to a Julian Day Count                             |
 
 ---
+
+# Question: List all predefined PHP calendar constants, their types, and the PHP version they were introduced in.
+
+### PHP Predefined Calendar Constants
+
+| Constant                       | Type    | PHP Version |
+| ------------------------------ | ------- | ----------- |
+| `CAL_GREGORIAN`                | Integer | PHP 4       |
+| `CAL_JULIAN`                   | Integer | PHP 4       |
+| `CAL_JEWISH`                   | Integer | PHP 4       |
+| `CAL_FRENCH`                   | Integer | PHP 4       |
+| `CAL_NUM_CALS`                 | Integer | PHP 4       |
+| `CAL_DOW_DAYNO`                | Integer | PHP 4       |
+| `CAL_DOW_SHORT`                | Integer | PHP 4       |
+| `CAL_DOW_LONG`                 | Integer | PHP 4       |
+| `CAL_MONTH_GREGORIAN_SHORT`    | Integer | PHP 4       |
+| `CAL_MONTH_GREGORIAN_LONG`     | Integer | PHP 4       |
+| `CAL_MONTH_JULIAN_SHORT`       | Integer | PHP 4       |
+| `CAL_MONTH_JULIAN_LONG`        | Integer | PHP 4       |
+| `CAL_MONTH_JEWISH`             | Integer | PHP 4       |
+| `CAL_MONTH_FRENCH`             | Integer | PHP 4       |
+| `CAL_EASTER_DEFAULT`           | Integer | PHP 4.3     |
+| `CAL_EASTER_ROMAN`             | Integer | PHP 4.3     |
+| `CAL_EASTER_ALWAYS_GREGORIAN`  | Integer | PHP 4.3     |
+| `CAL_EASTER_ALWAYS_JULIAN`     | Integer | PHP 4.3     |
+| `CAL_JEWISH_ADD_ALAFIM_GERESH` | Integer | PHP 5.0     |
+| `CAL_JEWISH_ADD_ALAFIM`        | Integer | PHP 5.0     |
+| `CAL_JEWISH_ADD_GERESHAYIM`    | Integer | PHP 5.0     |
+
+---
