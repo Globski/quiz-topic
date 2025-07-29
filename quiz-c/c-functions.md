@@ -394,3 +394,27 @@
 
 ---
 
+# Question: List the functions provided by the C `ctype.h` library and their descriptions.
+
+## C `ctype.h` Functions
+
+The `<ctype.h>` header provides functions for character classification and transformation.
+
+| Function     | Description                                               |
+| ------------ | --------------------------------------------------------- |
+| `isalnum()`  | Checks whether a character is alphanumeric                |
+| `isalpha()`  | Checks whether a character is a letter                    |
+| `isblank()`  | Checks whether a character is a space or tab              |
+| `iscntrl()`  | Checks whether a character is a control character         |
+| `isdigit()`  | Checks whether a character is a decimal digit             |
+| `isgraph()`  | Checks whether a character has a graphical representation |
+| `islower()`  | Checks whether a character is a lowercase letter          |
+| `isprint()`  | Checks whether a character is a printable character       |
+| `ispunct()`  | Checks whether a character is a punctuation character     |
+| `isspace()`  | Checks whether a character is a whitespace character      |
+| `isupper()`  | Checks whether a character is an uppercase letter         |
+| `isxdigit()` | Checks whether a character is a hexadecimal digit         |
+| `tolower()`  | Returns a lowercase version of a character                |
+| `toupper()`  | Returns an uppercase version of a character               |
+
+---
