@@ -448,3 +448,30 @@ HTML provides a wide range of tags, each serving a specific function. Here are e
 
 ---
 
+# HTML Global Attributes
+
+Global attributes are attributes that can be applied to **any HTML element**. They help control behavior, styling, accessibility, and interaction across the DOM.
+
+| Attribute         | Description                                                           |
+| ----------------- | --------------------------------------------------------------------- |
+| `accesskey`       | Specifies a shortcut key to activate/focus an element                 |
+| `class`           | Assigns one or more class names (for CSS or JS reference)             |
+| `contenteditable` | Defines whether the element's content is editable                     |
+| `data-*`          | Stores custom data private to the page or app                         |
+| `dir`             | Sets the text direction (`ltr`, `rtl`, or `auto`)                     |
+| `draggable`       | Indicates whether the element is draggable (`true`, `false`)          |
+| `enterkeyhint`    | Defines the action label on a virtual keyboard's enter key            |
+| `hidden`          | Hides the element from the page (not rendered)                        |
+| `id`              | Assigns a unique identifier to the element                            |
+| `inert`           | Prevents interaction and access to the element and its children       |
+| `inputmode`       | Hints at the type of data expected (e.g., `numeric`, `email`, `text`) |
+| `lang`            | Specifies the language used in the element's content                  |
+| `popover`         | Specifies that the element is a popover (experimental/HTML5.2+)       |
+| `spellcheck`      | Enables or disables spelling and grammar checking                     |
+| `style`           | Defines inline CSS styles for the element                             |
+| `tabindex`        | Controls tabbing navigation order                                     |
+| `title`           | Adds tooltip text shown when hovering over the element                |
+| `translate`       | Specifies whether the content should be translated                    |
+
+---
+
