@@ -1309,6 +1309,153 @@ These `php.ini` settings affect the behavior of miscellaneous functions.
 
 ---
 
-Would you like this in another format (PDF, HTML, CSV, etc.), or want it bundled with the previous PHP keywords markdown?
+# Question: What are the commonly used PHP MySQLi functions?
 
+## 📘 PHP MySQLi Introduction
+
+The **MySQLi (MySQL Improved)** extension allows access to MySQL database servers using an object-oriented or procedural interface.
+
+* Designed for **MySQL version 4.1.13+**
+* Introduced in **PHP 5.0.0**
+* MySQL Native Driver (mysqlnd) added in **PHP 5.3.0**
+
+🔗 For installation: [MySQLi Installation](http://php.net/manual/en/mysqli.installation.php)
+🔧 For configuration: [MySQLi Configuration](http://php.net/manual/en/mysqli.configuration.php)
+
+---
+
+## 🛠️ PHP MySQLi Functions
+
+### 🧾 Connection and Initialization
+
+| Function                 | Description                                  |
+| ------------------------ | -------------------------------------------- |
+| `connect()`              | Opens a new connection to the MySQL server   |
+| `real_connect()`         | Opens a new connection with enhanced options |
+| `init()`                 | Initializes MySQLi and returns a resource    |
+| `options()`              | Sets extra connect options                   |
+| `ssl_set()`              | Sets SSL parameters                          |
+| `ping()`                 | Pings a server connection                    |
+| `select_db()`            | Selects a default database                   |
+| `change_user()`          | Changes the user of the connection           |
+| `close()`                | Closes the connection                        |
+| `kill()`                 | Kills a MySQL thread                         |
+| `thread_id()`            | Returns the thread ID                        |
+| `thread_safe()`          | Checks if the client is thread-safe          |
+| `get_client_info()`      | Returns MySQL client version                 |
+| `get_client_version()`   | Version as integer                           |
+| `get_client_stats()`     | Returns stats per client process             |
+| `get_connection_stats()` | Returns client connection stats              |
+| `get_host_info()`        | Returns host info                            |
+| `get_proto_info()`       | Returns MySQL protocol version               |
+| `get_server_info()`      | Returns MySQL server version                 |
+| `get_server_version()`   | Server version as integer                    |
+
+---
+
+### 📊 Querying and Execution
+
+| Function             | Description                                       |
+| -------------------- | ------------------------------------------------- |
+| `query()`            | Performs a SQL query                              |
+| `multi_query()`      | Performs multiple queries                         |
+| `next_result()`      | Prepares the next result-set from multi-query     |
+| `store_result()`     | Transfers a result-set from last query            |
+| `use_result()`       | Retrieves result-set from the last query executed |
+| `real_query()`       | Executes a single query                           |
+| `reap_async_query()` | Retrieves async query results                     |
+
+---
+
+### 📥 Data Fetching
+
+| Function               | Description                                   |
+| ---------------------- | --------------------------------------------- |
+| `fetch_assoc()`        | Fetches row as associative array              |
+| `fetch_array()`        | Fetches row as associative/numeric/both array |
+| `fetch_row()`          | Fetches row as numeric array                  |
+| `fetch_all()`          | Fetches all rows                              |
+| `fetch_object()`       | Fetches row as an object                      |
+| `data_seek()`          | Moves result pointer to a specific row        |
+| `fetch_field()`        | Gets next field in result-set                 |
+| `fetch_field_direct()` | Metadata for a single field                   |
+| `fetch_fields()`       | Array of objects for all fields               |
+| `fetch_lengths()`      | Column lengths of current row                 |
+
+---
+
+### 🔐 Transactions and Autocommit
+
+| Function              | Description                      |
+| --------------------- | -------------------------------- |
+| `autocommit()`        | Enables/disables autocommit mode |
+| `begin_transaction()` | Starts a transaction             |
+| `commit()`            | Commits current transaction      |
+| `rollback()`          | Rolls back current transaction   |
+
+---
+
+### 📌 Miscellaneous Operations
+
+| Function          | Description                         |
+| ----------------- | ----------------------------------- |
+| `affected_rows()` | Affected rows in previous operation |
+| `insert_id()`     | Last inserted ID                    |
+| `errno()`         | Last error code                     |
+| `error()`         | Last error description              |
+| `error_list()`    | List of recent errors               |
+| `info()`          | Info about last executed query      |
+| `sqlstate()`      | Returns SQLSTATE error code         |
+| `warning_count()` | Number of warnings from last query  |
+
+---
+
+### 🧪 Statements and Preparation
+
+| Function      | Description                                |
+| ------------- | ------------------------------------------ |
+| `prepare()`   | Prepares SQL statement                     |
+| `stmt_init()` | Initializes and returns a statement object |
+
+---
+
+### 🧰 Character Sets and Encoding
+
+| Function               | Description                    |
+| ---------------------- | ------------------------------ |
+| `character_set_name()` | Returns default charset        |
+| `get_charset()`        | Returns a character set object |
+| `set_charset()`        | Sets the character set         |
+
+---
+
+### 🧩 Debugging and Meta
+
+| Function            | Description                  |
+| ------------------- | ---------------------------- |
+| `debug()`           | Performs debugging functions |
+| `dump_debug_info()` | Dumps debugging information  |
+| `stat()`            | Returns system status        |
+
+---
+
+### 📁 Local Infile Handlers
+
+| Function                     | Description                                  |
+| ---------------------------- | -------------------------------------------- |
+| `set_local_infile_handler()` | Sets a callback for `LOAD DATA LOCAL INFILE` |
+| `set_local_infile_default()` | Unsets the user-defined handler              |
+
+---
+
+### 🧾 Polling and Results Handling
+
+| Function         | Description                                  |
+| ---------------- | -------------------------------------------- |
+| `more_results()` | Checks for more results from `multi_query()` |
+| `poll()`         | Polls for activity on MySQL connections      |
+| `field_count()`  | Number of columns for last query             |
+| `field_seek()`   | Moves cursor to specific field offset        |
+
+---
 
