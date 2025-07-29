@@ -1516,3 +1516,53 @@ These functions are part of the PHP core — no installation required.
 
 ---
 
+# Question: What are the commonly used PHP output control functions?
+
+## 🖥️ PHP Output Control Introduction
+
+**Output control** in PHP allows developers to manage **what content is sent to the browser** and **when**. Output can originate from:
+
+* Statements like `echo`, `print`, `print_r`, `printf`
+* PHP notices, warnings, or errors
+* Any plain text outside PHP `<?php ?>` tags
+
+💡 PHP uses **output buffers** — stacks of memory where output is stored temporarily. You can control this output before it is sent to the browser.
+
+---
+
+## ⚙️ Runtime Configuration (php.ini)
+
+| Name                 | Default                                         | Description                                                                            | Version |
+| -------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------- | ------- |
+| `output_buffering`   | `"0"`                                           | Enables output buffering by default                                                    | 4       |
+| `output_handler`     | `NULL`                                          | Sets the default handler for output buffers                                            | 4       |
+| `implicit_flush`     | `"0"`                                           | Sends output to the browser immediately after every output statement                   | 4       |
+| `url_rewriter.tags`  | `"a=href,area=href, frame=src,form=,fieldset="` | Defines which HTML tags get rewritten for query strings via `output_add_rewrite_var()` | 4.3     |
+| `url_rewriter.hosts` | `$_SERVER['HTTP_HOST']` (current host only)     | Allows URL rewriting only for the current host unless other hosts specified            | 7.1     |
+
+---
+
+## 🧰 PHP Output Control Functions
+
+| Function                      | Description                                                  |
+| ----------------------------- | ------------------------------------------------------------ |
+| `flush()`                     | Sends any buffered output to the browser                     |
+| `ob_clean()`                  | Clears the current topmost output buffer without sending it  |
+| `ob_end_clean()`              | Clears and ends the current output buffer                    |
+| `ob_end_flush()`              | Sends and then ends the current output buffer                |
+| `ob_flush()`                  | Sends the contents of the output buffer and leaves it active |
+| `ob_get_clean()`              | Returns and clears the output buffer                         |
+| `ob_get_contents()`           | Returns contents of the current output buffer                |
+| `ob_get_flush()`              | Returns and sends the output buffer, then clears it          |
+| `ob_get_length()`             | Returns the length (in bytes) of the output buffer           |
+| `ob_get_level()`              | Returns the number of active output buffers                  |
+| `ob_get_status()`             | Returns an array with buffer status details                  |
+| `ob_gzhandler()`              | Used to gzip compress output buffer (used with `ob_start()`) |
+| `ob_implicit_flush()`         | Enables or disables implicit flushing                        |
+| `ob_list_handlers()`          | Lists all registered output handler callbacks                |
+| `ob_start()`                  | Starts a new output buffer                                   |
+| `output_add_rewrite_var()`    | Adds query string parameters to URLs in output               |
+| `output_reset_rewrite_vars()` | Removes variables added by `output_add_rewrite_var()`        |
+
+---
+
