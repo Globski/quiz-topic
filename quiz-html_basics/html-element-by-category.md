@@ -475,3 +475,164 @@ Global attributes are attributes that can be applied to **any HTML element**. Th
 
 ---
 
+# Question: List common HTML event attributes grouped by their category.
+
+HTML supports global event attributes that trigger JavaScript actions in response to user interactions. Below are categorized HTML event attributes:
+
+---
+
+## ✅ Global Event Attributes
+
+These attributes can be used on **any HTML element**.
+
+| Attribute     | Value  | Description                              |
+| ------------- | ------ | ---------------------------------------- |
+| `onclick`     | script | Fires when the element is clicked        |
+| `ondblclick`  | script | Fires on a mouse double-click            |
+| `onmousedown` | script | Fires when mouse button is pressed       |
+| `onmouseup`   | script | Fires when mouse button is released      |
+| `onmouseover` | script | Fires when mouse pointer enters element  |
+| `onmouseout`  | script | Fires when mouse pointer leaves element  |
+| `onmousemove` | script | Fires when mouse moves over the element  |
+| `onkeydown`   | script | Fires when a key is pressed down         |
+| `onkeyup`     | script | Fires when a key is released             |
+| `onkeypress`  | script | Fires when a key is pressed (deprecated) |
+
+---
+
+## 🌐 Window Event Attributes (used in `<body>`)
+
+| Attribute        | Value  | Description                                        |
+| ---------------- | ------ | -------------------------------------------------- |
+| `onafterprint`   | script | Runs after document is printed                     |
+| `onbeforeprint`  | script | Runs before document is printed                    |
+| `onbeforeunload` | script | Runs before page is unloaded                       |
+| `onerror`        | script | Runs when a script error occurs                    |
+| `onhashchange`   | script | Runs when URL anchor changes                       |
+| `onload`         | script | Runs when page has finished loading                |
+| `onmessage`      | script | Runs when a message is received through the window |
+| `onoffline`      | script | Runs when browser goes offline                     |
+| `ononline`       | script | Runs when browser goes online                      |
+| `onpagehide`     | script | Runs when page is hidden                           |
+| `onpageshow`     | script | Runs when page is shown                            |
+| `onpopstate`     | script | Runs when active history entry changes             |
+| `onresize`       | script | Runs when window is resized                        |
+| `onstorage`      | script | Runs when Web Storage is changed                   |
+| `onunload`       | script | Runs when page is about to be unloaded             |
+
+---
+
+## 📝 Form Events
+
+| Attribute       | Value  | Description                            |
+| --------------- | ------ | -------------------------------------- |
+| `onblur`        | script | Runs when element loses focus          |
+| `onchange`      | script | Runs when element value changes        |
+| `oncontextmenu` | script | Runs when context menu is triggered    |
+| `onfocus`       | script | Runs when element gains focus          |
+| `oninput`       | script | Runs when element gets user input      |
+| `oninvalid`     | script | Runs when input is invalid             |
+| `onreset`       | script | Runs when form is reset                |
+| `onsearch`      | script | Runs when user types in a search field |
+| `onselect`      | script | Runs when text is selected             |
+| `onsubmit`      | script | Runs when a form is submitted          |
+
+---
+
+## ⌨️ Keyboard Events
+
+| Attribute    | Value  | Description                            |
+| ------------ | ------ | -------------------------------------- |
+| `onkeydown`  | script | Fires when key is pressed down         |
+| `onkeypress` | script | Fires when key is pressed (deprecated) |
+| `onkeyup`    | script | Fires when key is released             |
+
+---
+
+## 🖱️ Mouse Events
+
+| Attribute      | Value  | Description                         |
+| -------------- | ------ | ----------------------------------- |
+| `onclick`      | script | Fires on mouse click                |
+| `ondblclick`   | script | Fires on double click               |
+| `onmousedown`  | script | Fires when mouse button is pressed  |
+| `onmouseup`    | script | Fires when mouse button is released |
+| `onmousemove`  | script | Fires when mouse moves over element |
+| `onmouseover`  | script | Fires when pointer enters element   |
+| `onmouseout`   | script | Fires when pointer leaves element   |
+| `onmousewheel` | script | Deprecated. Use `onwheel` instead   |
+| `onwheel`      | script | Fires when mouse wheel is used      |
+
+---
+
+## 🎯 Drag and Drop Events
+
+| Attribute     | Value  | Description                                    |
+| ------------- | ------ | ---------------------------------------------- |
+| `ondrag`      | script | Fires when element is being dragged            |
+| `ondragend`   | script | Fires when drag ends                           |
+| `ondragenter` | script | Fires when element enters drop target          |
+| `ondragleave` | script | Fires when element leaves drop target          |
+| `ondragover`  | script | Fires when element is dragged over drop target |
+| `ondragstart` | script | Fires when drag starts                         |
+| `ondrop`      | script | Fires when element is dropped                  |
+
+---
+
+## 📜 Scroll Event
+
+| Attribute  | Value  | Description                      |
+| ---------- | ------ | -------------------------------- |
+| `onscroll` | script | Fires when the scrollbar is used |
+
+---
+
+## 📋 Clipboard Events
+
+| Attribute | Value  | Description                  |
+| --------- | ------ | ---------------------------- |
+| `oncopy`  | script | Fires when content is copied |
+| `oncut`   | script | Fires when content is cut    |
+| `onpaste` | script | Fires when content is pasted |
+
+---
+
+## 🎥 Media Events
+
+| Attribute          | Value  | Description                                            |
+| ------------------ | ------ | ------------------------------------------------------ |
+| `onabort`          | script | Fires when loading is aborted                          |
+| `oncanplay`        | script | Fires when media can start playing                     |
+| `oncanplaythrough` | script | Fires when media can play to the end without buffering |
+| `oncuechange`      | script | Fires when cue changes in `<track>`                    |
+| `ondurationchange` | script | Fires when duration changes                            |
+| `onemptied`        | script | Fires when media is suddenly unavailable               |
+| `onended`          | script | Fires when media reaches the end                       |
+| `onerror`          | script | Fires when error occurs while loading media            |
+| `onloadeddata`     | script | Fires when media data is loaded                        |
+| `onloadedmetadata` | script | Fires when metadata is loaded                          |
+| `onloadstart`      | script | Fires when media starts loading                        |
+| `onpause`          | script | Fires when media is paused                             |
+| `onplay`           | script | Fires when media is ready to play                      |
+| `onplaying`        | script | Fires when media starts playing                        |
+| `onprogress`       | script | Fires when browser is downloading media                |
+| `onratechange`     | script | Fires when playback speed changes                      |
+| `onseeked`         | script | Fires when seeking ends                                |
+| `onseeking`        | script | Fires when seeking begins                              |
+| `onstalled`        | script | Fires when media data is not available                 |
+| `onsuspend`        | script | Fires when media fetch is suspended                    |
+| `ontimeupdate`     | script | Fires when playback position changes                   |
+| `onvolumechange`   | script | Fires when volume changes                              |
+| `onwaiting`        | script | Fires when playback is paused due to buffering         |
+
+---
+
+## ⚙️ Miscellaneous Events
+
+| Attribute  | Value  | Description                                         |
+| ---------- | ------ | --------------------------------------------------- |
+| `ontoggle` | script | Fires when the `<details>` element is opened/closed |
+
+---
+
+
