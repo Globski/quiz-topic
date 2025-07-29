@@ -2902,6 +2902,390 @@ $a = new myclass;
 
 ---
 
+# Question: What does the term "Data Types" refer to in PHP?
+
+**Answer:** It refers to the classification of data into distinct categories, defining the type of data that a variable can store.
+
+---
+
+# Question: How many data types does PHP support?
+
+**Answer:** PHP supports eight data types.
+
+---
+
+# Question: What are the eight data types in PHP?
+
+**Answer:** Integer, Double, Boolean, NULL, String, Array, Object, Resource.
+
+---
+
+# Question: Which data types are considered simple in PHP?
+
+**Answer:** Integer, Double, Boolean, NULL, and String.
+
+---
+
+# Question: Which data types are compound in PHP?
+
+**Answer:** Arrays and Objects.
+
+---
+
+# Question: What is an Integer in PHP?
+
+**Answer:** A whole number without a decimal point, which can be positive or negative.
+
+---
+
+# Question: In which number systems can integers be represented in PHP?
+
+**Answer:** Decimal (base 10), Hexadecimal (base 16), Octal (base 8), Binary (base 2).
+
+---
+
+# Question: How do you define an octal integer in PHP?
+
+**Answer:** Precede the number with "0o" or "0O", e.g., `0o10`.
+
+---
+
+# Question: How do you define a hexadecimal integer in PHP?
+
+**Answer:** Precede the number with "0x", e.g., `0x10`.
+
+---
+
+# Question: How do you define a binary integer in PHP?
+
+**Answer:** Precede the number with "0b", e.g., `0b10101`.
+
+---
+
+# Question: Write a PHP statement that assigns an integer to a variable.
+
+**Answer:** `$int_var = 12345;`
+
+---
+
+# Question: What is a Double in PHP?
+
+**Answer:** A floating-point number with a fractional component.
+
+---
+
+# Question: What types of values can a Double have in PHP?
+
+**Answer:** Positive, negative, or zero.
+
+---
+
+# Question: Write a PHP example of assigning a Double using scientific notation.
+
+**Answer:** `$num = 1.2e3;`
+
+---
+
+# Question: What does the following code output?
+
+```php
+$many = 2.2888800;
+$many_2 = 2.2111200;
+$few = $many + $many_2;
+print("$many + $many_2 = $few");
+```
+
+**Answer:** `2.28888 + 2.21112 = 4.5`
+
+---
+
+# Question: What are the two possible values of a Boolean in PHP?
+
+**Answer:** `true` and `false`
+
+---
+
+# Question: Can integers represent Boolean values in PHP?
+
+**Answer:** Yes, `1` represents true and `0` represents false.
+
+---
+
+# Question: What is the output of this code?
+
+```php
+if (TRUE)
+   print("This will always print.");
+else
+   print("This will never print.");
+```
+
+**Answer:** `This will always print.`
+
+---
+
+# Question: When is a numeric value interpreted as `false` in a Boolean context?
+
+**Answer:** When the value is exactly zero.
+
+---
+
+# Question: When is a string considered `false` in a Boolean context?
+
+**Answer:** When it is empty or equal to the string `"0"`.
+
+---
+
+# Question: What is the Boolean value of NULL?
+
+**Answer:** `false`
+
+---
+
+# Question: When is an array interpreted as `false` in a Boolean context?
+
+**Answer:** When it contains no values (i.e., it is empty).
+
+---
+
+# Question: Should floating-point numbers be used as Boolean values?
+
+**Answer:** No, floating-point numbers should not be used as Boolean values.
+
+---
+
+# Question: What is a String in PHP?
+
+**Answer:** A sequence of characters.
+
+---
+
+# Question: How does PHP treat characters internally?
+
+**Answer:** Each character is treated as a byte; PHP supports a 256-character set without native Unicode support.
+
+---
+
+# Question: What is the difference between single and double-quoted strings in PHP?
+
+**Answer:** Single-quoted strings are literal; double-quoted strings parse variables and escape sequences.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$variable = "name";
+$literally = 'My $variable will not print!';
+print($literally);
+$literally = "My $variable will print!";
+print($literally);
+```
+
+**Answer:**
+
+```
+My $variable will not print!
+My name will print!
+```
+
+---
+
+# Question: What are some escape sequences supported in double-quoted PHP strings?
+
+**Answer:**
+
+* `\n` → newline
+* `\r` → carriage return
+* `\t` → tab
+* `\$` → dollar sign
+* `\"` → double quote
+* `\\` → backslash
+
+---
+
+# Question: What is a Heredoc in PHP?
+
+**Answer:** A way to assign multi-line string values with variable interpolation using the `<<<` syntax and a closing identifier.
+
+---
+
+# Question: What is the requirement for a Heredoc closing identifier?
+
+**Answer:** It must appear on a line by itself with no extra whitespace or characters.
+
+---
+
+# Question: What is a Nowdoc in PHP?
+
+**Answer:** A single-quoted version of Heredoc that does not parse variables or escape sequences.
+
+---
+
+# Question: How do you define a Nowdoc in PHP?
+
+**Answer:** Using `<<<'IDENTIFIER'` syntax.
+
+---
+
+# Question: What does this Nowdoc code output?
+
+```php
+echo <<<'IDENTIFIER'
+As the cat cleared its throat with a refined "Meow",
+the squirrel chirped excitedly about its latest
+discovery of a hidden stash of peanut treasure!
+IDENTIFIER;
+```
+
+**Answer:**
+
+```
+As the cat cleared its throat with a refined "Meow",
+the squirrel chirped excitedly about its latest
+discovery of a hidden stash of peanut treasure!
+```
+
+---
+
+# Question: What is the NULL data type in PHP?
+
+**Answer:** A special type with only one value: NULL.
+
+---
+
+# Question: How do you assign NULL to a variable in PHP?
+
+**Answer:** `$my_var = NULL;` or `$my_var = null;`
+
+---
+
+# Question: How does a NULL variable behave in Boolean context?
+
+**Answer:** It evaluates to `false`.
+
+---
+
+# Question: What is the result of `isset()` on a NULL variable?
+
+**Answer:** `false`
+
+---
+
+# Question: What is an Array in PHP?
+
+**Answer:** An ordered map that associates keys with values.
+
+---
+
+# Question: How can arrays be defined in PHP?
+
+**Answer:** Using `array()` or square bracket `[]` syntax.
+
+---
+
+# Question: Give an example of an associative array in PHP.
+
+**Answer:**
+
+```php
+$arr = ["foo" => "bar", "bar" => "foo"];
+```
+
+---
+
+# Question: What is an indexed array in PHP?
+
+**Answer:** An array where values are accessed by numeric index.
+
+---
+
+# Question: What is a multi-dimensional array?
+
+**Answer:** An array where each element can itself be an array.
+
+---
+
+# Question: What are compound types used for in PHP?
+
+**Answer:** To store collections of data, such as arrays and objects.
+
+---
+
+# Question: What is an Object in PHP?
+
+**Answer:** An instance of a programmer-defined class that can include properties and methods.
+
+---
+
+# Question: How do you create a new object in PHP?
+
+**Answer:** Using the `new` statement, e.g., `$obj = new ClassName;`
+
+---
+
+# Question: What is the output of this code?
+
+```php
+class foo {
+   function bar() {
+      echo "Hello World.";
+   }
+}
+$obj = new foo;
+$obj->bar();
+```
+
+**Answer:** `Hello World.`
+
+---
+
+# Question: What is a Resource in PHP?
+
+**Answer:** A special variable holding a reference to an external resource like a file or database connection.
+
+---
+
+# Question: Provide an example of a resource in PHP.
+
+**Answer:** `$fp = fopen("foo.txt", "w");`
+
+---
+
+# Question: Do PHP variables need to be declared with a type?
+
+**Answer:** No, PHP is dynamically typed; the variable type is determined at runtime.
+
+---
+
+# Question: What is the purpose of the `gettype()` function in PHP?
+
+**Answer:** To determine and return the data type of a variable.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$x = 10;
+$y = 10.55;
+$z = [1,2,3,4,5];
+echo gettype($x) . "\n";
+echo gettype($y) . "\n";
+echo gettype($z);
+```
+
+**Answer:**
+
+```
+integer
+double
+array
+```
+
+---
+
+
 
 
 
