@@ -356,4 +356,24 @@
 * `PHP_INI_ALL`: Can be set in `php.ini`, `.htaccess`, or at runtime with `ini_set()`.
 * `PHP_INI_SYSTEM`: Can only be set in `php.ini` or web server config.
 
+---
+
+## PHP Error and Logging Functions
+
+| **Function**                  | **Description**                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------- |
+| `debug_backtrace()`           | Generates a backtrace (useful for debugging call stacks)                        |
+| `debug_print_backtrace()`     | Prints a backtrace directly (usually for debugging output)                      |
+| `error_clear_last()`          | Clears the last error recorded by PHP                                           |
+| `error_get_last()`            | Returns an associative array of the last error (or `NULL` if no error exists)   |
+| `error_log()`                 | Sends an error message to a log file, email, or system log                      |
+| `error_reporting()`           | Gets or sets which PHP errors are reported (e.g., `E_ALL`, `E_NOTICE`, etc.)    |
+| `restore_error_handler()`     | Restores the previously defined error handler                                   |
+| `restore_exception_handler()` | Restores the previously defined exception handler                               |
+| `set_error_handler()`         | Defines a custom function for handling errors                                   |
+| `set_exception_handler()`     | Defines a custom function for handling uncaught exceptions                      |
+| `trigger_error()`             | Triggers a user-level error (`E_USER_NOTICE`, `E_USER_WARNING`, `E_USER_ERROR`) |
+| `user_error()`                | Alias of `trigger_error()` — creates a user-defined error                       |
+
+---
 
