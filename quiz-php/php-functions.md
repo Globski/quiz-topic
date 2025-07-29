@@ -288,7 +288,7 @@
 
 ---
 
-## ✅ PHP Predefined Date/Time Constants
+## PHP Predefined Date/Time Constants
 
 | **Constant**             | **Description**                                               | **Example Output**                 |
 | ------------------------ | ------------------------------------------------------------- | ---------------------------------- |
@@ -307,6 +307,23 @@
 | `SUNFUNCS_RET_TIMESTAMP` | Returns a timestamp (added in PHP 5.1.2)                      | *(e.g. `1579355583`)*              |
 | `SUNFUNCS_RET_STRING`    | Returns sunrise/sunset as hours\:minutes (added in PHP 5.1.2) | `09:41`                            |
 | `SUNFUNCS_RET_DOUBLE`    | Returns sunrise/sunset as a float number (added in PHP 5.1.2) | `9.75`                             |
+
+
+---
+
+## PHP Directory Functions
+
+| **Function**  | **Description**                                                    |
+| ------------- | ------------------------------------------------------------------ |
+| `chdir()`     | Changes the current working directory                              |
+| `chroot()`    | Changes the root directory (must be run as root)                   |
+| `closedir()`  | Closes a directory handle                                          |
+| `dir()`       | Returns an instance of the `Directory` class                       |
+| `getcwd()`    | Returns the current working directory                              |
+| `opendir()`   | Opens a directory handle for use with `readdir()` and `closedir()` |
+| `readdir()`   | Reads and returns an entry from an open directory handle           |
+| `rewinddir()` | Resets the directory handle to the beginning of the directory      |
+| `scandir()`   | Returns an array of files and directories inside the given path    |
 
 ---
 
