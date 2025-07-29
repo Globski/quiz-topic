@@ -117,35 +117,52 @@
 
 ---
 
-#### C
+### C
 
-| Property            | Description                                      |
-| ------------------- | ------------------------------------------------ |
-| `caption-side`      | Placement of a table caption                     |
-| `caret-color`       | Color of the text input caret                    |
-| `@charset`          | Defines the character encoding of the stylesheet |
-| `clear`             | Clears floating elements                         |
-| `clip`              | Deprecated clipping method                       |
-| `clip-path`         | Clips an element to a shape                      |
-| `color`             | Sets the text color                              |
-| `color-scheme`      | Determines rendering color scheme                |
-| `column-count`      | Number of columns                                |
-| `column-fill`       | Column filling behavior                          |
-| `column-gap`        | Gap between columns                              |
-| `column-rule`       | Shorthand for column rule properties             |
-| `column-rule-color` | Color of column rule                             |
-| `column-rule-style` | Style of column rule                             |
-| `column-rule-width` | Width of column rule                             |
-| `column-span`       | Span of element across columns                   |
-| `column-width`      | Width of columns                                 |
-| `columns`           | Shorthand for column-width and count             |
-| `@container`        | Define conditional styling based on container    |
-| `content`           | Inserts generated content                        |
-| `counter-increment` | Increments a CSS counter                         |
-| `counter-reset`     | Resets a CSS counter                             |
-| `counter-set`       | Sets a CSS counter to a specific value           |
-| `@counter-style`    | Allows custom counter style definitions          |
-| `cursor`            | Sets the cursor type                             |
+| Property             | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| `caption-side`       | Specifies the placement of a table caption                                  |
+| `caret-color`        | Specifies the color of the cursor (caret) in inputs, textareas, or editable elements |
+| `@charset`           | Specifies the character encoding used in the style sheet                    |
+| `clear`              | Specifies what should happen with the element that is next to a floating element |
+| `clip`               | Deprecated in favor of clip-path. Clips an absolutely positioned element    |
+| `clip-path`          | Clips an element to a basic shape or to an SVG source                       |
+| `color`              | Sets the color of text                                                      |
+| `color-scheme`       | Indicates which OS color scheme an element should render with               |
+| `column-count`       | Specifies the number of columns an element should be divided into           |
+| `column-fill`        | Specifies how to fill columns, balanced or not                              |
+| `column-gap`         | Specifies the gap between the columns                                       |
+| `column-rule`        | Shorthand property for all the `column-rule-*` properties                   |
+| `column-rule-color`  | Specifies the color of the rule between columns                             |
+| `column-rule-style`  | Specifies the style of the rule between columns                             |
+| `column-rule-width`  | Specifies the width of the rule between columns                             |
+| `column-span`        | Specifies how many columns an element should span across                    |
+| `column-width`       | Specifies the column width                                                  |
+| `columns`            | Shorthand property for `column-width` and `column-count`                    |
+| `@container`         | Define styles for elements in container, depending on the container's size or style |
+| `content`            | Used with `::before` and `::after` to insert generated content              |
+| `counter-increment`  | Increases or decreases the value of one or more CSS counters                |
+| `counter-reset`      | Creates or resets one or more CSS counters                                  |
+| `counter-set`        | Creates or sets one or more CSS counters                                    |
+| `@counter-style`     | Lets you define your own counter styles                                     |
+| `cursor`             | Specifies the mouse cursor to be displayed when pointing over an element    |
 
 ---
 
+### D
+
+| Property    | Description                                                     |
+|-------------|-----------------------------------------------------------------|
+| `direction` | Specifies the text direction/writing direction                  |
+| `display`   | Specifies how a certain HTML element should be displayed        |
+
+---
+
+### E
+
+| Property        | Description                                                                        |
+|------------------|------------------------------------------------------------------------------------|
+| `empty-cells`    | Specifies whether or not to display borders and background on empty table cells   |
+```
+
+---
