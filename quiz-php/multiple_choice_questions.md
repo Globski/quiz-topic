@@ -2442,6 +2442,199 @@ PHP
 
 ---
 
+# Question: What is a constant in PHP?
+
+**Answer:** A constant in PHP is a name or identifier for a simple value that cannot change during the execution of the script.
+
+---
+
+# Question: Why are constants used in PHP?
+
+**Answer:** Constants improve code readability, maintainability, and make code simpler and more secure by preventing key values from changing.
+
+---
+
+# Question: Are PHP constants case-sensitive by default?
+
+**Answer:** Yes, PHP constants are case-sensitive by default.
+
+---
+
+# Question: What is the naming convention for constants in PHP?
+
+**Answer:** By convention, constant identifiers are always uppercase.
+
+---
+
+# Question: What characters must a constant name start with in PHP?
+
+**Answer:** A constant name must start with a letter or underscore.
+
+---
+
+# Question: Can a constant name in PHP contain numbers?
+
+**Answer:** Yes, after the initial letter or underscore, it can contain any number of letters, numbers, or underscores.
+
+---
+
+# Question: Does a PHP constant require a dollar sign (\$) prefix?
+
+**Answer:** No, unlike variables, constants do not require a dollar sign before their names.
+
+---
+
+# Question: How do you define a constant in PHP?
+
+**Answer:** By using the `define()` function: `define("CONSTANT_NAME", value);`
+
+---
+
+# Question: What does the `define()` function return on success and failure?
+
+**Answer:** It returns `true` on success and `false` on failure.
+
+---
+
+# Question: What are the parameters of the `define()` function in PHP?
+
+**Answer:** `const_name` (name of the constant), `value` (assigned value), and `case` (optional boolean for case-insensitivity).
+
+---
+
+# Question: What is the default value of the `case` parameter in the `define()` function?
+
+**Answer:** `false` (i.e., constants are case-sensitive by default).
+
+---
+
+# Question: What types of values can be assigned to a constant in PHP?
+
+**Answer:** Constants can have scalar values (int, float, string, bool, or null) and also arrays.
+
+---
+
+# Question: What happens when you try to access a constant using the wrong case (e.g., `Constant` instead of `CONSTANT`)?
+
+**Answer:** A fatal error is thrown: "Undefined constant."
+
+---
+
+# Question: How can you define a case-insensitive constant?
+
+**Answer:** By setting the third parameter of `define()` to `true`.
+
+---
+
+# Question: Give an example of a valid constant definition using an array.
+
+**Answer:**
+
+```php
+define("LANGS", array('PHP', 'Java', 'Python'));
+```
+
+---
+
+# Question: Provide an example of valid constant names in PHP.
+
+**Answer:** `ONE`, `TWO2`, `THREE_3`, `__THREE__`
+
+---
+
+# Question: Provide an example of an invalid constant name.
+
+**Answer:** `2TWO` (cannot start with a digit)
+
+---
+
+# Question: Are constants in PHP global or scoped like variables?
+
+**Answer:** Constants are global and can be accessed from anywhere in the script.
+
+---
+
+# Question: What built-in PHP constant gives the current PHP version?
+
+**Answer:** `PHP_VERSION`
+
+---
+
+# Question: What built-in PHP constant gives the operating system PHP is running on?
+
+**Answer:** `PHP_OS`
+
+---
+
+# Question: How do you retrieve the value of a constant when the name is stored in a variable?
+
+**Answer:** By using the `constant()` function.
+
+---
+
+# Question: What is the syntax of the `constant()` function?
+
+**Answer:** `constant(string $name): mixed`
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+define("MINSIZE", 50);
+echo MINSIZE;
+echo PHP_EOL;
+echo constant("MINSIZE");
+```
+
+**Answer:**
+
+```
+50
+50
+```
+
+---
+
+# Question: How can you check if a constant is defined in PHP?
+
+**Answer:** By using the `defined()` function.
+
+---
+
+# Question: What is the syntax of the `defined()` function?
+
+**Answer:** `defined(string $name): bool`
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+define('MAX', 100);
+if (defined('MAX')) {
+    echo MAX;
+}
+```
+
+**Answer:**
+`100`
+
+---
+
+# Question: What PHP function returns an associative array of all defined constants?
+
+**Answer:** `get_defined_constants()`
+
+---
+
+# Question: How do constants differ from variables in PHP?
+
+**Answer:** Constants are defined using `define()`, cannot be redefined or undefined once set, and are not limited by scope like variables.
+
+---
+
+
 
 
 
