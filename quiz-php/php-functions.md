@@ -454,5 +454,29 @@ These settings control how file handling and stream wrappers behave in PHP.
 | `PHP_INI_SYSTEM` | Only in `php.ini`, `.htaccess`, or server config. |
 | `PHP_INI_ALL`    | Anywhere – including `ini_set()` at runtime.      |
 
+
+---
+
+## PHP Filesystem Runtime Configuration
+
+These settings control how PHP interacts with files, streams, and remote resources via functions like `fopen()`, `file()`, `fgets()`, etc.
+
+| **Directive**              | **Default** | **Description**                                                                                                                                  | **Changeable**   |
+| -------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| `allow_url_fopen`          | `"1"`       | Allows `fopen()` and similar functions to access **URLs** (e.g., `http://`, `ftp://`). Disabling improves security.                              | `PHP_INI_SYSTEM` |
+| `allow_url_include`        | `"0"`       | Allows `include` and `require` to load files via URLs. ⚠️ **High security risk**, should generally remain disabled.                              | `PHP_INI_SYSTEM` |
+| `user_agent`               | `NULL`      | Sets the **User-Agent** string for HTTP requests made by `fopen()` or `file_get_contents()` when using URLs.                                     | `PHP_INI_ALL`    |
+| `default_socket_timeout`   | `"60"`      | Sets the default **timeout in seconds** for socket-based streams (e.g., network connections).                                                    | `PHP_INI_ALL`    |
+| `from`                     | `""`        | Sets the **email address** used in FTP "anonymous login" or `From:` header in HTTP requests via `ftp://` or `http://` wrappers.                  | `PHP_INI_ALL`    |
+| `auto_detect_line_endings` | `"0"`       | When enabled (`"1"`), PHP automatically detects line endings (Unix, Windows, Mac) when reading text files using `fgets()` or `file()`.           | `PHP_INI_ALL`    |
+| `sys_temp_dir`             | `""`        | Directory path used for **temporary files** (`tmpfile()`, `tempnam()`, etc.). Useful for redirecting temp storage to secure or large partitions. | `PHP_INI_SYSTEM` |
+
+---
+
+### Configuration Levels
+
+* **PHP\_INI\_SYSTEM**: Must be set in `php.ini`, `.htaccess`, or server configuration.
+* **PHP\_INI\_ALL**: Can be set in scripts using `ini_set()` at runtime.
+
 ---
 
