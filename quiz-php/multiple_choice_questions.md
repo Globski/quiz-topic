@@ -2634,6 +2634,275 @@ if (defined('MAX')) {
 
 ---
 
+# Question: What are magic constants in PHP?
+
+**Answer:** Magic constants in PHP are predefined constants that change depending on where they are used and are resolved at compile time.
+
+---
+
+# Question: How are magic constants in PHP resolved compared to regular constants?
+
+**Answer:** Magic constants are resolved at compile time, whereas regular constants are resolved at runtime.
+
+---
+
+# Question: Are magic constants case-sensitive in PHP?
+
+**Answer:** No, magic constants are case-insensitive.
+
+---
+
+# Question: List all nine magic constants in PHP.
+
+**Answer:** `__LINE__`, `__FILE__`, `__DIR__`, `__FUNCTION__`, `__CLASS__`, `__METHOD__`, `__TRAIT__`, `__NAMESPACE__`, `ClassName::class`.
+
+---
+
+# Question: What does the `__LINE__` magic constant return?
+
+**Answer:** It returns the current line number of the file.
+
+---
+
+# Question: What will the output be for this code?
+
+```php
+$x = "Hello World";
+echo "$x. The current Line number is " . __LINE__ . ".";
+```
+
+**Answer:** `Hello World. The current Line number is 5.`
+
+---
+
+# Question: What does the `__FILE__` magic constant return?
+
+**Answer:** It returns the full path and filename of the file.
+
+---
+
+# Question: What does `__FILE__` return when used inside an included file?
+
+**Answer:** It returns the name of the included file.
+
+---
+
+# Question: What is the output of this code?
+
+```php
+$x="Hello World";
+echo "$x. Current PHP script name is " . __FILE__ . ".";
+```
+
+**Answer:** `Hello World. Current PHP script name is C:\xampp\htdocs\hello.php.`
+
+---
+
+# Question: What does the `__DIR__` magic constant return?
+
+**Answer:** It returns the directory of the file.
+
+---
+
+# Question: What is `__DIR__` equivalent to in PHP?
+
+**Answer:** It is equivalent to `dirname(__FILE__)`.
+
+---
+
+# Question: Does the directory name returned by `__DIR__` have a trailing slash?
+
+**Answer:** No, unless it is the root directory.
+
+---
+
+# Question: What is the output of this code using `__DIR__`?
+
+```php
+$x = "Hello World";
+echo "$x. Directory of the Current PHP script name is " . __DIR__ . ".";
+```
+
+**Answer:** `Hello World. Directory of the Current PHP script name is C:\xampp\htdocs.`
+
+---
+
+# Question: What does the `__FUNCTION__` magic constant return?
+
+**Answer:** It returns the name of the function in which it is used, or `{closure}` for anonymous functions.
+
+---
+
+# Question: What does `__FUNCTION__` return when used outside a function?
+
+**Answer:** It returns a blank output.
+
+---
+
+# Question: What is the output of this code?
+
+```php
+function hello() {
+   $x = "Hello World";
+   echo "$x. The function name is " . __FUNCTION__;
+}
+hello();
+```
+
+**Answer:** `Hello World. The function name is hello`
+
+---
+
+# Question: What does the `__CLASS__` magic constant return?
+
+**Answer:** It returns the name of the class, including the namespace in which it was declared.
+
+---
+
+# Question: What is the output of this code using `__CLASS__` in both constructor and method?
+
+```php
+class myclass {
+   public function __construct() {
+      echo "Inside the constructor of " . __CLASS__ . PHP_EOL;
+   }
+   function getClassName() {
+      echo "from an instance method of " . __CLASS__;
+   }
+}
+$obj = new myclass;
+$obj->getClassName();
+```
+
+**Answer:**
+
+```
+Inside the constructor of myclass  
+from an instance method of myclass
+```
+
+---
+
+# Question: What does the `__METHOD__` magic constant return?
+
+**Answer:** It returns the name of the class method including the class name.
+
+---
+
+# Question: What is the output of this code?
+
+```php
+class myclass {
+   public function __construct() {
+      echo "Calling " . __METHOD__ . " of " . __CLASS__ . "<br>";
+   }
+   function mymethod() {
+      echo "Calling " . __METHOD__ . " of " . __CLASS__;
+   }
+}
+$obj = new myclass;
+$obj->mymethod();
+```
+
+**Answer:**
+
+```
+Calling myclass::__construct of myclass  
+Calling myclass::mymethod of myclass
+```
+
+---
+
+# Question: What does the `__TRAIT__` magic constant return?
+
+**Answer:** It returns the name of the trait, including the namespace it was declared in.
+
+---
+
+# Question: What is a trait in PHP?
+
+**Answer:** A trait is a mechanism for code reuse, similar to a class, used to group functionality in a fine-grained way but cannot be instantiated.
+
+---
+
+# Question: What is the output of this code using a trait and `__TRAIT__`?
+
+```php
+trait mytrait {
+   public function hello() {
+      echo "Hello World from " . __TRAIT__;
+   }
+}
+class myclass {
+   use mytrait;
+}
+$obj = new myclass();
+$obj->hello();
+```
+
+**Answer:** `Hello World from mytrait`
+
+---
+
+# Question: What does the `__NAMESPACE__` magic constant return?
+
+**Answer:** It returns the name of the current namespace.
+
+---
+
+# Question: What is a namespace in PHP?
+
+**Answer:** A namespace is a logical grouping of classes, functions, or constants that helps avoid naming conflicts and organizes code.
+
+---
+
+# Question: What is the output of this code using `__NAMESPACE__`?
+
+```php
+namespace myspace;
+class myclass {
+   public function __construct() {
+      echo "Name of the class: " . __CLASS__ . " in " . __NAMESPACE__;
+   }
+}
+$class_name = __NAMESPACE__ . '\myclass';
+$a = new $class_name;
+```
+
+**Answer:** `Name of the class: myspace\myclass in myspace`
+
+---
+
+# Question: What does `ClassName::class` return in PHP?
+
+**Answer:** It returns the fully qualified class name as a string.
+
+---
+
+# Question: How does `ClassName::class` differ from other magic constants?
+
+**Answer:** It does not start and end with double underscores.
+
+---
+
+# Question: What is the output of this code using `ClassName::class`?
+
+```php
+namespace myspace;
+class myclass {
+   public function __construct() {
+      echo "Name of the class: " . myclass::class;
+   }
+}
+use myspace;
+$a = new myclass;
+```
+
+**Answer:** `Name of the class: myspace\myclass`
+
+---
+
+
 
 
 
