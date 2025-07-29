@@ -2001,5 +2001,200 @@ print statement in PHP
 
 ---
 
+# Question: What is the purpose of the `var_dump()` function in PHP?
+
+**Answer:** It displays structured information, such as type and value, about one or more expressions.
+
+---
+
+# Question: What types of variable properties are shown by `var_dump()` when used on objects?
+
+**Answer:** It shows public, private, and protected properties.
+
+---
+
+# Question: How does `var_dump()` display arrays and objects?
+
+**Answer:** It uses proper indentation to reveal their recursive structure.
+
+---
+
+# Question: What additional method does `var_dump()` use if defined in an object?
+
+**Answer:** The `__debugInfo()` method.
+
+---
+
+# Question: Can `var_dump()` be used on multiple variables at once?
+
+**Answer:** Yes, it accepts multiple variables as arguments.
+
+---
+
+# Question: Does `var_dump()` return a value?
+
+**Answer:** No, it does not return anything; it prints information directly to the screen.
+
+---
+
+# Question: How can the output of `var_dump()` be captured or stored instead of being printed directly?
+
+**Answer:** By using output-control functions.
+
+---
+
+# Question: What is the syntax of the `var_dump()` function?
+
+**Answer:** `void var_dump ( mixed $value, mixed ...$values )`
+
+---
+
+# Question: What does the `$value` parameter in `var_dump()` represent?
+
+**Answer:** It is the main variable you want to check.
+
+---
+
+# Question: What does the `$values` parameter in `var_dump()` represent?
+
+**Answer:** Additional optional variables you want to check.
+
+---
+
+# Question: In which PHP version was `var_dump()` introduced?
+
+**Answer:** PHP 4.
+
+---
+
+# Question: Is `var_dump()` available in PHP 5, PHP 7, and PHP 8?
+
+**Answer:** Yes, it continues to work in PHP 5, PHP 7, and PHP 8.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$x = 10;
+var_dump($x);
+```
+
+**Answer:** `int(10)`
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$x = 10.25;
+var_dump($x);
+```
+
+**Answer:** `float(10.25)`
+
+---
+
+# Question: What HTML tag is used to preserve formatting of the `var_dump()` output?
+
+**Answer:** The `<pre>` tag.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+echo "</pre>";
+$x = "Hello World"; 
+var_dump ($x);  
+echo "</pre>";
+```
+
+**Answer:** `string(11) "Hello World"`
+
+---
+
+# Question: What does `var_dump()` display for a nested array like this?
+
+```php
+$x = array("Hello", false, 99.99, array(10, 20, 30));
+var_dump($x);
+```
+
+**Answer:** A full dump of the outer array with its values and a recursively indented dump of the inner array.
+
+---
+
+# Question: What is the structure of the `var_dump()` output for an indexed array with nested arrays?
+
+**Answer:** It shows the outer array with numeric indices and values, including a nested array with its own indices and values.
+
+---
+
+# Question: What is the output structure for this code with an associative array?
+
+```php
+$x = array("Hello", false, 99.99, array(1=>10, 2=>20,3=>30));
+var_dump($x);
+```
+
+**Answer:** A dump showing the outer array's values and the nested associative array with its key-value pairs.
+
+---
+
+# Question: Is it necessary to use the `</pre>` tag when dumping array values using `var_dump()`?
+
+**Answer:** No, it is not necessary.
+
+---
+
+# Question: What does `var_dump()` display when applied to an object?
+
+**Answer:** The object's class name, a unique object identifier, and its properties with visibility and values.
+
+---
+
+# Question: What is the output of this code involving a class?
+
+```php
+class Point {
+   private int $x;
+   private int $y;
+
+   public function __construct(int $x, int $y = 0) {
+      $this->x = $x;
+      $this->y = $y;
+   }
+}
+
+$p = new Point(4, 5);
+var_dump($p);
+```
+
+**Answer:**
+
+```
+object(Point)#1 (2) {
+  ["x":"Point":private]=>
+  int(4)
+  ["y":"Point":private]=>
+  int(5)
+}
+```
+
+---
+
+# Question: What is the purpose of the `get_defined_vars()` function in PHP?
+
+**Answer:** It returns all currently defined variables as an array.
+
+---
+
+# Question: What is the output of `var_dump(get_defined_vars());`?
+
+**Answer:** A full dump of all defined variables in the current script context.
+
+---
+
 
 
