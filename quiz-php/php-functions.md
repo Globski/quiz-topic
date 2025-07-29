@@ -1459,3 +1459,60 @@ The **MySQLi (MySQL Improved)** extension allows access to MySQL database server
 
 ---
 
+# Question: What are the commonly used PHP network functions?
+
+## 🌐 PHP Network Introduction
+
+The **PHP Network functions** provide tools for:
+
+* Working with sockets and DNS
+* Sending and controlling HTTP headers
+* System logging
+* Retrieving host and protocol information
+
+✅ **Installation**:
+These functions are part of the PHP core — no installation required.
+
+---
+
+## 🛠️ PHP Network Functions
+
+| Function                     | Description                                                |
+| ---------------------------- | ---------------------------------------------------------- |
+| `checkdnsrr()`               | Checks DNS records for a given host and record type        |
+| `closelog()`                 | Closes the connection to the system logger                 |
+| `define_syslog_variables()`  | **Deprecated** since PHP 5.3, **removed** in PHP 5.4       |
+| `dns_check_record()`         | Alias of `checkdnsrr()`                                    |
+| `dns_get_mx()`               | Alias of `getmxrr()`                                       |
+| `dns_get_record()`           | Gets DNS resource records for a hostname                   |
+| `fsockopen()`                | Opens an Internet or Unix domain socket connection         |
+| `gethostbyaddr()`            | Gets domain name for a given IP address                    |
+| `gethostbyname()`            | Gets IPv4 address for a given domain name                  |
+| `gethostbynamel()`           | Returns list of IPv4 addresses for a domain                |
+| `gethostname()`              | Gets the host name of the local machine                    |
+| `getmxrr()`                  | Gets MX records for a specified internet host name         |
+| `getprotobyname()`           | Returns protocol number for given protocol name            |
+| `getprotobynumber()`         | Returns protocol name for a given number                   |
+| `getservbyname()`            | Gets port number for a given Internet service and protocol |
+| `getservbyport()`            | Gets service name for a given port and protocol            |
+| `header()`                   | Sends a raw HTTP header                                    |
+| `header_register_callback()` | Registers a callback to run when headers are sent          |
+| `header_remove()`            | Removes an HTTP header that was previously set             |
+| `headers_list()`             | Lists headers to be sent to the browser                    |
+| `headers_sent()`             | Checks whether headers have already been sent and where    |
+| `http_response_code()`       | Gets or sets the HTTP response status code                 |
+| `inet_ntop()`                | Converts binary IP address to human-readable format        |
+| `inet_pton()`                | Converts human-readable IP to binary format                |
+| `ip2long()`                  | Converts IPv4 address to a long integer                    |
+| `long2ip()`                  | Converts a long integer to an IPv4 address string          |
+| `openlog()`                  | Opens a connection to the system logger                    |
+| `pfsockopen()`               | Opens a **persistent** socket connection                   |
+| `setcookie()`                | Sends a cookie to the client                               |
+| `setrawcookie()`             | Sends a cookie without URL encoding                        |
+| `socket_get_status()`        | Alias of `stream_get_meta_data()`                          |
+| `socket_set_blocking()`      | Alias of `stream_set_blocking()`                           |
+| `socket_set_timeout()`       | Alias of `stream_set_timeout()`                            |
+| `syslog()`                   | Generates a system log message                             |
+
+---
+
