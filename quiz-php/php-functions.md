@@ -1240,6 +1240,75 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format. PHP 
 
 ---
 
+# Question: What are the commonly used PHP miscellaneous functions, configuration options, and constants?
 
+## 🔧 PHP Miscellaneous Introduction
+
+The **miscellaneous functions** in PHP are functions that don’t belong to other specific categories. They are available in the PHP core — no installation is required.
+
+---
+
+## ⚙️ Runtime Configuration
+
+These `php.ini` settings affect the behavior of miscellaneous functions.
+
+### Miscellaneous `php.ini` Configuration Options
+
+| Name                | Description                                                         | Default     | Changeable       |
+| ------------------- | ------------------------------------------------------------------- | ----------- | ---------------- |
+| `ignore_user_abort` | `FALSE` means script terminates if the client connection is aborted | `"0"`       | `PHP_INI_ALL`    |
+| `highlight.string`  | Color used to highlight PHP strings                                 | `"#DD0000"` | `PHP_INI_ALL`    |
+| `highlight.comment` | Color used to highlight PHP comments                                | `"#FF8000"` | `PHP_INI_ALL`    |
+| `highlight.keyword` | Color for highlighting PHP keywords (e.g., parentheses, semicolon)  | `"#007700"` | `PHP_INI_ALL`    |
+| `highlight.default` | Default syntax color                                                | `"#0000BB"` | `PHP_INI_ALL`    |
+| `highlight.html`    | Color for highlighting HTML code                                    | `"#000000"` | `PHP_INI_ALL`    |
+| `browscap`          | Path to the browser capabilities file (e.g., `browscap.ini`)        | `NULL`      | `PHP_INI_SYSTEM` |
+
+---
+
+## 🛠️ PHP Miscellaneous Functions
+
+| Function                 | Description                                               |
+| ------------------------ | --------------------------------------------------------- |
+| `connection_aborted()`   | Checks if the client has disconnected                     |
+| `connection_status()`    | Returns the current connection status                     |
+| `connection_timeout()`   | **Deprecated**. Checks if the script has timed out        |
+| `constant()`             | Returns the value of a constant                           |
+| `define()`               | Defines a constant                                        |
+| `defined()`              | Checks if a constant is defined                           |
+| `die()`                  | Alias of `exit()`                                         |
+| `eval()`                 | Evaluates a string as PHP code                            |
+| `exit()`                 | Exits the script and optionally prints a message          |
+| `get_browser()`          | Returns user browser capabilities based on `browscap.ini` |
+| `__halt_compiler()`      | Halts compiler execution                                  |
+| `highlight_file()`       | Outputs a file with PHP syntax highlighting               |
+| `highlight_string()`     | Outputs a string with PHP syntax highlighting             |
+| `hrtime()`               | Returns high-resolution system time                       |
+| `ignore_user_abort()`    | Allows script to continue if user aborts connection       |
+| `pack()`                 | Packs data into a binary string                           |
+| `php_strip_whitespace()` | Returns PHP source with comments and whitespace removed   |
+| `show_source()`          | Alias of `highlight_file()`                               |
+| `sleep()`                | Delays execution for specified seconds                    |
+| `sys_getloadavg()`       | Gets system load average                                  |
+| `time_nanosleep()`       | Delays execution for seconds and nanoseconds              |
+| `time_sleep_until()`     | Pauses execution until the specified timestamp            |
+| `uniqid()`               | Generates a unique identifier                             |
+| `unpack()`               | Unpacks data from a binary string                         |
+| `usleep()`               | Delays execution for specified microseconds               |
+
+---
+
+## 📌 PHP Predefined Miscellaneous Constants
+
+| Constant                   | Description                                  |
+| -------------------------- | -------------------------------------------- |
+| `CONNECTION_ABORTED`       | Indicates the connection was aborted         |
+| `CONNECTION_NORMAL`        | Indicates a normal connection                |
+| `CONNECTION_TIMEOUT`       | Indicates a connection timeout               |
+| `__COMPILER_HALT_OFFSET__` | Used with `__halt_compiler()` to mark offset |
+
+---
+
+Would you like this in another format (PDF, HTML, CSV, etc.), or want it bundled with the previous PHP keywords markdown?
 
 
