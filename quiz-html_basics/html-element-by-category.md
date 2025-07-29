@@ -1042,9 +1042,6 @@ HTML supports 140 standard color names. Each of these maps to a specific hexadec
 
 ---
 
-
-
-
 # Question: Which HTML elements are valid in HTML5, HTML4, and XHTML?
 
 ## Document Type Declaration
@@ -1192,6 +1189,128 @@ HTML supports 140 standard color names. Each of these maps to a specific hexadec
 | `<wbr>`        |  Yes  |   No  |   No  |
 
 ---
+
+# Question: What is URL encoding and how are different characters represented in it?
+
+## What is a URL?
+
+* A **URL (Uniform Resource Locator)** is the address used by browsers to locate and access resources on a web server.
+* Example: `https://www.w3schools.com`
+
+---
+
+## What is URL Encoding (Percent Encoding)?
+
+* URL encoding converts characters into a format that can be transmitted over the Internet using the ASCII character set.
+* Unsafe ASCII characters are replaced with a **percent sign (%)** followed by **two hexadecimal digits**.
+* **Spaces** are typically encoded as either `+` or `%20`.
+
+---
+
+## Common Uses of URL Encoding
+
+* When submitting form data via a browser.
+* When passing special characters in query strings or RESTful APIs.
+* Ensures compatibility and security when sending text across the web.
+
+---
+
+## URL Encoding Functions
+
+| Language   | Function               | Notes                                     |
+| ---------- | ---------------------- | ----------------------------------------- |
+| JavaScript | `encodeURIComponent()` | Encodes spaces as `%20`                   |
+| PHP        | `rawurlencode()`       | Also encodes spaces as `%20`              |
+| ASP        | `Server.URLEncode()`   | Encodes input string for URL transmission |
+
+---
+
+## Example: Encoding Form Data
+
+When submitting the form:
+
+```
+<form action="demo_form.php" method="GET">
+  <input type="text" name="name" value="John Doe">
+</form>
+```
+
+The browser will encode `John Doe` as:
+
+```
+?name=John%20Doe
+```
+
+---
+
+## URL Encoding Table (Common Characters)
+
+| Character | Encoding     |
+| --------- | ------------ |
+| (space)   | `%20` or `+` |
+| `!`       | `%21`        |
+| `"`       | `%22`        |
+| `#`       | `%23`        |
+| `$`       | `%24`        |
+| `%`       | `%25`        |
+| `&`       | `%26`        |
+| `'`       | `%27`        |
+| `(`       | `%28`        |
+| `)`       | `%29`        |
+| `*`       | `%2A`        |
+| `+`       | `%2B`        |
+| `,`       | `%2C`        |
+| `-`       | `%2D`        |
+| `.`       | `%2E`        |
+| `/`       | `%2F`        |
+| `:`       | `%3A`        |
+| `;`       | `%3B`        |
+| `<`       | `%3C`        |
+| `=`       | `%3D`        |
+| `>`       | `%3E`        |
+| `?`       | `%3F`        |
+| `@`       | `%40`        |
+
+---
+
+## Character Encoding: UTF-8 vs Windows-1252
+
+Most modern web pages use **UTF-8** as the default character set.
+Browsers will encode characters differently depending on this setting.
+
+| Character | Windows-1252 | UTF-8       |
+| --------- | ------------ | ----------- |
+| `€`       | `%80`        | `%E2%82%AC` |
+| `©`       | `%A9`        | `%C2%A9`    |
+| `™`       | `%99`        | `%E2%84`    |
+| `—`       | `%97`        | `%E2%80%94` |
+
+---
+
+## URL Encoding of ASCII Control Characters
+
+Control characters (non-printable ASCII chars `%00` to `%1F`) were originally used to control hardware.
+They are **not valid** in URLs but can be percent encoded.
+
+| ASCII | Description     | URL-encoding |
+| ----- | --------------- | ------------ |
+| `NUL` | null character  | `%00`        |
+| `SOH` | start of header | `%01`        |
+| `LF`  | line feed       | `%0A`        |
+| `CR`  | carriage return | `%0D`        |
+| `ESC` | escape          | `%1B`        |
+| `US`  | unit separator  | `%1F`        |
+
+---
+
+## Additional Notes
+
+* Avoid using **control characters** in URLs.
+* Always encode user input in URLs to avoid injection attacks or malformed requests.
+* Encoding is crucial in **query strings**, **REST APIs**, **JavaScript redirection**, etc.
+
+---
+
 
 # Question: What are the ISO Language Codes for HTML `lang` attribute and why are they used?
 
