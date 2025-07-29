@@ -480,7 +480,7 @@ These settings control how PHP interacts with files, streams, and remote resourc
 
 ---
 
-##  PHP Filesystem Functions Cheat Sheet
+#  PHP Filesystem Functions Cheat Sheet
 
 ---
 
@@ -625,6 +625,69 @@ These settings control how PHP interacts with files, streams, and remote resourc
 * Functions like `delete()` are just aliases or old references for `unlink()`.
 * `fgetss()` was deprecated in PHP 7.3 and removed in PHP 8. Use `strip_tags()` separately if needed.
 * Some functions behave differently across platforms (e.g., symlink support on Windows).
+
+
+---
+
+## PHP Filter Runtime Configuration (`php.ini`)
+
+These settings influence how PHP filters input data from **`$_GET`, `$_POST`, `$_COOKIE`, `$_REQUEST`,** and **`$_SERVER`** superglobals.
+
+| **Directive**          | **Default Value** | **Description**                                                                                                            | **Changeable**   |
+| ---------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| `filter.default`       | `"unsafe_raw"`    | Sets a **default filter** for superglobal input (`$_GET`, `$_POST`, etc.).<br>Use filter name like `string`, `email`, etc. | `PHP_INI_PERDIR` |
+| `filter.default_flags` | `NULL`            | Applies **flags** to the default filter.<br>For example: `FILTER_FLAG_NO_ENCODE_QUOTES`                                    | `PHP_INI_PERDIR` |
+
+---
+
+### Details
+
+#### `filter.default`
+
+* Filters **all input data** automatically.
+* The default `unsafe_raw` means: **no filtering is applied**.
+* Example values:
+
+  * `string`
+  * `email`
+  * `int`
+  * `unsafe_raw`
+* Example `php.ini` usage:
+
+  ```ini
+  filter.default = string
+  ```
+
+#### `filter.default_flags`
+
+* Works **only** when `filter.default` is set.
+* Common flags:
+
+  * `FILTER_FLAG_STRIP_LOW`
+  * `FILTER_FLAG_STRIP_HIGH`
+  * `FILTER_FLAG_NO_ENCODE_QUOTES`
+* Example:
+
+  ```ini
+  filter.default_flags = FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH
+  ```
+
+---
+
+### Configuration Level
+
+| Level            | Description                                                                                     |
+| ---------------- | ----------------------------------------------------------------------------------------------- |
+| `PHP_INI_PERDIR` | Can be set in `php.ini`, `.htaccess`, or `httpd.conf`, but **not** at runtime using `ini_set()` |
+
+---
+
+### Security Tip
+
+Unless you **know exactly what you're doing**, it's better to:
+
+* **Manually filter input** using `filter_input()`, `filter_var()`, or proper validation libraries.
+* Avoid setting `filter.default` globally, as it can lead to **confusing bugs** or **over-filtered input**.
 
 ---
 
