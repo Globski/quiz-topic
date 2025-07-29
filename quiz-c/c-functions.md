@@ -209,3 +209,74 @@
 | `exit()` | Terminates the program with a specified exit status |
 
 ---
+
+# Question: What are the functions in `<string.h>` and what do they do?
+
+## C String Library (`<string.h>`) Functions by Category
+
+---
+
+### 🧠 Memory Manipulation Functions
+
+| Function    | Description                                               |
+| ----------- | --------------------------------------------------------- |
+| `memchr()`  | Finds the first occurrence of a byte in a block of memory |
+| `memcmp()`  | Compares two blocks of memory                             |
+| `memcpy()`  | Copies data from one memory location to another           |
+| `memmove()` | Like `memcpy()` but safe for overlapping memory areas     |
+| `memset()`  | Fills memory with a constant byte                         |
+
+---
+
+### 🔤 String Copying and Concatenation
+
+| Function    | Description                                                          |
+| ----------- | -------------------------------------------------------------------- |
+| `strcpy()`  | Copies one string into another                                       |
+| `strncpy()` | Copies a specified number of characters from one string into another |
+| `strcat()`  | Appends one string to another                                        |
+| `strncat()` | Appends a specified number of characters from one string to another  |
+
+---
+
+### 🧪 String Comparison
+
+| Function    | Description                                  |
+| ----------- | -------------------------------------------- |
+| `strcmp()`  | Compares two strings by ASCII value          |
+| `strncmp()` | Compares up to `n` characters of two strings |
+| `strcoll()` | Compares strings using the current locale    |
+
+---
+
+### 🔍 String Searching
+
+| Function    | Description                                                      |
+| ----------- | ---------------------------------------------------------------- |
+| `strchr()`  | Finds the first occurrence of a character in a string            |
+| `strrchr()` | Finds the last occurrence of a character in a string             |
+| `strstr()`  | Finds the first occurrence of a substring                        |
+| `strpbrk()` | Finds the first matching character from a set                    |
+| `strcspn()` | Returns length before any character from a set is found          |
+| `strspn()`  | Returns length of prefix consisting only of specified characters |
+
+---
+
+### 🧩 String Tokenization and Transformation
+
+| Function    | Description                                     |
+| ----------- | ----------------------------------------------- |
+| `strtok()`  | Tokenizes (splits) a string using delimiters    |
+| `strxfrm()` | Transforms a string for locale-based comparison |
+
+---
+
+### 🧮 String Length and Errors
+
+| Function     | Description                              |
+| ------------ | ---------------------------------------- |
+| `strlen()`   | Returns the length of a string           |
+| `strerror()` | Returns the description of an error code |
+
+---
+
