@@ -158,6 +158,133 @@
 
 ---
 
+# Question: What are PHP String Functions and how are they used?
+
+---
+
+## 📖 PHP String Functions Overview
+
+PHP provides a rich set of **string manipulation functions** that allow you to:
+
+* Create and format strings
+* Search and replace substrings
+* Parse strings and convert between formats
+* Handle character encoding
+* Calculate similarity and hash values
+
+---
+
+## ⚙️ Installation
+
+PHP string functions are **part of the PHP core**.
+**No installation is required** to use them.
+
+---
+
+## 🔤 PHP String Functions
+
+| Function                       | Description                                                       |
+| ------------------------------ | ----------------------------------------------------------------- |
+| `addcslashes()`                | Adds backslashes in front of specified characters                 |
+| `addslashes()`                 | Adds backslashes before predefined characters                     |
+| `bin2hex()`                    | Converts ASCII to hexadecimal                                     |
+| `chop()`                       | Removes whitespace (or other characters) from the end of a string |
+| `chr()`                        | Returns a character from a given ASCII value                      |
+| `chunk_split()`                | Splits a string into smaller parts                                |
+| `convert_cyr_string()`         | Converts a string between Cyrillic encodings                      |
+| `convert_uudecode()`           | Decodes a uuencoded string                                        |
+| `convert_uuencode()`           | Encodes a string using uuencode                                   |
+| `count_chars()`                | Returns info about characters used in a string                    |
+| `crc32()`                      | Calculates CRC32 polynomial hash                                  |
+| `crypt()`                      | Performs one-way string hashing                                   |
+| `echo()`                       | Outputs one or more strings                                       |
+| `explode()`                    | Splits a string into an array using a delimiter                   |
+| `fprintf()`                    | Writes a formatted string to an output stream                     |
+| `get_html_translation_table()` | Gets the table used by `htmlentities()` / `htmlspecialchars()`    |
+| `hebrev()`                     | Converts Hebrew text to visual text                               |
+| `hebrevc()`                    | Converts Hebrew text and newlines to `<br>`                       |
+| `hex2bin()`                    | Converts hex to ASCII                                             |
+| `html_entity_decode()`         | Converts HTML entities to characters                              |
+| `htmlentities()`               | Converts characters to HTML entities                              |
+| `htmlspecialchars_decode()`    | Converts special HTML entities to characters                      |
+| `htmlspecialchars()`           | Converts special characters to HTML entities                      |
+| `implode()` / `join()`         | Joins array elements into a string                                |
+| `lcfirst()`                    | Converts first character to lowercase                             |
+| `levenshtein()`                | Calculates Levenshtein distance (edit distance)                   |
+| `localeconv()`                 | Gets locale formatting info                                       |
+| `ltrim()`                      | Trims whitespace from the beginning of a string                   |
+| `md5()`                        | Returns MD5 hash of a string                                      |
+| `md5_file()`                   | Returns MD5 hash of a file                                        |
+| `metaphone()`                  | Calculates the metaphone key of a string                          |
+| `money_format()`               | Formats a string as currency (deprecated)                         |
+| `nl_langinfo()`                | Gets language and locale info                                     |
+| `nl2br()`                      | Converts newlines to `<br>`                                       |
+| `number_format()`              | Formats a number with grouped thousands                           |
+| `ord()`                        | Gets ASCII value of the first character                           |
+| `parse_str()`                  | Parses query strings into variables                               |
+| `print()`                      | Outputs strings                                                   |
+| `printf()`                     | Outputs a formatted string                                        |
+| `quoted_printable_decode()`    | Decodes a quoted-printable string                                 |
+| `quoted_printable_encode()`    | Encodes an 8-bit string to quoted-printable                       |
+| `quotemeta()`                  | Escapes meta characters                                           |
+| `rtrim()`                      | Trims whitespace from the end of a string                         |
+| `setlocale()`                  | Sets locale info                                                  |
+| `sha1()`                       | Returns SHA-1 hash of a string                                    |
+| `sha1_file()`                  | Returns SHA-1 hash of a file                                      |
+| `similar_text()`               | Calculates similarity percentage                                  |
+| `soundex()`                    | Returns the soundex key of a string                               |
+| `sprintf()`                    | Returns a formatted string                                        |
+| `sscanf()`                     | Parses a string according to a format                             |
+| `str_getcsv()`                 | Parses CSV string into array                                      |
+| `str_ireplace()`               | Case-insensitive string replacement                               |
+| `str_pad()`                    | Pads a string to a certain length                                 |
+| `str_repeat()`                 | Repeats a string multiple times                                   |
+| `str_replace()`                | Replaces part of a string (case-sensitive)                        |
+| `str_rot13()`                  | Applies ROT13 transformation                                      |
+| `str_shuffle()`                | Randomly shuffles characters in a string                          |
+| `str_split()`                  | Splits a string into an array of characters                       |
+| `str_word_count()`             | Counts words in a string                                          |
+| `strcasecmp()`                 | Binary-safe, case-insensitive string comparison                   |
+| `strchr()` / `strstr()`        | Finds first occurrence of a substring (case-sensitive)            |
+| `strcmp()`                     | Binary-safe, case-sensitive string comparison                     |
+| `strcoll()`                    | Locale-based string comparison                                    |
+| `strcspn()`                    | Returns length of segment not containing any given characters     |
+| `strip_tags()`                 | Strips HTML and PHP tags                                          |
+| `stripcslashes()`              | Unquotes a string quoted with `addcslashes()`                     |
+| `stripslashes()`               | Unquotes a string quoted with `addslashes()`                      |
+| `stripos()`                    | Finds position of substring (case-insensitive)                    |
+| `stristr()`                    | Finds first occurrence (case-insensitive)                         |
+| `strlen()`                     | Gets length of a string                                           |
+| `strnatcasecmp()`              | Natural order comparison (case-insensitive)                       |
+| `strnatcmp()`                  | Natural order comparison (case-sensitive)                         |
+| `strncasecmp()`                | Compares first n chars (case-insensitive)                         |
+| `strncmp()`                    | Compares first n chars (case-sensitive)                           |
+| `strpbrk()`                    | Searches string for any of a set of characters                    |
+| `strpos()`                     | Finds position of first occurrence (case-sensitive)               |
+| `strrchr()`                    | Finds last occurrence of a character in a string                  |
+| `strrev()`                     | Reverses a string                                                 |
+| `strripos()`                   | Finds last occurrence (case-insensitive)                          |
+| `strrpos()`                    | Finds last occurrence (case-sensitive)                            |
+| `strspn()`                     | Returns span of chars from allowed list                           |
+| `strtok()`                     | Tokenizes a string                                                |
+| `strtolower()`                 | Converts string to lowercase                                      |
+| `strtoupper()`                 | Converts string to uppercase                                      |
+| `strtr()`                      | Translates characters in a string                                 |
+| `substr()`                     | Returns substring                                                 |
+| `substr_compare()`             | Compares two strings from specific start                          |
+| `substr_count()`               | Counts number of times a substring occurs                         |
+| `substr_replace()`             | Replaces part of a string                                         |
+| `trim()`                       | Trims whitespace from both ends of a string                       |
+| `ucfirst()`                    | Uppercases first character of a string                            |
+| `ucwords()`                    | Uppercases first letter of each word                              |
+| `vfprintf()`                   | Writes formatted string to a stream                               |
+| `vprintf()`                    | Outputs formatted string                                          |
+| `vsprintf()`                   | Returns formatted string                                          |
+| `wordwrap()`                   | Wraps a string to a specified number of characters                |
+
+---
+
+
 # Question: List all PHP calendar functions and their descriptions.
 
 ### PHP Calendar Functions
