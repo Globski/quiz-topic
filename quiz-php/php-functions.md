@@ -213,4 +213,20 @@
 | `CAL_JEWISH_ADD_ALAFIM`        | Integer | PHP 5.0     |
 | `CAL_JEWISH_ADD_GERESHAYIM`    | Integer | PHP 5.0     |
 
+
 ---
+
+# Question: What are the runtime configuration settings that affect PHP date/time functions?
+
+### PHP Date/Time Configuration Directives
+
+| Name                     | Description                                                    | Default     | PHP Version |
+| ------------------------ | -------------------------------------------------------------- | ----------- | ----------- |
+| `date.timezone`          | The default timezone used by all date/time functions           | `""`        | PHP 5.1     |
+| `date.default_latitude`  | The default latitude for `date_sunrise()` and `date_sunset()`  | `"31.7667"` | PHP 5.0     |
+| `date.default_longitude` | The default longitude for `date_sunrise()` and `date_sunset()` | `"35.2333"` | PHP 5.0     |
+| `date.sunrise_zenith`    | The default zenith angle for sunrise, used by `date_sunrise()` | `"90.83"`   | PHP 5.0     |
+| `date.sunset_zenith`     | The default zenith angle for sunset, used by `date_sunset()`   | `"90.83"`   | PHP 5.0     |
+
+---
+
