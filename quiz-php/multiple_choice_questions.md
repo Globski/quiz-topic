@@ -3524,6 +3524,214 @@ array
 
 ---
 
+# Question: What is type juggling in PHP?
+
+**Answer:** Type juggling is PHP’s automatic type conversion, where a variable’s type changes based on the value assigned to it at runtime.
+
+---
+
+# Question: How does PHP differ from languages like C, C++, and Java regarding variable types?
+
+**Answer:** Unlike C, C++, and Java, which require explicit type declarations, PHP automatically determines a variable’s type based on its assigned value.
+
+---
+
+# Question: Does PHP support explicit type declaration for variables?
+
+**Answer:** No, PHP does not support explicit type declarations; the type is decided by the value assigned to the variable.
+
+---
+
+# Question: What function is used to get the type of a variable in PHP?
+
+**Answer:** `gettype()` is used to retrieve the type of a variable.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$var = "Hello";
+echo gettype($var);
+$var = 10;
+echo gettype($var);
+$var = true;
+echo gettype($var);
+$var = [1, 2, 3, 4];
+echo gettype($var);
+```
+
+**Answer:** string, integer, boolean, array (in order of execution).
+
+---
+
+# Question: How does PHP treat a string containing only digits in arithmetic operations?
+
+**Answer:** PHP automatically converts the string to an integer for the purpose of arithmetic operations.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$var1 = 100;
+$var2 = "100";
+$var3 = $var1 + $var2;
+var_dump($var3);
+```
+
+**Answer:** `int(200)`, because PHP converts the string "100" to integer and adds them.
+
+---
+
+# Question: How does PHP handle a string with digits followed by non-numeric characters in an arithmetic expression?
+
+**Answer:** PHP parses the leading digits, ignores the non-numeric trailing characters, performs the calculation, and issues a warning.
+
+---
+
+# Question: What warning is issued when using a partially numeric string in arithmetic?
+
+**Answer:** `PHP Warning: A non-numeric value encountered`
+
+---
+
+# Question: What is the output of this code, and what else happens?
+
+```php
+$var1 = 100;
+$var2 = "100 days";
+$var3 = $var1 + $var2;
+var_dump($var3);
+```
+
+**Answer:** Output is `int(200)` and a warning is issued: "A non-numeric value encountered".
+
+---
+
+# Question: What is the difference between type juggling and type casting in PHP?
+
+**Answer:** Type juggling is automatic type conversion done by PHP, while type casting is an explicit type conversion done by the programmer.
+
+---
+
+# Question: How do you cast a variable to a boolean in PHP?
+
+**Answer:** By using `(boolean)$variable`.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$var1 = 100;
+$var2 = (boolean)$var1;
+var_dump($var2);
+```
+
+**Answer:** `bool(true)`, because any non-zero value is considered true.
+
+---
+
+# Question: What is the output of this code?
+
+```php
+$var1 = 100;
+$var2 = (string)$var1;
+var_dump($var2);
+```
+
+**Answer:** `string(3) "100"`
+
+---
+
+# Question: How is an integer cast to an array in PHP?
+
+**Answer:** By using `(array)$variable`, which wraps the value in an array with key 0.
+
+---
+
+# Question: What is the output of casting an integer to an array?
+
+```php
+$var1 = 100;
+$var2 = (array)$var1;
+var_dump($var2);
+```
+
+**Answer:** `array(1) { [0] => int(100) }`
+
+---
+
+# Question: What happens when you cast an integer to an object in PHP?
+
+**Answer:** PHP creates an object of class `stdClass` with a property `scalar` holding the integer value.
+
+---
+
+# Question: What is the output of this object cast?
+
+```php
+$var1 = 100;
+$var2 = (object)$var1;
+var_dump($var2);
+```
+
+**Answer:** `object(stdClass)#1 (1) { ["scalar"]=> int(100) }`
+
+---
+
+# Question: How can you convert a variable to a string using string interpolation?
+
+**Answer:** By enclosing the variable in double quotes, e.g., `"$var"`.
+
+---
+
+# Question: What is the output of this code?
+
+```php
+$var1 = 100.50;
+$var2 = (string)$var1;
+$var3 = "$var1";
+var_dump($var2, $var3);
+```
+
+**Answer:** Both `$var2` and `$var3` will output `string(5) "100.5"`
+
+---
+
+# Question: What is PHP Type Juggling vulnerability?
+
+**Answer:** It’s a security issue where PHP’s automatic type conversion during comparisons allows different values to be considered equal, potentially enabling unauthorized access.
+
+---
+
+# Question: Why does `"123abc" == 123` return true in PHP?
+
+**Answer:** Because PHP converts the string to the number `123`, ignoring the non-numeric part, so both sides are considered equal numerically.
+
+---
+
+# Question: Why should you avoid `==` in security-related comparisons in PHP?
+
+**Answer:** Because `==` allows type juggling, which can equate different types and values, leading to security flaws.
+
+---
+
+# Question: How do you prevent PHP type juggling issues in comparisons?
+
+**Answer:** Use strict comparison `===`, which checks both the value and the type.
+
+---
+
+# Question: What is the result of `"123abc" === 123`?
+
+**Answer:** `false`, because one is a string and the other is an integer.
+
+---
+
+
+
 
 
 
