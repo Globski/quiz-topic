@@ -287,3 +287,26 @@
 | `timezone_version_get()`                  | Returns the version of the timezone database                                      |
 
 ---
+
+## ✅ PHP Predefined Date/Time Constants
+
+| **Constant**             | **Description**                                               | **Example Output**                 |
+| ------------------------ | ------------------------------------------------------------- | ---------------------------------- |
+| `DATE_ATOM`              | Atom standard date format                                     | `2019-01-18T14:13:03+00:00`        |
+| `DATE_COOKIE`            | HTTP Cookies format                                           | `Fri, 18 Jan 2019 14:13:03 UTC`    |
+| `DATE_ISO8601`           | ISO-8601 format                                               | `2019-01-18T14:13:03+0000`         |
+| `DATE_RFC822`            | RFC 822 standard format                                       | `Fri, 18 Jan 2019 14:13:03 +0000`  |
+| `DATE_RFC850`            | RFC 850 format                                                | `Friday, 18-Jan-19 14:13:03 UTC`   |
+| `DATE_RFC1036`           | RFC 1036 format                                               | `Friday, 18-Jan-19 14:13:03 +0000` |
+| `DATE_RFC1123`           | RFC 1123 format                                               | `Fri, 18 Jan 2019 14:13:03 +0000`  |
+| `DATE_RFC2822`           | RFC 2822 format                                               | `Fri, 18 Jan 2019 14:13:03 +0000`  |
+| `DATE_RFC3339`           | Same as `DATE_ATOM` (added in PHP 5.1.3)                      | `2019-01-18T14:13:03+00:00`        |
+| `DATE_RFC3339_EXTENDED`  | Extended RFC 3339 format (added in PHP 7.0.0)                 | `2019-01-18T16:34:01.000+00:00`    |
+| `DATE_RSS`               | RSS format                                                    | `Fri, 18 Jan 2019 14:13:03 +0000`  |
+| `DATE_W3C`               | World Wide Web Consortium (W3C) format                        | `2019-01-18T14:13:03+00:00`        |
+| `SUNFUNCS_RET_TIMESTAMP` | Returns a timestamp (added in PHP 5.1.2)                      | *(e.g. `1579355583`)*              |
+| `SUNFUNCS_RET_STRING`    | Returns sunrise/sunset as hours\:minutes (added in PHP 5.1.2) | `09:41`                            |
+| `SUNFUNCS_RET_DOUBLE`    | Returns sunrise/sunset as a float number (added in PHP 5.1.2) | `9.75`                             |
+
+---
+
