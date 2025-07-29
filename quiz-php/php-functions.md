@@ -1985,3 +1985,110 @@ No additional installation is needed.
 
 ---
 
+# 📄 PHP XML Parser Functions
+
+---
+
+## ❓ What are PHP XML Parser Functions?
+
+The **PHP XML Parser** functions allow developers to **parse** (but not validate) **XML documents** using an event-driven model provided by the **Expat** parser.
+
+XML is a structured data format commonly used for data interchange. PHP’s XML extension is ideal for reading and processing such documents efficiently.
+
+---
+
+## ⚙️ Parser Engine: Expat
+
+* **Expat** is an **event-based** XML parser.
+* It triggers callback functions when certain parsing events occur (like start tags, end tags, and character data).
+* **Note**: Expat is a **non-validating** parser and **ignores DTDs**.
+* If the XML is **not well-formed**, an **error** will occur.
+
+---
+
+## 🧩 Installation
+
+These functions are **part of PHP core**, so **no installation** is required.
+
+---
+
+## 🔧 PHP XML Parser Functions
+
+| Function                                   | Description                                              |
+| ------------------------------------------ | -------------------------------------------------------- |
+| `utf8_decode()`                            | Converts a UTF-8 string to ISO-8859-1                    |
+| `utf8_encode()`                            | Converts an ISO-8859-1 string to UTF-8                   |
+| `xml_error_string()`                       | Returns a string description of an XML parser error code |
+| `xml_get_current_byte_index()`             | Returns the current byte index from the parser           |
+| `xml_get_current_column_number()`          | Returns the current column number of the parser          |
+| `xml_get_current_line_number()`            | Returns the current line number of the parser            |
+| `xml_get_error_code()`                     | Gets the current error code from the parser              |
+| `xml_parse()`                              | Parses an XML document                                   |
+| `xml_parse_into_struct()`                  | Parses XML into an associative array                     |
+| `xml_parser_create()`                      | Creates a new XML parser instance                        |
+| `xml_parser_create_ns()`                   | Creates an XML parser with namespace support             |
+| `xml_parser_free()`                        | Frees the memory associated with a parser                |
+| `xml_parser_get_option()`                  | Retrieves parser configuration options                   |
+| `xml_parser_set_option()`                  | Sets parser configuration options                        |
+| `xml_set_character_data_handler()`         | Sets the handler for character data                      |
+| `xml_set_default_handler()`                | Sets a default handler for all events                    |
+| `xml_set_element_handler()`                | Sets handlers for start and end XML elements             |
+| `xml_set_end_namespace_decl_handler()`     | Sets the handler for ending a namespace declaration      |
+| `xml_set_external_entity_ref_handler()`    | Sets the handler for external entity references          |
+| `xml_set_notation_decl_handler()`          | Sets the handler for notation declarations               |
+| `xml_set_object()`                         | Binds parser events to methods of an object              |
+| `xml_set_processing_instruction_handler()` | Sets the handler for processing instructions             |
+| `xml_set_start_namespace_decl_handler()`   | Sets the handler for starting namespace declarations     |
+| `xml_set_unparsed_entity_decl_handler()`   | Sets the handler for unparsed entity declarations        |
+
+---
+
+## 🧮 PHP XML Parser Constants
+
+### 🔴 Error Constants
+
+| Constant                                  | Meaning                               |
+| ----------------------------------------- | ------------------------------------- |
+| `XML_ERROR_NONE`                          | No error                              |
+| `XML_ERROR_NO_MEMORY`                     | Out of memory                         |
+| `XML_ERROR_SYNTAX`                        | Syntax error in XML                   |
+| `XML_ERROR_NO_ELEMENTS`                   | No elements found                     |
+| `XML_ERROR_INVALID_TOKEN`                 | Invalid token found                   |
+| `XML_ERROR_UNCLOSED_TOKEN`                | Token was not properly closed         |
+| `XML_ERROR_PARTIAL_CHAR`                  | Partial character read                |
+| `XML_ERROR_TAG_MISMATCH`                  | Mismatched tag                        |
+| `XML_ERROR_DUPLICATE_ATTRIBUTE`           | Duplicate attribute in tag            |
+| `XML_ERROR_JUNK_AFTER_DOC_ELEMENT`        | Garbage after document element        |
+| `XML_ERROR_PARAM_ENTITY_REF`              | Invalid parameter entity reference    |
+| `XML_ERROR_UNDEFINED_ENTITY`              | Reference to undefined entity         |
+| `XML_ERROR_RECURSIVE_ENTITY_REF`          | Recursive entity reference            |
+| `XML_ERROR_ASYNC_ENTITY`                  | Asynchronous entity                   |
+| `XML_ERROR_BAD_CHAR_REF`                  | Bad character reference               |
+| `XML_ERROR_BINARY_ENTITY_REF`             | Binary entity reference               |
+| `XML_ERROR_ATTRIBUTE_EXTERNAL_ENTITY_REF` | External entity in attribute          |
+| `XML_ERROR_MISPLACED_XML_PI`              | Misplaced XML processing instruction  |
+| `XML_ERROR_UNKNOWN_ENCODING`              | Unknown character encoding            |
+| `XML_ERROR_INCORRECT_ENCODING`            | Incorrect encoding                    |
+| `XML_ERROR_UNCLOSED_CDATA_SECTION`        | CDATA section was not properly closed |
+| `XML_ERROR_EXTERNAL_ENTITY_HANDLING`      | External entity handling error        |
+
+---
+
+### ⚙️ Option Constants
+
+| Constant                     | Description                                  |
+| ---------------------------- | -------------------------------------------- |
+| `XML_OPTION_CASE_FOLDING`    | Toggles uppercasing of element names         |
+| `XML_OPTION_TARGET_ENCODING` | Sets output encoding (e.g., UTF-8)           |
+| `XML_OPTION_SKIP_TAGSTART`   | Skips characters from the start of tag names |
+| `XML_OPTION_SKIP_WHITE`      | Ignores whitespace                           |
+
+---
+
+### ℹ️ Other Constants
+
+| Constant       | Description                                                            |
+| -------------- | ---------------------------------------------------------------------- |
+| `XML_SAX_IMPL` | The SAX parser implementation name (usually `"expat"` on most systems) |
+
+---
