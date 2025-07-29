@@ -73,3 +73,84 @@
 
 ---
 
+# Question: What are the functions in `<stdio.h>` and what do they do?
+
+## C Standard I/O Library (`<stdio.h>`) Functions by Category
+
+---
+
+### 📥 Standard Input Functions
+
+| Function    | Description                              |
+| ----------- | ---------------------------------------- |
+| `getchar()` | Reads a single character from user input |
+| `scanf()`   | Reads formatted input from the console   |
+| `fscanf()`  | Reads formatted input from a file        |
+| `sscanf()`  | Reads formatted input from a string      |
+
+---
+
+### 📤 Standard Output Functions
+
+| Function     | Description                                                      |
+| ------------ | ---------------------------------------------------------------- |
+| `putchar()`  | Writes a single character to the console                         |
+| `puts()`     | Writes a string followed by newline to the console               |
+| `printf()`   | Writes formatted output to the console                           |
+| `fprintf()`  | Writes formatted output to a file                                |
+| `sprintf()`  | Writes formatted output to a string                              |
+| `snprintf()` | Same as `sprintf()` but with buffer size limit for memory safety |
+
+---
+
+### 📂 File Handling Functions
+
+| Function   | Description                             |
+| ---------- | --------------------------------------- |
+| `fopen()`  | Opens a file and returns a file pointer |
+| `fclose()` | Closes a file                           |
+| `remove()` | Deletes a file                          |
+| `rename()` | Renames a file                          |
+
+---
+
+### 📄 File Reading Functions
+
+| Function  | Description                          |
+| --------- | ------------------------------------ |
+| `fgetc()` | Reads a single character from a file |
+| `fgets()` | Reads a line (string) from a file    |
+| `fread()` | Reads a block of memory from a file  |
+| `getc()`  | Equivalent to `fgetc()`              |
+
+---
+
+### 📝 File Writing Functions
+
+| Function   | Description                         |
+| ---------- | ----------------------------------- |
+| `fputc()`  | Writes a single character to a file |
+| `fputs()`  | Writes a string to a file           |
+| `fwrite()` | Writes a block of memory to a file  |
+| `putc()`   | Equivalent to `fputc()`             |
+
+---
+
+### 📍 File Positioning and Info
+
+| Function   | Description                                          |
+| ---------- | ---------------------------------------------------- |
+| `fseek()`  | Moves the file pointer to a specified location       |
+| `ftell()`  | Returns the current location of the file pointer     |
+| `rewind()` | Resets the file pointer to the beginning of the file |
+
+---
+
+### ⚠️ File Error and Status
+
+| Function   | Description                                                |
+| ---------- | ---------------------------------------------------------- |
+| `feof()`   | Checks if the file pointer has reached the end of the file |
+| `ferror()` | Checks if an error occurred in a file operation            |
+
+---
