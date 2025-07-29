@@ -3730,10 +3730,302 @@ var_dump($var2, $var3);
 
 ---
 
+# Question: What is a string in PHP?
 
+**Answer:** A string in PHP is a sequence of characters represented internally as an array of bytes and an integer indicating the buffer's length.
 
+---
 
+# Question: How does PHP treat a character in a string?
 
+**Answer:** In PHP, a character is the same as a byte.
 
+---
 
+# Question: Why doesn’t PHP support native Unicode?
+
+**Answer:** PHP treats characters as bytes and only supports a 256-character set, which does not include Unicode support.
+
+---
+
+# Question: What are the four ways to represent strings in PHP?
+
+**Answer:** Single-quoted, double-quoted, Heredoc, and Nowdoc.
+
+---
+
+# Question: How do you create a single-quoted string in PHP?
+
+**Answer:** By enclosing characters in single quotes, e.g., `'this is a simple string'`.
+
+---
+
+# Question: How do you include a literal single quote in a single-quoted string?
+
+**Answer:** Escape it with a backslash (`\'`).
+
+---
+
+# Question: What will the following code output?
+
+```php
+$str = 'This is a \'simple\' string';
+echo $str;
+```
+
+**Answer:** `This is a 'simple' string`
+
+---
+
+# Question: How do you include a literal backslash in a single-quoted string?
+
+**Answer:** Use a double backslash (`\\`).
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$str = 'The command C:\\*.* will delete all files.';
+echo $str;
+```
+
+**Answer:** `The command C:\*.* will delete all files.`
+
+---
+
+# Question: Do escape sequences like `\n` or `\r` get interpreted in single-quoted strings?
+
+**Answer:** No, they are treated literally in single-quoted strings.
+
+---
+
+# Question: Will variables inside single-quoted strings be expanded?
+
+**Answer:** No, variable names will not be expanded in single-quoted strings.
+
+---
+
+# Question: What is the output of the following?
+
+```php
+$x = 100;
+$str = 'Value of x = $x';
+echo $str;
+```
+
+**Answer:** `Value of x = $x`
+
+---
+
+# Question: How do you create a double-quoted string in PHP?
+
+**Answer:** By enclosing the string in double quotes, e.g., `"this is a simple string"`.
+
+---
+
+# Question: What is the key difference between single and double-quoted strings?
+
+**Answer:** Double-quoted strings interpret escape sequences and expand variables, while single-quoted strings do not.
+
+---
+
+# Question: List at least four escape sequences interpreted in double-quoted strings.
+
+**Answer:** `\n` (newline), `\r` (carriage return), `\t` (tab), `\\` (backslash)
+
+---
+
+# Question: What does `\n` represent in a double-quoted string?
+
+**Answer:** A linefeed (LF or ASCII 0x0A)
+
+---
+
+# Question: What does `\r` represent in a double-quoted string?
+
+**Answer:** A carriage return (CR or ASCII 0x0D)
+
+---
+
+# Question: What does `\t` represent in a double-quoted string?
+
+**Answer:** A horizontal tab (HT or ASCII 0x09)
+
+---
+
+# Question: What does `\v` represent in a double-quoted string?
+
+**Answer:** A vertical tab (VT or ASCII 0x0B)
+
+---
+
+# Question: What does `\e` represent in a double-quoted string?
+
+**Answer:** An escape character (ESC or ASCII 0x1B)
+
+---
+
+# Question: What does `\f` represent in a double-quoted string?
+
+**Answer:** A form feed (FF or ASCII 0x0C)
+
+---
+
+# Question: How do you escape a dollar sign in a double-quoted string?
+
+**Answer:** Prefix it with a backslash: `\$`
+
+---
+
+# Question: How do you escape a double quote in a double-quoted string?
+
+**Answer:** Use `\"`
+
+---
+
+# Question: How do you include octal values as ASCII characters in a string?
+
+**Answer:** Use a backslash followed by the octal number (e.g., `\120`).
+
+---
+
+# Question: How do you include hexadecimal values as ASCII characters in a string?
+
+**Answer:** Use `\x` followed by the hex value (e.g., `\x50`).
+
+---
+
+# Question: What is the output of the following?
+
+```php
+$str = "\120\110\120";
+echo "PHP with Octal: " . $str;
+```
+
+**Answer:** `PHP with Octal: PHP`
+
+---
+
+# Question: What is the output of the following?
+
+```php
+$str = "\x50\x48\x50";
+echo "PHP with Hexadecimal: " . $str;
+```
+
+**Answer:** `PHP with Hexadecimal: PHP`
+
+---
+
+# Question: Will escaping an unsupported character in a string still print the backslash?
+
+**Answer:** Yes, the backslash will also be printed.
+
+---
+
+# Question: What happens to variables in double-quoted strings?
+
+**Answer:** They are expanded to their values.
+
+---
+
+# Question: What is the output of the following?
+
+```php
+$price = 200;
+echo "Price = \$ $price";
+```
+
+**Answer:** `Price = $ 200`
+
+---
+
+# Question: What operator is used for string concatenation in PHP?
+
+**Answer:** The dot (`.`) operator.
+
+---
+
+# Question: What is the output of this code?
+
+```php
+$string1 = "Hello World";
+$string2 = "1234";
+echo $string1 . " " . $string2;
+```
+
+**Answer:** `Hello World 1234`
+
+---
+
+# Question: Why is the concatenation operator used twice in the above example?
+
+**Answer:** To insert a third string (a space) between the two string variables.
+
+---
+
+# Question: What does the `strlen()` function do?
+
+**Answer:** It returns the length of a string in characters before the null terminator.
+
+---
+
+# Question: How do you call the `strlen()` function?
+
+**Answer:** `strlen($str);`
+
+---
+
+# Question: What is the output of `echo strlen("Hello world!");`?
+
+**Answer:** `12`
+
+---
+
+# Question: What is a typical use of `strlen()` in loops?
+
+**Answer:** To determine the number of iterations by knowing the end of a string.
+
+---
+
+# Question: What does the `strpos()` function do?
+
+**Answer:** It returns the position of the first occurrence of a substring within a string.
+
+---
+
+# Question: What does `strpos()` return if no match is found?
+
+**Answer:** `FALSE`
+
+---
+
+# Question: What is the syntax of `strpos()`?
+
+**Answer:** `strpos($str, $find, $start)`
+
+---
+
+# Question: What do the parameters in `strpos()` mean?
+
+**Answer:** `$str` is the string to search, `$find` is the substring, and `$start` is the optional starting position.
+
+---
+
+# Question: What is the output of the following?
+
+```php
+echo strpos("Hello world!", "world");
+```
+
+**Answer:** `6`
+
+---
+
+# Question: Why does `strpos("Hello world!", "world")` return 6 and not 7?
+
+**Answer:** Because string positions in PHP are zero-indexed.
+
+---
 
