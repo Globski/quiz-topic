@@ -791,3 +791,95 @@ Unless you **know exactly what you're doing**, it's better to:
 
 ---
 
+### PHP Runtime Configuration
+
+#### **Date/Time (php.ini settings)**
+
+| Name                     | Description                                  | Default     | Version  |
+| ------------------------ | -------------------------------------------- | ----------- | -------- |
+| `date.timezone`          | Default timezone for all date/time functions | `""`        | PHP 5.1+ |
+| `date.default_latitude`  | Used by `date_sunrise()` & `date_sunset()`   | `"31.7667"` | PHP 5.0+ |
+| `date.default_longitude` | Same as above                                | `"35.2333"` | PHP 5.0+ |
+| `date.sunrise_zenith`    | Zenith angle for sunrise                     | `"90.83"`   | PHP 5.0+ |
+| `date.sunset_zenith`     | Zenith angle for sunset                      | `"90.83"`   | PHP 5.0+ |
+
+---
+
+#### **Filesystem (php.ini settings)**
+
+| Name                       | Default | Description                         | Changeable       |
+| -------------------------- | ------- | ----------------------------------- | ---------------- |
+| `allow_url_fopen`          | `"1"`   | Allows URL-based file access        | `PHP_INI_SYSTEM` |
+| `allow_url_include`        | `"0"`   | Include files via URL               | `PHP_INI_SYSTEM` |
+| `user_agent`               | `NULL`  | User agent string for HTTP/FTP      | `PHP_INI_ALL`    |
+| `default_socket_timeout`   | `"60"`  | Timeout for socket streams          | `PHP_INI_ALL`    |
+| `from`                     | `""`    | Email for anonymous FTP/HTTP        | `PHP_INI_ALL`    |
+| `auto_detect_line_endings` | `"0"`   | Detects line endings (Unix/DOS/Mac) | `PHP_INI_ALL`    |
+| `sys_temp_dir`             | `""`    | Temporary directory path            | `PHP_INI_SYSTEM` |
+
+---
+
+#### **Filter Extension (php.ini settings)**
+
+| Name                   | Description                    | Default        | Changeable       |
+| ---------------------- | ------------------------------ | -------------- | ---------------- |
+| `filter.default`       | Default filter for input types | `"unsafe_raw"` | `PHP_INI_PERDIR` |
+| `filter.default_flags` | Flags for the default filter   | `NULL`         | `PHP_INI_PERDIR` |
+
+---
+
+### PHP Filter Functions
+
+| Function               | Description                            |
+| ---------------------- | -------------------------------------- |
+| `filter_has_var()`     | Checks if input type/variable exists   |
+| `filter_id()`          | Returns filter ID by name              |
+| `filter_input()`       | Gets external input & filters it       |
+| `filter_input_array()` | Same as above, but for multiple inputs |
+| `filter_list()`        | Lists all available filters            |
+| `filter_var()`         | Filters a single variable              |
+| `filter_var_array()`   | Filters multiple variables             |
+
+---
+
+### 📌 Predefined Filter Constants
+
+#### 🔹 **Input Types**
+
+* `INPUT_GET`, `INPUT_POST`, `INPUT_COOKIE`, `INPUT_ENV`, `INPUT_SERVER`
+
+#### 🔹 **Validation Filters**
+
+* `FILTER_VALIDATE_BOOLEAN`, `FILTER_VALIDATE_EMAIL`, `FILTER_VALIDATE_FLOAT`, `FILTER_VALIDATE_INT`, `FILTER_VALIDATE_IP`, `FILTER_VALIDATE_MAC`, `FILTER_VALIDATE_REGEXP`, `FILTER_VALIDATE_URL`
+
+#### 🔹 **Sanitizing Filters**
+
+* `FILTER_SANITIZE_EMAIL`, `FILTER_SANITIZE_ENCODED`, `FILTER_SANITIZE_NUMBER_FLOAT`, `FILTER_SANITIZE_NUMBER_INT`, `FILTER_SANITIZE_SPECIAL_CHARS`, `FILTER_SANITIZE_URL`, `FILTER_UNSAFE_RAW`
+
+#### 🔹 **Flags**
+
+* `FILTER_FLAG_STRIP_LOW`, `FILTER_FLAG_STRIP_HIGH`, `FILTER_FLAG_ENCODE_LOW`, `FILTER_FLAG_ENCODE_HIGH`, `FILTER_FLAG_ALLOW_FRACTION`, `FILTER_FLAG_PATH_REQUIRED`, `FILTER_NULL_ON_FAILURE`, etc.
+
+---
+
+### PHP FTP Functions
+
+| Function                        | Description                        |
+| ------------------------------- | ---------------------------------- |
+| `ftp_connect()`                 | Open an FTP connection             |
+| `ftp_ssl_connect()`             | Open a secure FTP connection       |
+| `ftp_login()`                   | Log into FTP server                |
+| `ftp_put()` / `ftp_get()`       | Upload / Download file             |
+| `ftp_close()` / `ftp_quit()`    | Close connection                   |
+| `ftp_chdir()` / `ftp_cdup()`    | Change directory / move to parent  |
+| `ftp_pwd()`                     | Get current directory              |
+| `ftp_mkdir()` / `ftp_rmdir()`   | Create / remove directory          |
+| `ftp_delete()` / `ftp_rename()` | Delete / rename file               |
+| `ftp_rawlist()` / `ftp_nlist()` | List files with/without details    |
+| `ftp_pasv()`                    | Toggle passive mode                |
+| `ftp_exec()` / `ftp_raw()`      | Execute raw FTP command            |
+| `ftp_size()` / `ftp_mdtm()`     | Get file size / last modified time |
+| `ftp_alloc()`                   | Reserve space for upload           |
+
+---
+
