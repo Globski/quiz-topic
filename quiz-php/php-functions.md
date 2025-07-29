@@ -1086,5 +1086,40 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format. PHP 
 
 ---
 
+# Question: What are the PHP mail functions, runtime configuration options, and how do they work?
+
+---
+
+### 📧 **PHP Mail Functions**
+
+| Function       | Description                                                     |
+| -------------- | --------------------------------------------------------------- |
+| `mail()`       | Sends an email directly from a script                           |
+| `ezmlm_hash()` | Calculates the hash value needed by EZMLM (mailing list system) |
+
+---
+
+### ⚙️ **Installation & Requirements**
+
+* **Included in Core:** No installation is required. The mail functions are part of the PHP core.
+* **Requirement:** A working mail transfer agent (MTA) such as Sendmail or Postfix must be installed and configured.
+* **Windows:** Uses SMTP settings from `php.ini`.
+
+---
+
+### 🛠️ **Runtime Configuration Options (php.ini)**
+
+| Name                | Default Value                | Description                                                                                | Changeable       |
+| ------------------- | ---------------------------- | ------------------------------------------------------------------------------------------ | ---------------- |
+| `mail.add_x_header` | `"0"`                        | Adds `X-PHP-Originating-Script` with the UID and filename of the script (PHP ≥ 5.3.0)      | `PHP_INI_PERDIR` |
+| `mail.log`          | `NULL`                       | Logs all `mail()` calls, including script path, line, recipient, and headers (PHP ≥ 5.3.0) | `PHP_INI_PERDIR` |
+| `SMTP`              | `"localhost"`                | **Windows only:** DNS name or IP address of the SMTP server                                | `PHP_INI_ALL`    |
+| `smtp_port`         | `"25"`                       | **Windows only:** SMTP server port (PHP ≥ 4.3.0)                                           | `PHP_INI_ALL`    |
+| `sendmail_from`     | `NULL`                       | **Windows only:** "From" address used when sending mail with `mail()`                      | `PHP_INI_ALL`    |
+| `sendmail_path`     | `"/usr/sbin/sendmail -t -i"` | Path to the sendmail program. Overrides `SMTP`, `smtp_port`, and `sendmail_from` if set    | `PHP_INI_SYSTEM` |
+
+---
+
+
 
 
