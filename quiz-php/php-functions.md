@@ -284,6 +284,64 @@ PHP string functions are **part of the PHP core**.
 
 ---
 
+# What are PHP Variable Handling Functions and how are they used?
+
+---
+
+## 📖 PHP Variable Handling Functions Overview
+
+PHP provides built-in functions to **check, convert, manipulate, or retrieve information about variables**. These are essential for validating types, debugging, and handling dynamic data in your applications.
+
+---
+
+## ⚙️ Installation
+
+These functions are **built into PHP core**, so **no installation is required**.
+
+---
+
+## 🧠 PHP Variable Handling Functions
+
+| Function              | Description                                                             |
+| --------------------- | ----------------------------------------------------------------------- |
+| `boolval()`           | Returns the boolean value of a variable                                 |
+| `debug_zval_dump()`   | Dumps internal Zend value representation of a variable                  |
+| `doubleval()`         | Alias of `floatval()`                                                   |
+| `empty()`             | Checks whether a variable is empty                                      |
+| `floatval()`          | Returns the float value of a variable                                   |
+| `get_defined_vars()`  | Returns all currently defined variables as an array                     |
+| `get_resource_type()` | Returns the type of a resource                                          |
+| `gettype()`           | Returns the type of a variable (e.g., string, integer, array, etc.)     |
+| `intval()`            | Returns the integer value of a variable                                 |
+| `is_array()`          | Checks whether a variable is an array                                   |
+| `is_bool()`           | Checks whether a variable is a boolean                                  |
+| `is_callable()`       | Checks whether a variable is callable (e.g., a function)                |
+| `is_countable()`      | Checks whether a variable is countable (e.g., arrays, objects)          |
+| `is_double()`         | Alias of `is_float()`                                                   |
+| `is_float()`          | Checks whether a variable is a float                                    |
+| `is_int()`            | Checks whether a variable is an integer                                 |
+| `is_integer()`        | Alias of `is_int()`                                                     |
+| `is_iterable()`       | Checks whether a variable is iterable (array or implements Traversable) |
+| `is_long()`           | Alias of `is_int()`                                                     |
+| `is_null()`           | Checks whether a variable is `NULL`                                     |
+| `is_numeric()`        | Checks whether a variable is a number or numeric string                 |
+| `is_object()`         | Checks whether a variable is an object                                  |
+| `is_real()`           | Alias of `is_float()`                                                   |
+| `is_resource()`       | Checks whether a variable is a resource                                 |
+| `is_scalar()`         | Checks whether a variable is scalar (int, float, string, or bool)       |
+| `is_string()`         | Checks whether a variable is a string                                   |
+| `isset()`             | Checks whether a variable is set and is not `NULL`                      |
+| `print_r()`           | Prints human-readable information about a variable                      |
+| `serialize()`         | Converts a variable into a storable string representation               |
+| `settype()`           | Sets the type of a variable                                             |
+| `strval()`            | Returns the string value of a variable                                  |
+| `unserialize()`       | Converts serialized data back into PHP values                           |
+| `unset()`             | Destroys a specified variable                                           |
+| `var_dump()`          | Dumps information (type and value) about a variable                     |
+| `var_export()`        | Outputs structured information (as valid PHP code) about a variable     |
+
+---
+
 
 # Question: List all PHP calendar functions and their descriptions.
 
