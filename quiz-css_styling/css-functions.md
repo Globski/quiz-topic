@@ -163,6 +163,95 @@
 | Property        | Description                                                                        |
 |------------------|------------------------------------------------------------------------------------|
 | `empty-cells`    | Specifies whether or not to display borders and background on empty table cells   |
-```
+
+
+---
+
+### F
+
+| Property                     | Description                                                                 |
+|------------------------------|-----------------------------------------------------------------------------|
+| `filter`                    | Defines effects (e.g. blurring or color shifting) on an element before it is displayed |
+| `flex`                      | Shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`                  |
+| `flex-basis`                | Specifies the initial length of a flexible item                             |
+| `flex-direction`            | Specifies the direction of the flexible items                               |
+| `flex-flow`                 | Shorthand for `flex-direction` and `flex-wrap`                              |
+| `flex-grow`                 | Specifies how much the item will grow relative to the rest                  |
+| `flex-shrink`               | Specifies how the item will shrink relative to the rest                     |
+| `flex-wrap`                 | Specifies whether the flexible items should wrap or not                     |
+| `float`                     | Specifies whether an element should float to the left, right, or not at all |
+| `font`                      | Shorthand for several font properties                                       |
+| `@font-face`                | Specifies a custom font to use to display text                              |
+| `font-family`               | Specifies the font family for text                                          |
+| `font-feature-settings`     | Controls advanced typographic features in OpenType fonts                    |
+| `font-kerning`              | Controls spacing between letters                                            |
+| `font-language-override`    | Controls usage of language-specific glyphs                                  |
+| `@font-palette-values`      | Customizes default values of a font-palette                                 |
+| `font-size`                 | Specifies the font size of text                                             |
+| `font-size-adjust`          | Preserves readability and size when fallback font occurs                    |
+| `font-stretch`              | Selects normal, condensed, or expanded face                                 |
+| `font-style`                | Specifies the font style (normal, italic, etc.)                             |
+| `font-synthesis`            | Controls which typefaces may be synthesized                                |
+| `font-variant`              | Specifies small-caps or normal font                                         |
+| `font-variant-alternates`   | Controls alternate glyph usage via `@font-feature-values`                  |
+| `font-variant-caps`         | Controls alternate glyphs for capital letters                               |
+| `font-variant-east-asian`   | Controls alternate glyphs for East Asian scripts                            |
+| `font-variant-ligatures`    | Controls ligatures and contextual forms                                     |
+| `font-variant-numeric`      | Controls alternate glyphs for numbers, fractions, ordinals                  |
+| `font-variant-position`     | Controls superscript or subscript glyphs                                    |
+| `font-weight`               | Specifies the weight of a font                                              |
+
+---
+
+### G
+
+| Property               | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `gap`                 | Shorthand for `row-gap` and `column-gap`                                     |
+| `grid`                | Shorthand for several grid layout properties                                 |
+| `grid-area`           | Names grid items or shorthand for row/column start/end                       |
+| `grid-auto-columns`   | Specifies a default column size                                               |
+| `grid-auto-flow`      | Specifies insertion flow of auto-placed items                                |
+| `grid-auto-rows`      | Specifies a default row size                                                  |
+| `grid-column`         | Shorthand for `grid-column-start` and `grid-column-end`                      |
+| `grid-column-end`     | Specifies where to end the grid item                                          |
+| `grid-column-start`   | Specifies where to start the grid item                                        |
+| `grid-row`            | Shorthand for `grid-row-start` and `grid-row-end`                            |
+| `grid-row-end`        | Specifies where to end the grid item                                          |
+| `grid-row-start`      | Specifies where to start the grid item                                        |
+| `grid-template`       | Shorthand for template rows, columns, and areas                               |
+| `grid-template-areas` | Defines named grid item layout                                                 |
+| `grid-template-columns` | Defines column sizes and number of columns                                 |
+| `grid-template-rows`  | Defines row sizes in a grid layout                                            |
+
+---
+
+### H
+
+| Property              | Description                                                                      |
+|-----------------------|----------------------------------------------------------------------------------|
+| `hanging-punctuation` | Allows punctuation to appear outside the line box                               |
+| `height`              | Sets the height of an element                                                    |
+| `hyphens`             | Sets how to split words for text layout improvement                             |
+| `hyphenate-character` | Sets the character used before a hyphenation break at the end of a line         |
+
+---
+
+### I
+
+| Property              | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| `image-rendering`     | Specifies the image scaling algorithm                                       |
+| `@import`             | Imports one style sheet into another                                        |
+| `initial-letter`      | Controls size and drop positioning of initial letters                       |
+| `inline-size`         | Specifies size in the inline (text) direction                               |
+| `inset`               | Sets offsets from all sides relative to parent                              |
+| `inset-block`         | Sets offsets in the block direction (top/bottom in LTR)                     |
+| `inset-block-end`     | Sets offset of block end side                                                |
+| `inset-block-start`   | Sets offset of block start side                                              |
+| `inset-inline`        | Sets offsets in the inline direction                                         |
+| `inset-inline-end`    | Sets offset of inline end side                                               |
+| `inset-inline-start`  | Sets offset of inline start side                                             |
+| `isolation`           | Defines if an element creates a new stacking context                        |
 
 ---
