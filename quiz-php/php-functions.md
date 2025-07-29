@@ -1729,5 +1729,74 @@ Since **PHP 5**, the SimpleXML extension is built into PHP core.
 
 ---
 
+# Question: What are PHP Stream functions and how are they used?
 
+---
+
+## 🔍 PHP Stream Introduction
+
+**Streams** in PHP provide a way to **generalize file, network, compression**, and other I/O operations using a **unified set of functions**.
+
+* A **stream** is a resource object that can be **read from or written to in a linear fashion**.
+* A **wrapper** provides protocol-specific behavior, telling the stream how to handle protocols like `http://`, `ftp://`, `php://`, etc.
+
+---
+
+## ⚙️ Installation
+
+All **PHP stream functions** are **built into the PHP core**.
+No additional installation is needed.
+
+---
+
+## 🛠️ PHP Stream Functions
+
+| Function                         | Description                                                                               |
+| -------------------------------- | ----------------------------------------------------------------------------------------- |
+| `set_socket_blocking()`          | **Deprecated** in PHP 5.4 and **removed** in PHP 7.0. Use `stream_set_blocking()` instead |
+| `stream_bucket_prepend()`        | Prepends a bucket to a stream filter chain                                                |
+| `stream_context_create()`        | Creates a stream context                                                                  |
+| `stream_context_get_default()`   | Retrieves the default stream context                                                      |
+| `stream_context_get_options()`   | Gets options from a stream context                                                        |
+| `stream_context_get_params()`    | Retrieves parameters from a context                                                       |
+| `stream_context_set_default()`   | Sets the default stream context                                                           |
+| `stream_context_set_options()`   | Sets options on a stream context                                                          |
+| `stream_context_set_params()`    | Sets parameters on a stream context                                                       |
+| `stream_copy_to_stream()`        | Copies data from one stream to another                                                    |
+| `stream_filter_append()`         | Appends a filter to a stream                                                              |
+| `stream_filter_prepend()`        | Prepends a filter to a stream                                                             |
+| `stream_filter_register()`       | Registers a user-defined stream filter                                                    |
+| `stream_filter_remove()`         | Removes a filter from a stream                                                            |
+| `stream_get_contents()`          | Reads remainder of a stream into a string                                                 |
+| `stream_get_filters()`           | Lists all registered filters                                                              |
+| `stream_get_line()`              | Gets a line from the stream                                                               |
+| `stream_get_meta_data()`         | Retrieves metadata about a stream                                                         |
+| `stream_get_transports()`        | Lists available socket transports                                                         |
+| `stream_get_wrappers()`          | Lists all registered stream wrappers                                                      |
+| `stream_is_local()`              | Checks if a stream is local                                                               |
+| `stream_isatty()`                | Checks if a stream is a terminal                                                          |
+| `stream_notification_callback()` | A callback for stream notifications during operations like `fopen()`                      |
+| `stream_register_wrapper()`      | Alias of `stream_wrapper_register()`                                                      |
+| `stream_resolve_include_path()`  | Resolves a filename against the include path                                              |
+| `stream_select()`                | Runs `select()` system call on streams to detect readability or writability               |
+| `stream_set_blocking()`          | Sets blocking or non-blocking mode on a stream                                            |
+| `stream_set_chunk_size()`        | Sets the chunk size of a stream                                                           |
+| `stream_set_read_buffer()`       | Sets read buffer size on a stream                                                         |
+| `stream_set_timeout()`           | Sets timeout on a stream                                                                  |
+| `stream_set_write_buffer()`      | Sets write buffer size on a stream                                                        |
+| `stream_socket_accept()`         | Accepts a connection on a socket created by `stream_socket_server()`                      |
+| `stream_socket_client()`         | Opens a socket connection to a remote address                                             |
+| `stream_socket_enable_crypto()`  | Turns encryption on/off for a stream                                                      |
+| `stream_socket_get_name()`       | Gets local or remote name of a socket                                                     |
+| `stream_socket_pair()`           | Creates a pair of connected sockets                                                       |
+| `stream_socket_recvfrom()`       | Receives data from a socket                                                               |
+| `stream_socket_sendto()`         | Sends a message to a socket                                                               |
+| `stream_socket_server()`         | Creates a server socket                                                                   |
+| `stream_socket_shutdown()`       | Shuts down a socket connection                                                            |
+| `stream_supports_lock()`         | Checks if a stream supports locking via `flock()`                                         |
+| `stream_wrapper_register()`      | Registers a custom stream wrapper                                                         |
+| `stream_wrapper_restore()`       | Restores a previously unregistered wrapper                                                |
+| `stream_wrapper_unregister()`    | Unregisters a wrapper                                                                     |
+
+---
 
