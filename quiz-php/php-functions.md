@@ -323,7 +323,37 @@
 | `opendir()`   | Opens a directory handle for use with `readdir()` and `closedir()` |
 | `readdir()`   | Reads and returns an entry from an open directory handle           |
 | `rewinddir()` | Resets the directory handle to the beginning of the directory      |
-| `scandir()`   | Returns an array of files and directories inside the given path    |
+| `scandir()`   | Returns an array of files and directories inside the given path    
 
 ---
+
+## PHP Error Handling & Logging Configuration
+
+| **Directive**            | **Default** | **Description**                                                                                                       | **Changeable**   |
+| ------------------------ | ----------- | --------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| `error_reporting`        | `NULL`      | Sets which PHP errors are reported (integer value or named constants like `E_ALL`)                                    | `PHP_INI_ALL`    |
+| `display_errors`         | `"1"`       | Shows errors on screen. ❗ Should be `Off` on production systems.                                                      | `PHP_INI_ALL`    |
+| `display_startup_errors` | `"0"`       | Shows errors that occur during PHP's startup. Useful for debugging only.                                              | `PHP_INI_ALL`    |
+| `log_errors`             | `"0"`       | Logs errors to server's error log or file specified in `error_log`. 🔒 Use in production instead of `display_errors`  | `PHP_INI_ALL`    |
+| `log_errors_max_len`     | `"1024"`    | Max length (in bytes) for each logged error. Use `0` for unlimited. Affects logs, screen output, and `$php_errormsg`. | `PHP_INI_ALL`    |
+| `ignore_repeated_errors` | `"0"`       | Avoid logging the same error from the same file/line repeatedly.                                                      | `PHP_INI_ALL`    |
+| `ignore_repeated_source` | `"0"`       | Avoid logging repeated errors from different files or lines.                                                          | `PHP_INI_ALL`    |
+| `report_memleaks`        | `"1"`       | Displays memory leak reports from Zend Memory Manager.                                                                | `PHP_INI_ALL`    |
+| `track_errors`           | `"0"`       | Enables `$php_errormsg` variable to hold the last error message.                                                      | `PHP_INI_ALL`    |
+| `html_errors`            | `"1"`       | Wraps error messages in HTML. Set to `"0"` if sending plain text or JSON output.                                      | `PHP_INI_ALL`    |
+| `xmlrpc_errors`          | `"0"`       | Converts errors to XML-RPC fault responses (used in XML-RPC servers).                                                 | `PHP_INI_SYSTEM` |
+| `xmlrpc_error_number`    | `"0"`       | Value used for XML-RPC faultCode.                                                                                     | `PHP_INI_ALL`    |
+| `docref_root`            | `""`        | Base URL for PHP manual references in error messages. (e.g. `/phpmanual/`)                                            | `PHP_INI_ALL`    |
+| `docref_ext`             | `""`        | File extension for manual links (e.g. `.html`, `.php`).                                                               | `PHP_INI_ALL`    |
+| `error_prepend_string`   | `NULL`      | String to prepend to every error message.                                                                             | `PHP_INI_ALL`    |
+| `error_append_string`    | `NULL`      | String to append to every error message.                                                                              | `PHP_INI_ALL`    |
+| `error_log`              | `NULL`      | Path to the log file or set to `"syslog"` to use the system logger. Must be writable by the server.                   | `PHP_INI_ALL`    |
+
+---
+
+### 🔧 Changeable Modes Explained:
+
+* `PHP_INI_ALL`: Can be set in `php.ini`, `.htaccess`, or at runtime with `ini_set()`.
+* `PHP_INI_SYSTEM`: Can only be set in `php.ini` or web server config.
+
 
