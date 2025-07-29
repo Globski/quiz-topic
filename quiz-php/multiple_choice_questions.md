@@ -2196,5 +2196,253 @@ object(Point)#1 (2) {
 
 ---
 
+# Question: What symbol is used to define a variable in PHP?
+
+**Answer:** The dollar sign (`$`) is used to define a variable in PHP.
+
+---
+
+# Question: What types of values can a PHP `$` variable store?
+
+**Answer:** A PHP `$` variable can store numbers, texts, and arrays.
+
+---
+
+# Question: In PHP, what will the following code output?
+
+```php
+$name = "Akshita";
+echo $name;
+```
+
+**Answer:** Akshita
+
+---
+
+# Question: What is a dynamic variable (`$$`) in PHP?
+
+**Answer:** A dynamic variable (`$$`) takes the value of a normal variable and uses it as the name of another variable.
+
+---
+
+# Question: What will be the value of `$a` and `$$a` after the following code?
+
+```php
+$a = 'good';
+$$a = 'morning';
+```
+
+**Answer:** `$a` is `'good'` and `$$a` creates `$good` with the value `'morning'`.
+
+---
+
+# Question: What is the output of the following code?
+
+```php
+$a = 'good';
+$$a = 'morning';
+
+echo "$a {$$a}\n";
+echo "$a $good";
+```
+
+**Answer:**
+
+```
+good morning
+good morning
+```
+
+---
+
+# Question: What does the `$$` syntax in PHP do in the context of this code?
+
+```php
+$x = "foo";  
+$$x = "bar";  
+echo 'Value of foo = ' . $foo;
+```
+
+**Answer:** It creates a variable named `$foo` and assigns it the value `'bar'`.
+
+---
+
+# Question: What will the following code output?
+
+```php
+$x = "foo";  
+$$x = "bar";  
+echo "Value of x = " .$x . "\n";  
+echo 'Value of $$x = ' . $$x . "\n";  
+echo 'Value of foo = ' . $foo;
+```
+
+**Answer:**
+
+```
+Value of x = foo
+Value of $$x = bar
+Value of foo = bar
+```
+
+---
+
+# Question: What does a `$$` variable represent in PHP?
+
+**Answer:** It represents a variable whose name is stored in another variable.
+
+---
+
+# Question: Can PHP variables be prefixed with more than two dollar signs?
+
+**Answer:** Yes, PHP allows any number of `$` symbols to create variables referencing deeper levels of indirection.
+
+---
+
+# Question: Given the following variable declarations:
+
+```php
+$php = "a";
+$lang = "php";
+$World = "lang";
+$Hello = "World";
+$a = "Hello";
+```
+
+What value does `$a` hold?
+**Answer:** `Hello`
+
+---
+
+# Question: What will the following code output for `$$a`?
+
+```php
+$php = "a";
+$lang = "php";
+$World = "lang";
+$Hello = "World";
+$a = "Hello";
+echo '$$a= ' . $$a;
+```
+
+**Answer:** `$$a= World`
+
+---
+
+# Question: What is the output of `$$$$$a` in this code?
+
+```php
+$php = "a";
+$lang = "php";
+$World = "lang";
+$Hello = "World";
+$a = "Hello";
+```
+
+**Answer:** `$$$$$a= a`
+
+---
+
+# Question: What does the code below print in full?
+
+```php
+$php = "a";
+$lang = "php";
+$World = "lang";
+$Hello = "World";
+$a = "Hello";
+
+echo '$a= ' . $a;
+echo "\n";
+echo '$$a= ' . $$a;
+echo "\n";
+echo '$$$a= ' . $$$a;
+echo "\n";
+echo '$$$$a= ' . $$$$a;
+echo "\n";
+echo '$$$$$a= ' . $$$$$a;
+```
+
+**Answer:**
+
+```
+$a= Hello
+$$a= World
+$$$a= lang
+$$$$a= php
+$$$$$a= a
+```
+
+---
+
+# Question: What potential ambiguity arises when using dynamic variables with arrays?
+
+**Answer:** It's unclear whether `$$a[1]` refers to `$a[1]` or `$$a` followed by `[1]`.
+
+---
+
+# Question: How can you resolve ambiguity in `$$a[1]` expressions?
+
+**Answer:** Use `${$a[1]}` for accessing `$a[1]`, and `${$a}[1]` for accessing index `1` of `$$a`.
+
+---
+
+# Question: What does the following code do?
+
+```php
+$vars = array("hw", "os", "lang");
+$var_hw="Intel";
+$var_lang="PHP";
+$var_os="Linux";
+
+foreach ($vars as $var)
+   echo ${"var_$var"} . "\n";
+```
+
+**Answer:** It dynamically accesses and prints the values of `$var_hw`, `$var_os`, and `$var_lang` using dynamic variable names.
+
+---
+
+# Question: What is the output of this complete code?
+
+```php
+$vars = array("hw", "os", "lang");
+$var_hw="Intel";
+$var_lang="PHP";
+$var_os="Linux";
+
+foreach ($vars as $var)
+   echo ${"var_$var"} . "\n";
+
+print "$var_hw\n$var_os\n$var_lang";
+```
+
+**Answer:**
+
+```
+Intel
+Linux
+PHP
+Intel
+Linux
+PHP
+```
+
+---
+
+# Question: Can you use dynamic variables with PHP's superglobal arrays inside functions or class methods?
+
+**Answer:** No, dynamic variables cannot be used with PHP’s superglobal arrays within functions or class methods.
+
+---
+
+# Question: Can `$this` be accessed using dynamic variables in PHP?
+
+**Answer:** No, `$this` is a special variable and cannot be referenced dynamically.
+
+---
+
+
+
 
 
