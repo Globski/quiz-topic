@@ -928,3 +928,59 @@ Unless you **know exactly what you're doing**, it's better to:
 
 ---
 
+# PHP JSON Extension
+
+JSON (JavaScript Object Notation) is a lightweight data-interchange format. PHP offers native support through its **JSON extension** (enabled by default since PHP 5.2.0).
+
+---
+
+## PHP JSON Functions
+
+| Function                | Description                                                                                                     |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `json_encode()`         | Converts PHP data (arrays, objects, etc.) to a JSON string                                                      |
+| `json_decode()`         | Converts a JSON string into a PHP variable                                                                      |
+| `json_last_error()`     | Returns an integer representing the last error that occurred (if any) during `json_encode()` or `json_decode()` |
+| `json_last_error_msg()` | Returns a human-readable string describing the last error                                                       |
+
+---
+
+## Error Constants (used with `json_last_error()`)
+
+| Constant                           | Meaning                                      |
+| ---------------------------------- | -------------------------------------------- |
+| `JSON_ERROR_NONE`                  | No error has occurred                        |
+| `JSON_ERROR_DEPTH`                 | Maximum stack depth exceeded                 |
+| `JSON_ERROR_STATE_MISMATCH`        | Invalid/malformed JSON                       |
+| `JSON_ERROR_CTRL_CHAR`             | Unexpected control character                 |
+| `JSON_ERROR_SYNTAX`                | Syntax error                                 |
+| `JSON_ERROR_UTF8`                  | Malformed UTF-8 characters (PHP 5.3+)        |
+| `JSON_ERROR_RECURSION`             | Recursive references in value (PHP 5.5+)     |
+| `JSON_ERROR_INF_OR_NAN`            | NAN or INF values (PHP 5.5+)                 |
+| `JSON_ERROR_UNSUPPORTED_TYPE`      | Unsupported type (e.g., resource) (PHP 5.5+) |
+| `JSON_ERROR_INVALID_PROPERTY_NAME` | Invalid property name (PHP 7.0+)             |
+| `JSON_ERROR_UTF16`                 | Malformed UTF-16 characters (PHP 7.0+)       |
+
+---
+
+## Encoding Options (used with `json_encode()`)
+
+| Constant                          | Description                                          |
+| --------------------------------- | ---------------------------------------------------- |
+| `JSON_HEX_TAG`                    | Convert `<` and `>` to `\u003C` and `\u003E`         |
+| `JSON_HEX_AMP`                    | Convert `&` to `\u0026`                              |
+| `JSON_HEX_APOS`                   | Convert `'` to `\u0027`                              |
+| `JSON_HEX_QUOT`                   | Convert `"` to `\u0022`                              |
+| `JSON_FORCE_OBJECT`               | Output objects instead of arrays                     |
+| `JSON_NUMERIC_CHECK`              | Encode numeric strings as numbers                    |
+| `JSON_PRETTY_PRINT`               | Format output with whitespace for readability        |
+| `JSON_UNESCAPED_SLASHES`          | Don’t escape `/` characters                          |
+| `JSON_PARTIAL_OUTPUT_ON_ERROR`    | Output partial data on encoding errors               |
+| `JSON_PRESERVE_ZERO_FRACTION`     | Preserve `0.0` instead of converting to `0`          |
+| `JSON_UNESCAPED_LINE_TERMINATORS` | Don't escape new lines (`\u2028`, `\u2029`)          |
+| `JSON_INVALID_UTF8_IGNORE`        | Ignore invalid UTF-8 characters                      |
+| `JSON_INVALID_UTF8_SUBSTITUTE`    | Replace invalid UTF-8 with replacement character (�) |
+| `JSON_THROW_ON_ERROR`             | Throw `JsonException` on error (PHP 7.3+)            |
+
+---
+
