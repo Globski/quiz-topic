@@ -63,3 +63,22 @@
 | `xor_eq`    | An alternative way to write the `^=` assignment operator                                         |                         |             |
 
 ---
+
+# Question: List all C++ iostream objects and describe their usage.
+
+## C++ `<iostream>` Objects
+
+The `<iostream>` library provides objects used for standard input and output operations.
+
+| Object  | Description                                                         |
+| ------- | ------------------------------------------------------------------- |
+| `cin`   | Standard input stream (usually reads from keyboard)                 |
+| `cout`  | Standard output stream (usually writes to the console)              |
+| `cerr`  | Standard error output stream (unbuffered; used for error messages)  |
+| `clog`  | Standard log output stream (buffered; used for logging information) |
+| `wcin`  | Wide-character version of `cin`; reads `wchar_t` input              |
+| `wcout` | Wide-character version of `cout`; writes `wchar_t` output           |
+| `wcerr` | Wide-character version of `cerr`; writes `wchar_t` error output     |
+| `wclog` | Wide-character version of `clog`; writes `wchar_t` log output       |
+
+---
