@@ -418,3 +418,23 @@ The `<ctype.h>` header provides functions for character classification and trans
 | `toupper()`  | Returns an uppercase version of a character               |
 
 ---
+
+# Question: List the functions provided by the C `time.h` library and their descriptions.
+
+## C `<time.h>` Functions
+
+The `<time.h>` header provides functions for working with dates, times, and measuring durations in C.
+
+| Function      | Description                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
+| `time()`      | Returns the current calendar time as a `time_t` value (seconds since Jan 1, 1970)                     |
+| `localtime()` | Converts a `time_t` value to local time and returns a pointer to a `struct tm`                        |
+| `gmtime()`    | Converts a `time_t` value to UTC time and returns a pointer to a `struct tm`                          |
+| `ctime()`     | Converts a `time_t` value into a readable string (e.g. `Thu Jun 26 10:30:00 2025`)                    |
+| `asctime()`   | Converts a `struct tm` to a string in a standard date/time format                                     |
+| `strftime()`  | Formats a `struct tm` into a custom date and time string                                              |
+| `difftime()`  | Calculates the difference (in seconds) between two `time_t` values                                    |
+| `mktime()`    | Converts a filled `struct tm` into a `time_t` value                                                   |
+| `clock()`     | Returns the number of processor clock ticks used by the program (useful for measuring execution time) |
+
+---
