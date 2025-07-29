@@ -260,6 +260,37 @@ The `<ctime>` header in C++ provides functionality for manipulating **date and t
 ## 🧱 Related Structures
 
 * **`time_t`**: Represents time in seconds since **Unix Epoch** (Jan 1, 1970).
-* **`struct tm`**: Represents a broken-down time (year, month, day, hour, etc.).
+* **`struct tm`**: Represents a broken-down time (year, month, day, hour, etc.
+
+---
+
+# Question: What are the commonly used functions provided by the C++ `<vector>` library?
+
+### C++ `<vector>` Library Functions
+
+| Function          | Description                                                                |
+| ----------------- | -------------------------------------------------------------------------- |
+| `assign()`        | Fills a vector with multiple values                                        |
+| `at()`            | Returns an element at a specific index                                     |
+| `back()`          | Returns the last element of a vector                                       |
+| `begin()`         | Returns an iterator pointing to the beginning of a vector                  |
+| `capacity()`      | Returns the number of elements the vector can hold without reallocating    |
+| `clear()`         | Removes all elements from the vector                                       |
+| `data()`          | Returns a direct pointer to the memory array used internally by the vector |
+| `empty()`         | Checks if the vector is empty                                              |
+| `end()`           | Returns an iterator pointing to the end (past last element) of the vector  |
+| `erase()`         | Removes one or more elements from the vector                               |
+| `front()`         | Returns the first element of the vector                                    |
+| `insert()`        | Inserts elements into the vector at the specified position                 |
+| `max_size()`      | Returns the maximum number of elements the vector can theoretically hold   |
+| `pop_back()`      | Removes the last element from the vector                                   |
+| `push_back()`     | Adds an element to the end of the vector                                   |
+| `rbegin()`        | Returns a reverse iterator pointing to the last element                    |
+| `rend()`          | Returns a reverse iterator pointing to one before the first element        |
+| `reserve()`       | Reserves storage so the vector can hold at least the specified number      |
+| `resize()`        | Resizes the container to contain the specified number of elements          |
+| `shrink_to_fit()` | Reduces capacity to fit size (non-binding request to reduce memory usage)  |
+| `size()`          | Returns the number of elements currently in the vector                     |
+| `swap()`          | Exchanges the contents of two vectors                                      |
 
 ---
