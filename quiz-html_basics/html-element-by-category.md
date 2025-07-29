@@ -1838,3 +1838,184 @@ Use this guide to understand and convert between pixels (`px`), `em`, and percen
 
 ---
 
+# ⌨️ Keyboard Shortcuts for Windows and Mac
+
+Keyboard shortcuts can drastically improve your productivity by reducing reliance on the mouse and speeding up your workflow.
+
+---
+
+## 📝 Basic Shortcuts
+
+| Description           | Windows  | Mac OS            |
+| --------------------- | -------- | ----------------- |
+| Edit menu             | Alt + E  | Ctrl + F2, then F |
+| File menu             | Alt + F  | Ctrl + F2, then E |
+| View menu             | Alt + V  | Ctrl + F2, then V |
+| Select all text       | Ctrl + A | Cmd + A           |
+| Copy text             | Ctrl + C | Cmd + C           |
+| Find text             | Ctrl + F | Cmd + F           |
+| Find and replace text | Ctrl + H | Cmd + F           |
+| New document          | Ctrl + N | Cmd + N           |
+| Open file             | Ctrl + O | Cmd + O           |
+| Print                 | Ctrl + P | Cmd + P           |
+| Save                  | Ctrl + S | Cmd + S           |
+| Paste                 | Ctrl + V | Cmd + V           |
+| Cut                   | Ctrl + X | Cmd + X           |
+| Redo                  | Ctrl + Y | Shift + Cmd + Z   |
+| Undo                  | Ctrl + Z | Cmd + Z           |
+
+---
+
+## ✍️ Text Editing – Cursor Movement
+
+| Description                              | Windows     | Mac OS     |
+| ---------------------------------------- | ----------- | ---------- |
+| Right one character / next line break    | →           | →          |
+| Left one character / previous line break | ←           | ←          |
+| Up one line                              | ↑           | ↑          |
+| Down one line                            | ↓           | ↓          |
+| Beginning of current line                | Home        | Cmd + ←    |
+| End of current line                      | End         | Cmd + →    |
+| Beginning of document                    | Ctrl + Home | Cmd + ↑    |
+| End of document                          | Ctrl + End  | Cmd + ↓    |
+| Move up one frame                        | Page Up     | Fn + ↑     |
+| Move down one frame                      | Page Down   | Fn + ↓     |
+| Previous word                            | Ctrl + ←    | Option + ← |
+| Next word                                | Ctrl + →    | Option + → |
+| Start of line break                      | Ctrl + ↑    | Cmd + ←    |
+| End of line break                        | Ctrl + ↓    | Cmd + →    |
+
+---
+
+## ✏️ Text Selection
+
+| Description                   | Windows             | Mac OS                                  |
+| ----------------------------- | ------------------- | --------------------------------------- |
+| Select left character         | Shift + ←           | Shift + ←                               |
+| Select right character        | Shift + →           | Shift + →                               |
+| Select up line                | Shift + ↑           | Shift + ↑                               |
+| Select down line              | Shift + ↓           | Shift + ↓                               |
+| Select word to the left       | Shift + Ctrl + ←    | Shift + Option + ←                      |
+| Select word to the right      | Shift + Ctrl + →    | Shift + Option + →                      |
+| Select paragraph to the left  | Shift + Ctrl + ↑    | Shift + Option + ↑                      |
+| Select paragraph to the right | Shift + Ctrl + ↓    | Shift + Option + ↓                      |
+| Select to start of line       | Shift + Home        | Cmd + Shift + ←                         |
+| Select to end of line         | Shift + End         | Cmd + Shift + →                         |
+| Select to start of document   | Shift + Ctrl + Home | Cmd + Shift + ↑ or Cmd + Shift + Fn + ← |
+| Select to end of document     | Shift + Ctrl + End  | Cmd + Shift + ↓ or Cmd + Shift + Fn + → |
+| Select frame up               | Shift + Page Up     | Shift + Fn + ↑                          |
+| Select frame down             | Shift + Page Down   | Shift + Fn + ↓                          |
+| Select all text               | Ctrl + A            | Cmd + A                                 |
+| Find text                     | Ctrl + F            | Cmd + F                                 |
+
+---
+
+## 🅱️ Text Formatting
+
+| Description | Windows          | Mac OS          |
+| ----------- | ---------------- | --------------- |
+| Bold        | Ctrl + B         | Cmd + B         |
+| Italic      | Ctrl + I         | Cmd + I         |
+| Underline   | Ctrl + U         | Cmd + U         |
+| Superscript | Ctrl + Shift + = | Cmd + Shift + = |
+| Subscript   | Ctrl + =         | Cmd + =         |
+
+---
+
+## 🧹 Text Editing (More)
+
+| Description            | Windows          | Mac OS               |
+| ---------------------- | ---------------- | -------------------- |
+| Delete character left  | Backspace        | Backspace            |
+| Delete character right | Delete           | Fn + Backspace       |
+| Delete word right      | Ctrl + Delete    | Cmd + Backspace      |
+| Delete word left       | Ctrl + Backspace | Cmd + Fn + Backspace |
+| Indent                 | Tab              | Tab                  |
+| Outdent                | Shift + Tab      | Shift + Tab          |
+
+---
+
+## 🌐 Web Browsers – Navigation
+
+| Description             | Windows                      | Mac OS                  |
+| ----------------------- | ---------------------------- | ----------------------- |
+| Scroll down             | Space or Page Down           | Space or Fn + ↓         |
+| Scroll up               | Shift + Space or Page Up     | Shift + Space or Fn + ↑ |
+| Go to bottom of page    | End                          | Cmd + ↓                 |
+| Go to top of page       | Home                         | Cmd + ↑                 |
+| Go back                 | Alt + ← or Backspace         | Cmd + ←                 |
+| Go forward              | Alt + → or Shift + Backspace | Cmd + →                 |
+| Refresh                 | F5                           | Cmd + R                 |
+| Hard refresh (no cache) | Ctrl + F5                    | Cmd + Shift + R         |
+| Stop                    | Esc                          | Esc                     |
+| Full screen             | F11                          | Cmd + Shift + F         |
+| Zoom in                 | Ctrl + +                     | Cmd + +                 |
+| Zoom out                | Ctrl + -                     | Cmd + -                 |
+| Reset zoom              | Ctrl + 0                     | Cmd + 0                 |
+| Open homepage           | Alt + Home                   | Option + Home / Fn + ←  |
+
+---
+
+## 🗂️ Tabs and Window Management
+
+| Description                     | Windows              | Mac OS                               |
+| ------------------------------- | -------------------- | ------------------------------------ |
+| Open new tab                    | Ctrl + T             | Cmd + T                              |
+| Close current tab               | Ctrl + W             | Cmd + W                              |
+| Close all tabs                  | Ctrl + Shift + W     | Cmd + Q                              |
+| Close others                    | Ctrl + Alt + F4      | Cmd + Option + W                     |
+| Next tab                        | Ctrl + Tab           | Ctrl + Tab / Cmd + Shift + →         |
+| Previous tab                    | Ctrl + Shift + Tab   | Shift + Ctrl + Tab / Cmd + Shift + ← |
+| Go to tab (1–8)                 | Ctrl + 1–8           | Cmd + 1–8                            |
+| Last tab                        | Ctrl + 9             | Cmd + 9                              |
+| Reopen last closed tab          | Ctrl + Shift + T     | Cmd + Shift + T                      |
+| New window                      | Ctrl + N             | Cmd + N                              |
+| Close window                    | Alt + F4             | Cmd + W                              |
+| Next window                     | Alt + Tab            | Cmd + Tab                            |
+| Previous window                 | Alt + Shift + Tab    | Cmd + Shift + Tab                    |
+| Reopen last closed window       | Ctrl + Shift + N     | —                                    |
+| Open link in new background tab | Ctrl + Click         | Cmd + Click                          |
+| Open link in new foreground tab | Ctrl + Shift + Click | Cmd + Shift + Click                  |
+| Print page                      | Ctrl + P             | Cmd + P                              |
+| Save page                       | Ctrl + S             | Cmd + S                              |
+
+---
+
+## 🌍 Address Bar
+
+| Description                     | Windows             | Mac OS                     |
+| ------------------------------- | ------------------- | -------------------------- |
+| Cycle focus                     | Tab                 | Tab                        |
+| Focus address bar               | Ctrl + L or Alt + D | Cmd + L                    |
+| Focus browser search            | Ctrl + E            | Cmd + E / Cmd + K          |
+| Open address in new tab         | Alt + Enter         | Option + Enter             |
+| Show previously typed URLs      | F4                  | —                          |
+| Add [www](http://www). and .com | Ctrl + Enter        | Cmd + Enter / Ctrl + Enter |
+
+---
+
+## 🔖 Bookmarks and History
+
+| Description    | Windows  | Mac OS                              |
+| -------------- | -------- | ----------------------------------- |
+| Show bookmarks | Ctrl + B | Cmd + B                             |
+| Add bookmark   | Ctrl + D | Cmd + Option + B or Cmd + Shift + B |
+| Show history   | Ctrl + H | Cmd + Shift + H / Cmd + Y           |
+| Show downloads | Ctrl + J | Cmd + J / Cmd + Shift + J           |
+
+---
+
+## 📸 Screenshots
+
+| Description        | Windows                | Mac OS                             |
+| ------------------ | ---------------------- | ---------------------------------- |
+| Save full screen   | —                      | Cmd + Shift + 3                    |
+| Copy full screen   | PrtScr / Ctrl + PrtScr | Cmd + Ctrl + Shift + 3             |
+| Save window        | —                      | Cmd + Shift + 4, then Space        |
+| Copy window        | Alt + PrtScr           | Cmd + Ctrl + Shift + 4, then Space |
+| Save selected area | —                      | Cmd + Shift + 4                    |
+| Copy selected area | —                      | Cmd + Ctrl + Shift + 4             |
+
+> 💡 *Note: Some shortcuts may vary depending on OS version or keyboard layout.*
+
+---
