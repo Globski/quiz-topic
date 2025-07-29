@@ -237,3 +237,29 @@ The `<cstring>` header provides a set of functions for working with **C-style st
 
 ---
 
+# C++ `<ctime>` Library Reference
+
+The `<ctime>` header in C++ provides functionality for manipulating **date and time**, including **timestamps**, **local time**, **GMT**, and **execution duration**.
+
+## 📅 Commonly Used `<ctime>` Functions
+
+| Function      | Description                                                                               |
+| ------------- | ----------------------------------------------------------------------------------------- |
+| `asctime()`   | Converts a `struct tm` to a human-readable string (e.g. `"Wed Jul 29 10:10:00 2025\n"`)   |
+| `clock()`     | Returns the number of clock ticks since the program started (used for performance timing) |
+| `ctime()`     | Converts a `time_t` timestamp to a human-readable string                                  |
+| `difftime()`  | Returns the difference in seconds between two `time_t` timestamps                         |
+| `gmtime()`    | Converts a `time_t` to a `struct tm` in **GMT/UTC**                                       |
+| `localtime()` | Converts a `time_t` to a `struct tm` in **local time zone**                               |
+| `mktime()`    | Converts a `struct tm` to a `time_t` timestamp                                            |
+| `strftime()`  | Formats a `struct tm` as a custom string using format specifiers                          |
+| `time()`      | Returns the current calendar time as a `time_t` timestamp                                 |
+
+---
+
+## 🧱 Related Structures
+
+* **`time_t`**: Represents time in seconds since **Unix Epoch** (Jan 1, 1970).
+* **`struct tm`**: Represents a broken-down time (year, month, day, hour, etc.).
+
+---
