@@ -862,7 +862,7 @@ Unless you **know exactly what you're doing**, it's better to:
 
 ---
 
-### PHP FTP Functions
+# PHP FTP Functions
 
 | Function                        | Description                        |
 | ------------------------------- | ---------------------------------- |
