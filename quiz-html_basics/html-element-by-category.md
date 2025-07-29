@@ -1041,3 +1041,269 @@ HTML supports 140 standard color names. Each of these maps to a specific hexadec
 * Always use UTF-8 to avoid encoding issues with international text.
 
 ---
+
+Here's a Markdown file titled **`php-keywords-by-category.md`**, similar to your HTML example, listing **all PHP keywords** grouped by **logical categories**.
+
+---
+
+# Question: List all PHP keywords grouped by their category.
+
+## Control Structures
+
+| Keyword     | Description                              |
+| ----------- | ---------------------------------------- |
+| `if`        | Create a conditional statement           |
+| `else`      | Used in conditional statements           |
+| `elseif`    | Used in conditional statements           |
+| `endif`     | Ends an if or elseif block               |
+| `switch`    | Create a switch block                    |
+| `case`      | Used in the switch conditional           |
+| `default`   | Used in the switch statement             |
+| `endswitch` | End a switch block                       |
+| `break`     | Break out of loops and switch statements |
+| `continue`  | Jump to the next iteration of a loop     |
+| `goto`      | Jump to a line of code                   |
+| `return`    | Exit a function and return a value       |
+
+---
+
+## Loops
+
+| Keyword      | Description                                  |
+| ------------ | -------------------------------------------- |
+| `for`        | Create a for loop                            |
+| `endfor`     | End a for block                              |
+| `foreach`    | Create a foreach loop                        |
+| `endforeach` | End a foreach block                          |
+| `while`      | Create a while loop or end a do...while loop |
+| `endwhile`   | End a while block                            |
+| `do`         | Create a do...while loop                     |
+
+---
+
+## Function & Object-Oriented Programming
+
+| Keyword      | Description                                         |
+| ------------ | --------------------------------------------------- |
+| `function`   | Create a function                                   |
+| `fn`         | Declare an arrow function (PHP 7.4+)                |
+| `class`      | Declare a class                                     |
+| `interface`  | Declare an interface                                |
+| `trait`      | Declare a trait                                     |
+| `abstract`   | Declare a class as abstract                         |
+| `final`      | Declare a class, property or method as final        |
+| `extends`    | Extends a class or interface                        |
+| `implements` | Implement an interface                              |
+| `public`     | Declare a property, method or constant as public    |
+| `protected`  | Declare a property, method or constant as protected |
+| `private`    | Declare a property, method or constant as private   |
+| `static`     | Declare a property or method as static              |
+| `var`        | Declare a variable (old style, discouraged)         |
+| `const`      | Define a class constant                             |
+| `new`        | Creates an object                                   |
+| `clone`      | Create a copy of an object                          |
+| `instanceof` | Test an object's class                              |
+| `insteadof`  | Resolve conflicts with traits                       |
+
+---
+
+## Exception Handling
+
+| Keyword   | Description                       |
+| --------- | --------------------------------- |
+| `try`     | Create a try...catch structure    |
+| `catch`   | Used in the try..catch statement  |
+| `finally` | Used in the try...catch statement |
+| `throw`   | Throw an exception                |
+
+---
+
+## Namespaces and Scope
+
+| Keyword     | Description                            |
+| ----------- | -------------------------------------- |
+| `namespace` | Declares a namespace                   |
+| `use`       | Use a namespace                        |
+| `global`    | Import variables from the global scope |
+
+---
+
+## File Inclusion
+
+| Keyword        | Description                              |
+| -------------- | ---------------------------------------- |
+| `include`      | Embed code from another file             |
+| `include_once` | Embed code from another file (only once) |
+| `require`      | Embed code from another file             |
+| `require_once` | Embed code from another file (only once) |
+
+---
+
+## Variable and Expression Handling
+
+| Keyword | Description                                |
+| ------- | ------------------------------------------ |
+| `isset` | Check if a variable exists and is not null |
+| `unset` | Delete a variable or array element         |
+| `empty` | Check if an expression is empty            |
+| `list`  | Assign array elements to variables         |
+
+---
+
+## Output
+
+| Keyword | Description |
+| ------- | ----------- |
+| `echo`  | Output text |
+| `print` | Output text |
+
+---
+
+# Question: Which HTML elements are valid in HTML5, HTML4, and XHTML?
+
+## Document Type Declaration
+
+* All HTML documents must begin with a `<!DOCTYPE>` declaration.
+* It tells the browser which version of HTML to expect.
+
+### Example in HTML5:
+
+```html
+<!DOCTYPE html>
+```
+
+### Examples in older DOCTYPEs:
+
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+```
+
+---
+
+## Valid HTML Elements in Different DOCTYPES
+
+| Tag            | HTML5 | HTML4 | XHTML |
+| -------------- | :---: | :---: | :---: |
+| `<a>`          |  Yes  |  Yes  |  Yes  |
+| `<abbr>`       |  Yes  |  Yes  |  Yes  |
+| `<acronym>`    |   No  |  Yes  |  Yes  |
+| `<address>`    |  Yes  |  Yes  |  Yes  |
+| `<applet>`     |   No  |  Yes  |   No  |
+| `<area>`       |  Yes  |  Yes  |   No  |
+| `<article>`    |  Yes  |   No  |   No  |
+| `<aside>`      |  Yes  |   No  |   No  |
+| `<audio>`      |  Yes  |   No  |   No  |
+| `<b>`          |  Yes  |  Yes  |  Yes  |
+| `<base>`       |  Yes  |  Yes  |  Yes  |
+| `<basefont>`   |   No  |  Yes  |   No  |
+| `<bdi>`        |  Yes  |   No  |   No  |
+| `<bdo>`        |  Yes  |  Yes  |   No  |
+| `<big>`        |   No  |  Yes  |  Yes  |
+| `<blockquote>` |  Yes  |  Yes  |  Yes  |
+| `<body>`       |  Yes  |  Yes  |  Yes  |
+| `<br>`         |  Yes  |  Yes  |  Yes  |
+| `<button>`     |  Yes  |  Yes  |  Yes  |
+| `<canvas>`     |  Yes  |   No  |   No  |
+| `<caption>`    |  Yes  |  Yes  |  Yes  |
+| `<center>`     |   No  |  Yes  |   No  |
+| `<cite>`       |  Yes  |  Yes  |  Yes  |
+| `<code>`       |  Yes  |  Yes  |  Yes  |
+| `<col>`        |  Yes  |  Yes  |   No  |
+| `<colgroup>`   |  Yes  |  Yes  |   No  |
+| `<data>`       |  Yes  |   No  |   No  |
+| `<datalist>`   |  Yes  |   No  |   No  |
+| `<dd>`         |  Yes  |  Yes  |  Yes  |
+| `<del>`        |  Yes  |  Yes  |   No  |
+| `<details>`    |  Yes  |   No  |   No  |
+| `<dfn>`        |  Yes  |  Yes  |  Yes  |
+| `<dialog>`     |  Yes  |   No  |   No  |
+| `<dir>`        |   No  |  Yes  |   No  |
+| `<div>`        |  Yes  |  Yes  |  Yes  |
+| `<dl>`         |  Yes  |  Yes  |  Yes  |
+| `<dt>`         |  Yes  |  Yes  |  Yes  |
+| `<em>`         |  Yes  |  Yes  |  Yes  |
+| `<embed>`      |  Yes  |   No  |   No  |
+| `<fieldset>`   |  Yes  |  Yes  |  Yes  |
+| `<figcaption>` |  Yes  |   No  |   No  |
+| `<figure>`     |  Yes  |   No  |   No  |
+| `<font>`       |   No  |  Yes  |   No  |
+| `<footer>`     |  Yes  |   No  |   No  |
+| `<form>`       |  Yes  |  Yes  |  Yes  |
+| `<frame>`      |   No  |   No  |   No  |
+| `<frameset>`   |   No  |  Yes  |   No  |
+| `<h1>`-`<h6>`  |  Yes  |  Yes  |  Yes  |
+| `<head>`       |  Yes  |  Yes  |  Yes  |
+| `<header>`     |  Yes  |   No  |   No  |
+| `<hr>`         |  Yes  |  Yes  |  Yes  |
+| `<html>`       |  Yes  |  Yes  |  Yes  |
+| `<i>`          |  Yes  |  Yes  |  Yes  |
+| `<iframe>`     |  Yes  |  Yes  |   No  |
+| `<img>`        |  Yes  |  Yes  |  Yes  |
+| `<input>`      |  Yes  |  Yes  |  Yes  |
+| `<ins>`        |  Yes  |  Yes  |   No  |
+| `<kbd>`        |  Yes  |  Yes  |  Yes  |
+| `<label>`      |  Yes  |  Yes  |  Yes  |
+| `<legend>`     |  Yes  |  Yes  |  Yes  |
+| `<li>`         |  Yes  |  Yes  |  Yes  |
+| `<link>`       |  Yes  |  Yes  |  Yes  |
+| `<main>`       |  Yes  |   No  |   No  |
+| `<map>`        |  Yes  |  Yes  |   No  |
+| `<mark>`       |  Yes  |   No  |   No  |
+| `<meta>`       |  Yes  |  Yes  |  Yes  |
+| `<meter>`      |  Yes  |   No  |   No  |
+| `<nav>`        |  Yes  |   No  |   No  |
+| `<noframes>`   |   No  |  Yes  |   No  |
+| `<noscript>`   |  Yes  |  Yes  |  Yes  |
+| `<object>`     |  Yes  |  Yes  |  Yes  |
+| `<ol>`         |  Yes  |  Yes  |  Yes  |
+| `<optgroup>`   |  Yes  |  Yes  |  Yes  |
+| `<option>`     |  Yes  |  Yes  |  Yes  |
+| `<output>`     |  Yes  |   No  |   No  |
+| `<p>`          |  Yes  |  Yes  |  Yes  |
+| `<param>`      |  Yes  |  Yes  |  Yes  |
+| `<picture>`    |  Yes  |   No  |   No  |
+| `<pre>`        |  Yes  |  Yes  |  Yes  |
+| `<progress>`   |  Yes  |   No  |   No  |
+| `<q>`          |  Yes  |  Yes  |  Yes  |
+| `<rp>`         |  Yes  |   No  |   No  |
+| `<rt>`         |  Yes  |   No  |   No  |
+| `<ruby>`       |  Yes  |   No  |   No  |
+| `<s>`          |  Yes  |  Yes  |   No  |
+| `<samp>`       |  Yes  |  Yes  |  Yes  |
+| `<script>`     |  Yes  |  Yes  |  Yes  |
+| `<section>`    |  Yes  |   No  |   No  |
+| `<select>`     |  Yes  |  Yes  |  Yes  |
+| `<small>`      |  Yes  |  Yes  |  Yes  |
+| `<source>`     |  Yes  |   No  |   No  |
+| `<span>`       |  Yes  |  Yes  |  Yes  |
+| `<strike>`     |   No  |  Yes  |   No  |
+| `<strong>`     |  Yes  |  Yes  |  Yes  |
+| `<style>`      |  Yes  |  Yes  |  Yes  |
+| `<sub>`        |  Yes  |  Yes  |  Yes  |
+| `<summary>`    |  Yes  |   No  |   No  |
+| `<sup>`        |  Yes  |  Yes  |  Yes  |
+| `<table>`      |  Yes  |  Yes  |  Yes  |
+| `<tbody>`      |  Yes  |  Yes  |   No  |
+| `<td>`         |  Yes  |  Yes  |  Yes  |
+| `<template>`   |  Yes  |   No  |   No  |
+| `<textarea>`   |  Yes  |  Yes  |  Yes  |
+| `<tfoot>`      |  Yes  |  Yes  |   No  |
+| `<th>`         |  Yes  |  Yes  |  Yes  |
+| `<thead>`      |  Yes  |  Yes  |   No  |
+| `<time>`       |  Yes  |   No  |   No  |
+| `<title>`      |  Yes  |  Yes  |  Yes  |
+| `<tr>`         |  Yes  |  Yes  |  Yes  |
+| `<track>`      |  Yes  |   No  |   No  |
+| `<tt>`         |   No  |  Yes  |  Yes  |
+| `<u>`          |  Yes  |  Yes  |   No  |
+| `<ul>`         |  Yes  |  Yes  |  Yes  |
+| `<var>`        |  Yes  |  Yes  |  Yes  |
+| `<video>`      |  Yes  |   No  |   No  |
+| `<wbr>`        |  Yes  |   No  |   No  |
+
+---
+
