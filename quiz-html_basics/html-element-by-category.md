@@ -1770,3 +1770,71 @@ This combination indicates **English as used in the United States**.
 
 ---
 
+# 📏 PX to EM and Percent Conversion
+
+## 🧮 Pixel to Em Converter
+
+Use this guide to understand and convert between pixels (`px`), `em`, and percentage (`%`). These units are crucial in responsive design and accessibility.
+
+### 🔧 How it Works
+
+1. **Set a default pixel size** — usually the browser default `16px`.
+2. **Convert `px` to `em`**:
+
+   $$
+   \text{em} = \frac{\text{pixel value}}{\text{base font size (px)}}
+   $$
+3. **Convert `em` to `px`**:
+
+   $$
+   \text{pixel} = \text{em} \times \text{base font size (px)}
+   $$
+
+> Example: If the body font size is 16px:
+>
+> * `24px` = `1.5em` = `150%`
+> * `12px` = `0.75em` = `75%`
+
+---
+
+## 📊 Conversion Table (Base Font Size = 16px)
+
+| px   | em       | percent |
+| ---- | -------- | ------- |
+| 5px  | 0.3125em | 31.25%  |
+| 6px  | 0.3750em | 37.50%  |
+| 7px  | 0.4375em | 43.75%  |
+| 8px  | 0.5000em | 50.00%  |
+| 9px  | 0.5625em | 56.25%  |
+| 10px | 0.6250em | 62.50%  |
+| 11px | 0.6875em | 68.75%  |
+| 12px | 0.7500em | 75.00%  |
+| 13px | 0.8125em | 81.25%  |
+| 14px | 0.8750em | 87.50%  |
+| 15px | 0.9375em | 93.75%  |
+| 16px | 1.0000em | 100.00% |
+| 17px | 1.0625em | 106.25% |
+| 18px | 1.1250em | 112.50% |
+| 19px | 1.1875em | 118.75% |
+| 20px | 1.2500em | 125.00% |
+| 21px | 1.3125em | 131.25% |
+| 22px | 1.3750em | 137.50% |
+| 23px | 1.4375em | 143.75% |
+| 24px | 1.5000em | 150.00% |
+| 25px | 1.5625em | 156.25% |
+
+---
+
+## 📘 What’s the Difference Between PX, EM, and Percent?
+
+| Unit | Type     | Description                                                         |
+| ---- | -------- | ------------------------------------------------------------------- |
+| `px` | Absolute | Pixel is a fixed unit. The same on all screens unless zoomed.       |
+| `em` | Relative | Relative to the **font size of the parent** element.                |
+| `%`  | Relative | Also relative to the parent’s font size. `150%` of `16px` = `24px`. |
+
+> ✅ Use `em` or `%` for scalable, responsive layouts.
+> ❌ Avoid using `px` for font sizes if accessibility is a priority.
+
+---
+
