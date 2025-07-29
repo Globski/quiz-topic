@@ -883,3 +883,48 @@ Unless you **know exactly what you're doing**, it's better to:
 
 ---
 
+### **PHP Predefined FTP Constants**
+
+| Constant     | Type  | Description                                                   |
+| ------------ | ----- | ------------------------------------------------------------- |
+| `FTP_ASCII`  | `int` | Use ASCII mode for file transfer (text files)                 |
+| `FTP_BINARY` | `int` | Use Binary mode for file transfer (images, executables, etc.) |
+| `FTP_IMAGE`  | `int` | Alias of `FTP_BINARY`                                         |
+| `FTP_TEXT`   | `int` | Alias of `FTP_ASCII`                                          |
+
+---
+
+#### Transfer Control
+
+| Constant         | Type  | Description                                         |
+| ---------------- | ----- | --------------------------------------------------- |
+| `FTP_AUTORESUME` | `int` | Automatically resume interrupted uploads/downloads  |
+| `FTP_AUTOSEEK`   | `int` | Automatically seek to resume position in local file |
+
+---
+
+#### Asynchronous Transfer States
+
+| Constant       | Type  | Description                           |
+| -------------- | ----- | ------------------------------------- |
+| `FTP_FAILED`   | `int` | Async transfer failed                 |
+| `FTP_MOREDATA` | `int` | Async transfer is still in progress   |
+| `FTP_FINISHED` | `int` | Async transfer completed successfully |
+
+> These are especially used with the **non-blocking FTP functions** like:
+>
+> * `ftp_nb_get()`
+> * `ftp_nb_put()`
+> * `ftp_nb_continue()`
+
+---
+
+#### Other Configuration Constants
+
+| Constant             | Type   | Description                                                                     |
+| -------------------- | ------ | ------------------------------------------------------------------------------- |
+| `FTP_TIMEOUT_SEC`    | `int`  | Used with `ftp_set_option()` to set timeout duration (in seconds)               |
+| `FTP_USEPASVADDRESS` | `bool` | Set with `ftp_set_option()` to control if the IP from the PASV response is used |
+
+---
+
