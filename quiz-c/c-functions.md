@@ -154,3 +154,58 @@
 | `ferror()` | Checks if an error occurred in a file operation            |
 
 ---
+
+# Question: What are the functions in `<stdlib.h>` and what do they do?
+
+## C Standard Library (`<stdlib.h>`) Functions by Category
+
+---
+
+### 🔢 Number Conversion Functions
+
+| Function  | Description                                         |
+| --------- | --------------------------------------------------- |
+| `atof()`  | Converts a string to a `double`                     |
+| `atoi()`  | Converts a string to an `int`                       |
+| `atol()`  | Converts a string to a `long int`                   |
+| `atoll()` | Converts a string to a `long long int`              |
+| `abs()`   | Returns the absolute (positive) value of an integer |
+
+---
+
+### 🧠 Dynamic Memory Management
+
+| Function    | Description                                        |
+| ----------- | -------------------------------------------------- |
+| `malloc()`  | Allocates memory without initializing it           |
+| `calloc()`  | Allocates memory and initializes all bytes to zero |
+| `realloc()` | Resizes previously allocated memory                |
+| `free()`    | Frees previously allocated memory                  |
+
+---
+
+### 🎲 Random Number Generation
+
+| Function  | Description                       |
+| --------- | --------------------------------- |
+| `rand()`  | Generates a pseudo-random integer |
+| `srand()` | Seeds the random number generator |
+
+---
+
+### 📊 Sorting and Division
+
+| Function  | Description                                                       |
+| --------- | ----------------------------------------------------------------- |
+| `qsort()` | Sorts an array using the quicksort algorithm                      |
+| `div()`   | Performs integer division and returns both quotient and remainder |
+
+---
+
+### ❌ Program Control
+
+| Function | Description                                         |
+| -------- | --------------------------------------------------- |
+| `exit()` | Terminates the program with a specified exit status |
+
+---
