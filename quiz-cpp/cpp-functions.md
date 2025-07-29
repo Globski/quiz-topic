@@ -166,3 +166,40 @@ The `<cmath>` library provides mathematical functions for performing various ope
 | `trunc(x)`        | Truncates `x` to its integer part                                                            |
 
 ---
+
+# Question: List all functions provided by the C++ `<string>` library and describe their usage.
+
+## C++ `<string>` Functions
+
+The `<string>` library provides functions for manipulating and working with `std::string` objects.
+
+| Function      | Description                                                                             |
+| ------------- | --------------------------------------------------------------------------------------- |
+| `append()`    | Adds characters or another string to the end of the current string                      |
+| `at()`        | Returns the character at a specified index, with bounds checking                        |
+| `back()`      | Accesses the last character in the string                                               |
+| `begin()`     | Returns an iterator to the first character of the string                                |
+| `c_str()`     | Returns a C-style null-terminated character array                                       |
+| `clear()`     | Removes all characters from the string, making it empty                                 |
+| `compare()`   | Compares the string with another string and returns the result                          |
+| `copy()`      | Copies characters from the string into a provided character array                       |
+| `data()`      | Returns a pointer to the string's internal character array (may not be null-terminated) |
+| `empty()`     | Checks whether the string is empty                                                      |
+| `end()`       | Returns an iterator pointing just past the last character                               |
+| `erase()`     | Deletes part of the string by position and length                                       |
+| `find()`      | Finds the first occurrence of a character or substring                                  |
+| `front()`     | Accesses the first character in the string                                              |
+| `insert()`    | Inserts characters or a substring at a specified position                               |
+| `length()`    | Returns the number of characters in the string                                          |
+| `max_size()`  | Returns the maximum number of characters the string can hold                            |
+| `operator[]`  | Returns the character at a given index (no bounds checking)                             |
+| `pop_back()`  | Removes the last character from the string                                              |
+| `push_back()` | Adds a single character to the end of the string                                        |
+| `replace()`   | Replaces part of the string with new content                                            |
+| `rfind()`     | Finds the last occurrence of a character or substring                                   |
+| `resize()`    | Changes the size of the string, trimming or padding it as needed                        |
+| `size()`      | Alias of `length()`; returns the string's length                                        |
+| `substr()`    | Returns a substring starting at a given index and for a given length                    |
+| `swap()`      | Exchanges the contents of two strings                                                   |
+
+---
