@@ -256,4 +256,119 @@
 
 ---
 
+### J
 
+| Property           | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `justify-content`  | Specifies the alignment between the items inside a flexible container when the items do not use all available space |
+| `justify-items`    | Is set on the grid container. Specifies the alignment of grid items in the inline direction |
+| `justify-self`     | Is set on the grid item. Specifies the alignment of the grid item in the inline direction |
+
+---
+
+### K
+
+| Property      | Description                                                                   |
+|----------------|-------------------------------------------------------------------------------|
+| `@keyframes`  | Controls the steps in an animation by defining styles for points along the animation sequence |
+
+---
+
+### L
+
+| Property             | Description                                                                    |
+|----------------------|--------------------------------------------------------------------------------|
+| `@layer`             | Controls how the CSS cascade layers evaluates the order of styles              |
+| `left`               | Specifies the left position of a positioned element                            |
+| `letter-spacing`     | Increases or decreases the space between characters in a text                  |
+| `line-break`         | Specifies how/if to break lines                                                |
+| `line-height`        | Sets the line height                                                           |
+| `list-style`         | Sets all the properties for a list in one declaration                          |
+| `list-style-image`   | Specifies an image as the list-item marker                                     |
+| `list-style-position`| Specifies the position of the list-item markers (bullet points)                |
+| `list-style-type`    | Specifies the type of list-item marker                                         |
+
+---
+
+### M
+
+| Property                | Description                                                                |
+|-------------------------|----------------------------------------------------------------------------|
+| `margin`                | Sets all the margin properties in one declaration                          |
+| `margin-block`          | Specifies the margin in the block direction                                |
+| `margin-block-end`      | Specifies the margin at the end in the block direction                     |
+| `margin-block-start`    | Specifies the margin at the start in the block direction                   |
+| `margin-bottom`         | Sets the bottom margin of an element                                       |
+| `margin-inline`         | Specifies the margin in the inline direction                               |
+| `margin-inline-end`     | Specifies the margin at the end in the inline direction                    |
+| `margin-inline-start`   | Specifies the margin at the start in the inline direction                  |
+| `margin-left`           | Sets the left margin of an element                                         |
+| `margin-right`          | Sets the right margin of an element                                        |
+| `margin-top`            | Sets the top margin of an element                                          |
+| `marker`                | Points to a marker that will be drawn on all vertices of an element's path |
+| `marker-end`            | Points to a marker that will be drawn on the last vertex of an element's path |
+| `marker-mid`            | Points to a marker that will be drawn on all the middle vertices of an element's path |
+| `marker-start`          | Points to a marker that will be drawn on the first vertex of an element's path |
+| `mask`                  | A shorthand property for mask-image, mask-mode, mask-repeat, mask-position, mask-clip, mask-origin, mask-size and mask-composite |
+| `mask-clip`             | Specifies which area is affected by a mask image                           |
+| `mask-composite`        | Specifies a compositing operation used on the current mask layer with the mask layers below it |
+| `mask-image`            | Specifies an image to be used as a mask layer for an element               |
+| `mask-mode`             | Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask |
+| `mask-origin`           | Specifies the origin position (the mask position area) of a mask layer image |
+| `mask-position`         | Sets the starting position of a mask layer image (relative to the mask position area) |
+| `mask-repeat`           | Specifies how the mask layer image is repeated                              |
+| `mask-size`             | Specifies the size of a mask layer image                                   |
+| `mask-type`             | Specifies whether an SVG <mask> element is treated as a luminance mask or as an alpha mask |
+| `max-height`            | Sets the maximum height of an element                                      |
+| `max-width`             | Sets the maximum width of an element                                       |
+| `@media`                | Sets the style rules for different media types/devices/sizes               |
+| `max-block-size`        | Sets the maximum size of an element in the block direction                 |
+| `max-inline-size`       | Sets the maximum size of an element in the inline direction                |
+| `min-block-size`        | Sets the minimum size of an element in the block direction                 |
+| `min-inline-size`       | Sets the minimum size of an element in the inline direction                |
+| `min-height`            | Sets the minimum height of an element                                      |
+| `min-width`             | Sets the minimum width of an element                                       |
+| `mix-blend-mode`        | Specifies how an element's content should blend with its direct parent background |
+
+---
+
+### N
+
+| Property        | Description                                                        |
+|------------------|--------------------------------------------------------------------|
+| `@namespace`     | Defines an XML namespace to be used in the style sheet            |
+
+---
+
+### O
+
+| Property                    | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| `object-fit`                | Specifies how the contents of a replaced element should be fitted to the box |
+| `object-position`           | Specifies the alignment of the replaced element inside its box              |
+| `offset`                    | A shorthand for offset-anchor, offset-distance, offset-path, etc.           |
+| `offset-anchor`             | Specifies a point on an element fixed to the path it is animated along      |
+| `offset-distance`           | Specifies the position along a path where an animated element is placed     |
+| `offset-path`               | Specifies the path an element is animated along                             |
+| `offset-position`           | Specifies the initial position of an element along a path                   |
+| `offset-rotate`             | Specifies rotation of an element as it is animated along a path             |
+| `opacity`                   | Sets the opacity level for an element                                       |
+| `order`                     | Sets the order of the flexible item relative to the rest                    |
+| `orphans`                   | Sets the minimum number of lines that must be left at the bottom of a page or column |
+| `outline`                   | Shorthand for outline-width, outline-style, and outline-color              |
+| `outline-color`             | Sets the color of an outline                                                |
+| `outline-offset`            | Offsets an outline beyond the border edge                                  |
+| `outline-style`             | Sets the style of an outline                                                |
+| `outline-width`             | Sets the width of an outline                                                |
+| `overflow`                  | Specifies what happens if content overflows an element's box               |
+| `overflow-anchor`          | Controls scroll anchoring on content addition above visible content        |
+| `overflow-wrap`             | Specifies whether to break long words that overflow the container          |
+| `overflow-x`                | Controls overflow on the left/right sides                                   |
+| `overflow-y`                | Controls overflow on the top/bottom sides                                   |
+| `overscroll-behavior`       | Controls scroll chaining/overscroll affordance in both directions          |
+| `overscroll-behavior-block` | Controls scroll chaining/overscroll in the block direction                  |
+| `overscroll-behavior-inline`| Controls scroll chaining/overscroll in the inline direction                 |
+| `overscroll-behavior-x`     | Controls scroll chaining/overscroll in x-direction                          |
+| `overscroll-behavior-y`     | Controls scroll chaining/overscroll in y-direction                          |
+
+---
