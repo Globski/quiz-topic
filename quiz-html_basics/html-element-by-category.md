@@ -873,4 +873,85 @@ HTML supports 140 standard color names. Each of these maps to a specific hexadec
 
 ---
 
+# Question: What are the methods, properties, and events for HTML `<audio>` and `<video>` elements?
+
+---
+
+## 🎵 HTML Audio/Video Methods
+
+| Method           | Description                                       |
+| ---------------- | ------------------------------------------------- |
+| `addTextTrack()` | Adds a new text track to the audio/video          |
+| `canPlayType()`  | Checks if the browser can play the specified type |
+| `load()`         | Re-loads the audio/video element                  |
+| `play()`         | Starts playing the audio/video                    |
+| `pause()`        | Pauses the currently playing audio/video          |
+
+---
+
+## ⚙️ HTML Audio/Video Properties
+
+| Property              | Description                                             |
+| --------------------- | ------------------------------------------------------- |
+| `audioTracks`         | Returns list of available audio tracks (AudioTrackList) |
+| `autoplay`            | Whether it should play as soon as it is loaded          |
+| `buffered`            | TimeRanges object of buffered media                     |
+| `controller`          | Returns MediaController object                          |
+| `controls`            | Whether player controls are shown                       |
+| `crossOrigin`         | CORS settings                                           |
+| `currentSrc`          | Returns URL of current media source                     |
+| `currentTime`         | Current playback position (in seconds)                  |
+| `defaultMuted`        | Whether it starts muted by default                      |
+| `defaultPlaybackRate` | Default speed for playback                              |
+| `duration`            | Duration of the media (in seconds)                      |
+| `ended`               | Whether playback has ended                              |
+| `error`               | MediaError object if an error occurred                  |
+| `loop`                | Whether playback loops                                  |
+| `mediaGroup`          | Group name to sync multiple media elements              |
+| `muted`               | Whether audio is muted                                  |
+| `networkState`        | Current network state                                   |
+| `paused`              | Whether the media is currently paused                   |
+| `playbackRate`        | Speed of playback                                       |
+| `played`              | TimeRanges of what has already played                   |
+| `preload`             | Loading preference (`none`, `metadata`, `auto`)         |
+| `readyState`          | Ready state of the media (0–4)                          |
+| `seekable`            | TimeRanges of seekable areas                            |
+| `seeking`             | Whether user is currently seeking                       |
+| `src`                 | Media file source                                       |
+| `startDate`           | Date object showing current time offset                 |
+| `textTracks`          | TextTrackList of available captions/subtitles           |
+| `videoTracks`         | **Deprecated**: Do not use                              |
+| `volume`              | Current volume (0.0 to 1.0)                             |
+
+---
+
+## 📺 HTML Audio/Video Events
+
+| Event            | Description                                                  |
+| ---------------- | ------------------------------------------------------------ |
+| `abort`          | Fired when media loading is aborted                          |
+| `canplay`        | Fired when the media is ready to play                        |
+| `canplaythrough` | Fired when media can play without buffering                  |
+| `durationchange` | Fired when media duration changes                            |
+| `emptied`        | Fired when media becomes empty                               |
+| `ended`          | Fired when playback ends                                     |
+| `error`          | Fired when an error occurs                                   |
+| `loadeddata`     | Fired when media data is loaded                              |
+| `loadedmetadata` | Fired when metadata (duration, dimensions) is loaded         |
+| `loadstart`      | Fired when browser starts looking for media                  |
+| `pause`          | Fired when media is paused                                   |
+| `play`           | Fired when media starts/resumes playing                      |
+| `playing`        | Fired when media starts playing after being paused/buffered  |
+| `progress`       | Fired when browser is downloading media                      |
+| `ratechange`     | Fired when playback speed changes                            |
+| `seeked`         | Fired after user finishes seeking                            |
+| `seeking`        | Fired when user starts seeking                               |
+| `stalled`        | Fired when the browser can’t fetch media data                |
+| `suspend`        | Fired when browser deliberately doesn’t load more media data |
+| `timeupdate`     | Fired when playback position changes                         |
+| `volumechange`   | Fired when volume changes                                    |
+| `waiting`        | Fired when playback is delayed due to buffering              |
+
+---
+
 
