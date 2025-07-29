@@ -203,3 +203,37 @@ The `<string>` library provides functions for manipulating and working with `std
 | `swap()`      | Exchanges the contents of two strings                                                   |
 
 ---
+
+# Question: List all functions provided by the C++ `<cstring>` library and describe their usage.
+
+## C++ `<cstring>` Functions
+
+The `<cstring>` header provides a set of functions for working with **C-style strings** and **memory blocks** (arrays of bytes). These functions are inherited from the C Standard Library `<string.h>`.
+
+| Function     | Description                                                                  |
+| ------------ | ---------------------------------------------------------------------------- |
+| `memchr()`   | Returns a pointer to the first occurrence of a value in a block of memory    |
+| `memcmp()`   | Compares two memory blocks byte-by-byte to determine which is larger         |
+| `memcpy()`   | Copies bytes from one memory block to another                                |
+| `memmove()`  | Like `memcpy()` but safely handles overlapping memory regions                |
+| `memset()`   | Fills a block of memory with a specific byte value                           |
+| `strcat()`   | Appends one null-terminated string to the end of another                     |
+| `strchr()`   | Returns a pointer to the first occurrence of a character in a string         |
+| `strcmp()`   | Compares two C-style strings based on ASCII values                           |
+| `strcoll()`  | Compares two strings based on the current locale                             |
+| `strcpy()`   | Copies one null-terminated string to another                                 |
+| `strcspn()`  | Returns the length of the initial segment not containing specified chars     |
+| `strerror()` | Returns a string describing the meaning of an error code                     |
+| `strlen()`   | Returns the length of a C-style string (not including null terminator)       |
+| `strncat()`  | Appends a specified number of characters to another string                   |
+| `strncmp()`  | Compares a specified number of characters from two strings                   |
+| `strncpy()`  | Copies a specified number of characters from one string to another           |
+| `strpbrk()`  | Returns pointer to first match of any specified chars in the string          |
+| `strrchr()`  | Returns pointer to the last occurrence of a character in a string            |
+| `strspn()`   | Returns the length of the initial segment consisting only of specified chars |
+| `strstr()`   | Returns pointer to the first occurrence of a substring                       |
+| `strtok()`   | Breaks a string into tokens using delimiters                                 |
+| `strxfrm()`  | Transforms a string for comparison using locale rules                        |
+
+---
+
