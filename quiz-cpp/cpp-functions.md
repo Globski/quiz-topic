@@ -294,3 +294,47 @@ The `<ctime>` header in C++ provides functionality for manipulating **date and t
 | `swap()`          | Exchanges the contents of two vectors                                      |
 
 ---
+
+# Question: What are the commonly used functions provided by the C++ `<algorithm>` library?
+
+### C++ `<algorithm>` Library Functions
+
+| Function            | Description                                                               |
+| ------------------- | ------------------------------------------------------------------------- |
+| `adjacent_find()`   | Finds a pair of consecutive elements with the same value in a data range  |
+| `all_of()`          | Checks if all of the elements in a data range match a condition           |
+| `any_of()`          | Checks if at least one element in a data range matches a condition        |
+| `binary_search()`   | Checks whether a value exists in a sorted data range                      |
+| `copy()`            | Copies values from one data range into another                            |
+| `count()`           | Counts the number of occurrences of a value in a data range               |
+| `count_if()`        | Counts elements matching a condition in a data range                      |
+| `fill()`            | Writes a value into every element of a data range                         |
+| `find()`            | Finds the first element equal to a specified value                        |
+| `find_first_of()`   | Finds the first element matching any of several specified values          |
+| `find_if()`         | Finds the first element matching a condition                              |
+| `find_if_not()`     | Finds the first element not matching a condition                          |
+| `for_each()`        | Applies a function to every element in a data range                       |
+| `includes()`        | Checks if one sorted data range is a subset of another sorted range       |
+| `is_permutation()`  | Checks if two data ranges are permutations of each other                  |
+| `is_sorted()`       | Checks if a data range is sorted                                          |
+| `is_sorted_until()` | Finds where a data range stops being sorted                               |
+| `lower_bound()`     | Finds the first element not less than a given value in a sorted range     |
+| `max_element()`     | Finds the element with the highest value in a data range                  |
+| `merge()`           | Merges two sorted data ranges into a new one                              |
+| `min_element()`     | Finds the element with the lowest value in a data range                   |
+| `none_of()`         | Checks if none of the elements in a data range match a condition          |
+| `random_shuffle()`  | Randomly rearranges elements in a data range *(deprecated in C++14/17)*   |
+| `replace()`         | Replaces all occurrences of a value in a data range                       |
+| `replace_copy()`    | Copies a range, replacing specific values in the copy                     |
+| `replace_copy_if()` | Copies a range, replacing values that match a condition in the copy       |
+| `replace_if()`      | Replaces values that match a condition in a data range                    |
+| `reverse()`         | Reverses the order of elements in a data range                            |
+| `reverse_copy()`    | Copies a range in reverse order                                           |
+| `search()`          | Searches for a subsequence within a data range                            |
+| `sort()`            | Sorts a data range in ascending order                                     |
+| `swap()`            | Swaps the values of two variables                                         |
+| `swap_ranges()`     | Swaps elements of two ranges of the same size                             |
+| `upper_bound()`     | Finds the first element greater than a given value in a sorted data range |
+
+---
+ 
