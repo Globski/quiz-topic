@@ -1419,3 +1419,275 @@ These are two-letter language codes defined by the **ISO 639-1** standard.
 
 ---
 
+# Question: What are ISO Country Codes and how are they used in HTML `lang` attributes?
+
+## HTML ISO Country Codes Reference
+
+In HTML, **country codes** can be added to language codes in the `lang` attribute to specify **regional variations** of a language.
+
+* The **first two letters** represent the language (from [ISO 639-1](./html-language-codes.md)).
+* The **last two letters** represent the country (from ISO 3166-1 alpha-2 codes).
+
+---
+
+### HTML Example
+
+```html
+<html lang="en-US">
+  ...
+</html>
+```
+
+* `en` = English
+* `US` = United States
+
+This combination indicates **English as used in the United States**.
+
+---
+
+## ISO 3166-1 Country Codes
+
+| Country                             | ISO Code |
+| ----------------------------------- | -------- |
+| Afghanistan                         | `AF`     |
+| Albania                             | `AL`     |
+| Algeria                             | `DZ`     |
+| American Samoa                      | `AS`     |
+| Andorra                             | `AD`     |
+| Angola                              | `AO`     |
+| Antarctica                          | `AQ`     |
+| Antigua and Barbuda                 | `AG`     |
+| Argentina                           | `AR`     |
+| Armenia                             | `AM`     |
+| Aruba                               | `AW`     |
+| Australia                           | `AU`     |
+| Austria                             | `AT`     |
+| Azerbaijan                          | `AZ`     |
+| Bahamas                             | `BS`     |
+| Bahrain                             | `BH`     |
+| Bangladesh                          | `BD`     |
+| Barbados                            | `BB`     |
+| Belarus                             | `BY`     |
+| Belgium                             | `BE`     |
+| Belize                              | `BZ`     |
+| Benin                               | `BJ`     |
+| Bermuda                             | `BM`     |
+| Bhutan                              | `BT`     |
+| Bolivia                             | `BO`     |
+| Bosnia and Herzegovina              | `BA`     |
+| Botswana                            | `BW`     |
+| Bouvet Island                       | `BV`     |
+| Brazil                              | `BR`     |
+| British Indian Ocean Territory      | `IO`     |
+| Brunei Darussalam                   | `BN`     |
+| Bulgaria                            | `BG`     |
+| Burkina Faso                        | `BF`     |
+| Burundi                             | `BI`     |
+| Cambodia                            | `KH`     |
+| Cameroon                            | `CM`     |
+| Canada                              | `CA`     |
+| Cape Verde                          | `CV`     |
+| Cayman Islands                      | `KY`     |
+| Central African Republic            | `CF`     |
+| Chad                                | `TD`     |
+| Chile                               | `CL`     |
+| China                               | `CN`     |
+| Christmas Island                    | `CX`     |
+| Cocos (Keeling) Islands             | `CC`     |
+| Colombia                            | `CO`     |
+| Comoros                             | `KM`     |
+| Congo                               | `CG`     |
+| Congo (Democratic Republic)         | `CD`     |
+| Cook Islands                        | `CK`     |
+| Costa Rica                          | `CR`     |
+| Côte d'Ivoire                       | `CI`     |
+| Croatia                             | `HR`     |
+| Cuba                                | `CU`     |
+| Cyprus                              | `CY`     |
+| Czech Republic                      | `CZ`     |
+| Denmark                             | `DK`     |
+| Djibouti                            | `DJ`     |
+| Dominica                            | `DM`     |
+| Dominican Republic                  | `DO`     |
+| Ecuador                             | `EC`     |
+| Egypt                               | `EG`     |
+| El Salvador                         | `SV`     |
+| Equatorial Guinea                   | `GQ`     |
+| Eritrea                             | `ER`     |
+| Estonia                             | `EE`     |
+| Ethiopia                            | `ET`     |
+| Falkland Islands                    | `FK`     |
+| Faroe Islands                       | `FO`     |
+| Fiji                                | `FJ`     |
+| Finland                             | `FI`     |
+| France                              | `FR`     |
+| French Guiana                       | `GF`     |
+| French Polynesia                    | `PF`     |
+| French Southern Territories         | `TF`     |
+| Gabon                               | `GA`     |
+| Gambia                              | `GM`     |
+| Georgia                             | `GE`     |
+| Germany                             | `DE`     |
+| Ghana                               | `GH`     |
+| Gibraltar                           | `GI`     |
+| Greece                              | `GR`     |
+| Greenland                           | `GL`     |
+| Grenada                             | `GD`     |
+| Guadeloupe                          | `GP`     |
+| Guam                                | `GU`     |
+| Guatemala                           | `GT`     |
+| Guinea                              | `GN`     |
+| Guinea-Bissau                       | `GW`     |
+| Guyana                              | `GY`     |
+| Haiti                               | `HT`     |
+| Heard Island and McDonald Islands   | `HM`     |
+| Honduras                            | `HN`     |
+| Hong Kong                           | `HK`     |
+| Hungary                             | `HU`     |
+| Iceland                             | `IS`     |
+| India                               | `IN`     |
+| Indonesia                           | `ID`     |
+| Iran                                | `IR`     |
+| Iraq                                | `IQ`     |
+| Ireland                             | `IE`     |
+| Israel                              | `IL`     |
+| Italy                               | `IT`     |
+| Jamaica                             | `JM`     |
+| Japan                               | `JP`     |
+| Jordan                              | `JO`     |
+| Kazakhstan                          | `KZ`     |
+| Kenya                               | `KE`     |
+| Kiribati                            | `KI`     |
+| Korea (North)                       | `KP`     |
+| Korea (South)                       | `KR`     |
+| Kuwait                              | `KW`     |
+| Kyrgyzstan                          | `KG`     |
+| Laos                                | `LA`     |
+| Latvia                              | `LV`     |
+| Lebanon                             | `LB`     |
+| Lesotho                             | `LS`     |
+| Liberia                             | `LR`     |
+| Libya                               | `LY`     |
+| Liechtenstein                       | `LI`     |
+| Lithuania                           | `LT`     |
+| Luxembourg                          | `LU`     |
+| Macao                               | `MO`     |
+| Macedonia (North)                   | `MK`     |
+| Madagascar                          | `MG`     |
+| Malawi                              | `MW`     |
+| Malaysia                            | `MY`     |
+| Maldives                            | `MV`     |
+| Mali                                | `ML`     |
+| Malta                               | `MT`     |
+| Marshall Islands                    | `MH`     |
+| Martinique                          | `MQ`     |
+| Mauritania                          | `MR`     |
+| Mauritius                           | `MU`     |
+| Mayotte                             | `YT`     |
+| Mexico                              | `MX`     |
+| Micronesia                          | `FM`     |
+| Moldova                             | `MD`     |
+| Monaco                              | `MC`     |
+| Mongolia                            | `MN`     |
+| Montenegro                          | `ME`     |
+| Montserrat                          | `MS`     |
+| Morocco                             | `MA`     |
+| Mozambique                          | `MZ`     |
+| Myanmar                             | `MM`     |
+| Namibia                             | `NA`     |
+| Nauru                               | `NR`     |
+| Nepal                               | `NP`     |
+| Netherlands                         | `NL`     |
+| Netherlands Antilles (former)       | `AN`     |
+| New Caledonia                       | `NC`     |
+| New Zealand                         | `NZ`     |
+| Nicaragua                           | `NI`     |
+| Niger                               | `NE`     |
+| Nigeria                             | `NG`     |
+| Niue                                | `NU`     |
+| Norfolk Island                      | `NF`     |
+| Northern Mariana Islands            | `MP`     |
+| Norway                              | `NO`     |
+| Oman                                | `OM`     |
+| Pakistan                            | `PK`     |
+| Palau                               | `PW`     |
+| Palestine                           | `PS`     |
+| Panama                              | `PA`     |
+| Papua New Guinea                    | `PG`     |
+| Paraguay                            | `PY`     |
+| Peru                                | `PE`     |
+| Philippines                         | `PH`     |
+| Pitcairn                            | `PN`     |
+| Poland                              | `PL`     |
+| Portugal                            | `PT`     |
+| Puerto Rico                         | `PR`     |
+| Qatar                               | `QA`     |
+| Réunion                             | `RE`     |
+| Romania                             | `RO`     |
+| Russia                              | `RU`     |
+| Rwanda                              | `RW`     |
+| Saint Helena                        | `SH`     |
+| Saint Kitts and Nevis               | `KN`     |
+| Saint Lucia                         | `LC`     |
+| Saint Pierre and Miquelon           | `PM`     |
+| Saint Vincent and the Grenadines    | `VC`     |
+| Samoa                               | `WS`     |
+| San Marino                          | `SM`     |
+| São Tomé and Príncipe               | `ST`     |
+| Saudi Arabia                        | `SA`     |
+| Senegal                             | `SN`     |
+| Serbia                              | `RS`     |
+| Seychelles                          | `SC`     |
+| Sierra Leone                        | `SL`     |
+| Singapore                           | `SG`     |
+| Slovakia                            | `SK`     |
+| Slovenia                            | `SI`     |
+| Solomon Islands                     | `SB`     |
+| Somalia                             | `SO`     |
+| South Africa                        | `ZA`     |
+| South Georgia & South Sandwich Isl. | `GS`     |
+| South Sudan                         | `SS`     |
+| Spain                               | `ES`     |
+| Sri Lanka                           | `LK`     |
+| Sudan                               | `SD`     |
+| Suriname                            | `SR`     |
+| Svalbard and Jan Mayen              | `SJ`     |
+| Swaziland (Eswatini)                | `SZ`     |
+| Sweden                              | `SE`     |
+| Switzerland                         | `CH`     |
+| Syria                               | `SY`     |
+| Taiwan                              | `TW`     |
+| Tajikistan                          | `TJ`     |
+| Tanzania                            | `TZ`     |
+| Thailand                            | `TH`     |
+| Timor-Leste                         | `TL`     |
+| Togo                                | `TG`     |
+| Tokelau                             | `TK`     |
+| Tonga                               | `TO`     |
+| Trinidad and Tobago                 | `TT`     |
+| Tunisia                             | `TN`     |
+| Turkey                              | `TR`     |
+| Turkmenistan                        | `TM`     |
+| Turks and Caicos Islands            | `TC`     |
+| Tuvalu                              | `TV`     |
+| Uganda                              | `UG`     |
+| Ukraine                             | `UA`     |
+| United Arab Emirates                | `AE`     |
+| United Kingdom                      | `GB`     |
+| United States                       | `US`     |
+| U.S. Minor Outlying Islands         | `UM`     |
+| Uruguay                             | `UY`     |
+| Uzbekistan                          | `UZ`     |
+| Vanuatu                             | `VU`     |
+| Venezuela                           | `VE`     |
+| Vietnam                             | `VN`     |
+| Virgin Islands (British)            | `VG`     |
+| Virgin Islands (U.S.)               | `VI`     |
+| Wallis and Futuna                   | `WF`     |
+| Western Sahara                      | `EH`     |
+| Yemen                               | `YE`     |
+| Zambia                              | `ZM`     |
+| Zimbabwe                            | `ZW`     |
+
+---
+
