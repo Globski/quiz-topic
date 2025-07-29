@@ -349,3 +349,102 @@ HTML provides a wide range of tags, each serving a specific function. Here are e
 ---
 
 > ⚠️ Deprecated tags should not be used in modern HTML development. They are no longer supported in HTML5 and may not render as expected in modern browsers.
+
+---
+
+# Question: What are common HTML attributes and the elements they apply to?
+
+### HTML Attribute Reference
+
+| Attribute         | Belongs To                                       | Description                                                  |
+| ----------------- | ------------------------------------------------ | ------------------------------------------------------------ |
+| `accept`          | `<input>`                                        | Specifies allowed file types for file uploads                |
+| `accept-charset`  | `<form>`                                         | Specifies character encodings for form submission            |
+| `accesskey`       | Global                                           | Shortcut key to focus/activate an element                    |
+| `action`          | `<form>`                                         | URL where form-data is sent on submission                    |
+| `align`           | Deprecated                                       | Aligns elements (use CSS instead)                            |
+| `alt`             | `<area>`, `<img>`, `<input>`                     | Alternate text when the element cannot be displayed          |
+| `async`           | `<script>`                                       | Executes script asynchronously                               |
+| `autocomplete`    | `<form>`, `<input>`                              | Enables/disables autocomplete feature                        |
+| `autofocus`       | `<button>`, `<input>`, `<select>`, `<textarea>`  | Automatically focuses element on page load                   |
+| `autoplay`        | `<audio>`, `<video>`                             | Automatically starts media playback                          |
+| `bgcolor`         | Deprecated                                       | Background color (use CSS instead)                           |
+| `border`          | Deprecated                                       | Border width (use CSS instead)                               |
+| `charset`         | `<meta>`, `<script>`                             | Character encoding                                           |
+| `checked`         | `<input>` (checkbox/radio)                       | Marks input as selected by default                           |
+| `cite`            | `<blockquote>`, `<del>`, `<ins>`, `<q>`          | URL referencing the source of quote/deleted/inserted content |
+| `class`           | Global                                           | CSS class name(s)                                            |
+| `cols`            | `<textarea>`                                     | Width of textarea (in characters)                            |
+| `colspan`         | `<td>`, `<th>`                                   | Number of columns a cell should span                         |
+| `content`         | `<meta>`                                         | Meta information value                                       |
+| `contenteditable` | Global                                           | Makes content editable                                       |
+| `controls`        | `<audio>`, `<video>`                             | Displays audio/video controls                                |
+| `coords`          | `<area>`                                         | Defines coordinates of a clickable area                      |
+| `data-*`          | Global                                           | Stores custom data                                           |
+| `datetime`        | `<del>`, `<ins>`, `<time>`                       | Date and time information                                    |
+| `default`         | `<track>`                                        | Default track if no preference                               |
+| `defer`           | `<script>`                                       | Defers script execution until HTML parsing is complete       |
+| `dir`             | Global                                           | Text direction (e.g., `ltr`, `rtl`)                          |
+| `dirname`         | `<input>`, `<textarea>`                          | Includes text direction in form submission                   |
+| `disabled`        | Many form elements                               | Disables element                                             |
+| `download`        | `<a>`, `<area>`                                  | Downloads linked resource                                    |
+| `draggable`       | Global                                           | Defines if element can be dragged                            |
+| `enctype`         | `<form>`                                         | Encoding type for submitted form data                        |
+| `for`             | `<label>`, `<output>`                            | Links label to a form control                                |
+| `form`            | Many form-related elements                       | Associates element with a form                               |
+| `formaction`      | `<button>`, `<input type="submit">`              | Overrides form action attribute                              |
+| `headers`         | `<td>`, `<th>`                                   | References related header cells                              |
+| `height`          | Multimedia elements & `<img>`                    | Height of element                                            |
+| `hidden`          | Global                                           | Hides the element                                            |
+| `high`            | `<meter>`                                        | High range value                                             |
+| `href`            | `<a>`, `<area>`, `<base>`, `<link>`              | URL of linked resource                                       |
+| `hreflang`        | `<a>`, `<area>`, `<link>`                        | Language of linked resource                                  |
+| `http-equiv`      | `<meta>`                                         | HTTP header equivalent                                       |
+| `id`              | Global                                           | Unique identifier                                            |
+| `inputmode`       | Global                                           | Virtual keyboard type                                        |
+| `ismap`           | `<img>`                                          | Server-side image map                                        |
+| `kind`            | `<track>`                                        | Kind of text track (e.g., subtitles, captions)               |
+| `label`           | `<track>`, `<option>`, `<optgroup>`              | Title of element                                             |
+| `lang`            | Global                                           | Language code                                                |
+| `list`            | `<input>`                                        | Links input to `<datalist>`                                  |
+| `loop`            | `<audio>`, `<video>`                             | Repeats media                                                |
+| `low`             | `<meter>`                                        | Low range value                                              |
+| `max`             | `<input>`, `<meter>`, `<progress>`               | Maximum allowed value                                        |
+| `maxlength`       | `<input>`, `<textarea>`                          | Maximum number of characters                                 |
+| `media`           | `<a>`, `<area>`, `<link>`, `<source>`, `<style>` | Specifies target media/device                                |
+| `method`          | `<form>`                                         | HTTP method used                                             |
+| `min`             | `<input>`, `<meter>`                             | Minimum allowed value                                        |
+| `multiple`        | `<input>`, `<select>`                            | Allows multiple selections                                   |
+| `muted`           | `<audio>`, `<video>`                             | Mutes audio                                                  |
+| `name`            | Many elements                                    | Name of the element                                          |
+| `novalidate`      | `<form>`                                         | Disables validation                                          |
+| `open`            | `<details>`                                      | Specifies whether details is open by default                 |
+| `placeholder`     | `<input>`, `<textarea>`                          | Hint text                                                    |
+| `poster`          | `<video>`                                        | Poster image before playback                                 |
+| `readonly`        | `<input>`, `<textarea>`                          | Makes element read-only                                      |
+| `rel`             | `<a>`, `<area>`, `<link>`, `<form>`              | Relationship to the linked document                          |
+| `required`        | `<input>`, `<select>`, `<textarea>`              | Makes field required                                         |
+| `rows`            | `<textarea>`                                     | Number of visible lines                                      |
+| `rowspan`         | `<td>`, `<th>`                                   | Number of rows a cell should span                            |
+| `sandbox`         | `<iframe>`                                       | Enables extra restrictions                                   |
+| `scope`           | `<th>`                                           | Defines whether the header is for a row, column, or group    |
+| `selected`        | `<option>`                                       | Marks option as selected                                     |
+| `shape`           | `<area>`                                         | Shape of clickable area                                      |
+| `size`            | `<input>`, `<select>`                            | Width or number of visible options                           |
+| `src`             | Multimedia & scripting elements                  | Source URL                                                   |
+| `srcdoc`          | `<iframe>`                                       | Inline HTML to display in an iframe                          |
+| `start`           | `<ol>`                                           | Start value for ordered list                                 |
+| `step`            | `<input>`                                        | Valid number intervals                                       |
+| `style`           | Global                                           | Inline CSS styling                                           |
+| `tabindex`        | Global                                           | Tabbing order                                                |
+| `target`          | `<a>`, `<area>`, `<form>`, `<base>`              | Where to open linked document or submit form                 |
+| `title`           | Global                                           | Tooltip text                                                 |
+| `translate`       | Global                                           | Specifies if content should be translated                    |
+| `type`            | Many elements                                    | Type of element (e.g., input type, script type)              |
+| `usemap`          | `<img>`, `<object>`                              | References image map                                         |
+| `value`           | Many elements                                    | Specifies a value                                            |
+| `width`           | Multimedia & form elements                       | Width of element                                             |
+| `wrap`            | `<textarea>`                                     | Text wrapping behavior                                       |
+
+---
+
