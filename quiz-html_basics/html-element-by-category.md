@@ -954,4 +954,90 @@ HTML supports 140 standard color names. Each of these maps to a specific hexadec
 
 ---
 
+# Question: What is the character set used in HTML and how are characters represented?
 
+---
+
+## 📚 Default Character Set in HTML5
+
+> **UTF-8** is the default character encoding in HTML5.
+> It supports all Unicode characters and is backward compatible with ASCII.
+
+```html
+<meta charset="UTF-8">
+```
+
+---
+
+## 🔡 Common ASCII Characters (32–126)
+
+| Number | Char    | UTF-8   | Description          |    |              |
+| ------ | ------- | ------- | -------------------- | -- | ------------ |
+| 32     | ` `     | space   | Space                |    |              |
+| 33     | `!`     | `!`     | Exclamation mark     |    |              |
+| 34     | `"`     | `"`     | Quotation mark       |    |              |
+| 35     | `#`     | `#`     | Number sign          |    |              |
+| 36     | `$`     | `$`     | Dollar sign          |    |              |
+| 37     | `%`     | `%`     | Percent sign         |    |              |
+| 38     | `&`     | `&`     | Ampersand            |    |              |
+| 39     | `'`     | `'`     | Apostrophe           |    |              |
+| 40     | `(`     | `(`     | Left parenthesis     |    |              |
+| 41     | `)`     | `)`     | Right parenthesis    |    |              |
+| 42     | `*`     | `*`     | Asterisk             |    |              |
+| 43     | `+`     | `+`     | Plus sign            |    |              |
+| 44     | `,`     | `,`     | Comma                |    |              |
+| 45     | `-`     | `-`     | Hyphen-minus         |    |              |
+| 46     | `.`     | `.`     | Period / Full stop   |    |              |
+| 47     | `/`     | `/`     | Slash                |    |              |
+| 48–57  | `0–9`   | `0–9`   | Digits               |    |              |
+| 58     | `:`     | `:`     | Colon                |    |              |
+| 59     | `;`     | `;`     | Semicolon            |    |              |
+| 60     | `<`     | `<`     | Less-than sign       |    |              |
+| 61     | `=`     | `=`     | Equals sign          |    |              |
+| 62     | `>`     | `>`     | Greater-than sign    |    |              |
+| 63     | `?`     | `?`     | Question mark        |    |              |
+| 64     | `@`     | `@`     | At symbol            |    |              |
+| 65–90  | `A–Z`   | `A–Z`   | Uppercase letters    |    |              |
+| 91     | `[`     | `[`     | Left square bracket  |    |              |
+| 92     | `\\`    | `\\`    | Backslash            |    |              |
+| 93     | `]`     | `]`     | Right square bracket |    |              |
+| 94     | `^`     | `^`     | Caret                |    |              |
+| 95     | `_`     | `_`     | Underscore           |    |              |
+| 96     | `` ` `` | `` ` `` | Grave accent         |    |              |
+| 97–122 | `a–z`   | `a–z`   | Lowercase letters    |    |              |
+| 123    | `{`     | `{`     | Left curly brace     |    |              |
+| 124    | \`      | \`      | \`                   | \` | Vertical bar |
+| 125    | `}`     | `}`     | Right curly brace    |    |              |
+| 126    | `~`     | `~`     | Tilde                |    |              |
+
+---
+
+## 🧾 Extended Characters (127–255) – ANSI/ISO-8859-1
+
+| Number  | Char    | UTF-8     | Description                          |
+| ------- | ------- | --------- | ------------------------------------ |
+| 128     | €       | `€`       | Euro sign                            |
+| 130     | ‚       | `‚`       | Single low-9 quotation mark          |
+| 133     | …       | `…`       | Ellipsis                             |
+| 145–148 | ‘ ’ “ ” | `‘ ’ “ ”` | Curly quotes                         |
+| 149     | •       | `•`       | Bullet point                         |
+| 150–151 | – —     | `– —`     | En dash / Em dash                    |
+| 160     |         | `&nbsp;`  | Non-breaking space                   |
+| 161–191 | ¡–¿     | various   | Latin-1 punctuation                  |
+| 192–255 | À–ÿ     | various   | Latin accented characters (A–Z, a–z) |
+
+---
+
+## 📌 Notes
+
+* For safe HTML rendering, special characters can be written as **HTML entities**:
+
+  * `<` → `&lt;`
+  * `>` → `&gt;`
+  * `&` → `&amp;`
+  * `"` → `&quot;`
+  * `'` → `&#39;`
+
+* Always use UTF-8 to avoid encoding issues with international text.
+
+---
