@@ -431,4 +431,28 @@ The `Exception` class provides several **methods** to access detailed error info
 
 ---
 
+## 🛠️ PHP Runtime Configuration (Filesystem Functions)
+
+These settings control how file handling and stream wrappers behave in PHP.
+
+| **Name**                   | **Default** | **Description**                                                                                        | **Changeable Level** |
+| -------------------------- | ----------- | ------------------------------------------------------------------------------------------------------ | -------------------- |
+| `allow_url_fopen`          | `"1"`       | Enables URL-aware fopen wrappers (e.g., `http://`, `ftp://`) for file functions like `fopen()`.        | `PHP_INI_SYSTEM`     |
+| `allow_url_include`        | `"0"`       | Allows `include/require` to access remote files via URL. ⚠️ Risky – should remain off in production.   | `PHP_INI_SYSTEM`     |
+| `user_agent`               | `NULL`      | Sets the **user agent** string used in HTTP requests (e.g., `fopen("http://...")`).                    | `PHP_INI_ALL`        |
+| `default_socket_timeout`   | `"60"`      | Sets the **default timeout (in seconds)** for socket-based streams like `fsockopen()`.                 | `PHP_INI_ALL`        |
+| `from`                     | `""`        | Sets the **email address** used in `From:` header for HTTP/FTP requests.                               | `PHP_INI_ALL`        |
+| `auto_detect_line_endings` | `"0"`       | When `"1"`, PHP **auto-detects line endings** (Unix `\n`, Mac `\r`, Windows `\r\n`) in file functions. | `PHP_INI_ALL`        |
+| `sys_temp_dir`             | `""`        | Path to directory where **temporary files** are stored (`tempnam()`, `tmpfile()` etc.).                | `PHP_INI_SYSTEM`     |
+
+---
+
+### Changeable Levels Explained
+
+| **Directive**    | **Where It Can Be Set**                           |
+| ---------------- | ------------------------------------------------- |
+| `PHP_INI_SYSTEM` | Only in `php.ini`, `.htaccess`, or server config. |
+| `PHP_INI_ALL`    | Anywhere – including `ini_set()` at runtime.      |
+
+---
 
