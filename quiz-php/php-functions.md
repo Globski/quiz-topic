@@ -377,3 +377,37 @@
 
 ---
 
+## PHP Predefined Error & Logging Constants
+
+| **Value** | **Constant**          | **Type**            | **Description**                                                                                            |
+| --------- | --------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `1`       | `E_ERROR`             | Fatal Error         | Fatal run-time errors. Script execution is **halted**.                                                     |
+| `2`       | `E_WARNING`           | Warning             | Run-time warnings. Script continues.                                                                       |
+| `4`       | `E_PARSE`             | Parse Error         | Compile-time parse errors from the **parser** only.                                                        |
+| `8`       | `E_NOTICE`            | Notice              | Run-time notices. Could indicate possible bugs.                                                            |
+| `16`      | `E_CORE_ERROR`        | Core Fatal Error    | Fatal errors during **PHP startup**. Script halts.                                                         |
+| `32`      | `E_CORE_WARNING`      | Core Warning        | Non-fatal warnings during **PHP startup**. Script continues.                                               |
+| `64`      | `E_COMPILE_ERROR`     | Compile Fatal Error | Fatal compile-time errors from the **Zend Engine**.                                                        |
+| `128`     | `E_COMPILE_WARNING`   | Compile Warning     | Non-fatal compile-time warnings from the **Zend Engine**.                                                  |
+| `256`     | `E_USER_ERROR`        | User Fatal Error    | User-generated fatal errors (via `trigger_error()`). Script halts.                                         |
+| `512`     | `E_USER_WARNING`      | User Warning        | User-generated non-fatal warnings (via `trigger_error()`). Script continues.                               |
+| `1024`    | `E_USER_NOTICE`       | User Notice         | User-generated notices (via `trigger_error()`).                                                            |
+| `2048`    | `E_STRICT`            | Code Suggestions    | Suggests best practices and forward compatibility improvements. *(Not included in `E_ALL` before PHP 5.4)* |
+| `4096`    | `E_RECOVERABLE_ERROR` | Catchable Error     | Fatal error that can be caught. If uncaught, script aborts. *(Since PHP 5.2)*                              |
+| `8192`    | `E_DEPRECATED`        | Deprecation Warning | Warns about code that won't work in future PHP versions. *(Since PHP 5.3)*                                 |
+| `16384`   | `E_USER_DEPRECATED`   | User Deprecation    | User-generated deprecation warning via `trigger_error()`. *(Since PHP 5.3)*                                |
+| `32767`   | `E_ALL`               | All Errors          | Reports **all errors and warnings**, except `E_STRICT` prior to PHP 5.4.                                   |
+
+---
+
+### Tips:
+
+* Use `error_reporting(E_ALL)` in development to catch everything.
+* Avoid `display_errors = On` in production; use `log_errors` instead.
+* Combine constants using bitwise OR:
+
+  ```php
+  error_reporting(E_ERROR | E_WARNING | E_PARSE);
+  ```
+
+---
