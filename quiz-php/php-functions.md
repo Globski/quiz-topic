@@ -411,3 +411,24 @@
   ```
 
 ---
+
+## PHP Exception Object
+
+Exceptions are objects used to represent **errors or unexpected behavior** in your code. They are thrown with the `throw` statement and caught using `try...catch`.
+
+The `Exception` class provides several **methods** to access detailed error information:
+
+| **Method**           | **Description**                                                                |
+| -------------------- | ------------------------------------------------------------------------------ |
+| `__construct()`      | The constructor for the Exception object. Accepts message, code, and previous. |
+| `getMessage()`       | Returns the exception **message** — a string describing the error.             |
+| `getCode()`          | Returns the **user-defined exception code** (if provided).                     |
+| `getFile()`          | Returns the **filename** where the exception was thrown.                       |
+| `getLine()`          | Returns the **line number** where the exception occurred.                      |
+| `getPrevious()`      | Returns the **previous exception**, if the current one was chained.            |
+| `getTrace()`         | Returns an **array** of the stack trace when the exception was thrown.         |
+| `getTraceAsString()` | Returns the **stack trace** as a **string** (human-readable).                  |
+
+---
+
+
