@@ -721,3 +721,156 @@ HTML supports 140 standard color names. Each of these maps to a specific hexadec
 | Yellow               | `#FFFF00` |   | YellowGreen       | `#9ACD32` |
 
 ---
+
+# Question: List HTML `<canvas>` element usage and Canvas API methods grouped by category.
+
+### HTML Canvas Element
+
+| Tag        | Description                              |
+| ---------- | ---------------------------------------- |
+| `<canvas>` | Defines a bitmapped drawing area in HTML |
+
+---
+
+### Getting the Context
+
+| Method             | Description                                |
+| ------------------ | ------------------------------------------ |
+| `getContext("2d")` | Returns the drawing context (tools object) |
+
+---
+
+### Canvas Drawing Methods
+
+| Method         | Description                           |
+| -------------- | ------------------------------------- |
+| `fillRect()`   | Draws a filled rectangle              |
+| `strokeRect()` | Draws a rectangle outline             |
+| `clearRect()`  | Clears the specified rectangular area |
+
+---
+
+### Path Methods
+
+| Method            | Description                                |
+| ----------------- | ------------------------------------------ |
+| `beginPath()`     | Begins a new path                          |
+| `closePath()`     | Closes the path by connecting to the start |
+| `isPointInPath()` | Checks if a point is inside the path       |
+| `moveTo()`        | Moves the pen to a given coordinate        |
+| `lineTo()`        | Draws a line to a coordinate               |
+| `rect()`          | Adds a rectangle to the path               |
+| `fill()`          | Fills the path with current fill style     |
+| `stroke()`        | Strokes the path with current stroke style |
+
+---
+
+### Circles and Curves
+
+| Method               | Description                               |
+| -------------------- | ----------------------------------------- |
+| `arc()`              | Draws an arc (circle or part of a circle) |
+| `arcTo()`            | Draws an arc between two tangents         |
+| `quadraticCurveTo()` | Draws a quadratic Bézier curve            |
+| `bezierCurveTo()`    | Draws a cubic Bézier curve                |
+
+---
+
+### Text
+
+| Property/Method | Description                       |
+| --------------- | --------------------------------- |
+| `fillText()`    | Draws filled text                 |
+| `strokeText()`  | Draws outlined text               |
+| `font`          | Sets font style for text          |
+| `textAlign`     | Sets horizontal alignment of text |
+| `textBaseline`  | Sets vertical alignment of text   |
+| `direction`     | Sets text direction               |
+| `measureText()` | Returns width of specified text   |
+
+---
+
+### Colors, Styles, and Shadows
+
+| Property/Method          | Description                                 |
+| ------------------------ | ------------------------------------------- |
+| `fillStyle`              | Fill color, gradient, or pattern            |
+| `strokeStyle`            | Stroke color, gradient, or pattern          |
+| `lineWidth`              | Width of lines                              |
+| `lineCap`                | Style of line end caps                      |
+| `lineJoin`               | Style of corner where lines meet            |
+| `miterLimit`             | Max miter length when `lineJoin` is "miter" |
+| `shadowBlur`             | Blur level of shadow                        |
+| `shadowColor`            | Color of the shadow                         |
+| `shadowOffsetX`          | Horizontal offset of the shadow             |
+| `shadowOffsetY`          | Vertical offset of the shadow               |
+| `createLinearGradient()` | Creates a linear gradient                   |
+| `createRadialGradient()` | Creates a radial (circular) gradient        |
+| `createPattern()`        | Repeats an image or element as a pattern    |
+| `addColorStop()`         | Sets color stops in a gradient              |
+
+---
+
+### Transformations
+
+| Method           | Description                             |
+| ---------------- | --------------------------------------- |
+| `scale()`        | Scales the drawing                      |
+| `rotate()`       | Rotates the drawing                     |
+| `translate()`    | Moves the (0,0) coordinate              |
+| `transform()`    | Multiplies the current transform matrix |
+| `setTransform()` | Resets and sets the transform matrix    |
+
+---
+
+### Image Drawing
+
+| Method        | Description                                  |
+| ------------- | -------------------------------------------- |
+| `drawImage()` | Draws an image, canvas, or video onto canvas |
+
+---
+
+### ImageData / Pixel Manipulation
+
+| Method/Property     | Description                           |
+| ------------------- | ------------------------------------- |
+| `createImageData()` | Creates a new blank image data object |
+| `getImageData()`    | Gets image data from canvas           |
+| `putImageData()`    | Puts image data back onto canvas      |
+| `ImageData.data`    | Pixel data array                      |
+| `ImageData.width`   | Width of the image data               |
+| `ImageData.height`  | Height of the image data              |
+
+---
+
+### Compositing
+
+| Property                   | Description                                       |
+| -------------------------- | ------------------------------------------------- |
+| `globalAlpha`              | Sets transparency level for drawings              |
+| `globalCompositeOperation` | Sets how new drawings blend with existing content |
+
+---
+
+### Other Methods
+
+| Method          | Description                                    |
+| --------------- | ---------------------------------------------- |
+| `clip()`        | Clips a region to restrict future drawings     |
+| `save()`        | Saves the current state                        |
+| `restore()`     | Restores the last saved state                  |
+| `toDataURL()`   | Returns canvas as a data URL (base64 image)    |
+| `createEvent()` | (Deprecated) Used for old-style event creation |
+
+---
+
+### Notes
+
+* The `<canvas>` element **does not** draw anything by itself; **JavaScript is required**.
+* The drawing context returned by `getContext("2d")` is the main API object used.
+* Supported by all modern browsers including Chrome, Edge, Firefox, Safari, and Opera.
+
+---
+
+
