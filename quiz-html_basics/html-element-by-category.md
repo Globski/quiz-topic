@@ -1691,3 +1691,82 @@ This combination indicates **English as used in the United States**.
 
 ---
 
+# Question: List HTTP status messages grouped by their category.
+
+### 1xx: Informational
+
+| Status Code | Message             | Description                                                                 |
+| ----------- | ------------------- | --------------------------------------------------------------------------- |
+| 100         | Continue            | The server has received the request headers; the client should proceed.     |
+| 101         | Switching Protocols | The requester has asked the server to switch protocols.                     |
+| 103         | Early Hints         | Allows the browser to start preloading resources while the server responds. |
+
+---
+
+### 2xx: Successful
+
+| Status Code | Message                       | Description                                                              |
+| ----------- | ----------------------------- | ------------------------------------------------------------------------ |
+| 200         | OK                            | Standard response for successful HTTP requests.                          |
+| 201         | Created                       | The request has been fulfilled, and a new resource is created.           |
+| 202         | Accepted                      | The request has been accepted but not yet processed.                     |
+| 203         | Non-Authoritative Information | Response contains info possibly from a third-party source.               |
+| 204         | No Content                    | Request succeeded, but no content is returned.                           |
+| 205         | Reset Content                 | Request succeeded, no content, but requester should reset document view. |
+| 206         | Partial Content               | Server is delivering only part of the resource due to a range request.   |
+
+---
+
+### 3xx: Redirection
+
+| Status Code | Message            | Description                                            |
+| ----------- | ------------------ | ------------------------------------------------------ |
+| 300         | Multiple Choices   | Multiple resource options. Max of five links allowed.  |
+| 301         | Moved Permanently  | The resource has been permanently moved to a new URL.  |
+| 302         | Found              | The resource has temporarily moved to a different URL. |
+| 303         | See Other          | The resource can be found at a different URI.          |
+| 304         | Not Modified       | Resource has not been modified since last requested.   |
+| 307         | Temporary Redirect | Resource has temporarily moved to a new URL.           |
+| 308         | Permanent Redirect | Resource has permanently moved to a new URL.           |
+
+---
+
+### 4xx: Client Errors
+
+| Status Code | Message                       | Description                                                 |
+| ----------- | ----------------------------- | ----------------------------------------------------------- |
+| 400         | Bad Request                   | The request cannot be fulfilled due to bad syntax.          |
+| 401         | Unauthorized                  | Authentication is required and has failed or not provided.  |
+| 402         | Payment Required              | Reserved for future use.                                    |
+| 403         | Forbidden                     | Server understood request, but refuses to authorize it.     |
+| 404         | Not Found                     | The requested page/resource could not be found.             |
+| 405         | Method Not Allowed            | Method is not supported by the target resource.             |
+| 406         | Not Acceptable                | Response content is not acceptable based on client headers. |
+| 407         | Proxy Authentication Required | Client must authenticate with the proxy.                    |
+| 408         | Request Timeout               | Server timed out waiting for the request.                   |
+| 409         | Conflict                      | Request could not be completed due to a conflict.           |
+| 410         | Gone                          | Requested resource is no longer available.                  |
+| 411         | Length Required               | Content-Length header is required.                          |
+| 412         | Precondition Failed           | Preconditions given in request header failed.               |
+| 413         | Request Too Large             | Request entity is too large.                                |
+| 414         | Request-URI Too Long          | URI is too long. Usually due to long GET request.           |
+| 415         | Unsupported Media Type        | The media type is not supported by the server.              |
+| 416         | Range Not Satisfiable         | Server cannot supply the requested portion of file.         |
+| 417         | Expectation Failed            | Server cannot meet the requirements of the Expect header.   |
+
+---
+
+### 5xx: Server Errors
+
+| Status Code | Message                         | Description                                      |
+| ----------- | ------------------------------- | ------------------------------------------------ |
+| 500         | Internal Server Error           | Generic error with no more specific details.     |
+| 501         | Not Implemented                 | Server does not recognize or support the method. |
+| 502         | Bad Gateway                     | Invalid response from upstream server.           |
+| 503         | Service Unavailable             | Server is overloaded or down.                    |
+| 504         | Gateway Timeout                 | No timely response from upstream server.         |
+| 505         | HTTP Version Not Supported      | Server does not support HTTP version used.       |
+| 511         | Network Authentication Required | Client must authenticate to gain network access. |
+
+---
+
