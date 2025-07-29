@@ -1671,4 +1671,63 @@ Quantifiers define **how many** times a pattern can match:
 
 ---
 
+# Question: What are PHP SimpleXML functions and how are they used?
+
+---
+
+## 📖 PHP SimpleXML Introduction
+
+**SimpleXML** is an extension that allows PHP developers to **easily read, parse, and manipulate XML data**.
+
+* It converts XML documents into **PHP objects** that can be iterated like arrays.
+* It is most effective when the structure of the XML document is already known.
+
+---
+
+## ⚙️ Installation
+
+Since **PHP 5**, the SimpleXML extension is built into PHP core.
+**No additional installation is required.**
+
+---
+
+## 🔧 PHP SimpleXML Functions
+
+| Function                   | Description                                                       |
+| -------------------------- | ----------------------------------------------------------------- |
+| `__construct()`            | Creates a new `SimpleXMLElement` object                           |
+| `__toString()`             | Returns the string content of an element                          |
+| `addAttribute()`           | Appends an attribute to the SimpleXML element                     |
+| `addChild()`               | Appends a child element to the SimpleXML element                  |
+| `asXML()`                  | Returns a well-formed XML string from a `SimpleXMLElement` object |
+| `attributes()`             | Returns the attributes/values of an element                       |
+| `children()`               | Returns the children of a specified node                          |
+| `count()`                  | Counts the number of children of a specified node                 |
+| `getDocNamespaces()`       | Returns namespaces declared in the document                       |
+| `getName()`                | Returns the name of an element                                    |
+| `getNamespaces()`          | Returns namespaces used in the document                           |
+| `registerXPathNamespace()` | Creates a namespace context for the next XPath query              |
+| `saveXML()`                | Alias of `asXML()`, returns XML as a string                       |
+| `simplexml_import_dom()`   | Converts a DOM node to a `SimpleXMLElement` object                |
+| `simplexml_load_file()`    | Loads an XML file and returns it as a `SimpleXMLElement` object   |
+| `simplexml_load_string()`  | Parses an XML string into a `SimpleXMLElement` object             |
+| `xpath()`                  | Runs an XPath query on XML data                                   |
+
+---
+
+## 🔁 PHP SimpleXML Iteration Functions
+
+| Function        | Description                                             |
+| --------------- | ------------------------------------------------------- |
+| `current()`     | Returns the current element in the iteration            |
+| `getChildren()` | Returns the child elements of the current element       |
+| `hasChildren()` | Checks whether the current element has children         |
+| `key()`         | Returns the XML tag name (key) of the current element   |
+| `next()`        | Moves the internal pointer to the next element          |
+| `rewind()`      | Rewinds the internal pointer to the first element       |
+| `valid()`       | Checks if the current element in the iteration is valid |
+
+---
+
+
 
