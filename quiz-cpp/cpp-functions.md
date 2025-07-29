@@ -97,3 +97,72 @@ The `<fstream>` library provides classes for handling file input and output oper
 | `ofstream` | Output file stream class; used for writing to files                                      |
 
 ---
+
+# Question: List all functions provided by the C++ `<cmath>` library and describe their usage.
+
+## C++ `<cmath>` Functions
+
+The `<cmath>` library provides mathematical functions for performing various operations on numeric values.
+
+| Function          | Description                                                                                  |
+| ----------------- | -------------------------------------------------------------------------------------------- |
+| `abs(x)`          | Returns the absolute value of `x`                                                            |
+| `acos(x)`         | Returns the arccosine of `x` in radians                                                      |
+| `acosh(x)`        | Returns the hyperbolic arccosine of `x`                                                      |
+| `asin(x)`         | Returns the arcsine of `x` in radians                                                        |
+| `asinh(x)`        | Returns the hyperbolic arcsine of `x`                                                        |
+| `atan(x)`         | Returns the arctangent of `x` in radians                                                     |
+| `atan2(y, x)`     | Converts (x, y) to polar coordinates and returns the angle (theta)                           |
+| `atanh(x)`        | Returns the hyperbolic arctangent of `x`                                                     |
+| `cbrt(x)`         | Returns the cube root of `x`                                                                 |
+| `ceil(x)`         | Rounds `x` up to the nearest integer                                                         |
+| `copysign(x, y)`  | Returns `x` with the sign of `y`                                                             |
+| `cos(x)`          | Returns the cosine of `x` (x in radians)                                                     |
+| `cosh(x)`         | Returns the hyperbolic cosine of `x`                                                         |
+| `exp(x)`          | Returns `e^x`                                                                                |
+| `exp2(x)`         | Returns `2^x`                                                                                |
+| `expm1(x)`        | Returns `e^x - 1`                                                                            |
+| `erf(x)`          | Returns the error function value at `x`                                                      |
+| `erfc(x)`         | Returns the complementary error function value at `x`                                        |
+| `fabs(x)`         | Returns the absolute value of floating point `x`                                             |
+| `fdim(x, y)`      | Returns the positive difference between `x` and `y`                                          |
+| `floor(x)`        | Rounds `x` down to the nearest integer                                                       |
+| `fma(x, y, z)`    | Returns `x*y + z` with no intermediate rounding                                              |
+| `fmax(x, y)`      | Returns the maximum of `x` and `y`                                                           |
+| `fmin(x, y)`      | Returns the minimum of `x` and `y`                                                           |
+| `fmod(x, y)`      | Returns the floating-point remainder of `x/y`                                                |
+| `frexp(x, y)`     | Splits `x` into `m * 2^n`; returns `m` and stores `n` in pointer `y`                         |
+| `hypot(x, y)`     | Returns `sqrt(x² + y²)` without overflow/underflow                                           |
+| `ilogb(x)`        | Returns the integer base-2 logarithm of `x`                                                  |
+| `ldexp(x, y)`     | Returns `x * 2^y`                                                                            |
+| `lgamma(x)`       | Returns the natural log of the absolute value of the gamma function at `x`                   |
+| `llrint(x)`       | Rounds `x` to the nearest integer and returns a `long long`                                  |
+| `llround(x)`      | Rounds `x` to the nearest integer and returns a `long long`                                  |
+| `log(x)`          | Returns the natural logarithm (base `e`) of `x`                                              |
+| `log10(x)`        | Returns the base-10 logarithm of `x`                                                         |
+| `log1p(x)`        | Returns `log(1 + x)` with higher precision for small `x`                                     |
+| `log2(x)`         | Returns the base-2 logarithm of `x`                                                          |
+| `logb(x)`         | Returns the exponent of `x` in its floating-point representation                             |
+| `lrint(x)`        | Rounds `x` to the nearest integer and returns a `long`                                       |
+| `lround(x)`       | Rounds `x` to the nearest integer and returns a `long`                                       |
+| `modf(x, y)`      | Splits `x` into integer and fractional parts; returns fraction and stores int in pointer `y` |
+| `nan(s)`          | Returns a NaN (Not a Number) value                                                           |
+| `nearbyint(x)`    | Rounds `x` to an integer using current rounding mode                                         |
+| `nextafter(x,y)`  | Returns the next representable value after `x` toward `y`                                    |
+| `nexttoward(x,y)` | Returns the next representable value after `x` toward `y` (long double `y`)                  |
+| `pow(x, y)`       | Returns `x` raised to the power of `y`                                                       |
+| `remainder(x,y)`  | Returns remainder of `x/y` rounded to the nearest integer                                    |
+| `remquo(x,y,z)`   | Calculates `x/y`, stores the quotient in pointer `z`, returns remainder                      |
+| `rint(x)`         | Rounds `x` to nearest integer using current rounding mode                                    |
+| `round(x)`        | Rounds `x` to the nearest integer                                                            |
+| `scalbln(x, y)`   | Returns `x * R^y` (R is radix, usually 2; `y` is `long`)                                     |
+| `scalbn(x, y)`    | Returns `x * R^y` (R is radix, usually 2; `y` is `int`)                                      |
+| `sin(x)`          | Returns the sine of `x` (in radians)                                                         |
+| `sinh(x)`         | Returns the hyperbolic sine of `x`                                                           |
+| `sqrt(x)`         | Returns the square root of `x`                                                               |
+| `tan(x)`          | Returns the tangent of `x` (in radians)                                                      |
+| `tanh(x)`         | Returns the hyperbolic tangent of `x`                                                        |
+| `tgamma(x)`       | Returns the gamma function of `x`                                                            |
+| `trunc(x)`        | Truncates `x` to its integer part                                                            |
+
+---
