@@ -691,3 +691,103 @@ Unless you **know exactly what you're doing**, it's better to:
 
 ---
 
+## PHP Filter Functions Cheat Sheet
+
+| **Function**           | **Description**                                                                        |
+| ---------------------- | -------------------------------------------------------------------------------------- |
+| `filter_has_var()`     | Checks whether a variable of a specified **input type** (e.g. `INPUT_GET`) exists      |
+| `filter_id()`          | Returns the **filter ID** of a given **filter name** (used internally by PHP)          |
+| `filter_input()`       | Fetches a single external variable and **filters** it (e.g. from `$_GET`, `$_POST`)    |
+| `filter_input_array()` | Fetches **multiple external variables** and filters them using an **array of filters** |
+| `filter_list()`        | Returns an **array of all supported filter names**                                     |
+| `filter_var()`         | Filters a **single variable** (not necessarily from user input)                        |
+| `filter_var_array()`   | Filters **multiple variables** in an **associative array**                             |
+
+---
+
+# PHP Predefined Filter Constants
+
+### Input Types (Superglobals)
+
+| Constant       | Description                     |
+| -------------- | ------------------------------- |
+| `INPUT_POST`   | POST variables (`$_POST`)       |
+| `INPUT_GET`    | GET variables (`$_GET`)         |
+| `INPUT_COOKIE` | COOKIE variables (`$_COOKIE`)   |
+| `INPUT_ENV`    | Environment variables (`$_ENV`) |
+| `INPUT_SERVER` | Server variables (`$_SERVER`)   |
+
+---
+
+### Validation Filters
+
+| Constant                  | Description                       |
+| ------------------------- | --------------------------------- |
+| `FILTER_VALIDATE_BOOLEAN` | Validates a boolean               |
+| `FILTER_VALIDATE_EMAIL`   | Validates an email address        |
+| `FILTER_VALIDATE_FLOAT`   | Validates a float                 |
+| `FILTER_VALIDATE_INT`     | Validates an integer              |
+| `FILTER_VALIDATE_IP`      | Validates an IP address           |
+| `FILTER_VALIDATE_MAC`     | Validates a MAC address           |
+| `FILTER_VALIDATE_REGEXP`  | Validates against a regex pattern |
+| `FILTER_VALIDATE_URL`     | Validates a URL                   |
+
+---
+
+### Sanitizing Filters
+
+| Constant                        | Description                                      |
+| ------------------------------- | ------------------------------------------------ |
+| `FILTER_SANITIZE_EMAIL`         | Removes illegal characters from email            |
+| `FILTER_SANITIZE_ENCODED`       | Encodes special characters                       |
+| `FILTER_SANITIZE_NUMBER_FLOAT`  | Removes all but digits, `+`, `-`, `.`, `e`, `E`  |
+| `FILTER_SANITIZE_NUMBER_INT`    | Removes all but digits, `+`, `-`                 |
+| `FILTER_SANITIZE_SPECIAL_CHARS` | Removes special HTML characters                  |
+| `FILTER_SANITIZE_STRING`        | Removes tags and special characters (Deprecated) |
+| `FILTER_SANITIZE_URL`           | Removes illegal characters from a URL            |
+| `FILTER_SANITIZE_ADD_SLASHES`   | Adds slashes to escape characters                |
+| `FILTER_SANITIZE_MAGIC_QUOTES`  | Applies `addslashes()` (Deprecated/Removed)      |
+| `FILTER_SANITIZE_STRIPPED`      | Alias of `FILTER_SANITIZE_STRING` (Deprecated)   |
+| `FILTER_UNSAFE_RAW`             | Does nothing unless flags are used               |
+| `FILTER_CALLBACK`               | Call a user-defined function                     |
+
+---
+
+### Flags for Filters
+
+| Constant                        | Description                                   |
+| ------------------------------- | --------------------------------------------- |
+| `FILTER_FLAG_NONE`              | No special flags                              |
+| `FILTER_FLAG_ALLOW_OCTAL`       | Accept octal format                           |
+| `FILTER_FLAG_ALLOW_HEX`         | Accept hex format (e.g., `0x1A`)              |
+| `FILTER_FLAG_STRIP_LOW`         | Strip ASCII < 32                              |
+| `FILTER_FLAG_STRIP_HIGH`        | Strip ASCII > 127                             |
+| `FILTER_FLAG_ENCODE_LOW`        | Encode ASCII < 32                             |
+| `FILTER_FLAG_ENCODE_HIGH`       | Encode ASCII > 127                            |
+| `FILTER_FLAG_ENCODE_AMP`        | Encode `&` as `&amp;`                         |
+| `FILTER_FLAG_NO_ENCODE_QUOTES`  | Don't encode `'` and `"`                      |
+| `FILTER_FLAG_EMPTY_STRING_NULL` | Convert empty strings to `NULL` (rarely used) |
+| `FILTER_FLAG_ALLOW_FRACTION`    | Allow `.` in floats                           |
+| `FILTER_FLAG_ALLOW_THOUSAND`    | Allow `,` in numbers                          |
+| `FILTER_FLAG_ALLOW_SCIENTIFIC`  | Allow scientific notation (`1e10`)            |
+| `FILTER_FLAG_PATH_REQUIRED`     | Require path in URL                           |
+| `FILTER_FLAG_QUERY_REQUIRED`    | Require query string in URL                   |
+| `FILTER_FLAG_IPV4`              | Only allow IPv4 addresses                     |
+| `FILTER_FLAG_IPV6`              | Only allow IPv6 addresses                     |
+| `FILTER_FLAG_NO_RES_RANGE`      | Disallow reserved IP ranges                   |
+| `FILTER_FLAG_NO_PRIV_RANGE`     | Disallow private IP ranges                    |
+| `FILTER_FLAG_EMAIL_UNICODE`     | Allow Unicode in email local part             |
+
+---
+
+### Filter Behavior Modifiers
+
+| Constant                 | Description                                   |
+| ------------------------ | --------------------------------------------- |
+| `FILTER_REQUIRE_SCALAR`  | Input must be scalar (not an array or object) |
+| `FILTER_REQUIRE_ARRAY`   | Input must be an array                        |
+| `FILTER_FORCE_ARRAY`     | Force input into an array                     |
+| `FILTER_NULL_ON_FAILURE` | Return `NULL` on failure (instead of `false`) |
+
+---
+
