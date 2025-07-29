@@ -984,3 +984,107 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format. PHP 
 
 ---
 
+# Question: What are the PHP `libxml` functions and predefined constants, and what do they do?
+
+---
+
+### **PHP libxml Functions**
+
+| Function                              | Description                                                         |
+| ------------------------------------- | ------------------------------------------------------------------- |
+| `libxml_clear_errors()`               | Clears the libxml error buffer                                      |
+| `libxml_disable_entity_loader()`      | Enables the ability to load external entities                       |
+| `libxml_get_errors()`                 | Gets all the errors from the libxml error buffer                    |
+| `libxml_get_last_error()`             | Gets the last error from the libxml error buffer                    |
+| `libxml_set_external_entity_loader()` | Changes the default external entity loader                          |
+| `libxml_set_streams_context()`        | Sets the streams context for the next libxml document load or write |
+| `libxml_use_internal_errors()`        | Disables standard libxml errors and enables user error handling     |
+
+---
+
+### **PHP Predefined libxml Constants**
+
+#### **General Configuration and Optimization**
+
+| Constant          | Description                                                        |
+| ----------------- | ------------------------------------------------------------------ |
+| `LIBXML_BIGLINES` | Allows line numbers > 65535 to be reported correctly               |
+| `LIBXML_COMPACT`  | Enables small nodes allocation optimization for better performance |
+
+---
+
+#### **DTD Handling**
+
+| Constant          | Description                |
+| ----------------- | -------------------------- |
+| `LIBXML_DTDATTR`  | Set default DTD attributes |
+| `LIBXML_DTDLOAD`  | Load external DTD subset   |
+| `LIBXML_DTDVALID` | Validate document with DTD |
+
+---
+
+#### **HTML Specific Parsing**
+
+| Constant                | Description                                               |
+| ----------------------- | --------------------------------------------------------- |
+| `LIBXML_HTML_NOIMPLIED` | Disable automatic insertion of `<html>` and `<body>` tags |
+| `LIBXML_HTML_NODEFDTD`  | Prevent automatic insertion of a default DOCTYPE          |
+
+---
+
+#### **Content Formatting & Tag Control**
+
+| Constant            | Description                                                             |
+| ------------------- | ----------------------------------------------------------------------- |
+| `LIBXML_NOBLANKS`   | Remove blank nodes                                                      |
+| `LIBXML_NOCDATA`    | Convert CDATA nodes to text nodes                                       |
+| `LIBXML_NOEMPTYTAG` | Convert empty tags (e.g., `<br/>`) to explicit opening and closing tags |
+| `LIBXML_NOXMLDECL`  | Omit the XML declaration when saving documents                          |
+
+---
+
+#### **Security & Networking**
+
+| Constant           | Description                                    |
+| ------------------ | ---------------------------------------------- |
+| `LIBXML_NOENT`     | Substitute entities                            |
+| `LIBXML_NOERROR`   | Suppress error messages                        |
+| `LIBXML_NONET`     | Prevent network access while loading documents |
+| `LIBXML_NOWARNING` | Suppress warning messages                      |
+
+---
+
+#### **Namespace and Parsing Behavior**
+
+| Constant           | Description                                                         |
+| ------------------ | ------------------------------------------------------------------- |
+| `LIBXML_NSCLEAN`   | Remove redundant namespace declarations                             |
+| `LIBXML_PARSEHUGE` | Allow parsing of large files and nodes by relaxing hardcoded limits |
+| `LIBXML_PEDANTIC`  | Enable strict (pedantic) error reporting                            |
+| `LIBXML_XINCLUDE`  | Enable XInclude substitution                                        |
+
+---
+
+#### **Error Handling Constants**
+
+| Constant             | Description                  |
+| -------------------- | ---------------------------- |
+| `LIBXML_ERR_ERROR`   | Indicates recoverable errors |
+| `LIBXML_ERR_FATAL`   | Indicates fatal errors       |
+| `LIBXML_ERR_NONE`    | Indicates no errors          |
+| `LIBXML_ERR_WARNING` | Indicates simple warnings    |
+
+---
+
+#### **Version Constants**
+
+| Constant                | Description                                                      |
+| ----------------------- | ---------------------------------------------------------------- |
+| `LIBXML_VERSION`        | Returns libxml version number as an integer (e.g., `20617`)      |
+| `LIBXML_DOTTED_VERSION` | Returns libxml version as a string (e.g., `2.6.17`)              |
+| `LIBXML_SCHEMA_CREATE`  | Create default or fixed value nodes during XSD schema validation |
+
+---
+
+
+
