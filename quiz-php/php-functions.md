@@ -1120,6 +1120,126 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format. PHP 
 
 ---
 
+# Question: What are the PHP math functions and predefined constants?
+
+---
+
+### 🧮 **PHP Math Functions**
+
+| Function          | Description                                        |
+| ----------------- | -------------------------------------------------- |
+| `abs()`           | Returns the absolute (positive) value of a number  |
+| `acos()`          | Returns the arc cosine of a number                 |
+| `acosh()`         | Returns the inverse hyperbolic cosine              |
+| `asin()`          | Returns the arc sine of a number                   |
+| `asinh()`         | Returns the inverse hyperbolic sine                |
+| `atan()`          | Returns the arc tangent of a number (in radians)   |
+| `atan2()`         | Returns the arc tangent of two variables x and y   |
+| `atanh()`         | Returns the inverse hyperbolic tangent             |
+| `base_convert()`  | Converts a number between arbitrary bases          |
+| `bindec()`        | Converts binary to decimal                         |
+| `ceil()`          | Rounds a number **up** to the nearest integer      |
+| `cos()`           | Returns the cosine of a number                     |
+| `cosh()`          | Returns the hyperbolic cosine                      |
+| `decbin()`        | Converts decimal to binary                         |
+| `dechex()`        | Converts decimal to hexadecimal                    |
+| `decoct()`        | Converts decimal to octal                          |
+| `deg2rad()`       | Converts degrees to radians                        |
+| `exp()`           | Calculates e raised to the power of a number       |
+| `expm1()`         | Returns `exp(x) - 1`                               |
+| `floor()`         | Rounds a number **down** to the nearest integer    |
+| `fmod()`          | Returns the remainder of x divided by y            |
+| `getrandmax()`    | Returns the largest value `rand()` can return      |
+| `hexdec()`        | Converts hexadecimal to decimal                    |
+| `hypot()`         | Calculates the hypotenuse of a right triangle      |
+| `intdiv()`        | Performs integer division                          |
+| `is_finite()`     | Checks if a number is finite                       |
+| `is_infinite()`   | Checks if a number is infinite                     |
+| `is_nan()`        | Checks if a value is 'Not-a-Number'                |
+| `lcg_value()`     | Generates a pseudo-random float between 0 and 1    |
+| `log()`           | Returns the natural logarithm (base e) of a number |
+| `log10()`         | Returns the base-10 logarithm                      |
+| `log1p()`         | Returns `log(1 + number)`                          |
+| `max()`           | Returns the highest value from an array or list    |
+| `min()`           | Returns the lowest value from an array or list     |
+| `mt_getrandmax()` | Returns the largest value `mt_rand()` can return   |
+| `mt_rand()`       | Generates a better-quality pseudo-random number    |
+| `mt_srand()`      | Seeds the Mersenne Twister random number generator |
+| `octdec()`        | Converts octal to decimal                          |
+| `pi()`            | Returns the value of Pi                            |
+| `pow()`           | Raises a number to the power of another            |
+| `rad2deg()`       | Converts radians to degrees                        |
+| `rand()`          | Generates a random integer                         |
+| `round()`         | Rounds a floating-point number                     |
+| `sin()`           | Returns the sine of a number                       |
+| `sinh()`          | Returns the hyperbolic sine                        |
+| `sqrt()`          | Returns the square root                            |
+| `srand()`         | Seeds the `rand()` generator                       |
+| `tan()`           | Returns the tangent                                |
+| `tanh()`          | Returns the hyperbolic tangent                     |
+
+---
+
+### 🔢 **PHP Predefined Math Constants**
+
+#### General Constants
+
+| Constant | Value | Description  |
+| -------- | ----- | ------------ |
+| `INF`    | `INF` | Infinity     |
+| `NAN`    | `NAN` | Not a number |
+
+---
+
+#### Euler, Logarithms, and Exponentials
+
+| Constant   | Value                    | Description                        |
+| ---------- | ------------------------ | ---------------------------------- |
+| `M_E`      | `2.7182818284590452354`  | The base of natural logarithms (e) |
+| `M_EULER`  | `0.57721566490153286061` | Euler–Mascheroni constant          |
+| `M_LNPI`   | `1.14472988584940017414` | `ln(π)`                            |
+| `M_LN2`    | `0.69314718055994530942` | `ln(2)`                            |
+| `M_LN10`   | `2.30258509299404568402` | `ln(10)`                           |
+| `M_LOG2E`  | `1.4426950408889634074`  | `log₂(e)`                          |
+| `M_LOG10E` | `0.43429448190325182765` | `log₁₀(e)`                         |
+
+---
+
+#### Pi and Related Constants
+
+| Constant | Value                    | Description |
+| -------- | ------------------------ | ----------- |
+| `M_PI`   | `3.14159265358979323846` | Pi          |
+| `M_PI_2` | `1.57079632679489661923` | Pi / 2      |
+| `M_PI_4` | `0.78539816339744830962` | Pi / 4      |
+| `M_1_PI` | `0.31830988618379067154` | 1 / Pi      |
+| `M_2_PI` | `0.63661977236758134308` | 2 / Pi      |
+
+---
+
+#### Square Roots
+
+| Constant     | Value                    | Description    |
+| ------------ | ------------------------ | -------------- |
+| `M_SQRTPI`   | `1.77245385090551602729` | √π             |
+| `M_2_SQRTPI` | `1.12837916709551257390` | 2 / √π         |
+| `M_SQRT1_2`  | `0.70710678118654752440` | √(1/2) or 1/√2 |
+| `M_SQRT2`    | `1.41421356237309504880` | √2             |
+| `M_SQRT3`    | `1.73205080756887729352` | √3             |
+
+---
+
+#### Rounding Modes
+
+| Constant              | Value | Description                      |
+| --------------------- | ----- | -------------------------------- |
+| `PHP_ROUND_HALF_UP`   | `1`   | Round halves up (away from zero) |
+| `PHP_ROUND_HALF_DOWN` | `2`   | Round halves down (toward zero)  |
+| `PHP_ROUND_HALF_EVEN` | `3`   | Round halves toward even number  |
+| `PHP_ROUND_HALF_ODD`  | `4`   | Round halves toward odd number   |
+
+---
+
 
 
 
