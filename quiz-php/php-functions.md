@@ -311,7 +311,7 @@
 
 ---
 
-## PHP Directory Functions
+# PHP Directory Functions
 
 | **Function**  | **Description**                                                    |
 | ------------- | ------------------------------------------------------------------ |
@@ -327,7 +327,7 @@
 
 ---
 
-## PHP Error Handling & Logging Configuration
+# PHP Error Handling & Logging Configuration
 
 | **Directive**            | **Default** | **Description**                                                                                                       | **Changeable**   |
 | ------------------------ | ----------- | --------------------------------------------------------------------------------------------------------------------- | ---------------- |
@@ -412,7 +412,7 @@
 
 ---
 
-## PHP Exception Object
+# PHP Exception Object
 
 Exceptions are objects used to represent **errors or unexpected behavior** in your code. They are thrown with the `throw` statement and caught using `try...catch`.
 
@@ -431,7 +431,7 @@ The `Exception` class provides several **methods** to access detailed error info
 
 ---
 
-## 🛠️ PHP Runtime Configuration (Filesystem Functions)
+# PHP Runtime Configuration (Filesystem Functions)
 
 These settings control how file handling and stream wrappers behave in PHP.
 
@@ -629,7 +629,7 @@ These settings control how PHP interacts with files, streams, and remote resourc
 
 ---
 
-## PHP Filter Runtime Configuration (`php.ini`)
+# PHP Filter Runtime Configuration (`php.ini`)
 
 These settings influence how PHP filters input data from **`$_GET`, `$_POST`, `$_COOKIE`, `$_REQUEST`,** and **`$_SERVER`** superglobals.
 
