@@ -82,3 +82,18 @@ The `<iostream>` library provides objects used for standard input and output ope
 | `wclog` | Wide-character version of `clog`; writes `wchar_t` log output       |
 
 ---
+
+# Question: List the C++ `fstream` classes and describe their usage.
+
+## C++ `<fstream>` Classes
+
+The `<fstream>` library provides classes for handling file input and output operations.
+
+| Class      | Description                                                                              |
+| ---------- | ---------------------------------------------------------------------------------------- |
+| `filebuf`  | A low-level file handling class used internally by `fstream`, `ifstream`, and `ofstream` |
+| `fstream`  | File stream class that supports both input and output to files                           |
+| `ifstream` | Input file stream class; used for reading from files                                     |
+| `ofstream` | Output file stream class; used for writing to files                                      |
+
+---
