@@ -280,3 +280,117 @@
 
 ---
 
+# `math.h` Functions in C
+
+## 🔺 Trigonometric Functions
+
+| Function     | Description                                              |
+| ------------ | -------------------------------------------------------- |
+| `sin(x)`     | Returns the sine of angle `x` (in radians)               |
+| `cos(x)`     | Returns the cosine of angle `x` (in radians)             |
+| `tan(x)`     | Returns the tangent of angle `x` (in radians)            |
+| `asin(x)`    | Returns the arcsine of `x`, in radians                   |
+| `acos(x)`    | Returns the arccosine of `x`, in radians                 |
+| `atan(x)`    | Returns arctangent of `x` (range: `-π/2` to `π/2`)       |
+| `atan2(y,x)` | Returns `atan(y/x)` considering quadrant (polar angle θ) |
+
+---
+
+## 🌐 Hyperbolic Functions
+
+| Function   | Description                        |
+| ---------- | ---------------------------------- |
+| `sinh(x)`  | Returns hyperbolic sine of `x`     |
+| `cosh(x)`  | Returns hyperbolic cosine of `x`   |
+| `tanh(x)`  | Returns hyperbolic tangent of `x`  |
+| `asinh(x)` | Returns inverse hyperbolic sine    |
+| `acosh(x)` | Returns inverse hyperbolic cosine  |
+| `atanh(x)` | Returns inverse hyperbolic tangent |
+
+---
+
+## 🧮 Exponential & Logarithmic Functions
+
+| Function   | Description                                     |
+| ---------- | ----------------------------------------------- |
+| `exp(x)`   | Returns `e^x`                                   |
+| `exp2(x)`  | Returns `2^x`                                   |
+| `expm1(x)` | Returns `e^x - 1` (more precise for small `x`)  |
+| `log(x)`   | Returns natural logarithm (base `e`) of `x`     |
+| `log10(x)` | Returns base-10 logarithm of `x`                |
+| `log1p(x)` | Returns `log(1+x)` (more precise for small `x`) |
+| `log2(x)`  | Returns base-2 logarithm of `x`                 |
+| `logb(x)`  | Returns exponent in representation of `x`       |
+| `ilogb(x)` | Integer version of `logb()`                     |
+
+---
+
+## ✳️ Power, Roots, and Rounding
+
+| Function       | Description                                       |
+| -------------- | ------------------------------------------------- |
+| `pow(x, y)`    | Returns `x` raised to the power `y`               |
+| `sqrt(x)`      | Returns square root of `x`                        |
+| `cbrt(x)`      | Returns cube root of `x`                          |
+| `ceil(x)`      | Rounds `x` up to nearest integer                  |
+| `floor(x)`     | Rounds `x` down to nearest integer                |
+| `trunc(x)`     | Truncates decimal, keeps integer part             |
+| `round(x)`     | Rounds to nearest integer                         |
+| `rint(x)`      | Rounds `x` to integer using current rounding mode |
+| `nearbyint(x)` | Same as `rint()` but no exceptions raised         |
+| `lrint(x)`     | Rounds to nearest integer, returns `long`         |
+| `llrint(x)`    | Rounds to nearest integer, returns `long long`    |
+| `lround(x)`    | Rounds away from zero, returns `long`             |
+| `llround(x)`   | Rounds away from zero, returns `long long`        |
+
+---
+
+## 🧮 Arithmetic Helpers & Comparisons
+
+| Function         | Description                                   |
+| ---------------- | --------------------------------------------- |
+| `fabs(x)`        | Returns absolute value of `x`                 |
+| `fdim(x, y)`     | Positive difference `x - y` or `0` if `x < y` |
+| `fmax(x, y)`     | Returns greater of `x` or `y`                 |
+| `fmin(x, y)`     | Returns lesser of `x` or `y`                  |
+| `fma(x, y, z)`   | Returns `(x * y) + z` with single rounding    |
+| `copysign(x, y)` | Returns `x` with sign of `y`                  |
+
+---
+
+## 🔧 Remainders & Modulus
+
+| Function          | Description                                               |
+| ----------------- | --------------------------------------------------------- |
+| `fmod(x, y)`      | Floating-point remainder of `x / y`                       |
+| `remainder(x, y)` | Remainder, rounded to nearest integer multiple            |
+| `remquo(x, y, z)` | Returns remainder of `x/y`, stores quotient at `*z`       |
+| `modf(x, y)`      | Splits `x` into integer part (stored at `*y`) and decimal |
+
+---
+
+## 🧠 Bitwise/Precision Scaling & Decomposition
+
+| Function           | Description                                                    |
+| ------------------ | -------------------------------------------------------------- |
+| `frexp(x, y)`      | Decomposes `x` into `m * 2^n`; returns `m`, stores `n` in `*y` |
+| `ldexp(x, y)`      | Computes `x * 2^y`                                             |
+| `scalbn(x, y)`     | Efficient version of `x * 2^y`                                 |
+| `scalbln(x, y)`    | Like `scalbn()` but `y` is `long int`                          |
+| `nextafter(x, y)`  | Smallest number > `x` in direction of `y`                      |
+| `nexttoward(x, y)` | Same as above but `y` is `long double`                         |
+
+---
+
+## 🧩 Special Values & Error Functions
+
+| Function    | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| `nan(s)`    | Returns a NaN (Not a Number)                         |
+| `erf(x)`    | Error function at `x`                                |
+| `erfc(x)`   | Complementary error function at `x`                  |
+| `tgamma(x)` | Gamma function of `x`                                |
+| `lgamma(x)` | Logarithm of absolute value of gamma function at `x` |
+
+---
+
