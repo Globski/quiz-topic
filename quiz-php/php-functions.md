@@ -480,3 +480,151 @@ These settings control how PHP interacts with files, streams, and remote resourc
 
 ---
 
+##  PHP Filesystem Functions Cheat Sheet
+
+---
+
+### **File Path & Metadata**
+
+| Function                | Description                      |
+| ----------------------- | -------------------------------- |
+| `basename()`            | Returns filename from path       |
+| `dirname()`             | Returns directory part of path   |
+| `pathinfo()`            | Returns info about file path     |
+| `realpath()`            | Returns absolute pathname        |
+| `realpath_cache_get()`  | Gets realpath cache entries      |
+| `realpath_cache_size()` | Gets realpath cache size         |
+| `fnmatch()`             | Matches filename to pattern      |
+| `glob()`                | Returns files matching a pattern |
+
+---
+
+###  **File Read/Write Operations**
+
+| Function               | Description                       |
+| ---------------------- | --------------------------------- |
+| `fopen()`              | Opens a file or URL               |
+| `fclose()`             | Closes an open file               |
+| `fread()`              | Reads from file (binary-safe)     |
+| `fwrite()` / `fputs()` | Writes to file (binary-safe)      |
+| `file_get_contents()`  | Reads file into a string          |
+| `file_put_contents()`  | Writes string to a file           |
+| `file()`               | Reads file into array             |
+| `readfile()`           | Outputs file contents             |
+| `fgetc()`              | Gets a character from file        |
+| `fgets()`              | Gets a line from file             |
+| `fgetcsv()`            | Parses a CSV line                 |
+| `fputcsv()`            | Writes a CSV line                 |
+| `fscanf()`             | Parses formatted input            |
+| `fpassthru()`          | Writes remaining buffer to output |
+| `fseek()`              | Sets file pointer position        |
+| `ftell()`              | Gets file pointer position        |
+| `rewind()`             | Resets file pointer to start      |
+| `ftruncate()`          | Truncates file to length          |
+| `fflush()`             | Flushes buffered output           |
+
+---
+
+###  **File Information**
+
+| Function        | Description                    |
+| --------------- | ------------------------------ |
+| `file_exists()` | Checks if file or dir exists   |
+| `filesize()`    | Returns file size              |
+| `filetype()`    | Returns type (file, dir, link) |
+| `fileatime()`   | Last access time               |
+| `filectime()`   | Last change time               |
+| `filemtime()`   | Last modification time         |
+| `fileowner()`   | User ID of file owner          |
+| `filegroup()`   | Group ID of file owner         |
+| `fileinode()`   | Inode number                   |
+| `fileperms()`   | File permissions               |
+| `stat()`        | File status info               |
+| `lstat()`       | Like stat(), but for symlinks  |
+| `fstat()`       | Status of open file            |
+| `linkinfo()`    | Info about hard link           |
+
+---
+
+###  **File Type Checks**
+
+| Function                           | Description                      |
+| ---------------------------------- | -------------------------------- |
+| `is_dir()`                         | Is it a directory?               |
+| `is_file()`                        | Is it a regular file?            |
+| `is_link()`                        | Is it a symbolic link?           |
+| `is_executable()`                  | Is file executable?              |
+| `is_readable()`                    | Is file readable?                |
+| `is_writable()` / `is_writeable()` | Is file writable?                |
+| `is_uploaded_file()`               | Was file uploaded via HTTP POST? |
+
+---
+
+### **Create/Modify Files**
+
+| Function                | Description                        |
+| ----------------------- | ---------------------------------- |
+| `copy()`                | Copies file                        |
+| `rename()`              | Renames file or directory          |
+| `unlink()` / `delete()` | Deletes file                       |
+| `touch()`               | Sets access/mod time               |
+| `umask()`               | Sets default file permission mask  |
+| `tempnam()`             | Creates unique temp file           |
+| `tmpfile()`             | Creates temp file & returns handle |
+| `mkdir()`               | Creates directory                  |
+| `rmdir()`               | Removes directory                  |
+| `move_uploaded_file()`  | Moves uploaded file                |
+
+---
+
+### **File Ownership & Permissions**
+
+| Function           | Description              |
+| ------------------ | ------------------------ |
+| `chmod()`          | Changes permissions      |
+| `chown()`          | Changes owner            |
+| `chgrp()`          | Changes group            |
+| `lchown()`         | Changes symlink owner    |
+| `lchgrp()`         | Changes symlink group    |
+| `flock()`          | File locking             |
+| `clearstatcache()` | Clears file status cache |
+
+---
+
+### **Links and Symlinks**
+
+| Function     | Description            |
+| ------------ | ---------------------- |
+| `link()`     | Creates hard link      |
+| `symlink()`  | Creates symbolic link  |
+| `readlink()` | Gets target of symlink |
+
+---
+
+### **Pipes & Streams**
+
+| Function            | Description                          |
+| ------------------- | ------------------------------------ |
+| `popen()`           | Opens pipe process                   |
+| `pclose()`          | Closes pipe                          |
+| `set_file_buffer()` | Alias of `stream_set_write_buffer()` |
+
+---
+
+### **INI Parsing**
+
+| Function             | Description                     |
+| -------------------- | ------------------------------- |
+| `parse_ini_file()`   | Parses `.ini` file into array   |
+| `parse_ini_string()` | Parses `.ini` string into array |
+
+---
+
+## Notes:
+
+* Functions like `delete()` are just aliases or old references for `unlink()`.
+* `fgetss()` was deprecated in PHP 7.3 and removed in PHP 8. Use `strip_tags()` separately if needed.
+* Some functions behave differently across platforms (e.g., symlink support on Windows).
+
+---
+
