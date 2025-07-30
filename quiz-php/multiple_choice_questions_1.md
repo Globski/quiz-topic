@@ -578,3 +578,212 @@ echo "Addition = " . ($a + $b);
 
 ---
 
+# Question: What is the purpose of PHP Files and I/O functions?
+
+**Answer:** They are used for reading, writing, creating, and deleting files to enable data storage and management in web applications.
+
+---
+
+# Question: What is the function used to open a file in PHP?
+
+**Answer:** `fopen()`
+
+---
+
+# Question: What are the required arguments for `fopen()`?
+
+**Answer:** The file name and the mode in which to operate.
+
+---
+
+# Question: What does the `r` mode do in `fopen()`?
+
+**Answer:** Opens the file for reading only and places the file pointer at the beginning of the file.
+
+---
+
+# Question: What does the `r+` mode do in `fopen()`?
+
+**Answer:** Opens the file for reading and writing, with the pointer at the beginning.
+
+---
+
+# Question: What happens when you open a file in `w` mode?
+
+**Answer:** It opens the file for writing, places the pointer at the beginning, and truncates the file to zero length. If the file doesn't exist, it attempts to create it.
+
+---
+
+# Question: How is `w+` mode different from `w`?
+
+**Answer:** `w+` opens the file for both reading and writing, while also truncating it and creating it if it does not exist.
+
+---
+
+# Question: What does `a` mode do in `fopen()`?
+
+**Answer:** Opens the file for writing only, placing the pointer at the end of the file and creating it if it doesn’t exist.
+
+---
+
+# Question: How does `a+` differ from `a`?
+
+**Answer:** `a+` allows both reading and writing, with the pointer at the end, and creates the file if it does not exist.
+
+---
+
+# Question: What is returned by `fopen()` if the file cannot be opened?
+
+**Answer:** `false`
+
+---
+
+# Question: What does `fopen()` return if the file is successfully opened?
+
+**Answer:** A file pointer resource.
+
+---
+
+# Question: What function is used to close an open file in PHP?
+
+**Answer:** `fclose()`
+
+---
+
+# Question: What argument is required by `fclose()`?
+
+**Answer:** A file pointer.
+
+---
+
+# Question: What does `fclose()` return on success or failure?
+
+**Answer:** Returns `true` on success, and `false` on failure.
+
+---
+
+# Question: Which function is used to read content from a file?
+
+**Answer:** `fread()`
+
+---
+
+# Question: What arguments does `fread()` require?
+
+**Answer:** A file pointer and the length in bytes to read.
+
+---
+
+# Question: How do you get the size of a file in bytes in PHP?
+
+**Answer:** Using `filesize()` function with the file name as the argument.
+
+---
+
+# Question: List the steps to read a file in PHP.
+
+**Answer:**
+
+1. Open the file with `fopen()`.
+2. Get the size using `filesize()`.
+3. Read contents with `fread()`.
+4. Close the file with `fclose()`.
+
+---
+
+# Question: What happens if `fopen()` fails to open a file?
+
+**Answer:** It returns `false`, and appropriate error handling like displaying a message and exiting should be used.
+
+---
+
+# Question: In the reading example, what is stored in `$filetext`?
+
+**Answer:** The contents of the file read using `fread()`.
+
+---
+
+# Question: What is the output of the reading file example?
+
+**Answer:** File size in bytes and the file contents wrapped in `<pre>` tags.
+
+---
+
+# Question: Which function is used to write content to a file?
+
+**Answer:** `fwrite()`
+
+---
+
+# Question: What are the required arguments of `fwrite()`?
+
+**Answer:** A file pointer and the string of data to write.
+
+---
+
+# Question: What is the optional third argument in `fwrite()` and what does it do?
+
+**Answer:** An integer specifying the length of data to write; it limits how much of the string is written.
+
+---
+
+# Question: What does the writing file example do?
+
+**Answer:** Creates a new file, writes a heading into it, closes it, and then reopens and reads its contents for display.
+
+---
+
+# Question: How is the existence of the newly created file confirmed in the example?
+
+**Answer:** By using `file_exists()` with the file name as an argument.
+
+---
+
+# Question: What is the role of `file_exists()` in PHP?
+
+**Answer:** It checks whether a file exists, returning `true` if it does and `false` if it doesn't.
+
+---
+
+# Question: Where is the new file created in the example?
+
+**Answer:** At `/home/user/guest/newfile.txt`
+
+---
+
+# Question: What output is expected from the writing example?
+
+**Answer:** The file size, contents (`"This is  a simple test"`), and the file name.
+
+---
+
+# Question: What tag is used in the example to preserve the format of the file content?
+
+**Answer:** `<pre>`
+
+---
+
+# Question: What happens if you try to open a file that does not exist in `r` mode?
+
+**Answer:** `fopen()` will fail and return `false`.
+
+---
+
+# Question: What is the significance of using `"r"` mode when reading files in the examples?
+
+**Answer:** It ensures the file is opened in read-only mode with the pointer at the beginning.
+
+---
+
+# Question: Can `fwrite()` be used to append text to a file?
+
+**Answer:** Yes, by opening the file in `a` or `a+` mode.
+
+---
+
+# Question: What must always be done after file operations are complete?
+
+**Answer:** The file must be closed using `fclose()`.
+
+---
+
