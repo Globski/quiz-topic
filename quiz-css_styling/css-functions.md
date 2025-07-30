@@ -403,3 +403,63 @@
 
 ---
 
+### Q
+
+| Property | Description                                              |
+| -------- | -------------------------------------------------------- |
+| `quotes` | Sets the type of quotation marks for embedded quotations |
+
+---
+
+### R
+
+| Property  | Description                                              |
+| --------- | -------------------------------------------------------- |
+| `resize`  | Defines if (and how) an element is resizable by the user |
+| `right`   | Specifies the right position of a positioned element     |
+| `rotate`  | Specifies the rotation of an element                     |
+| `row-gap` | Specifies the gap between the grid rows                  |
+
+---
+
+### S
+
+| Property                      | Description                                                                |
+| ----------------------------- | -------------------------------------------------------------------------- |
+| `scale`                       | Specifies the size of an element by scaling up or down                     |
+| `@scope`                      | Select elements in specific DOM subtrees without overly-specific selectors |
+| `scroll-behavior`             | Specifies smooth or instant scrolling in a scrollable box                  |
+| `scroll-margin`               | Margin between the snap position and the container                         |
+| `scroll-margin-block`         | Margin in block direction between snap position and container              |
+| `scroll-margin-block-end`     | End margin in block direction between snap position and container          |
+| `scroll-margin-block-start`   | Start margin in block direction between snap position and container        |
+| `scroll-margin-bottom`        | Margin on the bottom between snap position and container                   |
+| `scroll-margin-inline`        | Margin in inline direction between snap position and container             |
+| `scroll-margin-inline-end`    | End margin in inline direction between snap position and container         |
+| `scroll-margin-inline-start`  | Start margin in inline direction between snap position and container       |
+| `scroll-margin-left`          | Margin on the left between snap position and container                     |
+| `scroll-margin-right`         | Margin on the right between snap position and container                    |
+| `scroll-margin-top`           | Margin on the top between snap position and container                      |
+| `scroll-padding`              | Distance from container to snap position on child elements                 |
+| `scroll-padding-block`        | Distance in block direction from container to snap position                |
+| `scroll-padding-block-end`    | Distance from end of container to snap position in block direction         |
+| `scroll-padding-block-start`  | Distance from start of container to snap position in block direction       |
+| `scroll-padding-bottom`       | Distance from bottom of container to snap position                         |
+| `scroll-padding-inline`       | Distance in inline direction from container to snap position               |
+| `scroll-padding-inline-end`   | Distance in inline direction from end of container to snap position        |
+| `scroll-padding-inline-start` | Distance in inline direction from start of container to snap position      |
+| `scroll-padding-left`         | Distance from left side of container to snap position                      |
+| `scroll-padding-right`        | Distance from right side of container to snap position                     |
+| `scroll-padding-top`          | Distance from top of container to snap position                            |
+| `scroll-snap-align`           | Defines how the element is aligned within the snap container               |
+| `scroll-snap-stop`            | Controls scroll behavior after a fast swipe                                |
+| `scroll-snap-type`            | Specifies how scroll snapping should behave                                |
+| `scrollbar-color`             | Sets the color of the scrollbar                                            |
+| `shape-outside`               | Defines a shape around which inline content can wrap                       |
+| `@starting-style`             | Defines styles before the element receives its first update                |
+| `@supports`                   | Used to test if the browser supports a given CSS feature                   |
+
+---
+
+
+
