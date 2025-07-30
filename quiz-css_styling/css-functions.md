@@ -1326,6 +1326,54 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+# Question: What are CSS Aural Style Sheets and which properties are used?
+
+### CSS Aural Style Sheets
+
+Aural style sheets use speech synthesis and sound effects to present information audibly. Though now **deprecated**, they were once useful for accessibility tools like screen readers and for contexts such as in-car systems or for users with reading impairments.
+
+#### Example:
+
+```css
+@media aural {
+  h1, h2, h3, h4 {
+    voice-family: male;
+    richness: 80;
+    cue-before: url("beep.au");
+  }
+}
+```
+
+This would cause headers to be spoken in a rich male voice after playing a sound.
+
+### CSS Aural Properties
+
+| Property            | Description                                                         | Values                                                                                                                                                     |
+| ------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `azimuth`           | Sets where the sound should come from                               | `angle`, `left-side`, `far-left`, `left`, `center-left`, `center`, `center-right`, `right`, `far-right`, `right-side`, `behind`, `leftwards`, `rightwards` |
+| `cue`               | Sets the cue properties in one declaration                          | `cue-before`, `cue-after`                                                                                                                                  |
+| `cue-after`         | Specifies a sound to be played after speaking an element's content  | `none`, `url`                                                                                                                                              |
+| `cue-before`        | Specifies a sound to be played before speaking an element's content | `none`, `url`                                                                                                                                              |
+| `elevation`         | Sets vertical position of the sound                                 | `angle`, `below`, `level`, `above`, `higher`, `lower`                                                                                                      |
+| `pause`             | Sets the pause properties in one declaration                        | `pause-before`, `pause-after`                                                                                                                              |
+| `pause-after`       | Specifies a pause after speaking                                    | `time`, `%`                                                                                                                                                |
+| `pause-before`      | Specifies a pause before speaking                                   | `time`, `%`                                                                                                                                                |
+| `pitch`             | Specifies the pitch of the voice                                    | `frequency`, `x-low`, `low`, `medium`, `high`, `x-high`                                                                                                    |
+| `pitch-range`       | Variation in pitch (monotone or expressive)                         | `number`                                                                                                                                                   |
+| `play-during`       | Sound to play while speaking                                        | `auto`, `none`, `url`, `mix`, `repeat`                                                                                                                     |
+| `richness`          | Voice richness (thin or rich)                                       | `number`                                                                                                                                                   |
+| `speak`             | Whether content should be spoken                                    | `normal`, `none`, `spell-out`                                                                                                                              |
+| `speak-header`      | How table headers are handled                                       | `always`, `once`                                                                                                                                           |
+| `speak-numeral`     | How numbers are spoken                                              | `digits`, `continuous`                                                                                                                                     |
+| `speak-punctuation` | How punctuation is spoken                                           | `none`, `code`                                                                                                                                             |
+| `speech-rate`       | Speed of speech                                                     | `number`, `x-slow`, `slow`, `medium`, `fast`, `x-fast`, `faster`, `slower`                                                                                 |
+| `stress`            | Specifies vocal stress                                              | `number`                                                                                                                                                   |
+| `voice-family`      | Voice to be used for speaking                                       | `specific-voice`, `generic-voice`                                                                                                                          |
+| `volume`            | Volume of speech                                                    | `number`, `%`, `silent`, `x-soft`, `soft`, `medium`, `loud`, `x-loud`                                                                                      |
+
+---
+
+
 
 
 
