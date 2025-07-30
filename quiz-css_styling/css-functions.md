@@ -1008,6 +1008,43 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+# Question: List some commonly used CSS selectors grouped by their category.
+
+### CSS Simple Selectors
+
+| Selector        | Example      | Example Description                             |
+| --------------- | ------------ | ----------------------------------------------- |
+| element         | `p`          | Selects all `<p>` elements                      |
+| `#id`           | `#firstname` | Selects the element with `id="firstname"`       |
+| `*`             | `*`          | Selects all elements                            |
+| `.class`        | `.intro`     | Selects all elements with `class="intro"`       |
+| `element.class` | `p.intro`    | Selects all `<p>` elements with `class="intro"` |
+
+---
+
+### CSS Attribute Selectors
+
+| Selector             | Example               | Example Description                                                             |          |                                                                       |
+| -------------------- | --------------------- | ------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------- |
+| `[attribute]`        | `[lang]`              | Selects all elements with a `lang` attribute                                    |          |                                                                       |
+| `[attribute=value]`  | `[lang="it"]`         | Selects all elements with `lang="it"`                                           |          |                                                                       |
+| `[attribute~=value]` | `[title~="flower"]`   | Selects all elements with a `title` attribute containing the word "flower"      |          |                                                                       |
+| \`\[attribute        | =value]\`             | \`\[lang                                                                        | ="en"]\` | Selects all elements with `lang` equal to "en" or starting with "en-" |
+| `[attribute^=value]` | `[href^="https"]`     | Selects all elements with `href` attribute that begins with "https"             |          |                                                                       |
+| `[attribute$=value]` | `[href$=".pdf"]`      | Selects all elements with `href` attribute that ends with ".pdf"                |          |                                                                       |
+| `[attribute*=value]` | `[href*="w3schools"]` | Selects all elements with `href` attribute containing the substring "w3schools" |          |                                                                       |
+
+---
+
+### CSS Nesting Selector
+
+| Selector | Example | Example Description                                                 |
+| -------- | ------- | ------------------------------------------------------------------- |
+| `&`      | `&`     | Applies styles for an element within the context of another element |
+
+---
+
+
 
 
 
