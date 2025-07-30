@@ -1393,6 +1393,60 @@ This would cause headers to be spoken in a rich male voice after playing a sound
 
 ---
 
+# Question: What are some commonly used fallback fonts in HTML and CSS?
+
+### Commonly Used Fallback Fonts
+
+Fallback fonts are essential because no font is guaranteed to be available on every device or browser. By specifying a list of similar fonts (ending with a generic family), you ensure your text remains readable and styled appropriately, even if your first-choice font is unavailable.
+
+#### Generic Font Families:
+
+* **Serif**
+* **Sans-serif**
+* **Monospace**
+* **Cursive**
+* **Fantasy**
+
+### Serif Fonts
+
+| `font-family` Declaration         | Example                                   |
+| --------------------------------- | ----------------------------------------- |
+| `"Times New Roman", Times, serif` | This is a Heading<br>This is a paragraph. |
+| `Georgia, serif`                  | This is a Heading<br>This is a paragraph. |
+| `Garamond, serif`                 | This is a Heading<br>This is a paragraph. |
+
+### Sans-serif Fonts
+
+| `font-family` Declaration               | Example                                   |
+| --------------------------------------- | ----------------------------------------- |
+| `Arial, Helvetica, sans-serif`          | This is a Heading<br>This is a paragraph. |
+| `Tahoma, Verdana, sans-serif`           | This is a Heading<br>This is a paragraph. |
+| `"Trebuchet MS", Helvetica, sans-serif` | This is a Heading<br>This is a paragraph. |
+| `Geneva, Verdana, sans-serif`           | This is a Heading<br>This is a paragraph. |
+
+### Monospace Fonts
+
+| `font-family` Declaration           | Example                                   |
+| ----------------------------------- | ----------------------------------------- |
+| `"Courier New", Courier, monospace` | This is a Heading<br>This is a paragraph. |
+
+### Cursive Fonts
+
+| `font-family` Declaration    | Example                                   |
+| ---------------------------- | ----------------------------------------- |
+| `"Brush Script MT", cursive` | This is a Heading<br>This is a paragraph. |
+
+### Fantasy Fonts
+
+| `font-family` Declaration       | Example                                   |
+| ------------------------------- | ----------------------------------------- |
+| `Copperplate, Papyrus, fantasy` | This is a Heading<br>This is a paragraph. |
+
+> 💡 **Tip:** Always test your fonts across different browsers and devices, and remember to end your `font-family` list with a generic font family (e.g., `serif`, `sans-serif`). Also, explore [Google Fonts](https://fonts.google.com/) for more font choices and easy embedding.
+
+---
+
+
 
 
 
