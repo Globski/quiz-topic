@@ -658,6 +658,57 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+### C
+
+| Property              | Edge | Firefox | Chrome | Safari | Opera |
+| --------------------- | ---- | ------- | ------ | ------ | ----- |
+| **caption-side**      | 8    | 1       | 1      | 1      | 4     |
+| **caret-color**       | 79   | 53      | 57     | 11.1   | 44    |
+| **@charset**          | 12   | 1.5     | 2      | 4      | 9     |
+| **clear**             | 5    | 1       | 1      | 1      | 6     |
+| **clip**              | 8    | 1       | 1      | 1      | 7     |
+| **clip-path**         | 79   | 3.5     | 55     | 9.1    | 42    |
+| **color**             | 3    | 1       | 1      | 1      | 3.5   |
+| **color-scheme**      | 81   | 96      | 81     | 13     | 68    |
+| **column-count**      | 10   | 52      | 50     | 9      | 37    |
+| **column-fill**       | 10   | 52      | 50     | 10     | 37    |
+| **column-gap**        | 84   | 63      | 84     | 14.1   | 70    |
+| **column-rule**       | 10   | 52      | 50     | 9      | 37    |
+| **column-rule-color** | 10   | 52      | 50     | 9      | 37    |
+| **column-rule-style** | 10   | 52      | 50     | 9      | 37    |
+| **column-rule-width** | 10   | 52      | 50     | 9      | 37    |
+| **column-span**       | 10   | 71      | 50     | 9      | 37    |
+| **column-width**      | 10   | 52      | 50     | 9      | 37    |
+| **columns**           | 10   | 52      | 50     | 9      | 37    |
+| **@container**        | 105  | 110     | 105    | 16     | 91    |
+| **content**           | 8    | 1       | 1      | 1      | 4     |
+| **counter-increment** | 8    | 2       | 4      | 3.1    | 9.6   |
+| **counter-reset**     | 8    | 2       | 4      | 3.1    | 9.6   |
+| **counter-set**       | 85   | 68      | 85     | 17.2   | 71    |
+| **@counter-style**    | 91   | 33      | 91     | 17     | 77    |
+| **cursor**            | 5.5  | 4       | 5      | 5      | 9.6   |
+
+---
+
+### D
+
+| Property      | Edge | Firefox | Chrome | Safari | Opera |
+| ------------- | ---- | ------- | ------ | ------ | ----- |
+| **direction** | 5.5  | 1       | 2      | 1.3    | 9.2   |
+| **display**   | 8    | 3       | 4      | 3.1    | 7     |
+
+---
+
+### E
+
+| Property        | Edge | Firefox | Chrome | Safari | Opera |
+| --------------- | ---- | ------- | ------ | ------ | ----- |
+| **empty-cells** | 8    | 1       | 1      | 1.2    | 4     |
+
+---
+
+
+
 
 
 
