@@ -1989,6 +1989,135 @@ There are 140 predefined color names supported across all modern browsers.
 
 ---
 
+# Question: What are the default CSS browser values for all HTML elements?
+
+### Default CSS Values
+
+| Element            | Default CSS Value(s)                                                                                       |
+| ------------------ | ---------------------------------------------------------------------------------------------------------- |
+| `a:link`           | color: (internal value); text-decoration: underline; cursor: auto;                                         |
+| `a:visited`        | color: (internal value); text-decoration: underline; cursor: auto;                                         |
+| `a:link:active`    | color: (internal value);                                                                                   |
+| `a:visited:active` | color: (internal value);                                                                                   |
+| `abbr`             | None.                                                                                                      |
+| `address`          | display: block; font-style: italic;                                                                        |
+| `area`             | display: none;                                                                                             |
+| `article`          | display: block;                                                                                            |
+| `aside`            | display: block;                                                                                            |
+| `audio`            | None.                                                                                                      |
+| `b`                | font-weight: bold;                                                                                         |
+| `base`             | None.                                                                                                      |
+| `bdi`              | None.                                                                                                      |
+| `bdo`              | unicode-bidi: bidi-override;                                                                               |
+| `blockquote`       | display: block; margin: 1em 40px;                                                                          |
+| `body`             | display: block; margin: 8px;                                                                               |
+| `body:focus`       | outline: none;                                                                                             |
+| `br`               | None.                                                                                                      |
+| `button`           | None                                                                                                       |
+| `canvas`           | None.                                                                                                      |
+| `caption`          | display: table-caption; text-align: center;                                                                |
+| `cite`             | font-style: italic;                                                                                        |
+| `code`             | font-family: monospace;                                                                                    |
+| `col`              | display: table-column;                                                                                     |
+| `colgroup`         | display: table-column-group;                                                                               |
+| `datalist`         | display: none;                                                                                             |
+| `dd`               | display: block; margin-left: 40px;                                                                         |
+| `del`              | text-decoration: line-through;                                                                             |
+| `details`          | display: block;                                                                                            |
+| `dfn`              | font-style: italic;                                                                                        |
+| `dialog`           | None.                                                                                                      |
+| `div`              | display: block;                                                                                            |
+| `dl`               | display: block; margin: 1em 0;                                                                             |
+| `dt`               | display: block;                                                                                            |
+| `em`               | font-style: italic;                                                                                        |
+| `embed:focus`      | outline: none;                                                                                             |
+| `fieldset`         | display: block; margin: 0 2px; padding: 0.35em 0.75em 0.625em 0.75em; border: 2px groove (internal value); |
+| `figcaption`       | display: block;                                                                                            |
+| `figure`           | display: block; margin: 1em 40px;                                                                          |
+| `footer`           | display: block;                                                                                            |
+| `form`             | display: block; margin-top: 0em;                                                                           |
+| `h1`               | display: block; font-size: 2em; margin: 0.67em 0; font-weight: bold;                                       |
+| `h2`               | display: block; font-size: 1.5em; margin: 0.83em 0; font-weight: bold;                                     |
+| `h3`               | display: block; font-size: 1.17em; margin: 1em 0; font-weight: bold;                                       |
+| `h4`               | display: block; margin: 1.33em 0; font-weight: bold;                                                       |
+| `h5`               | display: block; font-size: .83em; margin: 1.67em 0; font-weight: bold;                                     |
+| `h6`               | display: block; font-size: .67em; margin: 2.33em 0; font-weight: bold;                                     |
+| `head`             | display: none;                                                                                             |
+| `header`           | display: block;                                                                                            |
+| `hr`               | display: block; margin: 0.5em auto; border-style: inset; border-width: 1px;                                |
+| `html`             | display: block;                                                                                            |
+| `html:focus`       | outline: none;                                                                                             |
+| `i`                | font-style: italic;                                                                                        |
+| `iframe:focus`     | outline: none;                                                                                             |
+| `iframe[seamless]` | display: block;                                                                                            |
+| `img`              | display: inline-block;                                                                                     |
+| `input`            | None.                                                                                                      |
+| `ins`              | text-decoration: underline;                                                                                |
+| `kbd`              | font-family: monospace;                                                                                    |
+| `label`            | cursor: default;                                                                                           |
+| `legend`           | display: block; padding: 0 2px; border: none;                                                              |
+| `li`               | display: list-item;                                                                                        |
+| `link`             | display: none;                                                                                             |
+| `main`             | None.                                                                                                      |
+| `map`              | display: inline;                                                                                           |
+| `mark`             | background-color: yellow; color: black;                                                                    |
+| `menu`             | display: block; list-style-type: disc; margin: 1em 0; padding-left: 40px;                                  |
+| `menuitem`         | None.                                                                                                      |
+| `meta`             | None.                                                                                                      |
+| `meter`            | None.                                                                                                      |
+| `nav`              | display: block;                                                                                            |
+| `noscript`         | None.                                                                                                      |
+| `object:focus`     | outline: none;                                                                                             |
+| `ol`               | display: block; list-style-type: decimal; margin: 1em 0; padding-left: 40px;                               |
+| `optgroup`         | None.                                                                                                      |
+| `option`           | None.                                                                                                      |
+| `output`           | display: inline;                                                                                           |
+| `p`                | display: block; margin: 1em 0;                                                                             |
+| `param`            | display: none;                                                                                             |
+| `picture`          | None.                                                                                                      |
+| `pre`              | display: block; font-family: monospace; white-space: pre; margin: 1em 0;                                   |
+| `progress`         | None.                                                                                                      |
+| `q`                | display: inline;                                                                                           |
+| `q::before`        | content: open-quote;                                                                                       |
+| `q::after`         | content: close-quote;                                                                                      |
+| `rp`               | None.                                                                                                      |
+| `rt`               | line-height: normal;                                                                                       |
+| `ruby`             | None.                                                                                                      |
+| `s`                | text-decoration: line-through;                                                                             |
+| `samp`             | font-family: monospace;                                                                                    |
+| `script`           | display: none;                                                                                             |
+| `section`          | display: block;                                                                                            |
+| `select`           | None.                                                                                                      |
+| `small`            | font-size: smaller;                                                                                        |
+| `source`           | None.                                                                                                      |
+| `span`             | display: inline;                                                                                           |
+| `strike`           | text-decoration: line-through;                                                                             |
+| `strong`           | font-weight: bold;                                                                                         |
+| `style`            | display: none;                                                                                             |
+| `sub`              | vertical-align: sub; font-size: smaller;                                                                   |
+| `summary`          | display: block;                                                                                            |
+| `sup`              | vertical-align: super; font-size: smaller;                                                                 |
+| `table`            | display: table; border-collapse: separate; border-spacing: 2px; border-color: gray;                        |
+| `tbody`            | display: table-row-group; vertical-align: middle; border-color: inherit;                                   |
+| `td`               | display: table-cell; vertical-align: inherit;                                                              |
+| `template`         | None.                                                                                                      |
+| `textarea`         | None.                                                                                                      |
+| `tfoot`            | display: table-footer-group; vertical-align: middle; border-color: inherit;                                |
+| `th`               | display: table-cell; vertical-align: inherit; font-weight: bold; text-align: center;                       |
+| `thead`            | display: table-header-group; vertical-align: middle; border-color: inherit;                                |
+| `time`             | None.                                                                                                      |
+| `title`            | display: none;                                                                                             |
+| `tr`               | display: table-row; vertical-align: inherit; border-color: inherit;                                        |
+| `track`            | None.                                                                                                      |
+| `u`                | text-decoration: underline;                                                                                |
+| `ul`               | display: block; list-style-type: disc; margin: 1em 0; padding-left: 40px;                                  |
+| `var`              | font-style: italic;                                                                                        |
+| `video`            | None.                                                                                                      |
+| `wbr`              | None.                                                                                                      |
+
+---
+
+
 
 
 
