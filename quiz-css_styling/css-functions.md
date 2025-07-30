@@ -371,4 +371,35 @@
 | `overscroll-behavior-x`     | Controls scroll chaining/overscroll in x-direction                          |
 | `overscroll-behavior-y`     | Controls scroll chaining/overscroll in y-direction                          |
 
+
+### P
+
+| Property               | Description                                                                 |
+| ---------------------- | --------------------------------------------------------------------------- |
+| `padding`              | A shorthand property for all the padding-\* properties                      |
+| `padding-block`        | Specifies the padding in the block direction                                |
+| `padding-block-end`    | Specifies the padding at the end in the block direction                     |
+| `padding-block-start`  | Specifies the padding at the start in the block direction                   |
+| `padding-bottom`       | Sets the bottom padding of an element                                       |
+| `padding-inline`       | Specifies the padding in the inline direction                               |
+| `padding-inline-end`   | Specifies the padding at the end in the inline direction                    |
+| `padding-inline-start` | Specifies the padding at the start in the inline direction                  |
+| `padding-left`         | Sets the left padding of an element                                         |
+| `padding-right`        | Sets the right padding of an element                                        |
+| `padding-top`          | Sets the top padding of an element                                          |
+| `@page`                | Customizes the dimension, orientation, and margins of printed pages         |
+| `page-break-after`     | Sets the page-break behavior after an element (Replaced by `break-after`)   |
+| `page-break-before`    | Sets the page-break behavior before an element (Replaced by `break-before`) |
+| `page-break-inside`    | Sets the page-break behavior inside an element (Replaced by `break-inside`) |
+| `paint-order`          | Sets the order of how an SVG element or text is painted                     |
+| `perspective`          | Gives a 3D-positioned element some perspective                              |
+| `perspective-origin`   | Defines at which position the user is looking at the 3D-positioned element  |
+| `place-content`        | Specifies `align-content` and `justify-content` values for layouts          |
+| `place-items`          | Specifies `align-items` and `justify-items` values for grid layouts         |
+| `place-self`           | Specifies `align-self` and `justify-self` values for grid layouts           |
+| `pointer-events`       | Defines whether or not an element reacts to pointer events                  |
+| `position`             | Specifies the type of positioning method used for an element                |
+| `@property`            | Defines custom CSS properties directly in the stylesheet                    |
+
 ---
+
