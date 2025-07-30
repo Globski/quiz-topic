@@ -815,6 +815,72 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+### L
+
+| Property            | Edge | Firefox | Chrome | Safari | Opera |
+| ------------------- | ---- | ------- | ------ | ------ | ----- |
+| @layer              | 99   | 97      | 99     | 15.4   | 86    |
+| left                | 5.5  | 1       | 1      | 1      | 5     |
+| letter-spacing      | 4    | 1       | 1      | 1      | 3.5   |
+| line-break          | 14   | 69      | 58     | 11     | 45    |
+| line-height         | 4    | 1       | 1      | 1      | 7     |
+| list-style          | 4    | 1       | 1      | 1      | 7     |
+| list-style-image    | 4    | 1       | 1      | 1      | 7     |
+| list-style-position | 4    | 1       | 1      | 1      | 3.5   |
+| list-style-type     | 4    | 1       | 1      | 1      | 3.5   |
+
+---
+
+### M
+
+| Property            | Edge | Firefox | Chrome | Safari | Opera |
+| ------------------- | ---- | ------- | ------ | ------ | ----- |
+| margin              | 6    | 1       | 1      | 1      | 3.5   |
+| margin-block        | 87   | 66      | 87     | 14.1   | 73    |
+| margin-block-end    | 87   | 41      | 87     | 12.1   | 73    |
+| margin-block-start  | 87   | 41      | 87     | 12.1   | 73    |
+| margin-bottom       | 6    | 1       | 1      | 1      | 3.5   |
+| margin-inline       | 87   | 66      | 87     | 14.1   | 73    |
+| margin-inline-end   | 87   | 41      | 87     | 12.1   | 73    |
+| margin-inline-start | 87   | 41      | 87     | 12.1   | 73    |
+| margin-left         | 6    | 1       | 1      | 1      | 3.5   |
+| margin-right        | 6    | 1       | 1      | 1      | 3.5   |
+| margin-top          | 6    | 1       | 1      | 1      | 3.5   |
+| marker              | 80   | 72      | 80     | 13.1   | 67    |
+| marker-end          | 80   | 72      | 80     | 13.1   | 67    |
+| marker-mid          | 80   | 72      | 80     | 13.1   | 67    |
+| marker-start        | 80   | 72      | 80     | 13.1   | 67    |
+| mask                | 120  | 53      | 120    | 15.4   | 106   |
+| mask-clip           | 120  | 53      | 120    | 15.4   | 106   |
+| mask-composite      | 120  | 53      | 120    | 15.4   | 106   |
+| mask-image          | 120  | 53      | 120    | 15.4   | 15    |
+| mask-mode           | 120  | 53      | 120    | 15.4   | 106   |
+| mask-origin         | 120  | 53      | 120    | 15.4   | 106   |
+| mask-position       | 120  | 53      | 120    | 15.4   | 106   |
+| mask-repeat         | 120  | 53      | 120    | 15.4   | 106   |
+| mask-size           | 120  | 53      | 120    | 15.4   | 106   |
+| mask-type           | 79   | 35      | 24     | 7      | 15    |
+| max-block-size      | 79   | 41      | 57     | 12.1   | 44    |
+| max-height          | 7    | 1       | 1      | 2      | 7     |
+| max-inline-size     | 79   | 41      | 57     | 12.1   | 44    |
+| max-width           | 7    | 1       | 1      | 2      | 7     |
+| @media              | 9    | 3.5     | 21     | 4      | 9     |
+| min-block-size      | 79   | 41      | 57     | 12.1   | 44    |
+| min-inline-size     | 79   | 41      | 57     | 12.1   | 44    |
+| min-height          | 7    | 1       | 1      | 2      | 4     |
+| min-width           | 7    | 1       | 1      | 2      | 4     |
+| mix-blend-mode      | 79   | 32      | 41     | 8      | 35    |
+
+---
+
+### N
+
+| Property   | Edge | Firefox | Chrome | Safari | Opera |
+| ---------- | ---- | ------- | ------ | ------ | ----- |
+| @namespace | 12   | 1       | 1      | 1      | 8     |
+
+---
+
 
 
 
