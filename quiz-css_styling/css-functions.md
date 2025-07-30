@@ -1625,6 +1625,71 @@ p {
 
 ---
 
+# Question: How do you convert between PX, EM, and Percent units in CSS?
+
+### PX to EM and Percent Conversion Table (Assuming 16px Base Font Size)
+
+| px   | em       | percent |
+| ---- | -------- | ------- |
+| 5px  | 0.3125em | 31.25%  |
+| 6px  | 0.3750em | 37.50%  |
+| 7px  | 0.4375em | 43.75%  |
+| 8px  | 0.5000em | 50.00%  |
+| 9px  | 0.5625em | 56.25%  |
+| 10px | 0.6250em | 62.50%  |
+| 11px | 0.6875em | 68.75%  |
+| 12px | 0.7500em | 75.00%  |
+| 13px | 0.8125em | 81.25%  |
+| 14px | 0.8750em | 87.50%  |
+| 15px | 0.9375em | 93.75%  |
+| 16px | 1.0000em | 100.00% |
+| 17px | 1.0625em | 106.25% |
+| 18px | 1.1250em | 112.50% |
+| 19px | 1.1875em | 118.75% |
+| 20px | 1.2500em | 125.00% |
+| 21px | 1.3125em | 131.25% |
+| 22px | 1.3750em | 137.50% |
+| 23px | 1.4375em | 143.75% |
+| 24px | 1.5000em | 150.00% |
+| 25px | 1.5625em | 156.25% |
+
+---
+
+### Explanation of Units
+
+| Unit    | Type     | Description                                                                               |
+| ------- | -------- | ----------------------------------------------------------------------------------------- |
+| PX      | Absolute | A fixed, static unit. Does not scale with parent or surrounding elements.                 |
+| EM      | Relative | Relative to the current element’s font size. `2em` means 2× the font size of the element. |
+| Percent | Relative | Relative to the parent element’s font size. `150%` means 1.5× the parent’s font size.     |
+
+---
+
+### Conversion Formula
+
+* **PX to EM**
+  `em = px / base-font-size`
+  Example: `24px / 16px = 1.5em`
+
+* **EM to PX**
+  `px = em * base-font-size`
+  Example: `2em * 16px = 32px`
+
+* **Percent to PX**
+  `px = (percent / 100) * base-font-size`
+  Example: `150% = 1.5 * 16px = 24px`
+
+---
+
+### Default Font Size
+
+Most browsers default to `16px` font size for the `<body>` element. All relative conversions (em, percent) are based on this unless overridden.
+
+> **Tip:** Use `em` and `%` units for scalable, responsive design. Use `px` when fixed size is needed and you’re not concerned about scalability.
+
+---
+
+
 
 
 
