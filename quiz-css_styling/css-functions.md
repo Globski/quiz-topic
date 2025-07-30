@@ -568,4 +568,96 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+### B
+
+| Property                       | Edge | Firefox | Chrome | Safari | Opera |
+| ------------------------------ | ---- | ------- | ------ | ------ | ----- |
+| **backdrop-filter**            | 79   | 103     | 76     | 9      | 63    |
+| **backface-visibility**        | 12   | 16      | 36     | 15.4   | 23    |
+| **background**                 | 4    | 1       | 1      | 1      | 3.5   |
+| **background-attachment**      | 4    | 1       | 1      | 1      | 3.5   |
+| **background-blend-mode**      | 79   | 30      | 35     | 7.1    | 22    |
+| **background-clip**            | 9    | 4       | 4      | 3      | 10.5  |
+| **background-color**           | 4    | 1       | 1      | 1      | 3.5   |
+| **background-image**           | 4    | 1       | 1      | 1      | 3.5   |
+| **background-origin**          | 9    | 4       | 4      | 3      | 10.5  |
+| **background-position**        | 4    | 1       | 1      | 1      | 3.5   |
+| **background-position-x**      | 12   | 49      | 1      | 1      | 15    |
+| **background-position-y**      | 12   | 49      | 1      | 1      | 15    |
+| **background-repeat**          | 4    | 1       | 1      | 1      | 3.5   |
+| **background-size**            | 9    | 4       | 4      | 4.1    | 10    |
+| **block-size**                 | 79   | 41      | 57     | 12.1   | 44    |
+| **border**                     | 4    | 1       | 1      | 1      | 3.5   |
+| **border-block**               | 87   | 66      | 87     | 14.1   | 73    |
+| **border-block-color**         | 87   | 66      | 87     | 14.1   | 73    |
+| **border-block-end**           | 79   | 41      | 69     | 12.1   | 56    |
+| **border-block-end-color**     | 79   | 41      | 69     | 12.1   | 56    |
+| **border-block-end-style**     | 79   | 41      | 69     | 12.1   | 56    |
+| **border-block-end-width**     | 79   | 41      | 69     | 12.1   | 56    |
+| **border-block-start**         | 79   | 41      | 69     | 12.1   | 56    |
+| **border-block-start-color**   | 79   | 41      | 69     | 12.1   | 56    |
+| **border-block-start-style**   | 79   | 41      | 69     | 12.1   | 56    |
+| **border-block-start-width**   | 79   | 41      | 69     | 12.1   | 56    |
+| **border-block-style**         | 87   | 66      | 87     | 14.1   | 73    |
+| **border-block-width**         | 87   | 66      | 87     | 14.1   | 73    |
+| **border-bottom**              | 4    | 1       | 1      | 1      | 3.5   |
+| **border-bottom-color**        | 4    | 1       | 1      | 1      | 3.5   |
+| **border-bottom-left-radius**  | 9    | 4       | 5      | 5      | 10.5  |
+| **border-bottom-right-radius** | 9    | 4       | 5      | 5      | 10.5  |
+| **border-bottom-style**        | 5.5  | 1       | 1      | 1      | 9.2   |
+| **border-bottom-width**        | 4    | 1       | 1      | 1      | 3.5   |
+| **border-collapse**            | 5    | 1       | 1      | 1.2    | 4     |
+| **border-color**               | 4    | 1       | 1      | 1      | 3.5   |
+| **border-end-end-radius**      | 89   | 66      | 89     | 15     | 75    |
+| **border-end-start-radius**    | 89   | 66      | 89     | 15     | 75    |
+| **border-image**               | 11   | 15      | 16     | 6      | 15    |
+| **border-image-outset**        | 11   | 15      | 15     | 6      | 15    |
+| **border-image-repeat**        | 11   | 15      | 15     | 6      | 15    |
+| **border-image-slice**         | 11   | 15      | 15     | 6      | 15    |
+| **border-image-source**        | 11   | 15      | 15     | 6      | 15    |
+| **border-image-width**         | 11   | 13      | 15     | 6      | 15    |
+| **border-inline**              | 87   | 66      | 87     | 14.1   | 73    |
+| **border-inline-color**        | 87   | 66      | 87     | 14.1   | 73    |
+| **border-inline-end**          | 79   | 41      | 69     | 12.1   | 56    |
+| **border-inline-end-color**    | 79   | 41      | 69     | 12.1   | 56    |
+| **border-inline-end-style**    | 79   | 41      | 69     | 12.1   | 56    |
+| **border-inline-end-width**    | 79   | 41      | 69     | 12.1   | 56    |
+| **border-inline-start**        | 79   | 41      | 69     | 12.1   | 56    |
+| **border-inline-start-color**  | 79   | 41      | 69     | 12.1   | 56    |
+| **border-inline-start-style**  | 79   | 41      | 69     | 12.1   | 56    |
+| **border-inline-start-width**  | 79   | 41      | 69     | 12.1   | 56    |
+| **border-inline-style**        | 87   | 66      | 87     | 14.1   | 73    |
+| **border-inline-width**        | 87   | 66      | 87     | 14.1   | 73    |
+| **border-left**                | 4    | 1       | 1      | 1      | 3.5   |
+| **border-left-color**          | 4    | 1       | 1      | 1      | 3.5   |
+| **border-left-style**          | 5.5  | 1       | 1      | 1      | 9.2   |
+| **border-left-width**          | 4    | 1       | 1      | 1      | 3.5   |
+| **border-radius**              | 9    | 4       | 5      | 5      | 10.5  |
+| **border-right**               | 4    | 1       | 1      | 1      | 3.5   |
+| **border-right-color**         | 4    | 1       | 1      | 1      | 3.5   |
+| **border-right-style**         | 5.5  | 1       | 1      | 1      | 9.2   |
+| **border-right-width**         | 4    | 1       | 1      | 1      | 3.5   |
+| **border-spacing**             | 8    | 1       | 1      | 1      | 4     |
+| **border-start-end-radius**    | 89   | 66      | 89     | 15     | 75    |
+| **border-start-start-radius**  | 89   | 66      | 89     | 15     | 75    |
+| **border-style**               | 4    | 1       | 1      | 1      | 3.5   |
+| **border-top**                 | 4    | 1       | 1      | 1      | 3.5   |
+| **border-top-color**           | 4    | 1       | 1      | 1      | 3.5   |
+| **border-top-left-radius**     | 9    | 4       | 5      | 5      | 10.5  |
+| **border-top-right-radius**    | 9    | 4       | 5      | 5      | 10.5  |
+| **border-top-style**           | 5.5  | 1       | 1      | 1      | 9.2   |
+| **border-top-width**           | 4    | 1       | 1      | 1      | 3.5   |
+| **border-width**               | 4    | 1       | 1      | 1      | 3.5   |
+| **bottom**                     | 5    | 1       | 1      | 1      | 6     |
+| **box-decoration-break**       | 79   | 32      | 22     | 6.1    | 15    |
+| **box-shadow**                 | 9    | 4       | 10     | 5.1    | 10.5  |
+| **box-sizing**                 | 8    | 29      | 10     | 5.1    | 9.5   |
+| **break-after**                | 10   | 65      | 50     | 10     | 37    |
+| **break-before**               | 10   | 65      | 50     | 10     | 37    |
+| **break-inside**               | 10   | 65      | 50     | 10     | 37    |
+
+---
+
+
+
 
