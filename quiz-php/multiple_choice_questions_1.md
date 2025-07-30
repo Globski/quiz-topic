@@ -787,3 +787,335 @@ echo "Addition = " . ($a + $b);
 
 ---
 
+# Question: What does the PHP `abs()` function do?
+
+**Answer:** It returns the absolute (positive) value of a number, disregarding its sign.
+
+---
+
+# Question: What is the return type of `abs()` when a float is passed?
+
+**Answer:** Float.
+
+---
+
+# Question: What is the return type of `abs()` when an integer is passed?
+
+**Answer:** Integer.
+
+---
+
+# Question: What does the PHP `ceil()` function do?
+
+**Answer:** It rounds a float number up to the next highest integer and returns it as a float.
+
+---
+
+# Question: What is the output of `ceil(-3.95)`?
+
+**Answer:** -3.
+
+---
+
+# Question: What data type does `ceil()` always return?
+
+**Answer:** Float.
+
+---
+
+# Question: What does `exp($x)` return in PHP?
+
+**Answer:** Euler’s number (e) raised to the power of `$x`.
+
+---
+
+# Question: What is the output of `exp(M_LN2)`?
+
+**Answer:** 2.
+
+---
+
+# Question: What is the value of Euler's number `M_E`?
+
+**Answer:** 2.7182818284590452354.
+
+---
+
+# Question: What is the relationship between `exp()` and natural logarithm?
+
+**Answer:** `exp()` is the inverse of the natural logarithm.
+
+---
+
+# Question: What does the `floor()` function do in PHP?
+
+**Answer:** Rounds a float number down to the next lowest integer and returns it as a float.
+
+---
+
+# Question: What is the result of `floor(-3.95)`?
+
+**Answer:** -4.
+
+---
+
+# Question: What is returned by `floor(15.05)`?
+
+**Answer:** 15.
+
+---
+
+# Question: What does `intdiv(x, y)` do in PHP?
+
+**Answer:** It returns the integer quotient of the division `x/y`, ignoring the remainder.
+
+---
+
+# Question: What is the result of `intdiv(3, 10)`?
+
+**Answer:** 0.
+
+---
+
+# Question: What happens if `intdiv()` is called with 0 as the denominator?
+
+**Answer:** A `DivisionByZeroError` exception is thrown.
+
+---
+
+# Question: What does `intdiv(2.90, 1.90)` return?
+
+**Answer:** 2 (fractional parts are ignored).
+
+---
+
+# Question: What is the result of `intdiv(-10, 3)`?
+
+**Answer:** -3.
+
+---
+
+# Question: What does `log10()` return in PHP?
+
+**Answer:** The base-10 logarithm of a number.
+
+---
+
+# Question: What is `log10(100)` equal to?
+
+**Answer:** 2.
+
+---
+
+# Question: What constant equals `log10(M_E)`?
+
+**Answer:** `M_LOG10E`.
+
+---
+
+# Question: What is the result of `log10(0)`?
+
+**Answer:** -INF.
+
+---
+
+# Question: What is the result of `log10(sqrt(-1))`?
+
+**Answer:** NAN.
+
+---
+
+# Question: What does the `max()` function return?
+
+**Answer:** The highest value from an array or a list of values.
+
+---
+
+# Question: What is the result of `max(array("Java", "Angular", "PHP", "C", "Kotlin"))`?
+
+**Answer:** PHP.
+
+---
+
+# Question: If comparable values evaluate as equal in `max()`, which one is returned?
+
+**Answer:** The first parameter.
+
+---
+
+# Question: What happens when `max()` is called with a mixed-type array?
+
+**Answer:** Standard comparison rules apply; the highest value is returned accordingly.
+
+---
+
+# Question: What does `max(23, "Java", 142, 1e2, 99)` return?
+
+**Answer:** 142.
+
+---
+
+# Question: What does the `min()` function return?
+
+**Answer:** The lowest value from an array or a list of values.
+
+---
+
+# Question: What is the result of `min(array("Java", "Angular", "PHP", "C", "Kotlin"))`?
+
+**Answer:** Angular.
+
+---
+
+# Question: What happens when `min()` is called with a mixed-type array?
+
+**Answer:** Standard comparison rules apply; the lowest value is returned accordingly.
+
+---
+
+# Question: What does `min(array(23, 5.55, 142, 56, 99))` return?
+
+**Answer:** 5.55.
+
+---
+
+# Question: If multiple values evaluate equally in `min()`, which one is returned?
+
+**Answer:** The first parameter.
+
+---
+
+# Question: What does `pow(x, y)` compute in PHP?
+
+**Answer:** It computes `x` raised to the power of `y`.
+
+---
+
+# Question: What is another way to calculate powers in PHP besides `pow()`?
+
+**Answer:** Using the exponentiation operator `**`.
+
+---
+
+# Question: What does `pow(10, 0)` return?
+
+**Answer:** 1.
+
+---
+
+# Question: What is the result of `pow(100, 0.5)`?
+
+**Answer:** 10.
+
+---
+
+# Question: How can the area of a circle be calculated using `pow()`?
+
+**Answer:** `M_PI * pow(radius, 2)`.
+
+---
+
+# Question: What does the `round()` function do?
+
+**Answer:** It rounds a float to a specified number of decimal digits.
+
+---
+
+# Question: What is the default precision of `round()` if not specified?
+
+**Answer:** 0.
+
+---
+
+# Question: What does `round(1234.567, -2)` return?
+
+**Answer:** 1200.
+
+---
+
+# Question: What does the `PHP_ROUND_HALF_UP` mode do?
+
+**Answer:** Rounds number away from 0 when it is halfway (e.g., 1.5 → 2, -1.5 → -2).
+
+---
+
+# Question: What is the behavior of `PHP_ROUND_HALF_DOWN`?
+
+**Answer:** Rounds number toward 0 when halfway (e.g., 1.5 → 1, -1.5 → -1).
+
+---
+
+# Question: What does the `PHP_ROUND_HALF_EVEN` mode do?
+
+**Answer:** Rounds to the nearest even number.
+
+---
+
+# Question: What does `PHP_ROUND_HALF_ODD` do?
+
+**Answer:** Rounds to the nearest odd number.
+
+---
+
+# Question: What does `sqrt($num)` return?
+
+**Answer:** The square root of `$num`.
+
+---
+
+# Question: What is the return value of `sqrt(-1)`?
+
+**Answer:** NAN.
+
+---
+
+# Question: What is the value of the predefined constant `M_SQRT2`?
+
+**Answer:** 1.4142135623731.
+
+---
+
+# Question: What does `M_2_SQRTPI` represent?
+
+**Answer:** The value of `2/sqrt(pi)`.
+
+---
+
+# Question: What constant represents the square root of 1/2?
+
+**Answer:** `M_SQRT1_2`.
+
+---
+
+
+# Question: What is the value of `M_PI` in PHP?
+
+**Answer:** 3.14159265358979323846.
+
+---
+
+# Question: What constant represents log base 2 of Euler’s number?
+
+**Answer:** `M_LOG2E`.
+
+---
+
+# Question: What does `INF` represent in PHP?
+
+**Answer:** Infinity.
+
+---
+
+# Question: What does `NAN` stand for in PHP?
+
+**Answer:** Not A Number.
+
+---
+
+# Question: What is the value of `M_EULER`?
+
+**Answer:** 0.57721566490153286061.
+
+---
+
+
