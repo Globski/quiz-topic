@@ -1215,7 +1215,29 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+# Question: List some commonly used CSS at-rules grouped by their purpose.
 
+### CSS At-rules
+
+| At-rule                | Description                                                                                                                                                |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `@charset`             | Specifies the character encoding used in the style sheet                                                                                                   |
+| `@container`           | Define styles for elements in a container, depending on the container's size or style                                                                      |
+| `@counter-style`       | Lets you define your own counter styles                                                                                                                    |
+| `@font-face`           | Specifies a custom font with which to display text                                                                                                         |
+| `@font-palette-values` | Allows you to customize the default values of a font-palette                                                                                               |
+| `@import`              | Allows you to import a style sheet into another style sheet                                                                                                |
+| `@keyframes`           | Controls the steps in an animation by defining styles for points along the animation sequence                                                              |
+| `@layer`               | Used to control how the CSS cascade layers evaluate the order of styles                                                                                    |
+| `@media`               | Applies parts of a style sheet based on the result of one or more media queries                                                                            |
+| `@namespace`           | Defines an XML namespace to be used in the style sheet                                                                                                     |
+| `@page`                | Customizes the dimension, orientation, and margins of printed pages                                                                                        |
+| `@property`            | Allows you to define custom CSS properties directly in the stylesheet without JavaScript, with data type checking, default values, and inheritance control |
+| `@scope`               | Allows you to select elements in specific DOM subtrees and target them without overly-specific selectors                                                   |
+| `@starting-style`      | Defines an element's starting styles before the element gets its first style update                                                                        |
+| `@supports`            | Used to test whether a browser supports a CSS feature                                                                                                      |
+
+---
 
 
 
