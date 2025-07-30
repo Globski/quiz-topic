@@ -1557,6 +1557,75 @@ All modern browsers support CSS animations. Example minimum versions:
 
 ---
 
+# Question: What are the different CSS units grouped by their category?
+
+### Absolute Length Units
+
+| Unit | Description                  |
+| ---- | ---------------------------- |
+| cm   | Centimeters                  |
+| mm   | Millimeters                  |
+| in   | Inches (1in = 96px = 2.54cm) |
+| px   | Pixels (1px = 1/96th of 1in) |
+| pt   | Points (1pt = 1/72 of 1in)   |
+| pc   | Picas (1pc = 12 pt)          |
+
+> **Note:** Pixels (px) are relative to the viewing device. On low-DPI devices, 1px = 1 device pixel. On high-resolution screens or printers, 1px may equal multiple device pixels.
+
+---
+
+### Relative Length Units
+
+| Unit | Description                                                                         |
+| ---- | ----------------------------------------------------------------------------------- |
+| em   | Relative to the font-size of the element (e.g., 2em means 2× the current font size) |
+| ex   | Relative to the x-height of the current font (rarely used)                          |
+| ch   | Relative to the width of the "0" (zero)                                             |
+| rem  | Relative to the font-size of the root element                                       |
+| vw   | Relative to 1% of the width of the viewport                                         |
+| vh   | Relative to 1% of the height of the viewport                                        |
+| vmin | Relative to 1% of the viewport’s smaller dimension                                  |
+| vmax | Relative to 1% of the viewport’s larger dimension                                   |
+| %    | Relative to the parent element                                                      |
+
+> **Tip:** The `em` and `rem` units are particularly useful for creating scalable layouts.
+>
+> **Note:** *Viewport* = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+
+---
+
+### Example
+
+```css
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 25px;
+  line-height: 50px;
+}
+```
+
+* A whitespace **cannot** appear between the number and the unit (e.g., `10px`, not `10 px`).
+* If the value is `0`, the unit can be omitted (e.g., `margin: 0;` is valid).
+
+---
+
+### Browser Support
+
+| Length Unit                       | Chrome | Firefox | Safari | Opera | Edge |
+| --------------------------------- | ------ | ------- | ------ | ----- | ---- |
+| em, ex, %, px, cm, mm, in, pt, pc | 1.0    | 3.0     | 1.0    | 1.0   | 3.5  |
+| ch                                | 27.0   | 9.0     | 1.0    | 7.0   | 20.0 |
+| rem                               | 4.0    | 9.0     | 3.6    | 4.1   | 11.6 |
+| vh, vw                            | 20.0   | 9.0     | 19.0   | 6.0   | 20.0 |
+| vmin                              | 20.0   | 12.0    | 19.0   | 6.0   | 20.0 |
+| vmax                              | 26.0   | 16.0    | 19.0   | 7.0   | 20.0 |
+
+---
+
+
 
 
 
