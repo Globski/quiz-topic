@@ -1446,7 +1446,116 @@ Fallback fonts are essential because no font is guaranteed to be available on ev
 
 ---
 
+# Question: What are animatable CSS properties and how are they used?
 
+### CSS Animatable Properties
+
+**Definition:**
+Some CSS properties are *animatable*, meaning they can gradually transition from one value to another. These properties can be used with animations (`@keyframes`) and transitions to enhance interactivity and visual flow on a webpage.
+
+**Example – Animate `background-color`:**
+
+```css
+@keyframes mymove {
+  from { background-color: red; }
+  to { background-color: blue; }
+}
+```
+
+**Browser Support:**
+All modern browsers support CSS animations. Example minimum versions:
+
+* Chrome: 43
+* Firefox: 10
+* Safari: 16
+* IE: 9
+* Opera: 30
+
+---
+
+### Commonly Animatable CSS Properties
+
+| Property                     |   | Property                    |   |
+| ---------------------------- | - | --------------------------- | - |
+| `aspect-ratio`               |   | `background`                |   |
+| `background-color`           |   | `background-position`       |   |
+| `background-position-x`      |   | `background-position-y`     |   |
+| `background-size`            |   | `block-size`                |   |
+| `border`                     |   | `border-bottom`             |   |
+| `border-bottom-color`        |   | `border-bottom-width`       |   |
+| `border-end-end-radius`      |   | `border-end-start-radius`   |   |
+| `border-block`               |   | `border-block-color`        |   |
+| `border-block-end-color`     |   | `border-block-end-width`    |   |
+| `border-block-start-color`   |   | `border-block-start-width`  |   |
+| `border-block-width`         |   | `border-bottom-left-radius` |   |
+| `border-bottom-right-radius` |   | `border-inline`             |   |
+| `border-inline-color`        |   | `border-inline-end-color`   |   |
+| `border-inline-end-width`    |   | `border-inline-start-color` |   |
+| `border-inline-start-width`  |   | `border-inline-width`       |   |
+| `border-start-end-radius`    |   | `border-start-start-radius` |   |
+| `border-color`               |   | `border-left`               |   |
+| `border-left-color`          |   | `border-left-width`         |   |
+| `border-right`               |   | `border-right-color`        |   |
+| `border-right-width`         |   | `border-spacing`            |   |
+| `border-top`                 |   | `border-top-color`          |   |
+| `border-top-left-radius`     |   | `border-top-right-radius`   |   |
+| `border-top-width`           |   | `bottom`                    |   |
+| `box-shadow`                 |   | `clip`                      |   |
+| `color`                      |   | `column-count`              |   |
+| `column-gap`                 |   | `column-rule`               |   |
+| `column-rule-color`          |   | `column-rule-width`         |   |
+| `column-width`               |   | `columns`                   |   |
+| `filter`                     |   | `flex`                      |   |
+| `flex-basis`                 |   | `flex-grow`                 |   |
+| `flex-shrink`                |   | `font`                      |   |
+| `font-size`                  |   | `font-size-adjust`          |   |
+| `font-stretch`               |   | `font-weight`               |   |
+| `grid`                       |   | `grid-area`                 |   |
+| `grid-auto-columns`          |   | `grid-auto-flow`            |   |
+| `grid-auto-rows`             |   | `grid-column`               |   |
+| `grid-column-end`            |   | `grid-column-gap`           |   |
+| `grid-column-start`          |   | `grid-gap`                  |   |
+| `grid-row`                   |   | `grid-row-end`              |   |
+| `grid-row-gap`               |   | `grid-row-start`            |   |
+| `grid-template`              |   | `grid-template-areas`       |   |
+| `grid-template-columns`      |   | `grid-template-rows`        |   |
+| `height`                     |   | `inline-size`               |   |
+| `inset`                      |   | `inset-block`               |   |
+| `inset-block-end`            |   | `inset-block-start`         |   |
+| `inset-inline`               |   | `inset-inline-end`          |   |
+| `inset-inline-start`         |   | `left`                      |   |
+| `letter-spacing`             |   | `line-height`               |   |
+| `margin`                     |   | `margin-block`              |   |
+| `margin-block-end`           |   | `margin-block-start`        |   |
+| `margin-bottom`              |   | `margin-inline`             |   |
+| `margin-inline-end`          |   | `margin-inline-start`       |   |
+| `margin-left`                |   | `margin-right`              |   |
+| `margin-top`                 |   | `max-height`                |   |
+| `max-width`                  |   | `max-block-size`            |   |
+| `max-inline-size`            |   | `min-block-size`            |   |
+| `min-inline-size`            |   | `min-height`                |   |
+| `min-width`                  |   | `object-position`           |   |
+| `offset-anchor`              |   | `offset-distance`           |   |
+| `offset-path`                |   | `offset-rotate`             |   |
+| `opacity`                    |   | `order`                     |   |
+| `outline`                    |   | `outline-color`             |   |
+| `outline-offset`             |   | `outline-width`             |   |
+| `padding`                    |   | `padding-block`             |   |
+| `padding-block-end`          |   | `padding-block-start`       |   |
+| `padding-bottom`             |   | `padding-inline`            |   |
+| `padding-inline-end`         |   | `padding-inline-start`      |   |
+| `padding-left`               |   | `padding-right`             |   |
+| `padding-top`                |   | `perspective`               |   |
+| `perspective-origin`         |   | `right`                     |   |
+| `rotate`                     |   | `scale`                     |   |
+| `text-decoration-color`      |   | `text-indent`               |   |
+| `text-shadow`                |   | `top`                       |   |
+| `transform`                  |   | `transform-origin`          |   |
+| `translate`                  |   | `vertical-align`            |   |
+| `visibility`                 |   | `width`                     |   |
+| `word-spacing`               |   | `z-index`                   |   |
+
+---
 
 
 
