@@ -1239,6 +1239,93 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+# Question: List commonly used CSS functions grouped by their usage.
+
+### CSS Functions
+
+| Function                      | Description                                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------------------- |
+| `acos()`                      | Returns the inverse cosine of a number between -1 and 1                                     |
+| `asin()`                      | Returns the inverse sine of a number between -1 and 1                                       |
+| `atan()`                      | Returns the inverse tangent of a number between -∞ and ∞                                    |
+| `atan2()`                     | Returns the inverse tangent of two values between -infinity and infinity                    |
+| `attr()`                      | Returns the value of an attribute of the selected element                                   |
+| `blur()`                      | Applies a blur effect to an element                                                         |
+| `brightness()`                | Adjusts the brightness of an element (brighter or darker)                                   |
+| `calc()`                      | Allows you to perform calculations to determine CSS property values                         |
+| `circle()`                    | Defines a circle                                                                            |
+| `clamp()`                     | Sets a value that adjusts responsively between a min and max depending on the viewport size |
+| `color()`                     | Specifies a color in a particular color space                                               |
+| `color-mix()`                 | Mixes two color values in a given color space, by a given amount                            |
+| `conic-gradient()`            | Creates a conic gradient                                                                    |
+| `contrast()`                  | Adjusts the contrast of an element                                                          |
+| `cos()`                       | Returns the cosine of an angle                                                              |
+| `counter()`                   | Returns the current value of the named counter                                              |
+| `counters()`                  | Returns the current values of the named and nested counters                                 |
+| `cubic-bezier()`              | Defines a Cubic Bezier curve                                                                |
+| `drop-shadow()`               | Applies a drop shadow effect to an image                                                    |
+| `ellipse()`                   | Defines an ellipse                                                                          |
+| `exp()`                       | Returns E raised to the power of the specified number x (E^x)                               |
+| `fit-content()`               | Sizes an element based on its content                                                       |
+| `grayscale()`                 | Converts an image to grayscale                                                              |
+| `hsl()` / `hsla()`            | Defines a color using the HSL model with optional alpha                                     |
+| `hue-rotate()`                | Applies a color rotation to an element                                                      |
+| `hwb()`                       | Defines a color using the HWB model with optional alpha                                     |
+| `hypot()`                     | Returns the square root of the sum of squares of its parameters                             |
+| `inset()`                     | Defines a rectangle inset from each side of the reference box                               |
+| `invert()`                    | Inverts the color of an image                                                               |
+| `lab()`                       | Specifies a color in the CIE L\*a\*b color space                                            |
+| `lch()`                       | Specifies a color in the LCH (Lightness-Chroma-Hue) color space                             |
+| `light-dark()`                | Returns different color values based on light or dark theme settings                        |
+| `linear-gradient()`           | Creates a linear gradient                                                                   |
+| `log()`                       | Returns the natural logarithm or base-specified log of a number                             |
+| `matrix()`                    | Defines a 2D transformation matrix of 6 values                                              |
+| `matrix3d()`                  | Defines a 3D transformation matrix of 16 values                                             |
+| `max()`                       | Uses the largest value from a list                                                          |
+| `min()`                       | Uses the smallest value from a list                                                         |
+| `minmax()`                    | Defines a range for grid layout sizing (min and max values)                                 |
+| `mod()`                       | Returns the remainder when one number is divided by another                                 |
+| `oklab()`                     | Specifies a color in the OKLAB color space                                                  |
+| `oklch()`                     | Specifies a color in the OKLCH color space                                                  |
+| `opacity()`                   | Applies an opacity effect to an element                                                     |
+| `perspective()`               | Defines a perspective for 3D transformed elements                                           |
+| `polygon()`                   | Defines a polygon                                                                           |
+| `pow()`                       | Returns x raised to the power of y                                                          |
+| `radial-gradient()`           | Creates a radial gradient                                                                   |
+| `ray()`                       | Defines the offset-path line segment for animation movement                                 |
+| `rem()`                       | Returns the remainder when one number is divided by another                                 |
+| `repeat()`                    | Repeats columns or rows in a grid                                                           |
+| `repeating-conic-gradient()`  | Repeats a conic gradient                                                                    |
+| `repeating-linear-gradient()` | Repeats a linear gradient                                                                   |
+| `repeating-radial-gradient()` | Repeats a radial gradient                                                                   |
+| `rgb()` / `rgba()`            | Defines a color using the RGB model with optional alpha                                     |
+| `rotate()`                    | Defines a 2D rotation                                                                       |
+| `rotate3d()`                  | Defines a 3D rotation                                                                       |
+| `rotateX()`                   | Rotates an element around the x-axis                                                        |
+| `rotateY()`                   | Rotates an element around the y-axis                                                        |
+| `rotateZ()`                   | Rotates an element around the z-axis                                                        |
+| `round()`                     | Rounds a number using a specific strategy                                                   |
+| `saturate()`                  | Adjusts the saturation of an element                                                        |
+| `scale()`                     | Defines a 2D scale transformation                                                           |
+| `scale3d()`                   | Defines a 3D scale transformation                                                           |
+| `scaleX()`                    | Scales an element horizontally                                                              |
+| `scaleY()`                    | Scales an element vertically                                                                |
+| `sepia()`                     | Converts an image to sepia                                                                  |
+| `sin()`                       | Returns the sine of a number (angle)                                                        |
+| `skew()`                      | Skews an element on both axes                                                               |
+| `skewX()`                     | Skews an element on the x-axis                                                              |
+| `skewY()`                     | Skews an element on the y-axis                                                              |
+| `sqrt()`                      | Returns the square root of a number                                                         |
+| `steps()`                     | Creates a stepped timing function for animations                                            |
+| `tan()`                       | Returns the tangent of a number                                                             |
+| `translate()`                 | Repositions an element along the x and y axes                                               |
+| `translateX()`                | Repositions an element along the x-axis                                                     |
+| `translateY()`                | Repositions an element along the y-axis                                                     |
+| `url()`                       | Includes a file (e.g., image, font) in the stylesheet                                       |
+| `var()`                       | Inserts the value of a custom CSS property                                                  |
+
+---
+
 
 
 
