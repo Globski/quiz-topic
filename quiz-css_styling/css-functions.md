@@ -881,6 +881,134 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+### O
+
+| Property                       | Chrome | Firefox | Safari | IE   | Edge |
+| ------------------------------ | ------ | ------- | ------ | ---- | ---- |
+| **object-fit**                 | 16     | 36      | 31     | 7.1  | 19   |
+| **object-position**            | 16     | 36      | 31     | 7.1  | 19   |
+| **offset**                     | 79     | 72      | 55     | 16   | 42   |
+| **offset-anchor**              | 116    | 72      | 116    | 16   | 102  |
+| **offset-distance**            | 79     | 72      | 55     | 16   | 42   |
+| **offset-path**                | 79     | 72      | 55     | 15.4 | 45   |
+| **offset-position**            | 116    | 122     | 116    | 16   | 102  |
+| **offset-rotate**              | 79     | 72      | 56     | 16   | 43   |
+| **opacity**                    | 9      | 2       | 4      | 3.1  | 9    |
+| **order**                      | 11     | 28      | 29     | 9    | 17   |
+| **orphans**                    | 8      | —       | 25     | 3.1  | 10   |
+| **outline**                    | 8      | 1.5     | 1      | 1.2  | 7    |
+| **outline-color**              | 8      | 1.5     | 1      | 1.2  | 7    |
+| **outline-offset**             | 15     | 3.5     | 4      | 3    | 10.5 |
+| **outline-style**              | 8      | 1.5     | 1      | 1.2  | 7    |
+| **outline-width**              | 8      | 1.5     | 1      | 1.2  | 7    |
+| **overflow**                   | 4      | 1       | 1      | 1    | 7    |
+| **overflow-anchor**            | 79     | 66      | 56     | —    | 43   |
+| **overflow-wrap**              | 18     | 49      | 23     | 6.1  | 12.1 |
+| **overflow-x**                 | 9      | 3.5     | 4      | 3    | 9.5  |
+| **overflow-y**                 | 9      | 1.5     | 4      | 3    | 9.5  |
+| **overscroll-behavior**        | 18     | 59      | 63     | 16   | 50   |
+| **overscroll-behavior-block**  | 79     | 73      | 77     | 16   | 64   |
+| **overscroll-behavior-inline** | 79     | 73      | 77     | 16   | 64   |
+| **overscroll-behavior-x**      | 18     | 59      | 63     | 16   | 50   |
+| **overscroll-behavior-y**      | 18     | 59      | 63     | 16   | 50   |
+
+---
+
+### P
+
+| Property                 | Chrome | Firefox | Safari | IE   | Edge |
+| ------------------------ | ------ | ------- | ------ | ---- | ---- |
+| **padding**              | 4      | 1       | 1      | 1    | 3.5  |
+| **padding-block**        | 87     | 66      | 87     | 14.1 | 73   |
+| **padding-block-end**    | 87     | 41      | 87     | 12.1 | 73   |
+| **padding-block-start**  | 87     | 41      | 87     | 12.1 | 73   |
+| **padding-bottom**       | 4      | 1       | 1      | 1    | 3.5  |
+| **padding-inline**       | 87     | 66      | 87     | 14.1 | 73   |
+| **padding-inline-end**   | 87     | 41      | 87     | 12.1 | 73   |
+| **padding-inline-start** | 87     | 41      | 87     | 12.1 | 73   |
+| **padding-left**         | 4      | 1       | 1      | 1    | 3.5  |
+| **padding-right**        | 4      | 1       | 1      | 1    | 3.5  |
+| **padding-top**          | 4      | 1       | 1      | 1    | 3.5  |
+| **@page**                | 12     | 19      | 12     | —    | 6    |
+| **page-break-after**     | 4      | 1       | 1      | 1.2  | 7    |
+| **page-break-before**    | 4      | 1       | 1      | 1.2  | 7    |
+| **page-break-inside**    | 8      | 19      | 1      | 1.3  | 7    |
+| **paint-order**          | 17     | 60      | 35     | 8    | 22   |
+| **perspective**          | 10     | 16      | 36     | 9    | 23   |
+| **perspective-origin**   | 10     | 16      | 36     | 9    | 23   |
+| **place-content**        | 79     | 53      | 59     | 11   | 46   |
+| **place-items**          | 79     | 45      | 59     | 11   | 46   |
+| **place-self**           | 79     | 45      | 59     | 11   | 46   |
+| **pointer-events**       | 11     | 3.6     | 2      | 4    | 9    |
+| **position**             | 7      | 1       | 1      | 1.2  | 4    |
+| **@property**            | 85     | 128     | 85     | 16.4 | 71   |
+
+---
+
+### Q
+
+| Property   | Chrome | Firefox | Safari | IE  | Edge |
+| ---------- | ------ | ------- | ------ | --- | ---- |
+| **quotes** | 8      | 1.5     | 11     | 5.1 | 4    |
+
+---
+
+### R
+
+| Property    | Chrome | Firefox | Safari | IE   | Edge |
+| ----------- | ------ | ------- | ------ | ---- | ---- |
+| **resize**  | 79     | 5       | 4      | 4    | 15   |
+| **right**   | 5.5    | 1       | 1      | 1    | 5    |
+| **rotate**  | 104    | 72      | 104    | 14.1 | 90   |
+| **row-gap** | 84     | 63      | 84     | 14.1 | 70   |
+
+---
+
+### S
+
+| Property                        | Chrome | Firefox | Safari | IE   | Edge |
+| ------------------------------- | ------ | ------- | ------ | ---- | ---- |
+| **scale**                       | 104    | 72      | 104    | 14.1 | 90   |
+| **@scope**                      | 118    | —       | 118    | 17.4 | 104  |
+| **scroll-behavior**             | 79     | 36      | 61     | 14   | 48   |
+| **scroll-margin**               | 79     | 90      | 69     | 14.1 | 56   |
+| **scroll-margin-block**         | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-block-end**     | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-block-start**   | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-bottom**        | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-inline**        | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-inline-end**    | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-inline-start**  | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-left**          | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-right**         | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-margin-top**           | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding**              | 79     | 90      | 69     | 14.1 | 56   |
+| **scroll-padding-block**        | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-block-end**    | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-block-start**  | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-bottom**       | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-inline**       | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-inline-end**   | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-inline-start** | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-left**         | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-right**        | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-padding-top**          | 79     | 68      | 69     | 14.1 | 56   |
+| **scroll-snap-align**           | 79     | 68      | 69     | 11   | 56   |
+| **scroll-snap-stop**            | 79     | 68      | 69     | 11   | 56   |
+| **scroll-snap-type**            | 79     | 68      | 69     | 11   | 56   |
+| **scrollbar-color**             | 121    | 64      | 121    | —    | 107  |
+| **scrollbar-gutter**            | 94     | 97      | 94     | —    | 80   |
+| **scrollbar-width**             | 121    | 64      | 121    | —    | 107  |
+| **shape-image-threshold**       | 79     | 62      | 37     | 10.1 | 24   |
+| **shape-margin**                | 79     | 62      | 37     | 10.1 | 24   |
+| **shape-outside**               | 79     | 62      | 37     | 10.1 | 24   |
+| **shape-rendering**             | 80     | 72      | 80     | 13.1 | 67   |
+| **@starting-style**             | 117    | 129     | 117    | 17.5 | 103  |
+| **@supports**                   | 12     | 22      | 28     | 9    | 12.1 |
+
+---
+
+
 
 
 
