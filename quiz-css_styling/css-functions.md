@@ -1127,6 +1127,69 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+# Question: List some CSS pseudo-classes grouped with examples and descriptions.
+
+### CSS Pseudo-classes
+
+| Pseudo-class          | Examples                                                 | Example Description                                            |
+| --------------------- | -------------------------------------------------------- | -------------------------------------------------------------- |
+| `:active`             | `a:active`                                               | Selects the active link                                        |
+| `:any-link`           | `a:any-link`, `area:any-link`                            | Selects any `<a>` or `<area>` element with an `href` attribute |
+| `:auto-fill`          | `input:auto-fill`                                        | Selects any `<input>` element autofilled by the browser        |
+| `:checked`            | `input:checked`, `option:checked`                        | Matches any `<input>` or `<option>` element that is checked    |
+| `:default`            | `input:default`, `button:default`, `option:default`      | Selects default form elements in a group                       |
+| `:defined`            | `:defined`                                               | Selects any defined (standard or custom) element               |
+| `:dir()`              | `:dir(ltr)`, `:dir(rtl)`                                 | Selects any element with specified text direction              |
+| `:disabled`           | `:disabled`, `input:disabled`, `option:disabled`         | Selects any disabled element, often form elements              |
+| `:empty`              | `div:empty`                                              | Selects any element with no children (including text nodes)    |
+| `:enabled`            | `:enabled`, `input:enabled`                              | Selects enabled elements, commonly form elements               |
+| `:first`              | `@page :first`                                           | Represents the first page of a printed document                |
+| `:first-child`        | `p:first-child`, `li:first-child`                        | Selects the first child of its parent among siblings           |
+| `:first-of-type`      | `p:first-of-type`, `li:first-of-type`                    | Selects the first of its type among siblings                   |
+| `:focus`              | `input:focus`, `select:focus`                            | Selects the element that gets focus                            |
+| `:focus-visible`      | `button:focus-visible`                                   | Selects focused elements (keyboard focus only)                 |
+| `:focus-within`       | `form:focus-within`, `label:focus-within`                | Matches element or descendants when focused                    |
+| `:fullscreen`         | `:fullscreen`                                            | Selects elements in full-screen mode                           |
+| `:has()`              | `h2:has(+p)`                                             | Selects `h2` elements immediately followed by a `p`            |
+| `:hover`              | `a:hover`, `p:hover`                                     | Selects element on mouse hover                                 |
+| `:in-range`           | `input:in-range`                                         | Selects `<input>` with value within range                      |
+| `:indeterminate`      | `input:indeterminate`                                    | Selects elements in indeterminate state                        |
+| `:invalid`            | `input:invalid`, `fieldset:invalid`                      | Selects invalid form elements                                  |
+| `:is()`               | `:is(ul, ol)`                                            | Selects all `<ul>` and `<ol>` elements                         |
+| `:lang()`             | `p:lang(it)`                                             | Selects `<p>` elements with lang="it"                          |
+| `:last-child`         | `li:last-child`                                          | Selects the last child of a parent                             |
+| `:last-of-type`       | `p:last-of-type`                                         | Selects last `<p>` of its parent                               |
+| `:left`               | `@page :left`                                            | Represents all left-hand printed pages                         |
+| `:link`               | `a:link`                                                 | Selects all unvisited links                                    |
+| `:modal`              | `:modal`                                                 | Selects elements in a modal state                              |
+| `:not()`              | `:not(p)`                                                | Selects elements not matching the selector                     |
+| `:nth-child()`        | `p:nth-child(2)`                                         | Selects the second child `<p>` of its parent                   |
+| `:nth-last-child()`   | `p:nth-last-child(2)`                                    | Selects the second child `<p>` from end                        |
+| `:nth-last-of-type()` | `p:nth-last-of-type(2)`                                  | Selects second `<p>` of its type from the end                  |
+| `:nth-of-type()`      | `p:nth-of-type(2)`                                       | Selects second `<p>` of its type                               |
+| `:only-child`         | `p:only-child`                                           | Selects `<p>` that is the only child of parent                 |
+| `:only-of-type`       | `p:only-of-type`                                         | Selects `<p>` that is the only one of its type in parent       |
+| `:optional`           | `input:optional`, `select:optional`, `textarea:optional` | Selects form elements without `required` attribute             |
+| `:out-of-range`       | `input:out-of-range`                                     | Selects `<input>` with value outside the range                 |
+| `:placeholder-shown`  | `input:placeholder-shown`, `textarea:placeholder-shown`  | Selects elements displaying placeholder text                   |
+| `:popover-open`       | `:popover-open`                                          | Selects element in a showing popover state                     |
+| `:read-only`          | `input:read-only`                                        | Selects input elements with `readonly`                         |
+| `:read-write`         | `input:read-write`                                       | Selects editable input elements                                |
+| `:required`           | `input:required`                                         | Selects input elements with `required` attribute               |
+| `:right`              | `@page :right`                                           | Represents right-hand printed pages                            |
+| `:root`               | `:root`                                                  | Selects the document's root element                            |
+| `:scope`              | `:scope`                                                 | Selects elements that act as a reference scope                 |
+| `:state()`            | `:state()`                                               | Selects custom elements with specified custom state            |
+| `:target`             | `:target`                                                | Selects current active target element                          |
+| `:user-invalid`       | `:user-invalid`                                          | Selects invalid form elements after user interaction           |
+| `:user-valid`         | `:user-valid`                                            | Selects valid form elements after user interaction             |
+| `:valid`              | `input:valid`                                            | Selects valid input elements                                   |
+| `:visited`            | `a:visited`, `area:visited`                              | Selects all visited links                                      |
+| `:where()`            | `:where(ol, ul)`                                         | Selects all `<ol>` and `<ul>` elements                         |
+
+---
+
+
 
 
 
