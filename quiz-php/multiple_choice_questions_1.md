@@ -1118,4 +1118,147 @@ echo "Addition = " . ($a + $b);
 
 ---
 
+# Question: What are Heredoc and Nowdoc used for in PHP?
+
+**Answer:** They are used to write long multi-line strings without needing excessive quotes or escape characters, allowing for clean and readable syntax.
+
+---
+
+# Question: What is the main difference between Heredoc and Nowdoc in PHP?
+
+**Answer:** Heredoc expands variables and interprets escape sequences like double-quoted strings, whereas Nowdoc treats the content as raw text and does not expand variables or interpret escape sequences, like single-quoted strings.
+
+---
+
+# Question: Which PHP string type does **not** interpret escape characters or expand variables?
+
+**Answer:** Single-quoted strings and Nowdoc strings.
+
+---
+
+# Question: Why is Heredoc useful when working with strings that contain quotes?
+
+**Answer:** Because it eliminates the need to escape quotes and still expands variables, making it similar to double-quoted strings.
+
+---
+
+# Question: What is the syntax for beginning a Heredoc string in PHP?
+
+**Answer:** Use `<<<IDENTIFIER` followed by a newline, then the multi-line string content, and finally the same `IDENTIFIER` on its own line to close the string.
+
+---
+
+# Question: Can a Heredoc string span multiple lines?
+
+**Answer:** Yes, Heredoc strings can span multiple lines.
+
+---
+
+# Question: What types of characters can be used in a Heredoc or Nowdoc identifier?
+
+**Answer:** Identifiers must be alphanumeric or underscores, starting with a non-digit or an underscore.
+
+---
+
+# Question: What characters must appear before and after the closing identifier in Heredoc/Nowdoc?
+
+**Answer:** Only newline characters are allowed before and after the closing identifier.
+
+---
+
+# Question: What happens if the closing identifier in a Heredoc is indented further than any line in the body?
+
+**Answer:** A `ParseError` will be raised due to invalid body indentation.
+
+---
+
+# Question: What happens to indentation when using Heredoc?
+
+**Answer:** Any indentation before the closing identifier is stripped from all lines in the Heredoc string, provided it's consistent and not deeper than the body lines.
+
+---
+
+# Question: In Heredoc syntax, do you need to escape single or double quotes within the string?
+
+**Answer:** No, quotes do not need to be escaped in Heredoc strings.
+
+---
+
+# Question: Does Heredoc expand variables?
+
+**Answer:** Yes, it expands variables like double-quoted strings.
+
+---
+
+# Question: What will the following PHP code output?
+
+```php
+$lang="PHP";
+echo <<<EOS
+Heredoc strings in $lang expand vriables.
+The escape sequences are also interpreted.
+Here, the hexdecimal ASCII characters produce \x50\x48\x50
+EOS;
+```
+
+**Answer:**
+
+```
+Heredoc strings in PHP expand vriables.
+The escape sequences are also interpreted.
+Here, the hexdecimal ASCII characters produce PHP
+```
+
+---
+
+# Question: What does the following code demonstrate?
+
+```php
+<?php
+$str = <<<'ID'
+This is a nowdoc string with $var and \n newlines.
+ID;
+?>
+```
+
+**Answer:** It demonstrates that Nowdoc strings do not expand variables (`$var` remains literal) and do not interpret escape sequences (`\n` remains literal).
+
+---
+
+# Question: How does Nowdoc syntax differ from Heredoc syntax?
+
+**Answer:** Nowdoc requires the identifier after `<<<` to be enclosed in single quotes, whereas Heredoc does not.
+
+---
+
+# Question: Which string type behaves like a double-quoted string without escaping?
+
+**Answer:** Heredoc.
+
+---
+
+# Question: Which string type behaves like a single-quoted string without escaping?
+
+**Answer:** Nowdoc.
+
+---
+
+# Question: In Nowdoc, are escape sequences like `\n` or `\t` interpreted?
+
+**Answer:** No, they are treated as literal text.
+
+---
+
+# Question: What must follow the `<<<` operator in Nowdoc syntax?
+
+**Answer:** A single-quoted identifier.
+
+---
+
+# Question: What error is shown if the indentation level of the Heredoc body is inconsistent or incorrect?
+
+**Answer:** `PHP Parse error: Invalid body indentation level`.
+
+---
+
 
