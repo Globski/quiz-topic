@@ -707,6 +707,114 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+### F
+
+| Property                    | Edge | Firefox | Chrome | Safari | Opera |
+| --------------------------- | ---- | ------- | ------ | ------ | ----- |
+| **filter**                  | 13   | 35      | 53     | 9.1    | 40    |
+| **flex**                    | 11   | 28      | 29     | 9      | 17    |
+| **flex-basis**              | 11   | 28      | 29     | 9      | 17    |
+| **flex-direction**          | 11   | 28      | 29     | 9      | 17    |
+| **flex-flow**               | 11   | 28      | 29     | 9      | 17    |
+| **flex-grow**               | 11   | 28      | 29     | 9      | 17    |
+| **flex-shrink**             | 11   | 28      | 29     | 9      | 17    |
+| **flex-wrap**               | 11   | 28      | 29     | 9      | 17    |
+| **float**                   | 4    | 1       | 1      | 1      | 7     |
+| **font**                    | 4    | 1       | 1      | 1      | 3.5   |
+| **@font-face**              | 9    | 3.5     | 4      | 3.1    | 10    |
+| **font-family**             | 4    | 1       | 1      | 1      | 3.5   |
+| **font-feature-settings**   | 10   | 34      | 48     | 9.1    | 35    |
+| **@font-feature-values**    | –    | 34      | –      | –      | –     |
+| **font-kerning**            | 79   | 34      | 33     | 9.1    | 20.1  |
+| **font-language-override**  | –    | 34      | –      | –      | –     |
+| **@font-palette-values**    | 101  | 107     | 101    | 15.4   | 87    |
+| **font-size**               | 5.5  | 1       | 1      | 1      | 7     |
+| **font-size-adjust**        | 127  | 3       | 127    | 17     | 113   |
+| **font-stretch**            | 9    | 9       | 48     | 11     | 35    |
+| **font-style**              | 4    | 1       | 1      | 1      | 7     |
+| **font-synthesis**          | 97   | 34      | 97     | 10     | 83    |
+| **font-variant**            | 4    | 1       | 1      | 1      | 3.5   |
+| **font-variant-alternates** | 111  | 34      | 111    | 9.1    | 97    |
+| **font-variant-caps**       | 79   | 34      | 52     | 9.1    | 39    |
+| **font-variant-east-asian** | 79   | 34      | 63     | 9.1    | 50    |
+| **font-variant-ligatures**  | 79   | 34      | 34     | 9.1    | 21    |
+| **font-variant-numeric**    | 79   | 34      | 52     | 9.1    | 39    |
+| **font-variant-position**   | 117  | 34      | 117    | 9.1    | 103   |
+| **font-weight**             | 4    | 1       | 2      | 1.3    | 3.5   |
+
+---
+
+### G
+
+| Property                  | Edge | Firefox | Chrome | Safari | Opera |
+| ------------------------- | ---- | ------- | ------ | ------ | ----- |
+| **gap**                   | 84   | 63      | 84     | 14.1   | 70    |
+| **grid**                  | 10   | 52      | 57     | 10     | 44    |
+| **grid-area**             | 10   | 52      | 57     | 10     | 44    |
+| **grid-auto-columns**     | 10   | 52      | 57     | 10     | 44    |
+| **grid-auto-flow**        | 10   | 52      | 57     | 10     | 44    |
+| **grid-auto-rows**        | 10   | 52      | 57     | 10     | 44    |
+| **grid-column**           | 10   | 52      | 57     | 10     | 44    |
+| **grid-column-end**       | 10   | 52      | 57     | 10     | 44    |
+| **grid-column-start**     | 10   | 52      | 57     | 10     | 44    |
+| **grid-row**              | 10   | 52      | 57     | 10     | 44    |
+| **grid-row-end**          | 10   | 52      | 57     | 10     | 44    |
+| **grid-row-start**        | 10   | 52      | 57     | 10     | 44    |
+| **grid-template**         | 10   | 52      | 57     | 10     | 44    |
+| **grid-template-areas**   | 10   | 52      | 57     | 10     | 44    |
+| **grid-template-columns** | 10   | 52      | 57     | 10     | 44    |
+| **grid-template-rows**    | 10   | 52      | 57     | 10     | 44    |
+
+---
+
+### H
+
+| Property                | Edge | Firefox | Chrome | Safari | Opera |
+| ----------------------- | ---- | ------- | ------ | ------ | ----- |
+| **hanging-punctuation** | –    | –       | –      | –      | –     |
+| **height**              | 4    | 1       | 1      | 1      | 7     |
+| **hyphens**             | 79   | 43      | 55     | 17     | 44    |
+| **hyphenate-character** | 106  | 98      | 106    | 17     | 92    |
+
+---
+
+### I
+
+| Property               | Edge | Firefox | Chrome | Safari | Opera |
+| ---------------------- | ---- | ------- | ------ | ------ | ----- |
+| **image-rendering**    | 79   | 65      | 41     | 10     | 28    |
+| **@import**            | 5.5  | 1       | 1      | 1      | 3.5   |
+| **initial-letter**     | 110  | –       | 110    | 9      | 96    |
+| **inline-size**        | 79   | 41      | 57     | 12.1   | 44    |
+| **inset**              | 87   | 66      | 87     | 14.1   | 73    |
+| **inset-block**        | 87   | 63      | 87     | 14.1   | 73    |
+| **inset-block-end**    | 87   | 63      | 87     | 14.1   | 73    |
+| **inset-block-start**  | 87   | 63      | 87     | 14.1   | 73    |
+| **inset-inline**       | 87   | 63      | 87     | 14.1   | 73    |
+| **inset-inline-end**   | 87   | 63      | 87     | 14.1   | 73    |
+| **inset-inline-start** | 87   | 63      | 87     | 14.1   | 73    |
+| **isolation**          | 79   | 36      | 41     | 7.1    | 30    |
+
+---
+
+### J
+
+| Property            | Edge | Firefox | Chrome | Safari | Opera |
+| ------------------- | ---- | ------- | ------ | ------ | ----- |
+| **justify-content** | 11   | 28      | 29     | 9      | 17    |
+| **justify-items**   | 16   | 45      | 57     | 10.1   | 44    |
+| **justify-self**    | 16   | 45      | 57     | 10.1   | 44    |
+
+---
+
+### K
+
+| Property       | Edge | Firefox | Chrome | Safari | Opera |
+| -------------- | ---- | ------- | ------ | ------ | ----- |
+| **@keyframes** | 10   | 16      | 43     | 9      | 30    |
+
+---
+
 
 
 
