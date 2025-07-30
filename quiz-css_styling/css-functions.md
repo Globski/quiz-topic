@@ -541,4 +541,31 @@
 
 ---
 
+# CSS Reference With Browser Support
+
+The table below lists all CSS properties and how each property is supported in different browsers.
+The number indicates the browser version in which the property was first supported.
+
+### CSS Properties A–Z
+
+| Property                      | Edge | Firefox | Chrome | Safari | Opera |
+| ----------------------------- | ---- | ------- | ------ | ------ | ----- |
+| **accent-color**              | 93   | 92      | 93     | 15.4   | 79    |
+| **align-content**             | 16   | 52      | 57     | 10.1   | 44    |
+| **align-items**               | 16   | 52      | 57     | 10.1   | 44    |
+| **align-self**                | 16   | 52      | 57     | 10.1   | 44    |
+| **all**                       | 79   | 27      | 37     | 9.1    | 24    |
+| **animation**                 | 10   | 16      | 43     | 9      | 30    |
+| **animation-delay**           | 10   | 16      | 43     | 9      | 30    |
+| **animation-direction**       | 10   | 16      | 43     | 9      | 30    |
+| **animation-duration**        | 10   | 16      | 43     | 9      | 30    |
+| **animation-fill-mode**       | 10   | 16      | 43     | 9      | 30    |
+| **animation-iteration-count** | 10   | 16      | 43     | 9      | 30    |
+| **animation-name**            | 10   | 16      | 43     | 9      | 30    |
+| **animation-play-state**      | 10   | 16      | 43     | 9      | 30    |
+| **animation-timing-function** | 10   | 16      | 43     | 9      | 30    |
+| **aspect-ratio**              | 88   | 89      | 88     | 15     | 74    |
+
+---
+
 
