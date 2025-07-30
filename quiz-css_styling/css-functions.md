@@ -461,5 +461,84 @@
 
 ---
 
+### T
+
+| Property                     | Description                                                          |
+| ---------------------------- | -------------------------------------------------------------------- |
+| `tab-size`                   | Specifies the width of a tab character                               |
+| `table-layout`               | Defines the algorithm used to lay out table cells, rows, and columns |
+| `text-align`                 | Specifies the horizontal alignment of text                           |
+| `text-align-last`            | Aligns the last line when `text-align` is "justify"                  |
+| `text-combine-upright`       | Combines multiple characters into the space of a single character    |
+| `text-decoration`            | A shorthand for setting all text decoration properties               |
+| `text-decoration-color`      | Specifies the color of the text-decoration                           |
+| `text-decoration-line`       | Specifies the type of line in a text decoration                      |
+| `text-decoration-style`      | Specifies the style of the line in a text decoration                 |
+| `text-decoration-thickness`  | Specifies the thickness of the decoration line                       |
+| `text-emphasis`              | Shorthand for `text-emphasis-style` and `text-emphasis-color`        |
+| `text-emphasis-color`        | Specifies the color of emphasis marks                                |
+| `text-emphasis-position`     | Specifies the position of emphasis marks                             |
+| `text-emphasis-style`        | Specifies the style of emphasis marks                                |
+| `text-indent`                | Specifies the indentation of the first line in a block of text       |
+| `text-justify`               | Specifies the justification method used when text is justified       |
+| `text-orientation`           | Defines the orientation of characters in a line                      |
+| `text-overflow`              | Specifies what happens when text overflows its container             |
+| `text-shadow`                | Adds shadow to text                                                  |
+| `text-transform`             | Controls the capitalization of text                                  |
+| `text-underline-offset`      | Specifies the offset of the underline decoration                     |
+| `text-underline-position`    | Specifies the position of the underline decoration                   |
+| `top`                        | Specifies the top position of a positioned element                   |
+| `transform`                  | Applies 2D or 3D transformations to an element                       |
+| `transform-origin`           | Specifies the origin position of transformed elements                |
+| `transform-style`            | Specifies how nested elements are rendered in 3D space               |
+| `transition`                 | A shorthand property for transition properties                       |
+| `transition-delay`           | Specifies when the transition effect starts                          |
+| `transition-duration`        | Specifies the duration of the transition effect                      |
+| `transition-property`        | Specifies which property is affected by the transition               |
+| `transition-timing-function` | Specifies the speed curve of the transition effect                   |
+| `translate`                  | Specifies the translation of an element in 2D or 3D space            |
+
+---
+
+### U
+
+| Property       | Description                                                          |
+| -------------- | -------------------------------------------------------------------- |
+| `unicode-bidi` | Controls text direction in combination with the `direction` property |
+| `user-select`  | Specifies whether the text can be selected by the user               |
+
+---
+
+### V
+
+| Property         | Description                                    |
+| ---------------- | ---------------------------------------------- |
+| `vertical-align` | Sets the vertical alignment of an element      |
+| `visibility`     | Specifies whether or not an element is visible |
+
+---
+
+### W
+
+| Property       | Description                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| `white-space`  | Specifies how white space is handled inside an element                  |
+| `widows`       | Sets the minimum number of lines to be left at the top of a page/column |
+| `width`        | Specifies the width of an element                                       |
+| `word-break`   | Specifies how words should break when reaching the end of a line        |
+| `word-spacing` | Sets spacing between words                                              |
+| `word-wrap`    | Allows long words to be broken and wrapped onto the next line           |
+| `writing-mode` | Specifies whether text lines are laid out horizontally or vertically    |
+
+---
+
+### Z
+
+| Property  | Description                                  |
+| --------- | -------------------------------------------- |
+| `z-index` | Sets the stack order of a positioned element |
+| `zoom`    | Specifies the zoom factor of an element      |
+
+---
 
 
