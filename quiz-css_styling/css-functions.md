@@ -1008,6 +1008,89 @@ The number indicates the browser version in which the property was first support
 
 ---
 
+### T
+
+| Property                     | Chrome | Edge | Firefox | Safari | Opera |
+| ---------------------------- | ------ | ---- | ------- | ------ | ----- |
+| `tab-size`                   | 79     | 91   | 21      | 7      | 15    |
+| `table-layout`               | 5      | 1    | 14      | 1      | 7     |
+| `text-align`                 | 3      | 1    | 1       | 1      | 3.5   |
+| `text-align-last`            | 12     | 49   | 47      | 16     | 34    |
+| `text-combine-upright`       | 79     | 48   | 48      | 15.4   | 35    |
+| `text-decoration`            | 3      | 1    | 1       | 1      | 3.5   |
+| `text-decoration-color`      | 79     | 36   | 57      | 12.1   | 44    |
+| `text-decoration-line`       | 79     | 36   | 57      | 12.1   | 44    |
+| `text-decoration-style`      | 79     | 36   | 57      | 12.1   | 44    |
+| `text-decoration-thickness`  | 89     | 70   | 89      | 12.1   | 75    |
+| `text-emphasis`              | 99     | 46   | 99      | 7      | 85    |
+| `text-emphasis-color`        | 99     | 46   | 99      | 7      | 85    |
+| `text-emphasis-position`     | 99     | 46   | 99      | 7      | 85    |
+| `text-emphasis-style`        | 99     | 46   | 99      | 7      | 85    |
+| `text-indent`                | 3      | 1    | 1       | 1      | 3.5   |
+| `text-justify`               |        | 55   |         |        |       |
+| `text-orientation`           | 79     | 41   | 48      | 14     | 35    |
+| `text-overflow`              | 6      | 7    | 4       | 3.1    | 11    |
+| `text-shadow`                | 10     | 3.5  | 4       | 4      | 9.6   |
+| `text-transform`             | 4      | 1    | 1       | 1      | 7     |
+| `text-underline-offset`      | 87     | 70   | 87      | 12.1   | 73    |
+| `text-underline-position`    | 79     | 74   | 33      | 12.1   | 20    |
+| `top`                        | 5      | 1    | 1       | 1      | 6     |
+| `touch-action`               | 12     | 52   | 36      | 13     | 23    |
+| `transform`                  | 12     | 16   | 36      | 9      | 23    |
+| `transform-origin`           | 12     | 16   | 36      | 9      | 23    |
+| `transform-style`            | 12     | 16   | 36      | 9      | 23    |
+| `transition`                 | 10     | 16   | 26      | 6.1    | 12.1  |
+| `transition-delay`           | 10     | 16   | 26      | 6.1    | 12.1  |
+| `transition-duration`        | 10     | 16   | 26      | 6.1    | 12.1  |
+| `transition-property`        | 10     | 16   | 26      | 6.1    | 12.1  |
+| `transition-timing-function` | 10     | 16   | 26      | 6.1    | 12.1  |
+| `translate`                  | 104    | 72   | 104     | 14.1   | 90    |
+
+---
+
+### U
+
+| Property       | Chrome | Edge | Firefox | Safari | Opera |
+| -------------- | ------ | ---- | ------- | ------ | ----- |
+| `unicode-bidi` | 5.5    | 1    | 2       | 1.3    | 9.2   |
+| `user-select`  | 79     | 69   | 54      | 3.1    | 41    |
+
+---
+
+### V
+
+| Property         | Chrome | Edge | Firefox | Safari | Opera |
+| ---------------- | ------ | ---- | ------- | ------ | ----- |
+| `vertical-align` | 4      | 1    | 1       | 1      | 4     |
+| `visibility`     | 4      | 1    | 1       | 1      | 4     |
+
+---
+
+### W 
+
+| Property       | Chrome | Edge | Firefox | Safari | Opera |
+| -------------- | ------ | ---- | ------- | ------ | ----- |
+| `white-space`  | 8      | 3.5  | 1       | 3      | 9.5   |
+| `widows`       | 8      |      | 25      | 7      | 10    |
+| `width`        | 4      | 1    | 1       | 1      | 3.5   |
+| `will-change`  | 79     | 36   | 36      | 9.1    | 24    |
+| `word-break`   | 5.5    | 15   | 4       | 3.1    | 15    |
+| `word-spacing` | 6      | 1    | 1       | 1      | 3.5   |
+| `word-wrap`    | 5.5    | 3.5  | 4       | 3.1    | 10.5  |
+| `writing-mode` | 12     | 41   | 48      | 11     | 35    |
+
+---
+
+### Z
+
+| Property  | Chrome | Edge | Firefox | Safari | Opera |
+| --------- | ------ | ---- | ------- | ------ | ----- |
+| `z-index` | 4      | 3    | 1       | 1      | 4     |
+| `zoom`    | 12     | 126  | 1       | 3.1    | 15    |
+
+---
+
+
 # Question: List some commonly used CSS selectors grouped by their category.
 
 ### CSS Simple Selectors
