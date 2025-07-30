@@ -1373,6 +1373,28 @@ This would cause headers to be spoken in a rich male voice after playing a sound
 
 ---
 
+# Question: What are the best web safe fonts for HTML and CSS?
+
+### Best Web Safe Fonts for HTML and CSS
+
+| Font                | Category     | Description                                                                                               |
+| ------------------- | ------------ | --------------------------------------------------------------------------------------------------------- |
+| **Arial**           | `sans-serif` | Most widely used for both web and print. Default in Google Docs. Very safe and available on all major OS. |
+| **Verdana**         | `sans-serif` | Popular and very readable even at small sizes. Great for accessibility.                                   |
+| **Tahoma**          | `sans-serif` | Has less spacing between characters; clean and compact.                                                   |
+| **Trebuchet MS**    | `sans-serif` | Designed by Microsoft in 1996. Not supported by all mobile OS, so use with care.                          |
+| **Times New Roman** | `serif`      | One of the most recognizable fonts. Common in newspapers and news sites. Default on Windows.              |
+| **Georgia**         | `serif`      | Elegant, highly readable at any size. Great for responsive design.                                        |
+| **Garamond**        | `serif`      | Classical font with timeless look and great readability. Common in printed books.                         |
+| **Courier New**     | `monospace`  | Most common monospace serif font. Used for coding, emails, and screenplays.                               |
+| **Brush Script MT** | `cursive`    | Mimics handwriting. Elegant but less readable. Best used sparingly.                                       |
+
+> 💡 **Tip:** Always check how fonts render across browsers and devices. Use **fallback fonts** in your CSS to ensure consistency. Also explore [Google Fonts](https://fonts.google.com/) for more typography options.
+
+---
+
+
+
 
 
 
