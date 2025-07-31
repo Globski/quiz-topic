@@ -1978,3 +1978,213 @@ border: 5px solid currentcolor;
 
 ---
 
+# Question: What does the `background` shorthand property allow you to do in CSS?
+
+**Answer:** It allows you to specify all background-related properties in a single declaration.
+
+---
+
+# Question: What is the correct order of values when using the `background` shorthand property?
+
+**Answer:** `background-color`, `background-image`, `background-position`, `background-size` (with `/`), `background-repeat`, `background-origin`, `background-clip`, `background-attachment`.
+
+---
+
+# Question: How should `background-size` be included in a shorthand declaration?
+
+**Answer:** Immediately after `background-position`, separated by a `/`.
+
+---
+
+# Question: Write an example of a complete shorthand background property.
+
+**Answer:** `background: green url('image.jpg') top/20% no-repeat border-box content-box fixed;`
+
+---
+
+# Question: What property sets the background color of an element?
+
+**Answer:** `background-color`
+
+---
+
+# Question: Which types of color values can be used with `background-color`?
+
+**Answer:** RGB (e.g., `rgb(255, 215, 0)`), Hex (e.g., `#f0f0f0`), and HSL (e.g., `hsl(120, 100%, 75%)`).
+
+---
+
+# Question: How do you set a background image using CSS?
+
+**Answer:** Use the `background-image` property with a `url()` function referencing the image path.
+
+---
+
+# Question: How can you apply multiple background images to an element?
+
+**Answer:** By separating each image with a comma in the `background-image` property.
+
+---
+
+# Question: What CSS property controls the starting position of a background image?
+
+**Answer:** `background-position`
+
+---
+
+# Question: What is the effect of setting `background-position: right;`?
+
+**Answer:** It positions the background image on the right side of the element.
+
+---
+
+# Question: What does the `background-size` property do?
+
+**Answer:** It sets the size of the background image, determining whether it stretches, is constrained, or retains its original size.
+
+---
+
+# Question: What does `background-size: contain;` do?
+
+**Answer:** It scales the background image to fit within the element’s container while maintaining aspect ratio.
+
+---
+
+# Question: How do you make a background image repeat both horizontally and vertically?
+
+**Answer:** Set `background-repeat: repeat;`
+
+---
+
+# Question: Which property determines whether a background image scrolls or stays fixed?
+
+**Answer:** `background-attachment`
+
+---
+
+# Question: What value keeps a background image fixed while scrolling?
+
+**Answer:** `fixed`
+
+---
+
+# Question: What does `background-origin` control?
+
+**Answer:** It sets the reference box from which the background image's position is calculated (e.g., `border-box`, `padding-box`, `content-box`).
+
+---
+
+# Question: What is the effect of `background-origin: content-box;`?
+
+**Answer:** The background image starts from the content box area of the element.
+
+---
+
+# Question: Which property defines how far the background image or color extends?
+
+**Answer:** `background-clip`
+
+---
+
+# Question: What does `background-clip: border-box;` do?
+
+**Answer:** It applies the background to the content, padding, and border areas of the element.
+
+---
+
+# Question: What does `background-clip: padding-box;` do?
+
+**Answer:** It applies the background only to the content and padding areas of the element.
+
+---
+
+# Question: What is the syntax for setting a fixed background image that does not scroll?
+
+**Answer:**
+
+```css
+background-image: url('image.png');
+background-attachment: fixed;
+```
+
+---
+
+# Question: What property sets one or more background images on an element?
+
+**Answer:** `background-image`
+
+---
+
+# Question: What is the default behavior of `background-repeat` if not specified?
+
+**Answer:** The background image repeats both horizontally and vertically.
+
+---
+
+# Question: How do you prevent a background image from repeating?
+
+**Answer:** Set `background-repeat: no-repeat;`
+
+---
+
+# Question: What does `background-position-x` control?
+
+**Answer:** It sets the horizontal position of the background image.
+
+---
+
+# Question: What does `background-position-y` control?
+
+**Answer:** It sets the vertical position of the background image.
+
+---
+
+# Question: What does `background-blend-mode` control?
+
+**Answer:** It determines how background images blend with each other.
+
+---
+
+# Question: Which HTML elements can have backgrounds set via CSS?
+
+**Answer:** Elements like `div`, `span`, `body`, and `p`.
+
+---
+
+# Question: How do you apply background styles to the body of a page?
+
+**Answer:** Use a CSS rule targeting `body`, e.g.,
+
+```css
+body {
+  background-color: lightgray;
+}
+```
+
+---
+
+# Question: What happens if `opacity` is set on a background container element?
+
+**Answer:** It affects the transparency of the background and all its child elements.
+
+---
+
+# Question: What does this shorthand background example do?
+
+```css
+background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-box padding-box fixed;
+```
+
+**Answer:**
+
+* Sets background color to lightblue
+* Uses a logo image
+* Positions it at top-left
+* Sizes it to 40% width and 30% height
+* Prevents repetition
+* Sets background origin to border-box
+* Clips it to the padding-box
+* Fixes the image relative to the viewport
+
+---
+
