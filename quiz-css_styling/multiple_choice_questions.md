@@ -1335,6 +1335,365 @@ p {
 
 ---
 
+# Question: What are CSS selectors used for?
 
+**Answer:** CSS selectors are used to select HTML elements to style them with properties like color, font, margin, etc.
 
+---
+
+# Question: What does the term "subject of the selector" refer to?
+
+**Answer:** It refers to the element or elements that are selected by a CSS selector.
+
+---
+
+# Question: What symbol is used for the CSS universal selector?
+
+**Answer:** The asterisk symbol `*`.
+
+---
+
+# Question: What does the universal selector `*` select?
+
+**Answer:** It selects **all elements** in an HTML document.
+
+---
+
+# Question: Provide an example of using the universal selector to reset margin and padding.
+
+**Answer:**
+
+```css
+* {
+   margin: 0;
+   padding: 0;
+}
+```
+
+---
+
+# Question: What effect does the following CSS rule have?
+
+```css
+* {
+   background-color: peachpuff;
+   color: darkgreen;
+   font-size: 25px;
+}
+```
+
+**Answer:** It sets the background color, text color, and font size for all HTML elements.
+
+---
+
+# Question: How is a CSS element selector defined?
+
+**Answer:** By using the name of the HTML element directly (e.g., `p`, `h1`).
+
+---
+
+# Question: What style does the following rule apply?
+
+```css
+h1 {
+   text-decoration-line: underline;
+}
+```
+
+**Answer:** It underlines all `<h1>` elements.
+
+---
+
+# Question: What does the rule `p { color: green; }` do?
+
+**Answer:** It sets the text color of all `<p>` elements to green.
+
+---
+
+# Question: What symbol is used to define a CSS class selector?
+
+**Answer:** A period `.` followed by the class name.
+
+---
+
+# Question: How is the class `.style-h1` applied to an element?
+
+**Answer:** By adding `class="style-h1"` to the element in HTML.
+
+---
+
+# Question: What styles are applied by this rule?
+
+```css
+.style-p {
+   color: green;
+   font-size: 25px;
+}
+```
+
+**Answer:** It sets the text color to green and font size to 25px for elements with the class `style-p`.
+
+---
+
+# Question: Will an element without a class receive the styles of a class selector?
+
+**Answer:** No, only elements with the specified class will be affected.
+
+---
+
+# Question: What symbol is used to define a CSS ID selector?
+
+**Answer:** The hash `#` symbol followed by the ID name.
+
+---
+
+# Question: How is the ID `style-h1` applied to an element?
+
+**Answer:** By using `id="style-h1"` in the element's HTML.
+
+---
+
+# Question: What styles does this rule apply?
+
+```css
+#style-div {
+   border: 5px inset purple;
+   width: 300px;
+   text-align: center;
+   background-color: lightgoldenrodyellow;
+}
+```
+
+**Answer:** It applies a 5px inset purple border, sets width to 300px, centers text, and sets the background color for the element with ID `style-div`.
+
+---
+
+# Question: Can multiple elements have the same ID in HTML?
+
+**Answer:** No, IDs must be unique within an HTML document.
+
+---
+
+# Question: What does this selector target?
+
+```css
+a[target]
+```
+
+**Answer:** It selects all `<a>` elements with a `target` attribute.
+
+---
+
+# Question: How do you select an anchor tag with a specific href?
+
+**Answer:**
+
+```css
+a[href="https://www.tutorialspoint.com"]
+```
+
+---
+
+# Question: What styling is applied in the following example?
+
+```css
+a[target] {
+   background-color: #04af2f;
+   color: white;
+   font-size: 2em;
+}
+```
+
+**Answer:** Sets a green background, white text color, and font size of 2em for anchor tags with a `target` attribute.
+
+---
+
+# Question: What does the group selector allow?
+
+**Answer:** It allows applying the same style to multiple selectors at once, separated by commas.
+
+---
+
+# Question: What elements are selected by this rule?
+
+```css
+p, .highlight, #hightlightSpan
+```
+
+**Answer:** All `<p>` elements, elements with class `highlight`, and the element with ID `hightlightSpan`.
+
+---
+
+# Question: What are the benefits of group selectors?
+
+**Answer:** They reduce code duplication and make CSS more concise.
+
+---
+
+# Question: What is a CSS pseudo-class?
+
+**Answer:** A selector that styles a specific state of an element, such as `:hover`.
+
+---
+
+# Question: What happens with this rule?
+
+```css
+a:hover {
+   background-color: peachpuff;
+   color: green;
+   font-size: 2em;
+}
+```
+
+**Answer:** It changes the background color, text color, and font size of a link when hovered over.
+
+---
+
+# Question: What does a pseudo-element selector do?
+
+**Answer:** It styles specific parts of an element, such as `::before` and `::after`.
+
+---
+
+# Question: What does `p::before` do in the example?
+
+**Answer:** Adds the content "Note: " in bold red before each paragraph.
+
+---
+
+# Question: What does `p::after` do in the example?
+
+**Answer:** Adds the content " \[Read more]" in italic blue after each paragraph.
+
+---
+
+# Question: What does this rule target?
+
+```css
+div p
+```
+
+**Answer:** All `<p>` elements that are descendants (at any level) of a `<div>`.
+
+---
+
+# Question: Will `div p` select nested paragraphs within other tags inside the div?
+
+**Answer:** Yes, as long as the paragraph is a descendant.
+
+---
+
+# Question: Will this paragraph be affected by `div p`?
+
+```html
+<p>This paragraph is outside the div</p>
+```
+
+**Answer:** No, it is not a descendant of the div.
+
+---
+
+# Question: What symbol is used for a CSS child selector?
+
+**Answer:** The greater-than symbol `>`.
+
+---
+
+# Question: What does `div > p` select?
+
+**Answer:** Only `<p>` elements that are **direct children** of a `<div>`.
+
+---
+
+# Question: Will this rule affect paragraphs inside nested elements within a div?
+
+**Answer:** No, only direct children are selected.
+
+---
+
+# Question: What symbol is used for adjacent sibling selectors?
+
+**Answer:** The plus sign `+`.
+
+---
+
+# Question: What does `h1 + p` select?
+
+**Answer:** The first `<p>` element that immediately follows an `<h1>`.
+
+---
+
+# Question: Will `div + p` select the first paragraph after the div if it’s immediately next?
+
+**Answer:** Yes, only the first immediate sibling `<p>` after the `<div>`.
+
+---
+
+# Question: Will the second paragraph after the div be selected by `div + p`?
+
+**Answer:** No, only the first adjacent sibling is selected.
+
+---
+
+# Question: What symbol is used for the general sibling selector?
+
+**Answer:** The tilde `~`.
+
+---
+
+# Question: What does `div ~ p` select?
+
+**Answer:** All `<p>` elements that are siblings of and come after the `<div>`.
+
+---
+
+# Question: Does `div ~ p` select multiple paragraphs?
+
+**Answer:** Yes, it selects all matching siblings that follow the `<div>`.
+
+---
+
+# Question: Will `div ~ p` select a paragraph inside the div?
+
+**Answer:** No, only siblings after the div.
+
+---
+
+# Question: What does nesting in CSS allow?
+
+**Answer:** It allows writing selectors within selectors, representing their hierarchical relationship.
+
+---
+
+# Question: What does the ampersand `&` mean in a nested selector?
+
+**Answer:** It refers to the parent selector and is used to build compound or pseudo-class selectors.
+
+---
+
+# Question: What’s the result of this nesting?
+
+```css
+#sample {
+   & a {
+      color: crimson;
+      &:hover,
+      &:focus {
+         color: green;
+         background-color: yellow;
+      }
+   }
+}
+```
+
+**Answer:** It styles `<a>` tags inside `#sample` with crimson color, and changes their color to green and background to yellow on hover/focus.
+
+---
+
+# Question: How does nesting affect whitespace in selectors?
+
+**Answer:** Browsers automatically insert a space between parent and child selectors unless `&` is used.
+
+---
 
