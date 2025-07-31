@@ -358,5 +358,371 @@ div {
 
 ---
 
+# Question: What does CSS stand for, and what is its purpose?
+
+**Answer:** CSS stands for Cascading Style Sheets and is used to design interactive and visually styled web pages.
+
+---
+
+# Question: What is the basic syntax of CSS styling?
+
+**Answer:**
+
+```css
+selector {
+    property: value;
+}
+```
+
+---
+
+# Question: In CSS syntax, what is a selector?
+
+**Answer:** A selector specifies the HTML element(s) to which the styles should be applied.
+
+---
+
+# Question: What is a CSS property?
+
+**Answer:** A property defines an aspect of the HTML element to style, such as `color`, `margin`, or `font-size`.
+
+---
+
+# Question: What is a CSS value?
+
+**Answer:** A value is the specific setting applied to a property, such as `red` for the `color` property.
+
+---
+
+# Question: How do you specify multiple style rules for a single selector in CSS?
+
+**Answer:**
+Multiple rules can be defined within a single block using semicolons to separate them:
+
+```css
+selector {
+    property1: value1;
+    property2: value2;
+    property3: value3;
+}
+```
+
+---
+
+# Question: What CSS selector would style all paragraph elements?
+
+**Answer:**
+
+```css
+p {
+    /* styles here */
+}
+```
+
+---
+
+# Question: How would you select and style all elements with class `special`?
+
+**Answer:**
+
+```css
+.special {
+    /* styles here */
+}
+```
+
+---
+
+# Question: What is the output effect of `.special { color: lightblue; }` on an HTML element?
+
+**Answer:** It changes the text color of elements with class `special` to light blue.
+
+---
+
+# Question: What does the universal selector `*` do in CSS?
+
+**Answer:** It applies the defined styles to all elements in the HTML document.
+
+---
+
+# Question: Provide an example of a universal selector setting font and color.
+
+**Answer:**
+
+```css
+* {
+    font-family: Verdana, sans-serif;
+    color: green;
+}
+```
+
+---
+
+# Question: How does the element selector work in CSS?
+
+**Answer:** It targets specific HTML elements by name, like `h1`, `p`, `div`, etc.
+
+---
+
+# Question: Write a CSS rule to make all `<h1>` elements green.
+
+**Answer:**
+
+```css
+h1 {
+    color: #04af2f;
+}
+```
+
+---
+
+# Question: What is a class selector and how is it written?
+
+**Answer:** A class selector targets elements with a specified `class` attribute. It is written with a dot (`.`) followed by the class name.
+
+---
+
+# Question: Write a CSS rule to style an element with class `myDiv`.
+
+**Answer:**
+
+```css
+.myDiv {
+    color: #04af2f;
+}
+```
+
+---
+
+# Question: What is an ID selector in CSS?
+
+**Answer:** An ID selector targets a single element with a specific `id` attribute, using `#` followed by the ID name.
+
+---
+
+# Question: Write a CSS rule to style an element with ID `myDiv`.
+
+**Answer:**
+
+```css
+#myDiv {
+    color: #04af2f;
+}
+```
+
+---
+
+# Question: What is an attribute selector in CSS?
+
+**Answer:** It targets elements that have a specified attribute or attribute-value pair.
+
+---
+
+# Question: Write a CSS rule to style `<a>` tags with a `target` attribute.
+
+**Answer:**
+
+```css
+a[target] {
+    background-color: peachpuff;
+}
+```
+
+---
+
+# Question: What does this rule do: `a[href] { font-size: 2em; color: red; }`?
+
+**Answer:** It increases the font size and sets the color of all `<a>` tags with an `href` attribute to red.
+
+---
+
+# Question: What is the purpose of grouping selectors in CSS?
+
+**Answer:** Grouping selectors apply the same styles to multiple elements simultaneously, separated by commas.
+
+---
+
+# Question: Provide an example of grouped selectors styling `<div>` and `<p>` elements.
+
+**Answer:**
+
+```css
+div, p {
+    background-color: #04af2f;
+    color: white;
+}
+```
+
+---
+
+# Question: What does nesting selectors allow in CSS?
+
+**Answer:** It allows targeting elements that are descendants of other elements.
+
+---
+
+# Question: Write a nested selector rule to style `<p>` inside a `<div>`.
+
+**Answer:**
+
+```css
+div p {
+    background-color: #04af2f;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+```
+
+---
+
+# Question: What is a pseudo-element in CSS?
+
+**Answer:** A pseudo-element styles specific parts of an element, such as the first letter or a generated content.
+
+---
+
+# Question: Write a CSS pseudo-element rule to insert “NOTE:” before each paragraph.
+
+**Answer:**
+
+```css
+p:before {
+    content: "NOTE:";
+    font-weight: bold;
+}
+```
+
+---
+
+# Question: What is a pseudo-class in CSS?
+
+**Answer:** A pseudo-class applies styles based on the element's state, such as when hovered or focused.
+
+---
+
+# Question: Write a rule to change the color of a link when hovered.
+
+**Answer:**
+
+```css
+a:hover {
+    color: red;
+}
+```
+
+---
+
+# Question: Name the three ways CSS can be included in an HTML document.
+
+**Answer:** Inline CSS, Internal CSS, and External CSS.
+
+---
+
+# Question: Provide an example of inline CSS.
+
+**Answer:**
+
+```html
+<div style="color: #04af2f;">Welcome to TutorialsPoint.</div>
+```
+
+---
+
+# Question: How is internal CSS written and where is it placed?
+
+**Answer:** Internal CSS is written within a `<style>` tag in the `<head>` section of the HTML document.
+
+---
+
+# Question: Provide an example of internal CSS that sets a background color.
+
+**Answer:**
+
+```html
+<style>
+    body {
+        background-color: #04af2f;
+    }
+</style>
+```
+
+---
+
+# Question: How is external CSS included in HTML?
+
+**Answer:** Using the `<link>` tag with `rel="stylesheet"` and `href` pointing to a `.css` file.
+
+---
+
+# Question: Write the syntax for linking an external CSS file named `style.css`.
+
+**Answer:**
+
+```html
+<link rel="stylesheet" type="text/css" href="style.css">
+```
+
+---
+
+# Question: What are media queries in CSS used for?
+
+**Answer:** Media queries apply different styles depending on screen size, resolution, or device characteristics.
+
+---
+
+# Question: Write a media query that changes the body background for screens under 700px.
+
+**Answer:**
+
+```css
+@media (max-width: 700px) {
+    body {
+        background-color: #04af2f;
+    }
+}
+```
+
+---
+
+# Question: What are CSS variables and how are they defined?
+
+**Answer:** CSS variables allow values to be stored and reused, defined using the `--` syntax inside `:root`.
+
+---
+
+# Question: Provide a syntax example for defining a CSS variable.
+
+**Answer:**
+
+```css
+:root {
+    --main-color: #04af2f;
+}
+```
+
+---
+
+# Question: How are comments written in CSS?
+
+**Answer:**
+Single-line or multi-line comments are written using `/* */`.
+
+---
+
+# Question: Write both a single-line and multi-line CSS comment.
+
+**Answer:**
+
+```css
+/* This is a single line CSS comment */
+/* This is 
+a multi-line
+CSS comment */
+```
+
+---
+
+
 
 
