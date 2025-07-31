@@ -934,3 +934,153 @@ CSS comment */
 
 ---
 
+# Question: What does CSS stand for?
+
+**Answer:** Cascading Style Sheet
+
+---
+
+# Question: What is CSS used for?
+
+**Answer:** CSS is used to control the layout and other visual aspects of web pages.
+
+---
+
+# Question: What role does CSS play in modern web development?
+
+**Answer:** CSS provides tools to create visually appealing, accessible, and responsive websites.
+
+---
+
+# Question: What are the three types of CSS?
+
+**Answer:** Inline CSS, Internal CSS, and External CSS.
+
+---
+
+# Question: Which type of CSS has the highest priority?
+
+**Answer:** Inline CSS.
+
+---
+
+# Question: How is inline CSS applied to an HTML element?
+
+**Answer:** Inline CSS is applied using the `style` attribute directly within an HTML tag.
+
+---
+
+# Question: Write an example of a paragraph using inline CSS to set the text color to green and font to Verdana.
+
+**Answer:**
+
+```html
+<p style="color: #04af2f; font-family: Verdana, sans-serif;">
+    This line is an inline-styled paragraph.
+</p>
+```
+
+---
+
+# Question: In inline CSS, which properties were used to style a `<div>` in the second example?
+
+**Answer:** `background-color`, `color`, `height`, and `width`.
+
+---
+
+# Question: What is internal CSS?
+
+**Answer:** Internal CSS is defined within a `<style>` tag placed inside the `<head>` section of an HTML document.
+
+---
+
+# Question: Where is the `<style>` tag located when using internal CSS?
+
+**Answer:** Inside the `<head>` section of the HTML document.
+
+---
+
+# Question: Provide an example of internal CSS that changes text color and font.
+
+**Answer:**
+
+```html
+<head>
+  <style>
+    p {
+      color: #04af2f;
+      font-family: Verdana, sans-serif;
+    }
+  </style>
+</head>
+```
+
+---
+
+# Question: Which properties were used in the internal CSS example to style a paragraph’s background and size?
+
+**Answer:** `background-color`, `color`, `height`, and `width`.
+
+---
+
+# Question: What is external CSS?
+
+**Answer:** External CSS is written in a separate `.css` file and linked to the HTML using the `<link>` tag.
+
+---
+
+# Question: How do you link an external CSS file in HTML?
+
+**Answer:**
+
+```html
+<link rel="stylesheet" href="styles.css">
+```
+
+---
+
+# Question: What is the benefit of using external CSS in large projects?
+
+**Answer:** It improves maintainability by keeping style rules separate from HTML structure.
+
+---
+
+# Question: Write the CSS rule from the external CSS example that changes the text color and font of a paragraph.
+
+**Answer:**
+
+```css
+p {
+  color: #04af2f;
+  font-family: Verdana, sans-serif;
+}
+```
+
+---
+
+# Question: What is the order of specificity among the three types of CSS?
+
+**Answer:** Inline CSS > Internal CSS > External CSS.
+
+---
+
+# Question: Which CSS method is best for one-time or quick style overrides?
+
+**Answer:** Inline CSS.
+
+---
+
+# Question: Which CSS method is best for styling a single HTML document with consistent rules?
+
+**Answer:** Internal CSS.
+
+---
+
+# Question: Which CSS method is best for applying styles across multiple pages in a project?
+
+**Answer:** External CSS.
+
+---
+
+
+
