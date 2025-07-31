@@ -1697,3 +1697,284 @@ div p
 
 ---
 
+# Question: What are color values used for in CSS?
+
+**Answer:** They are used to specify the color of text, backgrounds, borders, and other decorative effects.
+
+---
+
+# Question: What are the main formats used to specify colors in CSS?
+
+**Answer:** Keyword names, hexadecimal codes, short hexadecimal codes, RGB, RGBA, HSL, HSLA, `currentcolor`, and system-defined colors.
+
+---
+
+# Question: What is a CSS color keyword?
+
+**Answer:** A predefined name representing a specific color that can be used directly in CSS.
+
+---
+
+# Question: How many standard color names does CSS support?
+
+**Answer:** 140 standard color names.
+
+---
+
+# Question: Provide an example of using a CSS color keyword for background color.
+
+**Answer:** `background-color: aqua;`
+
+---
+
+# Question: What effect does the keyword `aqua` have when used in CSS?
+
+**Answer:** It sets the background color to aqua.
+
+---
+
+# Question: What is the format of a hexadecimal color code in CSS?
+
+**Answer:** `#RRGGBB`, where RR is red, GG is green, and BB is blue in hexadecimal digits.
+
+---
+
+# Question: Can hexadecimal color codes be written in uppercase or lowercase?
+
+**Answer:** Yes, both uppercase and lowercase letters can be used.
+
+---
+
+# Question: What color is represented by `#00ff00`?
+
+**Answer:** Green.
+
+---
+
+# Question: What does the hex code `#FF0000` represent?
+
+**Answer:** Red.
+
+---
+
+# Question: Provide a complete CSS example of setting a background color using a hex code.
+
+**Answer:** `background-color: #00ff00;`
+
+---
+
+# Question: What is the short hexadecimal code format in CSS?
+
+**Answer:** `#RGB`, where each digit is duplicated to form a full 6-digit hex code.
+
+---
+
+# Question: What full hex code does `#6A7` represent?
+
+**Answer:** `#66AA77`
+
+---
+
+# Question: What color is represented by the short hex code `#00f`?
+
+**Answer:** Blue.
+
+---
+
+# Question: Provide an example of using a short hexadecimal color code in CSS.
+
+**Answer:** `background-color: #00f;`
+
+---
+
+# Question: What is the format for specifying RGB color in CSS?
+
+**Answer:** `rgb(red, green, blue)`, where each value ranges from 0 to 255 or can be a percentage.
+
+---
+
+# Question: What is a limitation of using RGB values in CSS?
+
+**Answer:** Not all browsers support the `rgb()` function.
+
+---
+
+# Question: What does `rgb(255, 0, 255)` represent?
+
+**Answer:** A magenta/pink-like color.
+
+---
+
+# Question: Provide a CSS example using RGB values.
+
+**Answer:** `background-color: rgb(255,0,255);`
+
+---
+
+# Question: What is the difference between RGB and RGBA in CSS?
+
+**Answer:** RGBA includes an alpha value for transparency, ranging from 0 (fully transparent) to 1 (fully opaque).
+
+---
+
+# Question: What does `rgba(255,0,255,0.2)` mean?
+
+**Answer:** It sets a magenta background with 20% opacity.
+
+---
+
+# Question: What is a limitation of using RGBA values in CSS?
+
+**Answer:** Not all browsers support the `rgba()` function.
+
+---
+
+# Question: Provide a CSS example using RGBA.
+
+**Answer:** `background-color: rgba(255,0,255,0.2);`
+
+---
+
+# Question: What does HSL stand for in CSS?
+
+**Answer:** Hue, Saturation, and Lightness.
+
+---
+
+# Question: What are the valid ranges for HSL values?
+
+**Answer:** Hue: 0–360 degrees, Saturation: 0%–100%, Lightness: 0%–100%.
+
+---
+
+# Question: What does `hsl(355,70%,50%)` represent?
+
+**Answer:** A shade of red with high saturation and medium lightness.
+
+---
+
+# Question: Provide a CSS example using HSL.
+
+**Answer:** `background-color: hsl(355,70%,50%);`
+
+---
+
+# Question: What is the format of HSLA in CSS?
+
+**Answer:** `hsla(hue, saturation, lightness, alpha)`
+
+---
+
+# Question: What does the alpha value represent in HSLA?
+
+**Answer:** The transparency level, from 0 (fully transparent) to 1 (fully opaque).
+
+---
+
+# Question: What does `hsla(355,70%,50%,0.4)` mean?
+
+**Answer:** A red shade with 40% opacity.
+
+---
+
+# Question: Provide a CSS example using HSLA.
+
+**Answer:** `background-color: hsla(355,70%,50%,0.4);`
+
+---
+
+# Question: What does the `currentcolor` keyword represent?
+
+**Answer:** It refers to the current value of the `color` property of the element.
+
+---
+
+# Question: Provide an example using `currentcolor` in CSS.
+
+**Answer:**
+
+```css
+color: red;  
+border: 5px solid currentcolor;
+```
+
+---
+
+# Question: What effect does setting `border: 5px solid currentcolor;` have?
+
+**Answer:** The border takes the same color as the text, which is red in the example.
+
+---
+
+# Question: What is a browser-safe color?
+
+**Answer:** A color that appears consistently across all computers using a 256-color palette.
+
+---
+
+# Question: How many browser-safe colors are there in CSS?
+
+**Answer:** 216 browser-safe colors.
+
+---
+
+# Question: What is the range of browser-safe hexadecimal values?
+
+**Answer:** From `#000000` to `#FFFFFF`.
+
+---
+
+# Question: Why are browser-safe colors important?
+
+**Answer:** They ensure consistent display across devices and systems using limited color palettes.
+
+---
+
+# Question: What does the `opacity` property control?
+
+**Answer:** The transparency level of an element.
+
+---
+
+# Question: What does the `hue` property represent in CSS?
+
+**Answer:** The hue angle (color tone) of an element.
+
+---
+
+# Question: What does the `color` property affect?
+
+**Answer:** The foreground color of text and text decorations.
+
+---
+
+# Question: What does the `background-color` property do?
+
+**Answer:** Sets the background color of an element.
+
+---
+
+# Question: What does the `border-color` property affect?
+
+**Answer:** The color of an element’s border.
+
+---
+
+# Question: What does the `box-shadow` property do?
+
+**Answer:** Adds shadow around an element.
+
+---
+
+# Question: What is the function of `outline-color` in CSS?
+
+**Answer:** Sets the color of an element's outline.
+
+---
+
+# Question: What is the purpose of `text-shadow` in CSS?
+
+**Answer:** Adds shadow to the text of an element.
+
+---
+
