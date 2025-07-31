@@ -220,3 +220,143 @@ div {
 
 ---
 
+# Question: What does CSS stand for?
+
+**Answer:** Cascading Style Sheets
+
+---
+
+# Question: What is the primary purpose of CSS?
+
+**Answer:** To describe the presentation and design of web pages.
+
+---
+
+# Question: What type of file typically contains CSS code?
+
+**Answer:** A file with the `.css` extension.
+
+---
+
+# Question: List three aspects of a webpage that CSS can control.
+
+**Answer:** Text color, font style, spacing between paragraphs.
+
+---
+
+# Question: How does CSS contribute to consistent layout across multiple pages?
+
+**Answer:** By allowing a single CSS file to control the style of multiple HTML pages.
+
+---
+
+# Question: What is one benefit of CSS in terms of development efficiency?
+
+**Answer:** CSS saves time by enabling reuse of the same styles across multiple pages.
+
+---
+
+# Question: How does CSS improve page loading speed?
+
+**Answer:** It avoids repeated HTML tag or attribute definitions by using shared style rules.
+
+---
+
+# Question: How does CSS help with website maintenance?
+
+**Answer:** A global change can be made by editing a single CSS file, which updates all affected pages.
+
+---
+
+# Question: Why are CSS styles considered superior to HTML styling?
+
+**Answer:** CSS provides a broader set of style attributes than HTML.
+
+---
+
+# Question: How does CSS help with device compatibility?
+
+**Answer:** It allows the same HTML to be styled differently for various screen widths.
+
+---
+
+# Question: Why is the use of CSS recommended over HTML attributes?
+
+**Answer:** Because most HTML styling attributes are deprecated in favor of CSS.
+
+---
+
+# Question: Describe the basic syntax of a CSS rule.
+
+**Answer:** `selector { property: value; }`
+
+---
+
+# Question: What does a CSS selector do?
+
+**Answer:** Targets the HTML element(s) to which the style should be applied.
+
+---
+
+# Question: What does the CSS declaration block contain?
+
+**Answer:** One or more declarations enclosed in curly braces `{}`.
+
+---
+
+# Question: What are the components of a CSS declaration?
+
+**Answer:** A property and a value separated by a colon `:`.
+
+---
+
+# Question: How are multiple declarations separated in CSS?
+
+**Answer:** By semicolons `;`.
+
+---
+
+# Question: What are three common types of CSS selectors?
+
+**Answer:** Classes, IDs, and tags.
+
+---
+
+# Question: What organization released CSS1, and when?
+
+**Answer:** W3C in December 1996.
+
+---
+
+# Question: What was the purpose of CSS1?
+
+**Answer:** To describe the CSS language and provide a visual formatting model for HTML tags.
+
+---
+
+# Question: When was CSS2 released and what did it add?
+
+**Answer:** May 1998; it added media-specific style sheets, downloadable fonts, element positioning, and table styling.
+
+---
+
+# Question: What year did CSS3 become a W3C recommendation?
+
+**Answer:** June 1999.
+
+---
+
+# Question: What structural change did CSS3 introduce compared to earlier versions?
+
+**Answer:** It was divided into separate documentation called Modules.
+
+---
+
+# Question: Name three modules introduced in CSS3.
+
+**Answer:** Selectors, Box Model, Backgrounds and Borders.
+
+---
+
+
+
