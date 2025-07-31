@@ -1082,5 +1082,259 @@ p {
 
 ---
 
+# Question: What is the purpose of CSS units?
+
+**Answer:** CSS units define the measurement system used to specify property values for page elements or their content.
+
+---
+
+# Question: What are CSS units commonly used to specify?
+
+**Answer:** Margins, padding, font size, width, height, and border.
+
+---
+
+# Question: What format is used to specify a CSS unit in a property value?
+
+**Answer:** A number followed directly by a unit without whitespace (e.g., `font-size: 50px`).
+
+---
+
+# Question: When can a CSS unit be omitted?
+
+**Answer:** When the value is `0`.
+
+---
+
+# Question: What are the two main categories of CSS length units?
+
+**Answer:** Absolute units and relative units.
+
+---
+
+# Question: What distinguishes absolute units in CSS?
+
+**Answer:** They are fixed lengths that do not change with screen size or resolution.
+
+---
+
+# Question: In what scenarios are absolute CSS units most effective?
+
+**Answer:** When the browser has detailed information about the screen or printing device, and responsiveness is not a priority.
+
+---
+
+# Question: Why are absolute units less useful for responsive design?
+
+**Answer:** Because they do not scale with the screen size or viewport changes.
+
+---
+
+# Question: List all absolute length units in CSS.
+
+**Answer:** `mm`, `cm`, `Q`, `in`, `pt`, `pc`, `px`.
+
+---
+
+# Question: What is the value of 1mm in terms of cm?
+
+**Answer:** 1mm = 1/10th of 1cm.
+
+---
+
+# Question: What is the value of 1cm in pixels and inches?
+
+**Answer:** 1cm = 37.8px = 25.2/64in.
+
+---
+
+# Question: What does `Q` represent in CSS?
+
+**Answer:** Quarter-millimeters; 1Q = 1/40th of 1cm.
+
+---
+
+# Question: How many centimeters are in 1 inch?
+
+**Answer:** 2.54cm.
+
+---
+
+# Question: What is the pixel equivalent of 1 inch?
+
+**Answer:** 96px.
+
+---
+
+# Question: What is 1pt in terms of inches?
+
+**Answer:** 1pt = 1/72 of 1in.
+
+---
+
+# Question: What is 1pc in terms of inches?
+
+**Answer:** 1pc = 1/6th of 1in.
+
+---
+
+# Question: What is the value of 1px in inches?
+
+**Answer:** 1px = 1/96th of 1in.
+
+---
+
+# Question: Provide an example of using `cm` in CSS.
+
+**Answer:** `font-size: 5cm;`
+
+---
+
+# Question: What font-size corresponds to 40Q?
+
+**Answer:** `font-size: 40Q;` equals 1cm.
+
+---
+
+# Question: Write a CSS rule to apply a font-size of 0.5 inches.
+
+**Answer:** `font-size: 0.5in;`
+
+---
+
+# Question: What are relative CSS length units based on?
+
+**Answer:** They are based on other elements or the viewport size.
+
+---
+
+# Question: Why are relative CSS units suitable for responsive design?
+
+**Answer:** Because they scale proportionally with screen size or parent elements.
+
+---
+
+# Question: List all relative CSS length units.
+
+**Answer:** `em`, `ex`, `ch`, `rem`, `lh`, `rlh`, `vh`, `vw`, `vmin`, `vmax`, `vb`, `vi`, `svw`, `svh`, `lvw`, `lvh`, `dvw`, `dvh`.
+
+---
+
+# Question: What does `em` measure in CSS?
+
+**Answer:** It is relative to the font-size of the element.
+
+---
+
+# Question: What does `rem` measure in CSS?
+
+**Answer:** It is relative to the font-size of the root element.
+
+---
+
+# Question: What does `ex` measure in CSS?
+
+**Answer:** It is relative to the x-height of the current font.
+
+---
+
+# Question: What does `ch` represent in CSS?
+
+**Answer:** It is relative to the width of the character “0”.
+
+---
+
+# Question: What does `lh` measure in CSS?
+
+**Answer:** It is relative to the line height of the element.
+
+---
+
+# Question: What does `rlh` represent in CSS?
+
+**Answer:** It is relative to the line height of the root element.
+
+---
+
+# Question: What is `1vh` equal to?
+
+**Answer:** 1% of the viewport's height.
+
+---
+
+# Question: What is `1vw` equal to?
+
+**Answer:** 1% of the viewport's width.
+
+---
+
+# Question: What is `vmin` based on?
+
+**Answer:** 1% of the smaller dimension of the viewport.
+
+---
+
+# Question: What is `vmax` based on?
+
+**Answer:** 1% of the larger dimension of the viewport.
+
+---
+
+# Question: What does `vb` measure?
+
+**Answer:** 1% of the initial containing block’s size in the direction of the block axis.
+
+---
+
+# Question: What does `vi` measure?
+
+**Answer:** 1% of the initial containing block’s size in the direction of the inline axis.
+
+---
+
+# Question: What are `svw` and `svh` in CSS?
+
+**Answer:** Units relative to the smaller viewport's width and height, respectively.
+
+---
+
+# Question: What are `lvw` and `lvh` in CSS?
+
+**Answer:** Units relative to the larger viewport's width and height, respectively.
+
+---
+
+# Question: What are `dvw` and `dvh` in CSS?
+
+**Answer:** Units relative to the dynamic viewport's width and height.
+
+---
+
+# Question: Provide a CSS rule using `vw` for font-size.
+
+**Answer:** `font-size: 5vw;`
+
+---
+
+# Question: Provide a CSS rule using `vh` for font-size.
+
+**Answer:** `font-size: 5vh;`
+
+---
+
+# Question: Write a CSS rule using `percent` for font-size.
+
+**Answer:** `font-size: 150%;`
+
+---
+
+
+# Question: What is the advantage of using `em` and `rem` units over `px` in responsive design?
+
+**Answer:** They scale relative to parent or root font size, making them adaptable to screen changes.
+
+---
+
+
 
 
