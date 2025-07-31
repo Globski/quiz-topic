@@ -723,6 +723,214 @@ CSS comment */
 
 ---
 
+# Question: What are the three primary ways to include CSS in an HTML file?
 
+**Answer:** Inline CSS, Internal CSS, and External CSS.
 
+---
+
+# Question: How is inline CSS defined in an HTML document?
+
+**Answer:** Using the `style` attribute directly within an HTML element tag.
+
+---
+
+# Question: What is the syntax for using inline CSS on an HTML element?
+
+**Answer:** `<element style = "...style rules....">`
+
+---
+
+# Question: In inline CSS, how are multiple style declarations separated?
+
+**Answer:** By semicolons (`;`).
+
+---
+
+# Question: What is the scope of inline CSS?
+
+**Answer:** It affects only the HTML element in which it is used.
+
+---
+
+# Question: Where is internal CSS placed in an HTML document?
+
+**Answer:** Inside a `<style>` tag within the `<head>` section.
+
+---
+
+# Question: What is the correct syntax for internal CSS?
+
+**Answer:**
+
+```html
+<head>
+   <style type="text/css">
+      /* CSS rules here */
+   </style>
+</head>
+```
+
+---
+
+# Question: Which elements in the HTML document are affected by internal CSS?
+
+**Answer:** All elements that match the CSS selectors defined in the `<style>` block.
+
+---
+
+# Question: What attribute is required in the `<style>` element?
+
+**Answer:** `type="text/css"`
+
+---
+
+# Question: What is the purpose of the `media` attribute in the `<style>` element?
+
+**Answer:** It specifies the device the document will be displayed on; default is `all`.
+
+---
+
+# Question: What are some valid values for the `media` attribute?
+
+**Answer:** `screen`, `tty`, `tv`, `projection`, `handheld`, `print`, `braille`, `aural`, `all`.
+
+---
+
+# Question: How do you include external CSS in an HTML file?
+
+**Answer:** Using the `<link>` element inside the `<head>` tag.
+
+---
+
+# Question: What is the syntax for linking an external CSS file?
+
+**Answer:**
+
+```html
+<head>
+   <link type="text/css" href="ext_style.css" media="..." />
+</head>
+```
+
+---
+
+# Question: Which attributes are required for the `<link>` element to include CSS?
+
+**Answer:** `type="text/css"` and `href="..."`
+
+---
+
+# Question: What does the `href` attribute in the `<link>` tag specify?
+
+**Answer:** The URL or file path of the external CSS file.
+
+---
+
+# Question: Can the `media` attribute be used with `<link>`? What does it do?
+
+**Answer:** Yes, it specifies the device type the stylesheet is designed for; default is `all`.
+
+---
+
+# Question: What file extension should an external CSS file use?
+
+**Answer:** `.css`
+
+---
+
+# Question: How does the `@import` rule work in CSS?
+
+**Answer:** It imports another external CSS file into the current one.
+
+---
+
+# Question: Where must the `@import` rule be placed in the CSS file?
+
+**Answer:** At the very top of the CSS file, before any other rules.
+
+---
+
+# Question: What is the correct syntax for the `@import` rule?
+
+**Answer:** `@import url("style.css");`
+
+---
+
+# Question: What is the purpose of using the `@import` rule instead of `<link>`?
+
+**Answer:** It allows one CSS file to include another, enabling modular stylesheets.
+
+---
+
+# Question: How do you include a CSS file that itself uses `@import` in an HTML file?
+
+**Answer:** Use `<link type="text/css" href="file_with_import.css" />` in the HTML `<head>`.
+
+---
+
+# Question: What is the rule of precedence when multiple types of CSS are used?
+
+**Answer:**
+
+1. Inline CSS has the highest priority
+2. Internal CSS (`<style>` block) has medium priority
+3. External CSS has the lowest priority
+
+---
+
+# Question: If a rule is defined both inline and in an external CSS file, which takes effect?
+
+**Answer:** The inline CSS rule overrides the external rule.
+
+---
+
+# Question: If a rule is defined in both internal and external CSS, which takes effect?
+
+**Answer:** The internal CSS rule overrides the external rule.
+
+---
+
+# Question: How do you write a comment in CSS?
+
+**Answer:** `/* comment text */`
+
+---
+
+# Question: Can CSS comments span multiple lines?
+
+**Answer:** Yes, multi-line comments are enclosed with `/*` and `*/`.
+
+---
+
+# Question: Where can CSS comments be placed?
+
+**Answer:** Anywhere within a `<style>` block or external stylesheet.
+
+---
+
+# Question: Do CSS comments affect how rules are applied?
+
+**Answer:** No, they are ignored by the browser and used only for documentation.
+
+---
+
+# Question: What is the output appearance of this inline CSS code:
+
+`<h1 style="color:#36C;">Hello</h1>`?
+**Answer:** It renders the `<h1>` text "Hello" in color `#36C`.
+
+---
+
+# Question: What happens if a `div` style has some declarations commented out using `/* ... */`?
+
+**Answer:** Only the uncommented declarations will be applied to the `div`.
+
+---
+
+# Question: In the external CSS file, if a `div` has `border: 5px inset gold;`, what is the visible effect?
+
+**Answer:** The `div` will have a 5-pixel inset gold border.
+
+---
 
