@@ -798,3 +798,56 @@ These methods simplify and enhance working with iterators:
 | Undefined         | Not a valid JSON value         |
 
 ---
+
+# Question: List JavaScript operators by precedence level and describe their functions.
+
+### JavaScript Operator Precedence Table
+
+| Precedence | Operator                 | Description                     | Example                    |            |     |   |     |
+| ---------- | ------------------------ | ------------------------------- | -------------------------- | ---------- | --- | - | --- |
+| 18         | `()`                     | Expression Grouping             | `(100 + 50) * 3`           |            |     |   |     |
+| 17         | `.`                      | Member Of                       | `car.name`                 |            |     |   |     |
+| 17         | `[]`                     | Member Of                       | `car["name"]`              |            |     |   |     |
+| 17         | `?.`                     | Optional Chaining (ES2020)      | `x ?. y`                   |            |     |   |     |
+| 17         | `()`                     | Function Call                   | `myFunction()`             |            |     |   |     |
+| 17         | `new` (with args)        | Create Object                   | `new Date("June 5,2022")`  |            |     |   |     |
+| 16         | `new` (no args)          | Create Object                   | `new Date()`               |            |     |   |     |
+| 15         | `++`                     | Postfix Increment               | `i++`                      |            |     |   |     |
+| 15         | `--`                     | Postfix Decrement               | `i--`                      |            |     |   |     |
+| 14         | `++`                     | Prefix Increment                | `++i`                      |            |     |   |     |
+| 14         | `--`                     | Prefix Decrement                | `--i`                      |            |     |   |     |
+| 14         | `!`                      | Logical NOT                     | `!(x==y)`                  |            |     |   |     |
+| 14         | `~`                      | Bitwise NOT                     | `~x`                       |            |     |   |     |
+| 14         | `+`                      | Unary Plus                      | `+x`                       |            |     |   |     |
+| 14         | `-`                      | Unary Minus                     | `-x`                       |            |     |   |     |
+| 14         | `typeof`                 | Data Type                       | `typeof x`                 |            |     |   |     |
+| 14         | `void`                   | Evaluate Void                   | `void(0)`                  |            |     |   |     |
+| 14         | `delete`                 | Delete Property                 | `delete myCar.color`       |            |     |   |     |
+| 13         | `**`                     | Exponentiation (ES2016)         | `10 ** 2`                  |            |     |   |     |
+| 12         | `*`                      | Multiplication                  | `10 * 5`                   |            |     |   |     |
+| 12         | `/`                      | Division                        | `10 / 5`                   |            |     |   |     |
+| 12         | `%`                      | Modulus                         | `10 % 5`                   |            |     |   |     |
+| 11         | `+`                      | Addition / Concatenation        | `10 + 5`, `"John" + "Doe"` |            |     |   |     |
+| 11         | `-`                      | Subtraction                     | `10 - 5`                   |            |     |   |     |
+| 10         | `<<`                     | Shift Left                      | `x << 2`                   |            |     |   |     |
+| 10         | `>>`                     | Shift Right (signed)            | `x >> 2`                   |            |     |   |     |
+| 10         | `>>>`                    | Shift Right (unsigned)          | `x >>> 2`                  |            |     |   |     |
+| 9          | `in`                     | Property in Object              | `"PI" in Math`             |            |     |   |     |
+| 9          | `instanceof`             | Instance of Object              | `x instanceof Array`       |            |     |   |     |
+| 9          | `<`, `<=`, `>`, `>=`     | Comparison Operators            | `x < y`, `x >= y`          |            |     |   |     |
+| 8          | `==`, `===`, `!=`, `!==` | Equality / Inequality Operators | `x == y`, `x !== y`        |            |     |   |     |
+| 7          | `&`                      | Bitwise AND                     | `x & y`                    |            |     |   |     |
+| 6          | `^`                      | Bitwise XOR                     | `x ^ y`                    |            |     |   |     |
+| 5          | \`                       | \`                              | Bitwise OR                 | \`x        | y\` |   |     |
+| 4          | `&&`                     | Logical AND                     | `x && y`                   |            |     |   |     |
+| 3          | \`                       |                                 | \`                         | Logical OR | \`x |   | y\` |
+| 3          | `??`                     | Nullish Coalescing (ES2020)     | `x ?? y`                   |            |     |   |     |
+| 2          | `? :`                    | Ternary (Conditional)           | `condition ? "yes" : "no"` |            |     |   |     |
+| 2          | `=`, `+=`, `-=`, etc.    | Assignment Operators            | `x += y`, `x **= y`, etc.  |            |     |   |     |
+| 2          | `:`                      | Colon Assignment                | `x : 5`                    |            |     |   |     |
+| 2          | `=>`                     | Arrow Function                  | `x => y`                   |            |     |   |     |
+| 2          | `yield`, `yield*`        | Generator Control               | `yield x`, `yield* x`      |            |     |   |     |
+| 2          | `...`                    | Spread                          | `...x`                     |            |     |   |     |
+| 1          | `,`                      | Comma                           | `x, y`                     |            |     |   |     |
+
+---
