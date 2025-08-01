@@ -927,3 +927,18 @@ These methods simplify and enhance working with iterators:
 
 ---
 
+# Question: List the commonly used properties and methods of the JavaScript Window History object.
+
+### Window History Properties and Methods
+
+| Property / Method | Description                                             |
+| ----------------- | ------------------------------------------------------- |
+| `back()`          | Loads the **previous** page in the session history list |
+| `forward()`       | Loads the **next** page in the session history list     |
+| `go()`            | Loads a **specific page** from the history list         |
+| `length`          | Returns the **number of URLs** in the session history   |
+
+---
+
+
+
