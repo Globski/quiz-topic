@@ -746,3 +746,23 @@ These methods simplify and enhance working with iterators:
 | `take()`    | Returns a new iterator yielding a specific number of elements          |
 
 ---
+
+# Question: List commonly used JavaScript Promise methods and describe them.
+
+### JavaScript Promise Methods and Properties
+
+| Method / Property      | Description                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| `Promise.all()`        | Returns a single Promise from a list of promises when **all** fulfill        |
+| `Promise.allSettled()` | Returns a single Promise from a list of promises when **all** settle         |
+| `Promise.any()`        | Returns a single Promise from a list of promises when **any** fulfills       |
+| `Promise.race()`       | Returns a single Promise from a list of promises when the **first** settles  |
+| `Promise.reject()`     | Returns a Promise object **rejected** with a specified value                 |
+| `Promise.resolve()`    | Returns a Promise object **resolved** with a specified value                 |
+| `catch()`              | Provides a function to be called when a Promise is **rejected**              |
+| `finally()`            | Provides a function to be called when a Promise is **fulfilled or rejected** |
+| `then()`               | Provides functions to be called when a Promise is **fulfilled or rejected**  |
+
+---
+
+
