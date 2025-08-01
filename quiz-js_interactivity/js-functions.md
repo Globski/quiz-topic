@@ -765,4 +765,36 @@ These methods simplify and enhance working with iterators:
 
 ---
 
+# Question: List commonly used JavaScript JSON methods and valid data types.
 
+### JSON Methods
+
+| Method             | Description                                          |
+| ------------------ | ---------------------------------------------------- |
+| `JSON.parse()`     | Parses a JSON string and returns a JavaScript object |
+| `JSON.stringify()` | Converts a JavaScript object into a JSON string      |
+
+---
+
+### Valid JSON Data Types
+
+| Valid Data Type | Description                                |
+| --------------- | ------------------------------------------ |
+| String          | Text enclosed in double quotes `"..."`     |
+| Number          | Integer or floating-point                  |
+| Object          | An unordered collection of key/value pairs |
+| Array           | An ordered list of values                  |
+| Boolean         | `true` or `false`                          |
+| Null            | Represents an empty or unknown value       |
+
+---
+
+### Invalid JSON Data Types
+
+| Invalid Data Type | Description                    |
+| ----------------- | ------------------------------ |
+| Function          | Cannot be serialized into JSON |
+| Date              | Not supported natively in JSON |
+| Undefined         | Not a valid JSON value         |
+
+---
