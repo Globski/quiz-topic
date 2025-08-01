@@ -580,3 +580,32 @@ Booleans control how and when loops execute:
 | \`       |                | \`          | OR | \`(x > 0 |   | x > 0)\` |
 
 ---
+
+# Question: What are JavaScript statement identifiers and what do they do?
+
+### JavaScript Statement Identifiers
+
+JavaScript statements begin with identifiers that define the action to be performed. These identifiers are reserved keywords and **cannot** be used as variable names.
+
+| Statement                   | Description                                                              |
+| --------------------------- | ------------------------------------------------------------------------ |
+| `break`                     | Exits a `switch` or a loop                                               |
+| `class`                     | Declares a class                                                         |
+| `const`                     | Declares a variable with a constant value                                |
+| `continue`                  | Breaks one iteration in a loop if a condition occurs, then continues     |
+| `debugger`                  | Stops JavaScript execution and calls the debugging function if available |
+| `do ... while`              | Executes a block once, and then repeats it while the condition is `true` |
+| `for`                       | Loops through a block of code a number of times                          |
+| `for ... in`                | Loops through the properties of an object                                |
+| `for ... of`                | Loops through the values of an iterable object                           |
+| `function`                  | Declares a function                                                      |
+| `if ... else ... else if`   | Executes different blocks of code depending on conditions                |
+| `let`                       | Declares a block-scoped variable                                         |
+| `return`                    | Stops function execution and returns a value                             |
+| `switch`                    | Executes code blocks based on case matches                               |
+| `throw`                     | Throws (generates) an error                                              |
+| `try ... catch ... finally` | Implements error handling for code that may fail                         |
+| `var`                       | Declares a function-scoped variable                                      |
+| `while`                     | Repeats a block of code while a condition is `true`                      |
+
+---
