@@ -609,3 +609,30 @@ JavaScript statements begin with identifiers that define the action to be perfor
 | `while`                     | Repeats a block of code while a condition is `true`                      |
 
 ---
+
+# Question: What are JavaScript typed arrays, and what types are available?
+
+### JavaScript Typed Arrays
+
+Typed arrays provide a mechanism for accessing raw binary data. Despite their name, **typed arrays are not actual arrays** — using `Array.isArray()` on them will return `false`.
+
+| Name                | Range               | Type                     |
+| ------------------- | ------------------- | ------------------------ |
+| `Int8Array`         | -128 to 127         | 1 byte signed integer    |
+| `Uint8Array`        | 0 to 255            | 1 byte unsigned integer  |
+| `Uint8ClampedArray` | 0 to 255            | 1 byte unsigned integer  |
+| `Int16Array`        | -32,768 to 32,767   | 2 bytes signed short     |
+| `Uint16Array`       | 0 to 65,535         | 2 bytes unsigned short   |
+| `Int32Array`        | -2³¹ to 2³¹ – 1     | 4 bytes signed long      |
+| `Uint32Array`       | 0 to 2³² – 1        | 4 bytes unsigned long    |
+| `BigInt64Array`     | -2⁶³ to 2⁶³ – 1     | 8 bytes signed big int   |
+| `BigUint64Array`    | 0 to 2⁶⁴ – 1        | 8 bytes unsigned big int |
+| `Float16Array`      | –65,504 to 65,504   | 2 bytes floating point   |
+| `Float32Array`      | –3.4e38 to 3.4e38   | 4 bytes floating point   |
+| `Float64Array`      | –1.8e308 to 1.8e308 | 8 bytes floating point   |
+
+> ⚠️ **Note**: Typed arrays are not regular JavaScript arrays.
+> Using `Array.isArray()` on a typed array will return `false`.
+
+---
+
