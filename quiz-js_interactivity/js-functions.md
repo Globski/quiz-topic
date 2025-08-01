@@ -387,5 +387,99 @@ mycar = new Car("Ford");  // Create an object of Car class
 
 ---
 
+# Question: What are some commonly used JavaScript RegExp patterns, flags, character classes, metacharacters, assertions, and grouping syntax?
+
+### JavaScript RegExp Syntax
+
+```javascript
+let regexp = /pattern/flags;
+// or
+let regexp = new RegExp(pattern, flags);
+```
+
+---
+
+### JavaScript RegExp Flags / Modifiers
+
+| Flag | Description                                                |
+| ---- | ---------------------------------------------------------- |
+| `/d` | Performs substring matches *(new 2022)*                    |
+| `/g` | Performs a global match (find all)                         |
+| `/i` | Performs case-insensitive matching                         |
+| `/m` | Performs multiline matching                                |
+| `/s` | Allows `.` (dot) to match line terminators *(new 2018)*    |
+| `/u` | Enables Unicode support *(new 2015)*                       |
+| `/v` | An upgrade to `/u` for better Unicode support *(new 2025)* |
+| `/y` | Performs a "sticky" search *(new 2015)*                    |
+
+---
+
+### JavaScript RegExp Character Classes
+
+| Class    | Description                                         |
+| -------- | --------------------------------------------------- |
+| `[a]`    | Matches the character between the brackets          |
+| `[^a]`   | Matches all characters NOT between the brackets     |
+| `[abc]`  | Matches all characters between the brackets         |
+| `[^abc]` | Matches all characters NOT between the brackets     |
+| `[a-z]`  | Matches all characters in the range from a to z     |
+| `[^a-z]` | Matches all characters NOT in the range from a to z |
+| `[0-9]`  | Matches all characters in the range from 0 to 9     |
+| `[^0-9]` | Matches all characters NOT in the range from 0 to 9 |
+
+---
+
+### JavaScript RegExp Metacharacters
+
+| Metacharacter | Description                                                 |
+| ------------- | ----------------------------------------------------------- |
+| `a\|b`        | Matches `a` or `b`                                          |
+| `.`           | Matches any (wildcard) character except line terminators    |
+| `\w`          | Matches word characters (alphanumeric and `_`)              |
+| `\W`          | Matches non-word characters                                 |
+| `\d`          | Matches digits (0–9)                                        |
+| `\D`          | Matches non-digit characters                                |
+| `\s`          | Matches whitespace characters (space, tab, newline)         |
+| `\S`          | Matches non-whitespace characters                           |
+| `[\b]`        | Matches backspace characters                                |
+| `\0`          | Matches NULL characters                                     |
+| `\n`          | Matches newline characters                                  |
+| `\f`          | Matches form feed characters                                |
+| `\r`          | Matches carriage return characters                          |
+| `\t`          | Matches tab characters                                      |
+| `\v`          | Matches vertical tab characters                             |
+| `\p{}`        | Matches characters with given Unicode property *(new 2018)* |
+| `\P{}`        | Matches characters NOT with given Unicode property *(2018)* |
+| `\ddd`        | Matches a character by the octal number `ddd`               |
+| `\xhh`        | Matches a character by the hexadecimal number `hh`          |
+| `\uhhhh`      | Matches a Unicode character by the hex number `hhhh`        |
+
+---
+
+### JavaScript RegExp Assertions
+
+| Char       | Description                                                 |
+| ---------- | ----------------------------------------------------------- |
+| `^`        | Matches the beginning of a string or a line (with `m` flag) |
+| `$`        | Matches the end of a string or a line (with `m` flag)       |
+| `\b`       | Matches from the beginning or end of a word                 |
+| `\B`       | Matches NOT from the beginning or end of a word             |
+| `(?=...)`  | Matches if followed by a specific string                    |
+| `(?!...)`  | Matches if NOT followed by a specific string                |
+| `(?<=...)` | Matches if preceded by a specific string *(new 2018)*       |
+| `(?<!...)` | Matches if NOT preceded by a specific string *(new 2018)*   |
+
+---
+
+### JavaScript RegExp Groups
+
+| Char             | Description                                            |
+| ---------------- | ------------------------------------------------------ |
+| `(x)`            | Matches `x` and remembers the match (capturing group)  |
+| `(?<n>x)`        | Matches `x` and labels the group as `n`                |
+| `(?flag:x)`      | Enables flag(s) for the group `x`                      |
+| `(?flag-flag:x)` | Enables some flag(s) and disables others for group `x` 
+
+---
 
 
