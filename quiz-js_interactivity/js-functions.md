@@ -851,3 +851,79 @@ These methods simplify and enhance working with iterators:
 | 1          | `,`                      | Comma                           | `x, y`                     |            |     |   |     |
 
 ---
+
+# Question: List commonly used properties and methods of the JavaScript Window object.
+
+### Window Object Properties
+
+| Property         | Description                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
+| `closed`         | Returns `true` if the window is closed                                   |
+| `console`        | Returns the Console Object for the window                                |
+| `defaultStatus`  | **Deprecated**                                                           |
+| `document`       | Returns the Document object for the window                               |
+| `frameElement`   | Returns the `<iframe>` element in which the window is embedded           |
+| `frames`         | Returns all window objects within the current window (frames)            |
+| `history`        | Returns the History object                                               |
+| `innerHeight`    | Returns the height of the window’s content area (including scrollbars)   |
+| `innerWidth`     | Returns the width of the window’s content area (including scrollbars)    |
+| `length`         | Returns the number of `<iframe>` elements in the window                  |
+| `localStorage`   | Provides persistent key/value storage for the browser with no expiration |
+| `location`       | Returns the Location object                                              |
+| `name`           | Sets or returns the name of the window                                   |
+| `navigator`      | Returns the Navigator object                                             |
+| `opener`         | Returns a reference to the window that created the current window        |
+| `outerHeight`    | Returns the full height of the browser window                            |
+| `outerWidth`     | Returns the full width of the browser window                             |
+| `pageXOffset`    | Pixels the document is scrolled horizontally from the upper-left corner  |
+| `pageYOffset`    | Pixels the document is scrolled vertically from the upper-left corner    |
+| `parent`         | Returns the parent window                                                |
+| `screen`         | Returns the Screen object                                                |
+| `screenLeft`     | Returns the horizontal coordinate relative to the screen                 |
+| `screenTop`      | Returns the vertical coordinate relative to the screen                   |
+| `screenX`        | Same as `screenLeft`                                                     |
+| `screenY`        | Same as `screenTop`                                                      |
+| `sessionStorage` | Provides temporary key/value storage for the current session only        |
+| `scrollX`        | Alias of `pageXOffset`                                                   |
+| `scrollY`        | Alias of `pageYOffset`                                                   |
+| `self`           | Returns the current window                                               |
+| `status`         | **Deprecated**                                                           |
+| `top`            | Returns the topmost window                                               |
+
+---
+
+### Window Object Methods
+
+| Method                    | Description                                                         |
+| ------------------------- | ------------------------------------------------------------------- |
+| `addEventListener()`      | Attaches an event handler to the window                             |
+| `alert()`                 | Displays an alert dialog with message and OK button                 |
+| `atob()`                  | Decodes a base-64 encoded string                                    |
+| `blur()`                  | Removes focus from the current window                               |
+| `btoa()`                  | Encodes a string in base-64                                         |
+| `clearInterval()`         | Clears a timer set with `setInterval()`                             |
+| `clearTimeout()`          | Clears a timer set with `setTimeout()`                              |
+| `close()`                 | Closes the current window                                           |
+| `confirm()`               | Displays a dialog box with OK and Cancel buttons                    |
+| `focus()`                 | Sets focus to the current window                                    |
+| `getComputedStyle()`      | Returns computed CSS styles of an element                           |
+| `getSelection()`          | Returns the Selection object (user-selected text)                   |
+| `matchMedia()`            | Evaluates and returns a MediaQueryList for a CSS media query string |
+| `moveBy()`                | Moves the window relative to its current position                   |
+| `moveTo()`                | Moves the window to a specific position                             |
+| `open()`                  | Opens a new browser window                                          |
+| `print()`                 | Prints the contents of the current window                           |
+| `prompt()`                | Displays a prompt dialog box asking for input                       |
+| `removeEventListener()`   | Removes an event handler from the window                            |
+| `requestAnimationFrame()` | Requests an animation frame before repaint                          |
+| `resizeBy()`              | Resizes window by a number of pixels                                |
+| `resizeTo()`              | Resizes the window to specified width and height                    |
+| `scroll()`                | **Deprecated** – use `scrollTo()` instead                           |
+| `scrollBy()`              | Scrolls the document by a given amount                              |
+| `scrollTo()`              | Scrolls the document to specific coordinates                        |
+| `setInterval()`           | Executes a function repeatedly at set time intervals                |
+| `setTimeout()`            | Executes a function once after a delay                              |
+| `stop()`                  | Stops the window from loading                                       |
+
+---
+
