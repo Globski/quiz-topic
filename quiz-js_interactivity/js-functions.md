@@ -1279,3 +1279,35 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 | `wheel`              | Mouse wheel is used                              | `WheelEvent`                        |
 
 ---
+
+# Question: What are the different HTML DOM Event Objects and their purposes?
+
+### HTML DOM Event Objects
+
+| Object  | Description                     |
+| ------- | ------------------------------- |
+| `Event` | The parent of all event objects |
+
+### Event Objects and Their Specific Purposes
+
+| Object                | Handles                             |
+| --------------------- | ----------------------------------- |
+| `AnimationEvent`      | CSS animations                      |
+| `ClipboardEvent`      | Modification of the clipboard       |
+| `DragEvent`           | Drag and drop interaction           |
+| `FocusEvent`          | Focus-related events                |
+| `HashChangeEvent`     | Changes in the anchor part of a URL |
+| `InputEvent`          | User input                          |
+| `KeyboardEvent`       | Keyboard interaction                |
+| `MouseEvent`          | Mouse interaction                   |
+| `PageTransitionEvent` | Navigation between web pages        |
+| `PopStateEvent`       | Changes in the page history         |
+| `ProgressEvent`       | Progress of loading external files  |
+| `StorageEvent`        | Changes in the Web Storage          |
+| `TouchEvent`          | Touch interaction                   |
+| `TransitionEvent`     | CSS transitions                     |
+| `UiEvent`             | User interface interaction          |
+| `WheelEvent`          | Mouse-wheel interaction             |
+
+---
+
