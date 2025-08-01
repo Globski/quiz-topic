@@ -1311,3 +1311,45 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What is an HTMLCollection, and how does it compare to a NodeList?
+
+### HTMLCollection
+
+| Term              | Description                                                                          |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| `HTMLCollection`  | An array-like collection (list) of HTML elements. Elements can be accessed by index. |
+| `length`          | Returns the number of elements in an HTMLCollection.                                 |
+| `item(index)`     | Returns the element at the specified index.                                          |
+| `namedItem(name)` | Returns the element with the specified `id` or `name`.                               |
+
+### How to Obtain an HTMLCollection
+
+| Method / Property          | Description                                                          |
+| -------------------------- | -------------------------------------------------------------------- |
+| `getElementsByTagName()`   | Returns an HTMLCollection of elements with the specified tag name.   |
+| `getElementsByClassName()` | Returns an HTMLCollection of elements with the specified class name. |
+| `children`                 | Returns an HTMLCollection of child elements.                         |
+
+### HTMLCollection vs NodeList
+
+| Feature                     | HTMLCollection                                                   | NodeList                                       |
+| --------------------------- | ---------------------------------------------------------------- | ---------------------------------------------- |
+| Type of Nodes               | Only element nodes                                               | Can contain element, attribute, and text nodes |
+| Access by                   | Index, name, or id                                               | Index only                                     |
+| Live or Static              | Always live                                                      | Usually static (except `childNodes`)           |
+| Common Methods Returning It | `getElementsByTagName()`, `getElementsByClassName()`, `children` | `querySelectorAll()`, `childNodes`             |
+| Array Methods Support       | Not supported (`push()`, `pop()` won't work)                     | Not supported                                  |
+
+### Examples
+
+| Example                                                | Description                  |
+| ------------------------------------------------------ | ---------------------------- |
+| `const elements = document.getElementsByTagName("p");` | Get all `<p>` elements       |
+| `let numb = elements.length;`                          | Get number of `<p>` elements |
+| `for (let i = 0; i < elements.length; i++) { ... }`    | Loop through all elements    |
+
+> **Note:** HTMLCollections are not true arrays. You can loop through them and access elements by index, but you cannot use array methods like `push()`, `pop()`, or `join()`.
+
+---
+
+
