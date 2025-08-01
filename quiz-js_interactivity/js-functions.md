@@ -354,4 +354,38 @@
 
 ---
 
+# Question: What are JavaScript classes, and what are some commonly used keywords and methods in them?
+
+### JavaScript Class Overview
+
+A class is a type of function in JavaScript, used as a blueprint for creating objects. It uses the `class` keyword, and properties are typically assigned in a special `constructor()` method.
+
+#### Example:
+
+```javascript
+class Car {               // Create a class
+  constructor(brand) {    // Class constructor
+    this.carname = brand; // Class body/properties
+  }
+}
+mycar = new Car("Ford");  // Create an object of Car class
+```
+
+### JavaScript Class Methods
+
+| Method          | Description                                                                   |
+| --------------- | ----------------------------------------------------------------------------- |
+| `constructor()` | A special method for creating and initializing objects created within a class |
+
+### JavaScript Class Keywords
+
+| Keyword   | Description                         |
+| --------- | ----------------------------------- |
+| `extends` | Extends a class (inherit)           |
+| `static`  | Defines a static method for a class |
+| `super`   | Refers to the parent class          |
+
+---
+
+
 
