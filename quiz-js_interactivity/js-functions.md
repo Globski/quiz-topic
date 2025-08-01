@@ -689,3 +689,60 @@ Typed arrays provide a mechanism for accessing raw binary data. Despite their na
 
 ---
 
+# Question: What is an Iterator in JavaScript and what helper methods are available?
+
+### JavaScript Iterator Reference
+
+An **Iterator** is an object that provides a standardized way to access elements sequentially.
+It must conform to the **Iterator Protocol**, meaning it must implement a `next()` method.
+
+---
+
+### `Iterator.from()` Method
+
+Creates an iterator object from an existing iterable or iterator.
+
+```javascript
+// Create an iterator
+const myIterator = Iterator.from("123456789");
+
+// Iterate over all elements
+let text = "";
+for (const x of myIterator) {
+  text += x;
+}
+```
+
+---
+
+### What are Iterables in JavaScript?
+
+To be iterable, an object must implement the `Symbol.iterator` method.
+The following built-in types are iterable:
+
+* **Strings**
+* **Arrays**
+* **Typed Arrays**
+* **Sets**
+* **Maps**
+
+---
+
+### Iterator Helper Methods (ES2025)
+
+These methods simplify and enhance working with iterators:
+
+| Function    | Description                                                            |
+| ----------- | ---------------------------------------------------------------------- |
+| `drop()`    | Returns a new iterator skipping a specified number of elements         |
+| `every()`   | Returns `true` if **all** elements satisfy a provided test function    |
+| `filter()`  | Returns an iterator of elements that pass a filter function            |
+| `find()`    | Returns the **first** element that passes a test function              |
+| `flatMap()` | Maps each element and flattens the result into a new iterator          |
+| `forEach()` | Executes a function for each element                                   |
+| `map()`     | Transforms each element and returns a new iterator                     |
+| `reduce()`  | Reduces all elements to a single value using a reducer function        |
+| `some()`    | Returns `true` if **at least one** element satisfies the test function |
+| `take()`    | Returns a new iterator yielding a specific number of elements          |
+
+---
