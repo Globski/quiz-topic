@@ -482,4 +482,64 @@ let regexp = new RegExp(pattern, flags);
 
 ---
 
+# Question: What are commonly used Boolean methods and use cases in JavaScript?
+
+### JavaScript Boolean Methods and Properties
+
+| Name            | Description                                                       |
+| --------------- | ----------------------------------------------------------------- |
+| `Boolean()`     | Returns a boolean                                                 |
+| `new Boolean()` | Returns a boolean object                                          |
+| `constructor`   | Returns the function that created JavaScript's Boolean prototype  |
+| `prototype`     | Allows you to add properties and methods to the Boolean prototype |
+| `toString()`    | Converts a boolean value to a string and returns the result       |
+| `valueOf()`     | Returns the primitive value of a boolean                          |
+
+---
+
+### JavaScript Boolean Use Cases
+
+Boolean values are fundamental for logical operations and control flow in JavaScript programming.
+
+---
+
+#### ✅ Comparisons
+
+All comparison operators return either `true` or `false`.
+
+Given that `x = 5`:
+
+| Description  | Example  | Returns |
+| ------------ | -------- | ------- |
+| Not equal to | `x == 8` | `false` |
+| Unequal to   | `x != 8` | `true`  |
+| Greater than | `x > 8`  | `false` |
+| Less than    | `x < 8`  | `true`  |
+
+---
+
+#### ✅ Conditions
+
+Booleans are commonly used in `if` statements:
+
+| Example                | Returns           |
+| ---------------------- | ----------------- |
+| `if (day == "Monday")` | `true` or `false` |
+| `if (salary > 9000)`   | `true` or `false` |
+| `if (age < 18)`        | `true` or `false` |
+
+---
+
+#### ✅ Loops
+
+Booleans control how and when loops execute:
+
+| Description | Example                   |
+| ----------- | ------------------------- |
+| For loop    | `for (i = 0; i < 5; i++)` |
+| While loop  | `while (i < 10)`          |
+| For-in loop | `for (x in person)`       |
+| For-of loop | `for (x of cars)`         |
+
+---
 
