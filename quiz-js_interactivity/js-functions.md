@@ -1075,3 +1075,83 @@ These methods simplify and enhance working with iterators:
 | `writeln()`                | Same as `write()`, but adds a newline after each line             |
 
 ---
+
+## HTML DOM Elements
+
+The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>`, `<a>`, `<table>`, etc.).
+
+### Common Properties and Methods
+
+| Property / Method                               | Description                                            |
+| ----------------------------------------------- | ------------------------------------------------------ |
+| `accessKey`                                     | Sets or returns the accesskey attribute of an element  |
+| `addEventListener()`                            | Attaches an event handler to an element                |
+| `after()`                                       | Inserts nodes or strings after an element              |
+| `append()`                                      | Appends nodes or strings as the last child             |
+| `appendChild()`                                 | Adds a new child node as the last child                |
+| `attributes`                                    | Returns a NamedNodeMap of an element's attributes      |
+| `before()`                                      | Inserts nodes or strings before an element             |
+| `blur()`                                        | Removes focus from an element                          |
+| `childElementCount`                             | Returns the number of child elements                   |
+| `childNodes`                                    | Returns a NodeList of child nodes                      |
+| `children`                                      | Returns an HTMLCollection of child elements            |
+| `classList`                                     | Returns the class name(s)                              |
+| `className`                                     | Sets or returns the class attribute                    |
+| `click()`                                       | Simulates a mouse click                                |
+| `clientHeight`                                  | Includes padding height                                |
+| `clientLeft` / `clientTop`                      | Widths of left/top border                              |
+| `clientWidth`                                   | Includes padding width                                 |
+| `cloneNode()`                                   | Clones the element                                     |
+| `closest()`                                     | Finds the closest ancestor matching selector           |
+| `compareDocumentPosition()`                     | Compares the position of two nodes                     |
+| `contains()`                                    | Returns `true` if a node is a descendant               |
+| `contentEditable`                               | Sets/returns editability                               |
+| `dir`                                           | Sets/returns the `dir` attribute                       |
+| `firstChild` / `lastChild`                      | Returns first/last child node                          |
+| `firstElementChild` / `lastElementChild`        | First/last child element                               |
+| `focus()`                                       | Gives focus to an element                              |
+| `getAttribute()`                                | Gets an attribute's value                              |
+| `getAttributeNode()`                            | Gets an attribute node                                 |
+| `getBoundingClientRect()`                       | Gets size and position relative to viewport            |
+| `getElementsByClassName()`                      | Returns collection by class name                       |
+| `getElementsByTagName()`                        | Returns collection by tag name                         |
+| `hasAttribute()`                                | Returns `true` if element has the attribute            |
+| `hasAttributes()`                               | Returns `true` if element has any attributes           |
+| `hasChildNodes()`                               | Returns `true` if the element has children             |
+| `id`                                            | Sets or returns the `id` attribute                     |
+| `innerHTML` / `outerHTML`                       | Gets/sets HTML content (inner/outer)                   |
+| `innerText` / `outerText`                       | Gets/sets text content (inner/outer)                   |
+| `insertAdjacentElement/HTML/Text()`             | Inserts relative to element                            |
+| `insertBefore()`                                | Inserts a node before another child                    |
+| `isContentEditable`                             | `true` if the content is editable                      |
+| `isEqualNode()` / `isSameNode()`                | Compares nodes                                         |
+| `lang`                                          | Sets or returns `lang` attribute                       |
+| `matches()`                                     | Matches against a CSS selector                         |
+| `namespaceURI`                                  | Returns the namespace URI                              |
+| `nextElementSibling` / `previousElementSibling` | Navigates siblings                                     |
+| `nodeName` / `nodeType`                         | Basic node info                                        |
+| `nodeValue`                                     | Sets/returns the value                                 |
+| `normalize()`                                   | Merges adjacent text nodes                             |
+| `offsetHeight/Width`                            | Height/width including border/padding/scrollbar        |
+| `offsetLeft/Top`                                | Position relative to offset parent                     |
+| `offsetParent`                                  | Gets offset container                                  |
+| `ownerDocument`                                 | Gets the root document                                 |
+| `parentNode` / `parentElement`                  | Gets parent element or node                            |
+| `querySelector()` / `querySelectorAll()`        | Selects by CSS selectors                               |
+| `remove()`                                      | Removes element from DOM                               |
+| `removeAttribute()`                             | Removes an attribute                                   |
+| `removeChild()`                                 | Removes a child                                        |
+| `removeEventListener()`                         | Detaches event handler                                 |
+| `replaceChild()`                                | Replaces a child node                                  |
+| `scrollHeight` / `scrollWidth`                  | Gets scrollable area                                   |
+| `scrollIntoView()`                              | Scrolls the element into view                          |
+| `scrollLeft` / `scrollTop`                      | Gets/sets scroll position                              |
+| `setAttribute()` / `setAttributeNode()`         | Sets attribute or node                                 |
+| `style`                                         | Accesses the `style` attribute                         |
+| `tabIndex`                                      | Sets/returns `tabindex`                                |
+| `tagName`                                       | Returns tag name                                       |
+| `textContent`                                   | Sets or returns all text in a node and its descendants |
+| `title`                                         | Sets or returns the `title` attribute                  |
+| `toString()`                                    | Converts element to string                             |
+
+---
