@@ -178,4 +178,64 @@
 
 ---
 
+# Question: List all JavaScript Date methods and properties with their descriptions.
+
+
+| Name                   | Description                                                         |
+| ---------------------- | ------------------------------------------------------------------- |
+| `new Date()`           | Creates a new Date object                                           |
+| `constructor`          | Returns the function that created the Date prototype                |
+| `getDate()`            | Returns the day of the month (from 1–31)                            |
+| `getDay()`             | Returns the day of the week (from 0–6)                              |
+| `getFullYear()`        | Returns the year                                                    |
+| `getHours()`           | Returns the hour (from 0–23)                                        |
+| `getMilliseconds()`    | Returns the milliseconds (from 0–999)                               |
+| `getMinutes()`         | Returns the minutes (from 0–59)                                     |
+| `getMonth()`           | Returns the month (from 0–11)                                       |
+| `getSeconds()`         | Returns the seconds (from 0–59)                                     |
+| `getTime()`            | Returns the number of milliseconds since Jan 1, 1970                |
+| `getTimezoneOffset()`  | Returns the time difference between UTC and local time (in minutes) |
+| `getUTCDate()`         | Returns the day of the month, in UTC (from 1–31)                    |
+| `getUTCDay()`          | Returns the day of the week, in UTC (from 0–6)                      |
+| `getUTCFullYear()`     | Returns the year, in UTC                                            |
+| `getUTCHours()`        | Returns the hour, in UTC (from 0–23)                                |
+| `getUTCMilliseconds()` | Returns the milliseconds, in UTC (from 0–999)                       |
+| `getUTCMinutes()`      | Returns the minutes, in UTC (from 0–59)                             |
+| `getUTCMonth()`        | Returns the month, in UTC (from 0–11)                               |
+| `getUTCSeconds()`      | Returns the seconds, in UTC (from 0–59)                             |
+| `getYear()`            | **Deprecated.** Use `getFullYear()` instead                         |
+| `now()`                | Returns the number of milliseconds since Jan 1, 1970                |
+| `parse()`              | Parses a date string and returns milliseconds since Jan 1, 1970     |
+| `prototype`            | Allows you to add properties and methods to an object               |
+| `setDate()`            | Sets the day of the month                                           |
+| `setFullYear()`        | Sets the year                                                       |
+| `setHours()`           | Sets the hour                                                       |
+| `setMilliseconds()`    | Sets the milliseconds                                               |
+| `setMinutes()`         | Sets the minutes                                                    |
+| `setMonth()`           | Sets the month                                                      |
+| `setSeconds()`         | Sets the seconds                                                    |
+| `setTime()`            | Sets the time in milliseconds since Jan 1, 1970                     |
+| `setUTCDate()`         | Sets the day of the month (UTC)                                     |
+| `setUTCFullYear()`     | Sets the year (UTC)                                                 |
+| `setUTCHours()`        | Sets the hour (UTC)                                                 |
+| `setUTCMilliseconds()` | Sets the milliseconds (UTC)                                         |
+| `setUTCMinutes()`      | Sets the minutes (UTC)                                              |
+| `setUTCMonth()`        | Sets the month (UTC)                                                |
+| `setUTCSeconds()`      | Sets the seconds (UTC)                                              |
+| `setYear()`            | **Deprecated.** Use `setFullYear()` instead                         |
+| `toDateString()`       | Converts the date portion to a readable string                      |
+| `toGMTString()`        | **Deprecated.** Use `toUTCString()` instead                         |
+| `toISOString()`        | Returns the ISO standard string of the date                         |
+| `toJSON()`             | Returns the date formatted as a JSON string                         |
+| `toLocaleDateString()` | Returns the date portion using locale conventions                   |
+| `toLocaleTimeString()` | Returns the time portion using locale conventions                   |
+| `toLocaleString()`     | Converts the Date to a string using locale conventions              |
+| `toString()`           | Converts the Date to a string                                       |
+| `toTimeString()`       | Converts the time portion to a string                               |
+| `toUTCString()`        | Converts the Date to a UTC string                                   |
+| `UTC()`                | Returns milliseconds since Jan 1, 1970 (UTC)                        |
+| `valueOf()`            | Returns the primitive value of a Date object                        |
+
+---
+
 
