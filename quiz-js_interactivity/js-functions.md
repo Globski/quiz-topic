@@ -482,6 +482,59 @@ let regexp = new RegExp(pattern, flags);
 
 ---
 
+# Question: What are some commonly used JavaScript error object properties, error names, and non-standard features?
+
+### JavaScript Error Object Properties
+
+| Property  | Description                               |
+| --------- | ----------------------------------------- |
+| `name`    | Sets or returns an error name             |
+| `message` | Sets or returns an error message (string) |
+
+---
+
+### JavaScript Error Names
+
+| Error Name       | Description                                |
+| ---------------- | ------------------------------------------ |
+| `EvalError`      | **Deprecated** – use `SyntaxError` instead |
+| `RangeError`     | A number "out of range" has occurred       |
+| `ReferenceError` | An illegal reference has occurred          |
+| `SyntaxError`    | A syntax error has occurred                |
+| `TypeError`      | A type error has occurred                  |
+| `URIError`       | An error in `encodeURI()` has occurred     |
+
+---
+
+### JavaScript Non-Standard Error Properties
+
+> ⚠️ These are **non-standard** and may not work in all browsers. Avoid using them on public-facing websites.
+
+| Property       | Description    |
+| -------------- | -------------- |
+| `arguments`    | **Deprecated** |
+| `caller`       | **Deprecated** |
+| `columnNumber` | Firefox only   |
+| `description`  | Microsoft only |
+| `displayName`  | Firefox only   |
+| `fileName`     | Firefox only   |
+| `lineNumber`   | Firefox only   |
+| `number`       | Microsoft only |
+| `stack`        | Firefox only   |
+
+---
+
+### JavaScript Non-Standard Error Methods
+
+| Method            | Description    |
+| ----------------- | -------------- |
+| `evalError()`     | **Deprecated** |
+| `internalError()` | Firefox only   |
+| `toSource()`      | Non-standard   |
+
+---
+
+
 # Question: What are commonly used Boolean methods and use cases in JavaScript?
 
 ### JavaScript Boolean Methods and Properties
