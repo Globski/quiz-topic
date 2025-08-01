@@ -1008,6 +1008,70 @@ These methods simplify and enhance working with iterators:
 | `colorDepth`  | Returns the bit depth of the color palette used to display images |
 | `height`      | Returns the total height of the screen                            |
 | `pixelDepth`  | Returns the color resolution (in bits per pixel) of the screen    |
-| `width`       | Returns the total width of the screen                             |
+| `width`       | Returns the total width of the screen                             
+
+---
+
+# Question: List commonly used properties and methods of the JavaScript Document object.
+
+### Document Object Properties and Methods
+
+| Property / Method          | Description                                                       |
+| -------------------------- | ----------------------------------------------------------------- |
+| `activeElement`            | Returns the currently focused element in the document             |
+| `addEventListener()`       | Attaches an event handler to the document                         |
+| `adoptNode()`              | Adopts a node from another document                               |
+| `anchors`                  | **Deprecated**                                                    |
+| `applets`                  | **Deprecated**                                                    |
+| `baseURI`                  | Returns the absolute base URI of a document                       |
+| `body`                     | Sets or returns the document's `<body>` element                   |
+| `charset`                  | **Deprecated**                                                    |
+| `characterSet`             | Returns the character encoding for the document                   |
+| `close()`                  | Closes the output stream previously opened with `document.open()` |
+| `cookie`                   | Returns all name/value pairs of cookies in the document           |
+| `createAttribute()`        | Creates an attribute node                                         |
+| `createComment()`          | Creates a comment node with the specified text                    |
+| `createDocumentFragment()` | Creates an empty `DocumentFragment` node                          |
+| `createElement()`          | Creates an element node                                           |
+| `createEvent()`            | Creates a new event                                               |
+| `createTextNode()`         | Creates a text node                                               |
+| `defaultView`              | Returns the window object associated with the document            |
+| `designMode`               | Controls whether the entire document is editable                  |
+| `doctype`                  | Returns the document type declaration (`<!DOCTYPE>`)              |
+| `documentElement`          | Returns the root `<html>` element                                 |
+| `documentMode`             | **Deprecated**                                                    |
+| `documentURI`              | Sets or returns the location of the document                      |
+| `domain`                   | Returns the domain of the server that loaded the document         |
+| `domConfig`                | **Deprecated**                                                    |
+| `embeds`                   | Returns a collection of all `<embed>` elements                    |
+| `execCommand()`            | **Deprecated**                                                    |
+| `forms`                    | Returns a collection of all `<form>` elements in the document     |
+| `getElementById()`         | Returns the element with the specified ID                         |
+| `getElementsByClassName()` | Returns elements with the specified class name                    |
+| `getElementsByName()`      | Returns elements with the specified name                          |
+| `getElementsByTagName()`   | Returns elements with the specified tag name                      |
+| `hasFocus()`               | Returns `true` if the document has focus                          |
+| `head`                     | Returns the `<head>` element                                      |
+| `images`                   | Returns a collection of all `<img>` elements                      |
+| `implementation`           | Returns the `DOMImplementation` object handling this document     |
+| `importNode()`             | Imports a node from another document                              |
+| `inputEncoding`            | **Deprecated**                                                    |
+| `lastModified`             | Returns the last modified date/time of the document               |
+| `links`                    | Returns all `<a>` and `<area>` elements with `href` attribute     |
+| `normalize()`              | Removes empty text nodes and joins adjacent ones                  |
+| `normalizeDocument()`      | **Deprecated**                                                    |
+| `open()`                   | Opens an output stream for `document.write()`                     |
+| `querySelector()`          | Returns the first element matching a CSS selector                 |
+| `querySelectorAll()`       | Returns all elements matching a CSS selector                      |
+| `readyState`               | Returns the loading state of the document                         |
+| `referrer`                 | Returns the URL of the document that loaded the current document  |
+| `removeEventListener()`    | Removes an event handler added with `addEventListener()`          |
+| `renameNode()`             | **Deprecated**                                                    |
+| `scripts`                  | Returns a collection of all `<script>` elements                   |
+| `strictErrorChecking`      | **Deprecated**                                                    |
+| `title`                    | Sets or returns the title of the document                         |
+| `URL`                      | Returns the full URL of the document                              |
+| `write()`                  | Writes HTML or JavaScript into the document                       |
+| `writeln()`                | Same as `write()`, but adds a newline after each line             |
 
 ---
