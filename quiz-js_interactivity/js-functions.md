@@ -543,3 +543,40 @@ Booleans control how and when loops execute:
 
 ---
 
+# Question: What are the common JavaScript operators, their types, and some usage examples?
+
+### JavaScript Operator Types and Common Uses
+
+| Type           | Common Use                                   | Example                |   |          |
+| -------------- | -------------------------------------------- | ---------------------- | - | -------- |
+| Assignment     | Assigns a value to a variable                | `x = 5`                |   |          |
+| Arithmetic     | Performs arithmetic between variables        | `x = y + 2`            |   |          |
+| String         | Concatenates (adds) strings                  | `"Sun" + "shine"`      |   |          |
+| Exponentiation | Raises a variable to a power                 | `x ** 2` *(not `x++`)* |   |          |
+| Remainder      | Returns the remainder from a division        | `x % 2` *(not `x++`)*  |   |          |
+| Increment      | Increments a variable                        | `x++`                  |   |          |
+| Decrement      | Decrements a variable                        | `x--`                  |   |          |
+| Comparison     | Compares variables                           | `(x == 5)`             |   |          |
+| Logical        | Defines logic between variables              | \`(x > 0               |   | x > 0)\` |
+| Bitwise        | Performs binary operations on numbers        | `(5 & 1)`              |   |          |
+| Spread         | Spreads an array into individual values      | `(...numbers)`         |   |          |
+| Relational     | Checks if a key is a property in an object   | `"age" in person`      |   |          |
+| `typeof`       | Returns the type of a variable               | `typeof "John"`        |   |          |
+| `instanceof`   | Checks if an object is an instance of a type | `x instanceof Array`   |   |          |
+| `delete`       | Deletes an object property                   | `delete car.color`     |   |          |
+| `void`         | Returns `undefined`                          | `void(0)`              |   |          |
+
+---
+
+### Some JavaScript Operator Examples
+
+| Operator | Name           | Example     |    |          |   |          |
+| -------- | -------------- | ----------- | -- | -------- | - | -------- |
+| `=`      | Assign         | `x = 5`     |    |          |   |          |
+| `+`      | Addition       | `x = y + 2` |    |          |   |          |
+| `*`      | Multiplication | `x = y * 2` |    |          |   |          |
+| `!=`     | Equal to       | `x != 8`    |    |          |   |          |
+| `>`      | Greater than   | `x > 8`     |    |          |   |          |
+| \`       |                | \`          | OR | \`(x > 0 |   | x > 0)\` |
+
+---
