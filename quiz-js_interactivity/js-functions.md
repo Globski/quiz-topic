@@ -1186,3 +1186,96 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What are the common HTML DOM Events and the types of objects they belong to?
+
+### HTML DOM Events
+
+| Event                | Occurs When                                      | Belongs To                          |
+| -------------------- | ------------------------------------------------ | ----------------------------------- |
+| `abort`              | The loading of a media is aborted                | `UiEvent`, `Event`                  |
+| `afterprint`         | A page has started printing                      | `Event`                             |
+| `animationend`       | A CSS animation has completed                    | `AnimationEvent`                    |
+| `animationiteration` | A CSS animation is repeated                      | `AnimationEvent`                    |
+| `animationstart`     | A CSS animation has started                      | `AnimationEvent`                    |
+| `beforeprint`        | A page is about to be printed                    | `Event`                             |
+| `beforeunload`       | Before a document is about to be unloaded        | `UiEvent`, `Event`                  |
+| `blur`               | An element loses focus                           | `FocusEvent`                        |
+| `canplay`            | Browser can start playing media                  | `Event`                             |
+| `canplaythrough`     | Browser can play through media without buffering | `Event`                             |
+| `change`             | Form element content has changed                 | `Event`                             |
+| `click`              | An element is clicked                            | `MouseEvent`                        |
+| `contextmenu`        | An element is right-clicked                      | `MouseEvent`                        |
+| `copy`               | Content is copied                                | `ClipboardEvent`                    |
+| `cut`                | Content is cut                                   | `ClipboardEvent`                    |
+| `dblclick`           | An element is double-clicked                     | `MouseEvent`                        |
+| `drag`               | Element is being dragged                         | `DragEvent`                         |
+| `dragend`            | Dragging of an element has ended                 | `DragEvent`                         |
+| `dragenter`          | Dragged element enters drop target               | `DragEvent`                         |
+| `dragleave`          | Dragged element leaves drop target               | `DragEvent`                         |
+| `dragover`           | Dragged element is over drop target              | `DragEvent`                         |
+| `dragstart`          | Dragging of an element has started               | `DragEvent`                         |
+| `drop`               | Dragged element is dropped on target             | `DragEvent`                         |
+| `durationchange`     | Duration of media is changed                     | `Event`                             |
+| `ended`              | Media has reached the end                        | `Event`                             |
+| `error`              | Error occurred while loading a file              | `ProgressEvent`, `UiEvent`, `Event` |
+| `focus`              | Element gets focus                               | `FocusEvent`                        |
+| `focusin`            | Element is about to get focus                    | `FocusEvent`                        |
+| `focusout`           | Element is about to lose focus                   | `FocusEvent`                        |
+| `fullscreenchange`   | Element displayed in fullscreen mode             | `Event`                             |
+| `fullscreenerror`    | Element cannot be displayed in fullscreen mode   | `Event`                             |
+| `hashchange`         | Changes to the anchor part of a URL              | `HashChangeEvent`                   |
+| `input`              | Element receives user input                      | `InputEvent`, `Event`               |
+| `invalid`            | Element is invalid                               | `Event`                             |
+| `keydown`            | A key is pressed down                            | `KeyboardEvent`                     |
+| `keypress`           | A key is pressed                                 | `KeyboardEvent`                     |
+| `keyup`              | A key is released                                | `KeyboardEvent`                     |
+| `load`               | An object has loaded                             | `UiEvent`, `Event`                  |
+| `loadeddata`         | Media data is loaded                             | `Event`                             |
+| `loadedmetadata`     | Metadata is loaded                               | `Event`                             |
+| `loadstart`          | Browser starts looking for media                 | `ProgressEvent`                     |
+| `message`            | Message received through event source            | `Event`                             |
+| `mousedown`          | Mouse button is pressed                          | `MouseEvent`                        |
+| `mouseenter`         | Pointer moved onto an element                    | `MouseEvent`                        |
+| `mouseleave`         | Pointer moved out of an element                  | `MouseEvent`                        |
+| `mousemove`          | Pointer is moved over an element                 | `MouseEvent`                        |
+| `mouseover`          | Pointer is moved onto an element                 | `MouseEvent`                        |
+| `mouseout`           | Pointer is moved out of an element               | `MouseEvent`                        |
+| `mouseup`            | Mouse button is released over an element         | `MouseEvent`                        |
+| `mousewheel`         | **Deprecated**, use `wheel`                      | `WheelEvent`                        |
+| `offline`            | Browser goes offline                             | `Event`                             |
+| `online`             | Browser goes online                              | `Event`                             |
+| `open`               | Event source connection is opened                | `Event`                             |
+| `pagehide`           | User navigates away from page                    | `PageTransitionEvent`               |
+| `pageshow`           | User navigates to page                           | `PageTransitionEvent`               |
+| `paste`              | Content is pasted in an element                  | `ClipboardEvent`                    |
+| `pause`              | Media is paused                                  | `Event`                             |
+| `play`               | Media has started or resumed                     | `Event`                             |
+| `playing`            | Media is playing after buffering                 | `Event`                             |
+| `popstate`           | Window history changes                           | `PopStateEvent`                     |
+| `progress`           | Browser is downloading media                     | `Event`                             |
+| `ratechange`         | Media playback speed is changed                  | `Event`                             |
+| `resize`             | Document view is resized                         | `UiEvent`, `Event`                  |
+| `reset`              | A form is reset                                  | `Event`                             |
+| `scroll`             | Scrollbar is scrolled                            | `UiEvent`, `Event`                  |
+| `search`             | Search input changes                             | `Event`                             |
+| `seeked`             | Skipping to media position is finished           | `Event`                             |
+| `seeking`            | Skipping to media position is started            | `Event`                             |
+| `select`             | User selects text                                | `UiEvent`, `Event`                  |
+| `show`               | `<menu>` element is shown                        | `Event`                             |
+| `stalled`            | Media data is unavailable                        | `Event`                             |
+| `storage`            | Web Storage area is updated                      | `StorageEvent`                      |
+| `submit`             | A form is submitted                              | `Event`                             |
+| `suspend`            | Browser stops getting media data                 | `Event`                             |
+| `timeupdate`         | Playback position changed                        | `Event`                             |
+| `toggle`             | `<details>` element opened or closed             | `Event`                             |
+| `touchcancel`        | Touch is interrupted                             | `TouchEvent`                        |
+| `touchend`           | Finger is removed from touch screen              | `TouchEvent`                        |
+| `touchmove`          | Finger is dragged across screen                  | `TouchEvent`                        |
+| `touchstart`         | Finger touches screen                            | `TouchEvent`                        |
+| `transitionend`      | CSS transition completed                         | `TransitionEvent`                   |
+| `unload`             | Page is unloaded                                 | `UiEvent`, `Event`                  |
+| `volumechange`       | Media volume is changed                          | `Event`                             |
+| `waiting`            | Media is paused and buffering                    | `Event`                             |
+| `wheel`              | Mouse wheel is used                              | `WheelEvent`                        |
+
+---
