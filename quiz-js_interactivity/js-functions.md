@@ -968,3 +968,31 @@ These methods simplify and enhance working with iterators:
 
 ---
 
+# Question: List the commonly used properties and methods of the JavaScript Window Navigator object.
+
+### Navigator Object Properties
+
+| Property        | Description                                              |
+| --------------- | -------------------------------------------------------- |
+| `appCodeName`   | **Deprecated**. All browsers return `"Mozilla"`          |
+| `appName`       | **Deprecated**. All browsers return `"Netscape"`         |
+| `appVersion`    | **Deprecated**. Most browsers return `"4.0"` or `"5.0"`  |
+| `cookieEnabled` | Returns `true` if browser cookies are enabled            |
+| `geolocation`   | Returns a Geolocation object for accessing user location |
+| `language`      | Returns the browser's language                           |
+| `onLine`        | Returns `true` if the browser is online                  |
+| `platform`      | **Deprecated**. Do not rely on it                        |
+| `product`       | **Deprecated**. All browsers return `"Gecko"`            |
+| `userAgent`     | Returns the browser’s user-agent string                  |
+
+---
+
+### Navigator Object Methods
+
+| Method           | Description                                 |
+| ---------------- | ------------------------------------------- |
+| `javaEnabled()`  | **Deprecated**. All browsers return `false` |
+| `taintEnabled()` | **Removed** in JavaScript 1.2 (1999)        |
+
+---
+
