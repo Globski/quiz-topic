@@ -661,3 +661,81 @@ Example:
 **Answer:** Ensure you're in the correct folder and that the file has been saved properly.
 
 ---
+
+# Question: What is the purpose of the staging environment in Git?
+
+**Answer:** It allows you to control which changes are included in the next commit by staging specific files before committing.
+
+---
+
+# Question: What Git command stages a specific file?
+
+**Answer:** `git add <file>`
+
+---
+
+# Question: What does `git add index.html` do?
+
+**Answer:** It stages the file `index.html` so it will be included in the next commit.
+
+---
+
+# Question: What command stages all changes in the working directory, including new, modified, and deleted files?
+
+**Answer:** `git add --all` or `git add -A`
+
+---
+
+# Question: Are `git add --all` and `git add -A` functionally the same?
+
+**Answer:** Yes, they both stage all changes in the working directory.
+
+---
+
+# Question: How can you see which files are currently staged?
+
+**Answer:** By running `git status`
+
+---
+
+# Question: In the output of `git status`, what section shows staged files?
+
+**Answer:** The "Changes to be committed" section.
+
+---
+
+# Question: What command removes a file from the staging area?
+
+**Answer:** `git restore --staged <file>`
+
+---
+
+# Question: What is the effect of running `git restore --staged index.html`?
+
+**Answer:** It unstages `index.html`, removing it from the staging area but leaving the file unchanged in the working directory.
+
+---
+
+# Question: What is an alternative command to unstage a file besides `git restore --staged`?
+
+**Answer:** `git reset HEAD <file>`
+
+---
+
+# Question: What should you do if you forgot to stage a file before committing?
+
+**Answer:** Run `git add <file>` to stage it before committing.
+
+---
+
+# Question: What command helps you verify what will be included in the next commit?
+
+**Answer:** `git status`
+
+---
+
+# Question: What does Git suggest using in the `git status` output to unstage a file?
+
+**Answer:** `git restore --staged <file>`
+
+---
