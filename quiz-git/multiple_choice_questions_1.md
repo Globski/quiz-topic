@@ -589,3 +589,75 @@ Example:
 **Answer:** Run the terminal as administrator (on Windows) or use `sudo` on macOS/Linux.
 
 ---
+
+# Question: What is a "new file" in the context of Git?
+
+**Answer:** A new file is one that has been created or copied into the project folder but has not yet been added to Git's tracking system.
+
+---
+
+# Question: What command checks which files Git is tracking?
+
+**Answer:** `git status`
+
+---
+
+# Question: What does it mean when a file is listed as "untracked" in `git status`?
+
+**Answer:** It means the file exists in the project folder, but Git is not tracking changes to it because it hasn't been added to the repository.
+
+---
+
+# Question: What does Git suggest when it finds untracked files?
+
+**Answer:** Git suggests using `git add ...` to include the files in what will be committed.
+
+---
+
+# Question: How does Git label the first file when `git status` is run before any commits?
+
+**Answer:** As an "untracked file"
+
+---
+
+# Question: What Git branch is active by default in the `git status` output?
+
+**Answer:** `master`
+
+---
+
+# Question: What does it mean if `git status` shows "No commits yet"?
+
+**Answer:** It means no changes have been committed to the repository yet.
+
+---
+
+# Question: What does `git status` output when there are untracked files but nothing has been added to the commit?
+
+**Answer:** It shows the list of untracked files and suggests using `git add` to track them.
+
+---
+
+# Question: What is a "tracked file" in Git?
+
+**Answer:** A tracked file is one that Git is monitoring for changes.
+
+---
+
+# Question: How do you convert an untracked file to a tracked file in Git?
+
+**Answer:** By using the `git add` command to add it to the staging area.
+
+---
+
+# Question: What command can help confirm you're in the correct folder if a file doesn't show up with `ls`?
+
+**Answer:** `pwd`
+
+---
+
+# Question: What should you check if `git status` does not list a file you expect?
+
+**Answer:** Ensure you're in the correct folder and that the file has been saved properly.
+
+---
