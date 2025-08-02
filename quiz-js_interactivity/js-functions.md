@@ -1764,4 +1764,83 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What are the commonly used JavaScript MediaQueryList API methods, properties, and supported media features?
+
+### MediaQueryList Object
+
+| Access Method         | Description                                                           |
+| --------------------- | --------------------------------------------------------------------- |
+| `matchMedia()`        | Returns a MediaQueryList object representing the media query.         |
+| `window.matchMedia()` | Equivalent to `matchMedia()` but explicitly from the `window` object. |
+
+---
+
+### MediaQueryList Properties
+
+| Property  | Description                                                                        |
+| --------- | ---------------------------------------------------------------------------------- |
+| `matches` | A boolean. `true` if the document currently matches the media query, else `false`. |
+| `media`   | A string. The media query string being evaluated.                                  |
+
+---
+
+### MediaQueryList Methods
+
+| Method             | Description                                                                         |
+| ------------------ | ----------------------------------------------------------------------------------- |
+| `addListener()`    | Adds a new listener function that runs when the result of the media query changes.  |
+| `removeListener()` | Removes a previously added listener function. Does nothing if listener isn't found. |
+
+---
+
+
+
+### Media Types
+
+| Value    | Description                                           |
+| -------- | ----------------------------------------------------- |
+| `all`    | Default. Matches all device types                     |
+| `print`  | Used for print preview mode or printed documents      |
+| `screen` | Used for screens like desktop monitors, tablets, etc. |
+
+---
+
+### Common Media Features
+
+| Feature                        | Description                                                        |
+| ------------------------------ | ------------------------------------------------------------------ |
+| `any-hover`                    | Detects if **any** input device allows hovering                    |
+| `any-pointer`                  | Detects if **any** input device is a pointing device               |
+| `aspect-ratio`                 | Ratio between the viewport's width and height                      |
+| `color`                        | Number of bits per color component supported                       |
+| `color-gamut`                  | Approximate color range supported                                  |
+| `color-index`                  | Number of displayable colors                                       |
+| `device-posture`               | Whether the viewport is flat or folded (e.g., on foldable devices) |
+| `display-mode`                 | App display mode: fullscreen, minimal-ui, etc.                     |
+| `dynamic-range`                | Brightness, contrast, and color depth support                      |
+| `forced-colors`                | Whether browser restricts color palette (e.g., high contrast mode) |
+| `grid`                         | Indicates if the device is a grid device                           |
+| `height`                       | Height of the viewport                                             |
+| `hover`                        | Whether the **primary** input device supports hover                |
+| `inverted-colors`              | Detects if OS/browser is inverting colors                          |
+| `monochrome`                   | Bits per color on monochrome devices                               |
+| `orientation`                  | Viewport orientation: portrait or landscape                        |
+| `overflow-block`               | How content that overflows the block axis is handled               |
+| `overflow-inline`              | Whether inline overflow is scrollable                              |
+| `pointer`                      | Accuracy of the **primary** pointing device                        |
+| `prefers-color-scheme`         | User preference: `light` or `dark` color theme                     |
+| `prefers-contrast`             | Detects high or low contrast preference                            |
+| `prefers-reduced-data`         | Detects if user prefers reduced data usage                         |
+| `prefers-reduced-motion`       | Detects if user prefers reduced motion                             |
+| `prefers-reduced-transparency` | Detects if user prefers less transparency                          |
+| `resolution`                   | Display resolution in dpi/dpcm                                     |
+| `scan`                         | Indicates interlace/progressive scan type                          |
+| `scripting`                    | Indicates whether scripting (JavaScript) is available              |
+| `shape`                        | Detects viewport shape: circular or rectangular                    |
+| `update`                       | Indicates how quickly the device updates the display               |
+| `video-dynamic-range`          | Brightness/contrast/depth for video playback                       |
+| `width`                        | Width of the viewport                                              |
+
+---
+
 
