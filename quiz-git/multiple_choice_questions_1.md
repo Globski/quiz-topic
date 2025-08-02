@@ -1700,3 +1700,274 @@ git commit -m "commit message"
 
 ---
 
+# Question: What does merging in Git mean?
+
+**Answer:** Merging in Git means combining the changes from one branch into another to bring work together after working separately on different features or fixes.
+
+---
+
+# Question: What command is used to merge a branch into your current branch?
+
+**Answer:** `git merge`
+
+---
+
+# Question: What does the `--no-ff` option do in `git merge`?
+
+**Answer:** It forces Git to always create a merge commit, even if a fast-forward merge is possible, preserving the branch history.
+
+---
+
+# Question: What is the purpose of the `--squash` option in `git merge`?
+
+**Answer:** It combines all the changes from the merged branch into a single commit, cleaning up the commit history.
+
+---
+
+# Question: What does `git merge --abort` do?
+
+**Answer:** It cancels a merge in progress and reverts the working directory to its state before the merge started.
+
+---
+
+# Question: What must you do before merging branches in Git?
+
+**Answer:** Always commit or stash your changes to avoid losing work.
+
+---
+
+# Question: What is a fast-forward merge?
+
+**Answer:** A merge where no new commits have diverged and Git simply moves the branch pointer forward.
+
+---
+
+# Question: What is a non-fast-forward merge?
+
+**Answer:** A merge where new commits have been made, requiring Git to create a new merge commit.
+
+---
+
+# Question: How do you merge a branch named `emergency-fix` into `master`?
+
+**Answer:**
+
+```bash
+git checkout master  
+git merge emergency-fix
+```
+
+---
+
+# Question: What is the result of a fast-forward merge in Git?
+
+**Answer:** Git just moves the branch pointer forward and does not create a merge commit.
+
+---
+
+# Question: How do you delete a branch after a successful merge?
+
+**Answer:** `git branch -d branchname`
+
+---
+
+# Question: How do you ensure a merge commit is always created?
+
+**Answer:** Use `git merge --no-ff branchname`
+
+---
+
+# Question: What output confirms a merge was made with the recursive strategy?
+
+**Answer:**
+
+```
+Merge made by the 'recursive' strategy.
+```
+
+---
+
+# Question: What is the purpose of squash merging?
+
+**Answer:** To combine all changes into a single commit before merging to clean up the commit history.
+
+---
+
+# Question: Does `git merge --squash` automatically commit the result?
+
+**Answer:** No, it stops before committing, requiring a manual commit.
+
+---
+
+# Question: How do you manually commit a squash merge?
+
+**Answer:** Run `git commit` after `git merge --squash branchname`.
+
+---
+
+# Question: When should you use `git merge --abort`?
+
+**Answer:** When you encounter a merge conflict or want to cancel an in-progress merge.
+
+---
+
+# Question: What is a merge conflict?
+
+**Answer:** A merge conflict occurs when changes from two branches affect the same part of a file, and Git cannot automatically decide which version to keep.
+
+---
+
+# Question: What does Git insert in a file to mark a merge conflict?
+
+**Answer:** Conflict markers such as `<<<<<<<`, `=======`, and `>>>>>>>`.
+
+---
+
+# Question: How do you resolve a merge conflict?
+
+**Answer:** Edit the conflicted file, remove the conflict markers, keep the desired changes, then `git add` and `git commit`.
+
+---
+
+# Question: What command shows the current state during a merge?
+
+**Answer:** `git status`
+
+---
+
+# Question: What does `git status` show during a merge conflict?
+
+**Answer:** It shows "You have unmerged paths" and lists modified files and files staged for commit.
+
+---
+
+# Question: What should you do after editing a conflicted file?
+
+**Answer:** Run `git add filename` and then `git commit` to complete the merge.
+
+---
+
+# Question: What should you avoid when resolving merge conflicts?
+
+**Answer:** Avoid accepting all changes blindly—review them carefully.
+
+---
+
+# Question: How do you check out a branch named `hello-world-images`?
+
+**Answer:** `git checkout hello-world-images`
+
+---
+
+# Question: What command stages all modified files in Git?
+
+**Answer:** `git add --all`
+
+---
+
+# Question: What is the output after staging and committing all changes with `git add --all` and `git commit -m "message"`?
+
+**Answer:**
+
+```
+[branchname commit_hash] commit message  
+N files changed, X insertions(+), Y deletions(-)
+```
+
+---
+
+# Question: What conflict occurred when merging `hello-world-images` into `master`?
+
+**Answer:** Conflict in `index.html` due to changes made to the same lines in both branches.
+
+---
+
+# Question: What message does Git display when a merge conflict occurs?
+
+**Answer:**
+
+```
+CONFLICT (content): Merge conflict in filename  
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+---
+
+# Question: After resolving a conflict and staging the file, what does `git status` display?
+
+**Answer:**
+
+```
+All conflicts fixed but you are still merging.  
+(use "git commit" to conclude merge)
+```
+
+---
+
+# Question: What command finalizes a merge after resolving conflicts?
+
+**Answer:** `git commit -m "your message"`
+
+---
+
+# Question: How do you delete the `hello-world-images` branch after merging?
+
+**Answer:** `git branch -d hello-world-images`
+
+---
+
+# Question: Why use `git merge --no-ff` even when a fast-forward is possible?
+
+**Answer:** To preserve a clearer history by recording that a merge occurred.
+
+---
+
+# Question: What does "Auto-merging index.html" mean?
+
+**Answer:** Git is attempting to automatically combine changes from both branches in `index.html`.
+
+---
+
+# Question: In a merge conflict example, what were the two conflicting lines in `index.html`?
+
+**Answer:**
+
+* `<<<<<<< HEAD` section: `<p>This line is here to show how merging works.</p>`
+* `>>>>>>> hello-world-images` section:
+
+  ```html
+  <p>A new line in our file!</p>
+  <div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;max-width:640px"></div>
+  ```
+
+---
+
+# Question: How should the final resolved `index.html` appear after merging the two conflicting parts?
+
+**Answer:**
+
+```html
+<p>This line is here to show how merging works.</p>
+<div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;max-width:640px"></div>
+```
+
+---
+
+# Question: What best practice helps reduce merge conflicts when working on long-lived feature branches?
+
+**Answer:** Regularly merge changes from the `main` or `master` branch into the feature branch.
+
+---
+
+# Question: How do you ensure all files are committed after a successful merge resolution?
+
+**Answer:** Run `git add <files>` for all modified files, then `git commit`.
+
+---
+
+# Question: What are the consequences of not resolving a merge conflict properly before committing?
+
+**Answer:** The commit may include unresolved conflict markers or incorrect code, leading to errors or broken features.
+
+---
+
