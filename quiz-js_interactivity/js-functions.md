@@ -1720,3 +1720,35 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What are the commonly used JavaScript Geolocation API properties and methods?
+
+### Geolocation Object Properties
+
+| Property          | Description                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------------- |
+| `coordinates`     | Returns the position and altitude of the device on Earth                                    |
+| `position`        | Returns the position of the device at a given time                                          |
+| `positionError`   | Returns the reason for an error that occurred while using geolocation                       |
+| `positionOptions` | Describes an object with option properties for `getCurrentPosition()` and `watchPosition()` |
+
+---
+
+### Geolocation Object Methods
+
+| Method                 | Description                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------------------ |
+| `clearWatch()`         | Unregisters location/error monitoring handlers previously installed with `watchPosition()` |
+| `getCurrentPosition()` | Returns the current position of the device                                                 |
+| `watchPosition()`      | Registers a handler that is called automatically whenever the position changes             |
+
+---
+
+### Usage Notes
+
+* Available through `navigator.geolocation`
+* Requires user permission and secure context (HTTPS)
+* Accuracy is highest on GPS-enabled devices like smartphones
+
+---
+
+
