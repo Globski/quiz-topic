@@ -990,3 +990,155 @@ Example:
 
 ---
 
+# Question: What is the purpose of `git stash`?
+
+**Answer:** To temporarily save uncommitted changes (staged and unstaged tracked files) and return to a clean working directory without committing them.
+
+---
+
+# Question: What types of files are stashed by default with `git stash`?
+
+**Answer:** Tracked files, both staged and unstaged.
+
+---
+
+# Question: How can you include untracked files in a stash?
+
+**Answer:** Use `git stash -u` or `git stash --include-untracked`.
+
+---
+
+# Question: What command adds a message to your stash?
+
+**Answer:** `git stash push -m "message"`
+
+---
+
+# Question: What is the benefit of using `git stash push -m "message"`?
+
+**Answer:** It lets you label your stash with a descriptive message to remember what work was saved.
+
+---
+
+# Question: What command lists all saved stashes?
+
+**Answer:** `git stash list`
+
+---
+
+# Question: What format is used in the stash list to identify individual stashes?
+
+**Answer:** `stash@{n}`, where `n` is the stash index.
+
+---
+
+# Question: What is a stash stack in Git?
+
+**Answer:** A stack-like structure where each stash is added to the top and can be applied, dropped, or inspected.
+
+---
+
+# Question: What command shows a summary of changes in the latest stash?
+
+**Answer:** `git stash show`
+
+---
+
+# Question: What command displays the full diff of changes in the latest stash?
+
+**Answer:** `git stash show -p`
+
+---
+
+# Question: How do you apply the most recent stash without removing it from the stack?
+
+**Answer:** `git stash apply`
+
+---
+
+# Question: What command applies a specific stash from the list?
+
+**Answer:** `git stash apply stash@{n}`
+
+---
+
+# Question: What is the difference between `git stash apply` and `git stash pop`?
+
+**Answer:** `git stash apply` restores the stash but keeps it in the list; `git stash pop` restores it and removes it from the stack.
+
+---
+
+# Question: What command restores and removes the most recent stash?
+
+**Answer:** `git stash pop`
+
+---
+
+# Question: What command deletes a specific stash from the stack?
+
+**Answer:** `git stash drop stash@{n}`
+
+---
+
+# Question: What command clears all saved stashes?
+
+**Answer:** `git stash clear`
+
+---
+
+# Question: What is a caution related to `git stash clear`?
+
+**Answer:** It is irreversible; all stashes will be deleted permanently.
+
+---
+
+# Question: How can you create a new branch from a specific stash?
+
+**Answer:** `git stash branch <branchname> stash@{n}`
+
+---
+
+# Question: What happens when you run `git stash branch new-feature stash@{0}`?
+
+**Answer:** Git creates a new branch called `new-feature`, switches to it, applies `stash@{0}`, and removes it from the stash list.
+
+---
+
+# Question: What are two common use cases for stashing changes?
+
+**Answer:**
+
+1. Switching branches safely
+2. Saving work during an emergency fix
+
+---
+
+# Question: Are untracked files included in a stash by default?
+
+**Answer:** No, they must be explicitly included using `-u` or `--include-untracked`.
+
+---
+
+# Question: What should you do if a stash doesn't apply cleanly?
+
+**Answer:** Resolve conflicts manually, similar to a merge conflict. Git will mark the conflicts for you.
+
+---
+
+# Question: How can you recover lost work you believe was stashed?
+
+**Answer:** Use `git stash list` to locate the stash, then apply it with `git stash apply stash@{n}`.
+
+---
+
+# Question: What is a best practice for naming stashes?
+
+**Answer:** Use descriptive messages like `git stash push -m "WIP: feature name"`.
+
+---
+
+# Question: Why shouldn't you use stashes as long-term storage?
+
+**Answer:** Because stashes are temporary and can be lost; it's better to commit your work when possible.
+
+---
