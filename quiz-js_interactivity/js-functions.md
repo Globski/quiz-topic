@@ -1684,3 +1684,27 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What are the commonly used Console API methods and what do they do?
+
+### Console Object Methods
+
+| Method             | Description                                                                               |
+| ------------------ | ----------------------------------------------------------------------------------------- |
+| `assert()`         | Writes an error message to the console if the assertion is false                          |
+| `clear()`          | Clears the console                                                                        |
+| `count()`          | Logs the number of times that this particular call to `count()` has been called           |
+| `error()`          | Outputs an error message to the console                                                   |
+| `group()`          | Creates a new inline group in the console (indents messages until `groupEnd()` is called) |
+| `groupCollapsed()` | Creates a new collapsed group in the console (user must expand it manually)               |
+| `groupEnd()`       | Exits the current inline group in the console                                             |
+| `info()`           | Outputs an informational message to the console                                           |
+| `log()`            | Outputs a general message to the console                                                  |
+| `table()`          | Displays tabular data as a table in the console                                           |
+| `time()`           | Starts a timer to track how long an operation takes                                       |
+| `timeEnd()`        | Stops a timer that was previously started by `console.time()`                             |
+| `trace()`          | Outputs a stack trace to the console                                                      |
+| `warn()`           | Outputs a warning message to the console                                                  |
+
+---
+
+
