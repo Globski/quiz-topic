@@ -1299,4 +1299,207 @@ Example:
 
 ---
 
- 
+# Question: Why is Git's built-in help system useful?
+
+**Answer:** It provides quick access to command usage, options, and guides without leaving the terminal, making it helpful when you forget how a command works or want to explore its options.
+
+---
+
+# Question: What command displays the full manual for a specific Git command?
+
+**Answer:** `git help <command>`
+
+---
+
+# Question: What is an alternative syntax to `git help <command>` that performs the same function?
+
+**Answer:** `git <command> --help`
+
+---
+
+# Question: Which command provides a quick summary of a Git command’s options?
+
+**Answer:** `git <command> -h`
+
+---
+
+# Question: What command lists all Git commands grouped by category?
+
+**Answer:** `git help --all`
+
+---
+
+# Question: How do you view a list of Git guides and concepts?
+
+**Answer:** `git help -g`
+
+---
+
+# Question: What information does `git help commit` show?
+
+**Answer:** It shows the full manual page for the `git commit` command, including its name, synopsis, description, options, and usage examples.
+
+---
+
+# Question: What is the `SYNOPSIS` section in a Git help page?
+
+**Answer:** It describes the basic usage format and arguments of the Git command.
+
+---
+
+# Question: While viewing help pages in the terminal, how can you scroll down and up?
+
+**Answer:** Use the arrow keys or Space to scroll down and `b` to scroll up.
+
+---
+
+# Question: In Git help viewer, how do you search for a word?
+
+**Answer:** Press `/`, type the search term, and press Enter. Then press `n` to find the next match.
+
+---
+
+# Question: How do you exit the Git help viewer?
+
+**Answer:** Press `q`.
+
+---
+
+# Question: What does the command `git status --help` do?
+
+**Answer:** It opens the full documentation for the `git status` command.
+
+---
+
+# Question: What does the command `git add -h` show?
+
+**Answer:** It shows a short summary of available options for the `git add` command without opening the full manual.
+
+---
+
+# Question: What is shown in the output of `git help --all`?
+
+**Answer:** A very long list of all available Git commands grouped by categories such as Main Porcelain Commands, Ancillary Commands, Low-level Commands, and External Commands.
+
+---
+
+# Question: Name a few commands listed under “Main Porcelain Commands” from `git help --all`.
+
+**Answer:** `add`, `commit`, `branch`, `merge`, `status`, `log`, `push`, `pull`, `checkout`
+
+---
+
+# Question: What category do commands like `config`, `remote`, and `reflog` belong to?
+
+**Answer:** Ancillary Commands / Manipulators
+
+---
+
+# Question: What is the category of `blame`, `annotate`, and `count-objects` in the Git help listing?
+
+**Answer:** Ancillary Commands / Interrogators
+
+---
+
+# Question: What is the purpose of commands like `cat-file`, `ls-tree`, and `rev-list`?
+
+**Answer:** These are Low-level Commands / Interrogators, used to inspect and analyze the state and contents of the repository at a granular level.
+
+---
+
+# Question: Which Git command lists references in a remote repository?
+
+**Answer:** `ls-remote`
+
+---
+
+# Question: Which command allows you to compare two commit ranges?
+
+**Answer:** `range-diff`
+
+---
+
+# Question: What is the purpose of `git show-branch`?
+
+**Answer:** It shows branches and their commits.
+
+---
+
+# Question: What command would you use to verify the GPG signature of commits?
+
+**Answer:** `verify-commit`
+
+---
+
+# Question: Which command lets you manage multiple working trees in Git?
+
+**Answer:** `worktree`
+
+---
+
+# Question: What command helps reuse recorded resolution of conflicted merges?
+
+**Answer:** `rerere`
+
+---
+
+# Question: What is `git instaweb` used for?
+
+**Answer:** It instantly launches a web browser interface (gitweb) for the current repository.
+
+---
+
+# Question: What is the function of the command `git maintenance`?
+
+**Answer:** It runs tasks to optimize Git repository data.
+
+---
+
+# Question: If the list in `git help --all` is too long, what key combination jumps to the end?
+
+**Answer:** Press `SHIFT + G`.
+
+---
+
+# Question: How do you exit the list view in `git help --all`?
+
+**Answer:** Press `q`.
+
+---
+
+# Question: What command group includes tools like `imap-send`, `send-email`, and `request-pull`?
+
+**Answer:** Interacting with Others
+
+---
+
+# Question: Which command category includes `apply`, `read-tree`, and `hash-object`?
+
+**Answer:** Low-level Commands / Manipulators
+
+---
+
+# Question: Which command allows you to create a tree object from the current index?
+
+**Answer:** `write-tree`
+
+---
+
+# Question: What command shows available Git guides like “glossary” or “everyday”?
+
+**Answer:** `git help -g`
+
+---
+
+# Question: What topics are included in the output of `git help -g`?
+
+**Answer:** Guides like `attributes`, `everyday`, `glossary`, and `revisions`.
+
+---
+
+# Question: What can you do if the Git help page doesn’t open?
+
+**Answer:** Try `git <command> -h` for a quick summary instead.
+
+---
+
