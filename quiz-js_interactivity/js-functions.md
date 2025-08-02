@@ -1707,4 +1707,16 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What are the commonly used JavaScript Fullscreen API methods and properties?
+
+### Fullscreen API Methods and Properties
+
+| Property/Method       | Description                                                          |
+| --------------------- | -------------------------------------------------------------------- |
+| `requestFullscreen()` | Opens an element in fullscreen mode                                  |
+| `exitFullscreen()`    | Cancels fullscreen mode and returns the document to normal view      |
+| `fullscreenElement`   | Returns the element currently being displayed in fullscreen mode     |
+| `fullscreenEnabled`   | Returns `true` if fullscreen is enabled and supported by the browser |
+
+---
 
