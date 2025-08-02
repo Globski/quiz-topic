@@ -375,3 +375,143 @@ Add `export PATH="/usr/bin:$PATH"` to your `~/.bashrc` or `~/.profile`, then run
 **Answer:** Check your version with `git --version` and download the latest version from git-scm.com.
 
 ---
+
+# Question: Why is configuring Git important?
+
+**Answer:** Git uses your name and email to label your commits, allowing version control systems to track who made each change.
+
+---
+
+# Question: What command sets your Git username globally?
+
+**Answer:**
+`git config --global user.name "Your Name"`
+
+---
+
+# Question: What command sets your Git email address globally?
+
+**Answer:**
+`git config --global user.email "you@example.com"`
+
+---
+
+# Question: What does the `--global` flag do in Git configuration?
+
+**Answer:** It sets the configuration value for all repositories of the current user.
+
+---
+
+# Question: What happens if you make a typo in your Git username or email?
+
+**Answer:** You can re-run the `git config` command with the correct value to overwrite the old one.
+
+---
+
+# Question: What will Git do if you try to commit without setting your name or email?
+
+**Answer:** Git will prompt you to set them before allowing the commit.
+
+---
+
+# Question: Can you change your Git name and email later?
+
+**Answer:** Yes, and previous commits will still show the old name and email.
+
+---
+
+# Question: What is the difference between `--global` and `--local` in Git config?
+
+**Answer:** `--global` sets the value for every repository on the computer, while `--local` sets it only for the current repository.
+
+---
+
+# Question: What is the default configuration level if no flag is specified in `git config`?
+
+**Answer:** Local (`--local`) is the default.
+
+---
+
+# Question: What command lists all Git configuration settings?
+
+**Answer:**
+`git config --list`
+
+---
+
+# Question: What is the output format of `git config --list`?
+
+**Answer:** A list of key-value pairs like `user.name=Your Name`.
+
+---
+
+# Question: What command displays only the configured Git user name?
+
+**Answer:**
+`git config user.name`
+
+---
+
+# Question: How do you unset a global configuration value in Git?
+
+**Answer:**
+`git config --global --unset <key>`
+
+Example:
+`git config --global --unset code.editor`
+
+---
+
+# Question: How do you set the default branch name for new repositories in Git?
+
+**Answer:**
+`git config --global init.defaultBranch main`
+
+---
+
+# Question: What are the three Git configuration levels?
+
+**Answer:**
+
+* System (`--system`)
+* Global (`--global`)
+* Local (`--local`)
+
+---
+
+# Question: What is the order of precedence for Git config levels (highest to lowest)?
+
+**Answer:**
+
+1. Local
+2. Global
+3. System
+
+---
+
+# Question: Why would you use different Git config levels?
+
+**Answer:** To set different values for different users, projects, or repositories—for example, different default branches or user identities.
+
+---
+
+# Question: How do you set a Git user name for just one repository?
+
+**Answer:**
+`git config user.name "Project Name"`
+
+---
+
+# Question: How do you set a Git user name for all repositories of the current user?
+
+**Answer:**
+`git config --global user.name "Global Name"`
+
+---
+
+# Question: How do you set a Git user name for all users on the system?
+
+**Answer:**
+`git config --system user.name "System Name"`
+
+---
