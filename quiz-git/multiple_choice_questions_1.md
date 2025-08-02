@@ -172,3 +172,206 @@
 
 ---
 
+# Question: Where can you download Git for free?
+
+**Answer:** Git can be downloaded for free from [https://git-scm.com](https://git-scm.com).
+
+---
+
+# Question: How do you install Git on Windows?
+
+**Answer:** Download and run the installer from git-scm.com, then click "Next" to accept the recommended settings. This installs Git and Git Bash.
+
+---
+
+# Question: What does the Git installer include on Windows?
+
+**Answer:** It installs both Git and Git Bash.
+
+---
+
+# Question: How do you install Git on macOS using Homebrew?
+
+**Answer:** Open Terminal and type:
+`brew install git`
+
+---
+
+# Question: What is an alternative method to install Git on macOS if not using Homebrew?
+
+**Answer:** Download the `.dmg` file from git-scm.com and drag Git to the Applications folder.
+
+---
+
+# Question: How do you install Git on Ubuntu Linux?
+
+**Answer:** Use the terminal and type:
+`sudo apt-get install git`
+
+---
+
+# Question: What can you do after installing Git?
+
+**Answer:** You can use Git from your terminal or command prompt.
+
+---
+
+# Question: What is Git Bash?
+
+**Answer:** Git Bash is a terminal for Windows that lets you use Git commands and additional Unix commands.
+
+---
+
+# Question: Where can you find Git Bash after installing Git on Windows?
+
+**Answer:** In the Start menu under "Git Bash".
+
+---
+
+# Question: What command do you use to verify that Git is installed?
+
+**Answer:**
+`git --version`
+
+---
+
+# Question: What is the expected output if Git is installed correctly?
+
+**Answer:** A version message like `git version 2.43.0.windows.1`.
+
+---
+
+# Question: What should you do if `git --version` gives an error after installation?
+
+**Answer:** Try closing and reopening your terminal, or check if Git is in your system’s PATH.
+
+---
+
+# Question: What does Git ask you to select during installation?
+
+**Answer:** A default text editor for writing messages such as commit messages.
+
+---
+
+# Question: What is the command to set VS Code as your default Git editor?
+
+**Answer:**
+`git config --global core.editor "code --wait"`
+
+---
+
+# Question: What is the command to set Notepad as the default Git editor?
+
+**Answer:**
+`git config --global core.editor "notepad"`
+
+---
+
+# Question: What does it mean to add Git to your PATH?
+
+**Answer:** It means you can run Git commands from any terminal window, not just Git Bash or Terminal.
+
+---
+
+# Question: What happens if Git is not added to your PATH during installation?
+
+**Answer:** You can only use Git in Git Bash (on Windows) or Terminal (on macOS/Linux).
+
+---
+
+# Question: How can you check if Git is in your PATH?
+
+**Answer:** Run `git --version`; if it works, Git is in your PATH.
+
+---
+
+# Question: How do you manually add Git to the PATH on Windows after installation?
+
+**Answer:**
+
+1. Open "Environment Variables" from the Start menu.
+2. Click "Environment Variables..." → Find "Path" under "System variables".
+3. Click "Edit" → "New" → Add paths like `C:\Program Files\Git\bin` and `C:\Program Files\Git\cmd`.
+4. Click OK and restart your terminal.
+
+---
+
+# Question: How do you add Git to your PATH on macOS if not set automatically?
+
+**Answer:**
+Add the line `export PATH="/usr/local/bin:$PATH"` to `~/.zshrc` or `~/.bash_profile`, then run `source ~/.zshrc` or `source ~/.bash_profile`.
+
+---
+
+# Question: How do you add Git to PATH on Linux if it's not added by default?
+
+**Answer:**
+Add `export PATH="/usr/bin:$PATH"` to your `~/.bashrc` or `~/.profile`, then run `source ~/.bashrc` or `source ~/.profile`.
+
+---
+
+# Question: What should you do after updating the PATH variable?
+
+**Answer:** Open a new terminal window and run `git --version` to verify it works.
+
+---
+
+# Question: What are line endings, and how should they be configured on Windows?
+
+**Answer:** Line endings are character sequences that mark the end of a line in text files. On Windows, it's best to select "Checkout Windows-style, commit Unix-style line endings" to avoid cross-platform issues.
+
+---
+
+# Question: How do you update Git?
+
+**Answer:** Download and run the latest installer or use a package manager like `brew upgrade git` or `sudo apt-get upgrade git`.
+
+---
+
+# Question: How do you uninstall Git on Windows?
+
+**Answer:** Use "Add or Remove Programs" from the Windows Control Panel.
+
+---
+
+# Question: How do you uninstall Git on macOS or Linux?
+
+**Answer:** Use your system’s package manager.
+
+---
+
+# Question: What should you try if Git doesn’t work after installing?
+
+**Answer:** Close and reopen your terminal, or restart your computer.
+
+---
+
+# Question: What causes the error “git is not recognized as an internal or external command”?
+
+**Answer:** Git is not in your system’s PATH.
+
+---
+
+# Question: What is the solution for the "git is not recognized" error?
+
+**Answer:** Ensure Git is installed, add Git’s `bin` folder to your PATH, and restart your terminal or computer.
+
+---
+
+# Question: What should you do if you get a "Permission denied" error?
+
+**Answer:** Run Git Bash as administrator on Windows, or use `sudo` on macOS/Linux.
+
+---
+
+# Question: What can cause SSL or HTTPS errors when cloning or pushing?
+
+**Answer:** A poor internet connection or outdated Git version.
+
+---
+
+# Question: What should you do if you have the wrong version of Git installed?
+
+**Answer:** Check your version with `git --version` and download the latest version from git-scm.com.
+
+---
