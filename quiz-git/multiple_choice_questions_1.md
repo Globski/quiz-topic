@@ -2158,3 +2158,174 @@ All conflicts fixed but you are still merging.
 
 ---
 
+# Question: Why is it important to commit often in Git?
+
+**Answer:** Frequent commits help capture progress, make it easier to track changes, and simplify debugging.
+
+---
+
+# Question: Give an example of a commit command following the best practice of committing often.
+
+**Answer:**
+
+```bash
+git add .  
+git commit -m "Add user authentication logic"
+```
+
+---
+
+# Question: Why are clear commit messages important?
+
+**Answer:** They help you and your team understand the project’s history by explaining why changes were made.
+
+---
+
+# Question: What are two key tips for writing effective commit messages?
+
+**Answer:**
+
+1. Be specific: explain what and why, not just "Update" or "Fix".
+2. Use imperative mood: e.g., "Fix bug" instead of "Fixed bug".
+
+---
+
+# Question: Provide an example of a clear and effective commit message.
+
+**Answer:**
+
+```bash
+git commit -m "Fix bug in user login validation"
+```
+
+---
+
+# Question: What is the purpose of using branches in Git?
+
+**Answer:** To work on features, fixes, or experiments without affecting the stability of the main branch.
+
+---
+
+# Question: How do branches support safe collaboration?
+
+**Answer:** They allow developers to test and develop independently, reducing the risk of breaking the main codebase.
+
+---
+
+# Question: What is a good naming convention for branches?
+
+**Answer:** Use descriptive names like `feature/login-form` or `bugfix/user-auth`.
+
+---
+
+# Question: What command creates and switches to a new branch called `feature/login-form`?
+
+**Answer:**
+
+```bash
+git checkout -b feature/login-form
+```
+
+---
+
+# Question: Why should you run `git pull` before `git push`?
+
+**Answer:** To fetch and merge changes from others before pushing your own, which helps avoid conflicts and rejected pushes.
+
+---
+
+# Question: What command sequence pulls and then pushes to the `main` branch?
+
+**Answer:**
+
+```bash
+git pull origin main  
+git push origin main
+```
+
+---
+
+# Question: What commands help you review changes before committing?
+
+**Answer:** `git status` and `git diff`
+
+---
+
+# Question: What does `git status` show you?
+
+**Answer:** The current state of the working directory and staging area, including staged, unstaged, and untracked files.
+
+---
+
+# Question: What does `git diff` show?
+
+**Answer:** Differences between the working directory and the staging area or the last commit.
+
+---
+
+# Question: Why should repositories be kept small?
+
+**Answer:** To ensure they are fast to work with and easy to clone.
+
+---
+
+# Question: What should you do instead of adding large files directly to your repo?
+
+**Answer:** Use Git LFS (Large File Storage).
+
+---
+
+# Question: What types of files should typically be excluded using `.gitignore`?
+
+**Answer:** Build artifacts, log files, temporary files, and sensitive data like secrets or `.env` files.
+
+---
+
+# Question: What does `.gitignore` actually prevent?
+
+**Answer:** It prevents new files from being tracked by Git.
+
+---
+
+# Question: If a file is already tracked, will adding it to `.gitignore` stop Git from tracking it?
+
+**Answer:** No, you must remove it manually using `git rm --cached <file>`.
+
+---
+
+# Question: What is an example of a `.gitignore` file that ignores `node_modules/`, `.log` files, and `.env`?
+
+**Answer:**
+
+```
+# .gitignore
+node_modules/
+*.log
+.env
+```
+
+---
+
+# Question: What are Git tags used for?
+
+**Answer:** To mark specific release points (like `v1.0`) for easy reference and version tracking.
+
+---
+
+# Question: How do tags help with project versioning?
+
+**Answer:** They make it easier to locate, reference, or roll back to important versions of the project.
+
+---
+
+# Question: What command creates a tag called `v1.0`?
+
+**Answer:** `git tag v1.0`
+
+---
+
+# Question: What command pushes a local tag named `v1.0` to a remote repository?
+
+**Answer:** `git push origin v1.0`
+
+---
