@@ -1971,3 +1971,190 @@ All conflicts fixed but you are still merging.
 
 ---
 
+# Question: What are the three main areas in Git's workflow?
+
+**Answer:** Working Directory, Staging Area (Index), and Repository.
+
+---
+
+# Question: What command stages changes for commit in Git?
+
+**Answer:** `git add`
+
+---
+
+# Question: What command saves staged changes to the local repository?
+
+**Answer:** `git commit`
+
+---
+
+# Question: What command sends committed changes to a remote repository?
+
+**Answer:** `git push`
+
+---
+
+# Question: What command shows the current state of your working directory and staging area?
+
+**Answer:** `git status`
+
+---
+
+# Question: What command can you use to unstage a file?
+
+**Answer:** `git restore --staged <file>`
+
+---
+
+# Question: What is the role of the Working Directory in Git?
+
+**Answer:** It is where you make changes to your files before staging or committing them.
+
+---
+
+# Question: What is the Staging Area in Git?
+
+**Answer:** It is the area where you prepare changes with `git add` before committing them.
+
+---
+
+# Question: What is the Repository in Git's workflow?
+
+**Answer:** It is the area where your committed history is stored.
+
+---
+
+# Question: What is the function of `git add .`?
+
+**Answer:** It stages all changes in the working directory, including new, modified, and deleted files.
+
+---
+
+# Question: What does `git commit -m "message"` do?
+
+**Answer:** It saves all staged changes to the local repository with a commit message.
+
+---
+
+# Question: What is the difference between `git commit -m "message"` and `git commit -a -m "message"`?
+
+**Answer:** `git commit -a -m` stages and commits all modified and deleted files in one step, but not new (untracked) files.
+
+---
+
+# Question: What does `git push` do in the Git workflow?
+
+**Answer:** It sends your local commits to a remote repository so others can access them.
+
+---
+
+# Question: Why is using `git status` considered a best practice?
+
+**Answer:** It helps you track which files are staged, unstaged, or untracked and avoid surprises before committing.
+
+---
+
+# Question: How does `git restore <file>` differ from `git restore --staged <file>`?
+
+**Answer:** `git restore <file>` discards changes in the working directory; `git restore --staged <file>` removes the file from the staging area without discarding changes.
+
+---
+
+# Question: What does `git reset HEAD~` do?
+
+**Answer:** It undoes the last commit, but keeps the changes in the working directory.
+
+---
+
+# Question: How can you modify the last commit message or add more changes to it?
+
+**Answer:** Use `git commit --amend`.
+
+---
+
+# Question: What is the purpose of `git restore --staged index.html`?
+
+**Answer:** It removes `index.html` from the staging area without deleting or altering the file content.
+
+---
+
+# Question: What should you do before pushing changes to avoid committing unintended files?
+
+**Answer:** Use `git status` and stage only intended files with `git add <filename>`.
+
+---
+
+# Question: Why is pushing regularly to a remote repository recommended?
+
+**Answer:** It backs up your work and shares your progress with collaborators.
+
+---
+
+# Question: What does the command `git commit -a -m "message"` fail to include?
+
+**Answer:** It does not include new (untracked) files—only modified and deleted ones.
+
+---
+
+# Question: What should you do if you accidentally commit something you didn't mean to?
+
+**Answer:** Use `git reset` or `git commit --amend` before pushing.
+
+---
+
+# Question: In the Git workflow diagram, what is the sequence of commands from editing to saving in the repository?
+
+**Answer:**
+`[Working Directory] --git add--> [Staging Area] --git commit--> [Repository]`
+
+---
+
+# Question: What analogy is used to describe the staging area in Git?
+
+**Answer:** Like putting your finished letter in an envelope before mailing it.
+
+---
+
+# Question: What analogy is used for committing changes in Git?
+
+**Answer:** Like mailing a letter—you can't change it after it's sent.
+
+---
+
+# Question: What Git command allows you to review changes before committing?
+
+**Answer:** `git diff`
+
+---
+
+# Question: What are some best practices for using Git effectively?
+
+**Answer:**
+
+* Commit frequently with clear messages
+* Use `git status` often
+* Stage only intended files
+* Push regularly
+* Review changes before committing
+
+---
+
+# Question: What is GitHub Flow?
+
+**Answer:** A popular collaborative workflow for teams using GitHub.
+
+---
+
+# Question: What should you do if you're unsure about a Git error?
+
+**Answer:** Ask a teammate or look up the error message.
+
+---
+
+# Question: How does the Git workflow support distributed version control?
+
+**Answer:** By allowing users to make, stage, and commit changes locally before sharing via push.
+
+---
+
