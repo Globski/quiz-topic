@@ -1503,3 +1503,200 @@ Example:
 
 ---
 
+# Question: What is a Git branch?
+
+**Answer:** A Git branch is a separate workspace that allows changes and experimentation without affecting the main project.
+
+---
+
+# Question: Why are Git branches useful?
+
+**Answer:** They enable isolated work on features, bug fixes, or ideas without interfering with the main branch.
+
+---
+
+# Question: What are three common reasons to create a branch?
+
+**Answer:** Developing a new feature, fixing a bug, and experimenting with ideas.
+
+---
+
+# Question: What does branching in Git prevent compared to manually copying files?
+
+**Answer:** It prevents confusion and inconsistencies from managing multiple copies of files and dependencies manually.
+
+---
+
+# Question: In Git, how do you create a new branch called `hello-world-images`?
+
+**Answer:** `git branch hello-world-images`
+
+---
+
+# Question: What does the `git branch` command do without any arguments?
+
+**Answer:** Lists all local branches and shows the current branch with an asterisk.
+
+---
+
+# Question: How do you switch to a different branch named `hello-world-images`?
+
+**Answer:** `git checkout hello-world-images`
+
+---
+
+# Question: After switching branches, do untracked files from the previous branch remain?
+
+**Answer:** No, untracked files specific to another branch will not appear unless they are part of the current branch.
+
+---
+
+# Question: How can you create and switch to a branch named `emergency-fix` in one command?
+
+**Answer:** `git checkout -b emergency-fix`
+
+---
+
+# Question: What command is used to stage all changes, including new and deleted files?
+
+**Answer:** `git add --all`
+
+---
+
+# Question: What does `git status` show about your working directory?
+
+**Answer:** It shows the current branch, changes not staged for commit, untracked files, and staged changes ready for commit.
+
+---
+
+# Question: What does the `git commit -m "message"` command do?
+
+**Answer:** Commits staged changes to the current branch with a specified commit message.
+
+---
+
+# Question: After committing in a branch, are those changes visible in the `master` branch?
+
+**Answer:** No, each branch keeps its changes isolated until merged.
+
+---
+
+# Question: What does `git checkout master` do if you are currently on another branch?
+
+**Answer:** It switches your working directory to the `master` branch.
+
+---
+
+# Question: What happens to files like `img_hello_world.jpg` that exist only in a branch when switching to another?
+
+**Answer:** They disappear from the working directory because they aren't part of the checked-out branch.
+
+---
+
+# Question: How do you stage and commit an individual file?
+
+**Answer:**
+
+```bash
+git add filename  
+git commit -m "commit message"
+```
+
+---
+
+# Question: How do you delete a branch that has already been merged?
+
+**Answer:** `git branch -d branch-name`
+
+---
+
+# Question: What command is used to force delete an unmerged branch?
+
+**Answer:** `git branch -D branch-name`
+
+---
+
+# Question: What does `git branch -m old-name new-name` do?
+
+**Answer:** Renames a branch from `old-name` to `new-name`.
+
+---
+
+# Question: How do you check what branch you are currently on?
+
+**Answer:** Use `git status`; it displays the current branch name.
+
+---
+
+# Question: What are two ways to switch branches in Git?
+
+**Answer:** `git checkout branch-name` and `git switch branch-name`
+
+---
+
+# Question: What is the recommended format for naming branches?
+
+**Answer:** Use clear, descriptive names like `feature/login-page` or `bugfix/header-crash`.
+
+---
+
+# Question: What should you do to keep a branch updated with recent changes from the main branch?
+
+**Answer:** Regularly merge changes from the main branch into your branch.
+
+---
+
+# Question: What is the significance of the `*` in the output of `git branch`?
+
+**Answer:** It indicates the currently checked-out branch.
+
+---
+
+# Question: What happens if you try to delete a branch that hasn’t been merged yet using `git branch -d`?
+
+**Answer:** Git will prevent the deletion and show an error message.
+
+---
+
+# Question: What’s the advantage of Git’s branch model over manually managing file versions?
+
+**Answer:** Git branches are fast, lightweight, and prevent errors caused by manual file copying and name tracking.
+
+---
+
+# Question: When working in a branch and committing changes, where are the changes saved?
+
+**Answer:** In the branch you’re currently on.
+
+---
+
+# Question: Can branches be used to work on multiple features in parallel?
+
+**Answer:** Yes, each feature or fix can be developed independently on separate branches.
+
+---
+
+# Question: Why should you delete branches that are no longer needed?
+
+**Answer:** To keep your repository clean and manageable.
+
+---
+
+# Question: If a feature is half-complete and an urgent fix is needed, what should you do?
+
+**Answer:** Create a new branch from the main branch for the fix, then merge it when done.
+
+---
+
+# Question: What does `git checkout -b emergency-fix` accomplish?
+
+**Answer:** It creates a new branch `emergency-fix` and switches to it in one step.
+
+---
+
+# Question: How does Git handle file visibility across branches?
+
+**Answer:** Files committed in one branch do not appear in other branches unless merged.
+
+---
+
