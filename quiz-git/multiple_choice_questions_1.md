@@ -1142,3 +1142,161 @@ Example:
 **Answer:** Because stashes are temporary and can be lost; it's better to commit your work when possible.
 
 ---
+
+# Question: What is the purpose of Git History?
+
+**Answer:** Git History records every change made to a project, including what changed, when, and who made the change, helping in tracking progress, finding bugs, and understanding project evolution.
+
+---
+
+# Question: What command shows the full commit history in Git?
+
+**Answer:** `git log`
+
+---
+
+# Question: What information does the `git log` command display for each commit?
+
+**Answer:** It shows the commit hash, author, date, and commit message.
+
+---
+
+# Question: How can you display each commit on a single line for easier reading?
+
+**Answer:** Use `git log --oneline`
+
+---
+
+# Question: What does the `git show <commit>` command do?
+
+**Answer:** It displays detailed information about a specific commit, including who made it, when, the message, and the exact changes.
+
+---
+
+# Question: What does the command `git diff` show?
+
+**Answer:** It shows unstaged changes — differences between the working directory and the last commit.
+
+---
+
+# Question: What does the command `git diff --staged` show?
+
+**Answer:** It shows differences between staged files and the last commit (i.e., staged changes ready to be committed).
+
+---
+
+# Question: How do you compare the differences between two specific commits?
+
+**Answer:** Use `git diff <commit1> <commit2>`
+
+---
+
+# Question: What does `git log --author="Alice"` do?
+
+**Answer:** It shows only the commits made by the author "Alice".
+
+---
+
+# Question: What command shows only commits made in the last two weeks?
+
+**Answer:** `git log --since="2 weeks ago"`
+
+---
+
+# Question: What does `git log --stat` provide that `git log` does not?
+
+**Answer:** It shows which files were changed in each commit and how many lines were added or removed.
+
+---
+
+# Question: How can you visualize the history of branches and merges?
+
+**Answer:** Use `git log --graph` or `git log --graph --oneline` for a simplified view.
+
+---
+
+# Question: How can you scroll while viewing the full log using `git log`?
+
+**Answer:** Use the arrow keys.
+
+---
+
+# Question: How can you quit the `git log` or `git diff` view?
+
+**Answer:** Press `q`.
+
+---
+
+# Question: While viewing `git log`, how can you search for a specific word?
+
+**Answer:** Type `/` followed by the search term, then press `n` to jump to the next match.
+
+---
+
+# Question: What is a best practice when writing commits to keep Git history useful?
+
+**Answer:** Make frequent, meaningful commits with clear commit messages.
+
+---
+
+# Question: Why is it recommended to use `git diff` before committing?
+
+**Answer:** To review your work and ensure only intended changes are included in the commit.
+
+---
+
+# Question: What is the output format of `git log --oneline`?
+
+**Answer:** Each commit is shown on a single line with its abbreviated hash and message.
+
+---
+
+# Question: What output does the `git diff` command produce for a modified file?
+
+**Answer:** It shows lines removed (with `-`) and lines added (with `+`) for each file modified.
+
+---
+
+# Question: If your changes don’t appear in the history, what might be the reason?
+
+**Answer:** The changes are not yet committed.
+
+---
+
+# Question: If the commit history is too long to read, what commands can simplify it?
+
+**Answer:** Use `git log --oneline` or `git log --since` to shorten the output.
+
+---
+
+# Question: What does the following command do: `git show 09f4acd`?
+
+**Answer:** It shows full details of the commit with hash prefix `09f4acd`, including changes made.
+
+---
+
+# Question: In the example `git diff 1234567 89abcde`, what are `1234567` and `89abcde`?
+
+**Answer:** They are abbreviated commit hashes used to compare two specific commits.
+
+---
+
+# Question: What kind of graph does `git log --graph` produce?
+
+**Answer:** A simple ASCII graph showing branch and merge history.
+
+---
+
+# Question: What does the command `git log --graph --oneline` combine?
+
+**Answer:** It combines a visual branch graph with a condensed single-line format of commits.
+
+---
+
+# Question: What does this example from `git log --stat` indicate: `1 file changed, 1 insertion(+), 1 deletion(-)`?
+
+**Answer:** One file was modified, with one line added and one line removed.
+
+---
+
+ 
