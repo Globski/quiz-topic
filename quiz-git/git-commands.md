@@ -21,6 +21,8 @@ Git is the free and open-source distributed version control system that's respon
 | `git init` | Initialize an existing directory as a Git repository |
 | `git clone [url]` | Clone an entire repository from a URL |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
+| `git --version` | Show current Git version |
+| `git help` | Get help on Git commands |
 
 ---
 
