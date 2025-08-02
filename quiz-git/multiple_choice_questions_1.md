@@ -515,3 +515,77 @@ Example:
 `git config --system user.name "System Name"`
 
 ---
+
+# Question: What are the three key steps to getting started with Git?
+
+**Answer:** Create a project folder, navigate to the folder, and initialize a Git repository.
+
+---
+
+# Question: How do you open Git Bash in a specific folder on Windows?
+
+**Answer:** Right-click the folder in File Explorer and select "Git Bash Here".
+
+---
+
+# Question: What does the command `git init` do?
+
+**Answer:** It initializes a new Git repository in the current folder by creating a `.git` directory.
+
+---
+
+# Question: What is the output message after running `git init`?
+
+**Answer:**
+`Initialized empty Git repository in /Users/user/myproject/.git/`
+
+---
+
+# Question: What is a Git repository?
+
+**Answer:** A Git repository is a folder that Git tracks for changes, storing the project’s history and versions.
+
+---
+
+# Question: What happens behind the scenes when you run `git init`?
+
+**Answer:** Git creates a hidden folder called `.git` that stores all the tracking and history data.
+
+---
+
+# Question: What command shows hidden folders like `.git` on Linux or macOS?
+
+**Answer:**
+`ls -a`
+
+---
+
+# Question: How do you view the `.git` folder on Windows?
+
+**Answer:** Enable "Show hidden files" in File Explorer.
+
+---
+
+# Question: What is the cause of the error `git: command not found`?
+
+**Answer:** Git is either not installed or not added to the system’s PATH.
+
+---
+
+# Question: What is the solution to `git: command not found`?
+
+**Answer:** Make sure Git is installed, added to your PATH, and restart your terminal if needed.
+
+---
+
+# Question: What causes a "Permission denied" error when using Git?
+
+**Answer:** Insufficient privileges to perform Git operations in the terminal.
+
+---
+
+# Question: How can you fix a "Permission denied" error in Git?
+
+**Answer:** Run the terminal as administrator (on Windows) or use `sudo` on macOS/Linux.
+
+---
