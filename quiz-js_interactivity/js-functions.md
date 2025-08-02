@@ -1843,4 +1843,53 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What are the commonly used Web Storage API methods and properties?
+
+### Storage Object Methods and Properties
+
+| Property/Method       | Description                                                       |
+| --------------------- | ----------------------------------------------------------------- |
+| `clear()`             | Removes all key/value pairs from the storage                      |
+| `getItem(key)`        | Returns the value associated with the specified key               |
+| `key(index)`          | Returns the name of the nth key in the storage                    |
+| `length`              | Returns the number of key/value pairs currently stored            |
+| `setItem(key, value)` | Adds a new key/value pair or updates the value of an existing key |
+| `removeItem(key)`     | Removes the key/value pair with the specified key                 |
+
+---
+
+### Related Web Storage Interfaces
+
+| Property                | Description                                                                               |
+| ----------------------- | ----------------------------------------------------------------------------------------- |
+| `window.localStorage`   | Stores data with no expiration date. Data persists even after browser is closed.          |
+| `window.sessionStorage` | Stores data for the duration of the page session. Data is cleared when the tab is closed. |
+
+---
+
+### Cookies vs Local Storage
+
+| Feature                 | Cookies                      | Local Storage                         |
+| ----------------------- | ---------------------------- | ------------------------------------- |
+| Purpose                 | Browser-server communication | Client-side storage only              |
+| Sent with HTTP requests | Yes                          | No                                    |
+| Expiration              | Has expiration date          | Persistent (no expiration by default) |
+| Storage limit           | \~4 KB                       | \~5 MB per domain                     |
+| Accessibility           | Server and client            | Client only                           |
+| Disabled by users       | Often possible               | Less likely                           |
+
+---
+
+### Browser Support
+
+| Browser           | Supported Version |
+| ----------------- | ----------------- |
+| Chrome            | Yes               |
+| Internet Explorer | 8 - 11            |
+| Edge              | Yes               |
+| Firefox           | Yes               |
+| Safari            | Yes               |
+| Opera             | Yes               |
+
+---
 
