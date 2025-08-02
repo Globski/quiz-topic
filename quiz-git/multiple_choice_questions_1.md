@@ -864,3 +864,129 @@ Example:
 
 ---
 
+# Question: What is a tag in Git?
+
+**Answer:** A tag is a label or bookmark for a specific commit, commonly used to mark important points like releases, milestones, or deployment versions.
+
+---
+
+# Question: What command creates a lightweight tag?
+
+**Answer:** `git tag <tagname>`
+
+---
+
+# Question: What is the difference between a lightweight tag and an annotated tag?
+
+**Answer:** A lightweight tag is just a name for a commit and stores no additional information. An annotated tag includes metadata such as the tagger's name, date, and a message.
+
+---
+
+# Question: What command creates an annotated tag with a message?
+
+**Answer:** `git tag -a <tagname> -m "message"`
+
+---
+
+# Question: Which tag type is recommended for public sharing and releases?
+
+**Answer:** Annotated tags
+
+---
+
+# Question: What command tags a specific commit by its hash?
+
+**Answer:** `git tag <tagname> <commit-hash>`
+
+---
+
+# Question: What command lists all tags in the current Git repository?
+
+**Answer:** `git tag`
+
+---
+
+# Question: What command displays details of a specific tag and its associated commit?
+
+**Answer:** `git show <tagname>`
+
+---
+
+# Question: What is the command to push a single tag to a remote repository?
+
+**Answer:** `git push origin <tagname>`
+
+---
+
+# Question: What command pushes all local tags to the remote repository?
+
+**Answer:** `git push --tags`
+
+---
+
+# Question: Are tags pushed automatically when running `git push`?
+
+**Answer:** No, tags are not pushed automatically; you must explicitly push them using `git push origin <tagname>` or `git push --tags`.
+
+---
+
+# Question: What command deletes a tag from the local repository?
+
+**Answer:** `git tag -d <tagname>`
+
+---
+
+# Question: What command deletes a tag from the remote repository?
+
+**Answer:** `git push origin --delete tag <tagname>`
+
+---
+
+# Question: What command updates or replaces a tag locally by moving it to a new commit?
+
+**Answer:** `git tag -f <tagname> <new-commit-hash>`
+
+---
+
+# Question: After force-updating a tag locally, what command must you use to overwrite it remotely?
+
+**Answer:** `git push --force origin <tagname>`
+
+---
+
+# Question: Why should you use annotated tags for releases and shared versions?
+
+**Answer:** Because they store extra metadata and are more informative, making them suitable for collaboration and version tracking.
+
+---
+
+# Question: When is it recommended to create a tag?
+
+**Answer:** After passing all tests or before deploying/releasing code.
+
+---
+
+# Question: How should you resolve a tag that already exists but needs to be changed?
+
+**Answer:** Delete it with `git tag -d <tagname>`, then re-create it and push again.
+
+---
+
+# Question: What should you do if a tag isn’t visible on the remote after pushing commits?
+
+**Answer:** Push the tag explicitly using `git push origin <tagname>` or `git push --tags`.
+
+---
+
+# Question: What is the risk of using `git push --force origin <tagname>`?
+
+**Answer:** It forcefully updates the tag on the remote, potentially overwriting it for others, which can cause inconsistencies.
+
+---
+
+# Question: What are some common use cases for Git tags?
+
+**Answer:** Marking releases, highlighting milestones, managing deployments, and applying hotfixes to specific versions.
+
+---
+
