@@ -1547,3 +1547,140 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 | zIndex                   | Sets or returns the stack order of a positioned element                                                                                       |
 
 ---
+
+# Question: List some commonly used HTML Canvas API methods and properties grouped by their category.
+
+### Basic Canvas Element
+
+| Tag        | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| `<canvas>` | Defines a bitmap area for drawing graphics via JavaScript |
+
+---
+
+### Drawing Methods
+
+| Method         | Description                            |
+| -------------- | -------------------------------------- |
+| `fillRect()`   | Draws a "filled" rectangle             |
+| `strokeRect()` | Draws a rectangle (no fill)            |
+| `clearRect()`  | Clears specified pixels in a rectangle |
+
+---
+
+### Path Methods
+
+| Method            | Description                                          |
+| ----------------- | ---------------------------------------------------- |
+| `beginPath()`     | Begins a new path or resets the current path         |
+| `closePath()`     | Adds a line to the path from current point to start  |
+| `isPointInPath()` | Returns true if the specified point is in the path   |
+| `moveTo()`        | Moves the path to a point in the canvas (no drawing) |
+| `lineTo()`        | Adds a line to the path                              |
+| `fill()`          | Fills the current path                               |
+| `rect()`          | Adds a rectangle to the path                         |
+| `stroke()`        | Draws the current path                               |
+
+---
+
+### Circles and Curves
+
+| Method               | Description                                                |
+| -------------------- | ---------------------------------------------------------- |
+| `bezierCurveTo()`    | Adds a cubic Bézier curve to the path                      |
+| `arc()`              | Adds an arc/curve (circle or part of a circle) to the path |
+| `arcTo()`            | Adds an arc/curve between two tangents to the path         |
+| `quadraticCurveTo()` | Adds a quadratic Bézier curve to the path                  |
+
+---
+
+### Text
+
+| Method/Property | Description                                         |
+| --------------- | --------------------------------------------------- |
+| `direction`     | Sets/returns the direction used to draw text        |
+| `fillText()`    | Draws "filled" text on the canvas                   |
+| `font`          | Sets/returns the font properties for text content   |
+| `measureText()` | Returns object with the width of the specified text |
+| `strokeText()`  | Draws text outline on the canvas                    |
+| `textAlign`     | Sets/returns the alignment for text content         |
+| `textBaseline`  | Sets/returns the text baseline used when drawing    |
+
+---
+
+### Colors, Styles, and Shadows
+
+| Method/Property          | Description                                             |
+| ------------------------ | ------------------------------------------------------- |
+| `addColorStop()`         | Specifies color stops in a gradient object              |
+| `createLinearGradient()` | Creates a linear gradient                               |
+| `createPattern()`        | Repeats an element in a direction                       |
+| `createRadialGradient()` | Creates a radial/circular gradient                      |
+| `fillStyle`              | Sets/returns the fill color, gradient, or pattern       |
+| `lineCap`                | Sets/returns the style of end caps for a line           |
+| `lineJoin`               | Sets/returns the type of corner created when lines meet |
+| `lineWidth`              | Sets/returns the current line width                     |
+| `miterLimit`             | Sets/returns the maximum miter length                   |
+| `shadowBlur`             | Sets/returns the blur level for shadows                 |
+| `shadowColor`            | Sets/returns the shadow color                           |
+| `shadowOffsetX`          | Sets/returns horizontal shadow offset                   |
+| `shadowOffsetY`          | Sets/returns vertical shadow offset                     |
+| `strokeStyle`            | Sets/returns the stroke color, gradient, or pattern     |
+
+---
+
+### Transformations
+
+| Method           | Description                                              |
+| ---------------- | -------------------------------------------------------- |
+| `scale()`        | Scales the drawing bigger or smaller                     |
+| `rotate()`       | Rotates the current drawing                              |
+| `translate()`    | Remaps the (0,0) position on the canvas                  |
+| `transform()`    | Replaces the current transformation matrix               |
+| `setTransform()` | Resets the transform to identity, then applies transform |
+
+---
+
+### Image Drawing
+
+| Method        | Description                                      |
+| ------------- | ------------------------------------------------ |
+| `drawImage()` | Draws an image, canvas, or video onto the canvas |
+
+---
+
+### The ImageData Object / Pixel Manipulation
+
+| Method/Property     | Description                                              |
+| ------------------- | -------------------------------------------------------- |
+| `createImageData()` | Creates a new blank ImageData object                     |
+| `getImageData()`    | Returns an ImageData object from the specified rectangle |
+| `ImageData.data`    | Returns object containing image pixel data               |
+| `ImageData.height`  | Returns the height of the ImageData object               |
+| `ImageData.width`   | Returns the width of the ImageData object                |
+| `putImageData()`    | Puts image data back onto the canvas                     |
+
+---
+
+### Compositing
+
+| Property                   | Description                                                  |
+| -------------------------- | ------------------------------------------------------------ |
+| `globalAlpha`              | Sets/returns the alpha (transparency) value                  |
+| `globalCompositeOperation` | Sets/returns how a new image is drawn over an existing image |
+
+---
+
+### Other Methods
+
+| Method          | Description                                          |
+| --------------- | ---------------------------------------------------- |
+| `clip()`        | Clips a region of any shape and size from the canvas |
+| `save()`        | Saves the current drawing context state              |
+| `restore()`     | Restores the last saved context state                |
+| `createEvent()` | *(Deprecated/Not commonly used)*                     |
+| `getContext()`  | Returns the drawing context object                   |
+| `toDataURL()`   | Returns a data URI for the image                     |
+
+---
+
