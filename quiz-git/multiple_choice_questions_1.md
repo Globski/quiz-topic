@@ -2329,3 +2329,306 @@ node_modules/
 **Answer:** `git push origin v1.0`
 
 ---
+
+# Question: What is a branch in Git?
+
+**Answer:** A parallel version of your repository used to develop features independently.
+
+---
+
+# Question: What command creates a new branch called `feature/login`?
+
+**Answer:**
+
+```bash
+git branch feature/login
+```
+
+---
+
+# Question: What does `git checkout` do?
+
+**Answer:** Switches to a different branch or commit.
+
+---
+
+# Question: What is the command to switch to the `main` branch?
+
+**Answer:**
+
+```bash
+git checkout main
+```
+
+---
+
+# Question: What does `git clone` do?
+
+**Answer:** Creates a local copy of a remote repository.
+
+---
+
+# Question: What is an example of the `git clone` command?
+
+**Answer:**
+
+```bash
+git clone https://github.com/user/repo.git
+```
+
+---
+
+# Question: What is a commit in Git?
+
+**Answer:** A snapshot of your changes in the repository.
+
+---
+
+# Question: What is an example command to make a commit?
+
+**Answer:**
+
+```bash
+git commit -m "Add login feature"
+```
+
+---
+
+# Question: What is a merge conflict?
+
+**Answer:** A situation where Git can't automatically merge changes from different commits or branches and manual resolution is required.
+
+---
+
+# Question: What message might you see during a merge conflict?
+
+**Answer:**
+
+```
+CONFLICT (content): Merge conflict in file.txt
+```
+
+---
+
+# Question: What does `git fetch` do?
+
+**Answer:** Downloads changes from a remote repository without merging them.
+
+---
+
+# Question: What is an example of using `git fetch`?
+
+**Answer:**
+
+```bash
+git fetch origin
+```
+
+---
+
+# Question: What is a fork in Git?
+
+**Answer:** A personal copy of someone else's repository, typically created on platforms like GitHub.
+
+---
+
+# Question: How do you typically create a fork of a repository?
+
+**Answer:** Use the GitHub interface to fork the repo.
+
+---
+
+# Question: What is the Index (Staging Area) in Git?
+
+**Answer:** The area where changes are prepared before committing.
+
+---
+
+# Question: What command stages a file called `file.txt`?
+
+**Answer:**
+
+```bash
+git add file.txt
+```
+
+---
+
+# Question: What does the `git merge` command do?
+
+**Answer:** Combines changes from different branches.
+
+---
+
+# Question: How do you merge a branch named `feature/login`?
+
+**Answer:**
+
+```bash
+git merge feature/login
+```
+
+---
+
+# Question: What is `origin` in Git?
+
+**Answer:** The default name for your main remote repository.
+
+---
+
+# Question: How do you add a remote named `origin`?
+
+**Answer:**
+
+```bash
+git remote add origin https://github.com/user/repo.git
+```
+
+---
+
+# Question: What does `git pull` do?
+
+**Answer:** Fetches and merges changes from a remote repository into your current branch.
+
+---
+
+# Question: How do you pull from the `main` branch on `origin`?
+
+**Answer:**
+
+```bash
+git pull origin main
+```
+
+---
+
+# Question: What does `git push` do?
+
+**Answer:** Uploads your commits to a remote repository.
+
+---
+
+# Question: What is the command to push changes to `origin` on the `main` branch?
+
+**Answer:**
+
+```bash
+git push origin main
+```
+
+---
+
+# Question: What does `git rebase` do?
+
+**Answer:** Moves or combines a sequence of commits to a new base commit.
+
+---
+
+# Question: What is the command to rebase onto `main`?
+
+**Answer:**
+
+```bash
+git rebase main
+```
+
+---
+
+# Question: What is a remote in Git?
+
+**Answer:** A version of your repository hosted on the internet or a network.
+
+---
+
+# Question: What command lists all remote URLs?
+
+**Answer:**
+
+```bash
+git remote -v
+```
+
+---
+
+# Question: What is a repository (or repo) in Git?
+
+**Answer:** A database where your project's history is stored.
+
+---
+
+# Question: What command initializes a new Git repository?
+
+**Answer:**
+
+```bash
+git init
+```
+
+---
+
+# Question: What does `git stash` do?
+
+**Answer:** Temporarily saves changes that are not ready to be committed.
+
+---
+
+# Question: What is an example of using `git stash`?
+
+**Answer:**
+
+```bash
+git stash
+```
+
+---
+
+# Question: What is a tag in Git?
+
+**Answer:** A marker for a specific commit, often used for releases.
+
+---
+
+# Question: What command creates a tag called `v1.0`?
+
+**Answer:**
+
+```bash
+git tag v1.0
+```
+
+---
+
+# Question: What does `HEAD` refer to in Git?
+
+**Answer:** The current commit your working directory is based on, usually the latest commit on your current branch.
+
+---
+
+# Question: How can you view the commit that HEAD points to?
+
+**Answer:**
+
+```bash
+git log --oneline
+```
+
+(The top entry is HEAD)
+
+---
+
+# Question: What is an upstream branch in Git?
+
+**Answer:** The default branch that your current branch tracks and pulls from, usually on a remote repository.
+
+---
+
+# Question: What command sets an upstream branch for pushing?
+
+**Answer:**
+
+```bash
+git push --set-upstream origin main
+```
+
+---
+
