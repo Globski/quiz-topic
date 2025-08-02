@@ -739,3 +739,128 @@ Example:
 **Answer:** `git restore --staged <file>`
 
 ---
+
+# Question: What is a commit in Git?
+
+**Answer:** A commit is a save point in your project that records a snapshot of your files at a particular time along with a message describing what changed.
+
+---
+
+# Question: What command is used to commit staged changes with a message?
+
+**Answer:** `git commit -m "message"`
+
+---
+
+# Question: What does `git commit -m "First release of Hello World!"` do?
+
+**Answer:** It commits all staged changes with the commit message "First release of Hello World!"
+
+---
+
+# Question: What command commits all modified and deleted tracked files without staging them first?
+
+**Answer:** `git commit -a -m "message"`
+
+---
+
+# Question: Does `git commit -a -m` commit new/untracked files?
+
+**Answer:** No, it only commits tracked files. New/untracked files must be added with `git add` first.
+
+---
+
+# Question: What is the risk of using `git commit -a -m`?
+
+**Answer:** It can include unwanted changes since it skips the staging step, so it should be used with care.
+
+---
+
+# Question: What happens if you run `git commit -a -m` with only new/untracked files?
+
+**Answer:** Git will return a message saying "nothing added to commit but untracked files present," and the commit won't happen.
+
+---
+
+# Question: What command opens your default editor for writing a multi-line commit message?
+
+**Answer:** `git commit` (without the `-m` flag)
+
+---
+
+# Question: How should you format a multi-line commit message?
+
+**Answer:** Start with a short summary on the first line, leave a blank line, then write detailed information below.
+
+---
+
+# Question: What are three best practices for writing commit messages?
+
+**Answer:**
+
+1. Keep the first line short (50 characters or less).
+2. Use the imperative mood.
+3. Leave a blank line between the summary and the details.
+
+---
+
+# Question: What command creates an empty commit?
+
+**Answer:** `git commit --allow-empty -m "message"`
+
+---
+
+# Question: What command reuses the previous commit message without opening an editor?
+
+**Answer:** `git commit --no-edit`
+
+---
+
+# Question: What command amends the last commit without changing its message?
+
+**Answer:** `git commit --amend --no-edit`
+
+---
+
+# Question: What command do you use if you forgot to stage a file before committing?
+
+**Answer:** Stage the file with `git add <file>` and run `git commit --amend` to include it in the last commit.
+
+---
+
+# Question: How do you correct a typo in the most recent commit message?
+
+**Answer:** Use `git commit --amend -m "Corrected message"`
+
+---
+
+# Question: What command undoes the last commit but keeps the changes staged?
+
+**Answer:** `git reset --soft HEAD~1`
+
+---
+
+# Question: What command shows the full commit history?
+
+**Answer:** `git log`
+
+---
+
+# Question: What information does `git log` display for each commit?
+
+**Answer:** Commit hash, author, date, and commit message.
+
+---
+
+# Question: What command gives a one-line summary of each commit?
+
+**Answer:** `git log --oneline`
+
+---
+
+# Question: What command shows which files changed in each commit?
+
+**Answer:** `git log --stat`
+
+---
+
