@@ -1930,3 +1930,28 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What is the CSSStyleDeclaration object in the DOM?
+
+### CSSStyleDeclaration Properties
+
+| Property     | Description                                                         |
+| ------------ | ------------------------------------------------------------------- |
+| `cssText`    | Gets or sets the entire CSS declaration block as text               |
+| `length`     | Returns the number of style declarations                            |
+| `parentRule` | Returns the parent CSS rule of the style declaration block (if any) |
+
+---
+
+### CSSStyleDeclaration Methods
+
+| Method                  | Description                                                              |
+| ----------------------- | ------------------------------------------------------------------------ |
+| `getPropertyPriority()` | Returns whether the specified CSS property has the `!important` priority |
+| `getPropertyValue()`    | Returns the value of the specified CSS property                          |
+| `item()`                | Returns the name of a CSS property by index                              |
+| `removeProperty()`      | Removes a CSS property from the declaration block                        |
+| `setProperty()`         | Adds a new or modifies an existing CSS property in the declaration block |
+
+---
+
+
