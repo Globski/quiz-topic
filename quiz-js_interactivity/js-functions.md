@@ -1893,3 +1893,40 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 ---
 
+# Question: What are the key methods and properties of the JavaScript Validation API?
+
+### Constraint Validation Methods
+
+| Method                | Description                                                |
+| --------------------- | ---------------------------------------------------------- |
+| `checkValidity()`     | Returns `true` if the input element contains valid data    |
+| `setCustomValidity()` | Sets the `validationMessage` property for an input element |
+
+---
+
+### Constraint Validation Properties
+
+| Property            | Description                                                            |
+| ------------------- | ---------------------------------------------------------------------- |
+| `validity`          | Contains a set of boolean properties related to the element's validity |
+| `validationMessage` | Message displayed when `validity` is `false`                           |
+| `willValidate`      | Indicates whether the element is subject to validation                 |
+
+---
+
+### `validity` Sub-properties
+
+| Property          | Description                                                               |
+| ----------------- | ------------------------------------------------------------------------- |
+| `customError`     | `true` if a custom error message has been set                             |
+| `patternMismatch` | `true` if the value doesn't match the pattern attribute                   |
+| `rangeOverflow`   | `true` if the value exceeds the `max` attribute                           |
+| `rangeUnderflow`  | `true` if the value is below the `min` attribute                          |
+| `stepMismatch`    | `true` if the value isn't a valid increment based on the `step` attribute |
+| `tooLong`         | `true` if the value exceeds the `maxLength` attribute                     |
+| `typeMismatch`    | `true` if the value doesn't conform to the `type` attribute               |
+| `valueMissing`    | `true` if a required field has no value                                   |
+| `valid`           | `true` if the value is valid                                              |
+
+---
+
