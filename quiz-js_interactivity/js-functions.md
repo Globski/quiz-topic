@@ -1747,7 +1747,20 @@ The **Element Object** represents an HTML element in the DOM (like `<p>`, `<div>
 
 * Available through `navigator.geolocation`
 * Requires user permission and secure context (HTTPS)
-* Accuracy is highest on GPS-enabled devices like smartphones
+* Accuracy is highest on GPS-enabled devices like smartphone
+
+---
+
+# Question: What are the commonly used JavaScript History API properties and methods?
+
+### History Object Properties and Methods
+
+| Property/Method | Description                                            |
+| --------------- | ------------------------------------------------------ |
+| `back()`        | Loads the previous URL (page) in the history list      |
+| `forward()`     | Loads the next URL (page) in the history list          |
+| `go()`          | Loads a specific URL (page) from the history list      |
+| `length`        | Returns the number of URLs (pages) in the history list |
 
 ---
 
