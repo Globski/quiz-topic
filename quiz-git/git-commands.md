@@ -23,6 +23,7 @@ Git is the free and open-source distributed version control system that's respon
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 | `git --version` | Show current Git version |
 | `git help` | Get help on Git commands |
+| `git help [command]` | Get help for a specific Git command |
 
 ---
 
@@ -33,11 +34,13 @@ Git is the free and open-source distributed version control system that's respon
 | `git status` | Show modified/staged files |
 | `git add [file-name.txt]` | Add a file to the staging area |
 | `git add -A` | Add all new and changed files to the staging area |
+| `git add "*.txt"` | Stage all text files across the project |
+| `git add docs/*.txt` | Stage all `.txt` files in `docs/` |
+| `git add docs/` | Stage everything in `docs/` |
 | `git reset [file]` | Unstage a file but keep the changes |
 | `git commit -m "[commit message]"` | Commit changes |
-| `git rm -r [file-name.txt]` | Remove a file (or folder) |
-| `git rm [file]` | Delete file and stage removal |
-| `git mv [old-path] [new-path]` | Rename/move file and stage it |
+| `git commit -a -m "Message"` | Automatically stage tracked files and commit |
+
 
 ---
 
@@ -48,18 +51,18 @@ Git is the free and open-source distributed version control system that's respon
 | `git branch` | List branches (the asterisk denotes the current branch) |
 | `git branch -a` | List all branches (local and remote) |
 | `git branch [branch name]` | Create a new branch |
+| `git branch -m [old branch name] [new branch name]` | Rename a local branch |
 | `git branch -d [branch name]` | Delete a branch |
-| `git push origin --delete [branch name]` | Delete a remote branch |
+| `git branch -D Testing` | Force delete the branch |
+| `git branch -r` | List remote branches |
 | `git checkout -b [branch name]` | Create a new branch and switch to it |
 | `git checkout -b [branch name] origin/[branch name]` | Clone a remote branch and switch to it |
-| `git branch -m [old branch name] [new branch name]` | Rename a local branch |
 | `git checkout [branch name]` | Switch to a branch |
 | `git checkout -` | Switch to the branch last checked out |
 | `git checkout -- [file-name.txt]` | Discard changes to a file |
 | `git merge [branch name]` | Merge a branch into the current branch |
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
 | `git merge [alias]/[branch]` | Merge remote branch into local |
-| `git fetch [alias]` | Fetch all branches from remote |
 
 ---
 
@@ -84,12 +87,18 @@ Git is the free and open-source distributed version control system that's respon
 | `git push` | Push changes to remote repository (remembered branch) |
 | `git push origin --delete [branch name]` | Delete a remote branch |
 | `git push [alias] [branch]` | Push local branch to remote |
+| `git push --tags` | Push tags to remote |
 | `git pull` | Fetch and merge commits from tracking branch |
 | `git pull origin [branch name]` | Pull changes from remote repository |
 | `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote repository |
 | `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
 | `git remote -v` | View the remote repository of the currently working file or directory |
 | `git remote add [alias] [url]` | Add a remote Git URL alias |
+| `git rm -r [file-name.txt]` | Remove a file (or folder) |
+| `git rm [file]` | Delete file and stage removal |
+| `git mv [old-path] [new-path]` | Rename/move file and stage it |
+| `git fetch` | Download latest changes from remote |
+| `git fetch [alias]` | Fetch all branches from remote |
 
 ---
 
@@ -130,7 +139,11 @@ Git is the free and open-source distributed version control system that's respon
 | Command | Description |
 |---------|-------------|
 | `git rebase [branch]` | Apply commits from current onto another branch |
+| `git reset --soft HEAD^` | Undo last commit (keep staged) |
+| `git reset --hard HEAD^` | Undo last commit (discard changes) |
+| `git reset --hard HEAD^^` | Undo last 2 commits completely |
 | `git reset --hard [commit]` | Reset staging/working tree to a commit |
 | `git revert [commit]` | Revert a specific commit with a new one |
+| `git reset head license` | Unstage the file `license` |
 
 ---
