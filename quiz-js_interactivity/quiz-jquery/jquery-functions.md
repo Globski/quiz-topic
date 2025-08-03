@@ -344,5 +344,23 @@
 | `serialize()`       | Serializes form data for submission                          |
 | `serializeArray()`  | Serializes form data into an array of name/value pairs       |
 
+
 ---
 
+# Question: What are the jQuery miscellaneous methods?
+
+### Miscellaneous Methods
+
+| Method           | Description                                                    |
+| ---------------- | -------------------------------------------------------------- |
+| `data()`         | Attaches data to, or retrieves data from, selected elements    |
+| `each()`         | Executes a function for each matched element                   |
+| `get()`          | Retrieves the DOM elements matched by the selector             |
+| `index()`        | Finds the index of an element within a set of matched elements |
+| `$.noConflict()` | Releases jQuery’s control of the `$` variable                  |
+| `$.param()`      | Serializes an array or object for use in a query string        |
+| `removeData()`   | Removes a previously stored piece of data                      |
+| `size()`         | **Removed** in v3.0 — use `.length` instead                    |
+| `toArray()`      | Converts the jQuery object into a plain array of DOM elements  |
+
+---
