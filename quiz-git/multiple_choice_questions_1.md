@@ -2847,5 +2847,67 @@ git push --set-upstream origin main
 
 ---
 
+# Question: What must you do before pushing, pulling, or cloning using SSH on GitHub?
+
+**Answer:** You must add your public SSH key to your GitHub account and ensure it's added to your SSH agent.
+
+---
+
+# Question: What command is used to copy the public SSH key to the clipboard on Windows (Git Bash)?
+
+**Answer:** `clip < ~/.ssh/id_rsa.pub`
+
+---
+
+# Question: What command is used to copy the public SSH key on macOS?
+
+**Answer:** `pbcopy < ~/.ssh/id_rsa.pub`
+
+---
+
+# Question: How do you copy the public SSH key on Linux?
+
+**Answer:** Use `cat ~/.ssh/id_rsa.pub` and manually copy the output.
+
+---
+
+# Question: Where do you go in GitHub to begin adding your SSH key?
+
+**Answer:** Click your profile icon in the top right and select **Settings**.
+
+---
+
+# Question: After opening GitHub Settings, which section should you select to manage SSH keys?
+
+**Answer:** Select **SSH and GPG keys** from the sidebar.
+
+---
+
+# Question: What button should you click to add a new SSH key on GitHub?
+
+**Answer:** Click the **New SSH key** button.
+
+---
+
+# Question: What information must be provided when adding a new SSH key to GitHub?
+
+**Answer:** A descriptive title and the contents of your public SSH key.
+
+---
+
+# Question: What security confirmation might GitHub require when adding an SSH key?
+
+**Answer:** GitHub may prompt for your password or ask for 2-factor authentication (2FA).
+
+---
+
+# Question: What indicates that your SSH key has been successfully added on GitHub?
+
+**Answer:** The new SSH key appears listed in your SSH and GPG keys section.
+
+---
+
+
+
 
 
