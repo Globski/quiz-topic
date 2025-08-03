@@ -3387,6 +3387,101 @@ nothing to commit, working tree clean
 
 ---
 
+# Question: What does the command `git checkout -b update-readme` do?
+
+**Answer:** It creates a new branch named `update-readme` and switches to it.
+
+---
+
+# Question: What is the purpose of running `git status` after editing a file?
+
+**Answer:** To see which files have been changed and are staged or unstaged for commit.
+
+---
+
+# Question: What sequence of commands stages and commits a change to `README.md`?
+
+**Answer:**
+
+```
+git add README.md  
+git commit -m "Update readme for GitHub"
+```
+
+---
+
+# Question: How do you push a newly created local branch to GitHub?
+
+**Answer:** `git push origin update-readme`
+
+---
+
+# Question: What does `origin` refer to in `git push origin update-readme`?
+
+**Answer:** It refers to the remote repository, usually GitHub, that your local Git is connected to.
+
+---
+
+# Question: What command sets the upstream branch when pushing for the first time?
+
+**Answer:** `git push --set-upstream origin update-readme`
+
+---
+
+# Question: What is the purpose of setting an upstream branch?
+
+**Answer:** It links your local branch to the remote one, allowing you to use `git push` and `git pull` without specifying the branch name every time.
+
+---
+
+# Question: What does the command `git push --force origin update-readme` do?
+
+**Answer:** It forcefully overwrites the remote branch with your local branch changes, potentially deleting others' work.
+
+---
+
+# Question: When should you **not** use `--force` when pushing to GitHub?
+
+**Answer:** When others are working on the same branch, as it may overwrite their commits and cause data loss.
+
+---
+
+# Question: What command deletes a branch named `update-readme` from GitHub?
+
+**Answer:** `git push origin --delete update-readme`
+
+---
+
+# Question: How can you push all local branches to the GitHub repository?
+
+**Answer:** `git push --all origin`
+
+---
+
+# Question: What command pushes all Git tags to GitHub?
+
+**Answer:** `git push --tags`
+
+---
+
+# Question: If you get a "rejected push (non-fast-forward)" error, what should you do?
+
+**Answer:** Run `git pull --rebase` to integrate the latest changes, then try pushing again.
+
+---
+
+# Question: What should you check if you get an "authentication failed" error while pushing?
+
+**Answer:** Ensure you're logged in and have permission to push to the repository.
+
+---
+
+# Question: What might be the issue if Git reports "remote branch not found"?
+
+**Answer:** The branch name is likely incorrect or misspelled.
+
+---
+
 
 
 
