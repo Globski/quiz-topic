@@ -4128,6 +4128,120 @@ create mode 100644 img_hello_git.jpg
 
 ---
 
+# Question: What does the `git reset` command do?
+
+**Answer:** It moves the current branch (HEAD) to a different commit and optionally changes the staging area and working directory depending on the reset mode used.
+
+---
+
+# Question: What are the three main modes of `git reset`?
+
+**Answer:** `--soft`, `--mixed`, and `--hard`.
+
+---
+
+# Question: What does `git reset --soft <commit>` do?
+
+**Answer:** Moves HEAD to the specified commit and keeps all changes staged (in the index).
+
+---
+
+# Question: When is `git reset --soft` especially useful?
+
+**Answer:** When combining several commits into one or rewriting history while keeping work ready to commit.
+
+---
+
+# Question: What does `git reset --mixed <commit>` do?
+
+**Answer:** Moves HEAD to the specified commit, unstages any changes, but keeps them in the working directory.
+
+---
+
+# Question: What is the default mode of `git reset`?
+
+**Answer:** `--mixed`.
+
+---
+
+# Question: What does `git reset --hard <commit>` do?
+
+**Answer:** Moves HEAD to the specified commit and discards all changes in the staging area and working directory.
+
+---
+
+# Question: What is the command to unstage a specific file?
+
+**Answer:** `git reset <file>`
+
+---
+
+# Question: What does `git log --oneline` display?
+
+**Answer:** A concise list of commits with abbreviated hashes and commit messages.
+
+---
+
+# Question: How do you identify the commit to reset to?
+
+**Answer:** By using `git log --oneline` and noting the hash of the desired commit.
+
+---
+
+# Question: What part of the commit hash is typically used with `git reset`?
+
+**Answer:** The first seven characters.
+
+---
+
+# Question: In the example log, what commit was selected as the reset point?
+
+**Answer:** `9a9add8` (Added .gitignore).
+
+---
+
+# Question: What happens to changes after the target commit when you run `git reset --soft 9a9add8`?
+
+**Answer:** They are preserved and remain staged for a new commit.
+
+---
+
+# Question: What happens to changes after the target commit when you run `git reset --mixed 9a9add8`?
+
+**Answer:** They are preserved but unstaged.
+
+---
+
+# Question: What should you do after running any type of `git reset`?
+
+**Answer:** Review your changes using `git status` or manually check your files.
+
+---
+
+# Question: What are the risks of using `git reset`?
+
+**Answer:** It can rewrite commit history and potentially delete uncommitted changes if used with `--hard`.
+
+---
+
+# Question: What should you always do before using `git reset` on a shared repository?
+
+**Answer:** Communicate with your team, as it rewrites history and can affect others.
+
+---
+
+# Question: What command helps troubleshoot the state of your repo after a reset?
+
+**Answer:** `git status`
+
+---
+
+# Question: Why is caution advised when using `git reset`?
+
+**Answer:** Because it can permanently delete changes and alter commit history, especially with `--hard`.
+
+---
+
 
 
 
