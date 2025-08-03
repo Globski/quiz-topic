@@ -4555,6 +4555,147 @@ git rebase --skip
 
 ---
 
+# Question: What does `git reflog` do?
+
+**Answer:** `git reflog` records updates to the tip of branches and `HEAD`, allowing you to see past positions of `HEAD`, including changes made by mistake.
+
+---
+
+# Question: Why is `git reflog` useful?
+
+**Answer:** It helps recover lost commits, undo resets or merges, and view the complete history of `HEAD` and branches, including non-branch history changes.
+
+---
+
+# Question: When should you use `git reflog`?
+
+**Answer:** Use `git reflog` when you need to:
+
+* Recover lost commits or changes
+* Undo a reset or merge
+* View the history of `HEAD` and branches
+
+---
+
+# Question: What is the command to display the reflog?
+
+**Answer:**
+
+```bash
+git reflog
+```
+
+---
+
+# Question: What type of actions are shown in the output of `git reflog`?
+
+**Answer:** Actions like commits, resets, merges, checkouts, and other changes to the position of `HEAD`.
+
+---
+
+# Question: In the reflog entry `HEAD@{2}`, what does the `{2}` indicate?
+
+**Answer:** It indicates the position in the reflog history, with `{0}` being the most recent and larger numbers being older entries.
+
+---
+
+# Question: How can you use `git reflog` to recover from an accidental `git reset --hard`?
+
+**Answer:**
+
+1. Run `git reflog` to find the previous commit hash or `HEAD@{n}` reference.
+2. Use `git reset --hard HEAD@{n}` to restore to that point.
+
+---
+
+# Question: What is the command to restore your branch to a previous state using reflog?
+
+**Answer:**
+
+```bash
+git reset --hard HEAD@{n}
+```
+
+Replace `{n}` with the appropriate reflog index.
+
+---
+
+# Question: What does the command `git reset --hard HEAD@{2}` do?
+
+**Answer:** It resets the working directory and `HEAD` to the state recorded two steps back in the reflog.
+
+---
+
+# Question: What command is used to remove reflog entries older than 30 days for the `main` branch?
+
+**Answer:**
+
+```bash
+git reflog expire --expire=30.days refs/heads/main
+```
+
+---
+
+# Question: What is the purpose of the command `git gc --prune=now`?
+
+**Answer:** It triggers Git’s garbage collection to remove unreachable or expired objects, including old reflog entries.
+
+---
+
+# Question: What is the combined command to expire old reflog entries and clean up with garbage collection?
+
+**Answer:**
+
+```bash
+git reflog expire --expire=30.days refs/heads/main  
+git gc --prune=now
+```
+
+---
+
+# Question: What happens during garbage collection (`git gc`)?
+
+**Answer:** Git compresses objects, removes unreachable or expired objects, and cleans up storage.
+
+---
+
+# Question: Why might you want to manually clean the reflog?
+
+**Answer:** To reduce disk space, improve performance, or remove sensitive or obsolete history entries before sharing a repository.
+
+---
+
+# Question: What are some best practices for using `git reflog`?
+
+**Answer:**
+
+* Use it regularly to track changes
+* Use it to recover lost commits or undo mistakes
+* Clean up old entries using `git reflog expire`
+
+---
+
+# Question: What should you be cautious of when using `git reflog` to recover commits?
+
+**Answer:** You can overwrite existing changes if you're not careful when using `git reset` or other recovery commands.
+
+---
+
+# Question: How is the reflog cleaned by default?
+
+**Answer:** Git automatically expires old reflog entries based on its default settings unless overridden manually.
+
+---
+
+# Question: What are some troubleshooting steps if you face issues with `git reflog`?
+
+**Answer:**
+
+* Check Git documentation for details
+* Search online for specific error messages or use cases
+* Ask for help from the Git community or experienced users
+
+---
 
 
 
