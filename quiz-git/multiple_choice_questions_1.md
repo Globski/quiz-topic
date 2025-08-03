@@ -3761,7 +3761,47 @@ Ensure SSH keys or personal access tokens are properly set up.
 
 ---
 
+# Question: What is a fork in GitHub?
 
+**Answer:** A fork is a copy of a repository, typically used to contribute to someone else's project or start a new project based on the original.
+
+---
+
+# Question: Is `fork` a Git command?
+
+**Answer:** No, `fork` is not a command in Git; it is a feature offered by GitHub and other repository hosting services.
+
+---
+
+# Question: Why would you fork a repository on GitHub?
+
+**Answer:** To make changes to someone else's project or create your own project based on their code.
+
+---
+
+# Question: What is the prerequisite to adding code directly to someone else's Git repository?
+
+**Answer:** You must have access rights to the repository.
+
+---
+
+# Question: What does Git prevent if you don’t have access rights to a repository?
+
+**Answer:** Git prevents you from adding code directly to someone else's repository.
+
+---
+
+# Question: After forking a repository on GitHub, what do you obtain?
+
+**Answer:** Your own copy of the original repository.
+
+---
+
+# Question: After completing a fork on GitHub, what is typically the next step?
+
+**Answer:** Add a local copy of the forked repository to your machine to work with it.
+
+---
 
 
 
