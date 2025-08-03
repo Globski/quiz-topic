@@ -3803,6 +3803,144 @@ Ensure SSH keys or personal access tokens are properly set up.
 
 ---
 
+# Question: What is a clone in GitHub?
+
+**Answer:** A clone is a full copy of a repository, including all logging and versions of files, stored locally.
+
+---
+
+# Question: What is the purpose of cloning a forked repository?
+
+**Answer:** To create a local copy of the forked repository for continued work and development.
+
+---
+
+# Question: What is the command to clone a GitHub repository using HTTPS?
+
+**Answer:** `git clone https://github.com/w3schools-test/w3schools-test.github.io.git`
+
+---
+
+# Question: What message indicates that cloning a repository has been completed successfully?
+
+**Answer:** Messages like “Receiving objects: 100%” and “Resolving deltas: 100%” indicate successful cloning.
+
+---
+
+# Question: What directory is created after running a clone command without specifying a folder name?
+
+**Answer:** A directory named after the cloned project, e.g., `w3schools-test.github.io/`.
+
+---
+
+# Question: How can you specify a different directory name when cloning a repository?
+
+**Answer:** By adding the desired folder name after the repository URL, e.g., `git clone [URL] myfolder`.
+
+---
+
+# Question: What command shows the current status of your Git working directory?
+
+**Answer:** `git status`
+
+---
+
+# Question: What message does `git status` return if there are no changes?
+
+**Answer:**
+
+```
+On branch master  
+Your branch is up to date with 'origin/master'.  
+nothing to commit, working tree clean
+```
+
+---
+
+# Question: What command is used to confirm you have the full repository history?
+
+**Answer:** `git log`
+
+---
+
+# Question: What type of information is shown in the `git log` output?
+
+**Answer:** Commit hashes, author names, commit dates, and commit messages.
+
+---
+
+# Question: What command shows the current remote repository URLs?
+
+**Answer:** `git remote -v`
+
+---
+
+# Question: What is the default remote name Git assigns when a repository is cloned?
+
+**Answer:** `origin`
+
+---
+
+# Question: What command renames an existing Git remote?
+
+**Answer:** `git remote rename origin upstream`
+
+---
+
+# Question: After renaming the original remote to "upstream", what does `git remote -v` show?
+
+**Answer:**
+
+```
+upstream  https://github.com/w3schools-test/w3schools-test.github.io.git (fetch)  
+upstream  https://github.com/w3schools-test/w3schools-test.github.io.git (push)
+```
+
+---
+
+# Question: What command adds a new remote pointing to your own fork?
+
+**Answer:** `git remote add origin https://github.com/kaijim/w3schools-test.github.io.git`
+
+---
+
+# Question: After adding your own fork as `origin`, what will `git remote -v` show?
+
+**Answer:**
+
+```
+origin    https://github.com/kaijim/w3schools-test.github.io.git (fetch)  
+origin    https://github.com/kaijim/w3schools-test.github.io.git (push)  
+upstream  https://github.com/w3schools-test/w3schools-test.github.io.git (fetch)  
+upstream  https://github.com/w3schools-test/w3schools-test.github.io.git (push)
+```
+
+---
+
+# Question: According to Git conventions, what should you name your own remote repository?
+
+**Answer:** `origin`
+
+---
+
+# Question: According to Git conventions, what should you name the remote pointing to the original repository you forked from?
+
+**Answer:** `upstream`
+
+---
+
+# Question: What access do you typically have on the `origin` remote?
+
+**Answer:** Read and write access.
+
+---
+
+# Question: What access do you typically have on the `upstream` remote?
+
+**Answer:** Read-only access.
+
+---
+
 
 
 
