@@ -3027,6 +3027,271 @@ git push --set-upstream origin main
 
 ---
 
+# Question: Why is it important to pull from a remote repository before working on a project?
+
+**Answer:** To ensure your local copy is up to date with the most recent changes made by others on the team.
+
+---
+
+# Question: What two Git commands are combined when using `git pull`?
+
+**Answer:** `git fetch` and `git merge`
+
+---
+
+# Question: What does `git fetch` do?
+
+**Answer:** It downloads new data from a remote repository without changing local working files or branches.
+
+---
+
+# Question: What does `git merge` do?
+
+**Answer:** It combines the current branch with a specified branch, such as `origin/master`.
+
+---
+
+# Question: How do you fetch updates from the remote `origin` repository?
+
+**Answer:** `git fetch origin`
+
+---
+
+# Question: After running `git fetch`, what command shows whether your local branch is behind the remote branch?
+
+**Answer:** `git status`
+
+---
+
+# Question: In the output of `git status`, what does it mean if it says your branch is "behind 'origin/master' by 1 commit"?
+
+**Answer:** Your local branch is one commit behind the remote branch and can be updated using `git pull`.
+
+---
+
+# Question: What command shows the commit history of a remote-tracking branch?
+
+**Answer:** `git log origin/master`
+
+---
+
+# Question: What command displays the line-by-line differences between your local branch and the remote branch?
+
+**Answer:** `git diff origin/master`
+
+---
+
+# Question: What Git command is used to apply changes from `origin/master` to your current branch after fetching?
+
+**Answer:** `git merge origin/master`
+
+---
+
+# Question: What does the output line "Fast-forward" mean in the context of a Git merge?
+
+**Answer:** The local branch was simply moved forward to match the remote, with no conflicts or additional commits needed.
+
+---
+
+# Question: How can you confirm your local branch is fully up to date after a merge?
+
+**Answer:** Run `git status`, which should say "Your branch is up to date with 'origin/master'."
+
+---
+
+# Question: What single Git command can you use to both fetch and merge in one step?
+
+**Answer:** `git pull origin`
+
+---
+
+# Question: What does the output of `git pull origin` typically show?
+
+**Answer:** Remote activity logs (enumerating, counting, compressing objects), followed by the files updated and how many lines were changed.
+
+---
+
+# Question: Why might you choose to use `git fetch` and `git merge` separately instead of `git pull`?
+
+**Answer:** To preview and review changes before applying them, which helps prevent unintended merges.
+
+---
+
+# Question: What Git command is used to upload your local changes to a remote repository?
+
+**Answer:** `git push`
+
+---
+
+# Question: What must you do before using `git push`?
+
+**Answer:** You must first commit your changes using `git commit`.
+
+---
+
+# Question: What does `git push origin` do?
+
+**Answer:** It pushes the current local branch to the remote repository named `origin`.
+
+---
+
+# Question: When might a push be rejected by the remote repository?
+
+**Answer:** When it is not a fast-forward update, such as after a rebase.
+
+---
+
+# Question: What command can be used to override a non-fast-forward error when pushing?
+
+**Answer:** `git push --force origin feature-branch`
+
+---
+
+# Question: What is the risk of using `git push --force`?
+
+**Answer:** It can overwrite changes on the remote repository.
+
+---
+
+# Question: What is a safer alternative to `git push --force`?
+
+**Answer:** `git push --force-with-lease origin feature-branch`
+
+---
+
+# Question: What does `git push --tags` do?
+
+**Answer:** It pushes all local tags to the remote repository.
+
+---
+
+# Question: How do you push a specific tag to GitHub?
+
+**Answer:** `git push origin v1.0` (replace `v1.0` with the actual tag name)
+
+---
+
+# Question: What should you do if you receive a “non-fast-forward” error when pushing?
+
+**Answer:** Run `git pull --rebase` before trying to push again.
+
+---
+
+# Question: What might cause a “non-fast-forward” error during a push?
+
+**Answer:** Another contributor has pushed changes to the remote branch that your local branch does not have.
+
+---
+
+# Question: What should you check if you get an "authentication failed" error when pushing?
+
+**Answer:** Confirm you have access to the repository and that your credentials are correct.
+
+---
+
+# Question: How can you confirm that a push was successful on GitHub?
+
+**Answer:** Visit the GitHub repository and check that a new commit appears.
+
+---
+
+# Question: How do you create a new branch using GitHub's web interface?
+
+**Answer:** Click the current branch name (e.g., "main" or "master"), type a descriptive name, and click "Create branch."
+
+---
+
+# Question: How can you confirm which branch is active in the GitHub interface?
+
+**Answer:** Look at the branch button—it displays the name of the currently active branch.
+
+---
+
+# Question: After creating a new branch, how do you edit a file like `index.html` in that branch?
+
+**Answer:** Click the file name, make changes, and use the "Preview changes" tab to review edits.
+
+---
+
+# Question: What should you do after previewing your changes in the GitHub editor?
+
+**Answer:** Add a descriptive commit message and click "Commit changes."
+
+---
+
+# Question: How do you switch to another branch on GitHub’s website?
+
+**Answer:** Click the branch dropdown and select the desired branch.
+
+---
+
+# Question: What command is used in the terminal to switch to another branch?
+
+**Answer:** `git switch branch-name`
+
+---
+
+# Question: What command deletes a local Git branch from the command line?
+
+**Answer:** `git branch -d branch-name`
+
+---
+
+# Question: How do you delete a branch on GitHub using the web interface?
+
+**Answer:** Go to the branches page, locate the branch, and click the trash can icon.
+
+---
+
+# Question: What command deletes a remote Git branch?
+
+**Answer:** `git push origin --delete branch-name`
+
+---
+
+# Question: How do you rename a Git branch from the command line?
+
+**Answer:** `git branch -m old-name new-name`
+
+---
+
+# Question: How do you merge one branch into another using GitHub?
+
+**Answer:** Open a Pull Request (PR) and follow the prompts to complete the merge.
+
+---
+
+# Question: What is the command to merge a branch into your current branch using Git?
+
+**Answer:** `git merge branch-name`
+
+---
+
+# Question: How can you view all branches in a GitHub repository using the web interface?
+
+**Answer:** Click the branch dropdown at the top of the file list.
+
+---
+
+# Question: What command lists all local branches in the Git command line?
+
+**Answer:** `git branch`
+
+---
+
+# Question: What is a protected branch?
+
+**Answer:** A protected branch (e.g., `main`) is one that cannot be deleted or force-pushed to without special permissions.
+
+---
+
+# Question: Why are protected branches important in Git?
+
+**Answer:** They help prevent accidental changes to important branches.
+
+---
+
+
 
 
 
