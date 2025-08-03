@@ -364,3 +364,18 @@
 | `toArray()`      | Converts the jQuery object into a plain array of DOM elements  |
 
 ---
+
+# Question: What are the jQuery properties?
+
+### jQuery Properties
+
+| Property             | Description                                                            |
+| -------------------- | ---------------------------------------------------------------------- |
+| `context`            | **Removed** in v3.0 — originally held the context passed to `jQuery()` |
+| `jquery`             | Contains the jQuery version number                                     |
+| `jQuery.fx.interval` | Sets the animation firing rate in milliseconds                         |
+| `jQuery.fx.off`      | Globally disables/enables all animations                               |
+| `jQuery.support`     | Internal jQuery object representing browser features/bugs              |
+| `length`             | Returns the number of elements in the jQuery object                    |
+
+---
