@@ -124,3 +124,84 @@
 
 ---
 
+# Question: List commonly used jQuery event methods grouped by their category.
+
+### Event Attachment & Triggering Methods
+
+| Method / Property  | Description                                                                                    |
+| ------------------ | ---------------------------------------------------------------------------------------------- |
+| `bind()`           | **Deprecated (v3.0)**. Use `on()` instead. Attaches event handlers to elements                 |
+| `blur()`           | Attaches/Triggers the blur event                                                               |
+| `change()`         | Attaches/Triggers the change event                                                             |
+| `click()`          | Attaches/Triggers the click event                                                              |
+| `dblclick()`       | Attaches/Triggers the double click event                                                       |
+| `delegate()`       | **Deprecated (v3.0)**. Use `on()` instead. Attaches a handler to current/future child elements |
+| `die()`            | **Removed (v1.9)**. Removes handlers added with `live()`                                       |
+| `error()`          | **Removed (v3.0)**. Attaches/Triggers the error event                                          |
+| `focus()`          | Attaches/Triggers the focus event                                                              |
+| `focusin()`        | Attaches an event handler to the focusin event                                                 |
+| `focusout()`       | Attaches an event handler to the focusout event                                                |
+| `hover()`          | Attaches two handlers to the hover event                                                       |
+| `keydown()`        | Attaches/Triggers the keydown event                                                            |
+| `keypress()`       | Attaches/Triggers the keypress event                                                           |
+| `keyup()`          | Attaches/Triggers the keyup event                                                              |
+| `live()`           | **Removed (v1.9)**. Adds handlers to current/future elements                                   |
+| `load()`           | **Removed (v3.0)**. Attaches handler to load event                                             |
+| `mousedown()`      | Attaches/Triggers the mousedown event                                                          |
+| `mouseenter()`     | Attaches/Triggers the mouseenter event                                                         |
+| `mouseleave()`     | Attaches/Triggers the mouseleave event                                                         |
+| `mousemove()`      | Attaches/Triggers the mousemove event                                                          |
+| `mouseout()`       | Attaches/Triggers the mouseout event                                                           |
+| `mouseover()`      | Attaches/Triggers the mouseover event                                                          |
+| `mouseup()`        | Attaches/Triggers the mouseup event                                                            |
+| `off()`            | Removes handlers attached with `on()`                                                          |
+| `on()`             | Attaches event handlers to elements                                                            |
+| `one()`            | Attaches handlers that trigger only once per element                                           |
+| `ready()`          | Executes a function when the DOM is fully loaded                                               |
+| `resize()`         | Attaches/Triggers the resize event                                                             |
+| `scroll()`         | Attaches/Triggers the scroll event                                                             |
+| `select()`         | Attaches/Triggers the select event                                                             |
+| `submit()`         | Attaches/Triggers the submit event                                                             |
+| `toggle()`         | **Removed (v1.9)**. Attaches multiple toggle functions for click events                        |
+| `trigger()`        | Triggers all events bound to selected elements                                                 |
+| `triggerHandler()` | Triggers handlers for a specified event, without bubbling                                      |
+| `unbind()`         | **Deprecated (v3.0)**. Use `off()` instead. Removes an event handler                           |
+| `undelegate()`     | **Deprecated (v3.0)**. Use `off()` instead. Removes delegated handler                          |
+| `unload()`         | **Removed (v3.0)**. Use `on()` or `trigger()` instead                                          |
+
+---
+
+### Event Object Properties and Methods
+
+| Method / Property                       | Description                                                   |
+| --------------------------------------- | ------------------------------------------------------------- |
+| `event.currentTarget`                   | The current DOM element during the bubbling phase             |
+| `event.data`                            | Optional data passed to the event method                      |
+| `event.delegateTarget`                  | Element where the handler was attached                        |
+| `event.isDefaultPrevented()`            | Returns whether `event.preventDefault()` was called           |
+| `event.isImmediatePropagationStopped()` | Returns whether `event.stopImmediatePropagation()` was called |
+| `event.isPropagationStopped()`          | Returns whether `event.stopPropagation()` was called          |
+| `event.namespace`                       | Namespace specified when the event was triggered              |
+| `event.pageX`                           | Mouse X position relative to the document                     |
+| `event.pageY`                           | Mouse Y position relative to the document                     |
+| `event.preventDefault()`                | Prevents the default action for the event                     |
+| `event.relatedTarget`                   | Element being entered/exited on mouse movement                |
+| `event.result`                          | Last value returned by an event handler                       |
+| `event.stopImmediatePropagation()`      | Prevents further handlers from being called                   |
+| `event.stopPropagation()`               | Stops the event from bubbling up the DOM                      |
+| `event.target`                          | The element that triggered the event                          |
+| `event.timeStamp`                       | Time (ms) when the event was triggered                        |
+| `event.type`                            | Type of the triggered event                                   |
+| `event.which`                           | Keyboard key or mouse button pressed                          |
+
+---
+
+### Utility Methods
+
+| Method / Property | Description                                                              |
+| ----------------- | ------------------------------------------------------------------------ |
+| `$.proxy()`       | Returns a new function with a specific context from an existing function |
+
+---
+
+
