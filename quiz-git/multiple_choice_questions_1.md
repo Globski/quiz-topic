@@ -3482,6 +3482,97 @@ git commit -m "Update readme for GitHub"
 
 ---
 
+# **Question: What is the main purpose of the GitHub Flow?**
+
+**Answer:** To provide a simple, effective workflow for teams to collaborate on code safely and efficiently using Git and GitHub.
+
+---
+
+# **Question: What is the first step in the GitHub Flow?**
+
+**Answer:** Create a branch.
+
+---
+
+# **Question: Why do you create a new branch instead of working directly on the master/main branch?**
+
+**Answer:** To experiment or make changes without affecting the deployable master branch.
+
+---
+
+# **Question: Why is it important to use descriptive names for your branches?**
+
+**Answer:** So everyone can easily understand the purpose of the branch.
+
+---
+
+# **Question: What is the second step in GitHub Flow after creating a branch?**
+
+**Answer:** Make changes and add commits.
+
+---
+
+# **Question: What should each commit message include?**
+
+**Answer:** A clear explanation of what has changed and why.
+
+---
+
+# **Question: What is the third step in the GitHub Flow?**
+
+**Answer:** Open a pull request.
+
+---
+
+# **Question: What is the purpose of a pull request?**
+
+**Answer:** To notify others that you have changes ready for review or merging.
+
+---
+
+# **Question: What happens during the review phase of the GitHub Flow?**
+
+**Answer:** Team members review the changes, discuss feedback, and suggest improvements.
+
+---
+
+# **Question: What can you do if you receive feedback on a pull request?**
+
+**Answer:** Make improvements and push new commits to the same pull request.
+
+---
+
+# **Question: What is the purpose of the deploy step in GitHub Flow?**
+
+**Answer:** To test the branch in a production-like environment before merging.
+
+---
+
+# **Question: What should a team do if issues arise after deployment from a branch?**
+
+**Answer:** Revert to the master branch to undo the changes.
+
+---
+
+# **Question: What is the final step of the GitHub Flow?**
+
+**Answer:** Merge the branch into the master branch.
+
+---
+
+# **Question: Why are comments and commit messages important in GitHub Flow?**
+
+**Answer:** They help track changes, explain decisions, and make collaboration easier.
+
+---
+
+# **Question: What helpful feature does GitHub provide in pull requests for tracking all activity?**
+
+**Answer:** A unified Pull Request view showing all commits and feedback.
+
+---
+
+
 
 
 
