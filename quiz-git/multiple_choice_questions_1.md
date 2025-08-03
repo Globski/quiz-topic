@@ -3941,6 +3941,193 @@ upstream  https://github.com/w3schools-test/w3schools-test.github.io.git (push)
 
 ---
 
+# Question: What is the purpose of pushing changes to your GitHub fork?
+
+**Answer:** To upload committed changes from your local Git repository to your forked repository on GitHub.
+
+---
+
+# Question: What command is used to push local commits to your GitHub fork?
+
+**Answer:** `git push origin`
+
+---
+
+# Question: What message indicates a successful `git push` operation?
+
+**Answer:**
+
+```
+To https://github.com/kaijim/w3schools-test.github.io.git  
+facaeae..ebb1a5c  master -> master
+```
+
+---
+
+# Question: After pushing changes to your fork on GitHub, what is the next step to propose these changes to the original repository?
+
+**Answer:** Create a Pull Request.
+
+---
+
+# Question: Where do you go to initiate a Pull Request on GitHub?
+
+**Answer:** On your forked GitHub repository page, where the option to "Compare & pull request" becomes available.
+
+---
+
+# Question: What should you include when creating a Pull Request?
+
+**Answer:** An explanation or comment for the repository administrators to describe the changes and why they should be merged.
+
+---
+
+# Question: What happens after a Pull Request is created?
+
+**Answer:** Members with access to the original repository can review, comment on, and merge the proposed changes.
+
+---
+
+# Question: What can repository administrators do upon reviewing a Pull Request?
+
+**Answer:** Comment on the changes and merge the Pull Request into the main branch (typically `master`).
+
+---
+
+# Question: What is the final step in incorporating changes from a Pull Request?
+
+**Answer:** Confirm the merge, which integrates the changes into the original repository’s master branch.
+
+---
+
+# Question: How does GitHub indicate that a Pull Request has been successfully merged?
+
+**Answer:** The Pull Request is marked as merged, and the changes appear in the master branch of the original repository.
+
+---
+
+
+# Question: What does the `git revert` command do?
+
+**Answer:** It undoes a previous commit by creating a new commit that reverses the changes.
+
+---
+
+# Question: Why is `git revert` considered the safest way to undo changes in a shared repository?
+
+**Answer:** Because it keeps the commit history intact.
+
+---
+
+# Question: What does the command `git revert HEAD` do?
+
+**Answer:** It reverts the most recent commit.
+
+---
+
+# Question: How do you revert a specific commit in Git?
+
+**Answer:** Use `git revert <commit-hash>`.
+
+---
+
+# Question: What does `git revert HEAD~2` do?
+
+**Answer:** It reverts the third most recent commit (two commits before HEAD).
+
+---
+
+# Question: What is the purpose of the `--no-edit` option with `git revert`?
+
+**Answer:** It skips the commit message editor and uses the default generated message.
+
+---
+
+# Question: What command shows a concise list of previous commits?
+
+**Answer:** `git log --oneline`
+
+---
+
+# Question: What does the `git log --oneline` command output?
+
+**Answer:** A compact summary of commits showing commit hashes and messages.
+
+---
+
+# Question: What is the purpose of running `git log --oneline` before reverting?
+
+**Answer:** To identify the specific commit hash to revert.
+
+---
+
+# Question: What is the result of running `git revert HEAD --no-edit`?
+
+**Answer:** A new commit is created that reverts the latest commit without opening an editor for the message.
+
+---
+
+# Question: What happens to the file system after running a successful `git revert`?
+
+**Answer:** A new commit is added that undoes the changes from the reverted commit, possibly affecting files (e.g., creating or deleting).
+
+---
+
+# Question: What does a successful `git revert` log entry look like?
+
+**Answer:**
+
+```
+[master e56ba1f] Revert "Just a regular update, definitely no accidents here..."  
+Date: Thu Apr 22 10:50:13 2021 +0200  
+1 file changed, 0 insertions(+), 0 deletions(-)  
+create mode 100644 img_hello_git.jpg
+```
+
+---
+
+# Question: How can you confirm that a `git revert` has created a new commit?
+
+**Answer:** By running `git log --oneline` and checking that a new commit message starting with “Revert” appears at the top.
+
+---
+
+# Question: What is the main difference between `git revert` and `git reset`?
+
+**Answer:** `git revert` creates a new commit that reverses changes, preserving history, while `git reset` rewrites history by moving HEAD and optionally discarding commits.
+
+---
+
+# Question: When should you prefer `git revert` over `git reset`?
+
+**Answer:** When working in a shared repository where preserving commit history is important.
+
+---
+
+# Question: What should you do if you encounter the error "could not revert..."?
+
+**Answer:** Run `git revert --abort` to cancel the revert process.
+
+---
+
+# Question: What should you do if you get the error "could not apply..." during a revert?
+
+**Answer:** Run `git revert --continue` to proceed with the revert process after resolving conflicts.
+
+---
+
+# Question: Why is `git revert HEAD --no-edit` commonly used in scripts or automation?
+
+**Answer:** Because it avoids prompting for a commit message, allowing for non-interactive execution.
+
+---
+
+# Question: What does it mean when a commit shows "create mode 100644" in the revert output?
+
+**Answer:** A new file was created as part of the reverted changes.
+
+---
+
 
 
 
