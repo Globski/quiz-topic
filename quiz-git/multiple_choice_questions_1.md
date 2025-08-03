@@ -3291,6 +3291,101 @@ git push --set-upstream origin main
 
 ---
 
+# Question: What is the purpose of pulling from your GitHub repository when working on a branch?
+
+**Answer:** To ensure your local repository is up to date with the latest changes, including any new branches added remotely.
+
+---
+
+# Question: What does the command `git pull` do?
+
+**Answer:** It downloads and integrates changes from the remote repository into the current local branch.
+
+---
+
+# Question: What does this line mean in the `git pull` output: `* [new branch] html-skeleton -> origin/html-skeleton`?
+
+**Answer:** A new branch called `html-skeleton` has been detected on the remote `origin`.
+
+---
+
+# Question: After running `git pull`, how can you check your current branch and status?
+
+**Answer:** Use `git status` to see the current branch and sync status.
+
+---
+
+# Question: What does `git status` show if you're on the master branch and it's up to date?
+
+**Answer:**
+
+```
+On branch master  
+Your branch is up to date with 'origin/master'.  
+nothing to commit, working tree clean
+```
+
+---
+
+# Question: What command lists all local branches?
+
+**Answer:** `git branch`
+
+---
+
+# Question: What does the asterisk (`*`) indicate in the output of `git branch`?
+
+**Answer:** It shows which branch is currently checked out.
+
+---
+
+# Question: What command shows all local **and remote** branches?
+
+**Answer:** `git branch -a`
+
+---
+
+# Question: What command shows only remote branches?
+
+**Answer:** `git branch -r`
+
+---
+
+# Question: If `remotes/origin/html-skeleton` appears in `git branch -a`, but not in `git branch`, what does that mean?
+
+**Answer:** The branch `html-skeleton` exists remotely but hasn’t been checked out locally yet.
+
+---
+
+# Question: What command is used to check out a remote branch and track it locally?
+
+**Answer:** `git checkout html-skeleton`
+
+---
+
+# Question: What does Git automatically do when you run `git checkout html-skeleton` for the first time?
+
+**Answer:** It creates a new local branch `html-skeleton` and sets it to track the remote branch `origin/html-skeleton`.
+
+---
+
+# Question: How do you confirm that your newly checked-out branch is up to date with the remote?
+
+**Answer:** Run `git pull` and verify the message "Already up to date."
+
+---
+
+# Question: After checking out the remote branch, how can you verify which branch you’re now working in?
+
+**Answer:** Run `git branch`, and the asterisk (`*`) will indicate the current branch.
+
+---
+
+# Question: What should you do after pulling a remote branch to verify that the changes are present?
+
+**Answer:** Open your preferred code editor and review the pulled files.
+
+---
 
 
 
