@@ -2961,6 +2961,73 @@ git push --set-upstream origin main
 
 ---
 
+# Question: What feature does GitHub provide for editing files without using Git locally?
+
+**Answer:** GitHub allows you to edit files directly in your browser.
+
+---
+
+# Question: What is one common use case for editing code directly on GitHub?
+
+**Answer:** Making quick changes without needing Git on your computer.
+
+---
+
+# Question: How do you begin editing a file in a GitHub repository through the web interface?
+
+**Answer:** Click the file name, then click the Edit button (pencil icon).
+
+---
+
+# Question: Can you edit files other than README.md directly on GitHub?
+
+**Answer:** Yes, you can edit any file in the repository.
+
+---
+
+# Question: What should you write after making edits to a file on GitHub?
+
+**Answer:** A short, clear description of the changes in the Commit message box.
+
+---
+
+# Question: Why is it important to write a clear commit message?
+
+**Answer:** It helps others understand what was changed and why.
+
+---
+
+# Question: What feature allows you to verify the differences before committing edits on GitHub?
+
+**Answer:** The **Preview changes** button.
+
+---
+
+# Question: What branch is selected by default when committing changes in GitHub’s editor?
+
+**Answer:** The `main` or `master` branch.
+
+---
+
+# Question: What should you do for larger changes instead of committing directly to `main` or `master`?
+
+**Answer:** Create a new branch for the commit and start a pull request.
+
+---
+
+# Question: What happens when you select “Create a new branch for this commit” in the GitHub editor?
+
+**Answer:** GitHub suggests a new branch name and allows you to open a pull request.
+
+---
+
+# Question: What action should follow after creating a new branch with your changes?
+
+**Answer:** Open a pull request to propose the changes.
+
+---
+
+
 
 
 
