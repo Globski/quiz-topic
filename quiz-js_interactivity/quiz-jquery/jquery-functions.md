@@ -280,3 +280,45 @@
 
 ---
 
+Here is the final section of your `html-element-by-category.md` file, covering **jQuery Traversing Methods**, formatted with a clear markdown table:
+
+---
+
+# Question: List commonly used jQuery traversing methods.
+
+### Traversing Methods
+
+| Method           | Description                                                               |
+| ---------------- | ------------------------------------------------------------------------- |
+| `add()`          | Adds elements to the set of matched elements                              |
+| `addBack()`      | Adds the previous set of elements to the current set                      |
+| `andSelf()`      | **Deprecated (v1.8)**. Alias for `addBack()`                              |
+| `children()`     | Returns all direct children of the selected element                       |
+| `closest()`      | Returns the first ancestor of the selected element                        |
+| `contents()`     | Returns all direct children, including text and comment nodes             |
+| `each()`         | Executes a function for each matched element                              |
+| `end()`          | Ends the most recent filtering operation and reverts to the previous set  |
+| `eq()`           | Returns the element at the specified index                                |
+| `filter()`       | Filters matched elements based on a selector or function                  |
+| `find()`         | Returns descendant elements of the selected element                       |
+| `first()`        | Returns the first element from the set                                    |
+| `has()`          | Returns elements that contain specified descendant elements               |
+| `is()`           | Checks if any matched element matches the selector/element/jQuery object  |
+| `last()`         | Returns the last element from the set                                     |
+| `map()`          | Applies a function to each element and returns a jQuery object of results |
+| `next()`         | Returns the next sibling element                                          |
+| `nextAll()`      | Returns all next sibling elements                                         |
+| `nextUntil()`    | Returns all next siblings between two selectors                           |
+| `not()`          | Returns elements that do not match a given criteria                       |
+| `offsetParent()` | Returns the first positioned parent element                               |
+| `parent()`       | Returns the direct parent element                                         |
+| `parents()`      | Returns all ancestor elements                                             |
+| `parentsUntil()` | Returns all ancestor elements between two selectors                       |
+| `prev()`         | Returns the previous sibling element                                      |
+| `prevAll()`      | Returns all previous sibling elements                                     |
+| `prevUntil()`    | Returns all previous siblings between two selectors                       |
+| `siblings()`     | Returns all sibling elements                                              |
+| `slice()`        | Reduces the set of matched elements to a subset defined by indices        |
+
+---
+
