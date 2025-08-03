@@ -3572,6 +3572,82 @@ git commit -m "Update readme for GitHub"
 
 ---
 
+# **Question: What is GitHub Pages used for?**
+
+**Answer:** It is used to publish a website directly from a GitHub repository.
+
+---
+
+# **Question: What name must your repository have to publish a user site with GitHub Pages?**
+
+**Answer:** `your-username.github.io`
+
+---
+
+# **Question: What must you include in your GitHub Pages repository to create a website?**
+
+**Answer:** Website files like `index.html`.
+
+---
+
+# **Question: Which Git command adds a remote origin pointing to your GitHub Pages repository?**
+
+**Answer:**
+
+```bash
+git remote add origin https://github.com/your-username/your-username.github.io.git
+```
+
+---
+
+# **Question: What Git command pushes your site to GitHub for the first time?**
+
+**Answer:**
+
+```bash
+git push -u origin master
+```
+
+---
+
+# **Question: Where do you go to set the source branch and folder for GitHub Pages?**
+
+**Answer:**
+Settings > Pages in your GitHub repository.
+
+---
+
+# **Question: What default source branch and folder does GitHub Pages use?**
+
+**Answer:**
+The `main` (or `master`) branch and the root folder.
+
+---
+
+# **Question: After enabling GitHub Pages, what will your site URL typically look like?**
+
+**Answer:**
+`https://your-username.github.io/`
+
+---
+
+# **Question: How do you disable a GitHub Pages site?**
+
+**Answer:**
+Go to **Settings > Pages** and delete or remove the source branch/folder.
+
+---
+
+# **Question: What Git command deletes the GitHub Pages branch from the remote?**
+
+**Answer:**
+
+```bash
+git push origin --delete gh-pages
+```
+
+---
+
 
 
 
