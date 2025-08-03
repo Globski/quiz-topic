@@ -87,6 +87,46 @@
 
 ---
 
+# SQL Statements & Syntax Reference
+
+| SQL Statement     | Syntax                                                                                           |
+|-------------------|--------------------------------------------------------------------------------------------------|
+| **AND / OR**      | SELECT column_name(s)<br>FROM table_name<br>WHERE condition AND/OR condition                     |
+| **ALTER TABLE**   | ALTER TABLE table_name ADD column_name datatype<br>ALTER TABLE table_name DROP COLUMN column_name|
+| **AS (alias)**    | SELECT column_name AS column_alias FROM table_name<br>SELECT column_name FROM table_name AS alias|
+| **BETWEEN**       | SELECT column_name(s) FROM table_name WHERE column_name BETWEEN value1 AND value2               |
+| **CREATE DATABASE** | CREATE DATABASE database_name                                                                  |
+| **CREATE TABLE**  | CREATE TABLE table_name (<br>column_name1 data_type,<br>column_name2 data_type,<br>...)          |
+| **CREATE INDEX**  | CREATE INDEX index_name ON table_name (column_name)<br>CREATE UNIQUE INDEX index_name ON table_name (column_name) |
+| **CREATE VIEW**   | CREATE VIEW view_name AS SELECT column_name(s) FROM table_name WHERE condition                  |
+| **DELETE**        | DELETE FROM table_name WHERE some_column = some_value<br>DELETE FROM table_name<br>DELETE * FROM table_name |
+| **DROP DATABASE** | DROP DATABASE database_name                                                                      |
+| **DROP INDEX**    | DROP INDEX table_name.index_name (SQL Server)<br>DROP INDEX index_name ON table_name (MS Access)<br>DROP INDEX index_name (DB2/Oracle)<br>ALTER TABLE table_name DROP INDEX index_name (MySQL) |
+| **DROP TABLE**    | DROP TABLE table_name                                                                            |
+| **EXISTS**        | IF EXISTS (SELECT * FROM table_name WHERE id = ?)<br>BEGIN ... END<br>ELSE BEGIN ... END         |
+| **GROUP BY**      | SELECT column_name, aggregate_function(column_name)<br>FROM table_name<br>WHERE condition<br>GROUP BY column_name |
+| **HAVING**        | SELECT column_name, aggregate_function(column_name)<br>FROM table_name<br>WHERE condition<br>GROUP BY column_name<br>HAVING aggregate_function(column_name) operator value |
+| **IN**            | SELECT column_name(s) FROM table_name WHERE column_name IN (value1, value2, ...)                |
+| **INSERT INTO**   | INSERT INTO table_name VALUES (value1, value2, ...)<br>INSERT INTO table_name (col1, col2, ...) VALUES (val1, val2, ...) |
+| **INNER JOIN**    | SELECT column_name(s) FROM table_name1 INNER JOIN table_name2 ON table1.column = table2.column  |
+| **LEFT JOIN**     | SELECT column_name(s) FROM table_name1 LEFT JOIN table_name2 ON table1.column = table2.column   |
+| **RIGHT JOIN**    | SELECT column_name(s) FROM table_name1 RIGHT JOIN table_name2 ON table1.column = table2.column  |
+| **FULL JOIN**     | SELECT column_name(s) FROM table_name1 FULL JOIN table_name2 ON table1.column = table2.column   |
+| **LIKE**          | SELECT column_name(s) FROM table_name WHERE column_name LIKE pattern                            |
+| **ORDER BY**      | SELECT column_name(s) FROM table_name ORDER BY column_name [ASC|DESC]                           |
+| **SELECT**        | SELECT column_name(s) FROM table_name                                                           |
+| **SELECT \***     | SELECT * FROM table_name                                                                         |
+| **SELECT DISTINCT** | SELECT DISTINCT column_name(s) FROM table_name                                                 |
+| **SELECT INTO**   | SELECT * INTO new_table_name [IN externaldatabase] FROM old_table_name<br>SELECT column_name(s) INTO new_table_name [IN externaldatabase] FROM old_table_name |
+| **SELECT TOP**    | SELECT TOP number|percent column_name(s) FROM table_name                                        |
+| **TRUNCATE TABLE**| TRUNCATE TABLE table_name                                                                        |
+| **UNION**         | SELECT column_name(s) FROM table_name1 UNION SELECT column_name(s) FROM table_name2             |
+| **UNION ALL**     | SELECT column_name(s) FROM table_name1 UNION ALL SELECT column_name(s) FROM table_name2         |
+| **UPDATE**        | UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE some_column = some_value     |
+| **WHERE**         | SELECT column_name(s) FROM table_name WHERE column_name operator value                          |
+
+---
+
 # Question: List some commonly used MySQL functions grouped by their category.
 
 ### MySQL String Functions
