@@ -2654,3 +2654,42 @@ git push --set-upstream origin main
 | `warn()`           | Outputs a warning message to the console                                                  |
 
 ---
+
+# Question: What is the first step to using GitHub for version control and collaboration?
+
+**Answer:** The first step is to sign up for a free GitHub account.
+
+---
+
+# Question: What email address should you use when signing up for GitHub?
+
+**Answer:** You should use the same email address you plan to use for your Git configuration.
+
+---
+
+# Question: How do you create a new repository on GitHub after signing in?
+
+**Answer:** Click the "New" button to create a new repository.
+
+---
+
+# Question: What details are required when filling out the form to create a new repository on GitHub?
+
+**Answer:** You need to provide the repository name, description, choose public or private visibility, and then click "Create repository."
+
+---
+
+# Question: What is a remote repository?
+
+**Answer:** A remote repository is a version of your project hosted on the internet.
+
+---
+
+# Question: Why is GitHub a popular choice for hosting remote repositories?
+
+**Answer:** GitHub enables collaboration with others and serves as a backup for your code.
+
+---
+
+
+
