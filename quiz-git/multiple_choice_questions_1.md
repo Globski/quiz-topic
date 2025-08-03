@@ -3648,6 +3648,119 @@ git push origin --delete gh-pages
 
 ---
 
+# **Question: What is the main benefit of using a Git GUI client?**
+
+**Answer:**
+It lets users interact with Git through buttons and menus instead of typing commands.
+
+---
+
+# **Question: List three advantages of using a Git GUI client.**
+
+**Answer:**
+
+1. See branches and changes visually
+2. Stage, commit, and push with clicks
+3. Handle merge conflicts with helpful tools
+
+---
+
+# **Question: Name five popular Git GUI clients.**
+
+**Answer:**
+
+1. GitHub Desktop
+2. GitKraken
+3. Sourcetree
+4. Git GUI
+5. VS Code Git
+
+---
+
+# **Question: Which Git GUI client is beginner-friendly and works best with GitHub?**
+
+**Answer:**
+GitHub Desktop
+
+---
+
+# **Question: What is one limitation of GitHub Desktop?**
+
+**Answer:**
+It has fewer advanced features and is less flexible for non-GitHub platforms.
+
+---
+
+# **Question: What is a key feature of GitKraken that sets it apart?**
+
+**Answer:**
+A visual commit graph and built-in merge/conflict tools.
+
+---
+
+# **Question: What is one drawback of using GitKraken?**
+
+**Answer:**
+Some features require a paid license.
+
+---
+
+# **Question: Which Git GUI client is made by Atlassian and is commonly used with Bitbucket?**
+
+**Answer:**
+Sourcetree
+
+---
+
+# **Question: What is a con of using Sourcetree for beginners?**
+
+**Answer:**
+Its interface can be overwhelming.
+
+---
+
+# **Question: Which Git GUI is included by default with Git for Windows?**
+
+**Answer:**
+Git GUI
+
+---
+
+# **Question: What is a limitation of Git GUI?**
+
+**Answer:**
+It has a basic interface with fewer features than other clients.
+
+---
+
+# **Question: How does VS Code support Git operations?**
+
+**Answer:**
+Via the built-in Source Control panel for staging, committing, pushing, pulling, and resolving conflicts.
+
+---
+
+# **Question: What is one drawback of using Git support in VS Code compared to other GUI clients?**
+
+**Answer:**
+It is not as visual for history/branches.
+
+---
+
+# **Question: What should you do if changes aren't showing up in your Git GUI client?**
+
+**Answer:**
+Refresh or re-scan the repository in the client.
+
+---
+
+# **Question: What should you do if you face authentication issues in your Git GUI client?**
+
+**Answer:**
+Ensure SSH keys or personal access tokens are properly set up.
+
+---
+
 
 
 
