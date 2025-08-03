@@ -280,10 +280,6 @@
 
 ---
 
-Here is the final section of your `html-element-by-category.md` file, covering **jQuery Traversing Methods**, formatted with a clear markdown table:
-
----
-
 # Question: List commonly used jQuery traversing methods.
 
 ### Traversing Methods
@@ -319,6 +315,34 @@ Here is the final section of your `html-element-by-category.md` file, covering *
 | `prevUntil()`    | Returns all previous siblings between two selectors                       |
 | `siblings()`     | Returns all sibling elements                                              |
 | `slice()`        | Reduces the set of matched elements to a subset defined by indices        |
+
+---
+
+# Question: List commonly used jQuery AJAX methods.
+
+### AJAX Methods
+
+| Method              | Description                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| `$.ajax()`          | Performs an asynchronous AJAX request                        |
+| `$.ajaxPrefilter()` | Modify or pre-process options before an AJAX request is sent |
+| `$.ajaxSetup()`     | Sets default values for future AJAX requests                 |
+| `$.ajaxTransport()` | Creates the transport mechanism for data transfer in AJAX    |
+| `$.get()`           | Loads data using an AJAX HTTP GET request                    |
+| `$.getJSON()`       | Loads JSON-encoded data using an HTTP GET request            |
+| `$.parseJSON()`     | **Deprecated** in v3.0 — use `JSON.parse()` instead          |
+| `$.getScript()`     | Loads and executes a JavaScript file via AJAX                |
+| `$.param()`         | Serializes an array or object for use in a query string      |
+| `$.post()`          | Loads data using an AJAX HTTP POST request                   |
+| `ajaxComplete()`    | Triggered when an AJAX request completes                     |
+| `ajaxError()`       | Triggered when an AJAX request fails                         |
+| `ajaxSend()`        | Triggered before an AJAX request is sent                     |
+| `ajaxStart()`       | Triggered when the first AJAX request starts                 |
+| `ajaxStop()`        | Triggered when all AJAX requests have completed              |
+| `ajaxSuccess()`     | Triggered when an AJAX request is successful                 |
+| `load()`            | Loads data from a server into the selected element           |
+| `serialize()`       | Serializes form data for submission                          |
+| `serializeArray()`  | Serializes form data into an array of name/value pairs       |
 
 ---
 
