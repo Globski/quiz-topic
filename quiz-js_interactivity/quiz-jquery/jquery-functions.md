@@ -230,3 +230,53 @@
 
 ---
 
+# Question: List commonly used jQuery methods for HTML and CSS manipulation.
+
+### HTML / CSS Manipulation Methods
+
+| Method           | Description                                                        |
+| ---------------- | ------------------------------------------------------------------ |
+| `addClass()`     | Adds one or more class names to selected elements                  |
+| `after()`        | Inserts content after selected elements                            |
+| `append()`       | Inserts content at the end of selected elements                    |
+| `appendTo()`     | Inserts HTML elements at the end of selected elements              |
+| `attr()`         | Sets or returns attributes/values of selected elements             |
+| `before()`       | Inserts content before selected elements                           |
+| `clone()`        | Makes a copy of selected elements                                  |
+| `css()`          | Sets or returns one or more style properties for selected elements |
+| `detach()`       | Removes selected elements (keeps data and events)                  |
+| `empty()`        | Removes all child nodes and content from selected elements         |
+| `hasClass()`     | Checks if any selected element has a specified class               |
+| `height()`       | Sets or returns the height of selected elements                    |
+| `html()`         | Sets or returns the content of selected elements                   |
+| `innerHeight()`  | Returns the height (including padding) of an element               |
+| `innerWidth()`   | Returns the width (including padding) of an element                |
+| `insertAfter()`  | Inserts HTML elements after selected elements                      |
+| `insertBefore()` | Inserts HTML elements before selected elements                     |
+| `offset()`       | Sets or returns the offset coordinates relative to the document    |
+| `offsetParent()` | Returns the first positioned parent element                        |
+| `outerHeight()`  | Returns the height (including padding and border) of an element    |
+| `outerWidth()`   | Returns the width (including padding and border) of an element     |
+| `position()`     | Returns the position relative to the parent element                |
+| `prepend()`      | Inserts content at the beginning of selected elements              |
+| `prependTo()`    | Inserts HTML elements at the beginning of selected elements        |
+| `prop()`         | Sets or returns properties/values of selected elements             |
+| `remove()`       | Removes the selected elements (including data and events)          |
+| `removeAttr()`   | Removes one or more attributes from selected elements              |
+| `removeClass()`  | Removes one or more classes from selected elements                 |
+| `removeProp()`   | Removes a property set by `prop()`                                 |
+| `replaceAll()`   | Replaces selected elements with new HTML elements                  |
+| `replaceWith()`  | Replaces selected elements with new content                        |
+| `scrollLeft()`   | Sets or returns the horizontal scroll position                     |
+| `scrollTop()`    | Sets or returns the vertical scroll position                       |
+| `text()`         | Sets or returns the text content of selected elements              |
+| `toggleClass()`  | Toggles adding/removing one or more classes                        |
+| `unwrap()`       | Removes the parent element of the selected elements                |
+| `val()`          | Sets or returns the value of form elements                         |
+| `width()`        | Sets or returns the width of selected elements                     |
+| `wrap()`         | Wraps HTML element(s) around each selected element                 |
+| `wrapAll()`      | Wraps HTML element(s) around all selected elements                 |
+| `wrapInner()`    | Wraps HTML element(s) around the content of each element           |
+
+---
+
