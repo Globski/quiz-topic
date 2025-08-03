@@ -4370,6 +4370,191 @@ Date: Thu Apr 22 12:18:52 2021 +0200
 
 ---
 
+# Question: What does Git rebase do?
+
+**Answer:** Git rebase moves or combines a sequence of commits to a new base commit, typically to maintain a clean, linear project history.
+
+---
+
+# Question: What are the main benefits of using Git rebase?
+
+**Answer:** Git rebase helps keep a clean, linear project history, avoids unnecessary merge commits, combines multiple commits into one, and allows editing or reordering commits.
+
+---
+
+# Question: When should you use Git rebase?
+
+**Answer:** Use Git rebase when you want to:
+
+* Keep a clean, linear history
+* Avoid merge commits
+* Combine commits
+* Edit or reorder commits before sharing
+
+---
+
+# Question: What is the purpose of `git rebase main`?
+
+**Answer:** It reapplies the current branch's changes on top of the latest `main` branch, effectively updating the feature branch with changes from `main`.
+
+---
+
+# Question: What are the CLI commands to rebase a feature branch onto `main`?
+
+**Answer:**
+
+```bash
+git checkout feature-branch  
+git rebase main  
+```
+
+---
+
+# Question: What is interactive rebase?
+
+**Answer:** Interactive rebase (`git rebase -i <base>`) allows you to edit, reorder, squash, or fix up commits before a certain commit, often used to clean up commit history.
+
+---
+
+# Question: What command starts an interactive rebase for the last 3 commits?
+
+**Answer:**
+
+```bash
+git rebase -i HEAD~3
+```
+
+---
+
+# Question: In an interactive rebase, what does the `pick` command do?
+
+**Answer:** `pick` keeps the commit as is.
+
+---
+
+# Question: In an interactive rebase, what does the `squash` command do?
+
+**Answer:** `squash` combines the current commit with the previous one, merging their changes.
+
+---
+
+# Question: In an interactive rebase, what does the `edit` command do?
+
+**Answer:** `edit` pauses the rebase process to allow you to change the contents of the commit.
+
+---
+
+# Question: In an interactive rebase, what does the `reword` command do?
+
+**Answer:** `reword` changes only the commit message without modifying the commit content.
+
+---
+
+# Question: What are the basic steps in performing an interactive rebase?
+
+**Answer:**
+
+1. Start with `git rebase -i <base>`
+2. Edit the list of commits (pick, squash, edit, reword)
+3. Save and close the editor
+4. Git applies changes and lets you review
+5. Use `git rebase --continue` to proceed
+
+---
+
+# Question: What command continues a rebase after resolving a conflict?
+
+**Answer:**
+
+```bash
+git rebase --continue
+```
+
+---
+
+# Question: What must you do before running `git rebase --continue`?
+
+**Answer:** Resolve any conflicts and stage the fixed files using `git add`.
+
+---
+
+# Question: What is the command to stage a fixed file during a rebase?
+
+**Answer:**
+
+```bash
+git add fixed_file.txt
+```
+
+---
+
+# Question: What command cancels a rebase in progress and restores the previous branch state?
+
+**Answer:**
+
+```bash
+git rebase --abort
+```
+
+---
+
+# Question: What happens when you run `git rebase --abort`?
+
+**Answer:** The rebase process is cancelled, and the branch returns to its state before the rebase started.
+
+---
+
+# Question: What command skips a problematic commit during a rebase?
+
+**Answer:**
+
+```bash
+git rebase --skip
+```
+
+---
+
+# Question: What happens when you use `git rebase --skip`?
+
+**Answer:** Git excludes the problematic commit and continues rebasing the remaining commits.
+
+---
+
+# Question: What should you do after completing a rebase?
+
+**Answer:** Review the changes to ensure everything has been correctly applied and behaves as expected.
+
+---
+
+# Question: Why should you avoid rebasing commits that were already pushed to a shared repository?
+
+**Answer:** Because rebasing rewrites commit history, rebasing shared commits can cause inconsistencies and confusion for others collaborating on the repository.
+
+---
+
+# Question: What are best practices when using Git rebase?
+
+**Answer:**
+
+* Avoid rebasing pushed commits
+* Use `git rebase -i` to clean up history
+* Use `--continue`, `--abort`, and `--skip` appropriately
+* Always review changes after rebasing
+
+---
+
+# Question: What should you do if you encounter a conflict during rebase?
+
+**Answer:** Resolve the conflict, stage the resolved files using `git add`, and then run `git rebase --continue`.
+
+---
+
+# Question: What should you do if you can't fix a commit during rebase?
+
+**Answer:** Use `git rebase --skip` to bypass that commit.
+
+---
+
 
 
 
