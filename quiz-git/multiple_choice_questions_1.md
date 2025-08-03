@@ -4697,5 +4697,109 @@ git gc --prune=now
 
 ---
 
+# Question: What is Git recovery?
+
+**Answer:** Git recovery is the process of getting back lost commits, branches, or files using Git's history and recovery tools.
+
+---
+
+# Question: Why is Git recovery possible?
+
+**Answer:** Git keeps a record of recent changes, including changes to `HEAD` and branches, which allows you to undo mistakes even after resets or deletions.
+
+---
+
+# Question: When should you use Git recovery?
+
+**Answer:** Use Git recovery when you:
+
+* Accidentally delete a branch or file
+* Lose changes after a reset
+* Need to recover lost commits or previous states
+
+---
+
+# Question: What Git command is commonly used to find lost commits?
+
+**Answer:**
+
+```bash
+git reflog
+```
+
+---
+
+# Question: How does `git reflog` help in Git recovery?
+
+**Answer:** It shows a history of where `HEAD` and branches have pointed, allowing you to find lost commits and recover them using their commit hash or reflog reference.
+
+---
+
+# Question: What is the purpose of `git checkout -b branch-name <commit-hash>` in Git recovery?
+
+**Answer:** It recreates a deleted branch by starting a new branch at the specified commit hash.
+
+---
+
+# Question: What is the output of running `git checkout -b branch-name <commit-hash>`?
+
+**Answer:**
+
+```
+Switched to a new branch 'branch-name'
+```
+
+---
+
+# Question: How can you restore a deleted or changed file from the latest commit?
+
+**Answer:**
+
+```bash
+git restore filename.txt
+```
+
+---
+
+# Question: What does `git restore filename.txt` do?
+
+**Answer:** It restores `filename.txt` from the latest committed version in the current branch, undoing deletions or unwanted changes.
+
+---
+
+# Question: How can you undo a `git reset --hard` if it removed useful commits?
+
+**Answer:**
+
+1. Run `git reflog` to find the commit you want to return to.
+2. Use `git reset --hard HEAD@{n}` to reset your branch to that state.
+
+---
+
+# Question: What is the command to restore your branch to a previous state using reflog after a hard reset?
+
+**Answer:**
+
+```bash
+git reset --hard HEAD@{n}
+```
+
+---
+
+# Question: What does the command `git reset --hard HEAD@{2}` do in Git recovery?
+
+**Answer:** It resets the working directory and branch to the state recorded two steps back in the reflog, effectively undoing a hard reset.
+
+---
+
+# Question: What are some tips and best practices for Git recovery?
+
+**Answer:**
+
+* Regularly commit your changes to avoid loss
+* Use `git reflog` to find lost commits
+* Use `git restore` to recover deleted or changed files
+
+---
 
 
