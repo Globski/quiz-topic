@@ -83,6 +83,175 @@
 | VALUES                   | Specifies the values of an INSERT INTO statement                            |
 | VIEW                     | Creates, updates, or deletes a view                                         |
 | WHERE                    | Filters a result set based on specified conditions                          |
-```
+
+
+---
+
+# Question: List some commonly used MySQL functions grouped by their category.
+
+### MySQL String Functions
+
+| Function            | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| ASCII               | Returns the ASCII value for the specific character                         |
+| CHAR_LENGTH         | Returns the length of a string (in characters)                             |
+| CHARACTER_LENGTH    | Returns the length of a string (in characters)                             |
+| CONCAT              | Adds two or more expressions together                                      |
+| CONCAT_WS           | Adds two or more expressions together with a separator                     |
+| FIELD               | Returns the index position of a value in a list of values                  |
+| FIND_IN_SET         | Returns the position of a string within a list of strings                  |
+| FORMAT              | Formats a number to a format like "#,###,###.##", rounded as specified     |
+| INSERT              | Inserts a string within a string at the specified position                 |
+| INSTR               | Returns the position of the first occurrence of a string in another string |
+| LCASE               | Converts a string to lower-case                                            |
+| LEFT                | Extracts characters from the left side of a string                         |
+| LENGTH              | Returns the length of a string (in bytes)                                  |
+| LOCATE              | Returns the position of the first occurrence of a substring                |
+| LOWER               | Converts a string to lower-case                                            |
+| LPAD                | Left-pads a string to a certain length                                     |
+| LTRIM               | Removes leading spaces from a string                                       |
+| MID                 | Extracts a substring from a string                                         |
+| POSITION            | Returns the position of a substring in a string                            |
+| REPEAT              | Repeats a string a specified number of times                               |
+| REPLACE             | Replaces all occurrences of a substring within a string                    |
+| REVERSE             | Reverses a string                                                          |
+| RIGHT               | Extracts characters from the right side of a string                        |
+| RPAD                | Right-pads a string to a certain length                                    |
+| RTRIM               | Removes trailing spaces from a string                                      |
+| SPACE               | Returns a string with a specified number of spaces                         |
+| STRCMP              | Compares two strings                                                       |
+| SUBSTR              | Extracts a substring from a string                                         |
+| SUBSTRING           | Extracts a substring from a string                                         |
+| SUBSTRING_INDEX     | Returns a substring before a specified number of delimiter occurrences     |
+| TRIM                | Removes leading and trailing spaces from a string                          |
+| UCASE               | Converts a string to upper-case                                            |
+| UPPER               | Converts a string to upper-case                                            |
+
+---
+
+### MySQL Numeric Functions
+
+| Function    | Description                                                                      |
+|-------------|----------------------------------------------------------------------------------|
+| ABS         | Returns the absolute value of a number                                           |
+| ACOS        | Returns the arc cosine of a number                                               |
+| ASIN        | Returns the arc sine of a number                                                 |
+| ATAN        | Returns the arc tangent of one or two numbers                                    |
+| ATAN2       | Returns the arc tangent of two numbers                                           |
+| AVG         | Returns the average value of an expression                                       |
+| CEIL        | Returns the smallest integer >= the number                                       |
+| CEILING     | Same as CEIL                                                                     |
+| COS         | Returns the cosine of a number                                                   |
+| COT         | Returns the cotangent of a number                                                |
+| COUNT       | Returns the number of records returned                                           |
+| DEGREES     | Converts radians to degrees                                                      |
+| DIV         | Performs integer division                                                        |
+| EXP         | Returns e raised to the power of a number                                        |
+| FLOOR       | Returns the largest integer <= the number                                        |
+| GREATEST    | Returns the greatest value in a list                                             |
+| LEAST       | Returns the smallest value in a list                                             |
+| LN          | Returns the natural logarithm of a number                                        |
+| LOG         | Returns the natural log or log to a specific base                                |
+| LOG10       | Returns the log base 10 of a number                                              |
+| LOG2        | Returns the log base 2 of a number                                               |
+| MAX         | Returns the maximum value in a set                                               |
+| MIN         | Returns the minimum value in a set                                               |
+| MOD         | Returns the remainder of division                                                |
+| PI          | Returns the value of π                                                           |
+| POW         | Raises a number to the power of another                                          |
+| POWER       | Same as POW                                                                      |
+| RADIANS     | Converts degrees to radians                                                      |
+| RAND        | Returns a random number                                                          |
+| ROUND       | Rounds a number to a specified number of decimal places                          |
+| SIGN        | Returns the sign of a number                                                     |
+| SIN         | Returns the sine of a number                                                     |
+| SQRT        | Returns the square root                                                          |
+| SUM         | Returns the sum of values                                                        |
+| TAN         | Returns the tangent of a number                                                  |
+| TRUNCATE    | Truncates a number to specified decimal places                                   |
+
+---
+
+### MySQL Date Functions
+
+| Function         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| ADDDATE          | Adds a time/date interval to a date                                         |
+| ADDTIME          | Adds a time interval to a time/datetime                                     |
+| CURDATE          | Returns the current date                                                    |
+| CURRENT_DATE     | Returns the current date                                                    |
+| CURRENT_TIME     | Returns the current time                                                    |
+| CURRENT_TIMESTAMP| Returns the current date and time                                           |
+| CURTIME          | Returns the current time                                                    |
+| DATE             | Extracts the date part of a datetime expression                             |
+| DATEDIFF         | Returns the days between two dates                                          |
+| DATE_ADD         | Adds a time/date interval to a date                                         |
+| DATE_FORMAT      | Formats a date                                                              |
+| DATE_SUB         | Subtracts a time/date interval from a date                                  |
+| DAY              | Returns the day of the month                                                |
+| DAYNAME          | Returns the weekday name                                                    |
+| DAYOFMONTH       | Returns the day of the month                                                |
+| DAYOFWEEK        | Returns the weekday index                                                   |
+| DAYOFYEAR        | Returns the day of the year                                                 |
+| EXTRACT          | Extracts part of a date                                                     |
+| FROM_DAYS        | Returns a date from a numeric date value                                    |
+| HOUR             | Returns the hour part                                                       |
+| LAST_DAY         | Returns the last day of the month                                           |
+| LOCALTIME        | Returns the current date and time                                           |
+| LOCALTIMESTAMP   | Returns the current date and time                                           |
+| MAKEDATE         | Returns a date based on year and days value                                 |
+| MAKETIME         | Returns a time based on hour, minute, second                                |
+| MICROSECOND      | Returns microsecond part of time/datetime                                   |
+| MINUTE           | Returns minute part                                                         |
+| MONTH            | Returns month part                                                          |
+| MONTHNAME        | Returns name of the month                                                   |
+| NOW              | Returns current date and time                                               |
+| PERIOD_ADD       | Adds months to a period                                                     |
+| PERIOD_DIFF      | Returns difference between two periods                                      |
+| QUARTER          | Returns the quarter of the year                                             |
+| SECOND           | Returns seconds part                                                        |
+| SEC_TO_TIME      | Converts seconds to time                                                    |
+| STR_TO_DATE      | Returns a date based on string and format                                   |
+| SUBDATE          | Subtracts a time/date interval from a date                                  |
+| SUBTIME          | Subtracts a time interval from datetime                                     |
+| SYSDATE          | Returns current date and time                                               |
+| TIME             | Extracts time part from datetime                                             |
+| TIME_FORMAT      | Formats a time                                                              |
+| TIME_TO_SEC      | Converts time to seconds                                                    |
+| TIMEDIFF         | Returns difference between two datetime values                              |
+| TIMESTAMP        | Returns datetime based on date or datetime input                            |
+| TO_DAYS          | Returns number of days since '0000-00-00'                                   |
+| WEEK             | Returns week number of the year                                             |
+| WEEKDAY          | Returns weekday number (0 = Monday)                                         |
+| WEEKOFYEAR       | Returns the week number of the year                                         |
+| YEAR             | Returns the year part                                                       |
+| YEARWEEK         | Returns year and week number                                                |
+
+---
+
+### MySQL Advanced Functions
+
+| Function         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| BIN              | Returns binary representation of a number                                  |
+| BINARY           | Converts a value to a binary string                                         |
+| CASE             | Returns value based on condition logic                                      |
+| CAST             | Converts a value to a specified data type                                   |
+| COALESCE         | Returns first non-null value in a list                                      |
+| CONNECTION_ID    | Returns the current connection ID                                           |
+| CONV             | Converts a number from one base to another                                  |
+| CONVERT          | Converts a value to a specified data type or character set                  |
+| CURRENT_USER     | Returns the MySQL account name and host for the current client              |
+| DATABASE         | Returns name of the current database                                        |
+| IF               | Returns one value if condition is TRUE, another if FALSE                   |
+| IFNULL           | Returns alternate value if expression is NULL                              |
+| ISNULL           | Returns 1 if expression is NULL, 0 otherwise                                |
+| LAST_INSERT_ID   | Returns the last AUTO_INCREMENT value                                       |
+| NULLIF           | Returns NULL if two expressions are equal                                   |
+| SESSION_USER     | Returns the current MySQL user name and host name                           |
+| SYSTEM_USER      | Returns the current MySQL user name and host name                           |
+| USER             | Returns the current MySQL user name and host name                           |
+| VERSION          | Returns the current MySQL server version                                    |
+
 
 ---
