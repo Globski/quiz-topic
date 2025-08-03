@@ -4242,6 +4242,133 @@ create mode 100644 img_hello_git.jpg
 
 ---
 
+# Question: What does `git commit --amend` do?
+
+**Answer:** It modifies the most recent commit, allowing you to change the message, add or remove files, or both.
+
+---
+
+# Question: When should you use `git commit --amend`?
+
+**Answer:** When you need to make small changes to the last commit, such as fixing typos, adding forgotten files, or correcting the commit message.
+
+---
+
+# Question: What is the command to amend the last commit message?
+
+**Answer:** `git commit --amend -m "New message"`
+
+---
+
+# Question: What is the result of running `git commit --amend -m "Corrected commit message"`?
+
+**Answer:** The previous commit message is replaced with "Corrected commit message".
+
+---
+
+# Question: How do you add a forgotten file to the last commit?
+
+**Answer:**
+
+1. Stage the file: `git add <file>`
+2. Amend the commit: `git commit --amend`
+
+---
+
+# Question: Provide an example of amending a commit to add a forgotten file named `forgotten.txt`.
+
+**Answer:**
+
+```
+git add forgotten.txt  
+git commit --amend
+```
+
+---
+
+# Question: How do you remove a file from the last commit?
+
+**Answer:**
+
+1. Unstage the file from the previous commit: `git reset HEAD^ -- <file>`
+2. Amend the commit: `git commit --amend`
+
+---
+
+# Question: What does the command `git reset HEAD^ -- unwanted.txt` do?
+
+**Answer:** It removes `unwanted.txt` from the previous commit by unstaging it.
+
+---
+
+# Question: After amending a commit, how can you verify the changes in commit history?
+
+**Answer:** Run `git log --oneline`.
+
+---
+
+# Question: What does the log output look like after amending a commit message?
+
+**Answer:** The amended commit appears at the top with the updated message, replacing the original commit.
+
+---
+
+# Question: What is the output after running `git commit --amend -m "Added lines to README.md"`?
+
+**Answer:**
+
+```
+[master eaa69ce] Added lines to README.md  
+Date: Thu Apr 22 12:18:52 2021 +0200  
+1 file changed, 3 insertions(+), 1 deletion(-)
+```
+
+---
+
+# Question: What happens to the commit hash after using `git commit --amend`?
+
+**Answer:** A new commit hash is generated, replacing the old one in the history.
+
+---
+
+# Question: Why should you be cautious when using `git commit --amend`?
+
+**Answer:** Because it rewrites commit history, which can be problematic in shared or remote repositories.
+
+---
+
+# Question: When is it safe to use `git commit --amend`?
+
+**Answer:** On your local repository before pushing or if you’re the only one working on the branch.
+
+---
+
+# Question: What could happen if you amend commits that have already been pushed to a shared remote repository?
+
+**Answer:** It may cause conflicts or confusion for others, as the commit history has changed.
+
+---
+
+# Question: What does the command `git log --oneline` help you verify after an amend?
+
+**Answer:** That the commit message and hash have been updated, and the amended commit is now the latest one.
+
+---
+
+# Question: Can you use `git commit --amend` to both change the message and add files at once?
+
+**Answer:** Yes, as long as the files are staged before running the amend command.
+
+---
+
+# Question: What is the correct sequence to amend both files and the commit message?
+
+**Answer:**
+
+1. `git add <file>`
+2. `git commit --amend -m "New message"`
+
+---
 
 
 
