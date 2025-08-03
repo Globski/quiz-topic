@@ -255,3 +255,116 @@
 
 
 ---
+
+# Question: List some commonly used SQL Server functions grouped by their category.
+
+### SQL Server String Functions
+
+| Function        | Description                                                                                         |
+|-----------------|-----------------------------------------------------------------------------------------------------|
+| ASCII           | Returns the ASCII value for the specific character                                                  |
+| CHAR            | Returns the character based on the ASCII code                                                       |
+| CHARINDEX       | Returns the position of a substring in a string                                                     |
+| CONCAT          | Adds two or more strings together                                                                   |
+| Concat with +   | Adds two or more strings together                                                                   |
+| CONCAT_WS       | Adds two or more strings together with a separator                                                  |
+| DATALENGTH      | Returns the number of bytes used to represent an expression                                         |
+| DIFFERENCE      | Compares two SOUNDEX values and returns an integer                                                  |
+| FORMAT          | Formats a value with the specified format                                                           |
+| LEFT            | Extracts a number of characters from a string (starting from left)                                  |
+| LEN             | Returns the length of a string                                                                      |
+| LOWER           | Converts a string to lower-case                                                                     |
+| LTRIM           | Removes leading spaces from a string                                                                |
+| NCHAR           | Returns the Unicode character based on the number code                                              |
+| PATINDEX        | Returns the position of a pattern in a string                                                       |
+| QUOTENAME       | Returns a Unicode string with delimiters for a valid SQL Server identifier                          |
+| REPLACE         | Replaces all occurrences of a substring with a new substring                                       |
+| REPLICATE       | Repeats a string a specified number of times                                                       |
+| REVERSE         | Reverses a string and returns the result                                                            |
+| RIGHT           | Extracts a number of characters from a string (starting from right)                                |
+| RTRIM           | Removes trailing spaces from a string                                                               |
+| SOUNDEX         | Returns a 4-character code to evaluate string similarity                                            |
+| SPACE           | Returns a string with the specified number of space characters                                      |
+| STR             | Returns a number as string                                                                          |
+| STUFF           | Deletes part of a string and inserts another at a specified position                                |
+| SUBSTRING       | Extracts some characters from a string                                                              |
+| TRANSLATE       | Replaces characters in a string using a mapping                                                     |
+| TRIM            | Removes leading and trailing (or specified) characters from a string                               |
+| UNICODE         | Returns the Unicode value of the first character in a string                                        |
+| UPPER           | Converts a string to upper-case                                                                     |
+
+---
+
+### SQL Server Math/Numeric Functions
+
+| Function    | Description                                                                 |
+|-------------|-----------------------------------------------------------------------------|
+| ABS         | Returns the absolute value of a number                                     |
+| ACOS        | Returns the arc cosine of a number                                         |
+| ASIN        | Returns the arc sine of a number                                           |
+| ATAN        | Returns the arc tangent of a number                                        |
+| ATN2        | Returns the arc tangent of two numbers                                     |
+| AVG         | Returns the average value of an expression                                 |
+| CEILING     | Returns the smallest integer value that is >= a number                     |
+| COUNT       | Returns the number of records returned by a query                          |
+| COS         | Returns the cosine of a number                                             |
+| COT         | Returns the cotangent of a number                                          |
+| DEGREES     | Converts radians to degrees                                                |
+| EXP         | Returns e raised to the power of a number                                  |
+| FLOOR       | Returns the largest integer <= to a number                                 |
+| LOG         | Returns the natural logarithm or logarithm to specified base               |
+| LOG10       | Returns the base-10 logarithm of a number                                  |
+| MAX         | Returns the maximum value in a set                                         |
+| MIN         | Returns the minimum value in a set                                         |
+| PI          | Returns the value of π                                                     |
+| POWER       | Raises a number to the power of another                                    |
+| RADIANS     | Converts degrees to radians                                                |
+| RAND        | Returns a random number                                                    |
+| ROUND       | Rounds a number to a specified number of decimal places                    |
+| SIGN        | Returns the sign of a number                                               |
+| SIN         | Returns the sine of a number                                               |
+| SQRT        | Returns the square root of a number                                        |
+| SQUARE      | Returns the square of a number                                             |
+| SUM         | Calculates the sum of values                                               |
+| TAN         | Returns the tangent of a number                                            |
+
+---
+
+### SQL Server Date Functions
+
+| Function         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| CURRENT_TIMESTAMP| Returns the current date and time                                           |
+| DATEADD          | Adds a date/time interval to a date                                         |
+| DATEDIFF         | Returns the difference between two dates                                    |
+| DATEFROMPARTS    | Returns a date from year, month, and day parts                              |
+| DATENAME         | Returns a specified part of a date (as string)                              |
+| DATEPART         | Returns a specified part of a date (as integer)                             |
+| DAY              | Returns the day of the month for a given date                               |
+| GETDATE          | Returns the current system date and time                                    |
+| GETUTCDATE       | Returns the current system UTC date and time                                |
+| ISDATE           | Checks if an expression is a valid date                                     |
+| MONTH            | Returns the month part for a given date                                     |
+| SYSDATETIME      | Returns the current system date and time with precision                     |
+| YEAR             | Returns the year part for a given date                                      |
+
+---
+
+### SQL Server Advanced Functions
+
+| Function         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| CAST             | Converts a value to a specified datatype                                    |
+| COALESCE         | Returns the first non-null value in a list                                  |
+| CONVERT          | Converts a value to a specified datatype                                    |
+| CURRENT_USER     | Returns the name of the current user in the database                        |
+| IIF              | Returns a value if a condition is TRUE, otherwise another value             |
+| ISNULL           | Returns a specified value if the expression is NULL                         |
+| ISNUMERIC        | Returns 1 if expression is numeric, 0 otherwise                             |
+| NULLIF           | Returns NULL if two expressions are equal                                   |
+| SESSION_USER     | Returns the name of the current user in the database                        |
+| SESSIONPROPERTY  | Returns session settings for a specified option                             |
+| SYSTEM_USER      | Returns the login name of the current user                                  |
+| USER_NAME        | Returns the database user name based on a given ID                          |
+
+---
