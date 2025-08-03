@@ -2691,5 +2691,161 @@ git push --set-upstream origin main
 
 ---
 
+# Question: What is SSH used for in the context of Git?
+
+**Answer:** SSH is used to connect securely to remote computers and services, such as Git repositories.
+
+---
+
+# Question: What does SSH use to ensure secure access to code?
+
+**Answer:** SSH uses a pair of keys—a public key and a private key.
+
+---
+
+# Question: What command generates a new SSH key pair?
+
+**Answer:** `ssh-keygen`
+
+---
+
+# Question: What is the purpose of the `ssh-add` command?
+
+**Answer:** It adds your private key to the SSH agent so Git can use it.
+
+---
+
+# Question: How can you test your SSH connection to GitHub?
+
+**Answer:** Use the command `ssh -T git@github.com`.
+
+---
+
+# Question: Which command lists all SSH keys currently loaded in your SSH agent?
+
+**Answer:** `ssh-add -l`
+
+---
+
+# Question: Which command removes a specific SSH key from the SSH agent?
+
+**Answer:** `ssh-add -d`
+
+---
+
+# Question: How do SSH keys function conceptually?
+
+**Answer:** The public key acts like a lock shared with the server, while the private key is like your own key kept securely on your computer.
+
+---
+
+# Question: Who can access resources locked by a public key?
+
+**Answer:** Only someone with the corresponding private key.
+
+---
+
+# Question: What does the `-t rsa` option specify when generating an SSH key?
+
+**Answer:** It specifies that the RSA algorithm should be used.
+
+---
+
+# Question: What does the `-b 4096` option specify in the `ssh-keygen` command?
+
+**Answer:** It sets the key size to 4096 bits for stronger security.
+
+---
+
+# Question: What does the `-C` option do in the `ssh-keygen` command?
+
+**Answer:** It adds a comment, typically your email, to the key for identification.
+
+---
+
+# Question: What is the default file path for the SSH key if no custom location is specified?
+
+**Answer:** `~/.ssh/id_rsa` for the private key and `~/.ssh/id_rsa.pub` for the public key.
+
+---
+
+# Question: What is the recommended extra step during key generation for added security?
+
+**Answer:** Setting a passphrase.
+
+---
+
+# Question: What command adds your private key to the SSH agent?
+
+**Answer:** `ssh-add ~/.ssh/id_rsa`
+
+---
+
+# Question: How do you copy your public SSH key on macOS?
+
+**Answer:** `pbcopy < ~/.ssh/id_rsa.pub`
+
+---
+
+# Question: How do you copy your public SSH key on Windows (Git Bash)?
+
+**Answer:** `clip < ~/.ssh/id_rsa.pub`
+
+---
+
+# Question: How do you view your public SSH key on Linux?
+
+**Answer:** Use `cat ~/.ssh/id_rsa.pub` and copy it manually.
+
+---
+
+# Question: What command lists loaded SSH keys in your SSH agent?
+
+**Answer:** `ssh-add -l`
+
+---
+
+# Question: What command removes the default key from the SSH agent?
+
+**Answer:** `ssh-add -d ~/.ssh/id_rsa`
+
+---
+
+# Question: What are possible causes of the error message “Permission denied” when using SSH?
+
+**Answer:** Your public key is not added to the Git host, or your private key is not loaded in the SSH agent.
+
+---
+
+# Question: What permission setting should be applied to your private SSH key?
+
+**Answer:** `chmod 600 ~/.ssh/id_rsa`
+
+---
+
+# Question: Which command provides verbose SSH output for troubleshooting?
+
+**Answer:** `ssh -v`
+
+---
+
+# Question: What should the remote URL start with when using SSH with Git?
+
+**Answer:** It should start with `git@`.
+
+---
+
+# Question: What is the most important rule about private SSH keys?
+
+**Answer:** Never share your private key with anyone.
+
+---
+
+# Question: What should you do if your private key is ever exposed?
+
+**Answer:** Generate a new SSH key pair and update it on your Git host immediately.
+
+---
+
 
 
