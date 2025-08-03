@@ -2907,6 +2907,60 @@ git push --set-upstream origin main
 
 ---
 
+# Question: What must be done before connecting your local repository to GitHub using SSH?
+
+**Answer:** You must add your SSH key to your GitHub account.
+
+---
+
+# Question: What command is used to test your SSH connection to GitHub?
+
+**Answer:** `ssh -T git@github.com`
+
+---
+
+# Question: What warning message might you see the first time you connect to GitHub via SSH?
+
+**Answer:** "The authenticity of host 'github.com' can't be established..." followed by a prompt asking if you want to continue connecting.
+
+---
+
+# Question: What does the message “Hi your-username! You've successfully authenticated, but GitHub does not provide shell access.” indicate?
+
+**Answer:** It means SSH authentication was successful.
+
+---
+
+# Question: Where can you find your repository’s SSH address on GitHub?
+
+**Answer:** Go to your repository, click the **Code** button, select **SSH**, and copy the SSH URL.
+
+---
+
+# Question: What is the format of a GitHub SSH URL?
+
+**Answer:** It starts with `git@github.com:`, followed by `your-username/your-repo.git`.
+
+---
+
+# Question: What command is used to add a remote origin using SSH for the first time?
+
+**Answer:** `git remote add origin git@github.com:your-username/your-repo.git`
+
+---
+
+# Question: What command is used to update an existing remote to use an SSH URL?
+
+**Answer:** `git remote set-url origin git@github.com:your-username/your-repo.git`
+
+---
+
+# Question: What is the name of the default remote Git uses when pushing to or pulling from a repository?
+
+**Answer:** `origin`
+
+---
+
 
 
 
