@@ -4802,4 +4802,263 @@ git reset --hard HEAD@{n}
 
 ---
 
+# Question: What is the purpose of a `.gitignore` file?
+
+**Answer:** The `.gitignore` file tells Git which files and folders to ignore and not track in the repository.
+
+---
+
+# Question: Why is `.gitignore` useful?
+
+**Answer:** It prevents log files, temporary files, build artifacts, OS/editor-generated files, and personal files from cluttering the repository history.
+
+---
+
+# Question: Is the `.gitignore` file itself tracked by Git?
+
+**Answer:** Yes, `.gitignore` is tracked so that all collaborators ignore the same files consistently.
+
+---
+
+# Question: When should you use a `.gitignore` file?
+
+**Answer:**
+
+* To avoid tracking sensitive, local, or unnecessary files
+* To reduce clutter in the Git history
+* When using tools or editors that generate extra files
+
+---
+
+# Question: What command creates a `.gitignore` file?
+
+**Answer:**
+
+```bash
+touch .gitignore
+```
+
+---
+
+# Question: How do you ignore an entire folder in `.gitignore`?
+
+**Answer:** Add the folder name followed by a slash, e.g., `temp/`.
+
+---
+
+# Question: What does the `*` wildcard match in `.gitignore`?
+
+**Answer:** It matches any number of characters.
+
+---
+
+# Question: What does the `?` wildcard match in `.gitignore`?
+
+**Answer:** It matches exactly one character.
+
+---
+
+# Question: What does the `[abc]` pattern match in `.gitignore`?
+
+**Answer:** Any single character from the set `a`, `b`, or `c`.
+
+---
+
+# Question: What does `[!abc]` match in `.gitignore`?
+
+**Answer:** Any single character **not** in the set `a`, `b`, or `c`.
+
+---
+
+# Question: What does `*.tmp` match in `.gitignore`?
+
+**Answer:** All files with the `.tmp` extension.
+
+---
+
+# Question: What does `my?ile.txt` match in `.gitignore`?
+
+**Answer:** Files like `my1ile.txt`, `myAile.txt`, or `myZile.txt`.
+
+---
+
+# Question: What does `log[0-9].txt` match in `.gitignore`?
+
+**Answer:** Files like `log0.txt`, `log1.txt`, through `log9.txt`.
+
+---
+
+# Question: How do you write an exception in `.gitignore` to not ignore a file?
+
+**Answer:** Use `!` before the file pattern, e.g., `!important.log`.
+
+---
+
+# Question: What does `*.log` followed by `!important.log` do in `.gitignore`?
+
+**Answer:** Ignores all `.log` files except `important.log`.
+
+---
+
+# Question: How do you write a comment in `.gitignore`?
+
+**Answer:** Start the line with `#`.
+
+---
+
+# Question: What is the effect of a blank line in `.gitignore`?
+
+**Answer:** It is ignored and has no effect.
+
+---
+
+# Question: How do you ignore files only for yourself and not for others?
+
+**Answer:** Add the file patterns to `.git/info/exclude`.
+
+---
+
+# Question: How do you create a global `.gitignore` file?
+
+**Answer:**
+
+```bash
+git config --global core.excludesfile ~/.gitignore_global
+```
+
+---
+
+# Question: Where do you add global patterns for Git to ignore across all repositories?
+
+**Answer:** In the file `~/.gitignore_global`.
+
+---
+
+# Question: What should you do if Git is still tracking a file after adding it to `.gitignore`?
+
+**Answer:** Run:
+
+```bash
+git rm --cached filename.txt
+```
+
+---
+
+# Question: What does `git rm --cached filename.txt` do?
+
+**Answer:** It stops tracking the file in Git without deleting it from your local system.
+
+---
+
+# Question: What command helps verify if ignored files are still being tracked?
+
+**Answer:**
+
+```bash
+git status
+```
+
+---
+
+# Question: What should you check first if `.gitignore` rules don’t seem to work?
+
+**Answer:** Check for typos, especially case sensitivity.
+
+---
+
+# Question: Does `.gitignore` affect already-tracked files?
+
+**Answer:** No, `.gitignore` only affects **untracked** files.
+
+---
+
+# Question: What does the pattern `name` match in `.gitignore`?
+
+**Answer:** All files or folders named `name` and anything inside folders named `name`.
+
+---
+
+# Question: What does `name/` match in `.gitignore`?
+
+**Answer:** Folders named `name` and everything inside them.
+
+---
+
+# Question: What does `/name.file` match?
+
+**Answer:** Only files named `name.file` in the **root** directory.
+
+---
+
+# Question: What does `lib/name.file` match?
+
+**Answer:** The file `name.file` inside the `lib` directory.
+
+---
+
+# Question: What does `**/lib/name.file` match?
+
+**Answer:** Any `name.file` inside any `lib` directory at any level of the repo.
+
+---
+
+# Question: What does `**/name` match?
+
+**Answer:** All `name` folders, and any files or folders inside them, regardless of depth.
+
+---
+
+# Question: What does `/lib/**/name` match?
+
+**Answer:** Any `name` folders within the `lib` directory at any level.
+
+---
+
+# Question: What does `*.file` match?
+
+**Answer:** All files with the `.file` extension.
+
+---
+
+# Question: What does `*name/` match?
+
+**Answer:** All folders whose names end with `name`.
+
+---
+
+# Question: What does `name?.file` match?
+
+**Answer:** Files like `name1.file`, `nameA.file`, but not `names1.file`.
+
+---
+
+# Question: What does `name[a-z].file` match?
+
+**Answer:** Files like `namea.file`, `nameb.file`, but not `name1.file`.
+
+---
+
+# Question: What does `name[abc].file` match?
+
+**Answer:** Files like `namea.file`, `nameb.file`, and `namec.file`.
+
+---
+
+# Question: What does `name[!abc].file` match?
+
+**Answer:** Files with names like `namex.file`, excluding `namea.file`, `nameb.file`, and `namec.file`.
+
+---
+
+# Question: What does `name/` followed by `!name/secret.log` do?
+
+**Answer:** Ignores everything in any `name` folder **except** the file `secret.log`.
+
+---
+
+# Question: What happens if you ignore `*.file`, then unignore it with `!name/*.file`, and then ignore `junk.*` again?
+
+**Answer:** Files are first ignored, then the exception restores files in `name/`, but any file named `junk.*` will be ignored again.
+
+---
 
