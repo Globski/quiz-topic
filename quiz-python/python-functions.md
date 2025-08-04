@@ -323,3 +323,45 @@
 | `ZeroDivisionError`     | Raised when the second operator in a division is zero                      |
 
 ---
+
+# Question: List some commonly used Python features grouped by their description.
+
+### Python Glossary (Part 1)
+
+| Feature                             | Description                                                           |
+| ----------------------------------- | --------------------------------------------------------------------- |
+| Indentation                         | Indentation refers to the spaces at the beginning of a code line      |
+| Comments                            | Comments are code lines that will not be executed                     |
+| Multiline Comments                  | How to insert comments on multiple lines                              |
+| Creating Variables                  | Variables are containers for storing data values                      |
+| Variable Names                      | How to name your variables                                            |
+| Camel Case                          | Camel Case Variable Names                                             |
+| Pascal Case                         | Pascal Case Variable Names                                            |
+| Snake Case                          | Snake Case Variable Names                                             |
+| Assign Values to Multiple Variables | How to assign values to multiple variables                            |
+| Output Variables                    | Use the print statement to output variables                           |
+| String Concatenation                | How to combine strings                                                |
+| Global Variables                    | Global variables are variables that belongs to the global scope       |
+| Built-In Data Types                 | Python has a set of built-in data types                               |
+| Getting Data Type                   | How to get the data type of an object                                 |
+| Setting Data Type                   | How to set the data type of an object                                 |
+| Numbers                             | There are three numeric types in Python                               |
+| Int                                 | The integer number type                                               |
+| Float                               | The floating number type                                              |
+| Complex                             | The complex number type                                               |
+| Type Conversion                     | How to convert from one number type to another                        |
+| Random Number                       | How to create a random number                                         |
+| Specify a Variable Type             | How to specify a certain data type for a variable                     |
+| String Literals                     | How to create string literals                                         |
+| Assigning a String to a Variable    | How to assign a string value to a variable                            |
+| Multiline Strings                   | How to create a multiline string                                      |
+| Strings are Arrays                  | Strings in Python are arrays of bytes representing Unicode characters |
+| Slicing a String                    | How to slice a string                                                 |
+| Negative Indexing on a String       | How to use negative indexing when accessing a string                  |
+| String Length                       | How to get the length of a string                                     |
+| Check In String                     | How to check if a string contains a specified phrase                  |
+| Format String                       | How to combine two strings                                            |
+| Escape Characters                   | How to use escape characters                                          |
+| Boolean Values                      | True or False                                                         |
+| Evaluate Booleans                   | Evaluate a value or statement and return either True or False         |
+| Return Boolean Value                | Functions that return a Boolean value                                 |
