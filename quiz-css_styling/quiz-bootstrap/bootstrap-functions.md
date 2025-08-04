@@ -789,3 +789,148 @@ Bootstrap includes **260 glyphs** from the **Glyphicon Halflings set**. While Gl
 ```
 
 ---
+
+# Question: What are the key features and usage patterns of the Bootstrap JS Carousel plugin?
+
+### Bootstrap JS Carousel Overview
+
+| Feature          | Description                                              |
+| ---------------- | -------------------------------------------------------- |
+| Plugin name      | `carousel.js`                                            |
+| Purpose          | Cycles through elements like a slideshow                 |
+| Typical elements | Images, captions, content in slides                      |
+| Browser note     | Not fully supported in IE9 and below (due to CSS3 usage) |
+
+---
+
+### Bootstrap JS Carousel Classes
+
+| Class                     | Description                                        |
+| ------------------------- | -------------------------------------------------- |
+| `.carousel`               | Creates a carousel                                 |
+| `.slide`                  | Adds slide animation effect                        |
+| `.carousel-indicators`    | Adds navigation dots at the bottom of the carousel |
+| `.carousel-inner`         | Container for slide items                          |
+| `.item`                   | Represents a slide item                            |
+| `.left.carousel-control`  | Adds left navigation control                       |
+| `.right.carousel-control` | Adds right navigation control                      |
+| `.carousel-caption`       | Adds caption for each slide                        |
+| `.icon-next`              | Right arrow (alternative to glyphicon)             |
+| `.icon-prev`              | Left arrow (alternative to glyphicon)              |
+
+---
+
+### Bootstrap JS Carousel Usage
+
+| Method                  | Syntax                                                     | Example                                                          |                                                                     |
+| ----------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Via Data Attributes** | `data-ride="carousel"` to activate <br> \`data-slide="prev | next"`to navigate <br>`data-slide-to="number"\` to jump to slide | `<div id="myCarousel" class="carousel slide" data-ride="carousel">` |
+| **Via JavaScript**      | Use `.carousel()` with or without options                  | `$("#myCarousel").carousel();`                                   |                                                                     |
+
+#### Additional JavaScript Examples
+
+```javascript
+// Go to slide index 1
+$(".item").click(function() {
+  $("#myCarousel").carousel(1);
+});
+
+// Go to previous slide
+$(".left").click(function() {
+  $("#myCarousel").carousel("prev");
+});
+```
+
+---
+
+### Bootstrap JS Carousel Options
+
+| Name       | Type              | Default   | Description                                                                      |
+| ---------- | ----------------- | --------- | -------------------------------------------------------------------------------- |
+| `interval` | number or `false` | `5000`    | Delay between slides in milliseconds. Set to `false` to disable auto sliding.    |
+| `pause`    | string or `false` | `"hover"` | Pause on mouse hover. Set to `false` to disable pause.                           |
+| `wrap`     | boolean           | `true`    | Whether to cycle through slides continuously (`true`) or stop at last (`false`). |
+
+---
+
+### Bootstrap JS Carousel Methods
+
+| Method               | Description                                   |
+| -------------------- | --------------------------------------------- |
+| `.carousel(options)` | Activates the carousel with optional settings |
+| `.carousel("cycle")` | Starts auto cycling through items             |
+| `.carousel("pause")` | Stops auto cycling                            |
+| `.carousel(number)`  | Navigates to a specific slide (0-based index) |
+| `.carousel("prev")`  | Goes to the previous slide                    |
+| `.carousel("next")`  | Goes to the next slide                        |
+
+---
+
+### Bootstrap JS Carousel Events
+
+| Event               | Description                                      |
+| ------------------- | ------------------------------------------------ |
+| `slide.bs.carousel` | Triggered **before** a slide transitions         |
+| `slid.bs.carousel`  | Triggered **after** a slide transition completes |
+
+---
+
+### Bootstrap JS Carousel Example: Full Structure with Captions
+
+```html
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img_chania.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Chania</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img_chania2.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Chania</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img_flower.jpg" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beautiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img_flower2.jpg" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beautiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+```
+
+---
+
