@@ -413,7 +413,38 @@
 | Remove Dictionary Items         | How to remove dictionary items                              |
 | Copy Dictionary                 | How to copy a dictionary                                    |
 | Nested Dictionaries             | A dictionary within a dictionary                            |
+|  | |
+| If Statement           | How to write an if statement                                                        |
+| If Indentation         | If statements in Python rely on indentation (whitespace at the beginning of a line) |
+| Elif                   | `elif` is the same as "else if" in other programming languages                      |
+| Else                   | How to write an if...else statement                                                 |
+| Shorthand If           | How to write an if statement in one line                                            |
+| Shorthand If Else      | How to write an if...else statement in one line                                     |
+| If AND                 | Use the `and` keyword to combine if statements                                      |
+| If OR                  | Use the `or` keyword to combine if statements                                       |
+| If NOT                 | Use the `not` keyword to reverse the condition                                      |
+| Nested If              | How to write an if statement inside an if statement                                 |
+| The pass Keyword in If | Use the `pass` keyword inside empty if statements                                   |
+|  | |
 
----
 
 
+|  | |
+
+
+|  | |
+
+
+|  | |
+
+
+|  | |
+
+
+|  | |
+
+
+|  | |
+
+
+|  | |
