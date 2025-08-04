@@ -597,3 +597,98 @@ Bootstrap includes **260 glyphs** from the **Glyphicon Halflings set**. While Gl
 | `closed.bs.alert` | Occurs when the alert message has been closed (waits for CSS transitions) |
 
 ---
+
+# Question: What are the key features and usage patterns of the Bootstrap JS Affix plugin?
+
+### Bootstrap JS Affix Overview
+
+| Feature              | Description                                                               |
+| -------------------- | ------------------------------------------------------------------------- |
+| Plugin name          | affix.js                                                                  |
+| Purpose              | Allows an element to become fixed to an area on the page when scrolling   |
+| Toggle behavior      | Changes CSS `position` from `static` to `fixed` based on scroll position  |
+| Common use cases     | Sticky navigation bars, social icon buttons                               |
+| Related plugin       | Often used with Scrollspy                                                 |
+| Required CSS classes | `.affix`, `.affix-top`, `.affix-bottom` (you must define behavior in CSS) |
+
+---
+
+### Bootstrap JS Affix Usage
+
+| Method                  | Syntax                                                                     | Example                                                                         |
+| ----------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Via Data Attributes** | `data-spy="affix"` with optional `data-offset-top` or `data-offset-bottom` | `<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">` |
+| **Via JavaScript**      | Use `.affix()` method with options                                         | `$('.nav').affix({offset: {top: 150} });`                                       |
+
+---
+
+### Bootstrap JS Affix Options
+
+| Name   | Type                         | Default  | Description                                                                                                             |
+| ------ | ---------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------- |
+| offset | number \| object \| function | `10`     | Number of pixels from screen edge. Use object for top/bottom: `{top: 25, bottom: 50}` or a function for dynamic values. |
+| target | selector \| node \| element  | `window` | Target element whose scroll is used to trigger affix behavior.                                                          |
+
+---
+
+### Bootstrap JS Affix Events
+
+| Event                     | Description                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| `affix.bs.affix`          | Fires **before** fixed positioning is applied (before `.affix-top` → `.affix`) |
+| `affixed.bs.affix`        | Fires **after** fixed positioning is applied (after `.affix-top` → `.affix`)   |
+| `affix-top.bs.affix`      | Fires **before** element returns to top (before `.affix` → `.affix-top`)       |
+| `affixed-top.bs.affix`    | Fires **after** element returns to top (after `.affix` → `.affix-top`)         |
+| `affix-bottom.bs.affix`   | Fires **before** element returns to bottom (before `.affix` → `.affix-bottom`) |
+| `affixed-bottom.bs.affix` | Fires **after** element returns to bottom (after `.affix` → `.affix-bottom`)   |
+
+---
+
+### Bootstrap JS Affix Examples
+
+| Example                           | Description                                                                                  |
+| --------------------------------- | -------------------------------------------------------------------------------------------- |
+| Horizontal navbar with affix      | `<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">`                 |
+| jQuery affix with element height  | `$(".navbar").affix({offset: {top: $("header").outerHeight(true)} });`                       |
+| Scrollspy with Affix - Horizontal | `<body data-spy="scroll" data-target=".navbar" data-offset="50">` with affixed navbar        |
+| Scrollspy with Affix - Vertical   | `<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">` with vertical sidenav |
+| CSS Animation on Affix            | Use `.affix`, `.affix-top` for transitions, padding, color                                   |
+
+#### Example CSS: Animated Navbar on Scroll
+
+```css
+.affix {
+  top: 0;
+  width: 100%;
+  transition: all .5s ease-in-out;
+  background-color: #F44336;
+  border-color: #F44336;
+}
+
+.affix a {
+  color: #fff !important;
+  padding: 15px !important;
+  transition: all .5s ease-in-out;
+}
+
+.affix-top a {
+  padding: 25px !important;
+}
+```
+
+#### Example CSS: Slide-in Navbar
+
+```css
+.affix {
+  top: 0;
+  width: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.affix-top {
+  position: static;
+  top: -35px;
+}
+```
+
+---
