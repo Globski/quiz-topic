@@ -184,3 +184,32 @@
 | `index()` | Searches the tuple for a specified value and returns the position of where it was found |
 
 ---
+
+# Question: List the built-in Python set methods with their descriptions and any associated shortcuts.
+
+### Python Set Methods
+
+| Method                          | Shortcut | Description                                                               |
+| ------------------------------- | -------- | ------------------------------------------------------------------------- |
+| `add()`                         | –        | Adds an element to the set                                                |
+| `clear()`                       | –        | Removes all the elements from the set                                     |
+| `copy()`                        | –        | Returns a copy of the set                                                 |
+| `difference()`                  | `-`      | Returns a set containing the difference between two or more sets          |
+| `difference_update()`           | `-=`     | Removes the items in this set that are also included in another set       |
+| `discard()`                     | –        | Removes the specified item                                                |
+| `intersection()`                | `&`      | Returns a set that is the intersection of two or more sets                |
+| `intersection_update()`         | `&=`     | Removes the items in this set that are not present in other set(s)        |
+| `isdisjoint()`                  | –        | Returns whether two sets have an intersection or not                      |
+| `issubset()`                    | `<=`     | Returns True if all items of this set are present in another set          |
+| *(implicit subset check)*       | `<`      | Returns True if all items of this set are in another, larger set          |
+| `issuperset()`                  | `>=`     | Returns True if all items of another set are present in this set          |
+| *(implicit superset check)*     | `>`      | Returns True if all items of another, smaller set are present in this set |
+| `pop()`                         | –        | Removes an element from the set                                           |
+| `remove()`                      | –        | Removes the specified element                                             |
+| `symmetric_difference()`        | `^`      | Returns a set with the symmetric differences of two sets                  |
+| `symmetric_difference_update()` | `^=`     | Inserts the symmetric differences from this set and another               |
+| `union()`                       | `\|`     | Returns a set containing the union of sets                                |
+| `update()`                      | `\|=`    | Updates the set with the union of this set and others                     |
+
+---
+
