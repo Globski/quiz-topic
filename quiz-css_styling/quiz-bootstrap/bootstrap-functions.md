@@ -142,3 +142,70 @@
 | `<code>`                       | Inline snippets of code (e.g., `span`, `div`)         |
 
 ---
+
+# Question: List Bootstrap CSS form elements and classes grouped by their category.
+
+### Bootstrap's Default Form Settings
+
+| Target Element                      | Description                                                             |
+| ----------------------------------- | ----------------------------------------------------------------------- |
+| `<input>`, `<textarea>`, `<select>` | When used with `.form-control`, these are styled with `width: 100%`     |
+| `<div class="form-group">`          | Wraps a label and a form control for proper spacing                     |
+| `.form-control`                     | Applies to input, textarea, and select elements to make them responsive |
+
+**Example:**
+
+```html
+<form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+```
+
+---
+
+### Form Layout Classes
+
+| Class                    | Description                                                               |
+| ------------------------ | ------------------------------------------------------------------------- |
+| `.form-inline`           | Makes the form left-aligned with inline-block controls (≥768px viewports) |
+| `.form-horizontal`       | Aligns labels and controls in a horizontal layout                         |
+| `.form-control`          | Used on input, textarea, and select elements to make them full-width      |
+| `.form-control-feedback` | Used for displaying form validation feedback                              |
+| `.form-control-static`   | Displays plain static text alongside a label in a horizontal form         |
+| `.form-group`            | Container for form controls and labels                                    |
+
+---
+
+### Input Group Classes
+
+| Class                | Description                                                      |
+| -------------------- | ---------------------------------------------------------------- |
+| `.input-group`       | Wraps inputs to add icons, text, or buttons as "help text"       |
+| `.input-group-lg`    | Large-sized input group                                          |
+| `.input-group-sm`    | Small-sized input group                                          |
+| `.input-group-addon` | Adds an icon or help text next to an input inside `.input-group` |
+| `.input-group-btn`   | Adds a button next to the input inside `.input-group`            |
+
+---
+
+### Input Size Modifier Classes
+
+| Class       | Description                   |
+| ----------- | ----------------------------- |
+| `.input-lg` | Increases the height of input |
+| `.input-sm` | Decreases the height of input |
+
+---
+
+
