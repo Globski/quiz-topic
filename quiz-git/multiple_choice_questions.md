@@ -2415,3 +2415,265 @@ git commit -m "Add large file"
 2. Free plans often have limited LFS storage.
 
 ---
+
+# Question: What is the purpose of signing a Git commit?
+
+**Answer:** To prove the commit was made by you, enhance trust in your code, and show a Verified badge on platforms like GitHub or GitLab.
+
+---
+
+# Question: What does a "Verified" badge mean on GitHub or GitLab?
+
+**Answer:** It means the commit or tag was signed with a GPG key recognized as belonging to the author.
+
+---
+
+# Question: What is GPG in the context of Git?
+
+**Answer:** GPG (GNU Privacy Guard) is a tool that allows you to create and use digital keys to sign commits and tags in Git, proving authorship and ensuring code integrity.
+
+---
+
+# Question: Why should developers sign their commits?
+
+**Answer:**
+
+1. To prove authorship of commits
+2. To build trust in open source contributions
+3. To comply with organizational security requirements
+
+---
+
+# Question: Are unsigned commits invalid?
+
+**Answer:** No, unsigned commits are still valid but do not show as verified.
+
+---
+
+# Question: How do you generate a new GPG key?
+
+**Answer:** Run the command: `gpg --full-generate-key`
+
+---
+
+# Question: What command lists your GPG keys in long format?
+
+**Answer:** `gpg --list-secret-keys --keyid-format=long`
+
+---
+
+# Question: In the output `sec rsa4096/1234ABCD5678EFGH`, which part is the GPG key ID?
+
+**Answer:** `1234ABCD5678EFGH` (the part after the slash)
+
+---
+
+# Question: How do you tell Git to use a specific GPG key?
+
+**Answer:** `git config --global user.signingkey <your-key-id>`
+
+---
+
+# Question: What command signs a commit?
+
+**Answer:** `git commit -S -m "message"`
+
+---
+
+# Question: What command signs a Git tag?
+
+**Answer:** `git tag -s v1.0 -m "version 1.0"`
+
+---
+
+# Question: What Git command makes Git sign all commits by default?
+
+**Answer:** `git config --global commit.gpgSign true`
+
+---
+
+# Question: How can you check if a commit is signed using Git CLI?
+
+**Answer:** `git log --show-signature`
+
+---
+
+# Question: What output indicates a valid GPG signature in `git log --show-signature`?
+
+**Answer:** Lines like `gpg: Signature made ...` and `gpg: Good signature from "Your Name"`
+
+---
+
+# Question: What causes the error: “GPG failed to sign the data”?
+
+**Answer:** The GPG agent may not be running, or the key may not be properly loaded.
+
+---
+
+# Question: What should you do if Git is using the wrong GPG key?
+
+**Answer:** Double-check and reset the key ID using `git config --global user.signingkey <correct-key-id>`
+
+---
+
+# Question: What is a possible reason a signed commit is not marked as verified on GitHub or GitLab?
+
+**Answer:** The corresponding public GPG key may not have been uploaded to the platform.
+
+---
+
+# Question: What does a signed Git commit help protect against?
+
+**Answer:** Tampering with the code and impersonation of the commit author.
+
+---
+
+# Question: What is the command to make a signed tag with the label `v1.0` and message “version 1.0”?
+
+**Answer:** `git tag -s v1.0 -m "version 1.0"`
+
+---
+
+# Question: Why might your signed commits not show as verified on Git hosting services?
+
+**Answer:** The platform may require additional setup, such as uploading your GPG public key.
+
+---
+
+
+# Question: What is the purpose of `git cherry-pick`?
+
+**Answer:** To copy a single commit from one branch to another in the same repository.
+
+---
+
+# Question: When should you use cherry-pick instead of merging?
+
+**Answer:** When you only want specific commits, not all changes from another branch.
+
+---
+
+# Question: What is a patch in Git?
+
+**Answer:** A file that contains changes from one or more commits, which can be shared or applied to another repository.
+
+---
+
+# Question: When should you use patches instead of cherry-pick?
+
+**Answer:** When sharing changes as files or applying changes across different repositories.
+
+---
+
+# Question: What is the command to cherry-pick a commit with hash `abc1234`?
+
+**Answer:** `git cherry-pick abc1234`
+
+---
+
+# Question: What does `git cherry-pick abc1234` do?
+
+**Answer:** It applies the changes from the specified commit to the current branch and creates a new commit.
+
+---
+
+# Question: How do you edit the commit message while cherry-picking?
+
+**Answer:** Use the `--edit` flag: `git cherry-pick abc1234 --edit`
+
+---
+
+# Question: How do you apply a cherry-picked commit without immediately committing it?
+
+**Answer:** Use the `--no-commit` or `-n` option: `git cherry-pick abc1234 --no-commit`
+
+---
+
+# Question: What does the `-x` flag do during cherry-pick?
+
+**Answer:** It appends a line to the new commit message indicating the origin of the cherry-picked commit.
+
+---
+
+# Question: What command adds commit origin info while cherry-picking commit `abc1234`?
+
+**Answer:** `git cherry-pick abc1234 -x`
+
+---
+
+# Question: What happens if a cherry-pick results in conflicts?
+
+**Answer:** Git pauses the process and asks the user to resolve conflicts manually.
+
+---
+
+# Question: After resolving a cherry-pick conflict, what commands do you run to continue?
+
+**Answer:**
+
+```bash
+git add .  
+git cherry-pick --continue
+```
+
+---
+
+# Question: What command aborts a cherry-pick in progress?
+
+**Answer:** `git cherry-pick --abort`
+
+---
+
+# Question: What is the command to create a patch file from a single commit with hash `abc1234`?
+
+**Answer:** `git format-patch -1 abc1234`
+
+---
+
+# Question: What command creates patch files for the last 3 commits?
+
+**Answer:** `git format-patch HEAD~3`
+
+---
+
+# Question: How do you apply a patch file named `0001-some-change.patch`?
+
+**Answer:** `git apply 0001-some-change.patch`
+
+---
+
+# Question: What command applies a patch and preserves the original author and commit message?
+
+**Answer:** `git am 0001-some-change.patch`
+
+---
+
+# Question: What is the difference between `git apply` and `git am`?
+
+**Answer:** `git am` keeps metadata such as author and commit message; `git apply` does not.
+
+---
+
+# Question: How do you reverse a patch applied with `git apply`?
+
+**Answer:** `git apply -R 0001-some-change.patch`
+
+---
+
+# Question: What should you do if a patch fails to apply cleanly?
+
+**Answer:** Ensure the patch matches the codebase and manually adjust if necessary.
+
+---
+
+# Question: What is the best practice before cherry-picking or applying a patch?
+
+**Answer:** Pull the latest changes to ensure your branch is up to date.
+
+---
+
+# Question: What is a tip for choosing between `cherry-pick` and `patch`?
+
+**Answer:** Use `cherry-pick` for copying commits within the same repo, and patches for sharing changes across repositories.
+
+---
