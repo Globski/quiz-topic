@@ -499,8 +499,11 @@
 | The `strftime` Method | How to format a date object into a readable string    |
 | Date Format Codes     | The `datetime` module has a set of legal format codes |
 |  | |
-
-
+| JSON              | How to work with JSON in Python                             |
+| Parse JSON        | How to parse JSON code in Python                            |
+| Convert into JSON | How to convert a Python object into JSON                    |
+| Format JSON       | How to format JSON output with indentations and line breaks |
+| Sort JSON         | How to sort JSON                                            |
 |  | |
 
 
