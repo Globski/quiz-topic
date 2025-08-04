@@ -439,8 +439,19 @@
 | Nested Loops            | How to write a loop inside a loop                            |
 | For pass                | Use the `pass` keyword inside empty for loops                |
 |  | |
-
-
+| Function                        | How to create a function in Python                                                                               |
+| Call a Function                 | How to call a function in Python                                                                                 |
+| Function Arguments              | How to use arguments in a function                                                                               |
+| \*args                          | To deal with an unknown number of arguments in a function, use the `*` symbol before the parameter name          |
+| Keyword Arguments               | How to use keyword arguments in a function                                                                       |
+| \*\*kwargs                      | To deal with an unknown number of keyword arguments in a function, use the `**` symbol before the parameter name |
+| Default Parameter Value         | How to use a default parameter value                                                                             |
+| Passing a List as an Argument   | How to pass a list as an argument                                                                                |
+| Function Return Value           | How to return a value from a function                                                                            |
+| The pass Statement in Functions | Use the `pass` statement in empty functions                                                                      |
+| Function Recursion              | Functions that can call itself is called a recursive function                                                    |
+| Lambda Function                 | How to create anonymous functions in Python                                                                      |
+| Why Use Lambda Functions        | Learn when to use a lambda function or not                                                                       |
 |  | |
 
 
