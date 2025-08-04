@@ -359,3 +359,35 @@ Methods available in the `LinkedList` class:
 | `toArray()`               | Return array of items                       | `Object[]`         |
 
 ---
+
+# Java HashMap Methods
+
+Methods available in the `HashMap` class:
+
+| Method               | Description                                  | Return Type           |
+| -------------------- | -------------------------------------------- | --------------------- |
+| `clear()`            | Remove all entries                           | `void`                |
+| `clone()`            | Copy the map                                 | `Object`              |
+| `compute()`          | Compute value using key and current value    | `V`                   |
+| `computeIfAbsent()`  | Compute value only if key not present        | `V`                   |
+| `computeIfPresent()` | Compute new value only if key exists         | `V`                   |
+| `containsKey()`      | Check if key exists                          | `boolean`             |
+| `containsValue()`    | Check if value exists                        | `boolean`             |
+| `entrySet()`         | Get all entries                              | `Set<Map.Entry<K,V>>` |
+| `forEach()`          | Perform action on each entry                 | `void`                |
+| `get()`              | Get value by key                             | `V`                   |
+| `getOrDefault()`     | Get value or default                         | `V`                   |
+| `isEmpty()`          | Check if empty                               | `boolean`             |
+| `keySet()`           | Get all keys                                 | `Set<K>`              |
+| `merge()`            | Merge value or insert new                    | `V`                   |
+| `put()`              | Insert key-value pair                        | `V`                   |
+| `putAll()`           | Insert all entries from another map          | `void`                |
+| `putIfAbsent()`      | Insert only if key is absent                 | `V`                   |
+| `remove()`           | Remove entry                                 | `V` / `boolean`       |
+| `replace()`          | Replace entry value                          | `V` / `boolean`       |
+| `replaceAll()`       | Replace all entries with result of operation | `void`                |
+| `size()`             | Get size of map                              | `int`                 |
+| `values()`           | Get all values                               | `Collection<V>`       |
+
+---
+
