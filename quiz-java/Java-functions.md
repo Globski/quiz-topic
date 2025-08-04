@@ -248,3 +248,27 @@ The `System.out` stream (short for "output") is used with different methods to p
 | `println()` | Prints text or values to the console, followed by a new line |
 
 ---
+
+# Java Arrays Class
+
+The Java `Arrays` class (in `java.util`) includes methods for manipulating arrays.
+
+## Arrays Methods
+
+| Method         | Description                                                                  |
+| -------------- | ---------------------------------------------------------------------------- |
+| `compare()`    | Compares two arrays                                                          |
+| `copyOf()`     | Creates a copy of an array with a new length                                 |
+| `deepEquals()` | Compares two multidimensional arrays to check whether they are deeply equal  |
+| `equals()`     | Checks if two arrays are equal                                               |
+| `fill()`       | Fills an array with a specified value                                        |
+| `mismatch()`   | Returns the index position of the first mismatch/conflict between two arrays |
+| `sort()`       | Sorts an array in ascending order                                            |
+
+## Properties
+
+| Property | Description                                                      |
+| -------- | ---------------------------------------------------------------- |
+| `length` | Returns the length of an array *(built-in, not in Arrays class)* |
+
+---
