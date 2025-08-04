@@ -236,3 +236,15 @@
 | `trimToSize()`     | Reduce the capacity of the list to match the number of items if necessary       | `void`              |
 
 ---
+
+# Java Output Methods
+
+The `System.out` stream (short for "output") is used with different methods to print values to the console:
+
+| Method      | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| `print()`   | Prints text or values to the console                         |
+| `printf()`  | Prints formatted text or values to the console               |
+| `println()` | Prints text or values to the console, followed by a new line |
+
+---
