@@ -512,8 +512,9 @@
 | RegEx Sets              | A set is a group of characters inside a pair of square brackets with a special meaning |
 | RegEx Match Object      | The Match Object is an object containing information about the search and the result   |
 |  | |
-
-
+| Install PIP        | How to install PIP                             |
+| PIP Packages       | How to download and install a package with PIP |
+| PIP Remove Package | How to remove a package with PIP               |
 |  | |
 
 |  | |
