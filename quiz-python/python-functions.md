@@ -453,8 +453,14 @@
 | Lambda Function                 | How to create anonymous functions in Python                                                                      |
 | Why Use Lambda Functions        | Learn when to use a lambda function or not                                                                       |
 |  | |
-
-
+| Array                  | Lists can be used as Arrays                            |
+| What is an Array       | Arrays are variables that can hold more than one value |
+| Access Arrays          | How to access array items                              |
+| Array Length           | How to get the length of an array                      |
+| Looping Array Elements | How to loop through array elements                     |
+| Add Array Element      | How to add elements to an array                        |
+| Remove Array Element   | How to remove elements from an array                   |
+| Array Methods          | Python has a set of Array/Lists methods                |
 |  | |
 
 
