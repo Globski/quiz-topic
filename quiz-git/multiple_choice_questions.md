@@ -3339,3 +3339,146 @@ git submodule update --init --recursive
 **Answer:** They always point to a fixed commit and require manual updating to track new changes.
 
 ---
+
+# Question: What are Git remotes?
+
+**Answer:** Remotes are references to remote repositories that let you collaborate, fetch, and push code to shared projects.
+
+---
+
+# Question: Why might a project use multiple Git remotes?
+
+**Answer:** To collaborate with different teams, mirror repositories, or maintain backups.
+
+---
+
+# Question: What is the command to add a new remote called `upstream`?
+
+**Answer:**
+
+```sh
+git remote add upstream https://github.com/other/repo.git
+```
+
+---
+
+# Question: What is the command to remove a remote named `upstream`?
+
+**Answer:**
+
+```sh
+git remote remove upstream
+```
+
+---
+
+# Question: How do you rename the remote `origin` to `main-origin`?
+
+**Answer:**
+
+```sh
+git remote rename origin main-origin
+```
+
+---
+
+# Question: What command lists all remotes and their associated URLs?
+
+**Answer:**
+
+```sh
+git remote -v
+```
+
+---
+
+# Question: What command shows detailed information about the remote `upstream`?
+
+**Answer:**
+
+```sh
+git remote show upstream
+```
+
+---
+
+# Question: How do you fetch updates from the remote `upstream`?
+
+**Answer:**
+
+```sh
+git fetch upstream
+```
+
+---
+
+# Question: What command pushes your local `main` branch to the `upstream` remote?
+
+**Answer:**
+
+```sh
+git push upstream main
+```
+
+---
+
+# Question: How do you create a local branch `new-feature` that tracks the remote branch `upstream/new-feature`?
+
+**Answer:**
+
+```sh
+git checkout -b new-feature upstream/new-feature
+```
+
+---
+
+# Question: In open source workflows, what are `origin` and `upstream` typically used for?
+
+**Answer:** `origin` refers to your personal fork, and `upstream` refers to the main project repository.
+
+---
+
+# Question: What should you check if you see "remote not found" when using Git?
+
+**Answer:** Check the spelling of the remote name using:
+
+```sh
+git remote -v
+```
+
+---
+
+# Question: What are common causes for fetch or push failures?
+
+**Answer:** Lack of access to the remote repository or incorrect remote configuration.
+
+---
+
+# Question: Which Git command helps troubleshoot remote issues by showing fetch/push URLs and tracked branches?
+
+**Answer:**
+
+```sh
+git remote show <name>
+```
+
+---
+
+# Question: What should you check if you're unable to reach a remote server?
+
+**Answer:** Your network connection.
+
+---
+
+# Question: What are best practices for naming remotes?
+
+**Answer:** Use clear, descriptive names such as `origin`, `upstream`, or `backup`.
+
+---
+
+# Question: Why should unused remotes be removed from a Git project?
+
+**Answer:** To keep the project tidy and avoid confusion.
+
+---
+
