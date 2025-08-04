@@ -367,3 +367,28 @@
 
 ---
 
+# Question: List Bootstrap 4 CSS classes for dropdowns and collapsibles grouped by their category.
+
+### Dropdown Classes
+
+| Class                  | Description                                        |
+| ---------------------- | -------------------------------------------------- |
+| `.dropdown`            | Indicates a dropdown menu container                |
+| `.dropdown-menu`       | Builds the actual dropdown menu                    |
+| `.dropdown-menu-right` | Aligns the dropdown menu to the right              |
+| `.dropdown-header`     | Adds a non-clickable header inside the dropdown    |
+| `.dropup`              | Indicates a dropup menu (dropdown opens upwards)   |
+| `.disabled`            | Disables an item in the dropdown (non-clickable)   |
+| `.divider`             | Adds a horizontal separator between dropdown items |
+
+---
+
+### Collapsible Classes
+
+| Class             | Description                                                       |
+| ----------------- | ----------------------------------------------------------------- |
+| `.collapse`       | Marks content as collapsible (can be hidden or shown dynamically) |
+| `.collapse.in`    | Makes collapsible content visible by default                      |
+| `.panel-collapse` | Used for collapsible panels (accordion behavior)                  |
+
+---
