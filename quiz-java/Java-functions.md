@@ -391,3 +391,37 @@ Methods available in the `HashMap` class:
 
 ---
 
+# 🎛️ Java Scanner Methods
+
+| Method                | Description                 | Return Type |
+| --------------------- | --------------------------- | ----------- |
+| `close()`             | Close the scanner           | `void`      |
+| `delimiter()`         | Get delimiter               | `Pattern`   |
+| `findInLine()`        | Match regex in current line | `String`    |
+| `findWithinHorizon()` | Match regex in a char limit | `String`    |
+| `hasNext()`           | Check for next token        | `boolean`   |
+| `hasNextBoolean()`    | Check if next is boolean    | `boolean`   |
+| `hasNextByte()`       | Check if next is byte       | `boolean`   |
+| `hasNextDouble()`     | Check if next is double     | `boolean`   |
+| `hasNextFloat()`      | Check if next is float      | `boolean`   |
+| `hasNextInt()`        | Check if next is int        | `boolean`   |
+| `hasNextLine()`       | Check for next line         | `boolean`   |
+| `hasNextLong()`       | Check if next is long       | `boolean`   |
+| `hasNextShort()`      | Check if next is short      | `boolean`   |
+| `locale()`            | Get locale                  | `Locale`    |
+| `next()`              | Get next token              | `String`    |
+| `nextBoolean()`       | Get boolean from next token | `boolean`   |
+| `nextByte()`          | Get byte from next token    | `byte`      |
+| `nextDouble()`        | Get double from next token  | `double`    |
+| `nextFloat()`         | Get float from next token   | `float`     |
+| `nextInt()`           | Get int from next token     | `int`       |
+| `nextLine()`          | Get next line               | `String`    |
+| `nextLong()`          | Get long from next token    | `long`      |
+| `nextShort()`         | Get short from next token   | `short`     |
+| `radix()`             | Get current radix           | `int`       |
+| `reset()`             | Reset scanner               | `Scanner`   |
+| `useDelimiter()`      | Set delimiter               | `Scanner`   |
+| `useLocale()`         | Set locale                  | `Scanner`   |
+| `useRadix()`          | Set radix                   | `Scanner`   |
+
+---
