@@ -552,3 +552,49 @@
 | weibullvariate()  | Returns a random float number based on the Weibull distribution                                   |
 
 ---
+
+# Question: What is the Python `requests` module and what methods does it provide?
+
+### Python Requests Module
+
+The `requests` module allows you to send HTTP requests using Python.  
+It returns a `Response` object containing all the response data such as content, encoding, status, etc.
+
+#### Example
+
+```python
+import requests
+
+x = requests.get('https://w3schools.com/python/demopage.htm')
+
+print(x.text)
+````
+
+### How to Install the Requests Module
+
+Navigate to the location of `pip` in your command line and run:
+
+```
+pip install requests
+```
+
+### Syntax
+
+```
+requests.methodname(params)
+```
+
+### Available Methods
+
+| Method                      | Description                                                  |
+| --------------------------- | ------------------------------------------------------------ |
+| delete(url, args)           | Sends a DELETE request to the specified URL                  |
+| get(url, params, args)      | Sends a GET request to the specified URL                     |
+| head(url, args)             | Sends a HEAD request to the specified URL                    |
+| patch(url, data, args)      | Sends a PATCH request to the specified URL                   |
+| post(url, data, json, args) | Sends a POST request to the specified URL                    |
+| put(url, data, args)        | Sends a PUT request to the specified URL                     |
+| request(method, url, args)  | Sends a request of the specified method to the specified URL |
+
+---
+
