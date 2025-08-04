@@ -505,8 +505,12 @@
 | Format JSON       | How to format JSON output with indentations and line breaks |
 | Sort JSON         | How to sort JSON                                            |
 |  | |
-
-
+| RegEx Module            | How to import the regex module                                                         |
+| RegEx Functions         | The `re` module has a set of functions                                                 |
+| Metacharacters in RegEx | Metacharacters are characters with a special meaning                                   |
+| RegEx Special Sequences | A backslash followed by a character has a special meaning                              |
+| RegEx Sets              | A set is a group of characters inside a pair of square brackets with a special meaning |
+| RegEx Match Object      | The Match Object is an object containing information about the search and the result   |
 |  | |
 
 
