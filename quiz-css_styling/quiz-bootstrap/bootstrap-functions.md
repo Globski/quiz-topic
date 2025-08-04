@@ -392,3 +392,75 @@
 | `.panel-collapse` | Used for collapsible panels (accordion behavior)                  |
 
 ---
+
+# Question: List Bootstrap 4 CSS navigation component classes grouped by their category.
+
+### Tabs and Pills Navigation
+
+| Class                          | Description                                                             |
+| ------------------------------ | ----------------------------------------------------------------------- |
+| `.nav .nav-tabs`               | Creates navigation tabs                                                 |
+| `.nav .nav-pills`              | Creates navigation pills                                                |
+| `.nav .nav-pills .nav-stacked` | Creates vertical navigation pills                                       |
+| `.nav-justified`               | Makes tabs/pills span full width in viewports ≥768px; stacked otherwise |
+| `.disabled`                    | Indicates a disabled (unclickable) tab/pill                             |
+| `.tab-content`                 | Used with `.tab-pane` and `data-toggle="tab"` or `data-toggle="pill"`   |
+| `.tab-pane`                    | Used within `.tab-content` to toggle tab/pill contents                  |
+
+---
+
+### Navbar Classes
+
+| Class                  | Description                                                               |
+| ---------------------- | ------------------------------------------------------------------------- |
+| `.navbar`              | Creates a responsive navigation bar                                       |
+| `.navbar-brand`        | Represents logo or brand name in the navbar                               |
+| `.navbar-btn`          | Vertically aligns buttons inside navbar                                   |
+| `.navbar-collapse`     | Collapses the navbar into a toggleable menu on small screens              |
+| `.navbar-default`      | Applies default light-grey navbar styling                                 |
+| `.navbar-fixed-bottom` | Makes the navbar stay fixed at the bottom of the screen                   |
+| `.navbar-fixed-top`    | Makes the navbar stay fixed at the top of the screen                      |
+| `.navbar-form`         | Applies correct spacing for form elements inside the navbar               |
+| `.navbar-header`       | Container for branding/logo/link inside the navbar                        |
+| `.navbar-inverse`      | Applies black background styling to navbar                                |
+| `.navbar-left`         | Aligns navbar items (links, forms, etc.) to the left                      |
+| `.navbar-link`         | Styles text as a link inside the navbar                                   |
+| `.navbar-nav`          | Used on `<ul>` to contain navigation list items                           |
+| `.navbar-right`        | Aligns navbar items (links, forms, etc.) to the right                     |
+| `.navbar-static-top`   | Removes border-radius and borders from the top navbar                     |
+| `.navbar-text`         | Vertically aligns non-link elements inside the navbar                     |
+| `.navbar-toggle`       | Styles toggle button (usually with `.icon-bar` inside for hamburger menu) |
+
+---
+
+### Breadcrumbs and Pagination
+
+| Class            | Description                                            |
+| ---------------- | ------------------------------------------------------ |
+| `.breadcrumb`    | Displays breadcrumb navigation                         |
+| `.pager`         | Displays simple Previous/Next pagination               |
+| `.previous`      | Aligns `.pager` link to the left                       |
+| `.next`          | Aligns `.pager` link to the right                      |
+| `.disabled`      | Indicates an unclickable navigation or pagination item |
+| `.pagination`    | Displays pagination links                              |
+| `.pagination-lg` | Enlarges pagination items                              |
+| `.pagination-sm` | Shrinks pagination items                               |
+| `.active`        | Highlights current pagination page                     |
+
+---
+
+### Labels and Badges
+
+| Class                   | Description                                                                |
+| ----------------------- | -------------------------------------------------------------------------- |
+| `.label .label-default` | Grey default label                                                         |
+| `.label .label-primary` | Blue label (primary)                                                       |
+| `.label .label-success` | Green label (success)                                                      |
+| `.label .label-info`    | Light blue label (info)                                                    |
+| `.label .label-warning` | Yellow label (warning)                                                     |
+| `.label .label-danger`  | Red label (danger)                                                         |
+| `.badge`                | Small indicator used for counts/notifications                              |
+| `.jumbotron`            | Creates a large box for calling attention to content                       |
+| `.jumbotron` (extra)    | When placed outside `.container`, spans full width without rounded corners |
+
+---
