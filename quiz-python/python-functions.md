@@ -365,7 +365,7 @@
 | Boolean Values                      | True or False                                                         |
 | Evaluate Booleans                   | Evaluate a value or statement and return either True or False         |
 | Return Boolean Value                | Functions that return a Boolean value                                 |
-| -------------------------- | ----------------------------------------------------------------------------- |
+| |  |
 | Operators                  | Use operator to perform operations in Python                                  |
 | Arithmetic Operators       | Arithmetic operator are used to perform common mathematical operations        |
 | Assignment Operators       | Assignment operators are used to assign values to variables                   |
@@ -394,5 +394,26 @@
 | Tuple With One Item        | How to create a tuple with only one item                                      |
 | Remove Tuple Items         | How to remove tuple items                                                     |
 | Join Two Tuples            | How to join two tuples                                                        |
+|  | |
+| Set                             | A set is an unordered, and unchangeable, collection         |
+| Access Set Items                | How to access items in a set                                |
+| Add Set Items                   | How to add items to a set                                   |
+| Loop Set Items                  | How to loop through the items in a set                      |
+| Check if Set Item Exists        | How to check if an item exists                              |
+| Set Length                      | How to determine the length of a set                        |
+| Remove Set Items                | How to remove set items                                     |
+| Join Two Sets                   | How to join two sets                                        |
+| Dictionary                      | A dictionary is an unordered, and changeable, collection    |
+| Access Dictionary Items         | How to access items in a dictionary                         |
+| Change Dictionary Item          | How to change the value of a dictionary item                |
+| Loop Dictionary Items           | How to loop through the items in a dictionary               |
+| Check if Dictionary Item Exists | How to check if a specified item is present in a dictionary |
+| Dictionary Length               | How to determine the length of a dictionary                 |
+| Add Dictionary Item             | How to add an item to a dictionary                          |
+| Remove Dictionary Items         | How to remove dictionary items                              |
+| Copy Dictionary                 | How to copy a dictionary                                    |
+| Nested Dictionaries             | A dictionary within a dictionary                            |
 
 ---
+
+
