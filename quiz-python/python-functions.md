@@ -516,5 +516,10 @@
 | PIP Packages       | How to download and install a package with PIP |
 | PIP Remove Package | How to remove a package with PIP               |
 |  | |
+| Error Handling         | How to handle errors in Python                      |
+| Handle Many Exceptions | How to handle more than one exception               |
+| Try Else               | How to use the `else` keyword in a try statement    |
+| Try Finally            | How to use the `finally` keyword in a try statement |
+| raise                  | How to raise an exception in Python                 |
 
-|  | |
+---
