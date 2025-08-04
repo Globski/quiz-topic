@@ -701,3 +701,59 @@ The `math` module provides mathematical functions and constants for performing v
 | math.tau     | Tau (approximately 6.2831...)                    |
 
 ---
+
+# Question: What is the Python `cmath` module and what methods and constants does it provide?
+
+### Python cMath Module
+
+The `cmath` module in Python provides access to mathematical functions for complex numbers.
+
+- Methods in this module accept `int`, `float`, and `complex` numbers.
+- They also accept objects implementing `__complex__()` or `__float__()`.
+- Most methods return a **complex number**. If the result can be expressed as a real number, the imaginary part will be 0.
+
+---
+
+### cMath Methods
+
+| Method                | Description                                                                                      |
+|-----------------------|--------------------------------------------------------------------------------------------------|
+| cmath.acos(x)         | Returns the arc cosine value of x                                                                |
+| cmath.acosh(x)        | Returns the hyperbolic arc cosine of x                                                           |
+| cmath.asin(x)         | Returns the arc sine of x                                                                        |
+| cmath.asinh(x)        | Returns the hyperbolic arc sine of x                                                             |
+| cmath.atan(x)         | Returns the arc tangent value of x                                                               |
+| cmath.atanh(x)        | Returns the hyperbolic arctangent value of x                                                     |
+| cmath.cos(x)          | Returns the cosine of x                                                                          |
+| cmath.cosh(x)         | Returns the hyperbolic cosine of x                                                               |
+| cmath.exp(x)          | Returns the value of Ex, where E is Euler's number and x is the input                            |
+| cmath.isclose()       | Checks whether two values are close                                                              |
+| cmath.isfinite(x)     | Checks whether x is a finite number                                                              |
+| cmath.isinf(x)        | Checks whether x is a positive or negative infinity                                              |
+| cmath.isnan(x)        | Checks whether x is NaN (not a number)                                                           |
+| cmath.log(x[, base])  | Returns the logarithm of x to the specified base                                                 |
+| cmath.log10(x)        | Returns the base-10 logarithm of x                                                               |
+| cmath.phase(x)        | Returns the phase (angle) of a complex number                                                    |
+| cmath.polar(x)        | Converts a complex number to polar coordinates                                                   |
+| cmath.rect(r, phi)    | Converts polar coordinates to rectangular (complex number) form                                  |
+| cmath.sin(x)          | Returns the sine of x                                                                            |
+| cmath.sinh(x)         | Returns the hyperbolic sine of x                                                                 |
+| cmath.sqrt(x)         | Returns the square root of x                                                                     |
+| cmath.tan(x)          | Returns the tangent of x                                                                         |
+| cmath.tanh(x)         | Returns the hyperbolic tangent of x                                                              |
+
+---
+
+### cMath Constants
+
+| Constant       | Description                                                       |
+|----------------|-------------------------------------------------------------------|
+| cmath.e        | Euler's number (approximately 2.7182...)                          |
+| cmath.inf      | Floating-point positive infinity value                            |
+| cmath.infj     | Complex infinity value                                            |
+| cmath.nan      | Floating-point NaN (Not a Number) value                           |
+| cmath.nanj     | Complex NaN (Not a Number) value                                  |
+| cmath.pi       | PI (approximately 3.1415...)                                      |
+| cmath.tau      | Tau (approximately 6.2831...)                                     |
+
+---
