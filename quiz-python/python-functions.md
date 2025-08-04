@@ -365,3 +365,35 @@
 | Boolean Values                      | True or False                                                         |
 | Evaluate Booleans                   | Evaluate a value or statement and return either True or False         |
 | Return Boolean Value                | Functions that return a Boolean value                                 |
+
+| -------------------------- | ----------------------------------------------------------------------------- |
+| Operators                  | Use operator to perform operations in Python                                  |
+| Arithmetic Operators       | Arithmetic operator are used to perform common mathematical operations        |
+| Assignment Operators       | Assignment operators are used to assign values to variables                   |
+| Comparison Operators       | Comparison operators are used to compare two values                           |
+| Logical Operators          | Logical operators are used to combine conditional statements                  |
+| Identity Operators         | Identity operators are used to see if two objects are in fact the same object |
+| Membership Operators       | Membership operators are used to test if a sequence is present in an object   |
+| Bitwise Operators          | Bitwise operators are used to compare (binary) numbers                        |
+| Lists                      | A list is an ordered, and changeable, collection                              |
+| Access List Items          | How to access items in a list                                                 |
+| Change List Item           | How to change the value of a list item                                        |
+| Loop Through List Items    | How to loop through the items in a list                                       |
+| List Comprehension         | How to use a list comprehension                                               |
+| Check if List Item Exists  | How to check if a specified item is present in a list                         |
+| List Length                | How to determine the length of a list                                         |
+| Add List Items             | How to add items to a list                                                    |
+| Remove List Items          | How to remove list items                                                      |
+| Copy a List                | How to copy a list                                                            |
+| Join Two Lists             | How to join two lists                                                         |
+| Tuple                      | A tuple is an ordered, and unchangeable, collection                           |
+| Access Tuple Items         | How to access items in a tuple                                                |
+| Change Tuple Item          | How to change the value of a tuple item                                       |
+| Loop List Items            | How to loop through the items in a tuple                                      |
+| Check if Tuple Item Exists | How to check if a specified item is present in a tuple                        |
+| Tuple Length               | How to determine the length of a tuple                                        |
+| Tuple With One Item        | How to create a tuple with only one item                                      |
+| Remove Tuple Items         | How to remove tuple items                                                     |
+| Join Two Tuples            | How to join two tuples                                                        |
+
+---
