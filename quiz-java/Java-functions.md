@@ -425,3 +425,16 @@ Methods available in the `HashMap` class:
 | `useRadix()`          | Set radix                   | `Scanner`   |
 
 ---
+
+# 🔁 Java Iterator Interface (java.util.Iterator)
+
+### Methods
+
+| Method      | Description                                  | Return Type |
+| ----------- | -------------------------------------------- | ----------- |
+| `hasNext()` | Check if there are more elements             | `boolean`   |
+| `next()`    | Return next element                          | `T`         |
+| `remove()`  | Remove the last returned element by `next()` | `void`      |
+
+---
+
