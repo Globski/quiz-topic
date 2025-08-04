@@ -60,3 +60,85 @@
 
 ---
 
+# Question: List Bootstrap CSS Typography elements and classes grouped by their category.
+
+### Bootstrap's Default Typography Settings
+
+| Target Element | Description                                                          |
+| -------------- | -------------------------------------------------------------------- |
+| `<body>`       | Global default font-size is **14px** with a **line-height of 1.428** |
+| `<p>`          | Bottom margin equals half the line-height (**10px by default**)      |
+
+---
+
+### Headings and Text Styling
+
+| Element/Class     | Description                                                         |
+| ----------------- | ------------------------------------------------------------------- |
+| `<h1>` - `<h6>`   | Standard HTML headings, styled by Bootstrap                         |
+| `.h1` - `.h6`     | Classes that apply heading styles without using actual heading tags |
+| `<small>`         | Creates lighter, secondary text inside headings                     |
+| `.small`          | Makes text 85% the size of the parent                               |
+| `.lead`           | Makes a paragraph stand out                                         |
+| `<mark>`, `.mark` | Highlights text                                                     |
+| `<del>`           | Indicates deleted text                                              |
+| `<s>`             | Indicates no longer relevant text                                   |
+| `<ins>`           | Indicates inserted text                                             |
+| `<u>`             | Indicates underlined text                                           |
+| `<strong>`        | Indicates bold text                                                 |
+| `<em>`            | Indicates italic text                                               |
+
+---
+
+### Text Alignment and Transformation
+
+| Class              | Description         |
+| ------------------ | ------------------- |
+| `.text-left`       | Left-aligned text   |
+| `.text-center`     | Center-aligned text |
+| `.text-right`      | Right-aligned text  |
+| `.text-justify`    | Justified text      |
+| `.text-nowrap`     | No wrap text        |
+| `.text-lowercase`  | Lowercased text     |
+| `.text-uppercase`  | Uppercased text     |
+| `.text-capitalize` | Capitalized text    |
+
+---
+
+### Abbreviations and Contact Info
+
+| Element/Class | Description                                                                        |
+| ------------- | ---------------------------------------------------------------------------------- |
+| `<abbr>`      | Defines abbreviations; with `title` attribute shows a dotted underline and tooltip |
+| `.initialism` | Displays `<abbr>` in a slightly smaller font size                                  |
+| `<address>`   | Displays contact information                                                       |
+
+---
+
+### Quotes and Lists
+
+| Element/Class         | Description                                                   |
+| --------------------- | ------------------------------------------------------------- |
+| `<blockquote>`        | Indicates a block of content from another source              |
+| `.blockquote-reverse` | Right-aligns the blockquote text                              |
+| `<ul>`                | Unordered list                                                |
+| `<ol>`                | Ordered list                                                  |
+| `.list-unstyled`      | Removes default list-style and margin from immediate children |
+| `.list-inline`        | Places list items in a single line                            |
+| `<dl>`                | Description list                                              |
+| `.dl-horizontal`      | Horizontally aligns terms and descriptions (responsive)       |
+
+---
+
+### Code Formatting
+
+| Element/Class                  | Description                                           |
+| ------------------------------ | ----------------------------------------------------- |
+| `<var>`                        | Indicates variables (e.g., `x = ab + y`)              |
+| `<kbd>`                        | Indicates keyboard input (e.g., `CTRL + P`)           |
+| `<pre>`                        | Displays preformatted text (multiple lines)           |
+| `<pre class="pre-scrollable">` | Preformatted text with a scrollbar (when overflowing) |
+| `<samp>`                       | Indicates sample output from a program                |
+| `<code>`                       | Inline snippets of code (e.g., `span`, `div`)         |
+
+---
