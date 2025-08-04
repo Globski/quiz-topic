@@ -462,8 +462,21 @@
 | Remove Array Element   | How to remove elements from an array                   |
 | Array Methods          | Python has a set of Array/Lists methods                |
 |  | |
-
-
+| Class                            | A class is like an object constructor                                 |
+| Create Class                     | How to create a class                                                 |
+| The Class `__init__()` Function  | The `__init__()` function is executed when the class is initiated     |
+| Object Methods                   | Methods in objects are functions that belong to the object            |
+| self                             | The `self` parameter refers to the current instance of the class      |
+| Modify Object Properties         | How to modify properties of an object                                 |
+| Delete Object Properties         | How to delete properties of an object                                 |
+| Delete Object                    | How to delete an object                                               |
+| Class pass Statement             | Use the `pass` statement in empty classes                             |
+| Create Parent Class              | How to create a parent class                                          |
+| Create Child Class               | How to create a child class                                           |
+| Create the `__init__()` Function | How to create the `__init__()` function                               |
+| super Function                   | The `super()` function makes the child class inherit the parent class |
+| Add Class Properties             | How to add a property to a class                                      |
+| Add Class Methods                | How to add a method to a class                                        |
 |  | |
 
 
