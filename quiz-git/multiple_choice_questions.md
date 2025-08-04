@@ -2677,3 +2677,533 @@ git cherry-pick --continue
 **Answer:** Use `cherry-pick` for copying commits within the same repo, and patches for sharing changes across repositories.
 
 ---
+
+# Question: What is a merge conflict in Git?
+
+**Answer:** A merge conflict occurs when two branches change the same part of a file and Git can't determine which change to keep, requiring manual resolution.
+
+---
+
+# Question: Why do merge conflicts typically happen?
+
+**Answer:** Because both branches have changed the same lines in a file, often during collaborative work or on long-lived branches.
+
+---
+
+# Question: What command initiates a merge in Git?
+
+**Answer:** `git merge <branch-name>`
+
+---
+
+# Question: What does Git do when a merge conflict is detected?
+
+**Answer:** It pauses the merge and marks the conflicted files so the user can resolve them.
+
+---
+
+# Question: What command shows which files have merge conflicts?
+
+**Answer:** `git status`
+
+---
+
+# Question: What command can you use to view the actual conflicting changes?
+
+**Answer:** `git diff`
+
+---
+
+# Question: What markers does Git use to show conflicting sections in a file?
+
+**Answer:**
+
+* `<<<<<<< HEAD`
+* `=======`
+* `>>>>>>> branch-name`
+
+---
+
+# Question: What should you do with conflict markers during resolution?
+
+**Answer:** Manually edit the file to keep the desired changes and remove all conflict markers.
+
+---
+
+# Question: What command marks a file as resolved after editing conflicts?
+
+**Answer:** `git add filename.txt`
+
+---
+
+# Question: How do you complete a merge after resolving all conflicts?
+
+**Answer:** `git commit`
+
+---
+
+# Question: What does the command `git merge --abort` do?
+
+**Answer:** It cancels the current merge and reverts the working directory to the state before the merge started.
+
+---
+
+# Question: What command opens a visual tool to resolve merge conflicts?
+
+**Answer:** `git mergetool`
+
+---
+
+# Question: What command keeps your version of the file during a merge conflict?
+
+**Answer:** `git checkout --ours filename.txt`
+
+---
+
+# Question: What command keeps the other branch’s version of the file during a merge conflict?
+
+**Answer:** `git checkout --theirs filename.txt`
+
+---
+
+# Question: What should you do if you're unhappy with the results from `git mergetool`?
+
+**Answer:** Manually edit the files to correct them as needed.
+
+---
+
+# Question: What should you always check before marking a conflict as resolved?
+
+**Answer:** Ensure all conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) have been removed from the file.
+
+---
+
+# Question: What is the purpose of `git status` during a merge conflict?
+
+**Answer:** To see which files are unmerged and still require conflict resolution.
+
+---
+
+# Question: Can Git automatically complete a merge after conflicts are resolved?
+
+**Answer:** Yes, in some cases, but often a manual `git commit` is needed to finalize the merge.
+
+---
+
+# Question: What’s the safest way to exit a bad merge and start over?
+
+**Answer:** Run `git merge --abort`
+
+---
+
+# Question: What does CI/CD stand for?
+
+**Answer:** CI/CD stands for Continuous Integration and Continuous Deployment/Delivery.
+
+---
+
+# Question: What does CI/CD do every time you push code?
+
+**Answer:** It automatically tests and deploys your code.
+
+---
+
+# Question: What are the main benefits of using CI/CD?
+
+**Answer:** Catching bugs early, faster and safer deployments, reduced manual steps and mistakes, and quick feedback on every push.
+
+---
+
+# Question: How does CI/CD integrate with Git?
+
+**Answer:** On every code push, a CI/CD service detects the change, runs tests, builds the project, and can deploy it automatically.
+
+---
+
+# Question: What happens if a CI/CD pipeline fails?
+
+**Answer:** You get notified immediately.
+
+---
+
+# Question: Describe the basic CI/CD workflow.
+
+**Answer:** Developer pushes code → Git repository triggers CI/CD pipeline → Pipeline runs tests, builds, and deploys.
+
+---
+
+# Question: What file format is used for GitHub Actions workflows?
+
+**Answer:** YAML files stored in the `.github/workflows/` directory.
+
+---
+
+# Question: What file does GitLab CI/CD use?
+
+**Answer:** `.gitlab-ci.yml`
+
+---
+
+# Question: What file does Travis CI use?
+
+**Answer:** `.travis.yml`
+
+---
+
+# Question: Name five popular CI/CD services.
+
+**Answer:** GitHub Actions, GitLab CI/CD, CircleCI, Travis CI, Azure Pipelines.
+
+---
+
+# Question: What is a workflow in CI/CD?
+
+**Answer:** A series of jobs that run together.
+
+---
+
+# Question: What is a job in CI/CD?
+
+**Answer:** A group of steps that run together on a runner.
+
+---
+
+# Question: What is a step in CI/CD?
+
+**Answer:** A single task such as checking out code or running tests.
+
+---
+
+# Question: What is a runner in CI/CD?
+
+**Answer:** The computer or server that executes jobs.
+
+---
+
+# Question: What is a trigger in CI/CD?
+
+**Answer:** It determines when the workflow should run.
+
+---
+
+# Question: What is the purpose of environment variables in a CI/CD pipeline?
+
+**Answer:** To provide settings for workflows.
+
+---
+
+# Question: What are secrets in CI/CD?
+
+**Answer:** Sensitive data like passwords or API keys used securely in workflows.
+
+---
+
+# Question: Give an example of a job definition using GitHub Actions.
+
+**Answer:**
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # steps go here
+```
+
+---
+
+# Question: Give an example of steps within a GitHub Actions job.
+
+**Answer:**
+
+```yaml
+steps:
+  - uses: actions/checkout@v3
+  - name: Run tests
+    run: npm test
+```
+
+---
+
+# Question: How do you specify the server type in a GitHub Actions workflow?
+
+**Answer:** Using `runs-on:`, for example: `runs-on: ubuntu-latest`.
+
+---
+
+# Question: How do you define triggers for push and pull request events?
+
+**Answer:**
+
+```yaml
+on:
+  push:
+  pull_request:
+```
+
+---
+
+# Question: How do you reference secrets in GitHub Actions?
+
+**Answer:**
+
+```yaml
+env:
+  API_KEY: ${{ secrets.API_KEY }}
+```
+
+---
+
+# Question: Where can you view job and step logs in GitHub Actions?
+
+**Answer:** In the CI/CD dashboard by clicking on a workflow run.
+
+---
+
+# Question: How do you skip CI/CD for a specific commit?
+
+**Answer:** By adding `[skip ci]` to the commit message.
+
+---
+
+# Question: Provide an example of a commit message that skips CI.
+
+**Answer:** `git commit -m "Update docs [skip ci]"`
+
+---
+
+# Question: Provide an example of a GitHub Actions status badge.
+
+**Answer:**
+
+```markdown
+![CI](https://github.com/username/repo/actions/workflows/ci.yml/badge.svg)
+```
+
+---
+
+# Question: What does the `name:` field do in a GitHub Actions workflow file?
+
+**Answer:** It sets the display name of the workflow in GitHub.
+
+---
+
+# Question: What does the `on:` field specify in a GitHub Actions workflow?
+
+**Answer:** It determines what events trigger the workflow.
+
+---
+
+# Question: What does `jobs:` define in a GitHub Actions file?
+
+**Answer:** It groups all the jobs that will run in the workflow.
+
+---
+
+# Question: In the context of GitHub Actions, what does `uses:` mean?
+
+**Answer:** It calls a reusable GitHub Action, such as checking out code.
+
+---
+
+# Question: What does the `run:` keyword do in a step?
+
+**Answer:** It executes a shell command.
+
+---
+
+# Question: What should you check if your build fails?
+
+**Answer:** Check the logs for error messages.
+
+---
+
+# Question: What should you do if a secret or environment variable isn't working?
+
+**Answer:** Ensure they are set correctly in your CI/CD configuration.
+
+---
+
+# Question: Can you manually rerun failed jobs in CI/CD?
+
+**Answer:** Yes, from the CI/CD dashboard.
+
+---
+
+# Question: What’s a good approach when starting with CI/CD?
+
+**Answer:** Start by automating tests, then add deployment later.
+
+---
+
+# Question: What is the best practice for handling secrets in CI/CD?
+
+**Answer:** Keep them out of code and use the secrets manager of your CI/CD service.
+
+---
+
+# Question: What is the key reason even small projects should use CI/CD?
+
+**Answer:** It helps catch bugs early and improves delivery speed.
+
+---
+
+# Question: What are Git hooks?
+
+**Answer:** Git hooks are scripts that run automatically when certain Git events happen, such as committing or pushing code.
+
+---
+
+# Question: Why should you use Git hooks?
+
+**Answer:** To automate tasks, enforce coding standards, and catch problems early.
+
+---
+
+# Question: Where are Git hooks stored in a repository?
+
+**Answer:** In the `.git/hooks` directory.
+
+---
+
+# Question: What file extension do default Git hook samples have?
+
+**Answer:** `.sample`
+
+---
+
+# Question: How do you enable a Git hook on Linux/macOS?
+
+**Answer:**
+
+```sh
+mv .git/hooks/pre-commit.sample .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+---
+
+# Question: What must you do to enable a hook on Windows?
+
+**Answer:** Rename the file (e.g., to `pre-commit`) and use a shell-compatible script like `.bat` or `.ps1`.
+
+---
+
+# Question: Name five common Git hook types.
+
+**Answer:** `pre-commit`, `commit-msg`, `pre-push`, `pre-receive`, `post-receive`
+
+---
+
+# Question: When does the `pre-commit` hook run?
+
+**Answer:** Before a commit is made.
+
+---
+
+# Question: What is a common use case for the `pre-commit` hook?
+
+**Answer:** To check code style, run tests, or block a commit if there are issues.
+
+---
+
+# Question: Give an example task the `pre-commit` hook can perform.
+
+**Answer:** Block commits if `.js` files contain `console.log`.
+
+---
+
+# Question: What is the purpose of the `commit-msg` hook?
+
+**Answer:** To check or edit the commit message.
+
+---
+
+# Question: How can the `commit-msg` hook enforce commit message standards?
+
+**Answer:** By blocking messages that don't contain required elements, like a ticket number.
+
+---
+
+# Question: When does the `pre-push` hook run?
+
+**Answer:** Before pushing code to a remote repository.
+
+---
+
+# Question: What is a typical task for the `pre-push` hook?
+
+**Answer:** Run tests and stop the push if tests fail.
+
+---
+
+# Question: Where do server-side hooks run?
+
+**Answer:** On the Git server.
+
+---
+
+# Question: What does the `pre-receive` hook do?
+
+**Answer:** It can block certain pushes, such as to the `main` branch.
+
+---
+
+# Question: Can you write your own custom Git hooks?
+
+**Answer:** Yes, any executable script placed in `.git/hooks` can be a custom hook.
+
+---
+
+# Question: Give an example of a custom hook action.
+
+**Answer:** Print “Hello from my custom hook!”
+
+---
+
+# Question: How do you make a Git hook script executable?
+
+**Answer:**
+
+```sh
+chmod +x <scriptname>
+```
+
+---
+
+# Question: What does `exit 0` mean in a hook script?
+
+**Answer:** The hook passed successfully.
+
+---
+
+# Question: What does `exit 1` mean in a hook script?
+
+**Answer:** The hook failed and the Git action will be blocked.
+
+---
+
+# Question: How can you debug a Git hook script?
+
+**Answer:** Add `echo` statements and check the script’s exit code.
+
+---
+
+# Question: Why should Git hooks be kept simple and fast?
+
+**Answer:** Because slow hooks delay your workflow.
+
+---
+
+# Question: Are Git hooks versioned by default?
+
+**Answer:** No, they are not included in the Git repository by default.
+
+---
+
+# Question: How can you share Git hooks with your team?
+
+**Answer:** By storing them in a separate directory (e.g., `scripts/hooks`) and using a setup script or configuration to copy them to `.git/hooks`.
+
+---
+
