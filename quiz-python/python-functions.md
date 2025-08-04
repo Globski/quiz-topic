@@ -493,6 +493,20 @@
 | Using the `dir()` Function | List all variable names and function names in a module |
 | Import From Module         | How to import only parts from a module                 |
 |  | |
+| Datetime Module       | How to work with dates in Python                      |
+| Date Output           | How to output a date                                  |
+| Create a Date Object  | How to create a date object                           |
+| The `strftime` Method | How to format a date object into a readable string    |
+| Date Format Codes     | The `datetime` module has a set of legal format codes |
+|  | |
 
+
+|  | |
+
+
+|  | |
+
+
+|  | |
 
 |  | |
