@@ -306,3 +306,56 @@ Methods available in the `ArrayList` class:
 | `trimToSize()`     | Reduce capacity to current list size                          | `void`             |
 
 ---
+
+# Java LinkedList Methods
+
+Methods available in the `LinkedList` class:
+
+| Method                    | Description                                 | Return Type        |
+| ------------------------- | ------------------------------------------- | ------------------ |
+| `add()`                   | Add an item to the list                     | `boolean` / `void` |
+| `addAll()`                | Add a collection of items to the list       | `boolean`          |
+| `addFirst()`              | Add an item to the beginning of the list    | `void`             |
+| `addLast()`               | Add an item to the end of the list          | `void`             |
+| `clear()`                 | Remove all items                            | `void`             |
+| `clone()`                 | Copy the LinkedList                         | `Object`           |
+| `contains()`              | Check if item exists                        | `boolean`          |
+| `descendingIterator()`    | Iterate in reverse order                    |                    |
+| `element()`               | Retrieve the first item (like `getFirst()`) |                    |
+| `forEach()`               | Perform action on each item                 | `void`             |
+| `get()`                   | Get item at position                        | `T`                |
+| `getFirst()`              | Get first item                              | `T`                |
+| `getLast()`               | Get last item                               | `T`                |
+| `indexOf()`               | Index of first occurrence                   | `int`              |
+| `isEmpty()`               | Check if empty                              | `boolean`          |
+| `iterator()`              | Get an Iterator                             | `Iterator`         |
+| `lastIndexOf()`           | Index of last occurrence                    | `int`              |
+| `listIterator()`          | Get a ListIterator                          | `ListIterator`     |
+| `offer()`                 | Add item at end                             |                    |
+| `offerFirst()`            | Add item at beginning                       |                    |
+| `offerLast()`             | Add item at end                             |                    |
+| `peek()`                  | Retrieve first item (like `getFirst()`)     |                    |
+| `peekFirst()`             | Same as `peek()`                            |                    |
+| `peekLast()`              | Retrieve last item                          |                    |
+| `poll()`                  | Retrieve and remove first item              |                    |
+| `pollFirst()`             | Same as `poll()`                            |                    |
+| `pollLast()`              | Retrieve and remove last item               |                    |
+| `pop()`                   | Return first element (like `removeFirst()`) |                    |
+| `push()`                  | Add item to start (like `addFirst()`)       |                    |
+| `remove()`                | Remove item                                 | `boolean` / `T`    |
+| `removeAll()`             | Remove collection                           | `boolean`          |
+| `removeFirst()`           | Remove first item                           | `T`                |
+| `removeFirstOccurrence()` | Remove first match                          |                    |
+| `removeIf()`              | Remove items by condition                   | `boolean`          |
+| `removeLast()`            | Remove last item                            | `T`                |
+| `removeLastOccurrence()`  | Remove last match                           |                    |
+| `replaceAll()`            | Replace each item                           | `void`             |
+| `retainAll()`             | Retain items in collection                  | `boolean`          |
+| `set()`                   | Replace item at position                    | `T`                |
+| `size()`                  | Get size                                    | `int`              |
+| `sort()`                  | Sort list                                   | `void`             |
+| `spliterator()`           | Get Spliterator                             | `Spliterator`      |
+| `subList()`               | Get sublist                                 | `List`             |
+| `toArray()`               | Return array of items                       | `Object[]`         |
+
+---
