@@ -323,3 +323,47 @@
 
 ---
 
+# Question: List Bootstrap CSS table classes and their functions.
+
+### `<table>` Classes
+
+| Class              | Description                                                     |
+| ------------------ | --------------------------------------------------------------- |
+| `.table`           | Adds basic styling: light padding and horizontal dividers       |
+| `.table-striped`   | Adds zebra-striping to rows in `<tbody>` (not supported in IE8) |
+| `.table-bordered`  | Adds borders on all sides of the table and cells                |
+| `.table-hover`     | Enables hover state on table rows in `<tbody>`                  |
+| `.table-condensed` | Reduces padding to make the table more compact                  |
+
+---
+
+### `<tr>`, `<th>`, and `<td>` Contextual Classes
+
+| Class      | Description                                          |
+| ---------- | ---------------------------------------------------- |
+| `.active`  | Applies hover color (light-grey) to a row or cell    |
+| `.success` | Indicates a successful or positive action            |
+| `.info`    | Indicates a neutral informative change or action     |
+| `.warning` | Indicates a warning that might need attention        |
+| `.danger`  | Indicates a dangerous or potentially negative action |
+
+---
+
+### Responsive Tables
+
+| Class               | Description                                                    |
+| ------------------- | -------------------------------------------------------------- |
+| `.table-responsive` | Makes tables horizontally scrollable on small screens (<768px) |
+
+**Example:**
+
+```html
+<div class="table-responsive">
+  <table class="table">
+    ...
+  </table>
+</div>
+```
+
+---
+
