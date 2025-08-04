@@ -3207,3 +3207,135 @@ chmod +x <scriptname>
 
 ---
 
+# Question: What are Git submodules?
+
+**Answer:** Git submodules let you include one Git repository inside another as a subdirectory.
+
+---
+
+# Question: Why are Git submodules useful?
+
+**Answer:** To reuse code, track a library at a specific commit, and keep histories of projects separate.
+
+---
+
+# Question: What command adds a Git submodule to your repository?
+
+**Answer:**
+
+```sh
+git submodule add https://github.com/example/library.git libs/library  
+```
+
+---
+
+# Question: What file is updated when you add a submodule?
+
+**Answer:** `.gitmodules`
+
+---
+
+# Question: How do you initialize and update submodules after cloning?
+
+**Answer:**
+
+```sh
+git submodule init  
+git submodule update  
+```
+
+---
+
+# Question: How do you clone a repository and fetch its submodules at once?
+
+**Answer:**
+
+```sh
+git clone --recurse-submodules https://github.com/user/repo.git  
+```
+
+---
+
+# Question: What command shows the current commit and state of your submodules?
+
+**Answer:**
+
+```sh
+git submodule status  
+```
+
+---
+
+# Question: What command runs `git status` in all submodules?
+
+**Answer:**
+
+```sh
+git submodule foreach git status  
+```
+
+---
+
+# Question: What command updates all submodules to the latest commit on their remote?
+
+**Answer:**
+
+```sh
+git submodule update --remote  
+```
+
+---
+
+# Question: How do you remove a submodule from a Git repository?
+
+**Answer:**
+
+1. Delete the relevant section in `.gitmodules`
+2. Remove the submodule directory from your working tree
+3. Run:
+
+```sh
+git rm --cached path/to/submodule  
+```
+
+---
+
+# Question: What does the `.gitmodules` file do?
+
+**Answer:** It keeps track of all submodules and their paths.
+
+---
+
+# Question: What should you do if submodules are empty after cloning?
+
+**Answer:** Run:
+
+```sh
+git submodule update --init --recursive  
+```
+
+---
+
+# Question: If you change a submodule's URL, where must you update it?
+
+**Answer:** In both `.gitmodules` and `.git/config`
+
+---
+
+# Question: Do submodules automatically track the latest commit of the external repository?
+
+**Answer:** No, they point to a specific commit.
+
+---
+
+# Question: What is a safer alternative to submodules if you don’t need to track a fixed version?
+
+**Answer:** Use Git subtree or copy files manually.
+
+---
+
+# Question: What is a common pitfall with submodules that developers should remember?
+
+**Answer:** They always point to a fixed commit and require manual updating to track new changes.
+
+---
