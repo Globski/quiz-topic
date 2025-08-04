@@ -692,3 +692,100 @@ Bootstrap includes **260 glyphs** from the **Glyphicon Halflings set**. While Gl
 ```
 
 ---
+
+# Question: What are the key features and usage patterns of the Bootstrap JS Button plugin?
+
+### Bootstrap JS Button Overview
+
+| Feature             | Description                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------ |
+| Plugin name         | button.js                                                                            |
+| Purpose             | Adds dynamic behavior and control to buttons                                         |
+| Compatible elements | `<a>`, `<button>`, `<input>`                                                         |
+| Common use cases    | Styling buttons, toggling states, disabling/loading/resetting buttons via JavaScript |
+
+---
+
+### Bootstrap JS Button Classes
+
+| Class          | Description                                                   |
+| -------------- | ------------------------------------------------------------- |
+| `.btn`         | Adds basic styling to any button                              |
+| `.btn-default` | Standard/default button styling                               |
+| `.btn-primary` | Highlights the primary action                                 |
+| `.btn-success` | Indicates a positive/successful action                        |
+| `.btn-info`    | Indicates an informational message                            |
+| `.btn-warning` | Indicates caution or warning                                  |
+| `.btn-danger`  | Indicates a dangerous/negative action                         |
+| `.btn-link`    | Makes the button appear like a link (retains button behavior) |
+| `.btn-lg`      | Large button                                                  |
+| `.btn-sm`      | Small button                                                  |
+| `.btn-xs`      | Extra small button                                            |
+| `.btn-block`   | Full-width (block-level) button                               |
+| `.active`      | Makes the button appear pressed (active)                      |
+| `.disabled`    | Disables the button (non-interactive)                         |
+
+---
+
+### Bootstrap JS Button Usage
+
+| Method             | Syntax                        | Example               |
+| ------------------ | ----------------------------- | --------------------- |
+| **Via JavaScript** | Use `.button()` to initialize | `$('.btn').button();` |
+
+---
+
+### Bootstrap JS Button Options
+
+| Option   | Type | Default | Description                             |
+| -------- | ---- | ------- | --------------------------------------- |
+| *(None)* | —    | —       | This plugin has no configurable options |
+
+---
+
+### Bootstrap JS Button Methods
+
+| Method               | Description                                              |
+| -------------------- | -------------------------------------------------------- |
+| `.button("toggle")`  | Toggles the "active" state, visually pressing the button |
+| `.button("loading")` | Disables the button and changes its text to "loading..." |
+| `.button("reset")`   | Resets button text to the original content               |
+| `.button("string")`  | Changes button text to a specified string                |
+
+> Note: Methods can also be triggered via `data-*` attributes, such as `data-toggle="button"`.
+
+---
+
+### Bootstrap JS Button Examples
+
+#### Example: Customize Button Borders
+
+```css
+.btn-default {
+  border-radius: 0;
+}
+```
+
+#### Example: Add Specific Button Colors
+
+```css
+.btn-default {
+  background: #000;
+  color: #fff;
+}
+
+.btn-default:hover {
+  background: #fff;
+  color: #000;
+}
+```
+
+#### Example: Add Button Shadow
+
+```css
+.btn-default {
+  box-shadow: 1px 2px 5px #000000;
+}
+```
+
+---
