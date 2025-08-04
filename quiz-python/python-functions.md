@@ -478,8 +478,11 @@
 | Add Class Properties             | How to add a property to a class                                      |
 | Add Class Methods                | How to add a method to a class                                        |
 |  | |
-
-
+| Iterators                | An iterator is an object that contains a countable number of values |
+| Iterator vs Iterable     | What is the difference between an iterator and an iterable          |
+| Loop Through an Iterator | How to loop through the elements of an iterator                     |
+| Create an Iterator       | How to create an iterator                                           |
+| StopIteration            | How to stop an iterator                                             |
 |  | |
 
 
