@@ -272,3 +272,37 @@ The Java `Arrays` class (in `java.util`) includes methods for manipulating array
 | `length` | Returns the length of an array *(built-in, not in Arrays class)* |
 
 ---
+
+# Java ArrayList Methods
+
+Methods available in the `ArrayList` class:
+
+| Method             | Description                                                   | Return Type        |
+| ------------------ | ------------------------------------------------------------- | ------------------ |
+| `add()`            | Add an item to the list                                       | `boolean` / `void` |
+| `addAll()`         | Add a collection of items to the list                         | `boolean`          |
+| `clear()`          | Remove all items from the list                                | `void`             |
+| `clone()`          | Create a copy of the ArrayList                                | `Object`           |
+| `contains()`       | Checks whether an item exists in the list                     | `boolean`          |
+| `ensureCapacity()` | Increase the list capacity to fit a specified number of items | `void`             |
+| `forEach()`        | Perform an action on every item in the list                   | `void`             |
+| `get()`            | Return the item at a specific position in the list            | `T`                |
+| `indexOf()`        | Return the position of the first occurrence of an item        | `int`              |
+| `isEmpty()`        | Check if the list is empty                                    | `boolean`          |
+| `iterator()`       | Return an Iterator for the ArrayList                          | `Iterator`         |
+| `lastIndexOf()`    | Return the last occurrence of an item                         | `int`              |
+| `listIterator()`   | Return a ListIterator for the ArrayList                       | `ListIterator`     |
+| `remove()`         | Remove an item from the list                                  | `boolean` / `T`    |
+| `removeAll()`      | Remove a collection of items from the list                    | `boolean`          |
+| `removeIf()`       | Remove all items meeting a condition                          | `boolean`          |
+| `replaceAll()`     | Replace each item with result of operation                    | `void`             |
+| `retainAll()`      | Keep only specified collection elements                       | `boolean`          |
+| `set()`            | Replace an item at a specified position                       | `T`                |
+| `size()`           | Get the number of items                                       | `int`              |
+| `sort()`           | Sort the list                                                 | `void`             |
+| `spliterator()`    | Return a Spliterator for the list                             | `Spliterator`      |
+| `subList()`        | Return a sublist from the list                                | `List`             |
+| `toArray()`        | Return an array of the list items                             | `Object[]`         |
+| `trimToSize()`     | Reduce capacity to current list size                          | `void`             |
+
+---
