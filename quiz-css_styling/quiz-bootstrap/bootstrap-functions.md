@@ -464,3 +464,135 @@
 | `.jumbotron` (extra)    | When placed outside `.container`, spans full width without rounded corners |
 
 ---
+
+# Bootstrap Glyphicon Components
+
+Bootstrap includes **260 glyphs** from the **Glyphicon Halflings set**. While Glyphicons Halflings are normally not free, Bootstrap has made them available without cost. If possible, include a link back to [Glyphicons](https://glyphicons.com) as credit.
+
+### ✅ Use in:
+
+* Text
+* Buttons
+* Toolbars
+* Navigation
+* Forms
+
+### ✅ Syntax Example:
+
+```html
+<!-- Basic Glyphicon Examples -->
+<p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+<p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+<p>Print icon: <span class="glyphicon glyphicon-print"></span></p>
+```
+
+---
+
+## 📁 Glyphicon Classes
+
+| Class Name                          | Description     |
+| ----------------------------------- | --------------- |
+| `glyphicon glyphicon-asterisk`      | Asterisk        |
+| `glyphicon glyphicon-plus`          | Plus sign       |
+| `glyphicon glyphicon-minus`         | Minus sign      |
+| `glyphicon glyphicon-euro`          | Euro currency   |
+| `glyphicon glyphicon-cloud`         | Cloud           |
+| `glyphicon glyphicon-envelope`      | Envelope        |
+| `glyphicon glyphicon-pencil`        | Pencil/edit     |
+| `glyphicon glyphicon-glass`         | Glass           |
+| `glyphicon glyphicon-music`         | Music note      |
+| `glyphicon glyphicon-search`        | Search icon     |
+| `glyphicon glyphicon-heart`         | Filled heart    |
+| `glyphicon glyphicon-star`          | Filled star     |
+| `glyphicon glyphicon-star-empty`    | Empty star      |
+| `glyphicon glyphicon-user`          | User/profile    |
+| `glyphicon glyphicon-film`          | Film/media      |
+| `glyphicon glyphicon-th-large`      | Large grid      |
+| `glyphicon glyphicon-th`            | Grid            |
+| `glyphicon glyphicon-th-list`       | List view       |
+| `glyphicon glyphicon-ok`            | Checkmark/OK    |
+| `glyphicon glyphicon-remove`        | Close/remove    |
+| `glyphicon glyphicon-zoom-in`       | Zoom in         |
+| `glyphicon glyphicon-zoom-out`      | Zoom out        |
+| `glyphicon glyphicon-off`           | Power off       |
+| `glyphicon glyphicon-signal`        | Signal bars     |
+| `glyphicon glyphicon-cog`           | Settings/gear   |
+| `glyphicon glyphicon-trash`         | Trash/bin       |
+| `glyphicon glyphicon-home`          | Home            |
+| `glyphicon glyphicon-file`          | File/document   |
+| `glyphicon glyphicon-time`          | Clock/time      |
+| `glyphicon glyphicon-road`          | Road/map        |
+| `glyphicon glyphicon-download-alt`  | Download (alt)  |
+| `glyphicon glyphicon-download`      | Download        |
+| `glyphicon glyphicon-upload`        | Upload          |
+| `glyphicon glyphicon-inbox`         | Inbox           |
+| `glyphicon glyphicon-play-circle`   | Play button     |
+| `glyphicon glyphicon-repeat`        | Repeat/loop     |
+| `glyphicon glyphicon-refresh`       | Refresh         |
+| `glyphicon glyphicon-list-alt`      | Alternate list  |
+| `glyphicon glyphicon-lock`          | Lock            |
+| `glyphicon glyphicon-flag`          | Flag            |
+| `glyphicon glyphicon-headphones`    | Headphones      |
+| `glyphicon glyphicon-volume-off`    | Volume off      |
+| `glyphicon glyphicon-volume-down`   | Volume down     |
+| `glyphicon glyphicon-volume-up`     | Volume up       |
+| `glyphicon glyphicon-qrcode`        | QR code         |
+| `glyphicon glyphicon-barcode`       | Barcode         |
+| `glyphicon glyphicon-tag`           | Tag             |
+| `glyphicon glyphicon-tags`          | Multiple tags   |
+| `glyphicon glyphicon-book`          | Book            |
+| `glyphicon glyphicon-bookmark`      | Bookmark        |
+| `glyphicon glyphicon-print`         | Print           |
+| `glyphicon glyphicon-camera`        | Camera          |
+| `glyphicon glyphicon-font`          | Font/text       |
+| `glyphicon glyphicon-bold`          | Bold            |
+| `glyphicon glyphicon-italic`        | Italic          |
+| `glyphicon glyphicon-text-height`   | Text height     |
+| `glyphicon glyphicon-text-width`    | Text width      |
+| `glyphicon glyphicon-align-left`    | Align left      |
+| `glyphicon glyphicon-align-center`  | Align center    |
+| `glyphicon glyphicon-align-right`   | Align right     |
+| `glyphicon glyphicon-align-justify` | Justify text    |
+| `glyphicon glyphicon-list`          | List icon       |
+| `glyphicon glyphicon-indent-left`   | Indent left     |
+| `glyphicon glyphicon-indent-right`  | Indent right    |
+| `glyphicon glyphicon-picture`       | Picture/image   |
+| `glyphicon glyphicon-map-marker`    | Location marker |
+| `glyphicon glyphicon-adjust`        | Adjust/contrast |
+| `glyphicon glyphicon-tint`          | Tint/drop       |
+| `glyphicon glyphicon-edit`          | Edit            |
+| `glyphicon glyphicon-share`         | Share           |
+| `glyphicon glyphicon-check`         | Checkmark       |
+| `glyphicon glyphicon-move`          | Move/drag       |
+| `glyphicon glyphicon-play`          | Play icon       |
+| `glyphicon glyphicon-pause`         | Pause           |
+| `glyphicon glyphicon-stop`          | Stop            |
+| `glyphicon glyphicon-forward`       | Forward         |
+| `glyphicon glyphicon-eject`         | Eject           |
+| `glyphicon glyphicon-chevron-left`  | Chevron left    |
+| `glyphicon glyphicon-chevron-right` | Chevron right   |
+| `glyphicon glyphicon-question-sign` | Help/question   |
+| `glyphicon glyphicon-info-sign`     | Info            |
+| `glyphicon glyphicon-remove-sign`   | Remove (circle) |
+| `glyphicon glyphicon-ok-sign`       | OK (circle)     |
+| `glyphicon glyphicon-log-in`        | Login           |
+| `glyphicon glyphicon-log-out`       | Logout          |
+
+*…and many more (total: 260+). For the full reference list, refer to the [official Bootstrap documentation](https://getbootstrap.com/docs/3.4/components/#glyphicons).*
+
+---
+
+### 🧪 Testing Example:
+
+```html
+<!-- Bootstrap Glyphicon Buttons -->
+<button class="btn btn-default">
+  <span class="glyphicon glyphicon-search"></span> Search
+</button>
+
+<button class="btn btn-primary">
+  <span class="glyphicon glyphicon-cloud-upload"></span> Upload
+</button>
+```
+
+---
