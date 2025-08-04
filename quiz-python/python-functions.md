@@ -365,7 +365,6 @@
 | Boolean Values                      | True or False                                                         |
 | Evaluate Booleans                   | Evaluate a value or statement and return either True or False         |
 | Return Boolean Value                | Functions that return a Boolean value                                 |
-
 | -------------------------- | ----------------------------------------------------------------------------- |
 | Operators                  | Use operator to perform operations in Python                                  |
 | Arithmetic Operators       | Arithmetic operator are used to perform common mathematical operations        |
