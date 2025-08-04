@@ -2231,3 +2231,187 @@ Yes, GitHub allows mass-assigning issues to a collaborator to save time.
 
 ---
 
+# Question: What is Git LFS?
+
+**Answer:** Git LFS (Large File Storage) is a Git extension that stores large files (like videos, images, or datasets) outside the main Git repository, replacing them with small pointer files.
+
+---
+
+# Question: Why use Git LFS instead of storing large files directly in Git?
+
+**Answer:** To keep the repository fast and small, and to efficiently manage large file content by storing it on a separate LFS server.
+
+---
+
+# Question: What does Git LFS store in your repository for large files?
+
+**Answer:** A small pointer file that references the actual content stored on the LFS server.
+
+---
+
+# Question: What happens when someone clones a repo using Git LFS?
+
+**Answer:** They get the pointer files in the repo, and Git LFS downloads the real content from the LFS server as needed.
+
+---
+
+# Question: When should you use Git LFS?
+
+**Answer:** When versioning large files, when file size limits of Git hosting are exceeded, or when repository size needs to be manageable and fast.
+
+---
+
+# Question: How do you install Git LFS?
+
+**Answer:** Download it from [git-lfs.github.com](https://git-lfs.github.com) and run `git lfs install` in the repository.
+
+---
+
+# Question: What does the command `git lfs install` do?
+
+**Answer:** It initializes Git LFS in the repository, setting up necessary hooks and configurations.
+
+---
+
+# Question: How do you track `.psd` files with Git LFS?
+
+**Answer:** By running `git lfs track "*.psd"`
+
+---
+
+# Question: Give three example commands to track files using Git LFS.
+
+**Answer:**
+
+1. `git lfs track "*.zip"`
+2. `git lfs track "data/*.csv"`
+3. `git lfs track "images/*.{png,jpg}"`
+
+---
+
+# Question: What file does Git modify when you run `git lfs track`?
+
+**Answer:** `.gitattributes`
+
+---
+
+# Question: What is the `.gitattributes` entry for tracking `.psd` files with Git LFS?
+
+**Answer:** `*.psd filter=lfs diff=lfs merge=lfs -text`
+
+---
+
+# Question: What does Git commit when you add a file tracked by LFS?
+
+**Answer:** A pointer file, not the actual large file content.
+
+---
+
+# Question: Where is the real content of LFS-tracked files stored?
+
+**Answer:** On a separate Git LFS server.
+
+---
+
+# Question: What command do you use to add and commit a large file with Git LFS?
+
+**Answer:**
+
+```bash
+git add largefile.psd  
+git commit -m "Add large file"
+```
+
+---
+
+# Question: What happens when you push an LFS-tracked file to a remote repository?
+
+**Answer:** The pointer is pushed to the Git repo, and the actual content is uploaded to the LFS server.
+
+---
+
+# Question: How do you list all files currently tracked by Git LFS in your repository?
+
+**Answer:** `git lfs ls-files`
+
+---
+
+# Question: How do you stop tracking a file with Git LFS?
+
+**Answer:**
+
+1. Edit `.gitattributes` and remove or change the rule.
+2. Run `git lfs untrack "*.psd"`
+3. Run `git add .gitattributes`
+4. Commit the changes.
+
+---
+
+# Question: Does untracking a file with Git LFS remove it from LFS history?
+
+**Answer:** No, existing versions remain stored in LFS.
+
+---
+
+# Question: What is the purpose of the command `git lfs untrack "*.psd"`?
+
+**Answer:** It stops Git LFS from tracking `.psd` files in future commits.
+
+---
+
+# Question: What is the recommended use case for Git LFS?
+
+**Answer:** For files that are too large or frequently changing for regular Git handling.
+
+---
+
+# Question: What should you check before using Git LFS with a repository?
+
+**Answer:** Whether your Git hosting provider supports Git LFS.
+
+---
+
+# Question: What should you monitor if you're using Git LFS on a free hosting plan?
+
+**Answer:** Your Git LFS storage quota.
+
+---
+
+# Question: What should you do if you clone a repo and see pointer files instead of actual content?
+
+**Answer:** Make sure Git LFS is installed and run `git lfs pull`.
+
+---
+
+# Question: What command should be run to download actual LFS content after cloning a repo?
+
+**Answer:** `git lfs pull`
+
+---
+
+# Question: What error might you get when pushing LFS files to a remote without LFS support?
+
+**Answer:** An error indicating the remote does not support Git LFS.
+
+---
+
+# Question: What happens if you exceed your LFS quota when pushing files?
+
+**Answer:** Some files may not upload successfully to the LFS server.
+
+---
+
+# Question: Why is it important to verify LFS support before pushing to a remote?
+
+**Answer:** Because pushing to a remote that doesn't support LFS will result in errors and failed uploads.
+
+---
+
+# Question: What are the main warnings associated with Git LFS?
+
+**Answer:**
+
+1. Not all Git hosts support LFS.
+2. Free plans often have limited LFS storage.
+
+---
