@@ -484,8 +484,14 @@
 | Create an Iterator       | How to create an iterator                                           |
 | StopIteration            | How to stop an iterator                                             |
 |  | |
-
-
+| Global Scope               | When does a variable belong to the global scope?       |
+| Global Keyword             | The `global` keyword makes the variable global         |
+| Create a Module            | How to create a module                                 |
+| Variables in Modules       | How to use variables in a module                       |
+| Renaming a Module          | How to rename a module                                 |
+| Built-in Modules           | How to import built-in modules                         |
+| Using the `dir()` Function | List all variable names and function names in a module |
+| Import From Module         | How to import only parts from a module                 |
 |  | |
 
 
