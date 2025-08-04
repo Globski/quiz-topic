@@ -208,4 +208,91 @@
 
 ---
 
+# Question: List Bootstrap CSS helper classes grouped by their category.
+
+### Text Color Classes
+
+| Class           | Description                             |
+| --------------- | --------------------------------------- |
+| `.text-muted`   | Applies muted (gray) color to text      |
+| `.text-primary` | Applies primary (blue) color to text    |
+| `.text-success` | Applies green color to indicate success |
+| `.text-info`    | Applies light-blue color for info       |
+| `.text-warning` | Applies yellow color for warning        |
+| `.text-danger`  | Applies red color for danger            |
+
+---
+
+### Background Color Classes
+
+| Class         | Description                      |
+| ------------- | -------------------------------- |
+| `.bg-primary` | Applies primary background color |
+| `.bg-success` | Applies success background color |
+| `.bg-info`    | Applies info background color    |
+| `.bg-warning` | Applies warning background color |
+| `.bg-danger`  | Applies danger background color  |
+
+---
+
+### Miscellaneous Utility Classes
+
+| Class                | Description                                                         |
+| -------------------- | ------------------------------------------------------------------- |
+| `.pull-left`         | Floats an element to the left                                       |
+| `.pull-right`        | Floats an element to the right                                      |
+| `.center-block`      | Sets element to `display: block` and centers with auto margins      |
+| `.clearfix`          | Clears floated elements                                             |
+| `.show`              | Forces element to be shown (`display: block`)                       |
+| `.hidden`            | Hides element (`display: none`)                                     |
+| `.invisible`         | Hides element (`visibility: hidden`), but retains layout space      |
+| `.sr-only`           | Hides element visually, but remains accessible to screen readers    |
+| `.sr-only-focusable` | Makes `.sr-only` element visible on focus (for keyboard-only users) |
+| `.text-hide`         | Hides text and replaces it with a background image                  |
+| `.close`             | Styles close icon/button (× symbol)                                 |
+| `.caret`             | Indicates dropdown functionality (changes direction in dropup)      |
+
+---
+
+### Responsive Visibility Utilities
+
+| Class           | XS Devices `<768px` | SM Devices `≥768px` | MD Devices `≥992px` | LG Devices `≥1200px` |
+| --------------- | ------------------- | ------------------- | ------------------- | -------------------- |
+| `.visible-xs-*` | Visible             | Hidden              | Hidden              | Hidden               |
+| `.visible-sm-*` | Hidden              | Visible             | Hidden              | Hidden               |
+| `.visible-md-*` | Hidden              | Hidden              | Visible             | Hidden               |
+| `.visible-lg-*` | Hidden              | Hidden              | Hidden              | Visible              |
+| `.hidden-xs`    | Hidden              | Visible             | Visible             | Visible              |
+| `.hidden-sm`    | Visible             | Hidden              | Visible             | Visible              |
+| `.hidden-md`    | Visible             | Visible             | Hidden              | Visible              |
+| `.hidden-lg`    | Visible             | Visible             | Visible             | Hidden               |
+
+**Example:**
+
+```html
+<h1 class="hidden-xs bg-danger">This text is hidden on an EXTRA SMALL screen.</h1>
+<h1 class="hidden-sm bg-info">This text is hidden on a SMALL screen.</h1>
+<h1 class="hidden-md bg-warning">This text is hidden on a MEDIUM screen.</h1>
+<h1 class="hidden-lg bg-success">This text is hidden on a LARGE screen.</h1>
+```
+
+---
+
+### Display Variants of `.visible-*-*` Classes (as of v3.2.0)
+
+| Group of Classes          | CSS `display` Value     |
+| ------------------------- | ----------------------- |
+| `.visible-*-block`        | `display: block`        |
+| `.visible-*-inline`       | `display: inline`       |
+| `.visible-*-inline-block` | `display: inline-block` |
+
+**Example for small screens:**
+
+* `.visible-sm-block`
+* `.visible-sm-inline`
+* `.visible-sm-inline-block`
+
+> **Note:** `.visible-xs`, `.visible-sm`, `.visible-md`, and `.visible-lg` are **deprecated** as of v3.2.0.
+
+---
 
