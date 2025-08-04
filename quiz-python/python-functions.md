@@ -326,8 +326,6 @@
 
 # Question: List some commonly used Python features grouped by their description.
 
-### Python Glossary (Part 1)
-
 | Feature                             | Description                                                           |
 | ----------------------------------- | --------------------------------------------------------------------- |
 | Indentation                         | Indentation refers to the spaces at the beginning of a code line      |
