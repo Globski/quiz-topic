@@ -296,3 +296,30 @@
 
 ---
 
+# Question: List Bootstrap CSS image classes and their functions.
+
+### `<img>` Classes
+
+| Class             | Description                                                                  |
+| ----------------- | ---------------------------------------------------------------------------- |
+| `.img-rounded`    | Adds rounded corners to an image (not supported in IE8)                      |
+| `.img-circle`     | Shapes the image into a circle (not supported in IE8)                        |
+| `.img-thumbnail`  | Adds a border and padding, styles the image like a thumbnail                 |
+| `.img-responsive` | Makes the image responsive: `max-width: 100%; height: auto; display: block;` |
+
+---
+
+### Responsive Images
+
+| Method                  | Description                                             |
+| ----------------------- | ------------------------------------------------------- |
+| `.img-responsive` class | Used in `<img>` to scale images with the parent element |
+
+**Example:**
+
+```html
+<img src="cinqueterre.jpg" class="img-responsive" alt="Cinque Terre">
+```
+
+---
+
