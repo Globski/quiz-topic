@@ -426,9 +426,18 @@
 | Nested If              | How to write an if statement inside an if statement                                 |
 | The pass Keyword in If | Use the `pass` keyword inside empty if statements                                   |
 |  | |
-
-
-
+| While                   | How to write a while loop                                    |
+| While Break             | How to break a while loop                                    |
+| While Continue          | How to stop the current iteration and continue with the next |
+| While Else              | How to use an else statement in a while loop                 |
+| For                     | How to write a for loop                                      |
+| Loop Through a String   | How to loop through a string                                 |
+| For Break               | How to break a for loop                                      |
+| For Continue            | How to stop the current iteration and continue with the next |
+| Looping Through a range | How to loop through a range of values                        |
+| For Else                | How to use an else statement in a for loop                   |
+| Nested Loops            | How to write a loop inside a loop                            |
+| For pass                | Use the `pass` keyword inside empty for loops                |
 |  | |
 
 
