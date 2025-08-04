@@ -438,3 +438,31 @@ Methods available in the `HashMap` class:
 
 ---
 
+# Common Errors and Exceptions
+
+| Error/Exception                   | Description                                             |
+| --------------------------------- | ------------------------------------------------------- |
+| `ArithmeticError`                 | Occurs when a numeric calculation goes wrong            |
+| `ArrayIndexOutOfBoundsException`  | Index out of bounds in an array                         |
+| `ClassFormatError`                | Class file cannot be accessed                           |
+| `ClassNotFoundException`          | Accessing a class that doesn't exist                    |
+| `ConcurrentModificationException` | Adding/removing elements from iterables concurrently    |
+| `FileNotFoundException`           | File cannot be accessed                                 |
+| `IncompatibleClassChangeError`    | Base class changed after child class initialization     |
+| `InputMismatchException`          | Entering incorrect input (e.g., text instead of number) |
+| `InterruptedException`            | Thread interrupted while waiting/sleeping               |
+| `InvalidClassException`           | Serialization issue with a class                        |
+| `IOException`                     | Input/output operation failure                          |
+| `NegativeArraySizeException`      | Attempt to create array with negative size              |
+| `NoClassDefFoundError`            | Class not found at runtime                              |
+| `NoSuchFieldException`            | Accessing a nonexistent class field/variable            |
+| `NoSuchMethodException`           | Accessing a nonexistent method                          |
+| `NullPointerException`            | Accessing a null object reference                       |
+| `NumberFormatException`           | String cannot be converted to number                    |
+| `RuntimeException`                | Exception during program runtime                        |
+| `StringIndexOutOfBoundsException` | Invalid string index access                             |
+| `TypeNotPresentException`         | Specified type cannot be found                          |
+| `IllegalArgumentException`        | Illegal argument passed to method                       |
+| `IllegalStateException`           | Method called at an illegal time                        |
+
+---
