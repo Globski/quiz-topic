@@ -160,3 +160,52 @@ background-color: $primary_1; // here you can put an inline comment
 ```
 
 ---
+
+# Question: Is Sass platform-dependent?
+
+**Answer:** No, Sass is platform-independent.
+
+---
+
+# Question: Which browsers support Sass?
+
+**Answer:** Sass works in Edge/Internet Explorer (from IE 8), Firefox, Chrome, Safari, and Opera.
+
+---
+
+# Question: From which version of Internet Explorer is Sass supported?
+
+**Answer:** Sass is supported from Internet Explorer 8.
+
+---
+
+# Question: What programming language is Sass based on?
+
+**Answer:** Sass is based on the Ruby programming language.
+
+---
+
+# Question: What is the official website for Sass?
+
+**Answer:** The official Sass website is [https://sass-lang.com/](https://sass-lang.com/)
+
+---
+
+# Question: Can Sass be installed on different operating systems?
+
+**Answer:** Yes, Sass can be installed on Mac, Windows, and Linux systems.
+
+---
+
+# Question: Are there both free and paid applications available to install Sass?
+
+**Answer:** Yes, there are both free and paid applications available for installing Sass.
+
+---
+
+# Question: Where can you find installation options and instructions for Sass?
+
+**Answer:** Installation options and instructions can be found at [https://sass-lang.com/install](https://sass-lang.com/install)
+
+---
+
