@@ -15,3 +15,22 @@
 | `unquote(string)`                   | Removes quotes around `string` (if any), and returns the result.<br>**Example:** `unquote("Hello world!")`<br>**Result:** `Hello world!`                                           |
 
 ---
+
+# Question: List all Sass numeric functions with their descriptions and examples.
+
+### Sass Numeric Functions
+
+| Function                 | Description & Example                                                                                                                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `abs(number)`            | Returns the absolute value of `number`.<br>**Example:** `abs(15)` → `15`<br>**Example:** `abs(-15)` → `15`                                                                                             |
+| `ceil(number)`           | Rounds `number` up to the nearest integer.<br>**Example:** `ceil(15.20)` → `16`                                                                                                                        |
+| `comparable(num1, num2)` | Returns whether `num1` and `num2` are comparable.<br>**Example:** `comparable(15px, 10px)` → `true`<br>**Example:** `comparable(20mm, 1cm)` → `true`<br>**Example:** `comparable(35px, 2em)` → `false` |
+| `floor(number)`          | Rounds `number` down to the nearest integer.<br>**Example:** `floor(15.80)` → `15`                                                                                                                     |
+| `max(number...)`         | Returns the highest value of several numbers.<br>**Example:** `max(5, 7, 9, 0, -3, -7)` → `9`                                                                                                          |
+| `min(number...)`         | Returns the lowest value of several numbers.<br>**Example:** `min(5, 7, 9, 0, -3, -7)` → `-7`                                                                                                          |
+| `percentage(number)`     | Converts `number` to a percentage (multiplies by 100).<br>**Example:** `percentage(1.2)` → `120`                                                                                                       |
+| `random()`               | Returns a random number between 0 and 1.<br>**Example:** `random()` → `0.45673`                                                                                                                        |
+| `random(number)`         | Returns a random integer between 1 and `number`.<br>**Example:** `random(6)` → `4`                                                                                                                     |
+| `round(number)`          | Rounds `number` to the nearest integer.<br>**Example:** `round(15.20)` → `15`<br>**Example:** `round(15.80)` → `16`                                                                                    |
+
+---
