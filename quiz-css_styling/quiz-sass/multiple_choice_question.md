@@ -512,3 +512,180 @@ body {
 
 ---
 
+# Question: What does the `@mixin` directive do in Sass?
+
+**Answer:** It defines a block of reusable CSS code that can be included in multiple selectors.
+
+---
+
+# Question: What is the purpose of the `@include` directive in Sass?
+
+**Answer:** The `@include` directive is used to include a mixin in a style rule.
+
+---
+
+# Question: What is the correct syntax to define a mixin in Sass?
+
+**Answer:**
+
+```scss
+@mixin name {
+  property: value;
+  ...
+}
+```
+---
+
+# Question: Are hyphens and underscores treated the same in mixin names in Sass?
+
+**Answer:** Yes, `@mixin important-text` and `@mixin important_text` are treated as the same.
+
+---
+
+# Question: How do you include a mixin named `important-text` in a `.danger` class?
+
+**Answer:**
+
+```scss
+.danger {
+  @include important-text;
+  background-color: green;
+}
+```
+
+---
+
+# Question: Can a mixin include other mixins?
+
+**Answer:** Yes, a mixin can include other mixins using `@include`.
+
+---
+
+# Question: What is the correct syntax to define a mixin that includes other mixins?
+
+**Answer:**
+
+```scss
+@mixin special-text {
+  @include important-text;
+  @include link;
+  @include special-border;
+}
+```
+
+---
+
+# Question: How do you define a mixin that accepts arguments in Sass?
+
+**Answer:**
+
+```scss
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+```
+
+---
+
+# Question: How do you include the `bordered` mixin with arguments for `.myArticle` and `.myNotes`?
+
+**Answer:**
+
+```scss
+.myArticle {
+  @include bordered(blue, 1px);
+}
+
+.myNotes {
+  @include bordered(red, 2px);
+}
+```
+
+---
+
+# Question: What is the compiled CSS output for the `bordered` mixin included in `.myArticle` and `.myNotes`?
+
+**Answer:**
+
+```css
+.myArticle {
+  border: 1px solid blue;
+}
+
+.myNotes {
+  border: 2px solid red;
+}
+```
+
+---
+
+# Question: How do you define default values in a mixin’s parameters?
+
+**Answer:**
+
+```scss
+@mixin bordered($color: blue, $width: 1px) {
+  border: $width solid $color;
+}
+```
+
+---
+
+# Question: What does the following code output in CSS?
+
+```scss
+.myTips {
+  @include bordered($color: orange);
+}
+```
+
+**Answer:**
+
+```css
+.myTips {
+  border: 1px solid orange;
+}
+```
+
+---
+
+# Question: What is a good use case of a mixin when dealing with vendor-specific prefixes?
+
+**Answer:** Mixins can be used to apply vendor prefixes like `-webkit-`, `-ms-`, and standard properties in a single reusable block.
+
+---
+
+# Question: What is the correct syntax of a `transform` mixin that handles vendor prefixes?
+
+**Answer:**
+
+```scss
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+```
+
+---
+
+# Question: What is the compiled CSS output of the following code?
+
+```scss
+.myBox {
+  @include transform(rotate(20deg));
+}
+```
+
+**Answer:**
+
+```css
+.myBox {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+```
+
+---
+
