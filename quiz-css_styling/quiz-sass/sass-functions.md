@@ -66,4 +66,22 @@
 | `map-remove(map, keys...)` | Removes the specified `keys` from the `map`.<br>**Example:**<br>`$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-remove($font-sizes, "small")` → `("normal": 18px, "large": 24px)`<br>`map-remove($font-sizes, "small", "large")` → `("normal": 18px)`                                |
 | `map-values(map)`          | Returns a list of all values in the `map`.<br>**Example:**<br>`$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-values($font-sizes)` → `12px, 18px, 24px`                                                                                                                              |
 
+
+---
+
+# Question: List all Sass selector functions with their descriptions and examples.
+
+### Sass Selector Functions
+
+| Function                                            | Description & Example                                                                                                                                                                                                                                    |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `is-superselector(super, sub)`                      | Checks whether the `super` selector matches all the elements that `sub` matches.<br>**Example:**<br>`is-superselector("div", "div.myInput")` → `true`<br>`is-superselector("div.myInput", "div")` → `false`<br>`is-superselector("div", "div")` → `true` |
+| `selector-append(selectors)`                        | Appends the second (and third, fourth, etc.) selector to the first selector.<br>**Example:**<br>`selector-append("div", ".myInput")` → `div.myInput`<br>`selector-append(".warning", "__a")` → `.warning__a`                                             |
+| `selector-extend(selector, extendee, extender)`     | Extends `extendee` in `selector` with `extender`. *(No example provided)*                                                                                                                                                                                |
+| `selector-nest(selectors)`                          | Returns a new selector containing a nested list of CSS selectors based on the list provided.<br>**Example:**<br>`selector-nest("ul", "li")` → `ul li`<br>`selector-nest(".warning", "alert", "div")` → `.warning div, alert div`                         |
+| `selector-parse(selector)`                          | Returns a list of strings contained in `selector`, using the same format as the parent selector.<br>**Example:**<br>`selector-parse("h1 .myInput .warning")` → `('h1', '.myInput', '.warning')`                                                          |
+| `selector-replace(selector, original, replacement)` | Returns a new selector with `original` replaced by `replacement`.<br>**Example:**<br>`selector-replace("p.warning", "p", "div")` → `div.warning`                                                                                                         |
+| `selector-unify(selector1, selector2)`              | Returns a new selector that matches only elements matched by both `selector1` and `selector2`.<br>**Example:**<br>`selector-unify("myInput", ".disabled")` → `myInput.disabled`<br>`selector-unify("p", "h1")` → `null`                                  |
+| `simple-selectors(selectors)`                       | Returns a list of the individual selectors in `selectors`.<br>**Example:**<br>`simple-selectors("div.myInput")` → `div`, `.myInput`<br>`simple-selectors("div.myInput:before")` → `div`, `.myInput`, `:before`                                           |
+
 ---
