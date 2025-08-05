@@ -84,4 +84,26 @@
 | `selector-unify(selector1, selector2)`              | Returns a new selector that matches only elements matched by both `selector1` and `selector2`.<br>**Example:**<br>`selector-unify("myInput", ".disabled")` → `myInput.disabled`<br>`selector-unify("p", "h1")` → `null`                                  |
 | `simple-selectors(selectors)`                       | Returns a list of the individual selectors in `selectors`.<br>**Example:**<br>`simple-selectors("div.myInput")` → `div`, `.myInput`<br>`simple-selectors("div.myInput:before")` → `div`, `.myInput`, `:before`                                           |
 
+
+---
+
+# Question: List all Sass introspection functions with their descriptions and examples.
+
+### Sass Introspection Functions
+
+| Function                                 | Description & Example                                                                                                                                                                                    |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `call(function, arguments...)`           | Calls a `function` with given `arguments`, and returns the result. *(No example provided)*                                                                                                               |
+| `content-exists()`                       | Checks whether the current mixin was passed a `@content` block. *(No example provided)*                                                                                                                  |
+| `feature-exists(feature)`                | Checks whether `feature` is supported by the current Sass implementation.<br>**Example:**<br>`feature-exists("at-error")` → `true`                                                                       |
+| `function-exists(functionname)`          | Checks whether the specified `function` exists.<br>**Example:**<br>`function-exists("nonsense")` → `false`                                                                                               |
+| `get-function(functionname, css: false)` | Returns the specified `function`. If `css: true`, it returns a plain CSS function instead. *(No example provided)*                                                                                       |
+| `global-variable-exists(variablename)`   | Checks whether the specified **global** variable exists.<br>**Example:**<br>`global-variable-exists(a)` → `true`                                                                                         |
+| `inspect(value)`                         | Returns a string representation of `value`. *(No example provided)*                                                                                                                                      |
+| `mixin-exists(mixinname)`                | Checks whether the specified `mixin` exists.<br>**Example:**<br>`mixin-exists("important-text")` → `true`                                                                                                |
+| `type-of(value)`                         | Returns the type of `value`.<br>Can be: `number`, `string`, `color`, `list`, `map`, `bool`, `null`, `function`, `arglist`.<br>**Example:**<br>`type-of(15px)` → `number`<br>`type-of(#ff0000)` → `color` |
+| `unit(number)`                           | Returns the unit associated with a `number`.<br>**Example:** `unit(15px)` → `px`                                                                                                                         |
+| `unitless(number)`                       | Checks whether the specified `number` has a unit associated with it.<br>**Example:**<br>`unitless(15px)` → `false`<br>`unitless(15)` → `true`                                                            |
+| `variable-exists(variablename)`          | Checks whether the specified variable exists in the **current scope**.<br>**Example:**<br>`variable-exists(b)` → `true`                                                                                  |
+
 ---
