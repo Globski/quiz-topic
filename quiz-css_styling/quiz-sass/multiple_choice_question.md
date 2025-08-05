@@ -59,3 +59,104 @@ body {
 ```
 
 ---
+
+
+# Question: What prior knowledge should you have before learning Sass?
+
+**Answer:** You should have a basic understanding of HTML and CSS.
+
+---
+
+# Question: What does Sass stand for?
+
+**Answer:** Sass stands for Syntactically Awesome Stylesheet.
+
+---
+
+# Question: What type of technology is Sass in relation to CSS?
+
+**Answer:** Sass is a CSS pre-processor and an extension to CSS.
+
+---
+
+# Question: Is Sass compatible with all versions of CSS?
+
+**Answer:** Yes, Sass is completely compatible with all versions of CSS.
+
+---
+
+# Question: How does Sass improve the CSS development process?
+
+**Answer:** Sass reduces repetition in CSS and therefore saves time.
+
+---
+
+# Question: Who designed and developed Sass?
+
+**Answer:** Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006.
+
+---
+
+# Question: Why is Sass particularly useful as stylesheets grow in size?
+
+**Answer:** Sass helps manage larger, more complex, and harder-to-maintain stylesheets by offering advanced features not available in regular CSS.
+
+---
+
+# Question: Name some features that Sass adds beyond regular CSS.
+
+**Answer:** Sass adds variables, nested rules, mixins, imports, inheritance, built-in functions, and more.
+
+---
+
+# Question: Why is using variables in Sass beneficial when dealing with color values?
+
+**Answer:** It avoids the need to repeat HEX values multiple times and allows easy updates by changing the value in one place.
+
+---
+
+# Question: What is the main advantage of using Sass variables in terms of maintainability?
+
+**Answer:** When a primary color changes, you only need to update it in one place instead of multiple locations in the stylesheet.
+
+---
+
+# Question: Can web browsers interpret Sass code directly?
+
+**Answer:** No, browsers cannot understand Sass code directly.
+
+---
+
+# Question: What is the name of the process used to convert Sass to standard CSS?
+
+**Answer:** The process is called transpiling.
+
+---
+
+# Question: What is transpiling in the context of Sass?
+
+**Answer:** Transpiling is the process of transforming source code written in one language (Sass) into another language (CSS).
+
+---
+
+# Question: What is the file extension used for Sass files?
+
+**Answer:** Sass files use the `.scss` file extension.
+
+---
+
+# Question: What types of comments does Sass support?
+
+**Answer:** Sass supports standard CSS block comments `/* comment */` and inline comments `// comment`.
+
+---
+
+# Question: In the Sass example, where is an inline comment used?
+
+**Answer:** An inline comment is used on the line setting the background color in `.main-header`:
+
+```scss
+background-color: $primary_1; // here you can put an inline comment
+```
+
+---
