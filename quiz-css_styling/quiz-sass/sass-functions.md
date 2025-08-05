@@ -53,3 +53,17 @@
 
 ---
 
+# Question: List all Sass map functions with their descriptions and examples.
+
+### Sass Map Functions
+
+| Function                   | Description & Example                                                                                                                                                                                                                                                                                      |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `map-get(map, key)`        | Returns the value for the specified `key` in the `map`.<br>**Example:**<br>`$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-get($font-sizes, "small")` → `12px`                                                                                                                       |
+| `map-has-key(map, key)`    | Checks whether `map` has the specified `key`. Returns `true` or `false`.<br>**Example:**<br>`$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-has-key($font-sizes, "big")` → `false`                                                                                                   |
+| `map-keys(map)`            | Returns a list of all keys in the `map`.<br>**Example:**<br>`$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-keys($font-sizes)` → `"small", "normal", "large"`                                                                                                                        |
+| `map-merge(map1, map2)`    | Appends `map2` to the end of `map1`.<br>**Example:**<br>`$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`$font-sizes2: ("x-large": 30px, "xx-large": 36px)`<br>`map-merge($font-sizes, $font-sizes2)` → `"small": 12px, "normal": 18px, "large": 24px, "x-large": 30px, "xx-large": 36px` |
+| `map-remove(map, keys...)` | Removes the specified `keys` from the `map`.<br>**Example:**<br>`$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-remove($font-sizes, "small")` → `("normal": 18px, "large": 24px)`<br>`map-remove($font-sizes, "small", "large")` → `("normal": 18px)`                                |
+| `map-values(map)`          | Returns a list of all values in the `map`.<br>**Example:**<br>`$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)`<br>`map-values($font-sizes)` → `12px, 18px, 24px`                                                                                                                              |
+
+---
