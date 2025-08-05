@@ -707,57 +707,15 @@ body {
 
 ---
 
-# Question: In the SCSS example, which class is used as the base style for the buttons?
-
-**Answer:** `.button-basic`
-
----
-
-# Question: What properties are defined in the `.button-basic` class in the SCSS example?
-
-**Answer:** `border: none;`, `padding: 15px 30px;`, `text-align: center;`, `font-size: 16px;`, `cursor: pointer;`
-
----
-
 # Question: How does the `.button-report` class inherit styles in the SCSS example?
 
 **Answer:** It uses `@extend .button-basic;` to inherit all styles from `.button-basic`.
 
 ---
 
-# Question: What additional property does `.button-report` define after extending `.button-basic`?
-
-**Answer:** `background-color: red;`
-
----
-
 # Question: How does the `.button-submit` class inherit styles in the SCSS example?
 
 **Answer:** It uses `@extend .button-basic;` to inherit all styles from `.button-basic`.
-
----
-
-# Question: What additional properties does `.button-submit` define after extending `.button-basic`?
-
-**Answer:** `background-color: green;` and `color: white;`
-
----
-
-# Question: What is the resulting selector combination in the compiled CSS from the example?
-
-**Answer:** `.button-basic, .button-report, .button-submit` shares the common base styles.
-
----
-
-# Question: What style does `.button-report` apply in addition to the inherited base styles?
-
-**Answer:** `background-color: red;`
-
----
-
-# Question: What styles does `.button-submit` apply in addition to the inherited base styles?
-
-**Answer:** `background-color: green;` and `color: white;`
 
 ---
 
