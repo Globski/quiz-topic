@@ -263,3 +263,119 @@ background-color: $primary_1; // here you can put an inline comment
 
 ---
 
+# Question: What feature does Sass offer for writing CSS selectors in a hierarchical structure?
+
+**Answer:** Sass allows you to nest CSS selectors in the same way as HTML.
+
+---
+
+# Question: What is the advantage of using nested rules in Sass?
+
+**Answer:** It makes the code cleaner and easier to read compared to standard CSS.
+
+---
+
+# Question: What is the equivalent CSS output of the following Sass code?
+
+```scss
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+```
+
+**Answer:**
+
+```css
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+```
+
+---
+
+# Question: What type of CSS properties can be grouped using Sass nested properties?
+
+**Answer:** Properties with the same prefix, such as `font-*` or `text-*` properties.
+
+---
+
+# Question: How do you write `font-family`, `font-size`, and `font-weight` as nested properties in Sass?
+
+**Answer:**
+
+```scss
+font: {
+  family: Helvetica, sans-serif;
+  size: 18px;
+  weight: bold;
+}
+```
+
+---
+
+# Question: How do you write `text-align`, `text-transform`, and `text-overflow` as nested properties in Sass?
+
+**Answer:**
+
+```scss
+text: {
+  align: center;
+  transform: lowercase;
+  overflow: hidden;
+}
+```
+
+---
+
+# Question: What is the CSS output of the following nested Sass properties?
+
+```scss
+font: {
+  family: Helvetica, sans-serif;
+  size: 18px;
+  weight: bold;
+}
+
+text: {
+  align: center;
+  transform: lowercase;
+  overflow: hidden;
+}
+```
+
+**Answer:**
+
+```css
+font-family: Helvetica, sans-serif;
+font-size: 18px;
+font-weight: bold;
+
+text-align: center;
+text-transform: lowercase;
+text-overflow: hidden;
+```
+
+---
+
