@@ -107,3 +107,56 @@
 | `variable-exists(variablename)`          | Checks whether the specified variable exists in the **current scope**.<br>**Example:**<br>`variable-exists(b)` → `true`                                                                                  |
 
 ---
+
+# Question: List some Sass color functions grouped by their category.
+
+---
+
+### Sass Set Color Functions
+
+| Function                                  | Description & Example                                                                                               |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `rgb(red, green, blue)`                   | Sets a color using the RGB model. <br> **Example:** `rgb(0, 0, 255)` → blue                                         |
+| `rgba(red, green, blue, alpha)`           | Sets a color using the RGBA model (with opacity). <br> **Example:** `rgba(0, 0, 255, 0.3)` → blue with opacity      |
+| `hsl(hue, saturation, lightness)`         | Sets a color using the HSL model. <br> **Example:** `hsl(120, 100%, 50%)` → green                                   |
+| `hsla(hue, saturation, lightness, alpha)` | Sets a color using the HSLA model (with opacity). <br> **Example:** `hsl(120, 100%, 50%, 0.3)` → green with opacity |
+| `grayscale(color)`                        | Converts color to grayscale. <br> **Example:** `grayscale(#7fffd4)` → `#c6c6c6`                                     |
+| `complement(color)`                       | Returns the complementary color. <br> **Example:** `complement(#7fffd4)` → `#ff7faa`                                |
+| `invert(color, weight)`                   | Inverts a color. Weight is optional (0–100%). <br> **Example:** `invert(white)` → `black`                           |
+
+---
+
+### Sass Get Color Functions
+
+| Function            | Description & Example                                                                         |
+| ------------------- | --------------------------------------------------------------------------------------------- |
+| `red(color)`        | Gets red component (0–255). <br> **Example:** `red(#7fffd4)` → `127`                          |
+| `green(color)`      | Gets green component (0–255). <br> **Example:** `green(#7fffd4)` → `255`                      |
+| `blue(color)`       | Gets blue component (0–255). <br> **Example:** `blue(#7fffd4)` → `212`                        |
+| `hue(color)`        | Gets hue (0deg–360deg). <br> **Example:** `hue(#7fffd4)` → `160deg`                           |
+| `saturation(color)` | Gets HSL saturation (0%–100%). <br> **Example:** `saturation(#7fffd4)` → `100%`               |
+| `lightness(color)`  | Gets HSL lightness (0%–100%). <br> **Example:** `lightness(#7fffd4)` → `74.9%`                |
+| `alpha(color)`      | Gets alpha channel (0–1). <br> **Example:** `alpha(#7fffd4)` → `1`                            |
+| `opacity(color)`    | Gets alpha/opacity value (0–1). <br> **Example:** `opacity(rgba(127, 255, 212, 0.5))` → `0.5` |
+
+---
+
+### Sass Manipulate Color Functions
+
+| Function                                                                   | Description & Example                                                                                    |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `mix(color1, color2, weight)`                                              | Mixes two colors. Weight (0–100%) adjusts color1's dominance.                                            |
+| `adjust-hue(color, degrees)`                                               | Adjusts hue by given degrees. <br> **Example:** `adjust-hue(#7fffd4, 80deg)` → `#8080ff`                 |
+| `adjust-color(color, red, green, blue, hue, saturation, lightness, alpha)` | Adjusts parameters by amount. <br> **Example:** `adjust-color(#7fffd4, blue: 25)`                        |
+| `change-color(color, red, green, blue, hue, saturation, lightness, alpha)` | Changes parameters to specific values. <br> **Example:** `change-color(#7fffd4, red: 255)` → `#ffffd4`   |
+| `scale-color(color, red, green, blue, saturation, lightness, alpha)`       | Scales parameters of the color.                                                                          |
+| `rgba(color, alpha)`                                                       | Applies new alpha to existing color. <br> **Example:** `rgba(#7fffd4, 30%)` → `rgba(127, 255, 212, 0.3)` |
+| `lighten(color, amount)`                                                   | Lightens color by increasing lightness (0%–100%).                                                        |
+| `darken(color, amount)`                                                    | Darkens color by decreasing lightness (0%–100%).                                                         |
+| `saturate(color, amount)`                                                  | Increases saturation (0%–100%).                                                                          |
+| `desaturate(color, amount)`                                                | Decreases saturation (0%–100%).                                                                          |
+| `opacify(color, amount)` / `fade-in(color, amount)`                        | Makes color more opaque by increasing alpha (0–1).                                                       |
+| `transparentize(color, amount)` / `fade-out(color, amount)`                | Makes color more transparent by decreasing alpha (0–1).                                                  |
+
+---
+
