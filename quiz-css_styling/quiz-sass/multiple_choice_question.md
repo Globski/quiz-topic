@@ -379,3 +379,136 @@ text-overflow: hidden;
 
 ---
 
+# Question: What Sass directive allows you to include the content of one file in another?
+
+**Answer:** The `@import` directive.
+
+---
+
+# Question: How is the Sass `@import` directive different from the CSS `@import` directive?
+
+**Answer:** Unlike CSS `@import`, which creates an extra HTTP request, Sass `@import` includes the content at compile time, so no extra HTTP request is made at runtime.
+
+---
+
+# Question: What is the basic syntax for importing a file in Sass?
+
+**Answer:** `@import filename;`
+
+---
+
+# Question: Do you need to include the file extension when importing a file in Sass?
+
+**Answer:** No, Sass automatically assumes the file is a `.sass` or `.scss` file.
+
+---
+
+# Question: Can Sass import regular CSS files?
+
+**Answer:** Yes, Sass can also import CSS files.
+
+---
+
+# Question: What happens to variables and mixins defined in an imported Sass file?
+
+**Answer:** They can be used in the main file after import.
+
+---
+
+# Question: Can you import multiple files into a Sass file?
+
+**Answer:** Yes, you can import as many files as needed.
+
+---
+
+# Question: What is the purpose of placing the `@import` directive at the top of a file?
+
+**Answer:** To ensure that the imported content has a global scope and is available throughout the file.
+
+---
+
+# Question: Given a file named `reset.scss`, what does this Sass code do?
+
+```scss
+@import "reset";
+```
+
+**Answer:** It includes the content of `reset.scss` into the current file at compile time.
+
+---
+
+# Question: What is the compiled CSS output of importing `reset.scss` and defining body styles like this?
+
+```scss
+@import "reset";
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+```
+
+**Answer:**
+
+```css
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+```
+
+---
+
+# Question: What does Sass do by default with `.scss` files?
+
+**Answer:** Sass transpiles all `.scss` files by default.
+
+---
+
+# Question: What is a Sass partial?
+
+**Answer:** A partial is a Sass file whose filename starts with an underscore (`_`). Sass does not transpile this file directly but allows it to be imported into other files.
+
+---
+
+# Question: How do you name a partial file in Sass?
+
+**Answer:** By prefixing the filename with an underscore, e.g., `_colors.scss`.
+
+---
+
+# Question: Will a file named `_colors.scss` be compiled into `colors.css` directly?
+
+**Answer:** No, Sass will not compile it directly because it is a partial.
+
+---
+
+# Question: When importing a partial file named `_colors.scss`, how should the import statement look?
+
+**Answer:** `@import "colors";` (the underscore is omitted)
+
+---
+
+# Question: What does the following Sass code do?
+
+```scss
+@import "colors";
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: $myBlue;
+}
+```
+
+**Answer:** It imports the variables defined in `_colors.scss`, such as `$myBlue`, and uses them in the body styling.
+
+---
+
