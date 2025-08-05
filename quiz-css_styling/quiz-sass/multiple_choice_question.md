@@ -209,3 +209,57 @@ background-color: $primary_1; // here you can put an inline comment
 
 ---
 
+# Question: What are Sass variables used for?
+
+**Answer:** Sass variables are used to store information that can be reused later, such as strings, numbers, colors, booleans, lists, and nulls.
+
+---
+
+# Question: What symbol is used to declare a variable in Sass?
+
+**Answer:** The dollar sign (`$`) is used to declare a variable in Sass.
+
+---
+
+# Question: What is the correct Sass variable syntax?
+
+**Answer:** `$variablename: value;`
+
+---
+
+# Question: How are variables used in the `body` and `#container` selectors?
+
+**Answer:** Variables are used to set the `font-family`, `font-size`, and `color` in `body`, and the `width` in `#container`.
+
+---
+
+# Question: What is the default scope of a Sass variable?
+
+**Answer:** A Sass variable is only available at the level of nesting where it is defined.
+
+---
+
+# Question: How can you override the default local scope of a Sass variable?
+
+**Answer:** By using the `!global` flag when defining the variable.
+
+---
+
+# Question: What does the `!global` flag do in Sass?
+
+**Answer:** It marks a variable as global, making it accessible on all levels of nesting.
+
+---
+
+# Question: Where is it recommended to define global variables in Sass?
+
+**Answer:** It is recommended to define global variables outside any rule blocks, ideally in a separate file named `_globals.scss`.
+
+---
+
+# Question: How can you include global variables from another file in your Sass project?
+
+**Answer:** By using the `@include` keyword to include the `_globals.scss` file.
+
+---
+
