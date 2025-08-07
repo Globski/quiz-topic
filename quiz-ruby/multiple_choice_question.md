@@ -271,3 +271,63 @@ puts "Hello, World!"
 **Answer:** Yes, Ruby has a rich set of built-in functions that can be used directly in scripts.
 
 ---
+
+# Question: Which text editor can you use to write Ruby programs on Windows?
+
+**Answer:** Notepad or EditPlus.
+
+---
+
+# Question: What is VIM and on which platforms is it available?
+
+**Answer:** VIM (Vi IMproved) is a simple text editor available on almost all Unix machines and now on Windows as well.
+
+---
+
+# Question: What Ruby IDE is available for Windows users and is mentioned as an integrated development environment?
+
+**Answer:** RubyWin.
+
+---
+
+# Question: What is RDE and who is it intended for?
+
+**Answer:** Ruby Development Environment (RDE) is an IDE intended for Windows users.
+
+---
+
+# Question: What is IRb in Ruby?
+
+**Answer:** Interactive Ruby (IRb) is a shell for experimentation that allows you to view expression results line by line.
+
+---
+
+# Question: Is any additional setup required to use IRb after Ruby is installed?
+
+**Answer:** No, IRb comes bundled with the Ruby installation.
+
+---
+
+# Question: What command starts an Interactive Ruby session?
+
+**Answer:** `irb`
+
+---
+
+# Question: what does the command `def hello` define?
+
+**Answer:** It defines a method named `hello`.
+
+---
+
+# Question: What is the return value displayed after executing a method in IRb?
+
+**Answer:** `nil`
+
+---
+
+# Question: What does the IRb shell allow you to do?
+
+**Answer:** It allows you to experiment and immediately view expression results line by line.
+
+---
