@@ -146,3 +146,128 @@ puts "Hello, World!"
 
 ---
 
+# Question: Who created the Ruby programming language, and in what year?
+
+**Answer:** Yukihiro Matsumoto created Ruby in 1993.
+
+---
+
+# Question: What is Yukihiro Matsumoto also known as in the Ruby community?
+
+**Answer:** He is known as Matz.
+
+---
+
+# Question: Where can you find Yukihiro Matsumoto's name online related to Ruby?
+
+**Answer:** On the Ruby mailing list at [www.ruby-lang.org](http://www.ruby-lang.org).
+
+---
+
+# Question: Ruby has features similar to which three scripting languages?
+
+**Answer:** Smalltalk, Perl, and Python.
+
+---
+
+# Question: Which language is noted as a true object-oriented language and is similar to Ruby?
+
+**Answer:** Smalltalk.
+
+---
+
+# Question: How does the Ruby syntax compare to Smalltalk syntax?
+
+**Answer:** Ruby syntax is much easier than Smalltalk syntax.
+
+---
+
+# Question: Is Ruby open-source, and under what condition?
+
+**Answer:** Yes, Ruby is open-source and freely available on the Web, but it is subject to a license.
+
+---
+
+# Question: What type of programming language is Ruby?
+
+**Answer:** Ruby is a general-purpose, interpreted programming language.
+
+---
+
+# Question: What programming paradigm does Ruby fully support?
+
+**Answer:** Ruby is a true object-oriented programming language.
+
+---
+
+# Question: What kind of scripting language is Ruby classified as?
+
+**Answer:** A server-side scripting language.
+
+---
+
+# Question: Ruby is similar to which server-side scripting languages?
+
+**Answer:** Python and Perl.
+
+---
+
+# Question: What type of web scripts can be written using Ruby?
+
+**Answer:** Common Gateway Interface (CGI) scripts.
+
+---
+
+# Question: Can Ruby be embedded into HTML?
+
+**Answer:** Yes, Ruby can be embedded into Hypertext Markup Language (HTML).
+
+---
+
+# Question: Why is Ruby considered beginner-friendly?
+
+**Answer:** It has a clean and easy syntax that allows new developers to learn quickly and easily.
+
+---
+
+# Question: Ruby’s syntax is similar to which programming languages?
+
+**Answer:** C++ and Perl.
+
+---
+
+# Question: How scalable is Ruby for large applications?
+
+**Answer:** Ruby is very scalable, and big programs written in Ruby are easily maintainable.
+
+---
+
+# Question: What types of applications can be developed using Ruby?
+
+**Answer:** Internet and intranet applications.
+
+---
+
+# Question: In which environments can Ruby be installed?
+
+**Answer:** Windows and POSIX environments.
+
+---
+
+# Question: Name some GUI tools supported by Ruby.
+
+**Answer:** Tcl/Tk, GTK, and OpenGL.
+
+---
+
+# Question: Which databases can Ruby connect to?
+
+**Answer:** DB2, MySQL, Oracle, and Sybase.
+
+---
+
+# Question: Does Ruby provide built-in functions?
+
+**Answer:** Yes, Ruby has a rich set of built-in functions that can be used directly in scripts.
+
+---
