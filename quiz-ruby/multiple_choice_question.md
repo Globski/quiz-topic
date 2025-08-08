@@ -331,3 +331,257 @@ puts "Hello, World!"
 **Answer:** It allows you to experiment and immediately view expression results line by line.
 
 ---
+
+# Question: What is the file extension for Ruby source files?
+
+**Answer:** `.rb`
+
+---
+
+# Question: What should the first line of a Ruby script typically include to indicate the Ruby interpreter and enable warnings?
+
+**Answer:** `#!/usr/bin/ruby -w`
+
+---
+
+# Question: What Ruby statement outputs "Hello, Ruby!" to the console?
+
+**Answer:** `puts "Hello, Ruby!"`
+
+---
+
+# Question: How do you run a Ruby script named `test.rb` from the command line?
+
+**Answer:** `$ ruby test.rb`
+
+---
+
+# Question: What is the output of running a Ruby script with `puts "Hello, Ruby!"`?
+
+**Answer:** `Hello, Ruby!`
+
+---
+
+# Question: Are whitespace characters such as spaces and tabs significant in Ruby code?
+
+**Answer:** Generally, no — whitespace is ignored except in strings or when it affects ambiguous statements.
+
+---
+
+# Question: What happens when ambiguous statements are interpreted in Ruby with the `-w` flag?
+
+**Answer:** Ruby produces warnings.
+
+---
+
+# Question: In Ruby, how is the expression `a + b` interpreted?
+
+**Answer:** As `a + b`, where `a` is a local variable.
+
+---
+
+# Question: In Ruby, how is the expression `a  +b` interpreted?
+
+**Answer:** As `a(+b)`, where `a` is interpreted as a method call.
+
+---
+
+# Question: How does Ruby interpret the end of a statement?
+
+**Answer:** Using semicolons or newline characters.
+
+---
+
+# Question: What indicates statement continuation in Ruby across multiple lines?
+
+**Answer:** Ending a line with operators like `+`, `-`, or a backslash `\`.
+
+---
+
+# Question: What are identifiers in Ruby?
+
+**Answer:** Names of variables, constants, and methods.
+
+---
+
+# Question: Are Ruby identifiers case-sensitive?
+
+**Answer:** Yes.
+
+---
+
+# Question: Can Ruby identifiers include underscores?
+
+**Answer:** Yes, they may consist of alphanumeric characters and underscores (`_`).
+
+---
+
+# Question: Can Ruby reserved words be used as method names?
+
+**Answer:** Yes, but they cannot be used as constant or variable names.
+
+---
+
+# Question: Name three Ruby reserved words that control flow.
+
+**Answer:** `if`, `else`, `while` (others include `case`, `until`, etc.)
+
+---
+
+# Question: What is a "Here Document" in Ruby?
+
+**Answer:** A way to build multi-line strings using a terminator specified after `<<`.
+
+---
+
+# Question: What must follow the `<<` operator in a Here Document declaration?
+
+**Answer:** A string or identifier with no space between `<<` and the terminator.
+
+---
+
+# Question: What does this Ruby code do?
+
+```ruby
+print <<EOF
+Multi-line string
+EOF
+```
+
+**Answer:** Prints a multi-line string using a Here Document with `EOF` as the terminator.
+
+---
+
+# Question: How do you execute shell commands in a Here Document?
+
+**Answer:** Use backticks around the terminator, e.g., `<<\`EOC\`\`
+
+---
+
+# Question: What happens when multiple Here Documents are stacked like this?
+
+```ruby
+print <<"foo", <<"bar"
+  I said foo.
+foo
+  I said bar.
+bar
+```
+
+**Answer:** Both Here Documents are processed sequentially, printing both multi-line strings.
+
+---
+
+# Question: What is the purpose of the `BEGIN` statement in Ruby?
+
+**Answer:** To declare code that runs before the program starts.
+
+---
+
+# Question: What is the syntax of a `BEGIN` block in Ruby?
+
+**Answer:**
+
+```ruby
+BEGIN {
+  # code
+}
+```
+
+---
+
+# Question: What is the output of this Ruby script?
+
+```ruby
+puts "This is main Ruby Program"
+BEGIN {
+  puts "Initializing Ruby Program"
+}
+```
+
+**Answer:**
+
+```
+Initializing Ruby Program
+This is main Ruby Program
+```
+
+---
+
+# Question: What is the purpose of the `END` statement in Ruby?
+
+**Answer:** To declare code that runs after the main Ruby program finishes.
+
+---
+
+# Question: What is the syntax of an `END` block in Ruby?
+
+**Answer:**
+
+```ruby
+END {
+  # code
+}
+```
+
+---
+
+# Question: What is the correct output of this Ruby script?
+
+```ruby
+puts "This is main Ruby Program"
+END {
+  puts "Terminating Ruby Program"
+}
+BEGIN {
+  puts "Initializing Ruby Program"
+}
+```
+
+**Answer:**
+
+```
+Initializing Ruby Program
+This is main Ruby Program
+Terminating Ruby Program
+```
+
+---
+
+# Question: How do you write a single-line comment in Ruby?
+
+**Answer:** Start the line with a `#`.
+
+---
+
+# Question: Can comments be placed after statements on the same line in Ruby?
+
+**Answer:** Yes.
+
+---
+
+# Question: How do you write a multi-line comment using multiple `#` characters?
+
+**Answer:**
+
+```ruby
+# This is a comment.
+# Another comment line.
+# Yet another comment line.
+```
+
+---
+
+# Question: How do you write a block comment in Ruby using `=begin` and `=end`?
+
+**Answer:**
+
+```ruby
+=begin
+This is a block comment.
+It spans multiple lines.
+=end
+```
+
+---
+
