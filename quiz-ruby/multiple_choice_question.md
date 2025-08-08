@@ -585,3 +585,229 @@ It spans multiple lines.
 
 ---
 
+# Question: What type of programming language is Ruby considered?
+
+**Answer:** Ruby is a perfect object-oriented programming language.
+
+---
+
+# Question: What are the four main features of object-oriented programming supported by Ruby?
+
+**Answer:** Data Encapsulation, Data Abstraction, Polymorphism, Inheritance.
+
+---
+
+# Question: In Ruby, what is a class?
+
+**Answer:** A class is the blueprint from which individual objects are created.
+
+---
+
+# Question: What is an object in Ruby?
+
+**Answer:** An object is an instance of a class.
+
+---
+
+# Question: How can you differentiate between different objects of the same class?
+
+**Answer:** By assigning different values to their data members (attributes).
+
+---
+
+# Question: In the class `Vehicle`, what would be examples of data members?
+
+**Answer:** Number of wheels, horsepower, type of tank, and capacity.
+
+---
+
+# Question: In Ruby, what keyword is used to define a class?
+
+**Answer:** `class`
+
+---
+
+# Question: How must class names be formatted in Ruby?
+
+**Answer:** Class names must start with an uppercase letter.
+
+---
+
+# Question: What keyword is used to terminate a class definition in Ruby?
+
+**Answer:** `end`
+
+---
+
+# Question: What are the four types of variables available in a Ruby class?
+
+**Answer:** Local variables, Instance variables, Class variables, Global variables.
+
+---
+
+# Question: How are local variables defined and scoped in Ruby?
+
+**Answer:** They are defined within methods, start with a lowercase letter or underscore (`_`), and are not accessible outside the method.
+
+---
+
+# Question: What is the syntax for an instance variable in Ruby?
+
+**Answer:** Prefixed with a single at sign (`@`), e.g., `@variable_name`.
+
+---
+
+# Question: How are class variables denoted in Ruby?
+
+**Answer:** With two at signs (`@@`), e.g., `@@variable_name`.
+
+---
+
+# Question: What is the scope of a class variable in Ruby?
+
+**Answer:** Class variables are shared among all instances of a class.
+
+---
+
+# Question: How is a global variable defined in Ruby?
+
+**Answer:** Prefixed with a dollar sign (`$`), e.g., `$variable_name`.
+
+---
+
+# Question: Can class variables be used across different classes?
+
+**Answer:** No, class variables are not shared across classes; global variables are used for that purpose.
+
+---
+
+# Question: What is the purpose of the `@@no_of_customers` class variable in the `Customer` class example?
+
+**Answer:** To determine how many objects (customers) have been created.
+
+---
+
+# Question: What method is used to create an object of a class in Ruby?
+
+**Answer:** The `new` method.
+
+---
+
+# Question: What kind of method is `new` in Ruby?
+
+**Answer:** A predefined class method in the Ruby library.
+
+---
+
+# Question: Write the syntax to create an object named `cust1` from the class `Customer`.
+
+**Answer:** `cust1 = Customer.new`
+
+---
+
+# Question: How do you create multiple objects of the same Ruby class?
+
+**Answer:** By calling the `new` method multiple times with the class name:
+
+```ruby
+cust1 = Customer.new  
+cust2 = Customer.new
+```
+
+---
+
+# Question: What method must you define to initialize objects with parameters in Ruby?
+
+**Answer:** `initialize`
+
+---
+
+# Question: What is special about the `initialize` method?
+
+**Answer:** It is automatically called when `new` is used with parameters and is used to assign values to instance variables.
+
+---
+
+# Question: What are the local variables used in the `initialize` method in the `Customer` class example?
+
+**Answer:** `id`, `name`, and `addr`.
+
+---
+
+# Question: How are the local variables in `initialize` assigned to instance variables?
+
+**Answer:** Using the assignment `@cust_id = id`, `@cust_name = name`, and `@cust_addr = addr`.
+
+---
+
+# Question: Write the code to create an object `cust1` with parameters using the `Customer` class.
+
+**Answer:**
+
+```ruby
+cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
+```
+
+---
+
+# Question: What is the Ruby keyword used to define a method?
+
+**Answer:** `def`
+
+---
+
+# Question: What keyword is used to end a method definition in Ruby?
+
+**Answer:** `end`
+
+---
+
+# Question: How should method names be formatted in Ruby?
+
+**Answer:** Preferably in lowercase letters.
+
+---
+
+# Question: In Ruby, what are functions in a class called?
+
+**Answer:** Methods.
+
+---
+
+# Question: Give an example of a method named `hello` that prints "Hello Ruby!" in a class `Sample`.
+
+**Answer:**
+
+```ruby
+class Sample
+   def hello
+      puts "Hello Ruby!"
+   end
+end
+```
+
+---
+
+# Question: How do you create an object of class `Sample` and call its `hello` method?
+
+**Answer:**
+
+```ruby
+object = Sample.new  
+object.hello
+```
+
+---
+
+# Question: What is the output of calling `hello` on a `Sample` object with the following method?
+
+```ruby
+def hello  
+  puts "Hello Ruby!"  
+end
+```
+
+**Answer:** `Hello Ruby!`
+
+---
+
