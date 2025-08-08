@@ -1350,3 +1350,148 @@ end
 
 ---
 
+# Question: What symbol is used to begin a single-line comment in Ruby?
+
+**Answer:** `#`
+
+---
+
+# Question: Are single-line comments in Ruby executed at runtime?
+
+**Answer:** No, they are ignored during execution.
+
+---
+
+# Question: In the following code, how many lines will be output?
+
+```ruby
+# This is a comment
+puts "Hello, Ruby!"  # This prints a message
+# Another comment
+```
+
+**Answer:** `1` line — only `"Hello, Ruby!"` will be output.
+
+---
+
+# Question: How do you write a multi-line comment in Ruby?
+
+**Answer:** Use `=begin` to start and `=end` to close the comment block.
+
+---
+
+# Question: In Ruby, where must `=begin` and `=end` appear?
+
+**Answer:** They must appear at the **beginning of the line**, without indentation.
+
+---
+
+# Question: What happens if `=begin` is indented in a Ruby file?
+
+**Answer:** Ruby will not recognize it as the start of a multi-line comment, and it may raise an error or behave unexpectedly.
+
+---
+
+# Question: In this code snippet, which lines are part of the comment?
+
+```ruby
+=begin
+This is a comment
+It spans multiple lines
+=end
+puts "Hello"
+```
+
+**Answer:** The first three lines (with `=begin` to `=end`) are part of the comment.
+
+---
+
+# Question: Does this code run successfully? Why or why not?
+
+```ruby
+  =begin
+  Invalid comment block
+  =end
+```
+
+**Answer:** No. The `=begin` and `=end` lines are **indented**, which makes them invalid.
+
+---
+
+# Question: What is the output of the following code?
+
+```ruby
+puts "Hello"
+=begin
+puts "World"
+=end
+puts "Ruby"
+```
+
+**Answer:**
+
+```
+Hello
+Ruby
+```
+
+---
+
+# Question: What best practice should be followed for **trailing comments** in Ruby?
+
+**Answer:** Ensure they are far enough from the code and easily distinguished.
+
+---
+
+# Question: When using multiple trailing comments in a block, what formatting is recommended?
+
+**Answer:** Align them for readability.
+
+---
+
+# Question: Identify the better practice:
+
+**Option A:**
+
+```ruby
+@counter # track page hits
+@siteCounter # track all site hits
+```
+
+**Option B:**
+
+```ruby
+@counter      # track page hits
+@siteCounter  # track all site hits
+```
+
+**Answer:** Option B — trailing comments are aligned, improving readability.
+
+---
+
+# Question: Can a comment appear on the same line as code in Ruby?
+
+**Answer:** Yes, it's called a **trailing comment**.
+
+---
+
+# Question: What is the purpose of using comments in Ruby?
+
+**Answer:** To annotate code for readability and maintainability; they are ignored during execution.
+
+---
+
+# Question: What is the output of the following Ruby code?
+
+```ruby
+# puts "This won't run"
+puts "This will run"
+```
+
+**Answer:**
+
+```
+This will run
+```
+
+---
