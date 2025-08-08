@@ -811,3 +811,273 @@ end
 
 ---
 
+# Question: What symbol do global variables in Ruby begin with?
+
+**Answer:** `$`
+
+---
+
+# Question: What warning is produced when an uninitialized global variable is used with the `-w` option?
+
+**Answer:** A warning that the variable is uninitialized and has a default value of `nil`.
+
+---
+
+# Question: How can you access the value of a global variable in a string?
+
+**Answer:** By placing a `#` before the variable name inside the string, e.g., `#{$global_variable}`.
+
+---
+
+# Question: What symbol do instance variables in Ruby begin with?
+
+**Answer:** `@`
+
+---
+
+# Question: What is the default value of an uninitialized instance variable in Ruby?
+
+**Answer:** `nil`
+
+---
+
+# Question: Which keyword is used to initialize instance variables when creating a Ruby object?
+
+**Answer:** `initialize`
+
+---
+
+# Question: What symbol do class variables in Ruby begin with?
+
+**Answer:** `@@`
+
+---
+
+# Question: What happens if you reference an uninitialized class variable in Ruby?
+
+**Answer:** It produces an error.
+
+---
+
+# Question: What warning is produced when a class variable is overridden in Ruby with the `-w` option?
+
+**Answer:** A warning is generated about the override of the class variable.
+
+---
+
+# Question: Are class variables shared among class descendants?
+
+**Answer:** Yes
+
+---
+
+# Question: What symbol do local variables in Ruby begin with?
+
+**Answer:** A lowercase letter or `_`
+
+---
+
+# Question: What happens when you reference an uninitialized local variable in Ruby?
+
+**Answer:** It is interpreted as a method call with no arguments.
+
+---
+
+# Question: How long do local variables in Ruby persist?
+
+**Answer:** Until the end of the current scope.
+
+---
+
+# Question: What symbol must constants in Ruby begin with?
+
+**Answer:** An uppercase letter
+
+---
+
+# Question: Where can constants not be defined in Ruby?
+
+**Answer:** Inside methods
+
+---
+
+# Question: What warning does Ruby give when assigning a new value to an already-initialized constant?
+
+**Answer:** A warning about reinitializing a constant
+
+---
+
+# Question: Can constants be accessed outside the class or module in which they are defined?
+
+**Answer:** Yes, if defined outside a class or module, they are globally accessible.
+
+---
+
+# Question: What are Ruby pseudo-variables?
+
+**Answer:** Special variables that look like local variables but behave like constants.
+
+---
+
+# Question: Can you assign a value to a pseudo-variable in Ruby?
+
+**Answer:** No
+
+---
+
+# Question: What does the pseudo-variable `self` refer to in Ruby?
+
+**Answer:** The receiver object of the current method.
+
+---
+
+# Question: What does the pseudo-variable `__FILE__` return?
+
+**Answer:** The name of the current source file.
+
+---
+
+# Question: What does the pseudo-variable `__LINE__` return?
+
+**Answer:** The current line number in the source file.
+
+---
+
+# Question: What Ruby class do integer values like `123` belong to?
+
+**Answer:** `Fixnum` (or `Integer` in later Ruby versions)
+
+---
+
+# Question: How are large integers like `12345678901234567890` represented in Ruby?
+
+**Answer:** As objects of class `Bignum` (or `Integer` in later Ruby versions)
+
+---
+
+# Question: What is the result of `?a` in Ruby?
+
+**Answer:** The ASCII character code for `'a'`
+
+---
+
+# Question: What is the meaning of the literal `?\n` in Ruby?
+
+**Answer:** The character code for newline (`0x0a`)
+
+---
+
+# Question: Which of the following is a valid hexadecimal number in Ruby?
+
+**Answer:** `0xff`
+
+---
+
+# Question: How do you write an octal number in Ruby?
+
+**Answer:** Prefix with `0`, e.g., `0377`
+
+---
+
+# Question: What Ruby class do decimal numbers like `123.4` belong to?
+
+**Answer:** `Float`
+
+---
+
+# Question: What notation can be used in Ruby to represent floating point numbers in scientific form?
+
+**Answer:** Scientific notation, e.g., `1.0e6` or `4e+20`
+
+---
+
+# Question: Which Ruby class do strings belong to?
+
+**Answer:** `String`
+
+---
+
+# Question: What is the difference between single-quoted and double-quoted strings in Ruby?
+
+**Answer:** Double-quoted strings allow substitution and backslash notation; single-quoted strings only allow `\\` and `\'`.
+
+---
+
+# Question: How can you embed a Ruby expression inside a double-quoted string?
+
+**Answer:** Using `#{expression}` syntax
+
+---
+
+# Question: What is the output of `'That\\'s right'` in Ruby?
+
+**Answer:** `That's right`
+
+---
+
+# Question: What does the Ruby backslash notation `\n` represent?
+
+**Answer:** Newline (0x0a)
+
+---
+
+# Question: What does `\xnn` represent in Ruby?
+
+**Answer:** A hexadecimal character value
+
+---
+
+# Question: How is a Ruby array literal created?
+
+**Answer:** By placing elements between square brackets `[]`, separated by commas
+
+---
+
+# Question: What is the class of Ruby arrays?
+
+**Answer:** `Array`
+
+---
+
+# Question: What happens to a trailing comma in a Ruby array literal?
+
+**Answer:** It is ignored
+
+---
+
+# Question: What is the result of the following Ruby array code?\n\n`ruby\nary = [\"fred\", 10, 3.14]; ary.each { |i| puts i }\n`
+
+**Answer:** It prints each element of the array on a new line.
+
+---
+
+# Question: How is a Ruby hash literal defined?
+
+**Answer:** Using braces `{}` with key-value pairs separated by `=>` or `,`
+
+---
+
+# Question: What does this Ruby hash literal do?\n\n`ruby\n{ \"red\" => 0xf00, \"green\" => 0x0f0, \"blue\" => 0x00f }\n`
+
+**Answer:** Creates a hash mapping color names to hexadecimal color codes.
+
+---
+
+# Question: How is a Ruby range that includes the end value defined?
+
+**Answer:** Using `..` (two dots), e.g., `1..5`
+
+---
+
+# Question: How is a Ruby range that excludes the end value defined?
+
+**Answer:** Using `...` (three dots), e.g., `1...5`
+
+---
+
+# Question: What is the output of the following code?\n\n`ruby\n(10..15).each { |n| print n, ' ' }\n`
+
+**Answer:** `10 11 12 13 14 15`
+
+---
+
