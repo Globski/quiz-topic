@@ -1081,3 +1081,272 @@ end
 
 ---
 
+# Question: How is `a + b` interpreted internally in Ruby?
+
+**Answer:** As `a.+(b)`, where `+` is a method call on object `a` with `b` as the argument.
+
+---
+
+# Question: What does `a += b` do in Ruby?
+
+**Answer:** It adds `b` to `a` and assigns the result back to `a` (same as `a = a + b`).
+
+---
+
+# Question: What is the result of `a * b` if `a = 10` and `b = 20`?
+
+**Answer:** `200`
+
+---
+
+# Question: What is the output of `b / a` when `a = 10` and `b = 20`?
+
+**Answer:** `2`
+
+---
+
+# Question: What does `a ** b` return if `a = 10` and `b = 20`?
+
+**Answer:** `10` raised to the power `20`
+
+---
+
+# Question: What does `b % a` evaluate to when `a = 10` and `b = 20`?
+
+**Answer:** `0`
+
+---
+
+# Question: What is the return value of `a <=> b` when `a = 10` and `b = 20`?
+
+**Answer:** `-1`
+
+---
+
+# Question: What does `(1...10) === 5` return?
+
+**Answer:** `true`
+
+---
+
+# Question: What is the difference between `1 == 1.0` and `1.eql?(1.0)`?
+
+**Answer:** `1 == 1.0` is `true`, but `1.eql?(1.0)` is `false` because `.eql?` checks both value and type.
+
+---
+
+# Question: What does `a.equal?(b)` check for?
+
+**Answer:** Whether `a` and `b` refer to the same object (same object ID).
+
+---
+
+# Question: How does Ruby support parallel assignment?
+
+**Answer:** By assigning multiple variables at once: `a, b, c = 10, 20, 30`
+
+---
+
+# Question: How can Ruby variables be swapped using parallel assignment?
+
+**Answer:** `a, b = b, c`
+
+---
+
+# Question: What does the bitwise AND (`&`) operator return for `a = 60` and `b = 13`?
+
+**Answer:** `12`, which is `0000 1100` in binary.
+
+---
+
+# Question: What is the binary result of `a | b` where `a = 60` and `b = 13`?
+
+**Answer:** `61` (`0011 1101`)
+
+---
+
+# Question: What is the binary result of `a ^ b` where `a = 60` and `b = 13`?
+
+**Answer:** `49` (`0011 0001`)
+
+---
+
+# Question: What is the result of `~a` if `a = 60`?
+
+**Answer:** `-61` due to two's complement representation.
+
+---
+
+# Question: What is the result of `a << 2` if `a = 60`?
+
+**Answer:** `240` (`1111 0000`)
+
+---
+
+# Question: What is the result of `a >> 2` if `a = 60`?
+
+**Answer:** `15` (`0000 1111`)
+
+---
+
+# Question: How does the `and` operator behave in Ruby?
+
+**Answer:** Returns `true` if both operands are true.
+
+---
+
+# Question: What is the difference between `&&` and `and` in Ruby?
+
+**Answer:** Both perform logical AND, but `&&` has higher precedence than `and`.
+
+---
+
+# Question: What is the return of `!(a && b)` when `a = 10` and `b = 20`?
+
+**Answer:** `false`
+
+---
+
+# Question: What is the difference between `!` and `not` in Ruby?
+
+**Answer:** Both perform logical NOT; `!` has higher precedence than `not`.
+
+---
+
+# Question: What is the syntax and behavior of Ruby’s ternary operator?
+
+**Answer:** `condition ? expr1 : expr2` — returns `expr1` if condition is true, otherwise `expr2`.
+
+---
+
+# Question: What is the result of `1..10` in Ruby?
+
+**Answer:** A range from `1` to `10`, inclusive.
+
+---
+
+# Question: What is the result of `1...10` in Ruby?
+
+**Answer:** A range from `1` to `9`, exclusive of `10`.
+
+---
+
+# Question: What does `defined? foo` return if `foo` is initialized?
+
+**Answer:** `"local-variable"`
+
+---
+
+# Question: What does `defined? puts` return?
+
+**Answer:** `"method"`
+
+---
+
+# Question: What is the return of `defined? super` if the method can be called?
+
+**Answer:** `"super"`
+
+---
+
+# Question: What is returned by `defined? yield` when a block is passed?
+
+**Answer:** `"yield"`
+
+---
+
+# Question: What is the use of the `::` operator in Ruby?
+
+**Answer:** It accesses constants, class methods, or instance methods from a module or class.
+
+---
+
+# Question: In the following code, what does `::MR_COUNT = 1` do inside module `Foo`?
+
+```ruby
+module Foo
+  MR_COUNT = 0
+  ::MR_COUNT = 1
+end
+```
+
+**Answer:** Sets the global `MR_COUNT` constant to `1`.
+
+---
+
+# Question: What is the result of `Foo::MR_COUNT` if `Foo` contains `MR_COUNT = 2`?
+
+**Answer:** `2`
+
+---
+
+# Question: In the code below, what is returned by `Inside_one.new.where_is_my_CONST`?
+
+```ruby
+CONST = ' out there'
+class Inside_one
+  CONST = proc { ' in there' }
+  def where_is_my_CONST
+    ::CONST + ' inside one'
+  end
+end
+```
+
+**Answer:** `" out there inside one"`
+
+---
+
+# Question: What does `Inside_one::CONST.call + Inside_two::CONST` return in the example?
+
+**Answer:** `" in there inside two"`
+
+---
+
+# Question: What does operator precedence determine in Ruby?
+
+**Answer:** The order in which operators are evaluated in an expression.
+
+---
+
+# Question: Which operator has the highest precedence in Ruby?
+
+**Answer:** `::` (constant resolution)
+
+---
+
+# Question: Which has higher precedence: `&&` or `||`?
+
+**Answer:** `&&`
+
+---
+
+# Question: Can operator methods like `+`, `*`, or `[]` be overridden in Ruby?
+
+**Answer:** Yes, because they are actually methods.
+
+---
+
+# Question: What does the `[]=` operator do?
+
+**Answer:** Sets a value at a specified index or key in an object (e.g., arrays or hashes).
+
+---
+
+# Question: In operator precedence, does `not` have higher or lower precedence than `!`?
+
+**Answer:** Lower
+
+---
+
+# Question: Is `!~` considered a method in Ruby?
+
+**Answer:** No, `!~` may not be defined as a method, unlike `=~`.
+
+---
+
+# Question: In precedence, does `=`, `+=`, `&&=`, etc., come before or after `? :`?
+
+**Answer:** After
+
+---
+
