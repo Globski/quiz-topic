@@ -1495,3 +1495,201 @@ This will run
 ```
 
 ---
+
+# Question: What values are considered false in a Ruby `if` expression?
+
+**Answer:** Only `false` and `nil` are considered false; all other values are true.
+
+---
+
+# Question: What keyword is used in Ruby for an additional condition instead of `else if` or `elif`?
+
+**Answer:** `elsif`
+
+---
+
+# Question: What are the three ways to separate a conditional from the code in a Ruby `if` expression?
+
+**Answer:** With the keyword `then`, a newline, or a semicolon.
+
+---
+
+# Question: Write the correct syntax for a multi-branch `if...elsif...else` structure in Ruby.
+
+**Answer:**
+
+```ruby
+if conditional [then]
+   code...
+[elsif conditional [then]
+   code...]...
+[else
+   code...]
+end
+```
+
+---
+
+# Question: What is the output of the following Ruby code?
+
+```ruby
+x = 1
+if x > 2
+   puts "x is greater than 2"
+elsif x <= 2 and x != 0
+   puts "x is 1"
+else
+   puts "I can't guess the number"
+end
+```
+
+**Answer:** `x is 1`
+
+---
+
+# Question: How does the `if` modifier differ from the standard `if` expression?
+
+**Answer:** The `if` modifier executes a single line of code if the condition is true, using the form `code if condition`.
+
+---
+
+# Question: What is the output of the following Ruby code?
+
+```ruby
+$debug = 1
+print "debug\n" if $debug
+```
+
+**Answer:** `debug`
+
+---
+
+# Question: What is the purpose of the `unless` statement in Ruby?
+
+**Answer:** To execute code if the condition is **false**.
+
+---
+
+# Question: Write the correct syntax for an `unless...else` structure in Ruby.
+
+**Answer:**
+
+```ruby
+unless conditional [then]
+   code
+[else
+   code ]
+end
+```
+
+---
+
+# Question: What is the output of the following Ruby code?
+
+```ruby
+x = 1 
+unless x >= 2
+   puts "x is less than 2"
+else
+   puts "x is greater than 2"
+end
+```
+
+**Answer:** `x is less than 2`
+
+---
+
+# Question: When is the code block in an `unless` modifier executed?
+
+**Answer:** When the condition is false.
+
+---
+
+# Question: What is the output of the following Ruby code?
+
+```ruby
+$var = 1
+print "1 -- Value is set\n" if $var
+print "2 -- Value is set\n" unless $var
+
+$var = false
+print "3 -- Value is set\n" unless $var
+```
+
+**Answer:**
+
+```
+1 -- Value is set
+3 -- Value is set
+```
+
+---
+
+# Question: What operator is used to compare values in a `case` statement?
+
+**Answer:** The `===` operator.
+
+---
+
+# Question: What happens in a `case` statement when no `when` clause matches?
+
+**Answer:** The code in the `else` clause is executed.
+
+---
+
+# Question: What are the three ways to separate a `when` clause’s condition from its code?
+
+**Answer:** With the keyword `then`, a newline, or a semicolon.
+
+---
+
+# Question: What is the Ruby equivalent of the following `case` block?
+
+```ruby
+case expr0
+when expr1, expr2
+   stmt1
+when expr3, expr4
+   stmt2
+else
+   stmt3
+end
+```
+
+**Answer:**
+
+```ruby
+_tmp = expr0
+if expr1 === _tmp || expr2 === _tmp
+   stmt1
+elsif expr3 === _tmp || expr4 === _tmp
+   stmt2
+else
+   stmt3
+end
+```
+
+---
+
+# Question: What is the output of the following Ruby code?
+
+```ruby
+$age = 5
+case $age
+when 0..2
+   puts "baby"
+when 3..6
+   puts "little child"
+when 7..12
+   puts "child"
+when 13..18
+   puts "youth"
+else
+   puts "adult"
+end
+```
+
+**Answer:** `little child`
+
+---
+
