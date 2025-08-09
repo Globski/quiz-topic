@@ -2016,3 +2016,289 @@ end
 **Answer:** Because `retry` causes the loop to restart from `i = 0` each time `i > 2`, it keeps printing values <= 2 infinitely.
 
 ---
+
+# Question: What is the purpose of methods in Ruby?
+
+**Answer:** To bundle one or more repeatable statements into a single unit for reuse.
+
+---
+
+# Question: How should a Ruby method name begin, and why?
+
+**Answer:** With a lowercase letter, because starting with an uppercase letter may cause Ruby to interpret it as a constant.
+
+---
+
+# Question: What happens if a method is called before it is defined in Ruby?
+
+**Answer:** Ruby raises an exception for an undefined method.
+
+---
+
+# Question: What is the correct syntax to define a method without parameters?
+
+**Answer:**
+
+```ruby
+def method_name
+   expr..
+end
+```
+
+---
+
+# Question: What is the syntax to define a method with parameters?
+
+**Answer:**
+
+```ruby
+def method_name(var1, var2)
+   expr..
+end
+```
+
+---
+
+# Question: How do you assign default values to method parameters in Ruby?
+
+**Answer:**
+
+```ruby
+def method_name(var1 = value1, var2 = value2)
+   expr..
+end
+```
+
+---
+
+# Question: What is the correct way to call a method with parameters in Ruby?
+
+**Answer:** Use the method name followed by the arguments, e.g., `method_name 25, 30`.
+
+---
+
+# Question: What error will occur if you call a method with fewer arguments than it expects?
+
+**Answer:** Ruby will raise an error due to the wrong number of arguments.
+
+---
+
+# Question: What is the output of the following code?
+
+```ruby
+def test(a1 = "Ruby", a2 = "Perl")
+   puts "The programming language is #{a1}"
+   puts "The programming language is #{a2}"
+end
+test "C", "C++"
+test
+```
+
+**Answer:**
+
+```
+The programming language is C
+The programming language is C++
+The programming language is Ruby
+The programming language is Perl
+```
+
+---
+
+# Question: What does a Ruby method return by default?
+
+**Answer:** The value of the **last statement** in the method.
+
+---
+
+# Question: What value will be returned from this method?
+
+```ruby
+def test
+   i = 100
+   j = 10
+   k = 0
+end
+```
+
+**Answer:** `0`, the value of variable `k`.
+
+---
+
+# Question: What is the syntax of a Ruby `return` statement?
+
+**Answer:**
+
+```ruby
+return [expr [, expr...]]
+```
+
+---
+
+# Question: What will be the return value if no expression is passed to the `return` statement?
+
+**Answer:** `nil`
+
+---
+
+# Question: What is the output of the following code?
+
+```ruby
+def test
+   i = 100
+   j = 200
+   k = 300
+   return i, j, k
+end
+var = test
+puts var
+```
+
+**Answer:**
+
+```
+100
+200
+300
+```
+
+---
+
+# Question: How do you define a Ruby method that accepts a variable number of arguments?
+
+**Answer:** Use an asterisk (`*`) before the parameter name, e.g., `def sample(*test)`.
+
+---
+
+# Question: What is the output of this code?
+
+```ruby
+def sample(*test)
+   puts "The number of parameters is #{test.length}"
+   for i in 0...test.length
+      puts "The parameters are #{test[i]}"
+   end
+end
+sample "Zara", "6", "F"
+sample "Mac", "36", "M", "MCA"
+```
+
+**Answer:**
+
+```
+The number of parameters is 3
+The parameters are Zara
+The parameters are 6
+The parameters are F
+The number of parameters is 4
+The parameters are Mac
+The parameters are 36
+The parameters are M
+The parameters are MCA
+```
+
+---
+
+# Question: What is the default visibility of methods defined outside a class definition in Ruby?
+
+**Answer:** `private`
+
+---
+
+# Question: What is the default visibility of methods defined inside a class definition in Ruby?
+
+**Answer:** `public`
+
+---
+
+# Question: How can you change a method’s visibility in Ruby?
+
+**Answer:** By using the `public` or `private` methods from the Module class.
+
+---
+
+# Question: How do you define a **class method** in Ruby?
+
+**Answer:** Use the class name followed by a period and the method name, e.g.,
+
+```ruby
+def ClassName.method_name
+end
+```
+
+---
+
+# Question: How do you access a class method in Ruby?
+
+**Answer:** By calling it directly on the class, e.g., `Accounts.return_date`.
+
+---
+
+# Question: What is the purpose of defining class methods?
+
+**Answer:** To allow method access without instantiating the class.
+
+---
+
+# Question: What does the `alias` statement do in Ruby?
+
+**Answer:** It creates an alias (alternate name) for an existing method or global variable.
+
+---
+
+# Question: Where can `alias` **not** be used?
+
+**Answer:** Inside a method body.
+
+---
+
+# Question: What happens to an alias if the original method is overridden later?
+
+**Answer:** The alias retains the original definition of the method.
+
+---
+
+# Question: Why is making aliases for numbered global variables (e.g., `$1`, `$2`) prohibited?
+
+**Answer:** Because overriding built-in global variables can cause serious problems.
+
+---
+
+# Question: Provide an example of aliasing in Ruby.
+
+**Answer:**
+
+```ruby
+alias foo bar
+alias $MATCH $&
+```
+
+---
+
+# Question: What is the purpose of the `undef` statement in Ruby?
+
+**Answer:** To cancel (undefine) a previously defined method.
+
+---
+
+# Question: Where can `undef` **not** appear?
+
+**Answer:** Inside a method body.
+
+---
+
+# Question: What is the syntax to undefine a method called `bar`?
+
+**Answer:**
+
+```ruby
+undef bar
+```
+
+---
+
+# Question: What is the risk of using `undef` to modify class interfaces?
+
+**Answer:** It can break internal method calls to `self`, especially when modifying a subclass interface.
+
+---
