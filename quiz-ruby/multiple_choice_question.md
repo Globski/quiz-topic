@@ -1693,3 +1693,326 @@ end
 
 ---
 
+# Question: What is the syntax of a standard `while` loop in Ruby?
+
+**Answer:**
+
+```ruby
+while conditional [do]
+   code
+end
+```
+
+---
+
+# Question: What separates the condition from the code block in a `while` loop?
+
+**Answer:** The keyword `do`, a newline, a backslash (`\`), or a semicolon (`;`).
+
+---
+
+# Question: What does the following code output?
+
+```ruby
+$i = 0
+$num = 5
+while $i < $num do
+   puts("Inside the loop i = #$i")
+   $i += 1
+end
+```
+
+**Answer:**
+
+```
+Inside the loop i = 0
+Inside the loop i = 1
+Inside the loop i = 2
+Inside the loop i = 3
+Inside the loop i = 4
+```
+
+---
+
+# Question: What is the syntax of the `while` modifier?
+
+**Answer:**
+
+```ruby
+code while condition
+```
+
+or
+
+```ruby
+begin
+   code
+end while condition
+```
+
+---
+
+# Question: How is the `begin...end while` loop different from a standard `while` loop?
+
+**Answer:** It executes the code block **once** before evaluating the condition.
+
+---
+
+# Question: What is the output of this code?
+
+```ruby
+$i = 0
+$num = 5
+begin
+   puts("Inside the loop i = #$i")
+   $i += 1
+end while $i < $num
+```
+
+**Answer:**
+
+```
+Inside the loop i = 0
+Inside the loop i = 1
+Inside the loop i = 2
+Inside the loop i = 3
+Inside the loop i = 4
+```
+
+---
+
+# Question: What is the purpose of an `until` loop in Ruby?
+
+**Answer:** To execute code **while the condition is false**.
+
+---
+
+# Question: What is the syntax of an `until` loop in Ruby?
+
+**Answer:**
+
+```ruby
+until conditional [do]
+   code
+end
+```
+
+---
+
+# Question: What is the output of this Ruby code?
+
+```ruby
+$i = 0
+$num = 5
+until $i > $num do
+   puts("Inside the loop i = #$i")
+   $i += 1
+end
+```
+
+**Answer:**
+
+```
+Inside the loop i = 0
+Inside the loop i = 1
+Inside the loop i = 2
+Inside the loop i = 3
+Inside the loop i = 4
+Inside the loop i = 5
+```
+
+---
+
+# Question: What is the syntax of an `until` modifier?
+
+**Answer:**
+
+```ruby
+code until condition
+```
+
+or
+
+```ruby
+begin
+   code
+end until condition
+```
+
+---
+
+# Question: What is the output of the following code using an `until` modifier?
+
+```ruby
+$i = 0
+$num = 5
+begin
+   puts("Inside the loop i = #$i")
+   $i += 1
+end until $i > $num
+```
+
+**Answer:**
+
+```
+Inside the loop i = 0
+Inside the loop i = 1
+Inside the loop i = 2
+Inside the loop i = 3
+Inside the loop i = 4
+Inside the loop i = 5
+```
+
+---
+
+# Question: What is the syntax of a `for...in` loop in Ruby?
+
+**Answer:**
+
+```ruby
+for variable [, variable ...] in expression [do]
+   code
+end
+```
+
+---
+
+# Question: What does this code output?
+
+```ruby
+for i in 0..5
+   puts "Value of local variable is #{i}"
+end
+```
+
+**Answer:**
+
+```
+Value of local variable is 0
+Value of local variable is 1
+Value of local variable is 2
+Value of local variable is 3
+Value of local variable is 4
+Value of local variable is 5
+```
+
+---
+
+# Question: What is the Ruby `each` method equivalent of a `for...in` loop?
+
+**Answer:**
+
+```ruby
+(expression).each do |variable[, variable...]|
+   code
+end
+```
+
+---
+
+# Question: What is one difference between a `for` loop and an `each` block in Ruby?
+
+**Answer:** A `for` loop does **not** create a new scope for local variables, while an `each` block does.
+
+---
+
+# Question: What is the effect of the `break` statement in a Ruby loop?
+
+**Answer:** It terminates the **innermost** loop or a method block, returning `nil` if used within a block.
+
+---
+
+# Question: What is the output of this code using `break`?
+
+```ruby
+for i in 0..5
+   if i > 2 then
+      break
+   end
+   puts "Value of local variable is #{i}"
+end
+```
+
+**Answer:**
+
+```
+Value of local variable is 0
+Value of local variable is 1
+Value of local variable is 2
+```
+
+---
+
+# Question: What is the purpose of the `next` statement in a loop?
+
+**Answer:** It skips the rest of the current iteration and proceeds to the next loop iteration.
+
+---
+
+# Question: What is the output of the following Ruby code?
+
+```ruby
+for i in 0..5
+   if i < 2 then
+      next
+   end
+   puts "Value of local variable is #{i}"
+end
+```
+
+**Answer:**
+
+```
+Value of local variable is 2
+Value of local variable is 3
+Value of local variable is 4
+Value of local variable is 5
+```
+
+---
+
+# Question: What does the `redo` statement do in a loop?
+
+**Answer:** It **restarts the current iteration** of the innermost loop without checking the loop condition again.
+
+---
+
+# Question: Why does the following code cause an infinite loop?
+
+```ruby
+for i in 0..5
+   if i < 2 then
+      puts "Value of local variable is #{i}"
+      redo
+   end
+end
+```
+
+**Answer:** Because `i` is never incremented after the `redo`, the loop keeps restarting with the same value.
+
+---
+
+# Question: When used in a `rescue` clause, what does the `retry` statement do?
+
+**Answer:** It restarts execution from the **beginning** of the `begin` block.
+
+---
+
+# Question: What happens if `retry` is used inside a loop or iterator?
+
+**Answer:** It restarts the invocation of the iterator call, reevaluating its arguments.
+
+---
+
+# Question: Why does the following code result in an infinite loop?
+
+```ruby
+for i in 0..5
+   retry if i > 2
+   puts "Value of local variable is #{i}"
+end
+```
+
+**Answer:** Because `retry` causes the loop to restart from `i = 0` each time `i > 2`, it keeps printing values <= 2 infinitely.
+
+---
