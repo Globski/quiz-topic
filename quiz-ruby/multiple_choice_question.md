@@ -2302,3 +2302,258 @@ undef bar
 **Answer:** It can break internal method calls to `self`, especially when modifying a subclass interface.
 
 ---
+
+# Question: What are the two major benefits of using modules in Ruby?
+
+**Answer:** Modules provide a namespace to prevent name clashes and implement the mixin facility.
+
+---
+
+# Question: How do modules prevent name clashes in Ruby?
+
+**Answer:** By providing a namespace, so methods and constants defined in one module don’t conflict with those in another.
+
+---
+
+# Question: What is the correct syntax for defining a Ruby module?
+
+**Answer:**
+
+```ruby
+module Identifier
+   statement1
+   statement2
+   ...
+end
+```
+
+---
+
+# Question: How are module constants named in Ruby?
+
+**Answer:** With an initial uppercase letter, similar to class constants.
+
+---
+
+# Question: How do you define module methods in Ruby?
+
+**Answer:** Like class methods, using the module name followed by a dot and the method name.
+
+---
+
+# Question: How do you call a module method in Ruby?
+
+**Answer:** By using `ModuleName.method_name`.
+
+---
+
+# Question: How do you reference a constant inside a module?
+
+**Answer:** Using `ModuleName::CONSTANT_NAME`.
+
+---
+
+# Question: What is the purpose of the following code?
+
+```ruby
+module Trig
+   PI = 3.141592654
+   def Trig.sin(x)
+   end
+   def Trig.cos(x)
+   end
+end
+```
+
+**Answer:** It defines a module `Trig` containing a constant `PI` and two module methods: `Trig.sin` and `Trig.cos`.
+
+---
+
+# Question: Can two modules have methods with the same name in Ruby?
+
+**Answer:** Yes, because modules provide separate namespaces, avoiding method name clashes.
+
+---
+
+# Question: What does the following Ruby code do?
+
+```ruby
+module Moral
+   VERY_BAD = 0
+   BAD = 1
+   def Moral.sin(badness)
+   end
+end
+```
+
+**Answer:** Defines a module `Moral` with two constants and a method `Moral.sin`, which shares its name with a method in another module but serves a different purpose.
+
+---
+
+# Question: What is the purpose of the `require` statement in Ruby?
+
+**Answer:** It loads external Ruby files, similar to C’s `include` or Java’s `import`.
+
+---
+
+# Question: Is the `.rb` file extension necessary when using `require`?
+
+**Answer:** No, it is optional.
+
+---
+
+# Question: What does `$LOAD_PATH << '.'` do?
+
+**Answer:** It adds the current directory to Ruby’s module search path so that required files can be found.
+
+---
+
+# Question: What does `require_relative` do in Ruby?
+
+**Answer:** It loads files from a relative directory without modifying `$LOAD_PATH`.
+
+---
+
+# Question: Why does using modules help avoid ambiguity when multiple files define functions with the same name?
+
+**Answer:** Because functions can be called using the module name, allowing precise reference.
+
+---
+
+# Question: How do you include a module into a class in Ruby?
+
+**Answer:** By using the `include` statement inside the class.
+
+---
+
+# Question: What must you do before including a module from another file in a class?
+
+**Answer:** Use the `require` statement to load the module file.
+
+---
+
+# Question: Given this module in `support.rb`:
+
+```ruby
+module Week
+   FIRST_DAY = "Sunday"
+   def Week.weeks_in_month
+      puts "You have four weeks in a month"
+   end
+   def Week.weeks_in_year
+      puts "You have 52 weeks in a year"
+   end
+end
+```
+
+How can you include and use it in a class?
+**Answer:**
+
+```ruby
+require 'support'
+class Decade
+   include Week
+   def no_of_months
+      puts Week::FIRST_DAY
+      puts 10 * 12
+   end
+end
+```
+
+---
+
+# Question: What is the output of calling `puts Week::FIRST_DAY`?
+
+**Answer:** `Sunday`
+
+---
+
+# Question: What is the output of calling `Week.weeks_in_month`?
+
+**Answer:** `You have four weeks in a month`
+
+---
+
+# Question: What is the output of calling `Week.weeks_in_year`?
+
+**Answer:** `You have 52 weeks in a year`
+
+---
+
+# Question: What is the output of calling `d1.no_of_months` if `d1 = Decade.new`?
+
+**Answer:**
+
+```
+Sunday  
+120
+```
+
+---
+
+# Question: Does Ruby support multiple inheritance directly?
+
+**Answer:** No, it does not support multiple inheritance directly.
+
+---
+
+# Question: How does Ruby simulate multiple inheritance?
+
+**Answer:** By using mixins, which allow classes to include multiple modules.
+
+---
+
+# Question: What is a mixin in Ruby?
+
+**Answer:** A way of adding functionality to a class using modules instead of direct inheritance.
+
+---
+
+# Question: Why are mixins powerful in Ruby?
+
+**Answer:** They allow modular reuse and interaction with class code, without the complexity of multiple inheritance.
+
+---
+
+# Question: Given this code, what methods can be accessed from `Sample` instances?
+
+```ruby
+module A
+   def a1; end
+   def a2; end
+end
+
+module B
+   def b1; end
+   def b2; end
+end
+
+class Sample
+   include A
+   include B
+   def s1; end
+end
+```
+
+**Answer:** `a1`, `a2`, `b1`, `b2`, and `s1`.
+
+---
+
+# Question: How does the `Sample` class in the above example demonstrate mixins?
+
+**Answer:** By including modules `A` and `B`, it inherits methods from both, simulating multiple inheritance.
+
+---
+
+# Question: What object is used to demonstrate method calls from mixed-in modules in the example?
+
+**Answer:** `samp = Sample.new`
+
+---
+
+# Question: How are mixin methods accessed on the object `samp`?
+
+**Answer:** By calling `samp.a1`, `samp.a2`, `samp.b1`, and `samp.b2`.
+
+---
+
