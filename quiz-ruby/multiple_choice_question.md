@@ -3235,3 +3235,15 @@ months.keys
 **Answer:** The value for the given key, or the default value if the key is not found.
 
 ---
+
+# Question: What does `hash[key] = value` do?
+
+**Answer:** Sets the given value for the given key.
+
+---
+
+# Question: What does `hash.clear` do?
+
+**Answer:** Removes all key-value pairs from the hash.
+
+---
