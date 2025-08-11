@@ -3025,3 +3025,25 @@ This creates: `[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]`
 **Answer:** It is just syntactic sugar; both return the same array.
 
 ---
+
+# Question: How can you create an array from a range using the `Array()` method?
+
+**Answer:**
+
+```ruby
+digits = Array(0..9)
+```
+
+This produces: `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
+
+---
+
+# Question: What are the common syntaxes for creating an Array object?
+
+**Answer:**
+
+* `Array[...]`
+* `Array.[](...)`
+* `[...]` (literal notation)
+
+---
