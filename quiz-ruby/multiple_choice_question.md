@@ -3082,3 +3082,25 @@ puts a.pack("A3A3A3")
 **Answer:** `"a  b  c  "` (padded with spaces)
 
 ---
+
+# Question: What is the output of this code?
+
+```ruby
+a = [ "a", "b", "c" ]
+puts a.pack("a3a3a3")
+```
+
+**Answer:** `"a\000\000b\000\000c\000\000"` (includes null bytes)
+
+---
+
+# Question: What is the result of this `pack` directive?
+
+```ruby
+n = [ 65, 66, 67 ]
+puts n.pack("ccc")
+```
+
+**Answer:** `"ABC"`
+
+---
