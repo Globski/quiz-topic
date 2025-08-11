@@ -3223,3 +3223,15 @@ months.keys
 **Answer:** `["1", "2"]`
 
 ---
+
+# Question: What does `hash == other_hash` do?
+
+**Answer:** Compares two hashes for equality of key-value pairs.
+
+---
+
+# Question: What does `hash[key]` return?
+
+**Answer:** The value for the given key, or the default value if the key is not found.
+
+---
