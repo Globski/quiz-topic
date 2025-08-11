@@ -3065,3 +3065,20 @@ puts "#{num}"
 **Answer:** `6`
 
 ---
+
+# Question: What is the use of `Array#pack` in Ruby?
+
+**Answer:** Converts an array into a binary sequence using format directives.
+
+---
+
+# Question: What is the result of this pack example?
+
+```ruby
+a = [ "a", "b", "c" ]
+puts a.pack("A3A3A3")
+```
+
+**Answer:** `"a  b  c  "` (padded with spaces)
+
+---
