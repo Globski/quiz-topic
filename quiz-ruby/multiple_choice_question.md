@@ -2983,3 +2983,33 @@ names = Array.new
 ```
 
 ---
+
+# Question: How do you create an array of a specific size with identical elements?
+
+**Answer:**
+
+```ruby
+names = Array.new(4, "mac")
+```
+
+This creates: `["mac", "mac", "mac", "mac"]`
+
+---
+
+# Question: How do you retrieve the size of a Ruby array?
+
+**Answer:** Using `.size` or `.length` methods.
+
+---
+
+# Question: How do you create an array using a block with `Array.new`?
+
+**Answer:**
+
+```ruby
+nums = Array.new(10) { |e| e = e * 2 }
+```
+
+This creates: `[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]`
+
+---
