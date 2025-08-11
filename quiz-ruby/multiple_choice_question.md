@@ -3299,3 +3299,15 @@ hash.default = "default_value"
 **Answer:** `true` if the hash has no key-value pairs, otherwise `false`.
 
 ---
+
+# Question: What is the difference between `hash.fetch(key)` and `hash[key]`?
+
+**Answer:** `fetch` raises an error if the key doesn't exist unless a default is provided.
+
+---
+
+# Question: What does `hash.has_key?(key)` return?
+
+**Answer:** `true` if the key exists in the hash, otherwise `false`.
+
+---
