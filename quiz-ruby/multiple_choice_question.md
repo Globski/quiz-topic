@@ -3132,3 +3132,30 @@ months = Hash.new
 ```
 
 ---
+
+# Question: How do you create a hash with a default value?
+
+**Answer:**
+
+```ruby
+months = Hash.new("month")
+```
+
+---
+
+# Question: What does this code print?
+
+```ruby
+months = Hash.new("month")
+puts "#{months[0]}"
+puts "#{months[72]}"
+```
+
+**Answer:**
+
+```
+month  
+month
+```
+
+---
