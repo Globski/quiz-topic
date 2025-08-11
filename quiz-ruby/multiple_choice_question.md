@@ -3104,3 +3104,15 @@ puts n.pack("ccc")
 **Answer:** `"ABC"`
 
 ---
+
+# Question: What is a Hash in Ruby?
+
+**Answer:** A collection of key-value pairs, where keys can be any object and indexing is done via keys instead of integers.
+
+---
+
+# Question: How does hash indexing differ from array indexing in Ruby?
+
+**Answer:** Arrays use integer indices, while hashes use arbitrary object keys.
+
+---
