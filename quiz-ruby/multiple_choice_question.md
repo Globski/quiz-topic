@@ -3159,3 +3159,56 @@ month
 ```
 
 ---
+
+# Question: How do you initialize a hash with key-value pairs directly?
+
+**Answer:**
+
+```ruby
+H = Hash["a" => 100, "b" => 200]
+```
+
+---
+
+# Question: What is the output of the following code?
+
+```ruby
+H = Hash["a" => 100, "b" => 200]
+puts "#{H['a']}"
+puts "#{H['b']}"
+```
+
+**Answer:**
+
+```
+100  
+200
+```
+
+---
+
+# Question: Can a Ruby hash have an array as a key?
+
+**Answer:** Yes.
+
+---
+
+# Question: What are three ways to create a new Hash object?
+
+**Answer:**
+
+* `Hash.new`
+* `Hash.new(default)`
+* `Hash[[key => value, ...]]`
+
+---
+
+# Question: How do you get all keys from a hash?
+
+**Answer:**
+
+```ruby
+hash.keys
+```
+
+---
