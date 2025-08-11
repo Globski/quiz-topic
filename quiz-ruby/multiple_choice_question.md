@@ -3275,3 +3275,15 @@ hash.default = "default_value"
 **Answer:** Removes the key-value pair associated with the given key.
 
 ---
+
+# Question: What does `hash.delete_if { |key, value| ... }` do?
+
+**Answer:** Deletes key-value pairs for which the block returns true.
+
+---
+
+# Question: What does `hash.each { |key, value| ... }` do?
+
+**Answer:** Iterates over each key-value pair in the hash.
+
+---
