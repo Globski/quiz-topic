@@ -2943,3 +2943,15 @@ this is test
 **Answer:** `["h", "e", "l", "l", "o"]`
 
 ---
+
+# Question: What are Ruby arrays?
+
+**Answer:** Ordered, integer-indexed collections that can store any type of object.
+
+---
+
+# Question: What index does Ruby array indexing start from?
+
+**Answer:** Index 0.
+
+---
