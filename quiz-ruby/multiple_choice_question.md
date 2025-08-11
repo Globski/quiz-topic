@@ -3311,3 +3311,147 @@ hash.default = "default_value"
 **Answer:** `true` if the key exists in the hash, otherwise `false`.
 
 ---
+
+# Question: What does `hash.has_value?(value)` return?
+
+**Answer:** `true` if the hash contains the given value.
+
+---
+
+# Question: What does `hash.index(value)` do?
+
+**Answer:** Returns the key associated with the given value, or `nil` if not found.
+
+---
+
+# Question: What do `hash.indexes(keys)` and `hash.indices(keys)` do?
+
+**Answer:** Return an array of values for the given keys (deprecated – use `select` instead).
+
+---
+
+# Question: What does `hash.inspect` do?
+
+**Answer:** Returns a string representation of the hash.
+
+---
+
+# Question: What does `hash.invert` do?
+
+**Answer:** Swaps keys and values in a new hash.
+
+---
+
+# Question: What does `hash.length` return?
+
+**Answer:** The number of key-value pairs in the hash.
+
+---
+
+# Question: What does `hash.merge(other_hash)` do?
+
+**Answer:** Returns a new hash combining both hashes, with values from `other_hash` overriding.
+
+---
+
+# Question: What does `hash.merge!(other_hash)` do?
+
+**Answer:** Merges `other_hash` into the original hash in place.
+
+---
+
+# Question: What does `hash.rehash` do?
+
+**Answer:** Rebuilds the hash in case keys have changed.
+
+---
+
+# Question: What does `hash.reject { |key, value| ... }` do?
+
+**Answer:** Returns a new hash without the key-value pairs for which the block returns true.
+
+---
+
+# Question: What does `hash.reject!` do?
+
+**Answer:** Same as `reject`, but modifies the original hash.
+
+---
+
+# Question: What does `hash.replace(other_hash)` do?
+
+**Answer:** Replaces the content of `hash` with `other_hash`.
+
+---
+
+# Question: What does `hash.select { |key, value| ... }` return?
+
+**Answer:** A new array with key-value pairs where the block returns true.
+
+---
+
+# Question: What does `hash.shift` do?
+
+**Answer:** Removes and returns the first key-value pair as a 2-element array.
+
+---
+
+# Question: What does `hash.size` return?
+
+**Answer:** The number of key-value pairs.
+
+---
+
+# Question: What does `hash.sort` do?
+
+**Answer:** Converts the hash into a sorted 2D array of key-value pairs.
+
+---
+
+# Question: What does `hash.store(key, value)` do?
+
+**Answer:** Same as `hash[key] = value`; stores a key-value pair.
+
+---
+
+# Question: What does `hash.to_a` return?
+
+**Answer:** A 2D array of all key-value pairs.
+
+---
+
+# Question: What does `hash.to_s` do?
+
+**Answer:** Converts the hash to a string.
+
+---
+
+# Question: What does `hash.to_hash` return?
+
+**Answer:** The hash itself (`self`).
+
+---
+
+# Question: What does `hash.update(other_hash)` do?
+
+**Answer:** Same as `merge`, returns a new hash with combined contents.
+
+---
+
+# Question: What does `hash.value?(value)` return?
+
+**Answer:** `true` if the value exists in the hash.
+
+---
+
+# Question: What does `hash.values` return?
+
+**Answer:** An array of all values in the hash.
+
+---
+
+# Question: What does `hash.values_at(key1, key2, ...)` return?
+
+**Answer:** An array of values for the given keys.
+
+---
