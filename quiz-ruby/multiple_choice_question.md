@@ -3263,3 +3263,15 @@ hash.default = "default_value"
 ```
 
 ---
+
+# Question: What does `hash.default_proc` return?
+
+**Answer:** The block used to create the hash, if any.
+
+---
+
+# Question: What does `hash.delete(key)` do?
+
+**Answer:** Removes the key-value pair associated with the given key.
+
+---
