@@ -2733,3 +2733,213 @@ END code block
 
 ---
 
+# Question: What does a `String` object in Ruby hold and manipulate?
+
+**Answer:** An arbitrary sequence of one or more bytes, typically representing human language characters.
+
+---
+
+# Question: What is the simplest way to create a string literal in Ruby?
+
+**Answer:** Enclose text in single quotes, e.g., `'This is a simple Ruby string literal'`.
+
+---
+
+# Question: How do you include an apostrophe inside a single-quoted Ruby string?
+
+**Answer:** Escape it using a backslash, e.g., `'Won\'t you read O\'Reilly\'s book?'`.
+
+---
+
+# Question: How do you escape a backslash in a Ruby string?
+
+**Answer:** Use two backslashes: `\\`.
+
+---
+
+# Question: What is expression substitution in Ruby strings?
+
+**Answer:** It allows embedding Ruby expressions inside a string using `#{}`.
+
+---
+
+# Question: What is the output of the following code?
+
+```ruby
+x, y, z = 12, 36, 72
+puts "The value of x is #{ x }."
+puts "The sum of x and y is #{ x + y }."
+puts "The average was #{ (x + y + z)/3 }."
+```
+
+**Answer:**
+
+```
+The value of x is 12.  
+The sum of x and y is 48.  
+The average was 40.
+```
+
+---
+
+# Question: What are general delimited strings in Ruby?
+
+**Answer:** Strings enclosed by arbitrary matching delimiters preceded by `%`.
+
+---
+
+# Question: What does `%{Ruby is fun.}` represent?
+
+**Answer:** A double-quoted string: `"Ruby is fun."`.
+
+---
+
+# Question: What is the meaning of `%Q{ Ruby is fun. }` in Ruby?
+
+**Answer:** Equivalent to a double-quoted string with interpolation: `" Ruby is fun. "`.
+
+---
+
+# Question: What is `%q[Ruby is fun.]` equivalent to?
+
+**Answer:** A single-quoted string: `'Ruby is fun.'`.
+
+---
+
+# Question: What does `%x!ls!` do in Ruby?
+
+**Answer:** Executes the shell command `ls` and returns the output as a string (equivalent to backticks).
+
+---
+
+# Question: What character encoding does Ruby use by default?
+
+**Answer:** ASCII.
+
+---
+
+# Question: What Ruby variable can be used to change the character set?
+
+**Answer:** `$KCODE`.
+
+---
+
+# Question: How do you change the character encoding to UTF-8 using `$KCODE`?
+
+**Answer:**
+
+```ruby
+$KCODE = 'u'
+```
+
+---
+
+# Question: What does `String.new(str = "")` do?
+
+**Answer:** Creates a new `String` object containing a copy of `str`.
+
+---
+
+# Question: What is the output of the following code?
+
+```ruby
+myStr = String.new("THIS IS TEST")
+foo = myStr.downcase
+puts "#{foo}"
+```
+
+**Answer:**
+
+```
+this is test
+```
+
+---
+
+# Question: What method is used to convert all characters in a string to lowercase in Ruby?
+
+**Answer:** `downcase`.
+
+---
+
+# Question: What method is used to unpack data from a string using a format directive?
+
+**Answer:** `String#unpack`.
+
+---
+
+# Question: What is the output of the following unpack example?
+
+```ruby
+"abc \0\0abc \0\0".unpack('A6Z6')
+```
+
+**Answer:** `["abc", "abc "]`
+
+---
+
+# Question: What is the output of the following unpack call?
+
+```ruby
+"abc \0\0".unpack('a3a3')
+```
+
+**Answer:** `["abc", " \000\000"]`
+
+---
+
+# Question: What is the output of this unpack directive?
+
+```ruby
+"abc \0abc \0".unpack('Z*Z*')
+```
+
+**Answer:** `["abc ", "abc "]`
+
+---
+
+# Question: What is the output of the following?
+
+```ruby
+"aa".unpack('b8B8')
+```
+
+**Answer:** `["10000110", "01100001"]`
+
+---
+
+# Question: What will this line output?
+
+```ruby
+"aaa".unpack('h2H2c')
+```
+
+**Answer:** `["16", "61", 97]`
+
+---
+
+# Question: What is the result of unpacking `"\xfe\xff\xfe\xff"` with `'sS'`?
+
+**Answer:** `[-2, 65534]`
+
+---
+
+# Question: What is the output of this code?
+
+```ruby
+"now = 20is".unpack('M*')
+```
+
+**Answer:** `["now is"]`
+
+---
+
+# Question: What is the result of this unpacking call?
+
+```ruby
+"whole".unpack('xax2aX2aX1aX2a')
+```
+
+**Answer:** `["h", "e", "l", "l", "o"]`
+
+---
