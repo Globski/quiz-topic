@@ -2967,3 +2967,19 @@ this is test
 **Answer:** Yes, including `String`, `Integer`, `Fixnum`, `Hash`, `Symbol`, and even other arrays.
 
 ---
+
+# Question: How does array growth behave in Ruby?
+
+**Answer:** Ruby arrays grow automatically when new elements are added.
+
+---
+
+# Question: How do you create an empty array using the `new` method?
+
+**Answer:**
+
+```ruby
+names = Array.new
+```
+
+---
