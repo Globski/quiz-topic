@@ -3116,3 +3116,19 @@ puts n.pack("ccc")
 **Answer:** Arrays use integer indices, while hashes use arbitrary object keys.
 
 ---
+
+# Question: What is returned when accessing a non-existent key in a hash (without a default)?
+
+**Answer:** `nil`
+
+---
+
+# Question: How do you create an empty hash in Ruby?
+
+**Answer:**
+
+```ruby
+months = Hash.new
+```
+
+---
