@@ -2557,3 +2557,179 @@ end
 
 ---
 
+# Question: What is a block in Ruby?
+
+**Answer:** A block is a chunk of code enclosed in braces `{}` that is invoked using the `yield` statement from a method.
+
+---
+
+# Question: How is a block defined syntactically in Ruby?
+
+**Answer:**
+
+```ruby
+block_name {
+   statement1
+   statement2
+   ...
+}
+```
+
+---
+
+# Question: How is a block invoked in Ruby?
+
+**Answer:** By calling a method with the same name and using the `yield` statement inside the method.
+
+---
+
+# Question: What does the `yield` statement do in Ruby?
+
+**Answer:** It transfers control from the method to the associated block and optionally passes parameters to the block.
+
+---
+
+# Question: What is the output of the following code?
+
+```ruby
+def test
+   puts "You are in the method"
+   yield
+   puts "You are again back to the method"
+   yield
+end
+
+test { puts "You are in the block" }
+```
+
+**Answer:**
+
+```
+You are in the method  
+You are in the block  
+You are again back to the method  
+You are in the block
+```
+
+---
+
+# Question: How can parameters be passed to a block using yield?
+
+**Answer:** By using `yield` followed by arguments, e.g., `yield 5`, and receiving them in the block as `|param|`.
+
+---
+
+# Question: What is the output of the following code?
+
+```ruby
+def test
+   yield 5
+   puts "You are in the method test"
+   yield 100
+end
+
+test {|i| puts "You are in the block #{i}"}
+```
+
+**Answer:**
+
+```
+You are in the block 5  
+You are in the method test  
+You are in the block 100
+```
+
+---
+
+# Question: How do you pass multiple parameters to a block using `yield`?
+
+**Answer:** Use `yield a, b`, and define the block as `|a, b|`.
+
+---
+
+# Question: What does this code do?
+
+```ruby
+def test
+   yield
+end
+
+test { puts "Hello world" }
+```
+
+**Answer:** Calls the block using `yield`, printing `Hello world`.
+
+---
+
+# Question: What happens if you use `&block` as the last argument in a method?
+
+**Answer:** The block passed to the method is assigned to the `block` variable and can be called using `block.call`.
+
+---
+
+# Question: What is the output of this Ruby code?
+
+```ruby
+def test(&block)
+   block.call
+end
+
+test { puts "Hello World!" }
+```
+
+**Answer:**
+
+```
+Hello World!
+```
+
+---
+
+# Question: What is the significance of the `&` in method parameters?
+
+**Answer:** It converts a block into a `Proc` object that can be called within the method.
+
+---
+
+# Question: What is the correct order of `*` and `&` in method parameters if both are used?
+
+**Answer:** The `&` parameter must come after the `*` parameter.
+
+---
+
+# Question: What are `BEGIN` and `END` blocks in Ruby?
+
+**Answer:** `BEGIN` blocks run when the file is loaded, and `END` blocks run after the program finishes execution.
+
+---
+
+# Question: What is the output of the following program?
+
+```ruby
+BEGIN { puts "BEGIN code block" }
+END { puts "END code block" }
+puts "MAIN code block"
+```
+
+**Answer:**
+
+```
+BEGIN code block  
+MAIN code block  
+END code block
+```
+
+---
+
+# Question: In what order are multiple `BEGIN` blocks executed?
+
+**Answer:** In the order they are encountered in the file.
+
+---
+
+# Question: In what order are multiple `END` blocks executed?
+
+**Answer:** In reverse order from how they appear in the file.
+
+---
+
