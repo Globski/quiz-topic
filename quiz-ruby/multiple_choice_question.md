@@ -3047,3 +3047,21 @@ This produces: `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
 * `[...]` (literal notation)
 
 ---
+
+# Question: What does the `.at(index)` method do for arrays?
+
+**Answer:** Returns the element at the specified index.
+
+---
+
+# Question: What is the output of this code?
+
+```ruby
+digits = Array(0..9)
+num = digits.at(6)
+puts "#{num}"
+```
+
+**Answer:** `6`
+
+---
