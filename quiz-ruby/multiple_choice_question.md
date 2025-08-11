@@ -3013,3 +3013,15 @@ nums = Array.new(10) { |e| e = e * 2 }
 This creates: `[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]`
 
 ---
+
+# Question: What does `Array.[](1, 2, 3, 4, 5)` return?
+
+**Answer:** `[1, 2, 3, 4, 5]`
+
+---
+
+# Question: How is `Array[1, 2, 3, 4, 5]` different from `Array.[]`?
+
+**Answer:** It is just syntactic sugar; both return the same array.
+
+---
