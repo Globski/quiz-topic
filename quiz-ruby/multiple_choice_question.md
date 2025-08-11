@@ -3287,3 +3287,15 @@ hash.default = "default_value"
 **Answer:** Iterates over each key-value pair in the hash.
 
 ---
+
+# Question: What does `hash.each_key { |key| ... }` do?
+
+**Answer:** Iterates over each key in the hash.
+
+---
+
+# Question: What does `hash.empty?` return?
+
+**Answer:** `true` if the hash has no key-value pairs, otherwise `false`.
+
+---
