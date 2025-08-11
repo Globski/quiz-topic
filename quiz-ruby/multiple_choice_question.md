@@ -2955,3 +2955,15 @@ this is test
 **Answer:** Index 0.
 
 ---
+
+# Question: What does a negative index in a Ruby array represent?
+
+**Answer:** An offset from the end of the array (`-1` is the last element, `-2` is the second to last, etc.).
+
+---
+
+# Question: Can Ruby arrays hold multiple object types?
+
+**Answer:** Yes, including `String`, `Integer`, `Fixnum`, `Hash`, `Symbol`, and even other arrays.
+
+---
