@@ -3212,3 +3212,14 @@ hash.keys
 ```
 
 ---
+
+# Question: What does this code return?
+
+```ruby
+months = {"1" => "January", "2" => "February"}
+months.keys
+```
+
+**Answer:** `["1", "2"]`
+
+---
