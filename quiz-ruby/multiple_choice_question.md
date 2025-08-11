@@ -3247,3 +3247,19 @@ months.keys
 **Answer:** Removes all key-value pairs from the hash.
 
 ---
+
+# Question: What does `hash.default` return?
+
+**Answer:** The default value of the hash, or `nil` if none is set.
+
+---
+
+# Question: How do you set a default value for a hash?
+
+**Answer:**
+
+```ruby
+hash.default = "default_value"
+```
+
+---
