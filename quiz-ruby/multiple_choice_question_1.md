@@ -523,3 +523,124 @@ end
 **Answer:** `false`
 
 ---
+
+# Question: What are iterators in Ruby?
+
+**Answer:** Iterators are methods supported by collections, used to return all elements of a collection one after the other.
+
+---
+
+# Question: What types of objects in Ruby are typically considered collections?
+
+**Answer:** Arrays and hashes.
+
+---
+
+# Question: What does the `each` iterator do in Ruby?
+
+**Answer:** It executes a block of code for each element in a collection, returning each element one by one.
+
+---
+
+# Question: What is the syntax for using the `each` iterator with a block?
+
+**Answer:**
+
+```ruby
+collection.each do |variable|
+   code
+end
+```
+
+---
+
+# Question: In the `each` iterator, what role does the variable play inside the block?
+
+**Answer:** It holds the value of each element during the iteration.
+
+---
+
+# Question: What will the following code output?
+
+```ruby
+ary = [1,2,3,4,5]
+ary.each do |i|
+   puts i
+end
+```
+
+**Answer:**
+
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+# Question: What iterator in Ruby can be used to apply a transformation to every element and return a new collection?
+
+**Answer:** The `collect` iterator.
+
+---
+
+# Question: Is the `collect` iterator required to use a block?
+
+**Answer:** No, `collect` does not need to be associated with a block.
+
+---
+
+# Question: What will the following code output?
+
+```ruby
+a = [1,2,3,4,5]
+b = a.collect
+puts b
+```
+
+**Answer:**
+
+```
+1
+2
+3
+4
+5
+```
+
+---
+
+# Question: What method should be used to copy an array in Ruby instead of `collect`?
+
+**Answer:** The `clone` method.
+
+---
+
+# Question: When is `collect` typically used?
+
+**Answer:** When you want to transform or manipulate each value in a collection to produce a new array.
+
+---
+
+# Question: What will the following code output?
+
+```ruby
+a = [1,2,3,4,5]
+b = a.collect { |x| 10 * x }
+puts b
+```
+
+**Answer:**
+
+```
+10
+20
+30
+40
+50
+```
+
+---
