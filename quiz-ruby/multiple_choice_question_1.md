@@ -35,3 +35,23 @@
 # Question: How do you retrieve the day of the week from a Time object?
 
 **Answer:** `time.wday` (Sunday = 0)
+
+---
+
+# Question: What does `time.yday` return?
+
+**Answer:** The day of the year (1–366)
+
+---
+
+# Question: Which method gets the hour (0–23)?
+
+**Answer:** `time.hour`
+
+---
+
+# Question: How do you retrieve the minutes from a Time object?
+
+**Answer:** `time.min`
+
+---
