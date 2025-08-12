@@ -217,3 +217,15 @@
 **Answer:** Full month name (e.g., "January").
 
 ---
+
+# Question: What does `%c` return?
+
+**Answer:** Preferred local date and time representation.
+
+---
+
+# Question: What does `%d` stand for in date formatting?
+
+**Answer:** Day of the month (01 to 31).
+
+---
