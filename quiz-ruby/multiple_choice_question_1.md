@@ -325,3 +325,21 @@
 **Answer:** A literal percent character.
 
 ---
+
+# Question: What happens when you subtract a number from a Time object?
+
+**Answer:** Returns a new Time object that many seconds earlier.
+
+---
+
+# Question: What happens when you add a number to a Time object?
+
+**Answer:** Returns a new Time object that many seconds later.
+
+---
+
+# Question: What is returned when you subtract one Time object from another?
+
+**Answer:** A float representing the number of seconds between the two times.
+
+---
