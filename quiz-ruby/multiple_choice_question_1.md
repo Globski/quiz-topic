@@ -644,3 +644,175 @@ puts b
 ```
 
 ---
+
+# Question: What does DBI stand for in Ruby and what is its main purpose?
+
+**Answer:** DBI stands for Database Independent Interface. It provides an abstraction layer between Ruby code and the underlying database, allowing easy switching of database implementations.
+
+---
+
+# Question: What are the two main layers of Ruby DBI architecture?
+
+**Answer:** The DBI layer (database-independent interface) and the DBD layer (database-dependent driver).
+
+---
+
+# Question: What is the role of the DBI layer in Ruby DBI architecture?
+
+**Answer:** The DBI layer provides common access methods that are used the same way across different database systems.
+
+---
+
+# Question: What is the function of the DBD layer in Ruby DBI?
+
+**Answer:** The DBD layer interprets DBI requests and maps them to specific commands for the underlying database engine.
+
+---
+
+# Question: List any five database systems supported by Ruby DBI.
+
+**Answer:** MySQL, PostgreSQL, Oracle, SQLite, ODBC.
+
+---
+
+# Question: What must be installed to access MySQL databases using Ruby?
+
+**Answer:** The Ruby MySQL module, which acts as a DBD.
+
+---
+
+# Question: What is the command to install the Ruby DBI module using RubyGems?
+
+**Answer:** `gem install dbi`
+
+---
+
+# Question: What command is used to extract the DBI tarball?
+
+**Answer:** `tar zxf dbi-0.2.0.tar.gz`
+
+---
+
+# Question: What is the command to configure the DBI distribution with all drivers?
+
+**Answer:** `ruby setup.rb config`
+
+---
+
+# Question: How do you configure the DBI setup for only the DBI module and MySQL driver?
+
+**Answer:** `ruby setup.rb config --with = dbi,dbd_mysql`
+
+---
+
+# Question: What are the commands to build and install DBI after configuration?
+
+**Answer:**
+
+```bash
+ruby setup.rb setup  
+ruby setup.rb install  
+```
+
+---
+
+# Question: What is the Ruby code to connect to a MySQL database named TESTDB using DBI?
+
+**Answer:** `DBI.connect("DBI:Mysql:TESTDB:localhost", "testuser", "test123")`
+
+---
+
+# Question: What does `select_one("SELECT VERSION()")` return in Ruby DBI?
+
+**Answer:** It returns the first row from the result set of the query, such as the server version string.
+
+---
+
+# Question: What is returned if the connection to the database fails?
+
+**Answer:** `dbh` is set to `nil`, and error details can be retrieved using `e.err` and `e.errstr`.
+
+---
+
+# Question: What is the purpose of `dbh.disconnect` in a DBI script?
+
+**Answer:** It closes the connection to the database and releases associated resources.
+
+---
+
+# Question: What does the `do` method in Ruby DBI do?
+
+**Answer:** It executes a SQL statement that does not return rows and returns the count of affected rows.
+
+---
+
+# Question: Which SQL commands can be executed using the `do` method?
+
+**Answer:** Commands like `DROP`, `CREATE`, `INSERT`, `UPDATE`, and `DELETE`.
+
+---
+
+# Question: What method must be called after an `INSERT` to save the changes?
+
+**Answer:** `dbh.commit`
+
+---
+
+# Question: What is the difference between `do` and `prepare/execute` in Ruby DBI?
+
+**Answer:** `do` is used for one-time SQL commands, while `prepare/execute` is used for repeated or parameterized SQL operations.
+
+---
+
+# Question: What is the syntax to prepare and execute an INSERT with bind values?
+
+**Answer:**
+
+```ruby
+sth = dbh.prepare("INSERT INTO EMPLOYEE(...) VALUES (?, ?, ?, ?, ?)")
+sth.execute('John', 'Poul', 25, 'M', 2300)
+```
+
+---
+
+# Question: What method is used to release the statement handle after execution?
+
+**Answer:** `sth.finish`
+
+---
+
+# Question: When should `rollback` be called in Ruby DBI?
+
+**Answer:** When an error occurs and you want to revert the changes made during the transaction.
+
+---
+
+# Question: What is the purpose of using bind values in DBI?
+
+**Answer:** To insert or use dynamic values securely and efficiently in SQL statements using placeholders (`?`).
+
+---
+
+# Question: What method is used to fetch query results one by one?
+
+**Answer:** `sth.fetch do |row| ... end`
+
+---
+
+# Question: How is a SELECT query executed with a condition in DBI?
+
+**Answer:**
+
+```ruby
+sth = dbh.prepare("SELECT * FROM EMPLOYEE WHERE INCOME > ?")
+sth.execute(1000)
+```
+
+---
+
+# Question: What is the output of the example SELECT query if there are two qualifying records?
+
+**Answer:** It prints the details of both employees whose income is greater than 1000.
+
+---
+
