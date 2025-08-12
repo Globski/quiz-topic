@@ -205,3 +205,15 @@
 **Answer:** Full weekday name (e.g., "Sunday").
 
 ---
+
+# Question: What does `%b` return?
+
+**Answer:** Abbreviated month name (e.g., "Jan").
+
+---
+
+# Question: What does `%B` return?
+
+**Answer:** Full month name (e.g., "January").
+
+---
