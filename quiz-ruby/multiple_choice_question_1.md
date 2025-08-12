@@ -379,3 +379,147 @@
 **Answer:** 'a', 'b', 'c', 'd'
 
 ---
+
+
+# Question: What class does Ruby use to represent a range like `1..100`?
+
+**Answer:** Range object.
+
+---
+
+# Question: How can you convert a range into an array in Ruby?
+
+**Answer:** Use the `to_a` method.
+
+---
+
+# Question: What does the following code return: `(1..10).to_a`?
+
+**Answer:** `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
+
+---
+
+# Question: What does the following code return: `('bar'..'bat').to_a`?
+
+**Answer:** `["bar", "bas", "bat"]`
+
+---
+
+# Question: What does the method `include?` do on a range?
+
+**Answer:** It checks if a value exists within the range.
+
+---
+
+# Question: What is the result of `digits.include?(5)` when `digits = 0..9`?
+
+**Answer:** `true`
+
+---
+
+# Question: What method retrieves the smallest value in a range?
+
+**Answer:** `min`
+
+---
+
+# Question: What method retrieves the largest value in a range?
+
+**Answer:** `max`
+
+---
+
+# Question: What does the method `reject` do on a range?
+
+**Answer:** It filters out elements that meet the specified condition.
+
+---
+
+# Question: What is the output of `digits.reject { |i| i < 5 }` when `digits = 0..9`?
+
+**Answer:** `[5, 6, 7, 8, 9]`
+
+---
+
+# Question: How can you iterate over all elements in a range?
+
+**Answer:** Use the `.each` method.
+
+---
+
+# Question: What output does the code `digits.each do |digit| puts "In Loop #{digit}" end` produce for `digits = 0..9`?
+
+**Answer:**
+
+```
+In Loop 0
+In Loop 1
+In Loop 2
+In Loop 3
+In Loop 4
+In Loop 5
+In Loop 6
+In Loop 7
+In Loop 8
+In Loop 9
+```
+
+---
+
+# Question: How can ranges be used in conditional expressions?
+
+**Answer:** Using range operators (`..`) to determine if a condition holds between two values.
+
+---
+
+# Question: What does the expression `print if /start/../end/` do inside a `while gets` loop?
+
+**Answer:** It prints all lines from the input starting with a line matching "start" until a line matching "end".
+
+---
+
+# Question: How are ranges used in a `case` statement?
+
+**Answer:** To match values against specific intervals.
+
+---
+
+# Question: What will be printed when `score = 70` is matched against:
+
+```ruby
+case score
+when 0..40 then "Fail"
+when 41..60 then "Pass"
+when 61..70 then "Pass with Merit"
+when 71..100 then "Pass with Distinction"
+else "Invalid Score"
+end
+```
+
+**Answer:** `Pass with Merit`
+
+---
+
+# Question: What operator is used in Ruby to test if a value falls within a range?
+
+**Answer:** `===` (case equality operator)
+
+---
+
+# Question: What is the result of `((1..10) === 5)`?
+
+**Answer:** `true`
+
+---
+
+# Question: What is the result of `(('a'..'j') === 'c')`?
+
+**Answer:** `true`
+
+---
+
+# Question: What is the result of `(('a'..'j') === 'z')`?
+
+**Answer:** `false`
+
+---
