@@ -169,3 +169,9 @@
 **Answer:** `time.getlocal`
 
 ---
+
+# Question: How do you get a new Time object in UTC?
+
+**Answer:** `time.getutc`
+
+---
