@@ -9,3 +9,13 @@
 **Answer:** `Time.new` or `Time.now`.
 
 ---
+
+# Question: Are `Time.new` and `Time.now` functionally different?
+
+**Answer:** No, `Time.now` is a synonym for `Time.new`.
+
+---
+
+# Question: Which method returns the year from a Time object?
+
+**Answer:** `time.year`
