@@ -367,3 +367,15 @@
 **Answer:** 1, 2, 3, 4, 5
 
 ---
+
+# Question: What is the output of the range `(1...5)`?
+
+**Answer:** 1, 2, 3, 4
+
+---
+
+# Question: What is the output of the range `('a'..'d')`?
+
+**Answer:** 'a', 'b', 'c', 'd'
+
+---
