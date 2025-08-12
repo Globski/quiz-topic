@@ -229,3 +229,15 @@
 **Answer:** Day of the month (01 to 31).
 
 ---
+
+# Question: What does `%H` return?
+
+**Answer:** Hour using 24-hour clock (00 to 23).
+
+---
+
+# Question: What does `%I` return?
+
+**Answer:** Hour using 12-hour clock (01 to 12).
+
+---
