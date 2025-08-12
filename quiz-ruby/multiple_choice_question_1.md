@@ -343,3 +343,15 @@
 **Answer:** A float representing the number of seconds between the two times.
 
 ---
+
+# Question: What are some common real-world examples of ranges?
+
+**Answer:** January to December, 0 to 9, and lines 50 through 67.
+
+---
+
+# Question: What are the three main ways Ruby uses ranges?
+
+**Answer:** Ranges as sequences, ranges as conditions, and ranges as intervals.
+
+---
