@@ -73,3 +73,27 @@
 **Answer:** `time.zone`
 
 ---
+
+# Question: How do you create a local time for July 8, 2008?
+
+**Answer:** `Time.local(2008, 7, 8)`
+
+---
+
+# Question: What does `Time.local(2008, 7, 8, 9, 10)` return?
+
+**Answer:** A Time object for July 8, 2008 at 09:10 local time.
+
+---
+
+# Question: How do you create a UTC time object for July 8, 2008 at 09:10?
+
+**Answer:** `Time.utc(2008, 7, 8, 9, 10)`
+
+---
+
+# Question: What is the difference between `Time.gm` and `Time.utc`?
+
+**Answer:** None; both return GMT/UTC time.
+
+---
