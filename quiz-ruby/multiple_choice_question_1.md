@@ -241,3 +241,27 @@
 **Answer:** Hour using 12-hour clock (01 to 12).
 
 ---
+
+# Question: What does `%j` represent?
+
+**Answer:** Day of the year (001 to 366).
+
+---
+
+# Question: What does `%m` return?
+
+**Answer:** Month (01 to 12).
+
+---
+
+# Question: What does `%M` stand for?
+
+**Answer:** Minute (00 to 59).
+
+---
+
+# Question: What is `%p` used for?
+
+**Answer:** Meridian indicator (AM or PM).
+
+---
