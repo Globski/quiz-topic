@@ -55,3 +55,21 @@
 **Answer:** `time.min`
 
 ---
+
+# Question: Which method returns the number of seconds (0–59)?
+
+**Answer:** `time.sec`
+
+---
+
+# Question: What method retrieves microseconds from a Time object?
+
+**Answer:** `time.usec`
+
+---
+
+# Question: Which method returns the time zone abbreviation?
+
+**Answer:** `time.zone`
+
+---
