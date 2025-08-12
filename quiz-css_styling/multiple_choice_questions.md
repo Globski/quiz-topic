@@ -2620,3 +2620,135 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 
 ---
 
+# Question: What HTML tag is used to create a link in a webpage?
+
+**Answer:** The `<a>` tag.
+
+---
+
+# Question: Which CSS pseudo-class is used to style unvisited links?
+
+**Answer:** `:link`
+
+---
+
+# Question: Which CSS pseudo-class is used to style links that are already visited?
+
+**Answer:** `:visited`
+
+---
+
+# Question: Which CSS pseudo-class is used to style a link when the mouse pointer is over it?
+
+**Answer:** `:hover`
+
+---
+
+# Question: Which CSS pseudo-class is used to style a link when it is being clicked?
+
+**Answer:** `:active`
+
+---
+
+# Question: By default, what color are unvisited links in most browsers?
+
+**Answer:** Blue.
+
+---
+
+# Question: By default, what color are visited links in most browsers?
+
+**Answer:** Purple.
+
+---
+
+# Question: By default, how are links visually underlined, and how can this be removed?
+
+**Answer:** They are underlined by default, and this can be removed using `text-decoration: none;`.
+
+---
+
+# Question: Which CSS property changes the cursor style when hovering over a link?
+
+**Answer:** `cursor`
+
+---
+
+# Question: What is a “text link” in CSS terms?
+
+**Answer:** A clickable text element that navigates to another webpage or section.
+
+---
+
+# Question: How can you make a text link scale up slightly on hover?
+
+**Answer:** Apply `transform: scale(1.1);` in the `:hover` pseudo-class.
+
+---
+
+# Question: How do you style only unvisited links in CSS?
+
+**Answer:** Use the `a:link` selector.
+
+---
+
+# Question: How do you style only visited links in CSS?
+
+**Answer:** Use the `a:visited` selector.
+
+---
+
+# Question: How do you style links to look like buttons in CSS?
+
+**Answer:** Apply properties like `display: inline-block;`, set `background-color`, `padding`, `text-align: center;`, `border-radius`, and `text-decoration: none;`.
+
+---
+
+# Question: Which CSS property allows you to round the corners of a link button?
+
+**Answer:** `border-radius`
+
+---
+
+# Question: How can you add a hover effect that changes a link button’s background color?
+
+**Answer:** Use `.button:hover { background-color: newColor; }`
+
+---
+
+# Question: How can you create a scaling and shadow effect when a button link is hovered?
+
+**Answer:** Apply `transform: scale(...)` and `box-shadow` in the `:hover` state.
+
+---
+
+# Question: What is an “image link” in CSS terms?
+
+**Answer:** A clickable image that navigates to another webpage or section.
+
+---
+
+# Question: How do you target only images inside links for styling?
+
+**Answer:** Use the `a img` selector.
+
+---
+
+# Question: How can you make a linked image slightly enlarge and show a shadow on hover?
+
+**Answer:** In `a:hover img`, apply `transform: scale(...)` and `box-shadow`.
+
+---
+
+# Question: Which CSS property is commonly used with `transition` to smooth hover effects for links and images?
+
+**Answer:** `transform`
+
+---
+
+# Question: What’s the purpose of `target="_blank"` in an `<a>` tag?
+
+**Answer:** It opens the linked document in a new browser tab or window.
+
+---
+
