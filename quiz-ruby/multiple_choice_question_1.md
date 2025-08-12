@@ -319,3 +319,9 @@
 **Answer:** Timezone name.
 
 ---
+
+# Question: What does `%%` represent in `strftime`?
+
+**Answer:** A literal percent character.
+
+---
