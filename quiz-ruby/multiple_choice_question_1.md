@@ -145,3 +145,27 @@
 **Answer:** Whether daylight savings time is in effect (`true` or `false`).
 
 ---
+
+# Question: How do you check if a Time object is in UTC?
+
+**Answer:** `time.utc?`
+
+---
+
+# Question: Which method converts a Time object to local time?
+
+**Answer:** `time.localtime`
+
+---
+
+# Question: Which method converts a Time object back to UTC?
+
+**Answer:** `time.gmtime`
+
+---
+
+# Question: How do you get a new Time object in the local timezone?
+
+**Answer:** `time.getlocal`
+
+---
