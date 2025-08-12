@@ -2188,3 +2188,171 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 
 ---
 
+# Question: What is the purpose of the CSS `font` property?
+
+**Answer:** The `font` property in CSS is used to style and adjust the type of text used in a webpage, allowing customization of appearance through settings like font-family, font-size, font-weight, and font-style.
+
+---
+
+# Question: Name five main types of CSS fonts.
+
+**Answer:** Monospace, Serif, Sans-serif, Fantasy, and Cursive.
+
+---
+
+# Question: What is a monospace font?
+
+**Answer:** A font in which every letter has equal width.
+
+---
+
+# Question: What distinguishes serif fonts from sans-serif fonts?
+
+**Answer:** Serif fonts have small strokes at the edges of letters, while sans-serif fonts are clean and lack strokes.
+
+---
+
+# Question: What are fantasy fonts typically used for?
+
+**Answer:** They are decorative, fancy fonts.
+
+---
+
+# Question: Which type of CSS font resembles human handwriting?
+
+**Answer:** Cursive fonts.
+
+---
+
+# Question: Give two example font names for the generic font-family `serif`.
+
+**Answer:** Times New Roman, Georgia (also Garamond is an example).
+
+---
+
+# Question: Give two example font names for the generic font-family `sans-serif`.
+
+**Answer:** Arial, Verdana (also Helvetica is an example).
+
+---
+
+# Question: Name two example fonts in the monospace category.
+
+**Answer:** Courier New, Lucida Console (also Monaco is an example).
+
+---
+
+# Question: Which font-family examples fall under the cursive category?
+
+**Answer:** Brush Script MT, Lucida Handwriting.
+
+---
+
+# Question: Name two examples of fantasy fonts.
+
+**Answer:** Copperplate, Papyrus.
+
+---
+
+# Question: Which CSS property specifies the font name for a text content?
+
+**Answer:** `font-family`.
+
+---
+
+# Question: How do you specify multiple fonts in the `font-family` property?
+
+**Answer:** By listing them separated by commas, with fallback fonts in case the first is unavailable.
+
+---
+
+# Question: Which CSS property sets the size of the text font?
+
+**Answer:** `font-size`.
+
+---
+
+# Question: List at least three keyword values for `font-size`.
+
+**Answer:** small, medium, large (also larger is possible).
+
+---
+
+# Question: Besides keywords, what other types of values can `font-size` accept?
+
+**Answer:** Pixel values (e.g., `18px`) and percentage values (e.g., `120%`).
+
+---
+
+# Question: Which CSS property controls the boldness of the text?
+
+**Answer:** `font-weight`.
+
+---
+
+# Question: What are the three keyword values shown for `font-weight`?
+
+**Answer:** normal, bold, lighter.
+
+---
+
+# Question: What numeric range can `font-weight` take?
+
+**Answer:** 100–900.
+
+---
+
+# Question: Which CSS property sets the style of the written text?
+
+**Answer:** `font-style`.
+
+---
+
+# Question: What are the three possible values for `font-style`?
+
+**Answer:** normal, italic, oblique.
+
+---
+
+# Question: Which CSS property allows you to modify font size, weight, and style in a single line?
+
+**Answer:** The shorthand `font` property.
+
+---
+
+# Question: In the shorthand example, what is the order of values?
+
+**Answer:** font-style, font-weight, font-size, font-family.
+
+---
+
+# Question: Write the shorthand font property example.
+
+**Answer:** `font: italic bold 20px Arial, sans-serif;`
+
+---
+
+# Question: Which CSS property specifies whether text should be displayed in small-caps?
+
+**Answer:** `font-variant`.
+
+---
+
+# Question: Which CSS property specifies the height of lines of text?
+
+**Answer:** `line-height`.
+
+---
+
+# Question: If you set `font-family: Arial, sans-serif;` and Arial is not available, which font will be used?
+
+**Answer:** A generic sans-serif font.
+
+---
+
+# Question: What happens if the `font-size` is set to a percentage?
+
+**Answer:** The font size is calculated relative to the parent element’s font size.
+
+---
+
