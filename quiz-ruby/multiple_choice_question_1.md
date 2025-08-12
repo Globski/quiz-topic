@@ -355,3 +355,15 @@
 **Answer:** Ranges as sequences, ranges as conditions, and ranges as intervals.
 
 ---
+
+# Question: What operators does Ruby use to create ranges?
+
+**Answer:** Ruby uses `..` for inclusive ranges and `...` for exclusive ranges.
+
+---
+
+# Question: What is the output of the range `(1..5)`?
+
+**Answer:** 1, 2, 3, 4, 5
+
+---
