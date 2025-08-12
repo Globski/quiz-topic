@@ -2752,3 +2752,141 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 
 ---
 
+# Question: Which CSS property is used to create rounded corners on an image?
+
+**Answer:** The `border-radius` property.
+
+---
+
+# Question: In "Round Cornered Images",`width` and `height` values set for the image.
+
+**Answer:** `width: 100px;` and `height: 100px;`.
+
+---
+
+# Question: How do you create a perfectly circular image in CSS?
+
+**Answer:** Set `border-radius: 50%` and ensure the image’s width and height are equal.
+
+---
+
+# Question: What happens if `border-radius: 50%` is applied to an image with unequal width and height?
+
+**Answer:** The image becomes elliptical.
+
+---
+
+# Question: In the "Circular And Elliptical Images", what height value used for the elliptical image?
+
+**Answer:** `height: 50px`.
+
+---
+
+# Question: Which CSS property is used to create a border around an image?
+
+**Answer:** The `border` property.
+
+---
+
+# Question: Which CSS property is used to apply visual effects like blur, invert, and sepia to images?
+
+**Answer:** The `filter` property.
+
+---
+
+# Question: What CSS filter value used to create a blur effect?
+
+**Answer:** `filter: blur(3px);`.
+
+---
+
+# Question: What filter value inverts the colors of an image beyond normal inversion?
+
+**Answer:** `filter: invert(110%);`.
+
+---
+
+# Question: Which filter increases color intensity significantly?
+
+**Answer:** `filter: saturate(8);`.
+
+---
+
+# Question: Which filter applies a brownish, old-photo effect?
+
+**Answer:** `filter: sepia(110%);`.
+
+---
+
+# Question: Which CSS property is responsible for the shadow effect?
+
+**Answer:** The `box-shadow` property.
+
+---
+
+# Question: How is the image centered inside its card in the "Image as a Card" example?
+
+**Answer:** By setting the `img` width to `100%` inside the `.image` container.
+
+---
+
+# Question: Which CSS layout method is used to center an image both horizontally and vertically?
+
+**Answer:** Flexbox (`display: flex;`).
+
+---
+
+# Question: What two flexbox properties are used to center content horizontally and vertically?
+
+**Answer:** `justify-content: center;` (horizontal) and `align-items: center;` (vertical).
+
+---
+
+# Question: In the "Center an Image" example, what height is set for the container?
+
+**Answer:** `height: 300px;`.
+
+---
+
+# Question: To place text inside an image, what should the image container’s `position` property be set to?
+
+**Answer:** `position: relative;`.
+
+---
+
+# Question: What `position` property is used for text elements placed inside an image?
+
+**Answer:** `position: absolute;`.
+
+---
+
+# Question: Which CSS inset properties can be used to position text absolutely within an image?
+
+**Answer:** `top`, `bottom`, `left`, and `right`.
+
+---
+
+# Question: What CSS property is use to make the image slightly transparent behind the text?
+
+**Answer:** `opacity: 0.7;`.
+
+---
+
+# Question: What visual effect does the "Image Fade In Overlay" demonstrate?
+
+**Answer:** A fade-in overlay with text when hovering over an image.
+
+---
+
+# Question: Which CSS property controls the gradual appearance of the overlay?
+
+**Answer:** `transition: opacity 0.4s ease;`.
+
+---
+
+# Question: Where is the overlay text positioned in the "Image Fade In Overlay" example?
+
+**Answer:** At `top: 40%` and `left: 20%` of the container.
+
+---
+
