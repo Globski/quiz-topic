@@ -295,3 +295,27 @@
 **Answer:** Date only (preferred format).
 
 ---
+
+# Question: What is `%X` used for?
+
+**Answer:** Time only (preferred format).
+
+---
+
+# Question: What does `%y` return?
+
+**Answer:** Year without century (00–99).
+
+---
+
+# Question: What does `%Y` return?
+
+**Answer:** Full year with century.
+
+---
+
+# Question: What does `%Z` return?
+
+**Answer:** Timezone name.
+
+---
