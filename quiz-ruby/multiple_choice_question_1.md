@@ -127,3 +127,21 @@
 **Answer:** Seconds since epoch including microseconds (as a float).
 
 ---
+
+# Question: What does `time.zone` return?
+
+**Answer:** The timezone name (e.g., "UTC", "PST").
+
+---
+
+# Question: What is returned by `time.utc_offset`?
+
+**Answer:** The offset in seconds from UTC.
+
+---
+
+# Question: What does `time.isdst` indicate?
+
+**Answer:** Whether daylight savings time is in effect (`true` or `false`).
+
+---
