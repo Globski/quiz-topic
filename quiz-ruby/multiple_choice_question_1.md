@@ -19,3 +19,19 @@
 # Question: Which method returns the year from a Time object?
 
 **Answer:** `time.year`
+
+# Question: Which method returns the month (1–12) from a Time object?
+
+**Answer:** `time.month`
+
+---
+
+# Question: What method returns the day of the month (1–31)?
+
+**Answer:** `time.day`
+
+---
+
+# Question: How do you retrieve the day of the week from a Time object?
+
+**Answer:** `time.wday` (Sunday = 0)
