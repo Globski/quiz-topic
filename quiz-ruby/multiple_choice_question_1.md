@@ -175,3 +175,21 @@
 **Answer:** `time.getutc`
 
 ---
+
+# Question: What does `time.to_s` return?
+
+**Answer:** String representation of the time.
+
+---
+
+# Question: What is the output of `time.ctime`?
+
+**Answer:** A human-readable string, e.g., `"Mon Jun 2 12:35:19 2008"`
+
+---
+
+# Question: How do you format time using `strftime`?
+
+**Answer:** Use formatting directives like `time.strftime("%Y-%m-%d %H:%M:%S")`
+
+---
