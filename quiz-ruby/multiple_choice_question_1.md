@@ -109,3 +109,21 @@
 **Answer:** Use `Time.utc(*values)` or `Time.local(*values)`
 
 ---
+
+# Question: What does `Time.now.to_i` return?
+
+**Answer:** Number of seconds since the epoch.
+
+---
+
+# Question: How do you convert seconds back into a Time object?
+
+**Answer:** `Time.at(seconds)`
+
+---
+
+# Question: What is returned by `Time.now.to_f`?
+
+**Answer:** Seconds since epoch including microseconds (as a float).
+
+---
