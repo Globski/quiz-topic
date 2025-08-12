@@ -265,3 +265,33 @@
 **Answer:** Meridian indicator (AM or PM).
 
 ---
+
+# Question: What does `%S` return?
+
+**Answer:** Seconds (00 to 60).
+
+---
+
+# Question: What does `%U` represent?
+
+**Answer:** Week number of the year (first Sunday = first week).
+
+---
+
+# Question: What does `%W` represent?
+
+**Answer:** Week number of the year (first Monday = first week).
+
+---
+
+# Question: What does `%w` return?
+
+**Answer:** Day of the week (0 = Sunday to 6 = Saturday).
+
+---
+
+# Question: What is `%x` used for?
+
+**Answer:** Date only (preferred format).
+
+---
