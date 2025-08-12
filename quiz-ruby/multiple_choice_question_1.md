@@ -97,3 +97,15 @@
 **Answer:** None; both return GMT/UTC time.
 
 ---
+
+# Question: What does `time.to_a` return?
+
+**Answer:** An array in the format: `[sec, min, hour, day, month, year, wday, yday, isdst, zone]`
+
+---
+
+# Question: How can you reconstruct a Time object from an array?
+
+**Answer:** Use `Time.utc(*values)` or `Time.local(*values)`
+
+---
