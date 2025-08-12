@@ -2356,3 +2356,267 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 
 ---
 
+# Question: What does CSS Styling Text involve?
+
+**Answer:** Modifying the appearance of text content by setting properties such as color, alignment, letter-spacing, and indentation to improve visual appeal.
+
+---
+
+# Question: What CSS property changes the default black text color?
+
+**Answer:** `color`.
+
+---
+
+# Question: What are the possible value formats for the `color` property?
+
+**Answer:** Color name, hexadecimal value, `rgb()`, `rgba()`, `hsl()`, and `hsla()`.
+
+---
+
+# Question: Which `color` property value format allows transparency?
+
+**Answer:** `rgba()` and `hsla()`.
+
+---
+
+# Question: What CSS property sets horizontal text alignment?
+
+**Answer:** `text-align`.
+
+---
+
+# Question: List the possible values for `text-align`.
+
+**Answer:** left, right, center, justify.
+
+---
+
+# Question: Which CSS property is used for vertical alignment of text?
+
+**Answer:** `vertical-align`.
+
+---
+
+# Question: Which types of elements can use `vertical-align`?
+
+**Answer:** Inline elements, inline-block elements, and table cells.
+
+---
+
+# Question: What CSS property aligns only the last line of a block of text?
+
+**Answer:** `text-align-last`.
+
+---
+
+# Question: When is `text-align-last` most useful?
+
+**Answer:** When using `text-align: justify;` to adjust the last line differently.
+
+---
+
+# Question: What does the `text-justify` property do?
+
+**Answer:** Specifies the justification method of text when `text-align: justify;` is applied.
+
+---
+
+# Question: Which browser shows visible effects of `text-justify`?
+
+**Answer:** Firefox.
+
+---
+
+# Question: What CSS property controls the direction of text?
+
+**Answer:** `direction`.
+
+---
+
+# Question: What are the two possible values for `direction`?
+
+**Answer:** `ltr` (left-to-right) and `rtl` (right-to-left).
+
+---
+
+# Question: What is the default value of `direction` in CSS?
+
+**Answer:** `ltr`.
+
+---
+
+# Question: What does the `unicode-bidi` property do?
+
+**Answer:** Controls the bidirectional text algorithm for displaying characters with different writing directions in the same paragraph.
+
+---
+
+# Question: Which shorthand property controls line type, color, style, and thickness for text decorations?
+
+**Answer:** `text-decoration`.
+
+---
+
+# Question: List the four sub-properties of `text-decoration`.
+
+**Answer:** `text-decoration-line`, `text-decoration-style`, `text-decoration-color`, `text-decoration-thickness`.
+
+---
+
+# Question: Give three possible values for `text-decoration-line`.
+
+**Answer:** underline, overline, line-through.
+
+---
+
+# Question: Which CSS property changes text to uppercase, lowercase, or capitalized?
+
+**Answer:** `text-transform`.
+
+---
+
+# Question: What value of `text-transform` capitalizes only the first letter of each word?
+
+**Answer:** `capitalize`.
+
+---
+
+# Question: Which property applies emphasis marks to text?
+
+**Answer:** `text-emphasis`.
+
+---
+
+# Question: What are the two sub-properties of `text-emphasis`?
+
+**Answer:** `text-emphasis-style` and `text-emphasis-color`.
+
+---
+
+# Question: Which CSS property indents the first line of text?
+
+**Answer:** `text-indent`.
+
+---
+
+# Question: What CSS property adjusts space between individual letters?
+
+**Answer:** `letter-spacing`.
+
+---
+
+# Question: What CSS property adjusts space between words?
+
+**Answer:** `word-spacing`.
+
+---
+
+# Question: Which CSS property controls how white space inside text is handled?
+
+**Answer:** `white-space`.
+
+---
+
+# Question: What does `white-space: nowrap;` do?
+
+**Answer:** Prevents text from wrapping to the next line, even if it overflows the container.
+
+---
+
+# Question: What does `white-space: pre;` do?
+
+**Answer:** Preserves spaces and line breaks exactly as in the HTML code.
+
+---
+
+# Question: What does `white-space: pre-wrap;` do?
+
+**Answer:** Preserves spaces and line breaks but still wraps when necessary.
+
+---
+
+# Question: What does `white-space: pre-line;` do?
+
+**Answer:** Collapses spaces, respects line breaks, and wraps when necessary.
+
+---
+
+# Question: Which property controls line-breaking rules for languages like Chinese, Japanese, or Korean?
+
+**Answer:** `line-break`.
+
+---
+
+# Question: Name five possible values for `line-break`.
+
+**Answer:** auto, loose, normal, strict, anywhere.
+
+---
+
+# Question: Which property controls word-breaking behavior?
+
+**Answer:** `word-break`.
+
+---
+
+# Question: What does `word-break: break-all;` do?
+
+**Answer:** Allows words to break at any character to prevent overflow.
+
+---
+
+# Question: What does `word-break: keep-all;` do?
+
+**Answer:** Prevents breaks in CJK text unless necessary and only breaks at normal word boundaries.
+
+---
+
+# Question: What does `word-break: break-word;` do?
+
+**Answer:** Breaks words at normal boundaries or wherever necessary to prevent overflow.
+
+---
+
+# Question: Which CSS property sets space between lines of text?
+
+**Answer:** `line-height`.
+
+---
+
+# Question: What CSS property adds shadows to text?
+
+**Answer:** `text-shadow`.
+
+---
+
+# Question: In `text-shadow`, what do the first two length values represent?
+
+**Answer:** Horizontal and vertical offsets.
+
+---
+
+# Question: What does the third length value in `text-shadow` represent?
+
+**Answer:** Blur radius.
+
+---
+
+# Question: Can multiple shadows be applied with `text-shadow`?
+
+**Answer:** Yes, by separating each shadow with a comma.
+
+---
+
+# Question: Which CSS property sets the orientation of text in vertical writing modes?
+
+**Answer:** `text-orientation`.
+
+---
+
+# Question: Which CSS property must be used alongside `text-orientation` to enable vertical text layout?
+
+**Answer:** `writing-mode`.
+
+---
+
