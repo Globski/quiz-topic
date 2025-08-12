@@ -193,3 +193,15 @@
 **Answer:** Use formatting directives like `time.strftime("%Y-%m-%d %H:%M:%S")`
 
 ---
+
+# Question: What does `%a` represent in `strftime`?
+
+**Answer:** Abbreviated weekday name (e.g., "Sun").
+
+---
+
+# Question: What does `%A` represent?
+
+**Answer:** Full weekday name (e.g., "Sunday").
+
+---
