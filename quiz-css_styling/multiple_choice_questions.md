@@ -2961,3 +2961,10 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** Empty cells are hidden and do not take up space; borders and spacing are not displayed.
 
 ---
+
+# Question: Which CSS property controls how a browser calculates the widths of table columns and cells?
+
+**Answer:** `table-layout`.
+
+---
+
