@@ -2973,3 +2973,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `auto` sizes columns based on content; `fixed` sizes columns based on specified widths or the first row, ignoring content.
 
 ---
+
+# Question: Which CSS property sets the horizontal alignment of table cell content? List common values.
+
+**Answer:** `text-align`; values include `left`, `right`, `center`, and `justify`.
+
+---
