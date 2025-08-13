@@ -2907,3 +2907,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** It merges the cell borders so that adjacent borders are combined into a single border.
 
 ---
+
+# Question: How does the `border-collapse` property behave when set to `separate`?
+
+**Answer:** It keeps each cell's borders distinct, with spacing between them if specified.
+
+---
