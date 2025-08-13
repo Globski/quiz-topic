@@ -3009,3 +3009,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** Apply `background-color` directly to the `<td>` element using inline or stylesheet rules.
 
 ---
+
+# Question: Which CSS properties can be used to change the font style of text in a table?
+
+**Answer:** `font-size`, `font-family`, `font-weight`, and other font-related properties.
+
+---
