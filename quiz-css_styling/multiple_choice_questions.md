@@ -3027,3 +3027,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `border-bottom`.
 
 ---
+
+# Question: Which CSS property creates a vertical divider between table columns?
+
+**Answer:** `border-right`.
+
+---
