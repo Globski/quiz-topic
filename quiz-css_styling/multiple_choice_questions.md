@@ -2919,3 +2919,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `border-spacing`.
 
 ---
+
+# Question: How does `border-spacing` behave when given one value versus two values?
+
+**Answer:** One value applies equal spacing horizontally and vertically; two values set horizontal spacing first, then vertical spacing.
+
+---
