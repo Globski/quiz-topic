@@ -2931,3 +2931,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** No, it only works when `border-collapse` is set to `separate`.
 
 ---
+
+# Question: Which CSS property controls the placement of a table’s caption?
+
+**Answer:** `caption-side`.
+
+---
