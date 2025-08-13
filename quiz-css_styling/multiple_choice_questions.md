@@ -2925,3 +2925,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** One value applies equal spacing horizontally and vertically; two values set horizontal spacing first, then vertical spacing.
 
 ---
+
+# Question: Will `border-spacing` have any effect if `border-collapse` is set to `collapse`?
+
+**Answer:** No, it only works when `border-collapse` is set to `separate`.
+
+---
