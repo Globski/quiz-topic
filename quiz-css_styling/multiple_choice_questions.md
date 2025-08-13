@@ -2913,3 +2913,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** It keeps each cell's borders distinct, with spacing between them if specified.
 
 ---
+
+# Question: Which CSS property controls the distance between adjacent cell borders when `border-collapse` is set to `separate`?
+
+**Answer:** `border-spacing`.
+
+---
