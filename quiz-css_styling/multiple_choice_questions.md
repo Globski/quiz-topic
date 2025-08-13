@@ -2968,3 +2968,8 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 
 ---
 
+# Question: What is the difference between `table-layout: auto` and `table-layout: fixed`?
+
+**Answer:** `auto` sizes columns based on content; `fixed` sizes columns based on specified widths or the first row, ignoring content.
+
+---
