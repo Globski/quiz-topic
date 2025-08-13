@@ -3033,3 +3033,27 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `border-right`.
 
 ---
+
+# Question: How do you create a striped table effect in CSS?
+
+**Answer:** Use the `:nth-child(odd)` and `:nth-child(even)` selectors to assign alternating background colors to table rows.
+
+---
+
+# Question: Which CSS technique makes a table responsive on smaller screens?
+
+**Answer:** Use `overflow-x: auto` on a block-level table container to enable horizontal scrolling.
+
+---
+
+# Question: Why is the `overflow-x: auto` approach useful for responsive tables?
+
+**Answer:** It ensures all columns remain visible on smaller screens by adding a horizontal scroll bar instead of cutting off content.
+
+---
+
+# Question: Which CSS pseudo-class is used to style alternating rows in a striped table?
+
+**Answer:** `:nth-child()`.
+
+---
