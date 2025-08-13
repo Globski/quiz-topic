@@ -2937,3 +2937,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `caption-side`.
 
 ---
+
+# Question: What are the two common values for `caption-side`, and what do they do?
+
+**Answer:** `top` places the caption above the table, and `bottom` places it below.
+
+---
