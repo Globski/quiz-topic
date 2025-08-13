@@ -2895,3 +2895,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** The `border` property; example: `border: 1px solid black;`.
 
 ---
+
+# Question: Which CSS property is used to round the corners of a table border?
+
+**Answer:** The `border-radius` property; example: `border-radius: 5px;` or `border-radius: 50%;`.
+
+---
