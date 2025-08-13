@@ -2949,3 +2949,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `empty-cells`.
 
 ---
+
+# Question: What is the default value of `empty-cells`, and what is its effect?
+
+**Answer:** `show`; it displays empty cells with borders and spacing as if they contained content.
+
+---
