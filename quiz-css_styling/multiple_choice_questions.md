@@ -2901,3 +2901,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** The `border-radius` property; example: `border-radius: 5px;` or `border-radius: 50%;`.
 
 ---
+
+# Question: How does the `border-collapse` property affect table borders when set to `collapse`?
+
+**Answer:** It merges the cell borders so that adjacent borders are combined into a single border.
+
+---
