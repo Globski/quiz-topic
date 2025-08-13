@@ -2985,3 +2985,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `vertical-align`; values include `top`, `middle`, and `bottom`.
 
 ---
+
+# Question: What is the default horizontal alignment for `<th>` and `<td>` elements?
+
+**Answer:** `<th>` defaults to center; `<td>` defaults to left.
+
+---
