@@ -3003,3 +3003,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `background-color`.
 
 ---
+
+# Question: How can you set a different background color for an individual table cell using CSS?
+
+**Answer:** Apply `background-color` directly to the `<td>` element using inline or stylesheet rules.
+
+---
