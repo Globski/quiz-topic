@@ -2943,3 +2943,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `top` places the caption above the table, and `bottom` places it below.
 
 ---
+
+# Question: Which CSS property determines whether empty table cells are shown or hidden?
+
+**Answer:** `empty-cells`.
+
+---
