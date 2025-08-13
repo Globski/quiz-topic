@@ -2884,9 +2884,8 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 
 ---
 
-# Question: Where is the overlay text positioned in the "Image Fade In Overlay" example?
+# Question: Which CSS properties can be used to control the borders, spacing, and alignment of an HTML table and its cells?
 
-**Answer:** At `top: 40%` and `left: 20%` of the container.
+**Answer:** `border-collapse`, `border-spacing`, and `caption-side`.
 
 ---
-
