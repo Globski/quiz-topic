@@ -2889,3 +2889,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `border-collapse`, `border-spacing`, and `caption-side`.
 
 ---
+
+# Question: Which CSS property sets the width, style, and color of all four sides of a table border?
+
+**Answer:** The `border` property; example: `border: 1px solid black;`.
+
+---
