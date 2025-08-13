@@ -2979,3 +2979,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `text-align`; values include `left`, `right`, `center`, and `justify`.
 
 ---
+
+# Question: Which CSS property sets the vertical alignment of table cell content? List common values.
+
+**Answer:** `vertical-align`; values include `top`, `middle`, and `bottom`.
+
+---
