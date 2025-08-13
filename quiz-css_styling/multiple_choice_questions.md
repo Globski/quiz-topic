@@ -3015,3 +3015,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `font-size`, `font-family`, `font-weight`, and other font-related properties.
 
 ---
+
+# Question: Which table layout mode is faster, and why?
+
+**Answer:** `fixed`, because it does not depend on table content but uses predefined widths.
+
+---
