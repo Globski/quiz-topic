@@ -3021,3 +3021,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `fixed`, because it does not depend on table content but uses predefined widths.
 
 ---
+
+# Question: Which CSS property creates a horizontal divider between table rows?
+
+**Answer:** `border-bottom`.
+
+---
