@@ -2997,3 +2997,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** Both default to middle.
 
 ---
+
+# Question: Which CSS property is used to set the background color of a table, row, or cell?
+
+**Answer:** `background-color`.
+
+---
