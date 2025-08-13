@@ -2955,3 +2955,9 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `show`; it displays empty cells with borders and spacing as if they contained content.
 
 ---
+
+# Question: What happens when `empty-cells` is set to `hide`?
+
+**Answer:** Empty cells are hidden and do not take up space; borders and spacing are not displayed.
+
+---
