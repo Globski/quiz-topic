@@ -3178,5 +3178,200 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 
 ---
 
+# Question: What is the CSS `border-block` property a shorthand for?
 
+**Answer:** It is a shorthand for `border-block-color`, `border-block-style`, and `border-block-width`.
+
+---
+
+# Question: Which component of `border-block` is required?
+
+**Answer:** `border-block-style` is required.
+
+---
+
+# Question: What happens if `border-block-width` or `border-block-color` are not specified?
+
+**Answer:** Default values are used.
+
+---
+
+# Question: What determines the direction of the `border-block` property?
+
+**Answer:** The writing mode of the element.
+
+---
+
+# Question: Write the syntax for the `border-block` property.
+
+**Answer:**
+
+```
+border-block: border-block-width border-block-style border-block-color | initial | inherit;
+```
+
+---
+
+# Question: What is the default value for `border-block-width`?
+
+**Answer:** `medium`.
+
+---
+
+# Question: What is the default value for `border-block-style`?
+
+**Answer:** `none`.
+
+---
+
+# Question: What is the default value for `border-block-color`?
+
+**Answer:** The text’s color.
+
+---
+
+# Question: What does the `initial` value do for `border-block`?
+
+**Answer:** Sets the property to its default value.
+
+---
+
+# Question: What does the `inherit` value do for `border-block`?
+
+**Answer:** Inherits the property from the parent element.
+
+---
+
+# Question: How do you set the border block width to `thick`?
+
+**Answer:**
+
+```css
+border-block-style: solid;
+border-block-width: thick;
+```
+
+---
+
+# Question: How do you set the border block width to `10px`?
+
+**Answer:**
+
+```css
+border-block-style: solid;
+border-block-width: 10px;
+```
+
+---
+
+# Question: How do you set the border block style to `solid`?
+
+**Answer:**
+
+```css
+border-block-style: solid;
+```
+
+---
+
+# Question: How do you set the border block style to `dashed`?
+
+**Answer:**
+
+```css
+border-block-style: dashed;
+```
+
+---
+
+# Question: How do you set the border block color to `red`?
+
+**Answer:**
+
+```css
+border-block-style: solid;
+border-block-color: red;
+```
+
+---
+
+# Question: How do you set the border block color to `blue`?
+
+**Answer:**
+
+```css
+border-block-style: solid;
+border-block-color: blue;
+```
+
+---
+
+# Question: How do you set width, style, and color of `border-block` in one line?
+
+**Answer:**
+
+```css
+border-block: 5px dashed green;
+```
+
+---
+
+# Question: How does `writing-mode` affect `border-block`?
+
+**Answer:** It changes the direction of the border from horizontal to vertical based on block flow direction.
+
+---
+
+# Question: Which `writing-mode` makes the border appear horizontally?
+
+**Answer:** `horizontal-tb`.
+
+---
+
+# Question: Which `writing-mode` makes the border appear vertically?
+
+**Answer:** `vertical-rl` (or other vertical modes).
+
+---
+
+# Question: Provide an example of a vertical dashed green `border-block`.
+
+**Answer:**
+
+```css
+writing-mode: vertical-rl;
+border-block: 5px dashed green;
+```
+
+---
+
+# Question: Which is the minimum Chrome version supporting `border-block`?
+
+**Answer:** Chrome 87.0.
+
+---
+
+# Question: Which is the minimum Edge version supporting `border-block`?
+
+**Answer:** Edge 87.0.
+
+---
+
+# Question: Which is the minimum Firefox version supporting `border-block`?
+
+**Answer:** Firefox 66.0.
+
+---
+
+# Question: Which is the minimum Safari version supporting `border-block`?
+
+**Answer:** Safari 14.1.
+
+---
+
+# Question: Which is the minimum Opera version supporting `border-block`?
+
+**Answer:** Opera 73.0.
+
+---
 
