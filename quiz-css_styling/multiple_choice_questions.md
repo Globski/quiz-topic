@@ -3057,3 +3057,126 @@ background: lightblue url('images/logo.png') left top/40% 30% no-repeat border-b
 **Answer:** `:nth-child()`.
 
 ---
+
+# Question: What does the CSS `border` property do for an HTML element?
+
+**Answer:** It creates a border around an HTML element, which can be customized by changing the style, width, radius, and color for each side.
+
+---
+
+# Question: Why are borders important in web design?
+
+**Answer:** They improve readability by separating content and can highlight important sections of a web page.
+
+---
+
+# Question: What is the syntax of the CSS `border` shorthand property?
+
+**Answer:** `border: border-width border-style border-color | initial | inherit;`
+
+---
+
+# Question: In the shorthand `border` property, which three values are typically specified?
+
+**Answer:** Border width, border style, and border color.
+
+---
+
+# Question: What are the common values for the CSS `border-style` property?
+
+**Answer:** `none`, `hidden`, `dotted`, `dashed`, `solid`, `double`, `groove`, `ridge`, `inset`, `outset`.
+
+---
+
+# Question: Which CSS properties set the border style for each individual side?
+
+**Answer:** `border-top-style`, `border-bottom-style`, `border-left-style`, `border-right-style`.
+
+---
+
+# Question: What does the `border-width` property control?
+
+**Answer:** The thickness of a border around an element.
+
+---
+
+# Question: What are the possible keyword values for `border-width`?
+
+**Answer:** `thin`, `medium`, `thick`, or a length value (e.g., `10px`).
+
+---
+
+# Question: Which CSS properties set the border width for each side individually?
+
+**Answer:** `border-top-width`, `border-bottom-width`, `border-left-width`, `border-right-width`.
+
+---
+
+# Question: What does the `border-color` property control?
+
+**Answer:** The color of the border, with the default being `currentColor` (the element’s text color).
+
+---
+
+# Question: Which CSS properties set the border color for each side individually?
+
+**Answer:** `border-top-color`, `border-bottom-color`, `border-left-color`, `border-right-color`.
+
+---
+
+# Question: What is the shorthand property for applying all border properties to only one side?
+
+**Answer:** `border-top`, `border-bottom`, `border-left`, `border-right`.
+
+---
+
+# Question: How can you override a value from the border shorthand property?
+
+**Answer:** By using a specific individual border property after the shorthand declaration.
+
+---
+
+# Question: Can borders be applied to inline elements?
+
+**Answer:** Yes, and the thickness does not affect line height, but left/right borders may shift surrounding text.
+
+---
+
+# Question: What is the purpose of the CSS `border-image` property?
+
+**Answer:** It sets an image as the border of an element.
+
+---
+
+# Question: Which property must be set before `border-image` will display an image?
+
+**Answer:** `border-style` must be declared.
+
+---
+
+# Question: What does the `border-radius` property control?
+
+**Answer:** The roundness of border corners.
+
+---
+
+# Question: What does a `border-radius` value of `50%` create?
+
+**Answer:** A complete circle.
+
+---
+
+# Question: Name four CSS properties related to border images.
+
+**Answer:** `border-image-source`, `border-image-slice`, `border-image-width`, `border-image-repeat`.
+
+---
+
+# Question: Name all four aspects that can be set using the CSS `border` shorthand property.
+
+**Answer:** Width, style, color, and optionally border-radius (as a separate property).
+
+---
+
+
+
