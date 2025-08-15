@@ -3375,3 +3375,126 @@ border-block: 5px dashed green;
 
 ---
 
+# Question: What does the CSS `border-inline` property do?
+
+**Answer:** It is a shorthand property that sets `border-inline-width`, `border-inline-style`, and `border-inline-color` in a single declaration.
+
+---
+
+# Question: Which border attribute is required when using `border-inline`?
+
+**Answer:** The `border-inline-style` is required.
+
+---
+
+# Question: What default value is used for `border-inline-color` if it is not specified?
+
+**Answer:** The color of the element’s text.
+
+---
+
+# Question: What default value is used for `border-inline-width` if it is not specified?
+
+**Answer:** `medium`.
+
+---
+
+# Question: What default value is used for `border-inline-style` if it is not specified?
+
+**Answer:** `none`.
+
+---
+
+# Question: How is the `border-inline` property affected by writing mode, text orientation, and direction?
+
+**Answer:** These settings determine which physical sides the inline borders are applied to; in vertical writing mode it applies to top and bottom, while in horizontal mode it applies to left and right.
+
+---
+
+# Question: Write the syntax for the `border-inline` shorthand property.
+
+**Answer:**
+
+```
+border-inline: border-inline-width border-inline-style border-inline-color | initial | inherit;
+```
+
+---
+
+# Question: What does the value `initial` do in the `border-inline` property?
+
+**Answer:** Sets the property to its default value.
+
+---
+
+# Question: What does the value `inherit` do in the `border-inline` property?
+
+**Answer:** Inherits the property value from the parent element.
+
+---
+
+# Question: In the example `.border1 { border-inline: 4px solid red; }`, what is the width, style, and color?
+
+**Answer:** Width: 4px, Style: solid, Color: red.
+
+---
+
+# Question: In the example `.border2 { border-inline: 6px dashed blue; }`, what is the width, style, and color?
+
+**Answer:** Width: 6px, Style: dashed, Color: blue.
+
+---
+
+# Question: In the example `.border3 { border-inline: 8px dotted yellow; }`, what is the width, style, and color?
+
+**Answer:** Width: 8px, Style: dotted, Color: yellow.
+
+---
+
+# Question: In the example `.border4 { border-inline: 8px double brown; }`, what is the width, style, and color?
+
+**Answer:** Width: 8px, Style: double, Color: brown.
+
+---
+
+# Question: Which three individual CSS properties does `border-inline` combine?
+
+**Answer:** `border-inline-width`, `border-inline-style`, and `border-inline-color`.
+
+---
+
+# Question: If you use the longhand form of `border-inline`, which properties must you specify to match `.border1 { border-inline: 4px solid red; }`?
+
+**Answer:**
+
+```
+border-inline-width: 4px;
+border-inline-style: solid;
+border-inline-color: red;
+```
+
+---
+
+# Question: How does writing mode affect which physical sides are styled by `border-inline`?
+
+**Answer:** In vertical writing mode, `border-inline` applies to top and bottom borders; in horizontal writing mode, it applies to left and right borders.
+
+---
+
+# Question: In the example `.border1 { border-inline: 4px solid red; writing-mode: horizontal-rl; }`, which sides get the border?
+
+**Answer:** Left and right sides.
+
+---
+
+# Question: In the example `.border2 { border-inline: 6px dashed blue; writing-mode: vertical-rl; }`, which sides get the border?
+
+**Answer:** Top and bottom sides.
+
+---
+
+# Question: Which browsers and versions first supported `border-inline`?
+
+**Answer:** Chrome 87.0, Edge 87.0, Firefox 66.0, Safari 14.1, Opera 73.0.
+
+---
