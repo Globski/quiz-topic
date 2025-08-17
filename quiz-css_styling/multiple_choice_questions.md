@@ -3498,3 +3498,138 @@ border-inline-color: red;
 **Answer:** Chrome 87.0, Edge 87.0, Firefox 66.0, Safari 14.1, Opera 73.0.
 
 ---
+
+# Question: What is the main purpose of CSS margins?
+
+**Answer:** To create space around the outer part of an element, making the layout visually appealing by adding extra space between elements.
+
+---
+
+# Question: Which CSS properties are used to set margins for individual sides of an element?
+
+**Answer:** `margin-top`, `margin-right`, `margin-bottom`, `margin-left`.
+
+---
+
+# Question: What does a negative CSS margin do?
+
+**Answer:** It causes elements to overlap by reducing the space between them.
+
+---
+
+# Question: Write the shorthand CSS syntax for setting margins.
+
+**Answer:**
+
+```
+margin: value;
+```
+
+---
+
+# Question: What happens if you provide a single value to the `margin` shorthand property?
+
+**Answer:** The same margin is applied to all four sides of the element.
+
+---
+
+# Question: In the example `margin: 10px 20px;`, what do the two values represent?
+
+**Answer:** The first value sets top and bottom margins (10px), the second sets left and right margins (20px).
+
+---
+
+# Question: In the example `margin: 10px 15px 20px;`, what do the three values represent?
+
+**Answer:** Top margin: 10px, left and right margins: 15px, bottom margin: 20px.
+
+---
+
+# Question: In the example `margin: 5px 10px 15px 20px;`, what do the four values represent?
+
+**Answer:** Top: 5px, right: 10px, bottom: 15px, left: 20px.
+
+---
+
+# Question: What are the default units for CSS margin values if none are specified?
+
+**Answer:** Pixels (px) are the most commonly used, but no single unit is enforced — the value must include a unit unless it is `0`.
+
+---
+
+# Question: Can multiple units be mixed in a single margin shorthand declaration?
+
+**Answer:** Yes, CSS allows mixing units such as px, em, ex, in, etc.
+
+---
+
+# Question: In the example `margin: 20px 4ex .5in 3em;`, which unit types are used?
+
+**Answer:** Pixels (px), ex, inches (in), and em.
+
+---
+
+# Question: When using a percentage for margin, what is it relative to?
+
+**Answer:** The width of the parent element’s content area.
+
+---
+
+# Question: If a `div` has `width: 300px` and `margin: 10%;`, what will each margin be in pixels?
+
+**Answer:** 30px (10% of 300px).
+
+---
+
+# Question: How can you center an element horizontally using margins in CSS?
+
+**Answer:** By setting `margin-left` and `margin-right` to `auto`, or using `margin: auto;`.
+
+---
+
+# Question: What does the `margin-top` property do?
+
+**Answer:** Sets the top margin of an element.
+
+---
+
+# Question: What does the `margin-right` property do?
+
+**Answer:** Sets the right margin of an element.
+
+---
+
+# Question: What does the `margin-bottom` property do?
+
+**Answer:** Sets the bottom margin of an element.
+
+---
+
+# Question: What does the `margin-left` property do?
+
+**Answer:** Sets the left margin of an element.
+
+---
+
+# Question: What is the shorthand property for setting all four margins at once?
+
+**Answer:** `margin`.
+
+---
+
+# Question: What happens if you specify fewer than four values in the `margin` shorthand?
+
+**Answer:** CSS reuses the provided values for missing sides according to shorthand rules:
+
+* 1 value → all sides
+* 2 values → top/bottom, left/right
+* 3 values → top, left/right, bottom
+
+---
+
+# Question: Is it valid to use `margin` without specifying a unit?
+
+**Answer:** Only if the value is `0`; all other values require a unit.
+
+---
+
