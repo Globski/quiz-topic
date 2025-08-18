@@ -4000,3 +4000,248 @@ div {
 
 ---
 
+# Question: What is the purpose of the CSS `cursor` property?
+
+**Answer:** The CSS `cursor` property determines the appearance of the mouse cursor when hovering over an element, primarily to improve usability by visually representing certain functions.
+
+---
+
+# Question: What is the syntax for the CSS `cursor` property?
+
+**Answer:**
+
+```css
+cursor: value;
+```
+
+---
+
+# Question: What does the `auto` value of the `cursor` property do?
+
+**Answer:** The cursor is determined by the user agent based on the current context, which is also the default behavior.
+
+---
+
+# Question: What does the `alias` cursor indicate?
+
+**Answer:** It shows there is a need to generate an alias or shortcut.
+
+---
+
+# Question: Which `cursor` value indicates that scrolling is possible?
+
+**Answer:** `all-scroll`.
+
+---
+
+# Question: Which cursor indicates the option to select a table cell or a group of cells?
+
+**Answer:** `cell`.
+
+---
+
+# Question: What does the `col-resize` cursor indicate?
+
+**Answer:** That a column or element can be resized horizontally, often shown as left/right arrows separated by a vertical bar.
+
+---
+
+# Question: Which cursor indicates that a copy of something will be created?
+
+**Answer:** `copy`.
+
+---
+
+# Question: What does the `crosshair` cursor indicate?
+
+**Answer:** It is commonly used to indicate the selection of elements in a bitmap, appearing as a crosshair.
+
+---
+
+# Question: What is the default cursor typically displayed as?
+
+**Answer:** An arrow, though the exact appearance depends on the platform.
+
+---
+
+# Question: What does `e-resize` indicate?
+
+**Answer:** That the east (right) edge can be moved or resized.
+
+---
+
+# Question: Which cursor shows bidirectional horizontal resizing?
+
+**Answer:** `ew-resize`.
+
+---
+
+# Question: What is the difference between `grab` and `grabbing` cursors?
+
+**Answer:** `grab` indicates an element can be picked up and dragged; `grabbing` indicates it is currently being held or moved.
+
+---
+
+# Question: Which cursor indicates help or assistance is available?
+
+**Answer:** `help`.
+
+---
+
+# Question: Which cursor shows that an element can be moved?
+
+**Answer:** `move`.
+
+---
+
+# Question: What does `n-resize` indicate?
+
+**Answer:** The north (top) edge can be moved or resized.
+
+---
+
+# Question: Which cursor shows bidirectional resizing between north and east?
+
+**Answer:** `ne-resize`.
+
+---
+
+# Question: Which cursor shows bidirectional resizing between north and west?
+
+**Answer:** `nw-resize`.
+
+---
+
+# Question: Which cursor shows bidirectional resizing between north and south?
+
+**Answer:** `ns-resize`.
+
+---
+
+# Question: Which cursor shows bidirectional resizing between north-east and south-west?
+
+**Answer:** `nesw-resize`.
+
+---
+
+# Question: Which cursor shows bidirectional resizing between north-west and south-east?
+
+**Answer:** `nwse-resize`.
+
+---
+
+# Question: Which cursor indicates that an item cannot be dropped at its current location?
+
+**Answer:** `no-drop`.
+
+---
+
+# Question: Which cursor indicates that a requested action is not allowed?
+
+**Answer:** `not-allowed`.
+
+---
+
+# Question: Which cursor is typically used for hyperlinks?
+
+**Answer:** `pointer`.
+
+---
+
+# Question: What does the `progress` cursor indicate?
+
+**Answer:** The program is performing background tasks, but the user can still interact with the interface.
+
+---
+
+# Question: Which cursor indicates vertical resizing of an element or row?
+
+**Answer:** `row-resize`.
+
+---
+
+# Question: What does `s-resize` indicate?
+
+**Answer:** The south (bottom) edge can be moved or resized.
+
+---
+
+# Question: Which cursor shows bidirectional resizing between south and east?
+
+**Answer:** `se-resize`.
+
+---
+
+# Question: Which cursor shows bidirectional resizing between south and west?
+
+**Answer:** `sw-resize`.
+
+---
+
+# Question: Which cursor is normally I-shaped and used for selecting text?
+
+**Answer:** `text`.
+
+---
+
+# Question: How do you specify an image as a cursor in CSS?
+
+**Answer:**
+
+```css
+cursor: url('image-path'), fallback-cursor;
+```
+
+---
+
+# Question: Why must a generic cursor be provided when using a URL cursor?
+
+**Answer:** In case the image cannot be used, the generic cursor acts as a fallback.
+
+---
+
+# Question: What does the `wait` cursor indicate?
+
+**Answer:** The program is busy and the user cannot interact, often shown as an hourglass or watch.
+
+---
+
+# Question: What does `w-resize` indicate?
+
+**Answer:** The west (left) edge can be moved or resized.
+
+---
+
+# Question: Which cursor shows an object can be enlarged?
+
+**Answer:** `zoom-in`.
+
+---
+
+# Question: Which cursor shows an object can be reduced?
+
+**Answer:** `zoom-out`.
+
+---
+
+# Question: What HTML and CSS combination would set a block element to display the `help` cursor on hover?
+
+**Answer:**
+
+```html
+<div class="demo-cursor help">Help</div>
+```
+
+```css
+.help {
+  cursor: help;
+}
+```
+
+---
+
+# Question: Which browsers and versions first supported the `cursor` property?
+
+**Answer:** Chrome 5.0, Edge 5.5, Firefox 4.0, Safari 5.0, Opera 9.6.
+
+---
