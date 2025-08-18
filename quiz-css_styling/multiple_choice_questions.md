@@ -3825,3 +3825,178 @@ ul {
 
 ---
 
+# Question: What does CSS padding control?
+
+**Answer:** It controls the space between the content of an element and its border.
+
+---
+
+# Question: What is the default padding value for all elements?
+
+**Answer:** Zero.
+
+---
+
+# Question: Can padding values in CSS be negative?
+
+**Answer:** No, negative values are not allowed for padding.
+
+---
+
+# Question: What is the difference between padding and margin?
+
+**Answer:** Padding is inside the element’s border, while margin is outside the element’s border.
+
+---
+
+# Question: Which CSS property is the shorthand for `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`?
+
+**Answer:** `padding`.
+
+---
+
+# Question: What happens if a single value is given to the `padding` property?
+
+**Answer:** The same padding is applied to all four sides of the element.
+
+---
+
+# Question: In `padding: 10px 20px;`, what does the first value control?
+
+**Answer:** The top and bottom padding.
+
+---
+
+# Question: In `padding: 10px 20px;`, what does the second value control?
+
+**Answer:** The left and right padding.
+
+---
+
+# Question: In `padding: 10px 15px 20px;`, what does the first value control?
+
+**Answer:** Top padding.
+
+---
+
+# Question: In `padding: 10px 15px 20px;`, what does the second value control?
+
+**Answer:** Left and right padding.
+
+---
+
+# Question: In `padding: 10px 15px 20px;`, what does the third value control?
+
+**Answer:** Bottom padding.
+
+---
+
+# Question: In `padding: 5px 10px 15px 20px;`, what does the second value represent?
+
+**Answer:** Right padding.
+
+---
+
+# Question: In `padding: 5px 10px 15px 20px;`, what does the fourth value represent?
+
+**Answer:** Left padding.
+
+---
+
+# Question: Name the four individual padding properties in CSS.
+
+**Answer:** `padding-top`, `padding-right`, `padding-bottom`, `padding-left`.
+
+---
+
+# Question: Write a CSS rule to set top padding to 20px and bottom padding to 30px for `<p>` elements.
+
+**Answer:**
+
+```css
+p {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+```
+
+---
+
+# Question: Can padding values use different units in the same declaration?
+
+**Answer:** Yes, different units such as px, em, in, and ex can be mixed.
+
+---
+
+# Question: In `padding: 20px 4ex .5in 3em;`, what unit is `.5in` measured in?
+
+**Answer:** Inches.
+
+---
+
+# Question: When padding is set using percentage values, what is the percentage based on?
+
+**Answer:** The width of the parent element’s content area.
+
+---
+
+# Question: If a parent element has a width of 300px and `padding: 10%` is applied, what is the padding in pixels?
+
+**Answer:** 30px.
+
+---
+
+# Question: What is the effect of `padding-top: 20px;`?
+
+**Answer:** Adds 20px of space between the element’s content and its top border.
+
+---
+
+# Question: What is the effect of `padding-left: 15px;`?
+
+**Answer:** Adds 15px of space between the element’s content and its left border.
+
+---
+
+# Question: What is the difference in behavior between `padding: 10px;` and `padding: 10px 0;`?
+
+**Answer:** The first applies 10px padding on all sides; the second applies 10px to top and bottom, and 0 to left and right.
+
+---
+
+# Question: In `padding: 30px;`, how much padding will be applied to the right side?
+
+**Answer:** 30px.
+
+---
+
+# Question: Write a CSS rule to give 5px top padding, 10px right padding, 15px bottom padding, and 20px left padding to `<div>`.
+
+**Answer:**
+
+```css
+div {
+  padding: 5px 10px 15px 20px;
+}
+```
+
+---
+
+# Question: Which padding value(s) are applied when using `padding: 10px 50px 20px;`?
+
+**Answer:** Top = 10px, left & right = 50px, bottom = 20px.
+
+---
+
+# Question: What visual effect does increasing padding have on the size of an element?
+
+**Answer:** It increases the total space the element occupies without changing the content size.
+
+---
+
+# Question: What’s the main use of padding in UI design?
+
+**Answer:** To create breathing room between content and borders, improving readability and aesthetics.
+
+---
+
