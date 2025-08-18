@@ -3633,3 +3633,195 @@ margin: value;
 
 ---
 
+# Question: What is the main benefit of using lists in HTML content?
+
+**Answer:** Lists present information in a structured and organized manner, improving readability and comprehension.
+
+---
+
+# Question: When should you use an ordered list (`<ol>`) in HTML?
+
+**Answer:** When items need to be presented in a specific sequence, such as steps, procedures, or instructions.
+
+---
+
+# Question: When should you use an unordered list (`<ul>`) in HTML?
+
+**Answer:** When the order of items does not matter, and you want to group related items.
+
+---
+
+# Question: What is a definition list (`<dl>`) used for?
+
+**Answer:** For presenting terms (`<dt>`) and their corresponding definitions (`<dd>`).
+
+---
+
+# Question: Which CSS property changes the marker style for list items?
+
+**Answer:** `list-style-type`.
+
+---
+
+# Question: Write the CSS rule to make an unordered list have hollow circle bullets.
+
+**Answer:**
+
+```css
+ul {
+  list-style-type: circle;
+}
+```
+
+---
+
+# Question: Which `list-style-type` value removes all markers from a list?
+
+**Answer:** `none`.
+
+---
+
+# Question: What is the default marker style for an unordered list?
+
+**Answer:** `disc` (a filled circle).
+
+---
+
+# Question: Which `list-style-type` value displays uppercase Roman numerals?
+
+**Answer:** `upper-roman`.
+
+---
+
+# Question: Which `list-style-type` value displays lowercase letters?
+
+**Answer:** `lower-alpha`.
+
+---
+
+# Question: Which CSS property allows using an image as the list marker?
+
+**Answer:** `list-style-image`.
+
+---
+
+# Question: What happens if the image specified in `list-style-image` is not found?
+
+**Answer:** The browser falls back to the default list marker.
+
+---
+
+# Question: Why should you provide an alternative marker when using `list-style-image`?
+
+**Answer:** To ensure a visible marker is shown if the image fails to load.
+
+---
+
+# Question: Which CSS property controls whether the marker appears inside or outside the list item box?
+
+**Answer:** `list-style-position`.
+
+---
+
+# Question: Describe the effect of `list-style-position: inside`.
+
+**Answer:** The marker is placed inside the content box, and wrapped text aligns under the marker with proper indentation.
+
+---
+
+# Question: Describe the effect of `list-style-position: outside`.
+
+**Answer:** The marker is placed outside the content box, and wrapped text aligns with the start of the first line.
+
+---
+
+# Question: What does `list-style-position: inherit` do?
+
+**Answer:** Inherits the position value from the parent list.
+
+---
+
+# Question: Which shorthand property combines list marker type, image, and position?
+
+**Answer:** `list-style`.
+
+---
+
+# Question: Can the values in the `list-style` shorthand be in any order?
+
+**Answer:** Yes, the values can be in any order, but at least one must be specified.
+
+---
+
+# Question: What happens if some values are omitted in the `list-style` shorthand?
+
+**Answer:** Missing values are filled in with their default values.
+
+---
+
+# Question: Write a CSS rule using shorthand to set a smiley image, circle bullets, and markers outside.
+
+**Answer:**
+
+```css
+ul {
+  list-style: url('/css/images/smiley.png') circle outside;
+}
+```
+
+---
+
+# Question: In the unordered list styling example, why was `list-style-type: none;` used?
+
+**Answer:** To remove default bullets and apply custom styling.
+
+---
+
+# Question: In the unordered list example, which CSS selector adds a custom marker before each `<li>`?
+
+**Answer:** `.styled-list li::before`.
+
+---
+
+# Question: How is numbering applied to a styled ordered list using CSS pseudo-elements?
+
+**Answer:** By using `content: counter(list-item) ". ";` in `.styled-list ol li::before`.
+
+---
+
+# Question: In the definition list styling, what hover effect was applied?
+
+**Answer:** Both `<dt>` and `<dd>` change background color on hover.
+
+---
+
+# Question: Which `list-style-type` value displays numbers with leading zeros?
+
+**Answer:** `decimal-leading-zero`.
+
+---
+
+# Question: Which `list-style-type` values are available for Greek letter markers?
+
+**Answer:** `lower-greek`.
+
+---
+
+# Question: Which values are available for Japanese numbering styles?
+
+**Answer:** `hiragana`, `katakana`, `hiragana-iroha`, `katakana-iroha`.
+
+---
+
+# Question: Name three `list-style-type` values for traditional numbering systems.
+
+**Answer:** `hebrew`, `armenian`, `georgian`.
+
+---
+
+# Question: What is the difference between `lower-alpha` and `lower-latin` in list-style-type?
+
+**Answer:** Both use lowercase letters, but `lower-alpha` is broader while `lower-latin` specifically follows the Latin alphabet.
+
+---
+
