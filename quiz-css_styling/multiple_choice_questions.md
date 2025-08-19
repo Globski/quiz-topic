@@ -4245,3 +4245,186 @@ cursor: url('image-path'), fallback-cursor;
 **Answer:** Chrome 5.0, Edge 5.5, Firefox 4.0, Safari 5.0, Opera 9.6.
 
 ---
+
+# Question: What does a CSS outline do, and how does it differ from affecting layout?
+
+**Answer:** A CSS outline creates lines around the outside of an element’s border without affecting its size or layout, meaning it does not impact the positioning of adjacent elements.
+
+---
+
+# Question: Name the four main CSS properties used to style outlines.
+
+**Answer:** `outline-style`, `outline-width`, `outline-color`, and `outline-offset`.
+
+---
+
+# Question: What is the purpose of the `outline-style` property?
+
+**Answer:** It specifies the style of the outline’s line, such as solid, dotted, dashed, double, groove, ridge, inset, outset, none, or hidden.
+
+---
+
+# Question: What will `outline-style: none;` do?
+
+**Answer:** It will remove the outline completely.
+
+---
+
+# Question: What is the difference between `outline-style: none;` and `outline-style: hidden;`?
+
+**Answer:** Both remove the visible outline, but `hidden` can still affect accessibility tools or be used in certain contexts for emphasis removal.
+
+---
+
+# Question: What units can `outline-width` accept?
+
+**Answer:** `thin`, `medium`, `thick`, or a length value such as pixels (`px`), ems (`em`), etc.
+
+---
+
+# Question: What is the default color if no `outline-color` is specified?
+
+**Answer:** Black.
+
+---
+
+# Question: Which property would you use to set an outline 10 pixels away from an element’s border?
+
+**Answer:** `outline-offset: 10px;`.
+
+---
+
+# Question: Can `outline-offset` be included in the `outline` shorthand?
+
+**Answer:** No, it must be declared separately.
+
+---
+
+# Question: Write a shorthand outline declaration for a 4px green dotted outline.
+
+**Answer:** `outline: 4px dotted green;`.
+
+---
+
+# Question: Does the order of values in the `outline` shorthand matter?
+
+**Answer:** No, the order does not matter as long as all values are valid.
+
+---
+
+# Question: How can outlines be used with the `:focus` pseudo-class?
+
+**Answer:** By applying the `outline` property to `:focus`, elements such as input fields can be visually highlighted when focused.
+
+---
+
+# Question: Why would `outline: none;` often be paired with a custom `:focus` style?
+
+**Answer:** To remove the browser’s default focus outline and replace it with a custom-designed one.
+
+---
+
+# Question: In what way is an outline different from a border in terms of shape?
+
+**Answer:** Outlines can be non-rectangular, whereas borders are always rectangular.
+
+---
+
+# Question: How does an outline affect element dimensions compared to a border?
+
+**Answer:** Outlines do not affect size or position, while borders add to the element’s dimensions and can shift layout.
+
+---
+
+# Question: Which property controls the gap between an element’s border and its outline?
+
+**Answer:** `outline-offset`.
+
+---
+
+# Question: Give an example of using both outline and border together.
+
+**Answer:**
+
+```css
+p {
+    outline: thick solid red;
+    outline-offset: 5px;
+    border: #009900 inset 10px;
+}
+```
+
+---
+
+# Question: Can outlines be styled with color values in HEX format?
+
+**Answer:** Yes, for example: `outline-color: #00ff00;`.
+
+---
+
+# Question: What is a practical use case for `outline-offset`?
+
+**Answer:** Creating visual separation between an element and its outline for emphasis or design purposes.
+
+---
+
+# Question: Which CSS outline property would you modify to make an outline dotted?
+
+**Answer:** `outline-style`.
+
+---
+
+# Question: If you need a thick blue outline when an input field is focused, which CSS rule would you write?
+
+**Answer:**
+
+```css
+input:focus {
+    outline: thick solid blue;
+}
+```
+
+---
+
+# Question: Does removing an outline with `outline: none;` impact accessibility?
+
+**Answer:** Yes, if no alternative focus indicator is provided, it can reduce usability for keyboard and screen reader users.
+
+---
+
+# Question: In the shorthand `outline: 5px dashed darkred;`, which part represents the style?
+
+**Answer:** `dashed`.
+
+---
+
+# Question: What happens if only `outline-style` is set but no color is specified?
+
+**Answer:** The outline will appear in the default color, which is black.
+
+---
+
+# Question: Can outlines have `groove` or `ridge` styles like borders?
+
+**Answer:** Yes, `outline-style` supports groove and ridge styles.
+
+---
+
+# Question: Is it possible to set different outlines on different sides of an element?
+
+**Answer:** No, outlines apply to all sides at once; they cannot be set individually per side.
+
+---
+
+# Question: Which CSS property is commonly used for temporary visual emphasis during interaction, without affecting layout?
+
+**Answer:** `outline`.
+
+---
+
+# Question: What is the difference in positioning between outline and border in the box model?
+
+**Answer:** Border is part of the box model and affects dimensions; outline is drawn outside the border and does not affect layout.
+
+---
+
