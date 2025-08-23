@@ -1,9 +1,3 @@
-# Question: What does the CSS `max-height` property do?
-
-**Answer:** It sets the maximum height an element can have, preventing it from exceeding that height even if its content is larger.
-
----
-
 # Question: What does the CSS `min-width` property do?
 
 **Answer:** It sets the minimum width an element can have, ensuring it doesn’t shrink below that width even if the content is smaller.
