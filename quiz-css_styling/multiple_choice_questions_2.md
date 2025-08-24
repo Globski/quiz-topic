@@ -1,9 +1,3 @@
-# Question: What does the CSS `min-width` property do?
-
-**Answer:** It sets the minimum width an element can have, ensuring it doesn’t shrink below that width even if the content is smaller.
-
----
-
 # Question: What does the CSS `min-height` property do?
 
 **Answer:** It sets the minimum height an element can have, ensuring it doesn’t shrink below that height even if the content is smaller.
