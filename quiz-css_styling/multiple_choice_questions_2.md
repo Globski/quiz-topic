@@ -1,10 +1,3 @@
-
-# Question: Which CSS property would you use to make sure an element never exceeds 500px in width?
-
-**Answer:** `max-width: 500px;`
-
----
-
 # Question: Which CSS property would you use to ensure an element is always at least 200px tall?
 
 **Answer:** `min-height: 200px;`
