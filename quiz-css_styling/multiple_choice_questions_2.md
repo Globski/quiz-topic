@@ -1,9 +1,3 @@
-# Question: Which CSS property would you use to ensure an element is always at least 200px tall?
-
-**Answer:** `min-height: 200px;`
-
----
-
 # Question: How would you make an image responsive to different screen sizes but never taller than 300px?
 
 **Answer:**
