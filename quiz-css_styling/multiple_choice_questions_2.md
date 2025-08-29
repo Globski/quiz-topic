@@ -1,11 +1,3 @@
-
-
-# Question: What is the difference between `max-width` and `min-width` in CSS?
-
-**Answer:** `max-width` restricts the element from becoming wider than a set value, while `min-width` ensures the element doesn’t shrink narrower than a set value.
-
----
-
 # Question: What is the difference between `max-height` and `min-height` in CSS?
 
 **Answer:** `max-height` restricts the element from becoming taller than a set value, while `min-height` ensures the element doesn’t shrink shorter than a set value.
