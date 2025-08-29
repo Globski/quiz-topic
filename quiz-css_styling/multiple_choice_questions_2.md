@@ -1,16 +1,4 @@
-# Question: How would you make an image responsive to different screen sizes but never taller than 300px?
 
-**Answer:**
-
-```css
-img {
-  max-width: 100%;
-  max-height: 300px;
-  height: auto;
-}
-```
-
----
 
 # Question: What is the difference between `max-width` and `min-width` in CSS?
 
