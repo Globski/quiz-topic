@@ -1,4 +1,2 @@
-
-
-# Question: Which CSS properties directly control the dimensions
+# Question: Which CSS properties
 
