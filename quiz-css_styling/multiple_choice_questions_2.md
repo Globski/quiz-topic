@@ -1,2 +1,2 @@
-# Question: Which CSS properties
+# Question: Which
 
