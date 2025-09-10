@@ -709,3 +709,262 @@ dotnet add package Newtonsoft.Json
 
 ---
 
+# Question: What are the essential components of a C# program?
+
+**Answer:** Using statements, a namespace declaration, a class, and the Main() method containing sequential statements.
+
+---
+
+# Question: In C#, where does program execution begin?
+
+**Answer:** In the `Main()` method.
+
+---
+
+# Question: What does the following line do?
+
+```csharp
+using System;
+```
+
+**Answer:** It imports the `System` namespace, enabling access to classes like `Console`.
+
+---
+
+# Question: What is the purpose of `Console.ReadKey();` in the Hello World program?
+
+**Answer:** It makes the program wait for a key press so the output window doesn’t close immediately when launched from Visual Studio .NET.
+
+---
+
+# Question: What does the `namespace` keyword do in C#?
+
+**Answer:** It groups related classes together to organize code.
+
+---
+
+# Question: What is a class in C#?
+
+**Answer:** A blueprint that contains data and method definitions; classes generally contain multiple methods defining behavior.
+
+---
+
+# Question: What is the role of the `Main` method in C#?
+
+**Answer:** It is the entry point of the program that specifies what the class does when executed.
+
+---
+
+# Question: What type of code is ignored by the compiler in C#?
+
+**Answer:** Comments, e.g., code enclosed in `/* ... */`.
+
+---
+
+# Question: Which method is used to display output text to the screen?
+
+**Answer:** `Console.WriteLine()`.
+
+---
+
+# Question: What is the output of this code?
+
+```csharp
+namespace MyApplication
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello from MyApplication!");
+        }
+    }
+}
+```
+
+**Answer:** `Hello from MyApplication!`
+
+---
+
+# Question: What is the output of this code?
+
+```csharp
+using System;
+
+class Example
+{
+    static void Main()
+    {
+        Console.WriteLine("Using directive example.");
+    }
+}
+```
+
+**Answer:** `Using directive example.`
+
+---
+
+# Question: Why must every C# program have at least one class?
+
+**Answer:** Because C# is an object-oriented language and classes are the foundation for program logic.
+
+---
+
+# Question: What is the output of this code?
+
+```csharp
+class Car
+{
+    string model = "Tesla";
+
+    static void Main()
+    {
+        Car myCar = new Car();
+        Console.WriteLine("Car Model: " + myCar.model);
+    }
+}
+```
+
+**Answer:** `Car Model: Tesla`
+
+---
+
+# Question: Which method always serves as the entry point for C# programs?
+
+**Answer:** The `Main()` method.
+
+---
+
+# Question: What is the output of this code?
+
+```csharp
+class Start
+{
+    static void Main()
+    {
+        Console.WriteLine("This is the main entry point of the program.");
+    }
+}
+```
+
+**Answer:** `This is the main entry point of the program.`
+
+---
+
+# Question: What is a statement in C#?
+
+**Answer:** An instruction inside the `Main()` method, such as variable assignments or method calls.
+
+---
+
+# Question: What is the output of this code?
+
+```csharp
+class StatementsExample
+{
+    static void Main()
+    {
+        int a = 5, b = 10;
+        int sum = a + b;
+        Console.WriteLine("Sum: " + sum);
+    }
+}
+```
+
+**Answer:** `Sum: 15`
+
+---
+
+# Question: What do access modifiers in C# define?
+
+**Answer:** The visibility and accessibility of classes, fields, and methods.
+
+---
+
+# Question: What is the output of this code?
+
+```csharp
+class Example
+{
+    private int secretNumber = 42;
+
+    public void Display()
+    {
+        Console.WriteLine("Access Modifier Example: " + secretNumber);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Example obj = new Example();
+        obj.Display();
+    }
+}
+```
+
+**Answer:** `Access Modifier Example: 42`
+
+---
+
+# Question: Give four best practices for organizing a C# program.
+
+**Answer:** Use proper indentation, give meaningful names to identifiers, keep methods short and focused, and store related classes in separate files.
+
+---
+
+# Question: What naming rules are recommended in C#?
+
+**Answer:** PascalCase for classes and camelCase for variables.
+
+---
+
+# Question: Is C# case-sensitive?
+
+**Answer:** Yes, C# is case-sensitive.
+
+---
+
+# Question: What symbol must end all C# statements and expressions?
+
+**Answer:** A semicolon (`;`).
+
+---
+
+# Question: Does the file name in C# need to match the class name (like in Java)?
+
+**Answer:** No, the file name can be different from the class name.
+
+---
+
+# Question: What are the steps to create and run a C# console app in Visual Studio?
+
+**Answer:** Start Visual Studio → File → New → Project → Choose Visual C# → Console Application → Name project → Write code in editor → Press Run button or F5 to execute.
+
+---
+
+# Question: What command compiles a C# file named `helloworld.cs` using the command-line compiler?
+
+**Answer:** `csc helloworld.cs`
+
+---
+
+# Question: What file is generated after successful compilation of `helloworld.cs`?
+
+**Answer:** `helloworld.exe`
+
+---
+
+# Question: What command executes the compiled Hello World program from the command line?
+
+**Answer:** `helloworld`
+
+---
+
+# Question: What is the expected output when running the command-line compiled Hello World program?
+
+**Answer:** `Hello World`
+
+---
+
