@@ -95,3 +95,26 @@
 | 14     | ToUInt16   | Converts a type to an unsigned int type.                    |
 | 15     | ToUInt32   | Converts a type to an unsigned long type.                   |
 | 16     | ToUInt64   | Converts a type to an unsigned big integer.                 |
+
+---
+
+# Question: List some commonly used C# escape sequences and their meaning.
+
+### Escape Sequences
+| Escape Sequence | Meaning                |
+| --------------- | ---------------------- |
+| \\              | \ character            |
+| \'              | ' character            |
+| \"              | " character            |
+| \?              | ? character            |
+| \a              | Alert or bell          |
+| \b              | Backspace              |
+| \f              | Form feed              |
+| \n              | Newline                |
+| \r              | Carriage return        |
+| \t              | Horizontal tab         |
+| \v              | Vertical tab           |
+| \xhh...         | Hexadecimal number of one or more digits |
+
+---
+
