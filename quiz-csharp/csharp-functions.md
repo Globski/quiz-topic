@@ -355,3 +355,18 @@ Assume variable **A = 60** (0011 1100 in binary) and **B = 13** (0000 1101 in bi
 | 14               | ?: (ternary)          | Right to Left   |
 | 15               | = += -= *= /= %= &= ^= <<= >>= | Right to Left |
 | Lowest (16)      | , (comma)             | Left to Right   |
+
+
+---
+
+# Question: List the types of decision-making statements in C#.
+
+### Decision-making Statements
+
+| Sr.No. | Statement              | Description                                                                 |
+| ------ | ---------------------- | --------------------------------------------------------------------------- |
+| 1      | if statement           | An if statement consists of a boolean expression followed by one or more statements. |
+| 2      | if...else statement    | An if statement can be followed by an optional else statement, which executes when the boolean expression is false. |
+| 3      | nested if statements   | You can use one if or else if statement inside another if or else if statement(s). |
+| 4      | switch statement       | A switch statement allows a variable to be tested for equality against a list of values. |
+| 5      | nested switch statements | You can use one switch statement inside another switch statement(s). |
