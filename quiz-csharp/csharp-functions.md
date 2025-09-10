@@ -369,9 +369,6 @@ Assume variable **A = 60** (0011 1100 in binary) and **B = 13** (0000 1101 in bi
 
 ---
 
-Here’s the next one formatted properly into **`csharp-loops.md`**:
-
-```markdown
 # Question: List the types of loops in C#.
 
 ### Loop Statements
