@@ -370,3 +370,19 @@ Assume variable **A = 60** (0011 1100 in binary) and **B = 13** (0000 1101 in bi
 | 3      | nested if statements   | You can use one if or else if statement inside another if or else if statement(s). |
 | 4      | switch statement       | A switch statement allows a variable to be tested for equality against a list of values. |
 | 5      | nested switch statements | You can use one switch statement inside another switch statement(s). |
+
+---
+
+Here’s the next one formatted properly into **`csharp-loops.md`**:
+
+```markdown
+# Question: List the types of loops in C#.
+
+### Loop Statements
+
+| Sr.No. | Loop Type        | Description                                                                 |
+| ------ | ---------------- | --------------------------------------------------------------------------- |
+| 1      | while loop       | It repeats a statement or a group of statements while a given condition is true. It tests the condition before executing the loop body. |
+| 2      | for loop         | It executes a sequence of statements multiple times and abbreviates the code that manages the loop variable. |
+| 3      | do...while loop  | It is similar to a while statement, except that it tests the condition at the end of the loop body. |
+| 4      | nested loops     | You can use one or more loops inside any other while, for, or do...while loop. |
