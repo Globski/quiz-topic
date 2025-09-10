@@ -42,3 +42,32 @@
 | add       | alias      | ascending   | descending    | dynamic          | from                 |
 | get       | global     | group       | into          | join             | let                  |
 | orderby   | partial (type) | partial (method) | remove | select | set |
+
+---
+
+# Question: List some commonly used C# data types grouped by their category.
+
+### Integral Data Types
+| Data Type | Size    | Range                                                      |
+| --------- | ------- | ---------------------------------------------------------- |
+| byte      | 1 byte  | 0 to 255                                                   |
+| sbyte     | 1 byte  | -128 to 127                                                |
+| short     | 2 bytes | -32,768 to 32,767                                          |
+| ushort    | 2 bytes | 0 to 65,535                                                |
+| int       | 4 bytes | -2,147,483,648 to 2,147,483,647                            |
+| uint      | 4 bytes | 0 to 4,294,967,295                                         |
+| long      | 8 bytes | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807    |
+| ulong     | 8 bytes | 0 to 18,446,744,073,709,551,615                            |
+
+### Floating-Point Data Types
+| Data Type | Size    | Precision              |
+| --------- | ------- | ---------------------- |
+| float     | 4 bytes | 6-7 decimal places     |
+| double    | 8 bytes | 15-16 decimal places   |
+| decimal   | 16 bytes| 28-29 decimal places   |
+
+### Character and Boolean Data Types
+| Data Type | Size    | Description            |
+| --------- | ------- | ---------------------- |
+| char      | 2 bytes | Stores a single character |
+| bool      | 1 byte  | Stores true or false   |
