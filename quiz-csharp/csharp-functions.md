@@ -118,3 +118,98 @@
 
 ---
 
+# Question: List some commonly used C# operators grouped by their category.
+
+### Arithmetic Operators
+| Operator | Description                                      | Example         |
+| -------- | ------------------------------------------------ | --------------- |
+| +        | Adds two operands                                | A + B = 30      |
+| -        | Subtracts second operand from the first          | A - B = -10     |
+| *        | Multiplies both operands                         | A * B = 200     |
+| /        | Divides numerator by denominator                 | B / A = 2       |
+| %        | Modulus Operator, remainder after division       | B % A = 0       |
+| ++       | Increment operator, increases value by one       | A++ = 11        |
+| --       | Decrement operator, decreases value by one       | A-- = 9         |
+
+### Relational Operators
+| Operator | Description                                                                 | Example              |
+| -------- | --------------------------------------------------------------------------- | -------------------- |
+| ==       | Checks if two operands are equal                                            | (A == B) is not true |
+| !=       | Checks if two operands are not equal                                        | (A != B) is true     |
+| >        | Checks if left operand is greater than right                                | (A > B) is not true  |
+| <        | Checks if left operand is less than right                                   | (A < B) is true      |
+| >=       | Checks if left operand is greater than or equal to right                    | (A >= B) is not true |
+| <=       | Checks if left operand is less than or equal to right                       | (A <= B) is true     |
+
+### Logical Operators
+| Operator | Description                                                                 | Example              |
+| -------- | --------------------------------------------------------------------------- | -------------------- |
+| &&       | Logical AND, true if both operands are true                                 | (A && B) is false    |
+| \|\|     | Logical OR, true if at least one operand is true                            | (A \|\| B) is true   |
+| !        | Logical NOT, reverses the logical state of operand                          | !(A && B) is true    |
+
+### Bitwise Operators
+**Bitwise operator works on bits and performs bit by bit operation.**  
+
+Truth Table:  
+
+| p | q | p & q | p \| q | p ^ q |
+|---|---|-------|-------|-------|
+| 0 | 0 | 0     | 0     | 0     |
+| 0 | 1 | 0     | 1     | 1     |
+| 1 | 1 | 1     | 1     | 0     |
+| 1 | 0 | 0     | 1     | 1     |
+
+| Operator | Description                                                                 | Example                                     |
+| -------- | --------------------------------------------------------------------------- | ------------------------------------------- |
+| &        | Binary AND, copies bit if it exists in both operands                        | (A & B) = 12 → 0000 1100                    |
+| \|       | Binary OR, copies bit if it exists in either operand                        | (A \| B) = 61 → 0011 1101                   |
+| ^        | Binary XOR, copies bit if it exists in one operand but not both             | (A ^ B) = 49 → 0011 0001                    |
+| ~        | Binary Ones Complement, flips bits                                          | (~A) = -61 → 1100 0011 (2's complement)     |
+| <<       | Binary Left Shift, moves bits left                                          | A << 2 = 240 → 1111 0000                    |
+| >>       | Binary Right Shift, moves bits right                                        | A >> 2 = 15 → 0000 1111                     |
+
+### Assignment Operators
+| Operator | Description                                                                 | Example                   |
+| -------- | --------------------------------------------------------------------------- | ------------------------- |
+| =        | Simple assignment                                                           | C = A + B                 |
+| +=       | Add AND assignment                                                          | C += A → C = C + A        |
+| -=       | Subtract AND assignment                                                     | C -= A → C = C - A        |
+| *=       | Multiply AND assignment                                                     | C *= A → C = C * A        |
+| /=       | Divide AND assignment                                                       | C /= A → C = C / A        |
+| %=       | Modulus AND assignment                                                      | C %= A → C = C % A        |
+| <<=      | Left shift AND assignment                                                   | C <<= 2 → C = C << 2      |
+| >>=      | Right shift AND assignment                                                  | C >>= 2 → C = C >> 2      |
+| &=       | Bitwise AND assignment                                                      | C &= 2 → C = C & 2        |
+| ^=       | Bitwise XOR assignment                                                      | C ^= 2 → C = C ^ 2        |
+| \|=      | Bitwise OR assignment                                                       | C \|= 2 → C = C \| 2      |
+
+### Miscellaneous Operators
+| Operator | Description                                                                 | Example                               |
+| -------- | --------------------------------------------------------------------------- | ------------------------------------- |
+| sizeof() | Returns the size of a data type                                             | sizeof(int) → 4                       |
+| typeof() | Returns the type of a class                                                 | typeof(StreamReader)                   |
+| &        | Returns the address of a variable                                           | &a (address of variable a)            |
+| *        | Pointer to a variable                                                       | *a (pointer named 'a')                |
+| ?:       | Conditional Expression (ternary operator)                                   | condition ? value1 : value2           |
+| is       | Checks if an object is of a certain type                                    | if(Ford is Car)                        |
+| as       | Safe cast, returns null if cast fails                                       | StringReader r = obj as StringReader  |
+
+### Operator Precedence and Associativity
+| Category        | Operators                       | Associativity  |
+| --------------- | ------------------------------- | -------------- |
+| Postfix         | () [] -> . ++ --                | Left to right  |
+| Unary           | + - ! ~ ++ -- (type)* & sizeof  | Right to left  |
+| Multiplicative  | * / %                           | Left to right  |
+| Additive        | + -                             | Left to right  |
+| Shift           | << >>                           | Left to right  |
+| Relational      | < <= > >=                       | Left to right  |
+| Equality        | == !=                           | Left to right  |
+| Bitwise AND     | &                               | Left to right  |
+| Bitwise XOR     | ^                               | Left to right  |
+| Bitwise OR      | \|                              | Left to right  |
+| Logical AND     | &&                              | Left to right  |
+| Logical OR      | \|\|                            | Left to right  |
+| Conditional     | ?:                              | Right to left  |
+| Assignment      | = += -= *= /= %= >>= <<= &= ^= \|= | Right to left |
+| Comma           | ,                               | Left to right  |
