@@ -495,6 +495,217 @@ class Program
 
 # Question: What kinds of applications can be built with C#?
 
-**Answer:** Desktop software, web applications, mobile apps, cloud-based systems, IoT solutions, games, and AI-powered applications.
+**Answer:** Desktop software, web applications, mobile apps, cloud-based systems, IoT solutions, games, and AI-powered applications
 
 ---
+
+# Question: What types of applications can be written using the .NET Framework?
+
+**Answer:** Windows applications, Web applications, and Web services.
+
+---
+
+# Question: Which programming languages can access and communicate with the .NET Framework?
+
+**Answer:** C#, C++, Visual Basic, Jscript, COBOL, and others.
+
+---
+
+# Question: What does the .NET Framework provide to client languages such as C#?
+
+**Answer:** An enormous library of codes and components.
+
+---
+
+# Question: Name at least five components of the .NET Framework.
+
+**Answer:** Common Language Runtime (CLR), .NET Framework Class Library, Common Language Specification, Common Type System, Metadata and Assemblies, Windows Forms, ASP.Net and ASP.Net AJAX, ADO.Net, Windows Workflow Foundation (WF), Windows Presentation Foundation, Windows Communication Foundation (WCF), LINQ.
+
+---
+
+# Question: What IDEs does Microsoft provide for C# programming?
+
+**Answer:** Visual Studio 2010 (VS), Visual C# 2010 Express (VCE), and Visual Web Developer.
+
+---
+
+# Question: Which C# development tools are freely available from Microsoft?
+
+**Answer:** Visual C# 2010 Express (VCE) and Visual Web Developer.
+
+---
+
+# Question: Can C# source code be written without Visual Studio? If yes, how?
+
+**Answer:** Yes, using a basic text editor like Notepad and compiling the code into assemblies with the command-line compiler (part of the .NET Framework).
+
+---
+
+# Question: How do Visual C# Express and Visual Web Developer differ from Visual Studio?
+
+**Answer:** They are trimmed-down versions of Visual Studio but retain most features and have the same appearance.
+
+---
+
+# Question: What is required to install the Express edition of C# tools?
+
+**Answer:** An active internet connection.
+
+---
+
+# Question: What is Mono in the context of C# development?
+
+**Answer:** Mono is an open-source version of the .NET Framework that includes a C# compiler and runs on multiple operating systems.
+
+---
+
+# Question: Which operating systems can run Mono?
+
+**Answer:** Android, BSD, iOS, Linux, OS X, Windows, Solaris, and UNIX.
+
+---
+
+# Question: What is the purpose of Mono?
+
+**Answer:** To run Microsoft .NET applications cross-platform and to provide better development tools for Linux developers.
+
+---
+
+# Question: What are the essential components included in the .NET SDK?
+
+**Answer:** C# Compiler (csc.exe), .NET CLI, and .NET Runtime.
+
+---
+
+# Question: How do you verify .NET SDK installation on Windows, macOS, or Linux?
+
+**Answer:** Run the command `dotnet --version` in the terminal or command prompt.
+
+---
+
+# Question: What is the expected output of `dotnet --version` after a successful installation (example given)?
+
+**Answer:** 8.0.100
+
+---
+
+# Question: What command installs Homebrew on macOS?
+
+**Answer:**
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+---
+
+# Question: What command installs the .NET SDK via Homebrew?
+
+**Answer:** `brew install dotnet-sdk`
+
+---
+
+# Question: Which command updates system packages on Ubuntu/Debian before installing the .NET SDK?
+
+**Answer:** `sudo apt update && sudo apt upgrade`
+
+---
+
+# Question: What command installs the .NET SDK on Ubuntu/Debian?
+
+**Answer:** `sudo apt install dotnet-sdk-8.0`
+
+---
+
+# Question: List three popular editors/IDEs for writing C# code.
+
+**Answer:** Visual Studio, Visual Studio Code (VS Code), and JetBrains Rider.
+
+---
+
+# Question: Which editors are recommended for the best C# development experience?
+
+**Answer:** Visual Studio and Visual Studio Code (VS Code).
+
+---
+
+# Question: How do you install the C# Dev Kit extension in VS Code?
+
+**Answer:** Open VS Code → Extensions (Ctrl+Shift+X) → Search for "C#" → Install C# Dev Kit extension.
+
+---
+
+# Question: Which command creates a new C# console application?
+
+**Answer:**
+
+```bash
+dotnet new console -o MyCSharpApp
+```
+
+---
+
+# Question: What is the minimal "Hello, C# World!" program in C#?
+
+**Answer:**
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, C# World!");
+    }
+}
+```
+
+---
+
+# Question: How do you run a C# program created with .NET CLI?
+
+**Answer:** Use the command `dotnet run`.
+
+---
+
+# Question: How can you run C# programs without installing the .NET SDK?
+
+**Answer:** Use an online C# compiler that allows writing, saving, executing, and sharing C# code.
+
+---
+
+# Question: What is NuGet in the context of C# development?
+
+**Answer:** A package manager for .NET that allows adding libraries and dependencies to C# projects.
+
+---
+
+# Question: What command installs the Newtonsoft.Json NuGet package?
+
+**Answer:**
+
+```bash
+dotnet add package Newtonsoft.Json
+```
+
+---
+
+# Question: What is Newtonsoft.Json commonly used for?
+
+**Answer:** JSON serialization and deserialization.
+
+---
+
+# Question: Which shortcut starts debugging in Visual Studio?
+
+**Answer:** F5.
+
+---
+
+# Question: What do you need to install in VS Code to debug C# applications?
+
+**Answer:** The C# Debugger extension.
+
+---
+
