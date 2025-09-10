@@ -214,11 +214,7 @@ Truth Table:
 | Assignment      | = += -= *= /= %= >>= <<= &= ^= \|= | Right to left |
 | Comma           | ,                               | Left to right  |
 
-Perfect 🎯 — that’s the **Operator Precedence & Associativity** section. I’ll add it to our structured markdown reference at the end so the file is now 100% complete.
 
-`csharp-operators-by-category.md`
-
-```markdown
 # Question: List some commonly used C# operators grouped by their category.
 
 ---
