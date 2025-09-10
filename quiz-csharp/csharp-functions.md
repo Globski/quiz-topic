@@ -213,3 +213,145 @@ Truth Table:
 | Conditional     | ?:                              | Right to left  |
 | Assignment      | = += -= *= /= %= >>= <<= &= ^= \|= | Right to left |
 | Comma           | ,                               | Left to right  |
+
+Perfect 🎯 — that’s the **Operator Precedence & Associativity** section. I’ll add it to our structured markdown reference at the end so the file is now 100% complete.
+
+`csharp-operators-by-category.md`
+
+```markdown
+# Question: List some commonly used C# operators grouped by their category.
+
+---
+
+### Arithmetic Operators
+
+Assume variable **A = 10** and **B = 20**
+
+| Operator             | Symbol | Description                                           | Example        |
+| -------------------- | ------ | ----------------------------------------------------- | -------------- |
+| Addition             | +      | Adds two operands                                     | A + B = 30     |
+| Subtraction          | -      | Subtracts second operand from the first               | A - B = -10    |
+| Multiplication       | *      | Multiplies both operands                              | A * B = 200    |
+| Division             | /      | Divides numerator by denominator                      | B / A = 2      |
+| Modulus              | %      | Modulus operator and remainder after integer division | B % A = 0      |
+| Increment Operator   | ++     | Increases integer value by one                        | A++ = 11       |
+| Decrement Operator   | --     | Decreases integer value by one                        | A-- = 9        |
+
+---
+
+### Assignment Operators
+
+| Operator                | Symbol | Description                                                                 | Example                              |
+| ----------------------- | ------ | --------------------------------------------------------------------------- | ------------------------------------ |
+| Simple Assignment       | =      | Assigns values from right side operands to left side operand                 | C = A + B → assigns value of A + B   |
+| Add and Assign          | +=     | Adds right operand to the left operand and assigns the result                | C += A → equivalent to C = C + A     |
+| Subtract and Assign     | -=     | Subtracts right operand from the left operand and assigns the result         | C -= A → equivalent to C = C - A     |
+| Multiply and Assign     | *=     | Multiplies right operand with the left operand and assigns the result        | C *= A → equivalent to C = C * A     |
+| Divide and Assign       | /=     | Divides left operand by the right operand and assigns the result             | C /= A → equivalent to C = C / A     |
+| Modulus and Assign      | %=     | Takes modulus using two operands and assigns the result                      | C %= A → equivalent to C = C % A     |
+| Left Shift and Assign   | <<=    | Left shift AND assignment operator                                           | C <<= 2 → same as C = C << 2         |
+| Right Shift and Assign  | >>=    | Right shift AND assignment operator                                          | C >>= 2 → same as C = C >> 2         |
+| Bitwise AND and Assign  | &=     | Bitwise AND assignment operator                                              | C &= 2 → same as C = C & 2           |
+| Bitwise XOR and Assign  | ^=     | Bitwise exclusive OR assignment operator                                     | C ^= 2 → same as C = C ^ 2           |
+| Bitwise OR and Assign   | \|=    | Bitwise inclusive OR assignment operator                                     | C \|= 2 → same as C = C \| 2         |
+
+---
+
+### Relational Operators
+
+Assume variable **A = 10** and **B = 20**
+
+| Operator                  | Symbol | Description                                                                                           | Example                  |
+| ------------------------- | ------ | ----------------------------------------------------------------------------------------------------- | ------------------------ |
+| Equal to                  | ==     | Checks if values of two operands are equal. If yes, condition becomes true.                           | (A == B) → false         |
+| Not equal to              | !=     | Checks if values of two operands are not equal. If yes, condition becomes true.                       | (A != B) → true          |
+| Greater than              | >      | Checks if left operand is greater than right operand. If yes, condition becomes true.                  | (A > B) → false          |
+| Less than                 | <      | Checks if left operand is less than right operand. If yes, condition becomes true.                     | (A < B) → true           |
+| Greater than or equal to  | >=     | Checks if left operand is greater than or equal to right operand. If yes, condition becomes true.      | (A >= B) → false         |
+| Less than or equal to     | <=     | Checks if left operand is less than or equal to right operand. If yes, condition becomes true.         | (A <= B) → true          |
+
+---
+
+### Logical Operators
+
+Assume variable **A = true** and **B = false**
+
+| Operator     | Symbol | Description                                                                                     | Example            |
+| ------------ | ------ | ----------------------------------------------------------------------------------------------- | ------------------ |
+| Logical AND  | &&     | Returns true if both operands are true                                                          | (A && B) → false   |
+| Logical OR   | \|\|   | Returns true if at least one of the operands is true                                            | (A \|\| B) → true  |
+| Logical NOT  | !      | Reverses the logical state of its operand. If condition is true, it becomes false, and vice-versa | !(A && B) → true   |
+
+---
+
+### Bitwise Operators
+
+Assume variable **A = 60** (0011 1100 in binary) and **B = 13** (0000 1101 in binary)
+
+| Operator         | Symbol | Description                                                                                           | Example                                             |
+| ---------------- | ------ | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| Binary AND       | &      | Copies a bit to the result if it exists in both operands                                              | (A & B) = 12 → 0000 1100                            |
+| Binary OR        | \|     | Copies a bit if it exists in either operand                                                           | (A \| B) = 61 → 0011 1101                           |
+| Binary XOR       | ^      | Copies the bit if it is set in one operand but not both                                               | (A ^ B) = 49 → 0011 0001                            |
+| Ones Complement  | ~      | Unary operator that flips bits                                                                        | (~A) = -61 → 1100 0011 (2’s complement form)        |
+| Left Shift       | <<     | Moves bits of left operand left by the number of positions specified by right operand                 | A << 2 = 240 → 1111 0000                            |
+| Right Shift      | >>     | Moves bits of left operand right by the number of positions specified by right operand                | A >> 2 = 15 → 0000 1111                             |
+
+---
+
+### Miscellaneous and Conditional Operators
+
+| Operator      | Symbol / Syntax | Description                                                                                   | Example                                                                 |
+| ------------- | --------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| sizeof        | sizeof()        | Returns the size of a data type                                                               | sizeof(int) → 4                                                         |
+| typeof        | typeof()        | Returns the type of a class                                                                   | typeof(StreamReader)                                                     |
+| Address-of    | &               | Returns the address of a variable                                                             | &a → actual memory address of variable a                                |
+| Pointer       | *               | Pointer to a variable                                                                         | *a → creates pointer named 'a' to a variable                            |
+| Conditional   | ? :             | Conditional expression operator (ternary). If condition is true, returns X; otherwise, Y       | condition ? valueX : valueY                                              |
+| is            | is              | Determines whether an object is of a certain type                                             | if (Ford is Car) → checks if Ford is an object of class Car              |
+| as            | as              | Safe type casting. Returns null instead of raising exception if cast fails                    | `object obj = new StringReader("Hello"); StringReader r = obj as StringReader;` |
+
+---
+
+### Operator Precedence and Associativity
+
+#### By Category
+
+| Category        | Operators                                  | Associativity   |
+| --------------- | ------------------------------------------ | --------------- |
+| Postfix         | () [] -> . ++ --                           | Left to Right   |
+| Unary           | + - ! ~ ++ -- (type)* & sizeof             | Right to Left   |
+| Multiplicative  | * / %                                      | Left to Right   |
+| Additive        | + -                                        | Left to Right   |
+| Shift           | << >>                                      | Left to Right   |
+| Relational      | < <= > >=                                  | Left to Right   |
+| Equality        | == !=                                      | Left to Right   |
+| Bitwise AND     | &                                          | Left to Right   |
+| Bitwise XOR     | ^                                          | Left to Right   |
+| Bitwise OR      | \|                                         | Left to Right   |
+| Logical AND     | &&                                         | Left to Right   |
+| Logical OR      | \|\|                                       | Left to Right   |
+| Conditional     | ?:                                         | Right to Left   |
+| Assignment      | = += -= *= /= %= >>= <<= &= ^= \|=          | Right to Left   |
+| Comma           | ,                                          | Left to Right   |
+
+#### By Precedence Level
+
+| Precedence Level | Operators             | Associativity   |
+| ---------------- | --------------------- | --------------- |
+| Highest (1)      | () [] .               | Left to Right   |
+| 2                | ++ -- (postfix)       | Left to Right   |
+| 3                | ++ -- + - (prefix) ! ~ | Right to Left  |
+| 4                | * / %                 | Left to Right   |
+| 5                | + -                   | Left to Right   |
+| 6                | << >>                 | Left to Right   |
+| 7                | < <= > >=             | Left to Right   |
+| 8                | == !=                 | Left to Right   |
+| 9                | &                     | Left to Right   |
+| 10               | ^                     | Left to Right   |
+| 11               | \|                    | Left to Right   |
+| 12               | &&                    | Left to Right   |
+| 13               | \|\|                  | Left to Right   |
+| 14               | ?: (ternary)          | Right to Left   |
+| 15               | = += -= *= /= %= &= ^= <<= >>= | Right to Left |
+| Lowest (16)      | , (comma)             | Left to Right   |
