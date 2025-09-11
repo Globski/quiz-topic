@@ -1254,3 +1254,335 @@ catch (Exception ex) {
 
 ---
 
+# Question: What do data types in C# define?
+
+**Answer:** They define the type of data a variable can store, such as integers, floating-point numbers, characters, or Boolean values.
+
+---
+
+# Question: Why are data types essential in C#?
+
+**Answer:** They ensure memory optimization, performance improvements, and code readability.
+
+---
+
+# Question: Is C# strongly typed? What does it mean?
+
+**Answer:** Yes, C# is strongly typed, meaning all variables must be declared with a data type before use.
+
+---
+
+# Question: What is the syntax for declaring a variable with a data type in C#?
+
+**Answer:**
+
+```csharp
+<data_type> <variable_name> = <value>;
+```
+
+---
+
+# Question: What is the output of this code?
+
+```csharp
+string studentName = "Sudhir Sharma";  
+int studentAge = 20;         
+double marksPercentage = 85.5;
+char grade = 'A';     
+bool isEnrolled = true;
+```
+
+**Answer:**
+
+```
+Student Name: Sudhir Sharma
+Age: 20
+Marks Percentage: 85.5%
+Grade: A
+Enrolled: True
+```
+
+---
+
+# Question: What are the three categories of C# data types?
+
+**Answer:** Value types, reference types, and pointer types.
+
+---
+
+# Question: What base class do value types derive from?
+
+**Answer:** `System.ValueType`.
+
+---
+
+# Question: Do value types contain data directly or by reference?
+
+**Answer:** They contain data directly.
+
+---
+
+# Question: List five examples of value types.
+
+**Answer:** `int`, `char`, `float`, `bool`, `enum`.
+
+---
+
+# Question: What is the size and range of `byte`?
+
+**Answer:** 1 byte, range 0 to 255.
+
+---
+
+# Question: What is the size and range of `sbyte`?
+
+**Answer:** 1 byte, range -128 to 127.
+
+---
+
+# Question: What is the size and range of `int`?
+
+**Answer:** 4 bytes, range -2,147,483,648 to 2,147,483,647.
+
+---
+
+# Question: What is the size and range of `long`?
+
+**Answer:** 8 bytes, range -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+
+---
+
+# Question: Which integral type can store only positive integers up to 4,294,967,295?
+
+**Answer:** `uint`.
+
+---
+
+# Question: What is the precision of `float`?
+
+**Answer:** 6–7 decimal places.
+
+---
+
+# Question: What is the precision of `double`?
+
+**Answer:** 15–16 decimal places.
+
+---
+
+# Question: What is the precision of `decimal`?
+
+**Answer:** 28–29 decimal places.
+
+---
+
+# Question: Which floating-point type should you use for financial calculations?
+
+**Answer:** `decimal`.
+
+---
+
+# Question: What is the size of a `char`?
+
+**Answer:** 2 bytes.
+
+---
+
+# Question: What values can a `bool` store?
+
+**Answer:** `true` or `false`.
+
+---
+
+# Question: What is an `enum` in C#?
+
+**Answer:** A special data type used for defining named constant values.
+
+---
+
+# Question: Write an example of an enum with job levels.
+
+**Answer:**
+
+```csharp
+enum JobLevel { Intern, Junior, Mid, Senior, Manager }
+```
+
+---
+
+# Question: What is a `struct` in C#?
+
+**Answer:** A value type used to encapsulate related data.
+
+---
+
+# Question: Do reference types store values directly?
+
+**Answer:** No, they store references to memory locations.
+
+---
+
+# Question: Name four built-in reference types.
+
+**Answer:** `object`, `dynamic`, `string`, `array`.
+
+---
+
+# Question: What is the ultimate base class for all C# types?
+
+**Answer:** `System.Object`.
+
+---
+
+# Question: What is boxing?
+
+**Answer:** Converting a value type to an object type.
+
+---
+
+# Question: What is unboxing?
+
+**Answer:** Converting an object type back to a value type.
+
+---
+
+# Question: What is the difference between `object` and `dynamic` types?
+
+**Answer:** `object` type checking happens at compile-time, while `dynamic` type checking happens at run-time.
+
+---
+
+# Question: What is the alias for the `System.String` class?
+
+**Answer:** `string`.
+
+---
+
+# Question: What is a `@quoted` string literal?
+
+**Answer:** A verbatim string, e.g., `@"Tutorials Point";`.
+
+---
+
+# Question: What user-defined types are also reference types?
+
+**Answer:** Class, interface, and delegate.
+
+---
+
+# Question: What is an array in C#?
+
+**Answer:** A reference type that stores multiple values of the same type in a single variable.
+
+---
+
+# Question: What do pointer type variables store?
+
+**Answer:** Memory addresses of other variables.
+
+---
+
+# Question: What keyword is required to use pointers in C#?
+
+**Answer:** `unsafe`.
+
+---
+
+# Question: What are the two types of type conversion in C#?
+
+**Answer:** Implicit (safe) and explicit (casting).
+
+---
+
+# Question: When does implicit conversion occur?
+
+**Answer:** When there is no risk of data loss, e.g., `int` to `double`.
+
+---
+
+# Question: What is explicit conversion in C#?
+
+**Answer:** Casting between incompatible types, e.g., `(int)doubleValue`.
+
+---
+
+# Question: What is the result of casting `50000.75` (double) to `int`?
+
+**Answer:** `50000`.
+
+---
+
+# Question: Why should you choose the right data type?
+
+**Answer:** To save memory and improve efficiency.
+
+---
+
+# Question: When should you use `var`?
+
+**Answer:** When the type is obvious, to improve readability.
+
+---
+
+# Question: Why avoid unnecessary type conversions?
+
+**Answer:** They can slow down performance.
+
+---
+
+# Question: Which keyword should be used for fixed values that cannot change?
+
+**Answer:** `const` or `readonly`.
+
+---
+
+# Question: What is the best data type for money-related calculations?
+
+**Answer:** `decimal`.
+
+---
+
+# Question: What is the mistake in this code?
+
+```csharp
+float price = 100.99f;  
+```
+
+**Answer:** Using `float` for money; should use `decimal`.
+
+---
+
+# Question: What error occurs if you use an uninitialized string reference?
+
+**Answer:** `NullReferenceException`.
+
+---
+
+# Question: What is the fix for assigning `"25"` directly to an `int`?
+
+**Answer:** Use parsing, e.g., `int age = int.Parse("25");`.
+
+---
+
+# Question: What is the main difference between `float`, `double`, and `decimal`?
+
+**Answer:**
+
+* `float`: Approximate calculations.
+* `double`: Higher precision.
+* `decimal`: Best for financial accuracy.
+
+---
+
+# Question: Can you store an integer in a `char` variable directly?
+
+**Answer:** No, but you can cast an integer to `char`. Example: `(char)65` → `'A'`.
+
+---
+
+# Question: What data types should you use for very large numbers?
+
+**Answer:** `long` for large integers, `double` for large floating-point numbers.
+
+---
+
