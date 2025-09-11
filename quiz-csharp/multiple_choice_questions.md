@@ -968,3 +968,289 @@ class Program
 
 ---
 
+# Question: What programming paradigm does C# follow?
+
+**Answer:** C# is an object-oriented programming language.
+
+---
+
+# Question: In object-oriented programming, what are actions that an object may take called?
+
+**Answer:** Methods.
+
+---
+
+# Question: Which method in the Rectangle class calculates the area?
+
+**Answer:** `GetArea()`.
+
+---
+
+# Question: What does the `Display()` method in the Rectangle class do?
+
+**Answer:** Prints the rectangle’s length, width, and calculated area to the console.
+
+---
+
+# Question: Is C# case-sensitive? Provide an example.
+
+**Answer:** Yes. For example, `int Age = 30; int age = 25;` treats `Age` and `age` as two separate variables.
+
+---
+
+# Question: How must every statement in C# end?
+
+**Answer:** With a semicolon (`;`).
+
+---
+
+# Question: What defines a block of code in C#?
+
+**Answer:** Curly braces `{}`.
+
+---
+
+# Question: Does C# ignore indentation and whitespace?
+
+**Answer:** Yes, but proper indentation improves readability.
+
+---
+
+# Question: What is the purpose of the `using` keyword?
+
+**Answer:** It includes namespaces in the program.
+
+---
+
+# Question: Which namespace is commonly included first in every C# program?
+
+**Answer:** `using System;`
+
+---
+
+# Question: What keyword is used to declare a class in C#?
+
+**Answer:** `class`.
+
+---
+
+# Question: What symbol starts a single-line comment in C#?
+
+**Answer:** `//`.
+
+---
+
+# Question: How do you write a multi-line comment in C#?
+
+**Answer:** With `/* comment */`.
+
+---
+
+# Question: What are member variables?
+
+**Answer:** Attributes or data members of a class used for storing data.
+
+---
+
+# Question: What are member functions?
+
+**Answer:** Sets of statements within a class that perform specific tasks.
+
+---
+
+# Question: How is a class instantiated in C#?
+
+**Answer:** Using the `new` keyword, e.g., `Rectangle r = new Rectangle();`.
+
+---
+
+# Question: What is an identifier in C#?
+
+**Answer:** A name used to identify a class, variable, function, or other user-defined item.
+
+---
+
+# Question: What are the naming rules for identifiers in C#?
+
+**Answer:**
+
+1. Must begin with a letter, followed by letters, digits, or underscores.
+2. Cannot begin with a digit.
+3. Cannot contain spaces or symbols except underscores.
+4. Cannot be a C# keyword.
+
+---
+
+# Question: How can a reserved keyword be used as an identifier?
+
+**Answer:** By prefixing it with `@`.
+
+---
+
+# Question: What are contextual keywords? Provide examples.
+
+**Answer:** Keywords with special meaning in specific contexts, e.g., `get`, `set`, `orderby`.
+
+---
+
+# Question: Give three examples of reserved C# keywords.
+
+**Answer:** `class`, `int`, `public`.
+
+---
+
+# Question: What statement is used for conditional control flow?
+
+**Answer:** `if`, `else`, or `switch`.
+
+---
+
+# Question: What will the following code output?
+
+```csharp
+int age = 18;
+if (age >= 18)
+    Console.WriteLine("You are eligible to vote.");
+else
+    Console.WriteLine("You are not eligible to vote.");
+```
+
+**Answer:** `You are eligible to vote.`
+
+---
+
+# Question: Which looping construct executes a fixed number of iterations?
+
+**Answer:** The `for` loop.
+
+---
+
+# Question: What is the output of the following `for` loop?
+
+```csharp
+for (int i = 1; i <= 3; i++)
+    Console.WriteLine("Iteration: " + i);
+```
+
+**Answer:**
+
+```
+Iteration: 1  
+Iteration: 2  
+Iteration: 3  
+```
+
+---
+
+# Question: Which loop runs until a condition is false?
+
+**Answer:** The `while` loop.
+
+---
+
+# Question: What is the output of the following while loop?
+
+```csharp
+int count = 1;
+while (count <= 3) {
+    Console.WriteLine("Count: " + count);
+    count++;
+}
+```
+
+**Answer:**
+
+```
+Count: 1  
+Count: 2  
+Count: 3  
+```
+
+---
+
+# Question: How do you print output to the console in C#?
+
+**Answer:** Using `Console.WriteLine()`.
+
+---
+
+# Question: How do you take user input in C#?
+
+**Answer:** Using `Console.ReadLine()`.
+
+---
+
+# Question: What is the output of the following program if the user enters `Alice`?
+
+```csharp
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+Console.WriteLine("Hello, " + name + "!");
+```
+
+**Answer:**
+
+```
+Enter your name: Alice  
+Hello, Alice!  
+```
+
+---
+
+# Question: What is used in C# for error handling?
+
+**Answer:** `try-catch` blocks.
+
+---
+
+# Question: What happens if you try to convert `"ABC"` to an integer in C#?
+
+**Answer:** An exception occurs with the message `Input string was not in a correct format.`
+
+---
+
+# Question: Write a C# snippet that handles an invalid integer conversion using try-catch.
+
+**Answer:**
+
+```csharp
+try {
+    int num = Convert.ToInt32("ABC");
+}
+catch (Exception ex) {
+    Console.WriteLine("Error: " + ex.Message);
+}
+```
+
+---
+
+# Question: What naming convention is used for variables in C#?
+
+**Answer:** camelCase (e.g., `customerName`).
+
+---
+
+# Question: What naming convention is used for classes in C#?
+
+**Answer:** PascalCase (e.g., `CustomerDetails`).
+
+---
+
+# Question: Why should you avoid hardcoding values in C#?
+
+**Answer:** For flexibility—use constants or configuration files instead.
+
+---
+
+# Question: What is the benefit of adding comments in C# code?
+
+**Answer:** Improves readability and understanding without affecting compilation.
+
+---
+
+# Question: Why should try-catch blocks be used in C#?
+
+**Answer:** To handle errors gracefully and prevent program crashes.
+
+---
+
