@@ -1586,3 +1586,8 @@ float price = 100.99f;
 
 ---
 
+# Question: What is type conversion in C# also known as?
+
+**Answer:** Type conversion is also known as type casting.
+
+---
