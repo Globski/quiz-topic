@@ -291,6 +291,100 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Popover** with their description.
+
+### Popover
+
+| Target Element     | Description                |
+| ------------------ | -------------------------- |
+| `.popover`         | Creates a popover          |
+| `.popover-title`   | Title of the popover       |
+| `.popover-content` | Content inside the popover |
+
+---
+
+# Question: List all Bootstrap 3 classes for **Progress Bars** with their description.
+
+### Progress Bars
+
+| Target Element          | Description                       |
+| ----------------------- | --------------------------------- |
+| `.progress`             | Creates a progress bar container  |
+| `.progress-bar`         | Creates a progress bar            |
+| `.progress-bar-danger`  | Red progress bar                  |
+| `.progress-bar-info`    | Light blue progress bar           |
+| `.progress-bar-striped` | Adds stripes to the progress bar  |
+| `.progress-bar-success` | Green progress bar                |
+| `.progress-bar-warning` | Yellow/orange progress bar        |
+| `.active`               | Animates the striped progress bar |
+
+---
+
+# Question: List all Bootstrap 3 classes for **Tabs & Pills** with their description.
+
+### Tabs & Pills
+
+| Target Element | Description                    |
+| -------------- | ------------------------------ |
+| `.nav`         | Creates a navigation component |
+| `.nav-tabs`    | Creates tabbed navigation      |
+| `.nav-pills`   | Creates pill-style navigation  |
+| `.nav-stacked` | Stacks pills vertically        |
+| `.tab-content` | Container for tab panes        |
+| `.tab-pane`    | Defines a tab panel            |
+
+---
+
+# Question: List all Bootstrap 3 classes for **Tooltip** with their description.
+
+### Tooltip
+
+| Target Element   | Description                  |
+| ---------------- | ---------------------------- |
+| `.tooltip`       | Creates a tooltip            |
+| `.tooltip-arrow` | Arrow element of the tooltip |
+| `.tooltip-inner` | Inner content of the tooltip |
+
+---
+
+# Question: List all Bootstrap 3 classes for **Jumbotron** with their description.
+
+### Jumbotron
+
+| Target Element | Description                                 |
+| -------------- | ------------------------------------------- |
+| `.jumbotron`   | Creates a jumbotron (large showcase banner) |
+
+---
+
+# Question: List all Bootstrap 3 classes for **Labels** with their description.
+
+### Labels
+
+| Target Element   | Description                   |
+| ---------------- | ----------------------------- |
+| `.label`         | Creates a label               |
+| `.label-danger`  | Red label (danger)            |
+| `.label-default` | Gray label                    |
+| `.label-info`    | Light blue label              |
+| `.label-primary` | Blue label (primary)          |
+| `.label-success` | Green label (success)         |
+| `.label-warning` | Yellow/orange label (warning) |
+
+---
+
+# Question: List all Bootstrap 3 classes for **Wells** with their description.
+
+### Wells
+
+| Target Element | Description              |
+| -------------- | ------------------------ |
+| `.well`        | Creates a well container |
+| `.well-lg`     | Large well               |
+| `.well-sm`     | Small well               |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
