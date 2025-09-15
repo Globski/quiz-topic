@@ -251,6 +251,22 @@
 | `.modal-sm`      | Small modal                                   |
 
 ---
+# Question: List all Bootstrap 3 classes for **Pagination & Pager** with their description.
+
+### Pagination & Pager
+
+| Target Element   | Description                         |
+| ---------------- | ----------------------------------- |
+| `.pagination`    | Creates pagination links            |
+| `.pagination-lg` | Large pagination                    |
+| `.pagination-sm` | Small pagination                    |
+| `.pager`         | Creates previous/next pager links   |
+| `.previous`      | Pager link for previous             |
+| `.next`          | Pager link for next                 |
+| `.disabled`      | Disables a pagination or pager link |
+| `.active`        | Highlights the active page          |
+
+---
 
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
