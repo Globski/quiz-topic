@@ -2086,3 +2086,312 @@ Total number of clothes: 20
 
 ---
 
+# Question: What are constants in C#?
+
+**Answer:** Constants are fixed values that cannot be altered during program execution.
+
+---
+
+# Question: What are literals in C#?
+
+**Answer:** Literals are constant values written directly into the code, such as numbers, characters, or strings.
+
+---
+
+# Question: How are constants similar to variables?
+
+**Answer:** They are treated like variables but their values cannot be modified after definition.
+
+---
+
+# Question: What types of constants can exist in C#?
+
+**Answer:** Integer constants, floating-point constants, character constants, string literals, and enumeration constants.
+
+---
+
+# Question: What prefixes are used for hexadecimal integer literals in C#?
+
+**Answer:** `0x` or `0X`.
+
+---
+
+# Question: What prefix is used for decimal integer literals in C#?
+
+**Answer:** No prefix is used for decimal integers.
+
+---
+
+# Question: What suffixes can be applied to integer literals in C# and what do they represent?
+
+**Answer:**
+
+* `U` → unsigned
+* `L` → long
+  They can be uppercase or lowercase and in any order.
+
+---
+
+# Question: Which of these are valid integer literals: `212`, `215u`, `0xFeeL`?
+
+**Answer:** All are valid.
+
+---
+
+# Question: Give examples of decimal and hexadecimal integer literals in C#.
+
+**Answer:**
+
+* Decimal: `85`
+* Hexadecimal: `0x4b`
+
+---
+
+# Question: What is the difference between `30`, `30u`, `30l`, and `30ul` in C#?
+
+**Answer:**
+
+* `30` → int
+* `30u` → unsigned int
+* `30l` → long
+* `30ul` → unsigned long
+
+---
+
+# Question: What parts make up a floating-point literal in C#?
+
+**Answer:** Integer part, decimal point, fractional part, and exponent part.
+
+---
+
+# Question: Can a floating-point literal be represented in both decimal and exponential form?
+
+**Answer:** Yes.
+
+---
+
+# Question: Which of these floating literals are legal: `3.14159`, `314159E-5F`, `510E`, `210f`, `.e55`?
+
+**Answer:**
+
+* Legal: `3.14159`, `314159E-5F`
+* Illegal: `510E` (incomplete exponent), `210f` (missing decimal or exponent), `.e55` (missing integer or fraction).
+
+---
+
+# Question: What character is used to introduce an exponent in floating-point literals?
+
+**Answer:** `e` or `E`.
+
+---
+
+# Question: How are character constants written in C#?
+
+**Answer:** Enclosed in single quotes, e.g., `'x'`.
+
+---
+
+# Question: What three types of character constants exist in C#?
+
+**Answer:** Plain characters, escape sequences, and universal characters.
+
+---
+
+# Question: What does the escape sequence `\n` represent?
+
+**Answer:** Newline.
+
+---
+
+# Question: What does the escape sequence `\t` represent?
+
+**Answer:** Horizontal tab.
+
+---
+
+# Question: What does the escape sequence `\a` represent?
+
+**Answer:** Alert or bell sound.
+
+---
+
+# Question: What does the escape sequence `\\` represent?
+
+**Answer:** A literal backslash `\`.
+
+---
+
+# Question: What does the escape sequence `\"` represent?
+
+**Answer:** A double quote character `"`.
+
+---
+
+# Question: What does the escape sequence `\u02C0` represent?
+
+**Answer:** A Unicode character with code `02C0`.
+
+---
+
+# Question: What is the output of this code?
+
+```csharp
+Console.WriteLine("Hello\tWorld\n\n");
+```
+
+**Answer:**
+
+```
+Hello   World
+```
+
+(with a blank line after).
+
+---
+
+# Question: How are string literals written in C#?
+
+**Answer:** Enclosed in double quotes (`"string"`) or verbatim string syntax (`@"string"`).
+
+---
+
+# Question: Give three equivalent ways to write the string `"hello, dear"`.
+
+**Answer:**
+
+```csharp
+"hello, dear"  
+"hello, \
+dear"  
+"hello, " "d" "ear"  
+```
+
+---
+
+# Question: What keyword is used to define constants in C#?
+
+**Answer:** `const`.
+
+---
+
+# Question: Write the syntax for defining a constant in C#.
+
+**Answer:**
+
+```csharp
+const <data_type> <constant_name> = value;
+```
+
+---
+
+# Question: How do you access a constant in local scope?
+
+**Answer:** By its name directly, e.g., `constant_name`.
+
+---
+
+# Question: How do you access a constant in a class?
+
+**Answer:** Using the class name, e.g., `ClassName.ConstantName`.
+
+---
+
+# Question: Are class constants static in C#?
+
+**Answer:** Yes, they are implicitly static.
+
+---
+
+# Question: How do you declare a class constant?
+
+**Answer:**
+
+```csharp
+class ClassName {
+    public const datatype ConstantName = value;
+}
+```
+
+---
+
+# Question: In the `MathConstants` class example, what are the declared constants?
+
+**Answer:**
+
+* `public const double Pi = 3.14159;`
+* `public const int SpeedOfLight = 299792458;`
+
+---
+
+# Question: What is the output of accessing `MathConstants.Pi` and `MathConstants.SpeedOfLight`?
+
+**Answer:**
+
+```
+Value of Pi: 3.14159
+Speed of Light: 299792458
+```
+
+---
+
+# Question: What constant is used in the circle area example and what is its value?
+
+**Answer:** `const double pi = 3.14159;`.
+
+---
+
+# Question: What is the formula used to calculate the circle’s area in the example?
+
+**Answer:** `areaCircle = pi * r * r;`.
+
+---
+
+# Question: If the radius entered is `3`, what is the output of the circle area program?
+
+**Answer:**
+
+```
+Radius: 3, Area: 28.27431
+```
+
+---
+
+# Question: In the example with string literals, what is the difference between `regularString` and `verbatimString`?
+
+**Answer:**
+
+* `regularString = "Hello, World!"` → processes escape sequences.
+* `verbatimString = @"C:\Users\Admin\Documents\"` → interprets backslashes literally.
+
+---
+
+# Question: What suffix must be added to a floating literal to indicate `float` type?
+
+**Answer:** `F` or `f`.
+
+---
+
+# Question: What is the default type of a floating-point literal in C#?
+
+**Answer:** `double`.
+
+---
+
+# Question: What suffix must be used for high-precision decimal literals?
+
+**Answer:** `M` or `m`.
+
+---
+
+# Question: What are the outputs of the floating-point literal example (`float`, `double`, `decimal`)?
+
+**Answer:**
+
+```
+Float Literal: 3.14
+Double Literal: 3.14159265359
+Decimal Literal: 3.14159265359
+```
+
+---
+
