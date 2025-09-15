@@ -251,6 +251,7 @@
 | `.modal-sm`      | Small modal                                   |
 
 ---
+
 # Question: List all Bootstrap 3 classes for **Pagination & Pager** with their description.
 
 ### Pagination & Pager
@@ -265,6 +266,28 @@
 | `.next`          | Pager link for next                 |
 | `.disabled`      | Disables a pagination or pager link |
 | `.active`        | Highlights the active page          |
+
+---
+
+
+# Question: List all Bootstrap 3 classes for **Panels** with their description.
+
+### Panels
+
+| Target Element   | Description                     |
+| ---------------- | ------------------------------- |
+| `.panel`         | Creates a panel                 |
+| `.panel-body`    | Content of the panel            |
+| `.panel-danger`  | Red panel (danger)              |
+| `.panel-default` | Default gray panel              |
+| `.panel-footer`  | Footer of the panel             |
+| `.panel-group`   | Groups multiple panels together |
+| `.panel-heading` | Heading of the panel            |
+| `.panel-info`    | Light blue panel (info)         |
+| `.panel-primary` | Blue panel (primary)            |
+| `.panel-success` | Green panel (success)           |
+| `.panel-title`   | Title text of the panel         |
+| `.panel-warning` | Yellow/orange panel (warning)   |
 
 ---
 
