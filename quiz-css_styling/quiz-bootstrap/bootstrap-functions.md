@@ -934,3 +934,206 @@ $(".left").click(function() {
 
 ---
 
+# Question: What are the features and usage of the Bootstrap JS Collapse plugin?
+
+### Collapse Plugin Classes
+
+| Class          | Description                                                   |
+| -------------- | ------------------------------------------------------------- |
+| `.collapse`    | Hides the content                                             |
+| `.collapse.in` | Shows the content                                             |
+| `.collapsing`  | Added when the transition starts and removed when it finishes |
+
+---
+
+### Using Collapse via `data-*` Attributes
+
+| Attribute                 | Description                                                                               |
+| ------------------------- | ----------------------------------------------------------------------------------------- |
+| `data-toggle="collapse"`  | Assigns the element as a collapse trigger                                                 |
+| `data-target="#demo"`     | Specifies the ID of the element to collapse/expand                                        |
+| `data-parent="#selector"` | Enables accordion-like behavior (collapses others under same parent when one is expanded) |
+
+**Example:**
+
+```html
+<button class="btn" data-toggle="collapse" data-target="#demo">Collapsible</button>
+<div id="demo" class="collapse">Some text..</div>
+```
+
+---
+
+### Using Collapse via JavaScript
+
+| Command                     | Description                                 |
+| --------------------------- | ------------------------------------------- |
+| `$('.collapse').collapse()` | Enables the collapse functionality manually |
+
+---
+
+### Collapse Options
+
+| Name   | Type     | Default | Description                                          |
+| ------ | -------- | ------- | ---------------------------------------------------- |
+| parent | selector | false   | Accordion behavior: closes others when one is opened |
+| toggle | boolean  | true    | Toggles the collapsible element upon invocation      |
+
+---
+
+### Collapse Methods
+
+| Method                | Description                      |
+| --------------------- | -------------------------------- |
+| `.collapse(options)`  | Activates with the given options |
+| `.collapse("toggle")` | Toggles the element visibility   |
+| `.collapse("show")`   | Explicitly shows the element     |
+| `.collapse("hide")`   | Explicitly hides the element     |
+
+---
+
+### Collapse Events
+
+| Event                | Description                                                   |
+| -------------------- | ------------------------------------------------------------- |
+| `show.bs.collapse`   | Triggered when the element is about to be shown               |
+| `shown.bs.collapse`  | Triggered when the element is fully shown (after transition)  |
+| `hide.bs.collapse`   | Triggered when the element is about to be hidden              |
+| `hidden.bs.collapse` | Triggered when the element is fully hidden (after transition) |
+
+---
+
+### Examples
+
+#### 1. Simple Collapsible
+
+```html
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
+  Simple collapsible
+</button>
+
+<div id="demo" class="collapse in">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+</div>
+```
+
+---
+
+#### 2. Collapsible Panel
+
+```html
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">Panel Body</div>
+      <div class="panel-footer">Panel Footer</div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+#### 3. Collapsible List Group
+
+```html
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <ul class="list-group">
+        <li class="list-group-item">One</li>
+        <li class="list-group-item">Two</li>
+        <li class="list-group-item">Three</li>
+      </ul>
+      <div class="panel-footer">Footer</div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+#### 4. Accordion
+
+```html
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Content for group 1</div>
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Content for group 2</div>
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Content for group 3</div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+#### 5. Expand and Collapse Toggle Icon & Text
+
+**JavaScript:**
+
+```js
+$(document).ready(function(){
+  $("#demo").on("hide.bs.collapse", function(){
+    $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
+  });
+  $("#demo").on("show.bs.collapse", function(){
+    $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
+  });
+});
+```
+
+**CSS:**
+
+```css
+/* Icon when the collapsible content is shown */
+.btn:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e114";
+}
+
+/* Icon when the collapsible content is hidden */
+.btn.collapsed:after {
+  content: "\e080";
+}
+```
+
+---
