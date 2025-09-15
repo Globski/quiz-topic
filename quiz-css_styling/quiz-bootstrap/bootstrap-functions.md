@@ -1335,3 +1335,136 @@ $(document).ready(function(){
 
 ---
 
+# Question: What are the features and usage of the Bootstrap JS Modal plugin?
+
+---
+
+### Modal Plugin Classes
+
+| Class            | Description                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| `.modal`         | Creates a modal                                                                            |
+| `.modal-content` | Styles the modal with border, background-color, etc. Includes the header, body, and footer |
+| `.modal-header`  | Defines the header area of the modal                                                       |
+| `.modal-body`    | Defines the main content area of the modal                                                 |
+| `.modal-footer`  | Defines the footer area of the modal (right-aligned by default)                            |
+| `.modal-sm`      | Specifies a small modal                                                                    |
+| `.modal-lg`      | Specifies a large modal                                                                    |
+| `.fade`          | Adds fade-in and fade-out transition effect                                                |
+
+---
+
+### Triggering the Modal via `data-*` Attributes
+
+| Attribute                | Description                                     |
+| ------------------------ | ----------------------------------------------- |
+| `data-toggle="modal"`    | Triggers the modal                              |
+| `data-target="#modalID"` | Specifies which modal to open                   |
+| `href="#modalID"`        | Used in `<a>` elements instead of `data-target` |
+
+**Example:**
+
+```html
+<!-- Buttons -->
+<button type="button" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Links -->
+<a data-toggle="modal" href="#myModal">Open Modal</a>
+
+<!-- Other elements -->
+<p data-toggle="modal" data-target="#myModal">Open Modal</p>
+```
+
+---
+
+### Triggering the Modal via JavaScript
+
+| Command                 | Description                    |
+| ----------------------- | ------------------------------ |
+| `$("#myModal").modal()` | Enables and displays the modal |
+
+---
+
+### Modal Options
+
+| Name     | Type                  | Default | Description                                                                                             |
+| -------- | --------------------- | ------- | ------------------------------------------------------------------------------------------------------- |
+| backdrop | boolean or `"static"` | true    | Whether modal has a backdrop: `true` (dark), `false` (transparent), `"static"` (click outside disabled) |
+| keyboard | boolean               | true    | Whether modal can be closed using the Esc key                                                           |
+| show     | boolean               | true    | Whether to show the modal when initialized                                                              |
+
+---
+
+### Modal Methods
+
+| Method             | Description                                |
+| ------------------ | ------------------------------------------ |
+| `.modal(options)`  | Activates the modal with the given options |
+| `.modal("toggle")` | Toggles visibility of the modal            |
+| `.modal("show")`   | Displays the modal                         |
+| `.modal("hide")`   | Hides the modal                            |
+
+---
+
+### Modal Events
+
+| Event             | Description                                                 |
+| ----------------- | ----------------------------------------------------------- |
+| `show.bs.modal`   | Triggered when the modal is about to be shown               |
+| `shown.bs.modal`  | Triggered when the modal is fully shown (after transition)  |
+| `hide.bs.modal`   | Triggered when the modal is about to be hidden              |
+| `hidden.bs.modal` | Triggered when the modal is fully hidden (after transition) |
+
+---
+
+### Example: Login Modal
+
+```html
+<div class="container">
+  <h2>Modal Login Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default btn-success btn-block">
+              <span class="glyphicon glyphicon-off"></span> Login
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
