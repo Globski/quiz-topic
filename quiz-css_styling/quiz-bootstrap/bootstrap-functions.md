@@ -1702,3 +1702,170 @@ $("#myNavbar a").on('click', function(event) {
 ```
 
 ---
+
+# Question: List some commonly used Bootstrap JS features grouped by their plugin category.
+
+---
+
+### Bootstrap JS Tab
+
+#### Tab Plugin Classes
+
+| Class            | Description                                                                       |
+| ---------------- | --------------------------------------------------------------------------------- |
+| `.nav nav-tabs`  | Creates navigation tabs                                                           |
+| `.nav-justified` | Makes tabs/pills equal width of parent on wider screens; stacked on small screens |
+| `.tab-content`   | Used with `.tab-pane` and `data-toggle="tab"` to make the tab toggleable          |
+| `.tab-pane`      | Used with `.tab-content` and `data-toggle="tab"` to make the tab toggleable       |
+
+#### Via `data-*` Attributes
+
+```html
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>HOME</h3>
+    <p>Some content.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Menu 1</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+</div>
+```
+
+#### Via JavaScript
+
+```js
+// Select all tabs
+$('.nav-tabs a').click(function(){
+  $(this).tab('show');
+});
+
+// Select tab by name
+$('.nav-tabs a[href="#home"]').tab('show');
+
+// Select first tab
+$('.nav-tabs a:first').tab('show');
+
+// Select last tab
+$('.nav-tabs a:last').tab('show');
+
+// Select fourth tab (index 3)
+$('.nav-tabs li:eq(3) a').tab('show');
+```
+
+#### Tab Methods
+
+| Method         | Description   |
+| -------------- | ------------- |
+| `.tab("show")` | Shows the tab |
+
+#### Tab Events
+
+| Event           | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| `show.bs.tab`   | Occurs when the tab is about to be shown                  |
+| `shown.bs.tab`  | Occurs when the tab is fully shown (after CSS transition) |
+| `hide.bs.tab`   | Occurs when the tab is about to be hidden                 |
+| `hidden.bs.tab` | Occurs when the tab is fully hidden (after transition)    |
+
+```js
+$('.nav-tabs a').on('shown.bs.tab', function(event){
+  var x = $(event.target).text();         // active tab
+  var y = $(event.relatedTarget).text();  // previous tab
+});
+```
+
+---
+
+### Bootstrap JS Tooltip
+
+#### Via `data-*` Attributes
+
+```html
+<a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+```
+
+#### Via JavaScript
+
+```js
+// Enable tooltips for all matching elements
+$('[data-toggle="tooltip"]').tooltip();
+
+// Enable tooltip for a specific element
+$('#myTooltip').tooltip();
+```
+
+#### Tooltip Options
+
+| Name      | Type             | Default                          | Description                                      |
+| --------- | ---------------- | -------------------------------- | ------------------------------------------------ |
+| animation | boolean          | true                             | Adds fade effect                                 |
+| container | string / boolean | false                            | Appends tooltip to specific element              |
+| delay     | number / object  | 0                                | Delay showing/hiding tooltip                     |
+| html      | boolean          | false                            | Accepts HTML in tooltip                          |
+| placement | string           | "top"                            | Tooltip position: top, bottom, left, right, auto |
+| selector  | string / boolean | false                            | Specifies a selector for delegated tooltip       |
+| template  | string           | `<div class="tooltip">...</div>` | Base HTML for tooltip                            |
+| title     | string           | ""                               | Tooltip text or HTML                             |
+| trigger   | string           | "hover focus"                    | How to trigger: click, hover, focus, manual      |
+| viewport  | string / object  | `{selector: "body", padding: 0}` | Keeps tooltip within bounds                      |
+
+#### Tooltip Methods
+
+| Method                | Description                    |
+| --------------------- | ------------------------------ |
+| `.tooltip(options)`   | Activates tooltip with options |
+| `.tooltip("show")`    | Shows tooltip                  |
+| `.tooltip("hide")`    | Hides tooltip                  |
+| `.tooltip("toggle")`  | Toggles tooltip                |
+| `.tooltip("destroy")` | Hides and destroys tooltip     |
+
+#### Tooltip Events
+
+| Event               | Description                            |
+| ------------------- | -------------------------------------- |
+| `show.bs.tooltip`   | When the tooltip is about to be shown  |
+| `shown.bs.tooltip`  | When the tooltip is fully shown        |
+| `hide.bs.tooltip`   | When the tooltip is about to be hidden |
+| `hidden.bs.tooltip` | When the tooltip is fully hidden       |
+
+#### Custom Tooltip Design (CSS Example)
+
+```css
+/* Tooltip */
+.test + .tooltip > .tooltip-inner {
+  background-color: #73AD21;
+  color: #FFFFFF;
+  border: 1px solid green;
+  padding: 15px;
+  font-size: 20px;
+}
+
+/* Tooltip on top */
+.test + .tooltip.top > .tooltip-arrow {
+  border-top: 5px solid green;
+}
+
+/* Tooltip on bottom */
+.test + .tooltip.bottom > .tooltip-arrow {
+  border-bottom: 5px solid blue;
+}
+
+/* Tooltip on left */
+.test + .tooltip.left > .tooltip-arrow {
+  border-left: 5px solid red;
+}
+
+/* Tooltip on right */
+.test + .tooltip.right > .tooltip-arrow {
+  border-right: 5px solid black;
+}
+```
+
+---
