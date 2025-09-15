@@ -53,6 +53,29 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Buttons** with their description.
+
+### Buttons
+
+| Target Element | Description                                                                    |
+| -------------- | ------------------------------------------------------------------------------ |
+| `.active`      | Adds a blue background color to simulate an active button                      |
+| `.btn`         | Creates a button                                                               |
+| `.btn-block`   | Creates a block-level button that spans the entire width of the parent element |
+| `.btn-danger`  | Red button, indicates danger                                                   |
+| `.btn-default` | Standard gray button (default style)                                           |
+| `.btn-info`    | Light blue button, indicates info                                              |
+| `.btn-lg`      | Large button                                                                   |
+| `.btn-link`    | Makes a button look like a link                                                |
+| `.btn-primary` | Blue button, indicates primary action                                          |
+| `.btn-sm`      | Small button                                                                   |
+| `.btn-success` | Green button, indicates success                                                |
+| `.btn-warning` | Yellow/orange button, indicates warning                                        |
+| `.btn-xs`      | Extra small button                                                             |
+| `.disabled`    | Disables a button                                                              |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
