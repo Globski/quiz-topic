@@ -195,6 +195,27 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Forms** with their description.
+
+### Forms
+
+| Target Element     | Description                                                      |
+| ------------------ | ---------------------------------------------------------------- |
+| `.checkbox`        | Styles checkboxes                                                |
+| `.checkbox-inline` | Styles checkboxes inline                                         |
+| `.form-control`    | Styles form elements (inputs, textareas, selects)                |
+| `.form-group`      | Wraps form controls with proper spacing                          |
+| `.form-inline`     | Displays form controls inline                                    |
+| `.form-horizontal` | Aligns labels and groups of form controls in a horizontal layout |
+| `.help-block`      | Block-level help text for form controls                          |
+| `.input-lg`        | Large input field                                                |
+| `.input-sm`        | Small input field                                                |
+| `.radio`           | Styles radio buttons                                             |
+| `.radio-inline`    | Styles radio buttons inline                                      |
+| `.static-control`  | Displays plain text instead of form field (non-editable text)    |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
