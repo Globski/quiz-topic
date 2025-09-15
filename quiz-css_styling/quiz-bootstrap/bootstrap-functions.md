@@ -216,6 +216,25 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Grid System** with their description.
+
+### Grid System
+
+| Target Element     | Description                                                                 |
+| ------------------ | --------------------------------------------------------------------------- |
+| `.col-xs-*`        | Defines columns for extra small devices (phones)                            |
+| `.col-sm-*`        | Defines columns for small devices (tablets)                                 |
+| `.col-md-*`        | Defines columns for medium devices (desktops)                               |
+| `.col-lg-*`        | Defines columns for large devices (large desktops)                          |
+| `.col-*-offset-*`  | Offsets columns                                                             |
+| `.col-*-push-*`    | Pushes columns                                                              |
+| `.col-*-pull-*`    | Pulls columns                                                               |
+| `.row`             | Creates a horizontal group of columns                                       |
+| `.container`       | Provides a responsive fixed-width container                                 |
+| `.container-fluid` | Provides a full-width container that spans the entire width of the viewport |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
