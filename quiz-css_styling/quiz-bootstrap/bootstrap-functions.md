@@ -1,3 +1,18 @@
+# Question: List all Bootstrap 3 classes for **Tables** with their description.
+
+### Tables
+
+| Target Element      | Description                                               |
+| ------------------- | --------------------------------------------------------- |
+| `.table`            | Creates a table                                           |
+| `.table-bordered`   | Adds borders to all sides of the table and cells          |
+| `.table-condensed`  | Makes tables more compact by cutting cell padding in half |
+| `.table-hover`      | Enables a hover state on table rows                       |
+| `.table-striped`    | Adds zebra-striping to rows (cross-browser)               |
+| `.table-responsive` | Makes tables horizontally scrollable on small devices     |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
