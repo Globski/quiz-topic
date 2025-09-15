@@ -165,6 +165,20 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Typography** with their description.
+
+### Typography
+
+| Target Element   | Description                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------- |
+| `.dl-horizontal` | Lines up terms and descriptions side-by-side                                       |
+| `.initialism`    | Displays abbreviations and acronyms in a slightly smaller font size                |
+| `.lead`          | Makes a paragraph stand out                                                        |
+| `.list-inline`   | Places all list items on a single line                                             |
+| `.list-unstyled` | Removes default list-style and left margin on list items (useful for nested lists) |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
