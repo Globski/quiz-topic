@@ -13,6 +13,46 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Navbar** with their description.
+
+### Navbar
+
+| Target Element         | Description                                                                                               |
+| ---------------------- | --------------------------------------------------------------------------------------------------------- |
+| `.navbar`              | Creates a navigation bar                                                                                  |
+| `.navbar-brand`        | Added to a link or a header element inside the navbar to represent a logo or a header                     |
+| `.navbar-default`      | Creates a default navigation bar                                                                          |
+| `.navbar-fixed-bottom` | Fixes the navigation bar to the bottom of the page                                                        |
+| `.navbar-fixed-top`    | Fixes the navigation bar to the top of the page                                                           |
+| `.navbar-form`         | Used on a form within the navbar for proper vertical alignment and collapsed behavior in narrow viewports |
+| `.navbar-header`       | Used for branding, toggle button, and other elements in the navbar header                                 |
+| `.navbar-inverse`      | Creates an inverted (dark) navigation bar                                                                 |
+| `.navbar-left`         | Aligns elements to the left side of the navbar                                                            |
+| `.navbar-nav`          | Adds navigation links to the navbar                                                                       |
+| `.navbar-right`        | Aligns elements to the right side of the navbar                                                           |
+| `.navbar-static-top`   | Places the navbar at the top of the page without fixing it when scrolling                                 |
+| `.navbar-text`         | Used to add vertical alignment and spacing for strings of text                                            |
+| `.navbar-toggle`       | Styles the button that toggles the navbar when collapsed                                                  |
+
+---
+
+# Question: List all Bootstrap 3 classes for **List Groups** with their description.
+
+### List Groups
+
+| Target Element             | Description                                                              |
+| -------------------------- | ------------------------------------------------------------------------ |
+| `.list-group`              | Creates a list group                                                     |
+| `.list-group-item`         | Defines an item in a list group                                          |
+| `.list-group-item-danger`  | Adds a red background to a list group item (indicates danger)            |
+| `.list-group-item-heading` | Used to add heading to a list group item                                 |
+| `.list-group-item-info`    | Adds a light blue background to a list group item (indicates info)       |
+| `.list-group-item-success` | Adds a green background to a list group item (indicates success)         |
+| `.list-group-item-text`    | Used to add text under a list group item heading                         |
+| `.list-group-item-warning` | Adds a yellow/orange background to a list group item (indicates warning) |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
