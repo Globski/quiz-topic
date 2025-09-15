@@ -130,6 +130,41 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Helpers** with their description.
+
+### Helpers
+
+| Target Element       | Description                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| `.bg-danger`         | Red background (danger)                                                             |
+| `.bg-info`           | Light blue background (info)                                                        |
+| `.bg-primary`        | Blue background (primary)                                                           |
+| `.bg-success`        | Green background (success)                                                          |
+| `.bg-warning`        | Yellow/orange background (warning)                                                  |
+| `.caret`             | Indicates dropdown functionality                                                    |
+| `.close`             | Styles the close (×) button                                                         |
+| `.pull-left`         | Floats an element to the left                                                       |
+| `.pull-right`        | Floats an element to the right                                                      |
+| `.show`              | Forces an element to be shown                                                       |
+| `.sr-only`           | Hides an element visually but keeps it accessible to screen readers                 |
+| `.sr-only-focusable` | Makes `.sr-only` elements focusable when using keyboard navigation                  |
+| `.text-center`       | Aligns text to the center                                                           |
+| `.text-danger`       | Red text (danger)                                                                   |
+| `.text-hide`         | Hides text but keeps it accessible (used for replacing text with background images) |
+| `.text-info`         | Light blue text (info)                                                              |
+| `.text-justify`      | Justifies text                                                                      |
+| `.text-left`         | Aligns text to the left                                                             |
+| `.text-lowercase`    | Transforms text to lowercase                                                        |
+| `.text-muted`        | Muted (gray) text                                                                   |
+| `.text-primary`      | Blue text (primary)                                                                 |
+| `.text-right`        | Aligns text to the right                                                            |
+| `.text-success`      | Green text (success)                                                                |
+| `.text-uppercase`    | Transforms text to uppercase                                                        |
+| `.text-warning`      | Yellow/orange text (warning)                                                        |
+| `.text-capitalize`   | Capitalizes the first letter of each word                                           |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
