@@ -76,6 +76,23 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Button Groups** with their description.
+
+### Button Groups
+
+| Target Element         | Description                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------- |
+| `.active`              | Adds a blue background color to simulate a "pressed" button inside a button group     |
+| `.btn-group`           | Creates a button group                                                                |
+| `.btn-group-justified` | Makes a group of buttons span the entire width of the parent element (equal width)    |
+| `.btn-group-lg`        | Large button group                                                                    |
+| `.btn-group-sm`        | Small button group                                                                    |
+| `.btn-group-vertical`  | Makes a group of buttons stack vertically instead of horizontally                     |
+| `.btn-group-xs`        | Extra small button group                                                              |
+| `.btn-toolbar`         | Combines sets of `<div class="btn-group">` into a toolbar for more complex components |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
