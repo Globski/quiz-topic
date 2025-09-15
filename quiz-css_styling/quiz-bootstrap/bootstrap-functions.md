@@ -1573,3 +1573,132 @@ The **Popover** plugin adds small overlay content boxes, similar to tooltips, bu
 
 ---
 
+## Bootstrap JS Scrollspy
+
+The **Scrollspy** plugin automatically updates navigation links based on scroll position. Often paired with the Affix plugin for sticky navigation.
+
+---
+
+### Basic Usage
+
+#### Via `data-*` Attributes
+
+```html
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li><a href="#section1">Section 1</a></li>
+      ...
+    </ul>
+  </nav>
+
+  <div id="section1">
+    <h1>Section 1</h1>
+    <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+  </div>
+
+</body>
+```
+
+* `data-spy="scroll"`: Activates the scrollspy behavior.
+* `data-target=".navbar"`: Connects scrollspy to the nav.
+* `data-offset="50"` (optional): Adjusts the offset for activation.
+* Note: The scrollable element should use `position: relative`.
+
+#### Via JavaScript
+
+```javascript
+$('body').scrollspy({ target: ".navbar" });
+```
+
+---
+
+### Options
+
+| Name   | Type   | Default | Description                                                     |
+| ------ | ------ | ------- | --------------------------------------------------------------- |
+| offset | number | 10      | Pixels to offset from the top when calculating scroll position. |
+
+```html
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+```
+
+---
+
+### Methods
+
+| Method                  | Description                                    |
+| ----------------------- | ---------------------------------------------- |
+| `.scrollspy("refresh")` | Refreshes the document when DOM changes occur. |
+
+```javascript
+$('body').scrollspy('refresh');
+```
+
+---
+
+### Events
+
+| Event                   | Description                         |
+| ----------------------- | ----------------------------------- |
+| `activate.bs.scrollspy` | Fires when a new item is activated. |
+
+```javascript
+$('#myNavbar').on('activate.bs.scrollspy', function () {
+  console.log("New section activated.");
+});
+```
+
+---
+
+### Example: Smooth Scrolling with Scrollspy
+
+```javascript
+$('body').scrollspy({ target: ".navbar", offset: 50 });
+
+$("#myNavbar a").on('click', function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    const hash = this.hash;
+
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function() {
+      window.location.hash = hash;
+    });
+  }
+});
+```
+
+---
+
+### Scrollspy + Affix
+
+#### Horizontal Menu (Navbar)
+
+```html
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+    ...
+  </nav>
+
+</body>
+```
+
+#### Vertical Menu (Sidenav)
+
+```html
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+
+  <nav class="col-sm-3" id="myScrollspy">
+    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+      ...
+    </ul>
+  </nav>
+
+</body>
+```
+
+---
