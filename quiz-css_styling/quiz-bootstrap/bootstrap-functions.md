@@ -179,6 +179,22 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Carousel** with their description.
+
+### Carousel
+
+| Target Element         | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| `.carousel`            | Creates a carousel                              |
+| `.carousel-caption`    | Adds a caption text inside the carousel         |
+| `.carousel-control`    | Adds controls (prev/next) to the carousel       |
+| `.carousel-indicators` | Adds indicators (small circles) to the carousel |
+| `.carousel-inner`      | Wrapper for slides inside the carousel          |
+| `.item`                | Defines an item/slide inside the carousel       |
+| `.slide`               | Adds sliding animation to the carousel          |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
