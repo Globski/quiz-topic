@@ -2395,3 +2395,291 @@ Decimal Literal: 3.14159265359
 
 ---
 
+# Question: What is an operator in C#?
+
+**Answer:** An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations.
+
+---
+
+# Question: What are the main categories of operators in C#?
+
+**Answer:** Arithmetic, Relational, Logical, Bitwise, Assignment, Miscellaneous operators.
+
+---
+
+# Question: What do arithmetic operators in C# do?
+
+**Answer:** They perform mathematical operations such as addition, subtraction, multiplication, division, and modulus between numeric data types.
+
+# Question: Are arithmetic operators in C# unary or binary?
+
+**Answer:** They are binary operators, requiring two operands, except for increment (`++`) and decrement (`--`).
+
+# Question: What is the result of `A + B` if `A = 10` and `B = 20`?
+
+**Answer:** 30
+
+# Question: What does the operator `-` do? Example with A=10, B=20.
+
+**Answer:** Subtracts the second operand from the first. `A - B = -10`.
+
+# Question: What is the result of `A * B` when A=10, B=20?
+
+**Answer:** 200
+
+# Question: What does the `/` operator do? Example B=20, A=10.
+
+**Answer:** Divides numerator by denominator. `B / A = 2`.
+
+# Question: What is the modulus operator `%` used for? Example B=20, A=10.
+
+**Answer:** It returns the remainder after integer division. `B % A = 0`.
+
+# Question: What does `++` do in C#? Example `A=10`.
+
+**Answer:** Increments integer value by one. `A++ = 11`.
+
+# Question: What does `--` do in C#? Example `A=10`.
+
+**Answer:** Decrements integer value by one. `A-- = 9`.
+
+# Question: In the example with `x=10`, `y=4`, what is the result of `x % y`?
+
+**Answer:** 2
+
+---
+
+# Question: What do relational operators return in C#?
+
+**Answer:** They return `true` or `false`.
+
+# Question: What does `==` check? Example `A=10`, `B=20`.
+
+**Answer:** Checks if two operands are equal. `(A == B)` is false.
+
+# Question: What does `!=` check? Example `A=10`, `B=20`.
+
+**Answer:** Checks if operands are not equal. `(A != B)` is true.
+
+# Question: What does `>` check? Example `A=10`, `B=20`.
+
+**Answer:** Checks if left operand is greater than right. `(A > B)` is false.
+
+# Question: What does `<` check? Example `A=10`, `B=20`.
+
+**Answer:** Checks if left operand is less than right. `(A < B)` is true.
+
+# Question: What does `>=` check? Example `A=10`, `B=20`.
+
+**Answer:** Checks if left operand is greater than or equal to right. `(A >= B)` is false.
+
+# Question: What does `<=` check? Example `A=10`, `B=20`.
+
+**Answer:** Checks if left operand is less than or equal to right. `(A <= B)` is true.
+
+# Question: In the example with `a=20`, `b=15`, what is the result of `a > b`?
+
+**Answer:** True
+
+# Question: In the same example, what is the result of `a == b`?
+
+**Answer:** False
+
+---
+
+# Question: What do logical operators operate on in C#?
+
+**Answer:** Boolean expressions, returning true or false.
+
+# Question: What does `&&` do? Example A=true, B=false.
+
+**Answer:** Logical AND, true if both operands are true. `(A && B)` is false.
+
+# Question: What does `||` do? Example A=true, B=false.
+
+**Answer:** Logical OR, true if any operand is true. `(A || B)` is true.
+
+# Question: What does `!` do? Example A=true.
+
+**Answer:** Logical NOT, reverses the operand’s value. `!A` is false.
+
+# Question: In the example with `x=true`, `y=false`, what is the output of `!x`?
+
+**Answer:** False
+
+---
+
+# Question: What do bitwise operators operate on?
+
+**Answer:** They perform operations bit by bit on operands.
+
+# Question: What is the binary representation of A=60 and B=13?
+
+**Answer:** A = `0011 1100`, B = `0000 1101`.
+
+# Question: What is `A & B` if A=60, B=13?
+
+**Answer:** 12 (`0000 1100`).
+
+# Question: What is `A | B` if A=60, B=13?
+
+**Answer:** 61 (`0011 1101`).
+
+# Question: What is `A ^ B` if A=60, B=13?
+
+**Answer:** 49 (`0011 0001`).
+
+# Question: What is `~A` if A=60?
+
+**Answer:** -61 (`1100 0011` in two’s complement).
+
+# Question: What is `A << 2` if A=60?
+
+**Answer:** 240 (`1111 0000`).
+
+# Question: What is `A >> 2` if A=60?
+
+**Answer:** 15 (`0000 1111`).
+
+# Question: In the example with `a=5`, `b=3`, what is `a & b`?
+
+**Answer:** 1
+
+# Question: In the same example, what is `a | b`?
+
+**Answer:** 7
+
+---
+
+# Question: What does the `=` operator do?
+
+**Answer:** Assigns values from right-hand operand to left-hand operand.
+
+# Question: What does `+=` do? Example `C += A`.
+
+**Answer:** Adds right operand to left and assigns the result. Equivalent to `C = C + A`.
+
+# Question: What does `-=` do? Example `C -= A`.
+
+**Answer:** Subtracts right operand from left and assigns the result.
+
+# Question: What does `*=` do? Example `C *= A`.
+
+**Answer:** Multiplies and assigns. Equivalent to `C = C * A`.
+
+# Question: What does `/=` do? Example `C /= A`.
+
+**Answer:** Divides left operand by right and assigns the result.
+
+# Question: What does `%=` do? Example `C %= A`.
+
+**Answer:** Takes modulus and assigns result.
+
+# Question: What does `<<=` do? Example `C <<= 2`.
+
+**Answer:** Left shifts and assigns. Equivalent to `C = C << 2`.
+
+# Question: What does `>>=` do? Example `C >>= 2`.
+
+**Answer:** Right shifts and assigns. Equivalent to `C = C >> 2`.
+
+# Question: What does `&=` do? Example `C &= 2`.
+
+**Answer:** Bitwise AND and assign.
+
+# Question: What does `^=` do? Example `C ^= 2`.
+
+**Answer:** Bitwise XOR and assign.
+
+# Question: What does `|=` do? Example `C |= 2`.
+
+**Answer:** Bitwise OR and assign.
+
+# Question: In the example with `num=10; num+=5;`, what is the output?
+
+**Answer:** 15
+
+---
+
+# Question: What does the ternary operator `?:` do in C#?
+
+**Answer:** Performs conditional check, shorthand for if-else.
+
+# Question: In the example with `age=18`, what is the result of `(age >= 18) ? "Eligible to vote" : "Not eligible"`?
+
+**Answer:** "Eligible to vote".
+
+---
+
+# Question: What does `sizeof()` return? Example `sizeof(int)`.
+
+**Answer:** Returns size of a data type. `sizeof(int)` = 4.
+
+# Question: What does `typeof()` return? Example `typeof(StreamReader)`.
+
+**Answer:** Returns the type of a class.
+
+# Question: What does `&` operator return in C# (when used with variables)?
+
+**Answer:** The memory address of a variable.
+
+# Question: What does `*` operator do in C#?
+
+**Answer:** Declares a pointer to a variable.
+
+# Question: What does `is` operator check? Example `obj is string`.
+
+**Answer:** Determines whether an object is of a certain type.
+
+# Question: What does `as` operator do?
+
+**Answer:** Performs safe casting without raising exception if cast fails.
+
+# Question: What does `nameof` operator return?
+
+**Answer:** The name of a variable, type, or member as a string.
+
+# Question: In the example, what is the result of `number as string` if `number = 42`?
+
+**Answer:** `null`, so `"Conversion failed"` is printed.
+
+---
+
+# Question: What determines the grouping of terms in an expression?
+
+**Answer:** Operator precedence.
+
+# Question: Which operator has higher precedence: `*` or `+`?
+
+**Answer:** `*` (multiplication).
+
+# Question: In `x = 7 + 3 * 2`, what is the value of x?
+
+**Answer:** 13 (multiplication before addition).
+
+# Question: What is the associativity of postfix operators in C#?
+
+**Answer:** Left to right.
+
+# Question: What is the associativity of unary operators?
+
+**Answer:** Right to left.
+
+# Question: What is the associativity of assignment operators?
+
+**Answer:** Right to left.
+
+# Question: What is the associativity of multiplicative, additive, and shift operators?
+
+**Answer:** Left to right.
+
+# Question: In the precedence example, what is the result of `(a + b) * c / d` when a=20, b=10, c=15, d=5?
+
+**Answer:** 90
+
+# Question: What is the result of `((a + b) * c) / d` with same values?
+
+**Answer:** 90
+
+---
+
