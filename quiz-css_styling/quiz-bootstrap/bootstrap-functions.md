@@ -1468,3 +1468,108 @@ $(document).ready(function(){
 
 ---
 
+# Question: How does the Bootstrap JS Popover plugin work and what options/methods/events does it support?
+
+### Bootstrap JS Popover Overview
+
+The **Popover** plugin adds small overlay content boxes, similar to tooltips, but with more rich content support. It **requires** the **Tooltip plugin** to be included.
+
+---
+
+### Usage: Data Attributes
+
+| Attribute               | Description                                       |
+| ----------------------- | ------------------------------------------------- |
+| `data-toggle="popover"` | Activates the popover                             |
+| `title`                 | Sets the header text of the popover               |
+| `data-content`          | Sets the text displayed inside the popover's body |
+
+**Example:**
+
+```html
+<a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+```
+
+---
+
+### Usage: JavaScript Initialization
+
+| Code                                      | Description                                           |
+| ----------------------------------------- | ----------------------------------------------------- |
+| `$(‘[data-toggle="popover"]’).popover();` | Initializes all elements with `data-toggle="popover"` |
+| `$('#myPopover').popover();`              | Initializes popover on a specific element             |
+
+---
+
+### Popover Options
+
+| Name        | Type                 | Default                           | Description                                                            |
+| ----------- | -------------------- | --------------------------------- | ---------------------------------------------------------------------- |
+| `animation` | `boolean`            | `true`                            | Adds a fade transition when opening/closing                            |
+| `container` | `string` or `false`  | `false`                           | Appends the popover to a specific element                              |
+| `content`   | `string`             | `""`                              | Content inside the popover body                                        |
+| `delay`     | `number` or `object` | `0`                               | Delay in milliseconds to show/hide popover. `{ show: 500, hide: 100 }` |
+| `html`      | `boolean`            | `false`                           | Allows HTML content in the popover                                     |
+| `placement` | `string`             | `"right"`                         | Position of the popover: `top`, `bottom`, `left`, `right`, or `auto`   |
+| `selector`  | `string` or `false`  | `false`                           | Adds the popover to specified selector                                 |
+| `template`  | `string`             | Base HTML template of the popover | Customizes the structure and styling                                   |
+| `title`     | `string`             | `""`                              | Header text of the popover                                             |
+| `trigger`   | `string`             | `"click"`                         | Trigger event: `click`, `hover`, `focus`, `manual`                     |
+| `viewport`  | `string` or `object` | `{selector: "body", padding: 0}`  | Element boundary for the popover                                       |
+
+---
+
+### Popover Methods
+
+| Method                | Description                              |
+| --------------------- | ---------------------------------------- |
+| `.popover(options)`   | Activates the popover with configuration |
+| `.popover("show")`    | Shows the popover                        |
+| `.popover("hide")`    | Hides the popover                        |
+| `.popover("toggle")`  | Toggles the popover                      |
+| `.popover("destroy")` | Hides and removes the popover            |
+
+---
+
+### Popover Events
+
+| Event               | Description                                 |
+| ------------------- | ------------------------------------------- |
+| `show.bs.popover`   | Triggered before the popover is shown       |
+| `shown.bs.popover`  | Triggered after the popover is fully shown  |
+| `hide.bs.popover`   | Triggered before the popover is hidden      |
+| `hidden.bs.popover` | Triggered after the popover is fully hidden |
+
+---
+
+### Custom Popover Design (CSS)
+
+```css
+/* Popover container */
+.popover {
+  border: 2px dotted red;
+}
+
+/* Popover header */
+.popover-title {
+  background-color: #73AD21;
+  color: #FFFFFF;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Popover body */
+.popover-content {
+  background-color: coral;
+  color: #FFFFFF;
+  padding: 25px;
+}
+
+/* Popover arrow */
+.arrow {
+  border-right-color: red !important;
+}
+```
+
+---
+
