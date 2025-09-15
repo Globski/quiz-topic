@@ -93,6 +93,17 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Glyphicons** with their description.
+
+### Glyphicons
+
+| Target Element | Description                                                                                |
+| -------------- | ------------------------------------------------------------------------------------------ |
+| `.glyphicon`   | Base class for all glyphicons                                                              |
+| `.glyphicon-*` | Specific icons (e.g., `.glyphicon-search`, `.glyphicon-user`, `.glyphicon-envelope`, etc.) |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
