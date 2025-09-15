@@ -104,6 +104,22 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Alerts** with their description.
+
+### Alert
+
+| Target Element       | Description                                |
+| -------------------- | ------------------------------------------ |
+| `.alert`             | Creates an alert box                       |
+| `.alert-danger`      | Red alert box, indicates danger            |
+| `.alert-dismissable` | Makes the alert closable with an × button  |
+| `.alert-info`        | Light blue alert box, indicates info       |
+| `.alert-link`        | Styles links inside alerts                 |
+| `.alert-success`     | Green alert box, indicates success         |
+| `.alert-warning`     | Yellow/orange alert box, indicates warning |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
