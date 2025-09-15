@@ -235,6 +235,23 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Modals** with their description.
+
+### Modals
+
+| Target Element   | Description                                   |
+| ---------------- | --------------------------------------------- |
+| `.modal`         | Creates a modal                               |
+| `.modal-body`    | Defines the body of the modal                 |
+| `.modal-content` | Container for modal content                   |
+| `.modal-dialog`  | Wrapper that sets the modal size and position |
+| `.modal-footer`  | Footer of the modal (for actions)             |
+| `.modal-header`  | Header of the modal (title and close button)  |
+| `.modal-lg`      | Large modal                                   |
+| `.modal-sm`      | Small modal                                   |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
