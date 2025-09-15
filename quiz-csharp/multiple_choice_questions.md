@@ -1591,3 +1591,280 @@ float price = 100.99f;
 **Answer:** Type conversion is also known as type casting.
 
 ---
+
+# Question: What are the two forms of type casting in C#?
+
+**Answer:** Implicit type conversion and explicit type conversion.
+
+---
+
+# Question: Who performs implicit type conversions in C#?
+
+**Answer:** The C# compiler performs implicit conversions automatically.
+
+---
+
+# Question: When does implicit type conversion occur?
+
+**Answer:** It occurs when a value can be safely converted from a smaller type to a larger type, or from a derived class to a base class, without data loss.
+
+---
+
+# Question: In the example `int myInt = 9; double myDouble = myInt;`, what kind of type casting is being demonstrated?
+
+**Answer:** Implicit type conversion (automatic casting).
+
+---
+
+# Question: What are the outputs of the implicit conversion example where `int myInt = 9;` is converted to `double myDouble`?
+
+**Answer:**
+
+```
+9  
+9  
+```
+
+---
+
+# Question: What is required for explicit type conversion in C#?
+
+**Answer:** A cast operator must be used by the programmer.
+
+---
+
+# Question: In the example `double d = 5673.74; int i = (int)d;`, what happens to the decimal part of `d` after conversion?
+
+**Answer:** The decimal part is truncated, and only the integer portion remains (`5673`).
+
+---
+
+# Question: What is the output of the explicit conversion example where `double 5673.74` is cast to `int`?
+
+**Answer:**
+
+```
+5673  
+```
+
+---
+
+# Question: In the example `int myInt = 10; float myFloat = (float) myInt;`, what type of conversion is shown?
+
+**Answer:** Explicit type conversion (manual casting).
+
+---
+
+# Question: What are the outputs when `int myInt = 10;` is explicitly cast to `float myFloat`?
+
+**Answer:**
+
+```
+10  
+10  
+```
+
+---
+
+# Question: What is the purpose of the `Convert` class in C#?
+
+**Answer:** The `Convert` class provides methods to explicitly convert between different data types.
+
+---
+
+# Question: In the example `string str = "123"; int num = Convert.ToInt32(str);`, what type of conversion is being demonstrated?
+
+**Answer:** String to integer conversion using the `Convert` class.
+
+---
+
+# Question: What is the output of the `Convert.ToInt32("123")` example?
+
+**Answer:**
+
+```
+123  
+```
+
+---
+
+# Question: What does the `Parse()` method do in C#?
+
+**Answer:** It converts a string representation of a number into its respective numeric data type.
+
+---
+
+# Question: In the example `string str = "456"; int num = int.Parse(str);`, what is the output?
+
+**Answer:**
+
+```
+456  
+```
+
+---
+
+# Question: What is the difference between `Parse()` and `TryParse()`?
+
+**Answer:** `Parse()` throws an exception if conversion fails, while `TryParse()` returns a boolean indicating success or failure without throwing an exception.
+
+---
+
+# Question: What does the `TryParse()` method return if the conversion is successful?
+
+**Answer:** It returns `true` and assigns the converted value to the output variable.
+
+---
+
+# Question: What does the `TryParse()` method return if the conversion fails?
+
+**Answer:** It returns `false` and does not modify the output variable.
+
+---
+
+# Question: In the example `int.TryParse("789", out int result)`, what are the console outputs if conversion succeeds?
+
+**Answer:**
+
+```
+789  
+```
+
+---
+
+# Question: List three scenarios where implicit type conversion occurs in C#.
+
+**Answer:**
+
+1. Converting from a smaller to a larger integral type.
+2. Converting from `int` to `double`.
+3. Converting from derived classes to base classes.
+
+---
+
+# Question: Which type conversion method would you use if you want to safely attempt converting a string without risking an exception?
+
+**Answer:** The `TryParse()` method.
+
+---
+
+# Question: What is the difference between `Convert.ToInt32()` and `int.Parse()`?
+
+**Answer:** Both convert strings to integers, but `Convert.ToInt32()` can handle `null` values (returns `0`), while `int.Parse()` throws an exception on `null`.
+
+---
+
+# Question: What does `ToBoolean()` do in C# type conversion?
+
+**Answer:** Converts a type to a Boolean value, if possible.
+
+---
+
+# Question: What does `ToByte()` do in C# type conversion?
+
+**Answer:** Converts a type to a byte.
+
+---
+
+# Question: What does `ToChar()` do in C# type conversion?
+
+**Answer:** Converts a type to a single Unicode character, where possible.
+
+---
+
+# Question: What does `ToDateTime()` do in C# type conversion?
+
+**Answer:** Converts a type (integer or string) to a DateTime structure.
+
+---
+
+# Question: What does `ToDecimal()` do in C# type conversion?
+
+**Answer:** Converts a floating-point or integer type to a decimal type.
+
+---
+
+# Question: What does `ToDouble()` do in C# type conversion?
+
+**Answer:** Converts a type to a double type.
+
+---
+
+# Question: What does `ToInt16()` do in C# type conversion?
+
+**Answer:** Converts a type to a 16-bit integer.
+
+---
+
+# Question: What does `ToInt32()` do in C# type conversion?
+
+**Answer:** Converts a type to a 32-bit integer.
+
+---
+
+# Question: What does `ToInt64()` do in C# type conversion?
+
+**Answer:** Converts a type to a 64-bit integer.
+
+---
+
+# Question: What does `ToSByte()` do in C# type conversion?
+
+**Answer:** Converts a type to a signed byte type.
+
+---
+
+# Question: What does `ToSingle()` do in C# type conversion?
+
+**Answer:** Converts a type to a small floating-point number.
+
+---
+
+# Question: What does `ToString()` do in C# type conversion?
+
+**Answer:** Converts a type to a string.
+
+---
+
+# Question: What does `ToType()` do in C# type conversion?
+
+**Answer:** Converts a type to a specified type.
+
+---
+
+# Question: What does `ToUInt16()` do in C# type conversion?
+
+**Answer:** Converts a type to an unsigned 16-bit integer.
+
+---
+
+# Question: What does `ToUInt32()` do in C# type conversion?
+
+**Answer:** Converts a type to an unsigned 32-bit integer.
+
+---
+
+# Question: What does `ToUInt64()` do in C# type conversion?
+
+**Answer:** Converts a type to an unsigned 64-bit integer.
+
+---
+
+# Question: In the example `int i = 75; float f = 53.005f; double d = 2345.7652; bool b = true; Console.WriteLine(i.ToString()); ...`, what conversion method is used?
+
+**Answer:** `ToString()` method.
+
+---
+
+# Question: What are the outputs of converting `75`, `53.005f`, `2345.7652`, and `true` to strings?
+
+**Answer:**
+
+```
+75  
+53.005  
+2345.7652  
+True  
+```
+
+---
