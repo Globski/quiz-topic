@@ -1137,3 +1137,201 @@ $(document).ready(function(){
 ```
 
 ---
+
+# Question: What are the features and usage of the Bootstrap JS Dropdown plugin?
+
+---
+
+### Dropdown Plugin Classes
+
+| Class                  | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| `.dropdown`            | Indicates a dropdown menu                       |
+| `.dropdown-menu`       | Builds the dropdown menu                        |
+| `.dropdown-menu-right` | Right-aligns a dropdown menu                    |
+| `.dropdown-header`     | Adds a header inside the dropdown menu          |
+| `.dropup`              | Indicates a dropup menu                         |
+| `.disabled`            | Disables an item in the dropdown menu           |
+| `.divider`             | Separates items inside the dropdown with a line |
+
+---
+
+### Using Dropdown via `data-*` Attributes
+
+| Attribute                | Description                                             |
+| ------------------------ | ------------------------------------------------------- |
+| `data-toggle="dropdown"` | Applied to a link or button to toggle the dropdown menu |
+
+**Example:**
+
+```html
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Example</a>
+```
+
+---
+
+### Using Dropdown via JavaScript
+
+| Command                             | Description                             |
+| ----------------------------------- | --------------------------------------- |
+| `$('.dropdown-toggle').dropdown();` | Manually enables dropdown functionality |
+
+> **Note:** The `data-toggle="dropdown"` attribute is required even when using JavaScript.
+
+---
+
+### Dropdown Options
+
+| Option | Description                                          |
+| ------ | ---------------------------------------------------- |
+| *None* | Bootstrap dropdowns do not accept additional options |
+
+---
+
+### Dropdown Methods
+
+| Method                | Description          |
+| --------------------- | -------------------- |
+| `.dropdown("toggle")` | Toggles the dropdown |
+
+---
+
+### Dropdown Events
+
+| Event                | Description                              |
+| -------------------- | ---------------------------------------- |
+| `show.bs.dropdown`   | Fires just before the dropdown is shown  |
+| `shown.bs.dropdown`  | Fires once the dropdown is fully shown   |
+| `hide.bs.dropdown`   | Fires just before the dropdown is hidden |
+| `hidden.bs.dropdown` | Fires once the dropdown is fully hidden  |
+
+**Tip:** Use jQuery’s `event.relatedTarget` to get the element that triggered the dropdown.
+
+**Example:**
+
+```js
+$(".dropdown").on("show.bs.dropdown", function(event){
+  var x = $(event.relatedTarget).text();
+  alert(x);
+});
+```
+
+---
+
+### Examples
+
+#### 1. Change the Caret Icon When Toggled
+
+**CSS:**
+
+```css
+.caret.caret-up {
+  border-top-width: 0;
+  border-bottom: 4px solid #fff;
+}
+```
+
+**JavaScript:**
+
+```js
+$(document).ready(function(){
+  $(".dropdown").on("hide.bs.dropdown", function(){
+    $(".btn").html('Dropdown <span class="caret"></span>');
+  });
+  $(".dropdown").on("show.bs.dropdown", function(){
+    $(".btn").html('Dropdown <span class="caret caret-up"></span>');
+  });
+});
+```
+
+---
+
+#### 2. Navbar With Dropdown
+
+```html
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+```
+
+---
+
+#### 3. Dropdown With Login Form in Navbar
+
+```html
+<ul class="nav navbar-nav navbar-right">
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login 
+      <span class="glyphicon glyphicon-log-in"></span></a>
+    <div class="dropdown-menu">
+      <form id="formlogin" class="form container-fluid">
+        <div class="form-group">
+          <label for="usr">Name:</label>
+          <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <button type="button" id="btnLogin" class="btn btn-block">Login</button>
+      </form>
+      <div class="container-fluid">
+        <a class="small" href="#">Forgot password?</a>
+      </div>
+    </div>
+  </li>
+</ul>
+```
+
+---
+
+#### 4. Multi-Level Dropdowns
+
+**JavaScript:**
+
+```js
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+```
+
+**CSS:**
+
+```css
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+```
+
+---
+
