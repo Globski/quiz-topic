@@ -120,6 +120,16 @@
 
 ---
 
+# Question: List all Bootstrap 3 classes for **Badges** with their description.
+
+### Badges
+
+| Target Element | Description     |
+| -------------- | --------------- |
+| `.badge`       | Creates a badge |
+
+---
+
 # Question: List Bootstrap CSS Typography elements and classes grouped by their category.
 
 ### Bootstrap's Default Typography Settings
