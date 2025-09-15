@@ -1868,3 +1868,221 @@ True
 ```
 
 ---
+
+# Question: What are variables in C#?
+
+**Answer:** Variables in C# are containers that store data and allow access and manipulation of that data during program execution.
+
+---
+
+# Question: Why must a variable in C# be declared with a specific data type?
+
+**Answer:** Because the data type defines the kind of value the variable can store.
+
+---
+
+# Question: What are the three main reasons variables are important in C#?
+
+**Answer:**
+
+1. Data storage
+2. Data manipulation
+3. Program flow control
+
+---
+
+# Question: What is the basic syntax for declaring a variable in C#?
+
+**Answer:**
+
+```csharp
+<data_type> <variable_name>;
+```
+
+---
+
+# Question: Give an example of declaring an `int` and a `string` variable in C#.
+
+**Answer:**
+
+```csharp
+int age;
+string name;
+```
+
+---
+
+# Question: How do you initialize a variable at the time of declaration in C#?
+
+**Answer:** By assigning a value along with its declaration, e.g.,
+
+```csharp
+int age = 21;
+string name = "Zoya";
+bool isActive = true;
+```
+
+---
+
+# Question: Can a variable in C# be assigned a value after its declaration? Provide an example.
+
+**Answer:** Yes, e.g.:
+
+```csharp
+int age;
+age = 25;
+```
+
+---
+
+# Question: What are primitive variables in C#? Give examples.
+
+**Answer:** Primitive variables are basic data types such as `int`, `float`, `char`, and `bool`. Example:
+
+```csharp
+int number = 10;
+double pi = 3.14;
+```
+
+---
+
+# Question: What are reference variables in C#? Give examples.
+
+**Answer:** Reference variables hold references to objects in memory, such as arrays and classes. Example:
+
+```csharp
+string name = "Alice";
+int[] numbers = new int[] { 1, 2, 3 };
+```
+
+---
+
+# Question: What are constants in C#?
+
+**Answer:** Constants are variables whose values cannot be changed once assigned.
+
+---
+
+# Question: Give an example of declaring a constant in C#.
+
+**Answer:**
+
+```csharp
+const double PI = 3.14159;
+```
+
+---
+
+# Question: What are nullable variables in C#? Provide an example.
+
+**Answer:** Nullable variables can hold `null` values in addition to their type values. Example:
+
+```csharp
+int? age = null;
+```
+
+---
+
+# Question: What naming convention is recommended for local variables in C#?
+
+**Answer:** camelCase (e.g., `studentAge`).
+
+---
+
+# Question: What naming convention is recommended for class-level variables in C#?
+
+**Answer:** PascalCase (e.g., `StudentName`).
+
+---
+
+# Question: Why should variables be initialized before use?
+
+**Answer:** To avoid unexpected results or runtime errors.
+
+---
+
+# Question: Why should variable scope be limited?
+
+**Answer:** To improve readability, maintainability, and prevent unintended access to variables.
+
+---
+
+# Question: When should constants be used?
+
+**Answer:** When values are fixed and not expected to change during program execution, for clarity and performance.
+
+---
+
+# Question: In the example storing user information, what variables are declared?
+
+**Answer:**
+
+```csharp
+string firstName = "Sudhir";
+string lastName = "Sharma";
+int userAge = 28;
+```
+
+---
+
+# Question: What is the output of the example storing user information?
+
+**Answer:**
+
+```
+User: Sudhir Sharma
+Age: 28
+```
+
+---
+
+# Question: In the simple arithmetic example, how is the total number of clothes calculated?
+
+**Answer:** By adding the number of shirts and trousers:
+
+```csharp
+int totalClothes = shirts + trousers;
+```
+
+---
+
+# Question: What is the output of the simple arithmetic example with `shirts = 12` and `trousers = 8`?
+
+**Answer:**
+
+```
+Total number of clothes: 20
+```
+
+---
+
+# Question: Why is mastering variables in C# important for developers?
+
+**Answer:** Because variables are foundational for storing, manipulating, and managing data, which helps build efficient and maintainable programs.
+
+---
+
+# Question: What is the difference between `int` and `long` in C#?
+
+**Answer:** `int` is a 32-bit signed integer, while `long` is a 64-bit signed integer used for larger numbers.
+
+---
+
+# Question: Can the value of a constant in C# be changed after assignment?
+
+**Answer:** No, constants cannot be changed once assigned a value.
+
+---
+
+# Question: At what stage must a constant’s value be assigned?
+
+**Answer:** At compile time.
+
+---
+
+# Question: What is a nullable variable used for?
+
+**Answer:** It is used when a value is optional and may not always be present, allowing `null` as a valid state.
+
+---
+
