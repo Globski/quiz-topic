@@ -925,3 +925,9 @@
 **Answer:** AWS provides plugins like AWS Toolkit for Eclipse, PyCharm, IntelliJ IDEA, Rider, and WebStorm to help developers write, debug, and deploy applications directly with cloud integration.
 
 ---
+
+# Question: What is AWS X-Ray used for?
+
+**Answer:** AWS X-Ray is a debugging tool for analyzing applications in development and production, supporting both simple and complex microservices. It helps monitor performance, identify root causes, and trace requests end-to-end.
+
+---
