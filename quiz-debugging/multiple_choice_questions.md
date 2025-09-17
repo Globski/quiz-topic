@@ -889,3 +889,21 @@
 **Answer:** Runtime errors occur due to the execution environment, such as insufficient memory or stack overflow. They are often handled using try-catch blocks or logging exceptions.
 
 ---
+
+# Question: What is incremental program development in debugging?
+
+**Answer:** It is writing and testing small sections of code incrementally, making it easier to localize and fix bugs quickly.
+
+---
+
+# Question: What is backtracking in debugging?
+
+**Answer:** Backtracking is tracing backwards from the point of failure to locate the exact cause of the error. It works better for small programs but becomes harder with large codebases.
+
+---
+
+# Question: What is remote debugging?
+
+**Answer:** Remote debugging is fixing bugs in software running in an environment separate from the local machine, using remote debugging tools.
+
+---
