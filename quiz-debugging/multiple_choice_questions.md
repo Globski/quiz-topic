@@ -268,3 +268,110 @@
 
 ---
 
+# Question: Why are debugging tools essential in software development?
+
+**Answer:** Debugging tools help developers locate and fix coding errors efficiently, improving software quality and development speed.
+
+---
+
+# Question: What trend has increased the demand for advanced debugging tools?
+
+**Answer:** The rapid growth of software applications has significantly increased the demand for advanced debugging tools.
+
+---
+
+# Question: What kinds of innovations are being developed in modern debugging tools?
+
+**Answer:** Innovations include AI-driven debuggers and autonomous debugging for specialized applications.
+
+---
+
+# Question: What common interface do many debugging tools provide to developers?
+
+**Answer:** Many debugging tools provide command-line interfaces for identifying and resolving issues.
+
+---
+
+# Question: What additional features make debugging tools more accessible to beginners?
+
+**Answer:** Features such as remote debugging and tutorials make debugging tools more accessible to beginners.
+
+---
+
+# Question: What are examples of IDEs with built-in debugging tools?
+
+**Answer:** Examples include Visual Studio, Eclipse, and PyCharm.
+
+---
+
+# Question: What debugging capabilities do IDEs typically provide?
+
+**Answer:** IDEs allow step debugging (executing code line by line), setting breakpoints, and examining variable and memory states.
+
+---
+
+# Question: How do IDEs extend support for multiple programming and scripting languages?
+
+**Answer:** IDEs often extend support through open-source plugins.
+
+---
+
+# Question: What is an example of a standalone debugger?
+
+**Answer:** An example is GDB (GNU Debugger).
+
+---
+
+# Question: What advanced features do standalone debuggers like GDB provide?
+
+**Answer:** They support conditional breakpoints, watchpoints, and reverse debugging.
+
+---
+
+# Question: Why are standalone debuggers considered harder to use than IDE debuggers?
+
+**Answer:** Standalone debuggers have a steeper learning curve compared to the user-friendly interfaces of IDE debuggers.
+
+---
+
+# Question: What is the main function of logging utilities in debugging?
+
+**Answer:** Logging utilities record a program’s state at various points for later analysis to identify issues.
+
+---
+
+# Question: In what situation is logging particularly useful?
+
+**Answer:** Logging is especially useful for debugging issues that only occur in production environments.
+
+---
+
+# Question: What do static code analyzers do?
+
+**Answer:** Static code analyzers examine code without execution to detect errors, coding standard deviations, and maintain semantic consistency.
+
+---
+
+# Question: How do static analyzers help maintain code quality?
+
+**Answer:** They help developers catch common mistakes and enforce consistent coding styles.
+
+---
+
+# Question: What do dynamic analysis tools do?
+
+**Answer:** Dynamic analysis tools monitor running software to detect issues like resource leaks, concurrency problems, memory leaks, and buffer overflows.
+
+---
+
+# Question: Why are dynamic analysis tools valuable compared to static analysis?
+
+**Answer:** They catch runtime issues that static analysis may miss, such as memory leaks and buffer overflows.
+
+---
+
+# Question: What is the purpose of performance profilers?
+
+**Answer:** Performance profilers identify performance bottlenecks in code by measuring CPU usage, memory usage, and I/O operations.
+
+---
