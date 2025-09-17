@@ -2894,3 +2894,185 @@ Decimal Literal: 3.14159265359
 * `%` → modulus (gives remainder).
 
 ---
+
+# Question: What are assignment operators in C#?
+
+**Answer:** Assignment operators assign values to variables, and in some cases, perform mathematical operations along with assignment.
+
+---
+
+# Question: What does the `=` operator do in C#?
+
+**Answer:** It is the simple assignment operator, assigning the value of the right operand to the left operand. Example: `C = A + B`.
+
+---
+
+# Question: What is the effect of `+=` in C#?
+
+**Answer:** It adds the right operand to the left operand and assigns the result to the left operand. Example: `C += A` is equivalent to `C = C + A`.
+
+---
+
+# Question: What does `-=` do?
+
+**Answer:** It subtracts the right operand from the left operand and assigns the result to the left operand. Example: `C -= A` is equivalent to `C = C - A`.
+
+---
+
+# Question: What does `*=` do?
+
+**Answer:** It multiplies the left operand by the right operand and assigns the result to the left operand. Example: `C *= A` is equivalent to `C = C * A`.
+
+---
+
+# Question: How does `/=` work?
+
+**Answer:** It divides the left operand by the right operand and assigns the result to the left operand. Example: `C /= A` is equivalent to `C = C / A`.
+
+---
+
+# Question: What is the function of `%=` in C#?
+
+**Answer:** It performs a modulus operation and assigns the result to the left operand. Example: `C %= A` is equivalent to `C = C % A`.
+
+---
+
+# Question: What does `<<=` do in C#?
+
+**Answer:** It left-shifts the value of the left operand by the right operand and assigns the result. Example: `C <<= 2` is equivalent to `C = C << 2`.
+
+---
+
+# Question: How does `>>=` behave?
+
+**Answer:** It right-shifts the value of the left operand by the right operand and assigns the result. Example: `C >>= 2` is equivalent to `C = C >> 2`.
+
+---
+
+# Question: What does `&=` do?
+
+**Answer:** It performs a bitwise AND operation and assigns the result to the left operand. Example: `C &= 2` is equivalent to `C = C & 2`.
+
+---
+
+# Question: What is the purpose of `^=`?
+
+**Answer:** It performs a bitwise XOR (exclusive OR) operation and assigns the result to the left operand. Example: `C ^= 2` is equivalent to `C = C ^ 2`.
+
+---
+
+# Question: What does `|=` mean?
+
+**Answer:** It performs a bitwise OR (inclusive OR) operation and assigns the result to the left operand. Example: `C |= 2` is equivalent to `C = C | 2`.
+
+---
+
+# Question: What was the output of `c += a` when `a = 21`?
+
+**Answer:** The output was `42`.
+
+---
+
+# Question: What was the output of `c *= a` when `a = 21`?
+
+**Answer:** The output was `441`.
+
+---
+
+# Question: What happens when `c = 200` and `c %= a` with `a = 21`?
+
+**Answer:** The result is `11`.
+
+---
+
+# Question: What was the result of `c >>= 2` in the demo program?
+
+**Answer:** The result was `11`.
+
+---
+
+# Question: What was the output of `c ^= 2` after the right-shift in the demo?
+
+**Answer:** The result was `0`.
+
+---
+
+# Question: In Example 1, what is the value of `x` after `int x = 10;`?
+
+**Answer:** `x: 10`.
+
+---
+
+# Question: In Example 2, what is the value of `x` after `x += 3` when initially `x = 5`?
+
+**Answer:** `x after += : 8`.
+
+---
+
+# Question: In Example 3, what is the value of `x` after `x -= 4` when initially `x = 10`?
+
+**Answer:** `x after -= : 6`.
+
+---
+
+# Question: In Example 4, what is the result of `x *= 2` when `x = 5`?
+
+**Answer:** `x after *= : 10`.
+
+---
+
+# Question: In Example 5, what is the result of `x /= 4` when `x = 20`?
+
+**Answer:** `x after /= : 5`.
+
+---
+
+# Question: In Example 6, what is the result of `x %= 3` when `x = 10`?
+
+**Answer:** `x after %= : 1`.
+
+---
+
+# Question: How are assignment operators used in real-world scenarios like games?
+
+**Answer:** They can be used to accumulate scores, e.g., `score += 10`.
+
+---
+
+# Question: How can assignment operators be used in e-commerce inventory management?
+
+**Answer:** They can reduce stock when items are sold, e.g., `stock -= 2`.
+
+---
+
+# Question: How can assignment operators be used in finance?
+
+**Answer:** They can be used to double investments or adjust balances, e.g., `investment *= 2`.
+
+---
+
+# Question: What best practice is recommended instead of writing `x = x + 1`?
+
+**Answer:** Use `x += 1` or `x++` for counters.
+
+---
+
+# Question: What should you check before using `/=` in C#?
+
+**Answer:** Ensure the divisor is not zero to avoid a runtime error.
+
+---
+
+# Question: Why are assignment operators recommended in coding style?
+
+**Answer:** They make the code more concise, readable, and maintainable.
+
+---
+
+# Question: Why is understanding operator precedence important when using assignment operators?
+
+**Answer:** Because combining assignment operators with other operations can lead to unexpected results if precedence is not clear.
+
+---
+
+
