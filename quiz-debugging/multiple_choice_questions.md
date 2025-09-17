@@ -913,3 +913,9 @@
 **Answer:** Programs record runtime data and system state in log files. Developers analyze these logs or use log analyzers to locate and resolve bugs.
 
 ---
+
+# Question: What is cloud debugging?
+
+**Answer:** Cloud debugging is debugging cloud-based applications, which is difficult due to differences between local emulation and cloud configurations. Special tools are required to handle this efficiently.
+
+---
