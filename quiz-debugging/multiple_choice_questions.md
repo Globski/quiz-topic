@@ -871,3 +871,21 @@
 **Answer:** Syntax errors occur when statements are typed incorrectly, like typos in code. The program won’t compile or run until fixed, and code editors usually highlight them.
 
 ---
+
+# Question: What are semantic errors?
+
+**Answer:** Semantic errors occur due to incorrect use of programming statements, such as writing `y = x / 2 * math.pi` in Python, which evaluates as `(xπ)/2` instead of `x/(2π)` due to operator precedence.
+
+---
+
+# Question: What are logic errors?
+
+**Answer:** Logic errors occur when the algorithm or step sequence is incorrect, such as exiting a loop too early or misusing an if-then condition. They are detected by testing with multiple input/output scenarios.
+
+---
+
+# Question: What are runtime errors?
+
+**Answer:** Runtime errors occur due to the execution environment, such as insufficient memory or stack overflow. They are often handled using try-catch blocks or logging exceptions.
+
+---
