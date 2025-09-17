@@ -851,3 +851,23 @@
 # Question: What happens during error analysis in debugging?
 
 **Answer:** Coders record program state changes and data values, prioritize bug fixes based on impact, and set a timeline for resolving the issue depending on project goals.
+
+---
+
+# Question: What is the fix and validation step in debugging?
+
+**Answer:** Developers fix the bug, rerun tests to confirm functionality, and may add new tests to prevent recurrence.
+
+---
+
+# Question: How does debugging differ from testing?
+
+**Answer:** Testing identifies bugs and errors in completed code, while debugging is the process of analyzing and fixing those identified bugs.
+
+---
+
+# Question: What are syntax errors in programming?
+
+**Answer:** Syntax errors occur when statements are typed incorrectly, like typos in code. The program won’t compile or run until fixed, and code editors usually highlight them.
+
+---
