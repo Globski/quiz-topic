@@ -375,3 +375,189 @@
 **Answer:** Performance profilers identify performance bottlenecks in code by measuring CPU usage, memory usage, and I/O operations.
 
 ---
+
+# Question: How is debugging different from testing?
+
+**Answer:** Testing focuses on finding bugs, while debugging starts after a bug has been identified to fix it.
+
+---
+
+# Question: What is the purpose of testing in software engineering?
+
+**Answer:** The purpose of testing is to identify defects or errors in the software system.
+
+---
+
+# Question: What is the purpose of debugging in software engineering?
+
+**Answer:** The purpose of debugging is to fix the defects or errors found during testing.
+
+---
+
+# Question: When is testing performed in relation to debugging?
+
+**Answer:** Testing is done before debugging.
+
+---
+
+# Question: When is debugging performed in relation to testing?
+
+**Answer:** Debugging is done after testing.
+
+---
+
+# Question: What does testing focus on?
+
+**Answer:** Testing focuses on identifying failures of the implemented code.
+
+---
+
+# Question: What does debugging focus on?
+
+**Answer:** Debugging focuses on resolving failures and providing a solution to the code’s issues.
+
+---
+
+# Question: What is the typical approach used in testing?
+
+**Answer:** Testing involves executing the software system with test cases.
+
+---
+
+# Question: What is the typical approach used in debugging?
+
+**Answer:** Debugging involves analyzing problem symptoms and identifying the root cause.
+
+---
+
+# Question: What tools or techniques are commonly used in testing?
+
+**Answer:** Testing can involve manual or automated testing tools.
+
+---
+
+# Question: What tools or techniques are commonly used in debugging?
+
+**Answer:** Debugging typically uses logging, tracing, and code inspection.
+
+---
+
+# Question: What is unit testing, and when is it performed?
+
+**Answer:** Unit testing checks individual components of code to verify correctness. It is performed during testing before debugging.
+
+---
+
+# Question: What is integration testing?
+
+**Answer:** Integration testing checks that modules or components work correctly together.
+
+---
+
+# Question: What is alpha testing?
+
+**Answer:** Alpha testing is performed by developers or internal teams before software is released to external users.
+
+---
+
+# Question: What is beta testing?
+
+**Answer:** Beta testing is performed by external users to validate software in real-world conditions before release.
+
+---
+
+# Question: How does debugging improve system quality?
+
+**Answer:** Debugging removes bugs, making the system more reliable, efficient, and higher in quality.
+
+---
+
+# Question: How does debugging reduce system downtime?
+
+**Answer:** Debugging resolves stability issues, making the system less likely to crash or become unavailable.
+
+---
+
+# Question: How does debugging increase user satisfaction?
+
+**Answer:** Debugging makes the software more user-friendly and better at meeting user needs.
+
+---
+
+# Question: How does debugging reduce development costs?
+
+**Answer:** Fixing bugs early saves time and resources that would otherwise be spent later in development or after deployment.
+
+---
+
+# Question: How does debugging increase security?
+
+**Answer:** Debugging removes vulnerabilities that attackers could exploit, reducing security risks.
+
+---
+
+# Question: How does debugging facilitate change?
+
+**Answer:** Debugging makes it easier to identify and fix bugs introduced by modifications, supporting software evolution.
+
+---
+
+# Question: How does debugging improve developer understanding of a system?
+
+**Answer:** Debugging reveals how components interact, giving developers deeper insight into system behavior.
+
+---
+
+# Question: How does debugging facilitate testing?
+
+**Answer:** Once bugs are resolved, testing becomes easier and more effective at verifying requirements.
+
+---
+
+# Question: What is a major disadvantage of debugging in terms of time?
+
+**Answer:** Debugging is time-consuming, especially if the bug is complex or hard to reproduce.
+
+---
+
+# Question: Why does debugging require specialized skills?
+
+**Answer:** Debugging often involves complex tools, techniques, and knowledge that not all developers possess.
+
+---
+
+# Question: Why are some bugs difficult to reproduce during debugging?
+
+**Answer:** Certain bugs depend on specific conditions or interactions, making them inconsistent and hard to replicate.
+
+---
+
+# Question: Why are some bugs difficult to diagnose?
+
+**Answer:** Bugs can result from interactions between multiple components, obscuring the root cause.
+
+---
+
+# Question: Why are some bugs difficult to fix?
+
+**Answer:** Some bugs stem from design flaws or architectural issues that require major system changes.
+
+---
+
+# Question: Why do debugging tools sometimes provide limited insight?
+
+**Answer:** Debugging tools may not capture enough information to fully identify the root cause of complex bugs.
+
+---
+
+# Question: Why can debugging be expensive?
+
+**Answer:** Debugging may require specialized tools, more developer time, or extra resources, increasing costs.
+
+---
+
+# Question: What is the overall conclusion about debugging in software engineering?
+
+**Answer:** Debugging is essential for ensuring software reliability, performance, usability, and security, despite being time-consuming and sometimes costly.
+
+---
