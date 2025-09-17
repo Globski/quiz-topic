@@ -40,3 +40,14 @@
 
 ---
 
+# Question: What does the `<=` operator do in C#?
+
+**Answer:** It checks if the left operand is less than or equal to the right operand; returns `true` if the condition is met.
+
+---
+
+# Question: Given `A = 10` and `B = 20`, what is the result of `(A == B)`?
+
+**Answer:** False.
+
+---
