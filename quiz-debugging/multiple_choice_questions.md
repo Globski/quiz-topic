@@ -817,3 +817,37 @@
 **Answer:** Because it provides immense satisfaction, even if the bug was caused by the developer’s own code.
 
 ---
+
+# Question: What is debugging?
+
+**Answer:** Debugging is the process of finding and fixing errors or bugs in the source code of software, using tools to run the program in a controlled environment, step through code, and resolve issues.
+
+---
+
+# Question: Where did the term “debugging” originate?
+
+**Answer:** The term debugging originated in the 1940s when Admiral Grace Hopper’s colleague found a moth in a Harvard computer, and she described the process as “debugging” the system.
+
+---
+
+# Question: When were the terms “bugs” and “debugging” first recorded as being used by programmers?
+
+**Answer:** They were first recorded in the 1950s, and by the early 1960s, debugging was widely accepted in the programming community.
+
+---
+
+# Question: Why is debugging important in software development?
+
+**Answer:** Debugging is important because programming involves multiple layers of abstraction and complexity, making errors common. Debugging tools and strategies help fix problems faster, improve developer productivity, software quality, and user experience.
+
+---
+
+# Question: What is the first step in the debugging process?
+
+**Answer:** Error identification, where developers, testers, or end-users report bugs and developers locate the exact code line or module causing the issue.
+
+---
+
+# Question: What happens during error analysis in debugging?
+
+**Answer:** Coders record program state changes and data values, prioritize bug fixes based on impact, and set a timeline for resolving the issue depending on project goals.
