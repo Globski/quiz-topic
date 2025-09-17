@@ -931,3 +931,9 @@
 **Answer:** AWS X-Ray is a debugging tool for analyzing applications in development and production, supporting both simple and complex microservices. It helps monitor performance, identify root causes, and trace requests end-to-end.
 
 ---
+
+# Question: What can developers do with AWS X-Ray?
+
+**Answer:** They can (1) understand application performance, (2) identify and troubleshoot root causes of performance issues, and (3) analyze requests across an application’s entire workflow.
+
+---
