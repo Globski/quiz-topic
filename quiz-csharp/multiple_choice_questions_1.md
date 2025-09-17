@@ -27,3 +27,16 @@
 **Answer:** It checks if the left operand is greater than the right operand; returns `true` if it is.
 
 ---
+
+# Question: What does the `<` operator do in C#?
+
+**Answer:** It checks if the left operand is less than the right operand; returns `true` if it is.
+
+---
+
+# Question: What does the `>=` operator do in C#?
+
+**Answer:** It checks if the left operand is greater than or equal to the right operand; returns `true` if the condition is met.
+
+---
+
