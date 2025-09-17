@@ -907,3 +907,9 @@
 **Answer:** Remote debugging is fixing bugs in software running in an environment separate from the local machine, using remote debugging tools.
 
 ---
+
+# Question: How does logging help in debugging?
+
+**Answer:** Programs record runtime data and system state in log files. Developers analyze these logs or use log analyzers to locate and resolve bugs.
+
+---
