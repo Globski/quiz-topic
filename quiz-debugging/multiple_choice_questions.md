@@ -919,3 +919,9 @@
 **Answer:** Cloud debugging is debugging cloud-based applications, which is difficult due to differences between local emulation and cloud configurations. Special tools are required to handle this efficiently.
 
 ---
+
+# Question: How does AWS support debugging with IDE plugins?
+
+**Answer:** AWS provides plugins like AWS Toolkit for Eclipse, PyCharm, IntelliJ IDEA, Rider, and WebStorm to help developers write, debug, and deploy applications directly with cloud integration.
+
+---
