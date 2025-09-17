@@ -75,3 +75,15 @@
 **Answer:** False.
 
 ---
+
+# Question: Given `A = 10` and `B = 20`, what is the result of `(A <= B)`?
+
+**Answer:** True.
+
+---
+
+# Question: In the example with `a = 21` and `b = 10`, what output does `(a == b)` produce?
+
+**Answer:** `Line 1 - a is not equal to b`.
+
+---
