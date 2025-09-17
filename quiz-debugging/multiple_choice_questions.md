@@ -118,3 +118,153 @@
 
 ---
 
+# Question: Why is debugging important in software development?
+
+**Answer:** Debugging is important because it ensures software works properly, improves quality, increases developer efficiency, and enhances user experience.
+
+---
+
+# Question: Why are bugs common in computer programming?
+
+**Answer:** Bugs are common because programming deals with abstract ideas and concepts, layered abstractions, and complex interactions among components.
+
+---
+
+# Question: How do debugging tools and strategies help developers?
+
+**Answer:** They make problem-solving faster, improve efficiency, and help developers deliver higher-quality software.
+
+---
+
+# Question: What is the brute force debugging strategy?
+
+**Answer:** Brute force involves studying the system for a long time, constructing different representations, and analyzing recent changes to locate bugs.
+
+---
+
+# Question: What is the backtracking approach to debugging?
+
+**Answer:** Backtracking traces the program backward from the failure point to identify the faulty region of code.
+
+---
+
+# Question: What is forward analysis in debugging?
+
+**Answer:** Forward analysis traces the program execution forward using breakpoints or print statements to locate the region producing incorrect outputs.
+
+---
+
+# Question: How does debugging experience help in fixing software issues?
+
+**Answer:** Experienced debuggers can draw on knowledge of similar problems, making it easier to identify and resolve new bugs.
+
+---
+
+# Question: What is the cause elimination strategy in debugging?
+
+**Answer:** Cause elimination uses binary partitioning to organize error-related data and isolate potential causes.
+
+---
+
+# Question: What is static analysis in debugging?
+
+**Answer:** Static analysis examines code without executing it, focusing on syntax, data flow, and control flow to find errors.
+
+---
+
+# Question: What is dynamic analysis in debugging?
+
+**Answer:** Dynamic analysis involves executing code and analyzing its runtime behavior using techniques like runtime debugging and profiling.
+
+---
+
+# Question: What is collaborative debugging?
+
+**Answer:** Collaborative debugging involves multiple developers working together to identify and fix issues, especially when multiple modules are involved.
+
+---
+
+# Question: How do logging and tracing assist in debugging?
+
+**Answer:** Logging and tracing capture the sequence of events before an error, allowing developers to analyze system behavior during execution.
+
+---
+
+# Question: What is automated debugging?
+
+**Answer:** Automated debugging uses tools, including static and dynamic analysis, machine learning, and AI, to detect errors and suggest fixes.
+
+---
+
+# Question: Give examples of syntax-related errors found during debugging.
+
+**Answer:** Syntax errors occur when code violates language rules, preventing compilation or interpretation.
+
+---
+
+# Question: What is a logical error in debugging?
+
+**Answer:** A logical error occurs when the program runs but produces incorrect results due to flawed logic.
+
+---
+
+# Question: What are runtime errors?
+
+**Answer:** Runtime errors occur while the program is running, often due to invalid operations such as division by zero or accessing unavailable resources.
+
+---
+
+# Question: What is a stack overflow error?
+
+**Answer:** A stack overflow happens when a program exceeds the stack memory limit, often due to excessive recursion.
+
+---
+
+# Question: What is an index out of bound error?
+
+**Answer:** It occurs when a program attempts to access an array element outside its valid range.
+
+---
+
+# Question: Why are infinite loops problematic in debugging?
+
+**Answer:** Infinite loops cause the program to run indefinitely, consuming resources and preventing correct execution.
+
+---
+
+# Question: What are concurrency issues in debugging?
+
+**Answer:** Concurrency issues arise when multiple processes or threads interact improperly, leading to race conditions, deadlocks, or inconsistent data.
+
+---
+
+# Question: What are I/O errors?
+
+**Answer:** I/O errors occur when the program cannot properly read from or write to input/output devices or files.
+
+---
+
+# Question: What are environment dependency errors?
+
+**Answer:** These occur when software behavior depends on specific system configurations, hardware, or environment variables.
+
+---
+
+# Question: What are integration errors?
+
+**Answer:** Integration errors occur when different modules or components fail to work together correctly.
+
+---
+
+# Question: What is a reference error?
+
+**Answer:** A reference error occurs when the program tries to access a variable or object that has not been defined.
+
+---
+
+# Question: What is a type error?
+
+**Answer:** A type error occurs when an operation is performed on an incompatible data type.
+
+---
+
