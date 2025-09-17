@@ -51,3 +51,15 @@
 **Answer:** False.
 
 ---
+
+# Question: Given `A = 10` and `B = 20`, what is the result of `(A != B)`?
+
+**Answer:** True.
+
+---
+
+# Question: Given `A = 10` and `B = 20`, what is the result of `(A > B)`?
+
+**Answer:** False.
+
+---
