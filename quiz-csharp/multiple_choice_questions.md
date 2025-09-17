@@ -2683,3 +2683,214 @@ Decimal Literal: 3.14159265359
 
 ---
 
+# Question: What are arithmetic operators in C#?
+
+**Answer:** Operators that perform mathematical operations such as addition, subtraction, multiplication, division, and modulus between numeric data types.
+
+---
+
+# Question: Are arithmetic operators binary or unary in C#?
+
+**Answer:** They are mostly binary (require two operands), except increment (`++`) and decrement (`--`) which are unary.
+
+---
+
+# Question: What does the `+` operator do? Example A=10, B=20.
+
+**Answer:** Adds two operands. `A + B = 30`.
+
+---
+
+# Question: What does the `-` operator do? Example A=10, B=20.
+
+**Answer:** Subtracts second operand from the first. `A - B = -10`.
+
+---
+
+# Question: What does the `*` operator do? Example A=10, B=20.
+
+**Answer:** Multiplies two operands. `A * B = 200`.
+
+---
+
+# Question: What does the `/` operator do? Example A=10, B=20.
+
+**Answer:** Divides numerator by denominator. `B / A = 2`.
+
+---
+
+# Question: What does the `%` operator do? Example A=10, B=20.
+
+**Answer:** Returns the remainder after integer division. `B % A = 0`.
+
+---
+
+# Question: What does the `++` operator do? Example A=10.
+
+**Answer:** Increments integer value by one. `A++ = 11`.
+
+---
+
+# Question: What does the `--` operator do? Example A=10.
+
+**Answer:** Decrements integer value by one. `A-- = 9`.
+
+---
+
+# Question: In the example with `a=21`, `b=10`, what is the result of `a + b`?
+
+**Answer:** 31
+
+---
+
+# Question: In the same example, what is the result of `a - b`?
+
+**Answer:** 11
+
+---
+
+# Question: In the same example, what is the result of `a * b`?
+
+**Answer:** 210
+
+---
+
+# Question: In the same example, what is the result of `a / b`?
+
+**Answer:** 2
+
+---
+
+# Question: In the same example, what is the result of `a % b`?
+
+**Answer:** 1
+
+---
+
+# Question: What is printed when `c = a++;` with `a=21`?
+
+**Answer:** `c = 21` (since `a` is incremented *after* assignment).
+
+---
+
+# Question: What is printed when `c = a--;` after the above operation?
+
+**Answer:** `c = 22` (since `a` was 22 after the increment).
+
+---
+
+# Question: In the example `a=10, b=3`, what is `a / b`?
+
+**Answer:** 3 (integer division).
+
+---
+
+# Question: In the same example, what is `a % b`?
+
+**Answer:** 1
+
+---
+
+# Question: What is the difference between integer division and floating-point division?
+
+**Answer:**
+
+* Integer division discards the fractional part (e.g., `7 / 2 = 3`).
+* Floating-point division keeps the decimal result (e.g., `7.0 / 2.0 = 3.5`).
+
+---
+
+# Question: In the example with `a=7, b=2, c=7.0, d=2.0`, what are the outputs of `a / b` and `c / d`?
+
+**Answer:**
+
+* `a / b = 3` (integer division).
+* `c / d = 3.5` (floating-point division).
+
+---
+
+# Question: How do you calculate the area of a circle using arithmetic operators in C#?
+
+**Answer:** `area = Pi * radius * radius` (with Pi as a constant).
+
+---
+
+# Question: In the circle example with radius = 5.5, what is the output?
+
+**Answer:** `95.0330975`
+
+---
+
+# Question: How do you convert Celsius to Fahrenheit using arithmetic operators?
+
+**Answer:** `fahrenheit = (celsius * 9 / 5) + 32`
+
+---
+
+# Question: In the Celsius example with celsius=30, what is the result?
+
+**Answer:** `86`
+
+---
+
+# Question: What formula is used to calculate monthly loan payment?
+
+**Answer:**
+`monthlyPayment = (principal * rate) / (1 - Math.Pow(1 + rate, -months))`
+
+---
+
+# Question: In the loan example with principal=10000, rate=5.5%/12, months=60, what is the monthly payment?
+
+**Answer:** `190.34`
+
+---
+
+# Question: What data types should be used for precision-sensitive calculations like finance or engineering?
+
+**Answer:** `double` or `decimal`
+
+---
+
+# Question: What should you check before performing a division?
+
+**Answer:** Ensure the denominator is not zero (to avoid DivideByZeroException).
+
+---
+
+# Question: What .NET library functions can be used for advanced arithmetic operations?
+
+**Answer:**
+
+* `Math.Pow(a, b)` → exponentiation
+* `Math.Sqrt(x)` → square root
+* `Math.Abs(x)` → absolute value
+
+---
+
+# Question: What keyword should you use for fixed values like Pi?
+
+**Answer:** `const`
+
+---
+
+# Question: What happens if you divide an `int` by zero in C#?
+
+**Answer:** Throws `DivideByZeroException`.
+
+---
+
+# Question: What happens if you divide a `double` by zero in C#?
+
+**Answer:** Returns `Infinity`.
+
+---
+
+# Question: What is the difference between `/` and `%` operators?
+
+**Answer:**
+
+* `/` → performs division (gives quotient).
+* `%` → modulus (gives remainder).
+
+---
