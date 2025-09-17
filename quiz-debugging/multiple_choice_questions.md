@@ -561,3 +561,259 @@
 **Answer:** Debugging is essential for ensuring software reliability, performance, usability, and security, despite being time-consuming and sometimes costly.
 
 ---
+
+# Question: What is "Rubber Ducking" in debugging?
+
+**Answer:** Rubber Ducking is the practice of articulating a problem aloud—often to an inanimate object like a rubber duck—in order to uncover nuances and overlooked details.
+
+---
+
+# Question: What are the main steps in the Rubber Ducking process?
+
+**Answer:**
+
+1. State the problem (“Here’s the problem…”).
+2. Share a theory about the potential source.
+3. Explain why other parts of the code are not causing the issue.
+4. Detail the verification process for each statement.
+
+---
+
+# Question: Why do some developers prefer Rubber Ducking over discussing bugs with teammates?
+
+**Answer:** It avoids embarrassment or judgment from peers, allowing developers to freely express and analyze their thought process.
+
+---
+
+# Question: How do experienced developers typically approach making mistakes or bugs?
+
+**Answer:** They recognize that everyone makes mistakes, laugh at their bugs, and avoid shame since experience teaches them bugs are inevitable.
+
+---
+
+# Question: What does “Moving the Goalposts” mean in debugging?
+
+**Answer:** It refers to redefining a bug as investigation progresses—shifting focus from user-level symptoms to deeper root causes.
+
+---
+
+# Question: Why might “Moving the Goalposts” initially sound negative, and how is it positive in debugging?
+
+**Answer:** The phrase often suggests inconsistency, but in debugging, it’s positive because it helps refine and focus understanding of the bug.
+
+---
+
+# Question: What is the typical evolution of a bug from user report to root cause?
+
+**Answer:**
+
+1. **User-level symptom:** e.g., “The app crashes when I click this button.”
+2. **Function-level issue:** e.g., a function is failing.
+3. **Data-level cause:** e.g., incorrect data is being fed into the function.
+
+---
+
+# Question: Why is it important to update bug documentation during the redefinition process?
+
+**Answer:** To ensure team alignment and provide the most accurate, current understanding for anyone who picks up the task later.
+
+---
+
+# Question: What does “Flipping the Direction” mean in debugging?
+
+**Answer:** It means challenging the conventional linear debugging approach by attacking the problem from multiple angles, such as reverse engineering, changing environments, or pair debugging.
+
+---
+
+# Question: What are the typical linear debugging steps?
+
+**Answer:**
+
+1. Identify the symptom.
+2. Trace the code.
+3. Isolate the issue.
+4. Implement a fix.
+
+---
+
+# Question: Give three alternative strategies under “Flipping the Direction.”
+
+**Answer:**
+
+* Reverse engineering (work backward from the result).
+* Change the environment (e.g., different OS or browser).
+* Collaborative debugging (pair debugging for fresh perspectives).
+
+---
+
+# Question: What is the purpose of deliberately challenging assumptions during debugging?
+
+**Answer:** To avoid tunnel vision and discover bugs in unexpected areas outside of assumed problem zones.
+
+---
+
+# Question: What are “disruptive environments” in debugging?
+
+**Answer:** They are deliberately altered or stressed conditions, such as throttling networks or limiting resources, to expose hidden or hard-to-reproduce bugs.
+
+---
+
+# Question: Name four situations where hidden bugs typically occur.
+
+**Answer:**
+
+* Unusual user behaviors.
+* Specific combinations of actions.
+* Rare environmental conditions.
+* External system interactions.
+
+---
+
+# Question: List at least four techniques to disrupt an environment for debugging.
+
+**Answer:**
+
+* Network throttling.
+* Resource limitation (CPU, memory).
+* Environment switching (OS, browser, hardware).
+* External interferences (different networks).
+* Simulating failures.
+* Time manipulation (time zones, system clock).
+
+---
+
+# Question: Why is network throttling useful in debugging?
+
+**Answer:** It simulates poor connectivity to reveal issues with synchronization, timeouts, or resource loading.
+
+---
+
+# Question: What is the benefit of simulating component or service failures?
+
+**Answer:** It tests error handling and recovery mechanisms under failure conditions.
+
+---
+
+# Question: Why are debugging tools essential in modern software development?
+
+**Answer:** They provide precise insights into code execution, data flow, and system interactions, allowing developers to address root causes efficiently.
+
+---
+
+# Question: What are some common categories of debugging tools?
+
+**Answer:**
+
+* Browser developer tools.
+* IDE debuggers.
+* Profiling tools.
+* Static analysis tools.
+* Logging and observability tools.
+* Specialized environment tools.
+* Simulators and emulators.
+* Task-specific extensions.
+
+---
+
+# Question: What do browser developer tools allow developers to do?
+
+**Answer:** Inspect DOM elements, monitor network requests, profile performance, and debug JavaScript with breakpoints.
+
+---
+
+# Question: Give an example of a specialized environment debugging tool for Java.
+
+**Answer:** JMX (Java Management Extensions).
+
+---
+
+# Question: How do profiling tools aid debugging?
+
+**Answer:** They identify performance bottlenecks, memory leaks, and inefficient algorithms.
+
+---
+
+# Question: What is the role of static analysis tools?
+
+**Answer:** They analyze code without execution to detect issues such as code smells, vulnerabilities, or style violations.
+
+---
+
+# Question: How can logging and observability tools assist in debugging?
+
+**Answer:** They provide real-time visibility into application behavior, helping trace and diagnose issues in production.
+
+---
+
+# Question: What is the benefit of using simulators and emulators in mobile development debugging?
+
+**Answer:** They replicate device behavior to uncover device-specific issues.
+
+---
+
+# Question: What does “Disconnect and Reconnect” mean in debugging?
+
+**Answer:** It means stepping away from the problem and returning later with a fresh perspective to avoid tunnel vision and frustration.
+
+---
+
+# Question: Why does tunnel vision harm debugging productivity?
+
+**Answer:** It causes fixation on a single solution path, reducing creativity and making developers overlook simpler alternatives.
+
+---
+
+# Question: Give examples of disconnecting strategies to refresh debugging perspective.
+
+**Answer:** Taking a walk, eating lunch, or sleeping before returning to the problem.
+
+---
+
+# Question: How can developers “embrace the challenge” of debugging?
+
+**Answer:** By treating debugging as a stimulating puzzle, enjoying the process, seeking challenges, and reframing perspective.
+
+---
+
+# Question: Why should small debugging wins be celebrated?
+
+**Answer:** Celebrating small wins maintains motivation and makes the process more enjoyable.
+
+---
+
+# Question: What are some strategies to make debugging more pleasant?
+
+**Answer:**
+
+* Reframe debugging as a game.
+* Celebrate small wins.
+* Collaborate with peers.
+* Take breaks.
+* Document and reflect.
+* Seek external debugging challenges.
+
+---
+
+# Question: What is the importance of a debugging journal?
+
+**Answer:** It documents past bugs, strategies, and solutions, serving as a resource for learning and future problem-solving.
+
+---
+
+# Question: How can developers distinguish job-related stress from personal embarrassment in debugging?
+
+**Answer:** By recognizing that bugs are normal, sharing experiences, and seeking mentorship or managerial support when work environment stress is the root cause.
+
+---
+
+# Question: What three core ideas summarize effective debugging from the conclusion?
+
+**Answer:** Relax, orient yourself, and use the tools at your disposal.
+
+---
+
+# Question: Why is solving a hard bug described as addictive?
+
+**Answer:** Because it provides immense satisfaction, even if the bug was caused by the developer’s own code.
+
+---
