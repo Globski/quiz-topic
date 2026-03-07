@@ -447,8 +447,62 @@
 
 ---
 
-# Question: What capability of modern GPT models?
+# Question: What does the example demonstrate about programming with AI?
 
-**Answer:** They can be given personalities.
+**Answer:** It demonstrates that **small amounts of code or instructions (even around 10 lines of text) can influence AI behavior in powerful ways.**
+
+---
+
+# Question: What is **rubber duck debugging**?
+
+**Answer:** Rubber duck debugging is a technique where a programmer **explains their code or problem aloud to a rubber duck (or another object)** to clarify their thinking and discover mistakes.
+
+---
+
+# Question: Why is rubber duck debugging effective for solving programming problems?
+
+**Answer:** Because **verbalizing the problem forces the programmer to organize their thoughts**, often revealing logical errors or misunderstandings.
+
+---
+
+# Question: What kind of object is traditionally used in rubber duck debugging?
+
+**Answer:** A **rubber duck** or any **inanimate cute object placed on the programmer’s desk**.
+
+---
+
+# Question: In rubber duck debugging, when is the technique typically used?
+
+**Answer:** It is used **when a programmer is struggling with a bug or mistake and does not have immediate help from someone more knowledgeable.**
+
+---
+
+# Question: What realization often occurs during rubber duck debugging?
+
+**Answer:** The programmer often suddenly realizes the mistake themselves — the **“light bulb moment.”**
+
+---
+
+# Question: What is the purpose of the **CS50 virtual duck**?
+
+**Answer:** The virtual duck helps students **talk through their programming problems and receive AI assistance while debugging.**
+
+---
+
+# Question: What website provides access to the CS50 AI tools?
+
+**Answer:** The website is **cs50.ai**.
+
+---
+
+# Question: What development environment URL also integrates the CS50 AI tools?
+
+**Answer:** The development environment URL is **cs50.dev**.
+
+---
+
+# Question: What role do **cs50.ai** and **cs50.dev** play?
+
+**Answer:** They provide **AI tools students can use to help with programming and problem-solving.**
 
 ---
