@@ -506,3 +506,73 @@
 **Answer:** They provide **AI tools students can use to help with programming and problem-solving.**
 
 ---
+
+# Question: Which AI-based software is for solving problems?
+
+**Answer:** AI-based software such as **Claw, Gemini, ChatGPT**
+
+---
+
+# Question: What is the purpose of CS50’s AI-based “virtual duck”?
+
+**Answer:** The virtual duck is designed to **act like a good human tutor**, helping students reason through problems without directly giving away the answer.
+
+---
+
+# Question: What behavior is the CS50 virtual duck designed to emulate?
+
+**Answer:** It emulates the behavior of **a helpful human tutor who guides students toward a solution instead of simply providing the answer outright**.
+
+---
+
+# Question: What fundamental question is introduced before beginning the study of programming and AI?
+
+**Answer:** The question **“What is computer science?”**
+
+---
+
+# Question: How is **computer science** defined?
+
+**Answer:** Computer science is **the study of information, including how information is represented and how it is processed**.
+
+---
+
+# Question: What is **computational thinking**?
+
+**Answer:** Computational thinking is **the application of ideas from computer science to solve real-world problems**.
+
+---
+
+# Question: What is computer science ultimately about?
+
+**Answer:** Computer science is ultimately about **problem solving**.
+
+---
+
+# Question: What role do computers and programming play in computer science?
+
+**Answer:** Computers and programming are **tools and methodologies used to help solve problems**.
+
+---
+
+# Question: In problem-solving, what does the **input** represent?
+
+**Answer:** The input represents **the problem or the information that needs to be processed**.
+
+---
+
+# Question: In problem-solving, what does the **output** represent?
+
+**Answer:** The output represents **the desired result or solution to the problem**.
+
+---
+
+# Question: What does the **“process”** in problem-solving represent?
+
+**Answer:** The proceed represents **the process or method that transforms the input into the output**.
+
+---
+
+# Question: How does the input output model illustrate problem solving in computer science?
+
+**Answer:** It shows that **a problem (input) is processed by some method or algorithm (process) to produce a solution (output)**.
