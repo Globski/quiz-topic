@@ -72,3 +72,70 @@
 **Answer:** It allows them to understand what they are asking AI to do and ensures they remain in control of the development process.
 
 ---
+
+# Question: why might it still be useful to understand concepts even when AI tools can help solve problems?
+
+**Answer:** Because mastering the underlying ideas allows a person to understand the problem and then use AI tools or co-pilot assistants to help implement or solve it more efficiently.
+
+---
+
+# Question: How does AI relate to learning programming concepts?
+
+**Answer:** Programmers may increasingly focus on mastering the core ideas while relying on AI assistants to help implement or solve coding problems.
+
+---
+
+# Question: What software tool? What is another common name used for Visual Studio Code?
+
+**Answer:** Visual Studio Code, commonly known as VS Code. Visual Studio Code is commonly abbreviated as VS Code.
+
+---
+
+# Question: What type of software is Visual Studio Code?
+
+**Answer:** Visual Studio Code is a popular, largely open-source or free software text editor used by developers to write code.
+
+---
+
+# Question: Who commonly uses Visual Studio?
+
+**Answer:** It is used by real-world professionals and developers in the software industry.
+
+---
+
+# Question: What type of application is Visual Studio Code compared to?
+
+**Answer:** It is compared to a text editor similar to Notepad or TextEdit.
+
+---
+
+# Question: What interface element appears at the bottom of the VS Code screen?
+
+**Answer:** A terminal window appears at the bottom of the screen.
+
+---
+
+# Question: What is the purpose of the terminal window in VS Code?
+
+**Answer:** The terminal window allows users to type commands that tell the computer what actions to perform.
+
+---
+
+# Question: What example project building for demonstration purposes?
+
+**Answer:** Creating a personal chatbot.
+
+---
+
+# Question: Which existing chatbot systems examples of well-known AI chatbots?
+
+**Answer:** ChatGPT, Gemini, and Claude are examples of well-known chatbots.
+
+---
+
+# Question: What does the `.py` extension in `chat.py` indicate?
+
+**Answer:** The `.py` extension indicates that the program is written in the Python programming language.
+
+---
+
