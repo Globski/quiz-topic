@@ -258,3 +258,89 @@
 **Answer:** The program demonstrates how to **build a simple chatbot by sending a prompt to OpenAI’s API and printing the generated response using Python code**.
 
 ---
+
+# Question: What was the initial limitation of the user's chatbot implementation?
+**Answer:** The chatbot was hard-coded to permanently answer only one specific question.
+
+---
+
+# Question: Approximately how many lines of code were used in the initial chatbot implementation mentioned?
+**Answer:** Not even 10 lines of code, since a few of them were blank.
+
+---
+
+# Question: What example question did the hard-coded chatbot answer?
+**Answer:** "What is Computer Programming?"
+
+---
+
+# Question: How did the chatbot describe Computer Programming when asked the question?
+**Answer:** Computer programming is the process of writing instructions that tell a computer what to do. These instructions are written in special languages called programming languages.
+
+---
+
+# Question: What improvement was proposed to make the chatbot program more dynamic?
+**Answer:** Modifying the program to ask the human user for their question instead of using a fixed hard-coded question.
+
+---
+
+# Question: What Python function was introduced to collect a question from the user?
+**Answer:** The `input()` function.
+
+---
+
+# Question: What variable name was used to store the user's question?
+**Answer:** The variable `prompt`.
+
+---
+
+# Question: What line of Python code was used to request input from the user?
+**Answer:** `prompt = input()`
+
+---
+
+# Question: What does the `=` operator represent in the statement `prompt = input()`?
+**Answer:** It assigns the value returned by `input()` to the variable `prompt`.
+
+---
+
+# Question: What concept in programming is compared to variables like `x`, `y`, or `z` in mathematics?
+**Answer:** A variable, which stores data such as the user's input.
+
+---
+
+# Question: What type of data is stored in the variable `prompt`?
+**Answer:** The keystrokes or text typed by the human user as their question.
+
+---
+
+# Question: How is the stored `prompt` used in the chatbot program?
+**Answer:** It is passed as the input to OpenAI so the AI can generate a response based on the user's question.
+
+---
+
+# Question: What new capability does the chatbot gain after using `input()`?
+**Answer:** The chatbot can accept and respond to dynamically entered questions from the user.
+
+---
+
+# Question: What example dynamic question was entered into the program?
+**Answer:** "In one sentence, what is Computer programming?"
+
+---
+
+# Question: What happened after the user entered the question dynamically?
+**Answer:** The chatbot returned an answer similar to the earlier one but slightly different.
+
+---
+
+# Question: Why might the chatbot's answer vary even when asking the same question again?
+**Answer:** Because the AI may generate a slightly different variant of the response each time.
+
+---
+
+# Question: What action was suggested to further test the chatbot after receiving a response?
+**Answer:** Running the program again using the command `python chat.py`.
+
+---
+
