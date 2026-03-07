@@ -344,3 +344,111 @@
 
 ---
 
+
+# Question: What computer science topics?
+
+**Answer:** Problem solving, algorithms, data structures, and programming languages such as C and Python.
+
+---
+
+# Question: What technique was repeatedly used in the code to guide how the AI should answer?
+
+**Answer:** Providing a prompt from the human.
+
+---
+
+# Question: What example instructions were included in the human prompts to control the AI’s response format?
+
+**Answer:** “In one sentence” and “in one word.”
+
+---
+
+# Question: Why keep providing formatting instructions like “in one sentence” in the prompt?
+
+**Answer:** To control how the AI formats its responses.
+
+---
+
+# Question: What improvement was suggested so the human does not need to repeatedly include formatting instructions in every prompt?
+
+**Answer:** Using a system prompt with standardized instructions.
+
+---
+
+# Question: What was the original variable name used for the prompt before renaming it?
+
+**Answer:** Prompt.
+
+---
+
+# Question: What new variable name was introduced to clarify that the prompt comes from the user?
+
+**Answer:** `user_prompt`.
+
+---
+
+# Question: What additional type of prompt was introduced besides the user prompt?
+
+**Answer:** A system prompt.
+
+---
+
+# Question: What is a **system prompt** in the context of the example?
+
+**Answer:** Standardized instructions given to the AI that control how it should behave.
+
+---
+
+# Question: What example instruction was included in the system prompt?
+
+**Answer:** “Limit your answer to one sentence.”
+
+---
+
+# Question: Why is the system prompt useful in this program?
+
+**Answer:** It ensures the AI consistently follows instructions without the user needing to repeat them in every prompt.
+
+---
+
+# Question: What variable was used to store the standardized AI instructions?
+
+**Answer:** `system_prompt`.
+
+---
+
+# Question: What service was used to process both the user prompt and system prompt?
+
+**Answer:** OpenAI.
+
+---
+
+# Question: What two pieces of information were sent to the AI service as input?
+
+**Answer:** The user prompt and the system prompt.
+
+---
+
+# Question: What command was used in the terminal to run the chatbot program?
+
+**Answer:** `python chat.py`
+
+---
+
+# Question: After adding the system prompt, what question was asked in the terminal to test the program?
+
+**Answer:** “What is Computer programming?”
+
+---
+
+# Question: What kind of answer did the AI return after the system prompt was implemented?
+
+**Answer:** A correct and concise description of Computer programming.
+
+---
+
+# Question: What capability of modern GPT models?
+
+**Answer:** They can be given personalities.
+
+---
