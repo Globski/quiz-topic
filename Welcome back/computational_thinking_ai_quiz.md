@@ -576,3 +576,51 @@
 # Question: How does the input output model illustrate problem solving in computer science?
 
 **Answer:** It shows that **a problem (input) is processed by some method or algorithm (process) to produce a solution (output)**.
+
+---
+
+# Question: Why must people agree on a standard way to represent information when using computers and digital devices?
+
+**Answer:** Because computers and devices must **represent inputs and outputs in a standardized format** so that information can be processed consistently.
+
+---
+
+# Question: What question is raised about how information might be represented for computers?
+
+**Answer:** Whether information should be represented using **English or some other system**.
+
+---
+
+# Question: What two symbols make up the entire alphabet used by computers?
+
+**Answer:** **0 and 1**.
+
+---
+
+# Question: What is the significance of the digits 0 and 1 in computing systems?
+
+**Answer:** They form the **binary system**, which computers use to represent and process all information.
+
+---
+
+# Question: What is **unary notation**?
+
+**Answer:** Unary notation is a number system that uses **a single digit repeatedly to represent numbers**, also known as **base-1**.
+
+---
+
+# Question: What alternative number system is introduced after unary to improve counting efficiency?
+
+**Answer:** **Binary**.
+
+---
+
+# Question: When using binary representation, what is the highest number you can count to?
+
+**Answer:** **31**.
+
+---
+
+# Question: What key principle about computer systems is illustrated by assigning fixed meanings to each finger?
+
+**Answer:** Computers rely on **agreed-upon standardized representations** to interpret patterns of bits (0s and 1s) as numbers or information.
