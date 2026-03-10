@@ -627,14 +627,6 @@
 
 ---
 
-
-
-
-
-
-
-
-
 # Question: In binary finger-counting , what number can be represented using three fingers with different combinations?
 
 **Answer:** Up to **7**, because three binary positions allow **2³ = 8 combinations**, representing numbers **0 through 7**.
@@ -740,3 +732,112 @@
 # Question: Why is binary considered robust for representing information in hardware?
 
 **Answer:** Because it relies on **two easily distinguishable physical states**, such as **on/off or voltage/no voltage**, making it reliable for electronic circuits.
+
+---
+
+# Question: In the binary light bulb analogy, what does a **single light bulb turned off** represent?
+
+**Answer:** It represents the number **0**.
+
+---
+
+# Question: Why are light bulbs used in the explanation of binary numbers?
+
+**Answer:** They provide a simple metaphor for **binary states**, where **off represents 0 and on represents 1**.
+
+---
+
+# Question: Do computers actually contain light bulbs to represent binary values?
+
+**Answer:** No, computers **do not contain light bulbs**; they use electronic components instead.
+
+---
+
+# Question: What physical hardware component inside computers performs the role of switching between binary states?
+
+**Answer:** **Transistors**.
+
+---
+
+# Question: What happens when a transistor is **turned on**?
+
+**Answer:** It **captures or allows the flow of electricity**, representing a binary **1**.
+
+---
+
+# Question: What happens when a transistor is **turned off**?
+
+**Answer:** The electricity **dissipates or stops flowing**, representing a binary **0**.
+
+---
+
+# Question: Approximately how many transistors exist inside modern computers?
+
+**Answer:** **Millions** of tiny transistors.
+
+---
+
+# Question: Why is a **battery or power source** necessary in binary hardware?
+
+**Answer:** Because electricity is required to **power the circuit and allow transistors to represent binary states**.
+
+---
+
+# Question: With only **one light bulb**, what is the highest number that can be represented in binary?
+
+**Answer:** **1**.
+
+---
+
+# Question: Why can only numbers up to 1 be represented with a single binary light bulb?
+
+**Answer:** Because one bulb can only represent **two states: off (0) or on (1)**.
+
+---
+
+# Question: What must be added in order to represent numbers larger than 1 using the light bulb analogy?
+
+**Answer:** **More light bulbs (additional binary positions).**
+
+---
+
+# Question: If two light bulbs are both turned on without assigning positional meaning, what number might someone incorrectly assume they represent?
+
+**Answer:** **2**, because it appears as two bulbs being on.
+
+---
+
+# Question: Why is simply counting the number of bulbs that are on an incorrect approach for representing binary numbers?
+
+**Answer:** Because binary representation depends on **the position of each bit**, not just the total number of bits set to 1.
+
+---
+
+# Question: With three binary positions (three bulbs), what is the highest number that can be represented correctly in binary?
+
+**Answer:** **7**.
+
+---
+
+# Question: Why can three binary positions represent numbers up to 7?
+
+**Answer:** Because **2³ = 8 possible combinations**, representing numbers **0 through 7**.
+
+---
+
+# Question: How is the value **2** represented in the improved binary system using two bulbs?
+
+**Answer:** By turning **only the second bulb on** while the first remains off.
+
+---
+
+# Question: Why is turning on the **right bulb** used to represent the number 3?
+
+**Answer:** Because the pattern of bulbs matches the **binary finger-counting pattern, where combinations of positions determine the number.
+
+---
+
+# Question: What important concept about binary representation by choosing specific bulbs to turn on?
+
+**Answer:** That **each position has a specific meaning or weight**, and numbers are represented by **patterns of those positions** rather than simple counts.
+
