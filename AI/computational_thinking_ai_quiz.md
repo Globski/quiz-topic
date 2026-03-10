@@ -624,3 +624,119 @@
 # Question: What key principle about computer systems is illustrated by assigning fixed meanings to each finger?
 
 **Answer:** Computers rely on **agreed-upon standardized representations** to interpret patterns of bits (0s and 1s) as numbers or information.
+
+---
+
+
+
+
+
+
+
+
+
+# Question: In binary finger-counting , what number can be represented using three fingers with different combinations?
+
+**Answer:** Up to **7**, because three binary positions allow **2³ = 8 combinations**, representing numbers **0 through 7**.
+
+---
+
+# Question: What is the maximum number that can be represented using five fingers in the binary finger system?
+
+**Answer:** **31**.
+
+---
+
+# Question: Why is 31 the maximum number that can be counted with five fingers in binary?
+
+**Answer:** Because five binary positions produce **2⁵ = 32 possible combinations**, representing numbers **0 through 31**.
+
+---
+
+# Question: Why are there 32 possible combinations with five binary positions but the highest number is 31?
+
+**Answer:** Because **one combination represents 0**, leaving **31 as the highest value**.
+
+---
+
+# Question: What number system is being demonstrated when each finger position is assigned a specific value?
+
+**Answer:** **Base-2 (binary)**.
+
+---
+
+# Question: What does it mean by assigning different “weights” to finger positions?
+
+**Answer:** Each finger position represents **a different value (typically powers of two)** in binary representation.
+
+---
+
+# Question: What number system do computers fundamentally use to represent information?
+
+**Answer:** **Binary (base-2)**.
+
+---
+
+# Question: What is the formal name for a single binary digit?
+
+**Answer:** **Binary digit**.
+
+---
+
+# Question: What is the common shorthand term for a binary digit?
+
+**Answer:** **Bit**.
+
+---
+
+# Question: What are the two possible values a bit can represent?
+
+**Answer:** **0 or 1**.
+
+---
+
+# Question: What larger data measurement terms are derived from bits?
+
+**Answer:** **Bytes, kilobytes, megabytes, gigabytes, terabytes, and more**.
+
+---
+
+# Question: In the physical analogy, how can a **0** be represented?
+
+**Answer:** By **a light bulb being off**.
+
+---
+
+# Question: In the physical analogy, how can a **1** be represented?
+
+**Answer:** By **a light bulb being on**.
+
+---
+
+# Question: Why is electricity a convenient way to represent binary values in computers?
+
+**Answer:** Because electricity can **either be flowing or not flowing**, which naturally maps to **1 or 0**.
+
+---
+
+# Question: What real-world device behavior is used to explain binary states?
+
+**Answer:** **Turning a light switch on or off**.
+
+---
+
+# Question: How does binary simplify electrical representation in computing systems?
+
+**Answer:** It avoids the need to measure **exact amounts of electricity**, requiring only two states: **presence or absence of electrical flow**.
+
+---
+
+# Question: What voltage is given to illustrate the presence or absence of electricity?
+
+**Answer:** **0 volts representing no electricity** and **around 5 volts representing electricity present**.
+
+---
+
+# Question: Why is binary considered robust for representing information in hardware?
+
+**Answer:** Because it relies on **two easily distinguishable physical states**, such as **on/off or voltage/no voltage**, making it reliable for electronic circuits.
