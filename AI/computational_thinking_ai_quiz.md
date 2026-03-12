@@ -841,3 +841,122 @@
 
 **Answer:** That **each position has a specific meaning or weight**, and numbers are represented by **patterns of those positions** rather than simple counts.
 
+---
+
+# Question: What number system do most humans use in everyday life?
+
+**Answer:** The **decimal system**, also known as **base 10**.
+
+---
+
+# Question: Why is the decimal system called **base 10**?
+
+**Answer:** Because it uses **ten digits: 0 through 9**.
+
+---
+
+# Question: What digits are available in the **decimal (base 10) system**?
+
+**Answer:** **0, 1, 2, 3, 4, 5, 6, 7, 8, and 9**.
+
+---
+
+# Question: What does the prefix **"dec"** imply in the term **decimal**?
+
+**Answer:** It implies **ten**, referring to the ten digits used in the system.
+
+---
+
+# Question: What is the **binary system**, and how many digits does it use?
+
+**Answer:** The **binary system** is a base-2 number system that uses **two digits: 0 and 1**.
+
+---
+
+# Question: What does the prefix **"bi"** imply in **binary**?
+
+**Answer:** It implies **two**, referring to the two digits used in the system.
+
+---
+
+# Question: What is the **unary system**, and how many digits does it use?
+
+**Answer:** The **unary system** uses **only one digit or symbol** to represent numbers.
+
+---
+
+# Question: Why does the decimal system provide a larger “vocabulary” compared to binary or unary?
+
+**Answer:** Because it has **ten available digits**, allowing more combinations per position.
+
+---
+
+# Question: Why do most people instantly recognize the number **123** when they see the symbols **1 2 3**?
+
+**Answer:** Because they understand the **place value system** used in decimal notation.
+
+---
+
+# Question: What are the place values involved in the decimal number **123**?
+
+**Answer:**
+
+* **1 → hundreds place**
+* **2 → tens place**
+* **3 → ones place**
+
+---
+
+# Question: How can the number **123** be expressed mathematically using place values?
+
+**Answer:**
+**100 × 1 + 10 × 2 + 1 × 3**
+
+---
+
+# Question: What does the multiplication **100 × 1 + 10 × 2 + 1 × 3** represent?
+
+**Answer:** The **place-value expansion** of the decimal number **123**.
+
+---
+
+# Question: What intermediate values are calculated in the expansion of **123**?
+
+**Answer:**
+
+* **100 × 1 = 100**
+* **10 × 2 = 20**
+* **1 × 3 = 3**
+
+---
+
+# Question: What is the final sum that forms the number **123** using place values?
+
+**Answer:**
+**100 + 20 + 3 = 123**
+
+---
+
+# Question: What fundamental concept allows numbers like **123** to be interpreted correctly?
+
+**Answer:** The **place value system**, where each position represents a power of the base.
+
+---
+
+# Question: Does the concept of place values apply only to the decimal system?
+
+**Answer:** No. **Place value applies to all base systems**, including binary and others.
+
+---
+
+# Question: What remains fundamentally the same across different base systems like decimal and binary?
+
+**Answer:** The **method of interpreting digits using positional values and powers of the base**.
+
+---
+
+# Question: What concept allows a three-digit number in any base system to represent a larger value?
+
+**Answer:** **Positional notation**, where each digit’s position determines its weight based on powers of the base.
+
+---
