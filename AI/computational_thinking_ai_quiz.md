@@ -1093,3 +1093,146 @@
 **Answer:** It causes **more frequent carrying between positions**, since numbers cannot include digits larger than **1**.
 
 ---
+
+# Question: Why does the binary representation change from **5 (101)** to **6 (110)** by moving the **1** to the middle column?
+
+**Answer:** Because binary addition causes a **carry to the next column**, so when adding 1 to **101**, the rightmost bit resets to **0** and the carry sets the middle column to **1**, producing **110**.
+
+---
+
+# Question: What binary value represents the number **7** in a three-bit system?
+
+**Answer:** **111**, meaning all three bits are **on**.
+
+---
+
+# Question: What calculation converts the binary number **111** to decimal?
+
+**Answer:**
+**4×1 + 2×1 + 1×1 = 7**
+
+---
+
+# Question: Why can’t the number **8** be represented using only three binary bits?
+
+**Answer:** Because three bits only provide positional values **1, 2, and 4**, whose maximum sum is **7**.
+
+---
+
+# Question: What must be done to represent the number **8** in binary?
+
+**Answer:** **Add another binary digit (bit)** representing the value **8 (2³)**.
+
+---
+
+# Question: Why does representing larger numbers in binary require adding more digits?
+
+**Answer:** Because each **additional bit introduces a new power-of-two positional value**, increasing the maximum representable number.
+
+---
+
+# Question: What hardware implication occurs when a computer adds more bits to represent larger numbers?
+
+**Answer:** The system must **use more hardware resources**, such as additional storage or circuitry.
+
+---
+
+# Question: What problem occurs if a computer runs out of bits while counting?
+
+**Answer:** The value **overflows and wraps around**, potentially returning to **zero**.
+
+---
+
+# Question: Why can binary overflow create real-world problems?
+
+**Answer:** Because **important values may reset unexpectedly**, causing incorrect calculations or system behavior.
+
+---
+
+# Question: What physical component in computers is used to represent binary states?
+
+**Answer:** **Transistors**.
+
+---
+
+# Question: What electrical states do transistors use to represent binary digits?
+
+**Answer:**
+
+* **On → 1**
+* **Off → 0**
+
+---
+
+# Question: What minimal requirement must computer hardware support to represent binary information?
+
+**Answer:** The ability to **turn electrical states on and off**.
+
+---
+
+# Question: Why are small numbers of bits (such as 2, 3, or 4 bits) not very useful in real-world computing?
+
+**Answer:** Because they can represent **only very small numeric ranges**.
+
+---
+
+# Question: What is the maximum number representable with **three bits**?
+
+**Answer:** **7**
+
+---
+
+# Question: What is the maximum number representable with **four bits**?
+
+**Answer:** **15**
+
+---
+
+# Question: Why are larger bit groupings commonly used in computing?
+
+**Answer:** To **represent larger numbers and more information efficiently**.
+
+---
+
+# Question: What is a **byte**?
+
+**Answer:** A **byte is a group of eight bits**.
+
+---
+
+# Question: How many bits make up **one byte**?
+
+**Answer:** **8 bits**
+
+---
+
+# Question: What common data measurement terms are based on bytes?
+
+**Answer:** **Kilobytes, megabytes, and gigabytes**.
+
+---
+
+# Question: What do terms like **kilobyte, megabyte, and gigabyte** ultimately refer to?
+
+**Answer:** **Quantities of bits (grouped into bytes)** used to represent data.
+
+---
+
+# Question: Why is the byte an important unit in computing?
+
+**Answer:** Because **eight bits together provide a practical range of values** that computers commonly use to represent data.
+
+---
+
+# Question: What is meant by a **byte worth of bits**?
+
+**Answer:** A set of **eight binary digits (bits)** grouped together.
+
+---
+
+# Question: Why are placeholders used when displaying binary bits in a byte?
+
+**Answer:** To indicate the **positional values (powers of two)** corresponding to each bit.
+
+---
+
