@@ -1510,3 +1510,143 @@
 
 ---
 
+# Question: How is a pattern of zeros and ones interpreted as the letter **A** inside a computer?
+
+**Answer:** When the pattern is interpreted **in the context of a text-based program** (such as a messaging app or word processor), it is treated as the letter **A**.
+
+---
+
+# Question: Why must binary patterns be interpreted within a specific context?
+
+**Answer:** Because the **same pattern of zeros and ones can represent different types of data** depending on how the program interprets it.
+
+---
+
+# Question: How might the same binary pattern be interpreted differently in a **calculator program**?
+
+**Answer:** It would be interpreted as a **number** rather than a letter.
+
+---
+
+# Question: How might the same binary pattern be interpreted in an image-editing program like Adobe Photoshop?
+
+**Answer:** It could be interpreted as a **color value**.
+
+---
+
+# Question: Besides text and numbers, what other types of data can be represented using binary?
+
+**Answer:**
+
+* **Colors**
+* **Video**
+* **Sound**
+
+---
+
+# Question: What fundamental principle allows computers to represent many different kinds of data?
+
+**Answer:** All data types are ultimately represented as **patterns of zeros and ones**.
+
+---
+
+# Question: When writing programs, who determines how a pattern of zeros and ones should be interpreted?
+
+**Answer:** The **programmer**.
+
+---
+
+# Question: What responsibility does the programmer have when working with binary data?
+
+**Answer:** The programmer must **specify how the computer should interpret the binary data** (for example, as text, numbers, or colors).
+
+---
+
+# Question: How was the binary representation of letters like **A** decided historically?
+
+**Answer:** A **group of people agreed on a standard mapping between characters and numbers**.
+
+---
+
+# Question: What decimal number represents the capital letter **A** in the standard?
+
+**Answer:** **65**
+
+---
+
+# Question: Why does the letter **A** correspond to the number **65**?
+
+**Answer:** Because its binary representation has **a 1 in the 64’s place and a 1 in the 1’s place**, which equals **65**.
+
+---
+
+# Question: What calculation demonstrates how **65** represents the letter **A** in binary?
+
+**Answer:**
+**64 × 1 + 1 × 1 = 65**
+
+---
+
+# Question: Why might it have been simpler if **A** had been assigned the value **0 or 1**?
+
+**Answer:** Because smaller numbers would be **easier to remember**, though the chosen standard still works consistently.
+
+---
+
+# Question: What decimal value represents the letter **B** in the same encoding system?
+
+**Answer:** **66**
+
+---
+
+# Question: What decimal value represents the letter **C** in the same encoding system?
+
+**Answer:** **67**
+
+---
+
+# Question: Why do the numeric values for letters increase sequentially (A = 65, B = 66, C = 67)?
+
+**Answer:** Because the standard assigned **consecutive numeric values to alphabetical characters**.
+
+---
+
+# Question: What standard encoding system defines these mappings between letters and numbers?
+
+**Answer:** **ASCII**
+
+---
+
+# Question: What does the acronym **ASCII** stand for?
+
+**Answer:** **American Standard Code for Information Interchange**
+
+---
+
+# Question: What was the purpose of the **ASCII** standard?
+
+**Answer:** To create a **universal mapping between characters and numeric codes** so computers could represent text consistently.
+
+---
+
+# Question: Why was a standardized character encoding like **ASCII** necessary?
+
+**Answer:** To ensure **different computers interpret the same binary patterns as the same characters**.
+
+---
+
+# Question: How can the mapping used in **ASCII** be conceptually described?
+
+**Answer:** As a **table assigning each character a specific numeric value**.
+
+---
+
+# Question: What nationality were many of the people who initially defined the ASCII standard?
+
+**Answer:** **Americans**
+
+---
+
+# Question: What fundamental representation underlies the ASCII character codes?
+
+**Answer:** **Binary numbers represented as patterns of zeros and ones**.
