@@ -1380,3 +1380,133 @@
 **Answer:** Because part of the **binary range must represent negative numbers**, reducing the available positive values.
 
 ---
+
+
+# Question: What bit-size is increasingly common in modern computers such as laptops, desktops, and smartphones?
+
+**Answer:** **64 bits**
+
+---
+
+# Question: What does a **64-bit system** imply in terms of possible binary combinations?
+
+**Answer:** It allows **2⁶⁴ possible binary permutations**.
+
+---
+
+# Question: Why is **2⁶⁴** considered an extremely large number of possibilities?
+
+**Answer:** Because it represents a **vast number of unique binary combinations**, far beyond everyday counting ranges.
+
+---
+
+# Question: What trend has significantly contributed to the rise of modern AI systems?
+
+**Answer:** Computers have been becoming **exponentially faster over time**.
+
+---
+
+# Question: Besides faster processors, what other hardware improvement has helped enable modern AI development?
+
+**Answer:** **Much larger amounts of available memory**.
+
+---
+
+# Question: What external factor on the internet has contributed to training modern AI models?
+
+**Answer:** The availability of **large amounts of data online**.
+
+---
+
+# Question: What combination of factors has enabled the recent surge in AI advancements?
+
+**Answer:**
+
+* **Faster computers**
+* **More memory**
+* **Large datasets**
+* **Mathematical and statistical techniques**
+
+---
+
+# Question: What types of academic concepts are combined with modern hardware to create AI systems?
+
+**Answer:** **Mathematics and statistics**.
+
+---
+
+# Question: Why are AI tools now more feasible than in the past?
+
+**Answer:** Because **hardware capabilities have caught up with the mathematical and statistical methods used in AI**.
+
+---
+
+# Question: What limitation does a computer face when representing letters like **A** internally?
+
+**Answer:** It only has access to **binary states (0s and 1s)** through electrical signals.
+
+---
+
+# Question: What physical resources does a computer use to represent information internally?
+
+**Answer:**
+
+* **Electricity from a power source (wall outlet or battery)**
+* **Electronic switches that can turn on or off**
+
+---
+
+# Question: In what unit sizes might computers group binary data when storing information?
+
+**Answer:** **8 bits, 32 bits, 64 bits**, or other bit groupings.
+
+---
+
+# Question: What key idea is required to represent letters using binary digits?
+
+**Answer:** Assigning each letter a **specific numeric identity (integer value)**.
+
+---
+
+# Question: Why must letters like **A** be assigned an integer value inside a computer?
+
+**Answer:** Because computers ultimately store **numbers represented as patterns of zeros and ones**.
+
+---
+
+# Question: What must be agreed upon to represent letters in binary form?
+
+**Answer:** A **standard mapping between letters and specific binary patterns (or integers)**.
+
+---
+
+# Question: Why is agreement on binary patterns for letters important?
+
+**Answer:** So that **different computers and programs interpret the same binary patterns as the same characters**.
+
+---
+
+# Question: What is the fundamental limitation that forces all computer data representations to use numbers?
+
+**Answer:** A computer’s hardware can only **distinguish between electrical states representing 0s and 1s**.
+
+---
+
+# Question: What is the fundamental building block used to represent all types of data in computers?
+
+**Answer:** **Binary digits (bits)**.
+
+---
+
+# Question: What is the answer to nearly every representation problem in computing?
+
+**Answer:** **A pattern of zeros and ones**.
+
+---
+
+# Question: How can a computer represent the letter **A** internally?
+
+**Answer:** By assigning **a specific integer value represented by a binary pattern of zeros and ones**.
+
+---
+
