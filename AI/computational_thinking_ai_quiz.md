@@ -1236,3 +1236,147 @@
 
 ---
 
+# Question: What decimal value is represented when all eight binary digits in a byte are **0**?
+
+**Answer:** **0**, because every positional value is multiplied by **0**.
+
+---
+
+# Question: Why does the binary value **00000000** equal **0** in decimal?
+
+**Answer:** Because each positional value (powers of two) is multiplied by **0**, resulting in a total sum of **0**.
+
+---
+
+# Question: What decimal value is represented when all eight bits in a byte are **1**?
+
+**Answer:** **255**
+
+---
+
+# Question: Why does the binary value **11111111** equal **255** in decimal?
+
+**Answer:** Because it is the sum of all eight powers of two:
+**128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255**
+
+---
+
+# Question: What is the maximum number that can be represented with **8 bits**?
+
+**Answer:** **255**
+
+---
+
+# Question: How many total unique values can be represented with **8 bits**?
+
+**Answer:** **256 values**
+
+---
+
+# Question: Why does **8 bits** produce **256 possible values**?
+
+**Answer:** Because the total number of binary combinations is **2⁸**, which equals **256**.
+
+---
+
+# Question: Why does counting from **0 to 255** produce **256 total values**?
+
+**Answer:** Because **zero is included**, so the range **0–255** contains **256 distinct numbers**.
+
+---
+
+# Question: What mathematical expression represents the number of possible values for **eight bits**?
+
+**Answer:** **2⁸**
+
+---
+
+# Question: Why is the number **256** common in computer science?
+
+**Answer:** Because it represents the **total number of combinations possible with 8 bits**.
+
+---
+
+# Question: What historical limitation existed in early computer graphics related to 256?
+
+**Answer:** Early computers could display **only 256 colors on the screen**.
+
+---
+
+# Question: Why were early graphics systems limited to **256 colors**?
+
+**Answer:** Because they used **8 bits to represent color values**, allowing only **256 unique combinations**.
+
+---
+
+# Question: How do some graphics formats still limit images to **256 colors**?
+
+**Answer:** By storing color values using **only 8 bits**, restricting the number of possible color representations.
+
+---
+
+# Question: What determines how many colors can be represented in such graphics systems?
+
+**Answer:** The **number of bits used to store color information**.
+
+---
+
+# Question: How do computers represent familiar numbers internally?
+
+**Answer:** By using **combinations of binary digits (0s and 1s)** stored using electrical states.
+
+---
+
+# Question: What allows computers to represent numbers larger than **255**?
+
+**Answer:** **Adding more bits**.
+
+---
+
+# Question: What must be added to count beyond **255** in binary?
+
+**Answer:** A **ninth bit** (and potentially more bits).
+
+---
+
+# Question: How can binary systems continue increasing their maximum value?
+
+**Answer:** By adding **additional bits**, such as a **9th, 10th, 11th bit**, and so on.
+
+---
+
+# Question: What is a common number of bits used in modern computing to represent integers?
+
+**Answer:** **32 bits**
+
+---
+
+# Question: Approximately how many values can be represented using **32 bits**?
+
+**Answer:** About **4 billion values**.
+
+---
+
+# Question: What mathematical expression determines the number of possible values with **32 bits**?
+
+**Answer:** **2³²**
+
+---
+
+# Question: What is the approximate value of **2³²**?
+
+**Answer:** Approximately **4 billion (4,294,967,296)**.
+
+---
+
+# Question: Why might the usable positive range of a 32-bit number be closer to **2 billion** instead of 4 billion?
+
+**Answer:** Because **some bits may be used to represent negative numbers**.
+
+---
+
+# Question: Why do signed number representations reduce the maximum positive value?
+
+**Answer:** Because part of the **binary range must represent negative numbers**, reducing the available positive values.
+
+---
