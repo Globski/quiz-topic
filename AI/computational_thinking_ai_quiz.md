@@ -1650,3 +1650,96 @@
 # Question: What fundamental representation underlies the ASCII character codes?
 
 **Answer:** **Binary numbers represented as patterns of zeros and ones**.
+
+---
+
+# Question: Why was a standard mapping between letters and numbers created for computers?
+
+**Answer:** To ensure that **different computers could represent and interpret text using the same numeric codes**.
+
+---
+
+# Question: What problem would occur if computers did not use a common character encoding standard?
+
+**Answer:** Different computers might **interpret the same binary pattern as different characters**, causing incorrect text display.
+
+---
+
+# Question: How were characters like letters assigned numeric values historically?
+
+**Answer:** People created a **table mapping each character to a specific number**.
+
+---
+
+# Question: What character encoding standard defines mappings like **A = 65, B = 66, C = 67**?
+
+**Answer:** ASCII
+
+---
+
+# Question: How many bits eventually became commonly used to represent characters?
+
+**Answer:** **8 bits (one byte)**
+
+---
+
+# Question: Why did character representations expand from **7 bits to 8 bits**?
+
+**Answer:** To provide **additional space for more characters and symbols**.
+
+---
+
+# Question: In the ASCII table, what decimal value corresponds to the capital letter **A**?
+
+**Answer:** **65**
+
+---
+
+# Question: What decimal value corresponds to the capital letter **B** in ASCII?
+
+**Answer:** **66**
+
+---
+
+# Question: What decimal value corresponds to the capital letter **C** in ASCII?
+
+**Answer:** **67**
+
+---
+
+# Question: How many bits are contained in **three bytes**?
+
+**Answer:** **24 bits**
+
+---
+
+# Question: When converting a binary byte to a decimal number, what positional values are typically used?
+
+**Answer:**
+**1, 2, 4, 8, 16, 32, 64, 128**
+
+---
+
+# Question: What could happen if you inspected a message “under the hood” of a computer?
+
+**Answer:** You would see the **actual binary patterns (zeros and ones)** that represent the message.
+
+---
+
+# Question: How might a text message appear internally when transmitted over the internet?
+
+**Answer:** As **sequences of binary bits grouped into bytes**.
+
+---
+
+# Question: Why can binary numbers represent text messages?
+
+**Answer:** Because each character is **mapped to a numeric code**, which is then stored as **binary bits**.
+
+---
+
+# Question: What does each byte in a text message typically represent?
+
+**Answer:** **One character** in the encoding system being used.
+
+---
