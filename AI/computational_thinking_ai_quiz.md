@@ -1743,3 +1743,117 @@
 **Answer:** **One character** in the encoding system being used.
 
 ---
+
+# Question: In ASCII encoding, what characters are represented by the numbers 72 and 73?
+
+**Answer:** 72 represents **H** and 73 represents **I** in ASCII.
+
+---
+
+# Question: What character does the ASCII number 33 represent?
+
+**Answer:** The ASCII number **33** represents the **exclamation point (!)**.
+
+---
+
+# Question: If the numbers 72, 73, and 33 are sent as ASCII values, what message do they represent?
+
+**Answer:** They represent the message **“HI!”**.
+
+---
+
+# Question: When texting “HI!” in ASCII terms, how many bytes of information are being sent?
+
+**Answer:** **Three bytes**, one byte for each character: **H**, **I**, and **!**.
+
+---
+
+# Question: Why can a receiving phone display “HI!” instead of the numbers 72, 73, and 33?
+
+**Answer:** Because the phone understands **ASCII encoding**, which maps numbers to specific characters.
+
+---
+
+# Question: What is the role of ASCII in communication between computers or devices?
+
+**Answer:** ASCII provides a **standard mapping between numbers and characters**, allowing devices to interpret numeric data as readable text.
+
+---
+
+# Question: Why don’t devices display the raw numbers when ASCII-encoded data is received?
+
+**Answer:** Because the device interprets the numbers using the **ASCII table**, converting them into their corresponding characters.
+
+---
+
+# Question: What ASCII number represents the uppercase letter **A**?
+
+## **Answer:** **65**.
+
+---
+
+# Question: What ASCII number represents the lowercase letter **a**?
+
+**Answer:** **97**.
+
+---
+
+# Question: What is the numeric difference between the ASCII values of uppercase and lowercase letters?
+
+**Answer:** The difference is **32**.
+
+---
+
+# Question: How can we verify the ASCII difference between uppercase and lowercase letters using A and a?
+
+**Answer:** By calculating **97 − 65 = 32**.
+
+---
+
+# Question: How can we verify the ASCII difference between uppercase and lowercase letters using B and b?
+
+**Answer:** By calculating **98 − 66 = 32**.
+
+---
+
+# Question: Does the ASCII difference of 32 between uppercase and lowercase letters remain consistent across the alphabet?
+
+**Answer:** **Yes**, the difference of **32** is consistent for all alphabetic characters.
+
+---
+
+# Question: What does the consistent difference of 32 between uppercase and lowercase ASCII letters enable computers to do easily?
+
+**Answer:** It allows computers to **convert between uppercase and lowercase letters through simple arithmetic operations**.
+
+---
+
+# Question: In binary representation, how can a computer convert an uppercase letter to lowercase?
+
+**Answer:** By **turning on the bit corresponding to the 32’s place**, which adds 32 to the ASCII value.
+
+---
+
+# Question: Why does turning on the 32’s bit convert uppercase letters to lowercase?
+
+**Answer:** Because **adding 32 to the ASCII value of an uppercase letter produces the ASCII value of its lowercase counterpart**.
+
+---
+
+# Question: In the binary representation of the uppercase letter A (ASCII 65), which bit needs to change to convert it to lowercase?
+
+**Answer:** The **bit in the 32’s place** must be turned **on**.
+
+---
+
+# Question: What effect does enabling the 32’s place bit have mathematically?
+
+**Answer:** It **adds 32 to the ASCII value**.
+
+---
+
+# Question: Why is knowledge of ASCII bit patterns more important for computers than humans?
+
+**Answer:** Because **computers manipulate binary values directly**, making operations like case conversion efficient through **bit manipulation**.
+
+---
