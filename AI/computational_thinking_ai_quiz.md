@@ -1973,3 +1973,144 @@
 # Question: What concept allows a three-digit number in any base system to represent a larger value?
 
 **Answer:** **Positional notation**, where each digit’s position determines its weight based on powers of the base.
+
+---c
+
+# Question: Why are the positional values of digits in a decimal number known when placeholders are shown above the digits?
+
+**Answer:** Because the placeholders indicate the **power-of-10 positional values** (such as ones, tens, hundreds, etc.) associated with each digit.
+
+---
+
+# Question: What numeric sequence represents the positional pattern in the decimal system?
+
+**Answer:** **1, 10, 100, 1,000, 10,000, ...**
+
+---
+
+# Question: How can the decimal positional pattern be expressed using powers?
+
+**Answer:** As **10⁰, 10¹, 10², 10³, 10⁴, ...**
+
+---
+
+# Question: Why are powers of **10** used in the decimal system?
+
+**Answer:** Because the decimal system allows **10 different digits (0–9)** in each column.
+
+---
+
+# Question: What does changing the base from **10 to 2** mean in number systems?
+
+**Answer:** It means switching from the **decimal system** to the **binary system**, where only **two digits (0 and 1)** are allowed.
+
+---
+
+# Question: Why do computers prefer binary instead of decimal?
+
+**Answer:** Because it is **much easier for hardware to distinguish between two electrical states (on/off)** than to maintain **ten distinct electrical levels**.
+
+---
+
+# Question: What two physical states in computers correspond to binary digits?
+
+**Answer:**
+
+* **On → 1**
+* **Off → 0**
+
+---
+
+# Question: Why would representing numbers using ten different electrical levels be difficult in hardware?
+
+**Answer:** Because maintaining **ten precise electrical states would be complex, unreliable, and difficult to build**, whereas **two states (on/off) are simple and robust**.
+
+---
+
+# Question: When switching to binary, what powers replace the decimal powers of 10?
+
+**Answer:** **Powers of 2** replace powers of 10.
+
+---
+
+# Question: What are the first three positional values in binary using powers of two?
+
+**Answer:**
+
+* **2⁰ = 1**
+* **2¹ = 2**
+* **2² = 4**
+
+---
+
+# Question: How does the mental math for interpreting numbers remain similar across decimal and binary systems?
+
+**Answer:** Both systems use **positional values multiplied by digits and summed together**, but the positional values are **powers of the base**.
+
+---
+
+# Question: In a 3-bit binary representation, what are the positional column values from right to left?
+
+**Answer:** **1, 2, 4**
+
+---
+
+# Question: What does the binary sequence **000** represent?
+
+**Answer:** It represents **0**, because:
+**4×0 + 2×0 + 1×0 = 0**
+
+---
+
+# Question: How is the decimal number **4** represented using three binary bits?
+
+**Answer:** **100**, because:
+**4×1 + 2×0 + 1×0 = 4**
+
+---
+
+# Question: What does the binary value **111** represent?
+
+**Answer:** **7**, because:
+**4×1 + 2×1 + 1×1 = 7**
+
+---
+
+# Question: What calculation converts the binary number **111** to decimal?
+
+**Answer:**
+**4×1 + 2×1 + 1×1 = 7**
+
+---
+
+# Question: In the binary system, what do the digits **0** and **1** represent?
+
+**Answer:**
+
+* **0 → Off state**
+* **1 → On state**
+
+---
+
+# Question: How can larger numbers be represented in binary beyond three bits?
+
+**Answer:** By **adding more bits**, each representing the next power of two.
+
+---
+
+# Question: What determines the value represented by a binary number?
+
+**Answer:** The **sum of each bit multiplied by its corresponding power-of-two positional value**.
+
+---
+
+# Question: What limitation exists in binary compared to decimal regarding available digits?
+
+**Answer:** Binary uses **only two digits (0 and 1)**, unlike decimal which uses **ten digits (0–9)**.
+
+---
+
+# Question: What effect does having only two digits in binary have on number representation?
+
+**Answer:** It causes **more frequent carrying between positions**, since numbers cannot include digits larger than **1**.
+
