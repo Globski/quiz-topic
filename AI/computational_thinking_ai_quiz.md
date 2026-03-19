@@ -2257,3 +2257,46 @@
 **Answer:** To indicate the **positional values (powers of two)** corresponding to each bit.
 
 ---
+
+
+# Question: How many bits are typically used to represent a single ASCII character?
+
+**Answer:** **Eight bits (one byte)** are typically used to represent a single ASCII character.
+
+---
+
+# Question: How can a computer change a letter from uppercase to lowercase in binary?
+
+**Answer:** By **changing a single bit in the 32’s place** within the 8-bit pattern.
+
+---
+
+# Question: Why is converting uppercase letters to lowercase computationally simple in ASCII?
+
+**Answer:** Because it requires **modifying only one bit (the 32’s bit)** in the character’s binary representation.
+
+---
+
+# Question: What sequence of place values defines an 8-bit binary number?
+
+**Answer:** **1, 2, 4, 8, 16, 32, 64, and 128**.
+
+---
+
+# Question: Why is the 32’s place significant in ASCII letter conversion?
+
+**Answer:** Because **toggling the 32’s bit changes an uppercase letter to its lowercase equivalent**.
+
+---
+
+# Question: In an 8-bit binary representation, what does each position correspond to?
+
+**Answer:** Each position corresponds to a **power of two place value**.
+
+---
+
+# Question: Why use powers of two for each position?
+
+**Answer:** Because **binary numbers are based on powers of two**, where each bit represents a value of (2^n).
+
+---
