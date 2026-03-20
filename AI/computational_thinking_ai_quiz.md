@@ -2300,3 +2300,44 @@
 **Answer:** Because **binary numbers are based on powers of two**, where each bit represents a value of (2^n).
 
 ---
+
+# Question: What encoding system is used to convert numbers into letters?
+
+**Answer:** **ASCII (American Standard Code for Information Interchange)**.
+
+---
+
+# Question: Which ASCII character corresponds to the number **66**?
+
+**Answer:** The letter **B**.
+
+---
+
+# Question: Which ASCII character corresponds to the number **79**?
+
+**Answer:** The letter **O**.
+
+---
+
+# Question: Which ASCII character corresponds to the number **87**?
+
+**Answer:** The letter **W**.
+
+---
+
+# Question: What word is spelled by the sequence of ASCII values 66, 79, and 87?
+
+**Answer:** **BOW**.
+
+---
+
+# Question: What concept about computer data representation by spelling “BOW”?
+
+**Answer:** How **binary bits combine to form numbers, which can then be interpreted as characters using ASCII encoding**.
+
+---
+
+# Question: How computers represent text?
+
+**Answer:** **characters are encoded as numbers, which are built from binary bits representing powers of two**.
+
