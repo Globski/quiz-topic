@@ -2341,3 +2341,100 @@
 
 **Answer:** **characters are encoded as numbers, which are built from binary bits representing powers of two**.
 
+---
+
+# Question: Why do devices display the same character when someone types a letter like “b” on different computers or phones?
+
+**Answer:** Because systems **standardize how characters are represented numerically**, allowing all devices to interpret the same numeric code in the same way.
+
+---
+
+# Question: What limitation does ASCII have when representing written language?
+
+**Answer:** ASCII **cannot represent many characters used in other languages**, such as accented letters and numerous symbols from non-Latin scripts.
+
+---
+
+# Question: Why are many characters from global languages missing from the ASCII character set?
+
+**Answer:** Because ASCII has **a limited number of available character codes**, which were primarily designed for **English letters, numbers, and punctuation**.
+
+---
+
+# Question: What type of characters are often missing from keyboards and ASCII representations due to these limitations?
+
+**Answer:** **Accented characters and glyphs from languages such as many Asian writing systems**.
+
+---
+
+# Question: What modern character encoding system expanded beyond ASCII to support many more symbols and languages?
+
+**Answer:** **Unicode**.
+
+---
+
+# Question: How does Unicode differ from ASCII in terms of capacity?
+
+**Answer:** Unicode uses **many more bits**, allowing it to represent **far more characters than ASCII**.
+
+---
+
+# Question: What type of modern digital symbols are included within the Unicode character set?
+
+**Answer:** **Emoji**.
+
+---
+
+# Question: Are emoji technically images when sent in messages?
+
+**Answer:** No. Emoji are **characters encoded as binary patterns**, though they are **displayed visually as colorful graphics**.
+
+---
+
+# Question: How are emoji similar to letters in terms of computer representation?
+
+**Answer:** Like letters, emoji are **standardized sequences of bits (zeros and ones)** that represent characters.
+
+---
+
+# Question: Why do emoji appear as graphical images on devices?
+
+**Answer:** Because the **font used to display those characters renders them as colorful graphical symbols**.
+
+---
+
+# Question: What determines how a Unicode character (such as an emoji) visually appears on a device?
+
+**Answer:** The **font used by the device** determines the visual representation of the character.
+
+---
+
+# Question: Why can Unicode represent more characters than ASCII?
+
+**Answer:** Because Unicode uses **more bits to encode characters**, greatly increasing the number of possible representations.
+
+---
+
+# Question: How many possible characters can be represented with an 8-bit encoding system like ASCII?
+
+**Answer:** **256 characters**.
+
+---
+
+# Question: How is the number 256 derived for the number of possible ASCII characters?
+
+**Answer:** From the calculation **2⁸ = 256**, since eight bits allow 256 unique combinations.
+
+---
+
+# Question: Why are 256 possible characters sufficient for English text?
+
+**Answer:** Because they can include **uppercase letters, lowercase letters, numbers, and common punctuation symbols**.
+
+---
+
+# Question: Why are 256 characters insufficient for representing all written languages?
+
+**Answer:** Because many languages require **far more symbols, accents, and glyphs than ASCII’s limited character set allows**.
+
+---
