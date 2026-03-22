@@ -2438,3 +2438,99 @@
 **Answer:** Because many languages require **far more symbols, accents, and glyphs than ASCII’s limited character set allows**.
 
 ---
+
+# Question: What organization is responsible for defining the Unicode standard?
+
+**Answer:** The **Unicode Consortium**.
+
+---
+
+# Question: What is the primary mission of the Unicode Consortium?
+
+**Answer:** To create a **digital representation for all human languages—past, present, and future**.
+
+---
+
+# Question: Why did Unicode expand beyond the bit length used in ASCII?
+
+**Answer:** Because ASCII’s **7–8 bits cannot represent enough characters** for all languages and symbols used worldwide.
+
+---
+
+# Question: How many bits might Unicode use to represent a single character?
+
+**Answer:** Unicode may use **16 bits, 24 bits, or even 32 bits per character**.
+
+---
+
+# Question: How many possible characters can be represented with 32 bits?
+
+**Answer:** Approximately **4 billion possible characters**.
+
+---
+
+# Question: Why does increasing the number of bits increase the number of possible characters?
+
+**Answer:** Because each additional bit **doubles the number of possible binary combinations**.
+
+---
+
+# Question: What modern digital symbols have become widely available due to Unicode’s large character capacity?
+
+**Answer:** **Emoji**.
+
+---
+
+# Question: Why have emoji rapidly increased in number and popularity?
+
+**Answer:** Because Unicode provides **many available bit patterns**, allowing many new symbols to be created.
+
+---
+
+# Question: What purpose do emoji serve beyond simple decoration in communication?
+
+**Answer:** They **represent people, places, objects, and emotions**, often communicating meaning across language barriers.
+
+---
+
+# Question: Why can emoji communication transcend human language?
+
+**Answer:** Because emoji are **visual symbols that represent concepts or emotions rather than specific words**.
+
+---
+
+# Question: Despite being standardized, why can emoji still be interpreted differently by users?
+
+**Answer:** Because **visual representations may vary and meanings can be subjective**.
+
+---
+
+# Question: Why might the “Face with Tears of Joy” emoji look different on different devices?
+
+**Answer:** Because **different companies design their own visual interpretation of the same Unicode character**.
+
+---
+
+# Question: Which companies commonly implement their own visual designs for Unicode emoji?
+
+**Answer:** Companies such as **Apple, Google, and Microsoft**.
+
+---
+
+# Question: What part of emoji representation is standardized by Unicode?
+
+**Answer:** The **underlying numeric code (character identifier)**.
+
+---
+
+# Question: What part of emoji representation is not standardized by Unicode?
+
+**Answer:** The **visual design or graphical style** used by different platforms.
+
+---
+
+# Question: Why might the same emoji appear differently on iPhones and Android devices?
+
+**Answer:** Because **Apple and Google create different graphical renderings of the same Unicode emoji character**.
+
+---
