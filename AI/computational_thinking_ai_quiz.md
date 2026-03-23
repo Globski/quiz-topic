@@ -3158,3 +3158,124 @@
 **Answer:** An implementation of algorithms.
 
 ---
+
+# Question: What is software fundamentally composed of?
+
+**Answer:** Step-by-step instructions (algorithms) written in code.
+
+---
+
+# Question: What are some examples of programming languages used to implement algorithms?
+
+**Answer:** C++ and Java.
+
+---
+
+# Question: What is the purpose of learning multiple programming languages in computer science?
+
+**Answer:** To solve different types of problems and use the best tool for a given task.
+
+---
+
+# Question: Do all programming languages solve problems in the same way?
+
+**Answer:** No, different languages can solve problems differently and may be better suited for specific tasks.
+
+---
+
+# Question: Besides languages, what else can vary when solving problems in computer science?
+
+**Answer:** Methodologies.
+
+---
+
+# Question: Why might one programming language be preferred over another for a task?
+
+**Answer:** Because it may be more efficient or better suited for that specific problem.
+
+---
+
+# Question: What real-world example is used to illustrate searching for data?
+
+**Answer:** Finding a contact (e.g., John Harvard) in a contacts app or phone book.
+
+---
+
+# Question: What information is associated with a contact like John Hawk?
+
+**Answer:** A phone number (e.g., +1 949-4682750).
+
+---
+
+# Question: What feature helps quickly find a contact when typing their name on a smartphone?
+
+**Answer:** Autocomplete.
+
+---
+
+# Question: What does autocomplete do in a contacts app?
+
+**Answer:** It filters the list of contacts to match the typed input.
+
+---
+
+# Question: What is the scale of data in a contacts app e.g?
+
+**Answer:** It can contain 10, 100, or even 1,000 contacts.
+
+---
+
+# Question: What historical tool is compared to a modern contacts app?
+
+**Answer:** A phone book.
+
+---
+
+# Question: How are entries typically organized in a phone book?
+
+**Answer:** Alphabetically by first name or last name.
+
+---
+
+# Question: What type of information does a phone book contain?
+
+**Answer:** Names and corresponding phone numbers.
+
+---
+
+# Question: What is one naive method of searching for a name in a phone book?
+
+**Answer:** Starting at the beginning and checking each entry one by one.
+
+---
+
+# Question: What does the naive search method involve physically in a phone book?
+
+**Answer:** Turning pages one at a time and scanning each entry.
+
+---
+
+# Question: What is the main drawback of the naive search approach?
+
+**Answer:** It is inefficient and slow, especially for large datasets.
+
+---
+
+# Question: How is the contacts app similar to a phone book?
+
+**Answer:** Both store alphabetically sorted names with associated phone numbers.
+
+---
+
+# Question: What underlying concept is being introduced through the phone book example?
+
+**Answer:** Searching algorithms.
+
+---
+
+# Question: Why is the phone book example relevant to computer science?
+
+**Answer:** It demonstrates how data can be searched and how different methods affect efficiency.
+
+---
+
