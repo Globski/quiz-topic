@@ -3279,3 +3279,146 @@
 
 ---
 
+# Question: What is the initial algorithm described for finding "John Hawk" in the phone book?
+
+**Answer:** A step-by-step linear search that checks each page one at a time from the beginning until "John Hawk" is found.
+
+---
+
+# Question: Why is the initial page-by-page search algorithm considered correct?
+
+**Answer:** Because if each step is followed carefully, it will eventually locate "John Hawk" without skipping any pages.
+
+---
+
+# Question: What is the main drawback of the page-by-page search algorithm?
+
+**Answer:** It is very slow, potentially requiring checking every page in the phone book.
+
+---
+
+# Question: In the worst-case scenario, how many pages might the linear search algorithm require to find "John Hawk"?
+
+**Answer:** As many as 1,000 pages if the phone book contains 1,000 pages.
+
+---
+
+# Question: On average, how many pages might need to be checked using the linear search algorithm?
+
+**Answer:** Roughly 500 pages if the target is near the middle.
+
+---
+
+# Question: Why is the linear search algorithm inefficient for repeated use?
+
+**Answer:** Because it takes too long each time, making it impractical when performed frequently.
+
+---
+
+# Question: What alternative counting strategy is introduced to improve speed?
+
+**Answer:** Counting by two pages at a time (e.g., 2, 4, 6, 8, ...), effectively skipping every other page.
+
+---
+
+# Question: How does counting by two pages at a time affect performance?
+
+**Answer:** It makes the search approximately twice as fast compared to checking every page.
+
+---
+
+# Question: Is the "counting by two" algorithm guaranteed to find "John Hawk"?
+
+**Answer:** No, because it may skip over the page containing "John Hawk."
+
+---
+
+# Question: What is the primary flaw in the "counting by two" algorithm?
+
+**Answer:** It risks missing the target entirely if "John Hawk" lies between two checked pages.
+
+---
+
+# Question: What is the probability  for skipping over "John Hawk" when counting by two?
+
+**Answer:** Approximately 50/50 probability.
+
+---
+
+# Question: How can the "counting by two" algorithm be corrected to avoid missing the target?
+
+**Answer:** By doubling back one page after passing the relevant section (e.g., the "J" section) to check for a missed entry.
+
+---
+
+# Question: What additional cost does fixing the "counting by two" algorithm introduce?
+
+**Answer:** One extra step (or a small number of steps) to double back and verify a missed page.
+
+---
+
+# Question: After applying the fix, how does the performance of the "counting by two" algorithm compare to linear search?
+
+**Answer:** It is roughly twice as fast, with only a minor overhead for occasional backtracking.
+
+---
+
+# Question: What is described as a "bug" in the context of the "counting by two" algorithm?
+
+**Answer:** The possibility of skipping over the target without detecting it.
+
+---
+
+# Question: What smarter strategy is introduced after the counting-by-two approach?
+
+**Answer:** Jumping to the middle of the phone book to begin the search.
+
+---
+
+# Question: What real-world systems use the "jump to the middle" strategy?
+
+**Answer:** Smartphones like iPhones and Android devices.
+
+---
+
+# Question: After opening the phone book to the middle, what is the next step?
+
+**Answer:** Check the section (e.g., "M") and determine whether the target name lies to the left or right.
+
+---
+
+# Question: If "John Hawk" is before the middle (e.g., in the "J" section), which direction should the search continue?
+
+**Answer:** To the left (the earlier half of the book).
+
+---
+
+# Question: What key idea is introduced by moving to the middle of the phone book?
+
+**Answer:** The problem can be divided into smaller parts by eliminating half of the remaining pages.
+
+---
+
+# Question: What phrase summarizes the efficiency improvement of the middle-based strategy?
+
+**Answer:** "Tear the problem in half."
+
+---
+
+# Question: What is the fundamental advantage of dividing the problem in half repeatedly?
+
+**Answer:** It drastically reduces the number of steps needed to find the target compared to linear methods.
+
+---
+
+# Question: What type of algorithmic improvement does the "tear the problem in half" strategy represent?
+
+**Answer:** A more efficient search approach that reduces the problem size exponentially (binary search concept).
+
+---
+
+# Question: Compared to linear search, how does repeatedly halving the search space impact performance?
+
+**Answer:** It significantly improves speed by reducing the number of steps needed to locate the target.
+
+---
