@@ -2817,3 +2817,99 @@
 
 ---
 
+# Question: What determines whether zeros and ones are interpreted as numbers, letters, or colors?
+
+**Answer:** The programmer’s instructions and the software’s interpretation.
+
+---
+
+# Question: Why can the same binary data (zeros and ones) represent different types of information?
+
+**Answer:** Because the meaning depends on how the software is instructed to interpret the data.
+
+---
+
+# Question: What is a flip book an example of in digital terms?
+
+**Answer:** A video.
+
+---
+
+# Question: How does a flip book create the illusion of motion?
+
+**Answer:** By displaying many slightly different images in rapid succession.
+
+---
+
+# Question: What is a video fundamentally composed of?
+
+**Answer:** A sequence of images (frames) displayed quickly one after another.
+
+---
+
+# Question: On modern devices, where are videos typically viewed?
+
+**Answer:** On phones, laptops, or other digital screens.
+
+---
+
+# Question: What is the relationship between images and videos in terms of abstraction?
+
+**Answer:** Videos are built from images, which are built from colors, which are built from binary data.
+
+---
+
+# Question: What hierarchy of data representation is described leading up to video?
+
+**Answer:** Zeros and ones → letters → colors → images → video.
+
+---
+
+# Question: Approximately how many images per second are shown in a typical video?
+
+**Answer:** About 30 images per second.
+
+---
+
+# Question: What effect does showing around 30 images per second create?
+
+**Answer:** The illusion of motion.
+
+---
+
+# Question: What does the term "motion pictures" literally refer to?
+
+**Answer:** A sequence of still images shown rapidly to appear as motion.
+
+---
+
+# Question: Why does the human brain perceive motion in videos?
+
+**Answer:** Because rapidly displayed images trick the brain into seeing continuous movement.
+
+---
+
+# Question: What is another medium besides video that uses rapid image sequencing to simulate motion?
+
+**Answer:** Flip books.
+
+---
+
+# Question: What is the core challenge in representing music using computers?
+
+**Answer:** Representing musical elements using only zeros and ones.
+
+---
+
+# Question: What is one key property of sound used to represent music digitally?
+
+**Answer:** Frequency (which determines pitch or tone).
+
+---
+
+# Question: In digital music representation, what does frequency correspond to?
+
+**Answer:** The tone or pitch being heard.
+
+---
+
