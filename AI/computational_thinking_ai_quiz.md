@@ -2636,3 +2636,87 @@
 **Answer:** **Combining red, green, and blue light to produce full-color images**.
 
 ---
+
+# Question: What three primary colors are commonly used in modern digital systems to represent all other colors?
+
+**Answer:** **Red, Green, and Blue (RGB)**.
+
+---
+
+# Question: Which modern software application using the RGB color system?
+
+**Answer:** **Photoshop**.
+
+---
+
+# Question: Why would numbers (72, 73, 33) produce different meanings in different programs?
+
+**Answer:** Because **software interprets the same binary data differently depending on context**, such as text vs. color data.
+
+---
+
+# Question: What would happen if the numbers 72, 73, and 33 were interpreted by an image-editing program like Photoshop?
+
+**Answer:** They would be interpreted as **RGB color values representing the color of a pixel**, not as text.
+
+---
+
+# Question: In the RGB color model, how many bytes are typically used to represent one color?
+
+**Answer:** **Three bytes**, one for **red**, one for **green**, and one for **blue**.
+
+---
+
+# Question: How many bits are used to represent each RGB color component in a typical system?
+
+**Answer:** **8 bits per component**.
+
+---
+
+# Question: What range of values can each RGB color component take when represented with 8 bits?
+
+**Answer:** **0 to 255**.
+
+---
+
+# Question: What does the value **0** represent for an RGB color component?
+
+**Answer:** **No intensity** of that color.
+
+---
+
+# Question: What does the value **255** represent for an RGB color component?
+
+**Answer:** The **maximum intensity** of that color.
+
+---
+
+# Question: What color results from mixing the RGB values **72 red, 73 green, and 33 blue**?
+
+**Answer:** A **dark shade of yellow**.
+
+---
+
+# Question: Why can small variations in RGB values produce different colors?
+
+**Answer:** Because **different intensity combinations of red, green, and blue create different colors**.
+
+---
+
+# Question: How do digital displays produce the color of a single pixel?
+
+**Answer:** By **combining specific amounts of red, green, and blue light**.
+
+---
+
+# Question: What color results when RGB values are **0, 0, 0**?
+
+**Answer:** **Black**.
+
+---
+
+# Question: Why does RGB (0,0,0) produce black?
+
+**Answer:** Because **no red, green, or blue light is emitted**, resulting in complete darkness.
+
+---
