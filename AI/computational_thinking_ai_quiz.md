@@ -2913,3 +2913,116 @@
 
 ---
 
+# Question: What are the three simplified components proposed for representing a musical note digitally?
+
+**Answer:** Frequency (pitch), duration, and amplitude (loudness).
+
+---
+
+# Question: What does frequency represent in digital music?
+
+**Answer:** The pitch or tone of the note.
+
+---
+
+# Question: What does duration represent in digital music?
+
+**Answer:** How long the note is played.
+
+---
+
+# Question: What does amplitude represent in digital music?
+
+**Answer:** The loudness or volume of the note.
+
+---
+
+# Question: What real-world example helps explain duration in music?
+
+**Answer:** How long a piano key is held down.
+
+---
+
+# Question: What real-world action helps explain amplitude in music?
+
+**Answer:** How hard a piano key is pressed.
+
+---
+
+# Question: What numerical range is suggested for representing musical properties like frequency, duration, and amplitude?
+
+**Answer:** A range such as 0 to 255.
+
+---
+
+# Question: How can a computer interpret a sequence of binary data as music?
+
+**Answer:** By reading the data in groups (e.g., three values at a time) and interpreting them as frequency, duration, and amplitude.
+
+---
+
+# Question: What must be true for a shared music file to sound the same on another device?
+
+**Answer:** The receiving system must know how to interpret the binary data in the same way.
+
+---
+
+# Question: What determines whether binary data is interpreted correctly across systems?
+
+**Answer:** Agreement on how the data is encoded and interpreted.
+
+---
+
+# Question: How does a computer distinguish between the number 65 and the letter represented by 65?
+
+**Answer:** It depends on context and how the programmer or software chooses to interpret the data.
+
+---
+
+# Question: What role does the programmer play in data interpretation?
+
+**Answer:** The programmer defines how the computer should interpret and display the data.
+
+---
+
+# Question: How does software know how to interpret different file types like GIF, JPEG, or DOCX?
+
+**Answer:** It is programmed to interpret the binary data according to the file format.
+
+---
+
+# Question: Why can the same binary value represent different things in different contexts?
+
+**Answer:** Because interpretation depends on the format or instructions provided by the software.
+
+---
+
+# Question: What is base 10?
+
+**Answer:** A number system using 10 digits (0 through 9).
+
+---
+
+# Question: Why is base 10 called "base 10"?
+
+**Answer:** Because it uses 10 distinct digits (0–9).
+
+---
+
+# Question: What is the binary system also known as?
+
+**Answer:** Base 2.
+
+---
+
+# Question: How is base 2 similar to base 10?
+
+**Answer:** Both are positional number systems used to represent values, but they differ in the number of digits available.
+
+---
+
+# Question: How many digits are available in base 10?
+
+**Answer:** Ten digits (0–9).
+
+---
