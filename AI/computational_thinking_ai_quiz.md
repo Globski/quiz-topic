@@ -3026,3 +3026,135 @@
 **Answer:** Ten digits (0–9).
 
 ---
+
+# Question: What digits does a computer have access to in the binary system?
+
+**Answer:** Only 0 and 1.
+
+---
+
+# Question: Why can’t computers directly use digits 2 through 9 in binary?
+
+**Answer:** Because binary is a base 2 system that only includes the digits 0 and 1.
+
+---
+
+# Question: How are values represented in binary despite having only two digits?
+
+**Answer:** By assigning different positional weights to each digit.
+
+---
+
+# Question: What are the positional values used in binary representation?
+
+**Answer:** Powers of 2, such as the ones place, twos place, fours place, etc.
+
+---
+
+# Question: How does binary positional notation compare to decimal positional notation?
+
+**Answer:** Decimal uses powers of 10 (ones, tens, hundreds), while binary uses powers of 2 (ones, twos, fours).
+
+---
+
+# Question: Why does binary require more digits than decimal to represent the same number?
+
+**Answer:** Because it only has two digits (0 and 1), so more positions are needed to represent large values.
+
+---
+
+# Question: How many digits are needed to represent the number 255 in decimal?
+
+**Answer:** Three digits.
+
+---
+
+# Question: How many digits are needed to represent the number 255 in binary?
+
+**Answer:** Eight digits.
+
+---
+
+# Question: Why is binary still more efficient than unary for representing numbers like 255?
+
+**Answer:** Because unary would require 255 symbols (e.g., light bulbs), while binary only requires 8 digits.
+
+---
+
+# Question: What is unary also known as in terms of base systems?
+
+**Answer:** Base 1.
+
+---
+
+# Question: What is binary also known as?
+
+**Answer:** Base 2.
+
+---
+
+# Question: What is decimal also known as?
+
+**Answer:** Base 10.
+
+---
+
+# Question: Are binary and base 2 the same thing?
+
+**Answer:** Yes.
+
+---
+
+# Question: Are decimal and base 10 the same thing?
+
+**Answer:** Yes.
+
+---
+
+# Question: What is the fundamental limitation of computers in terms of data representation?
+
+**Answer:** They can only use zeros and ones.
+
+---
+
+# Question: How can computers represent all types of data despite only using zeros and ones?
+
+**Answer:** By arranging (permuting) zeros and ones into patterns that represent numbers and other data.
+
+---
+
+# Question: What is an algorithm?
+
+**Answer:** A set of step-by-step instructions for solving a problem.
+
+---
+
+# Question: What role do algorithms play in computer science?
+
+**Answer:** They process input data to produce the correct output and solve problems.
+
+---
+
+# Question: What is the relationship between input, algorithms, and output?
+
+**Answer:** Input is processed by algorithms to produce output.
+
+---
+
+# Question: Beyond representing data, what is a key goal of computer science?
+
+**Answer:** Processing data to solve problems.
+
+---
+
+# Question: Where are algorithms commonly implemented?
+
+**Answer:** In software on devices like phones, Macs, and PCs.
+
+---
+
+# Question: What is software in the context of algorithms?
+
+**Answer:** An implementation of algorithms.
+
+---
