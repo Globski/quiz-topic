@@ -2534,3 +2534,105 @@
 **Answer:** Because **Apple and Google create different graphical renderings of the same Unicode emoji character**.
 
 ---
+
+# Question: Why can the same emoji appear differently across platforms such as iOS, Android, or Telegram?
+
+**Answer:** Because each platform uses **its own graphical font or design** to display the same Unicode character.
+
+---
+
+# Question: What remains identical across different platforms even when emoji appear visually different?
+
+**Answer:** The **underlying pattern of zeros and ones (Unicode code point)** remains the same.
+
+---
+
+# Question: How does the “Face with Tears of Joy” emoji differ between iOS, Android, and Telegram?
+
+**Answer:** iOS and Android display **different visual designs**, while Telegram may even show **an animated version** of the same emoji.
+
+---
+
+# Question: Why are different emoji appearances across platforms still considered the same character?
+
+**Answer:** Because they **share the same standardized Unicode representation**, even though the visual rendering differs.
+
+---
+
+# Question: What concept explains why emoji look different on different devices?
+
+**Answer:** The use of **different graphical fonts** to render the same Unicode character.
+
+---
+
+# Question: After numbers, letters, and emoji, what new type of information representation is introduced?
+
+**Answer:** **Colors**.
+
+---
+
+# Question: How are colors ultimately represented inside a computer?
+
+**Answer:** Using **numbers (integers)**.
+
+---
+
+# Question: What fundamental requirement is needed for computers to represent colors numerically?
+
+**Answer:** A **standardized mapping between numbers and specific colors**.
+
+---
+
+# Question: What three base colors are commonly combined to represent most colors on digital displays?
+
+**Answer:** **Red, Green, and Blue**.
+
+---
+
+# Question: What color model uses combinations of red, green, and blue to create other colors?
+
+**Answer:** The **RGB color model**.
+
+---
+
+# Question: How does the RGB color model produce many different colors?
+
+**Answer:** By **mixing different amounts of red, green, and blue**.
+
+---
+
+# Question: Why can RGB combinations produce a wide variety of colors?
+
+**Answer:** Because **different intensity levels of each color component combine to form new colors**.
+
+---
+
+# Question: What historical device demonstrated RGB color mixing?
+
+**Answer:** **Old-school projectors with three lenses**.
+
+---
+
+# Question: What did each lens in the old projector represent?
+
+**Answer:** Each lens projected **one of the three primary colors: red, green, or blue**.
+
+---
+
+# Question: How did old projectors combine colors to display full-color images?
+
+**Answer:** By **aligning red, green, and blue projections onto the same area of the screen**.
+
+---
+
+# Question: What would happen if the colored lenses in the projector were properly aligned?
+
+**Answer:** They would **combine to produce many different colors on the screen**.
+
+---
+
+# Question: What principle demonstrated by old projectors is still used in modern displays?
+
+**Answer:** **Combining red, green, and blue light to produce full-color images**.
+
+---
