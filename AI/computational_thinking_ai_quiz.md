@@ -2720,3 +2720,100 @@
 **Answer:** Because **no red, green, or blue light is emitted**, resulting in complete darkness.
 
 ---
+
+# Question: What does the absence of all three RGB colors (red, green, and blue) represent?
+
+**Answer:** Black.
+
+---
+
+# Question: What color is produced when the maximum value (255) of red, green, and blue are combined?
+
+**Answer:** White.
+
+---
+
+# Question: What numerical system is used to represent values like `00` and `FF` in color notation?
+
+**Answer:** A base system (hexadecimal) used to represent numbers between 0 and 255.
+
+---
+
+# Question: What range of values can the hexadecimal representations like `00` and `FF` express in color systems?
+
+**Answer:** Values between 0 and 255.
+
+---
+
+# Question: What are pixels in the context of digital images?
+
+**Answer:** Individual dots or squares that collectively compose an image.
+
+---
+
+# Question: What happens when you zoom into an image far enough?
+
+**Answer:** You can see individual pixels that make up the image.
+
+---
+
+# Question: What does each pixel in an image represent?
+
+**Answer:** A distinct color.
+
+---
+
+# Question: How is color typically represented for each pixel in the RGB system?
+
+**Answer:** Using three components: red, green, and blue.
+
+---
+
+# Question: How many bits are used to represent each color channel (red, green, or blue) in the RGB system?
+
+**Answer:** 8 bits.
+
+---
+
+# Question: How many total bits are used to represent the color of a single pixel in the RGB system?
+
+**Answer:** 24 bits.
+
+---
+
+# Question: How many bytes are required to store the color of a single pixel in the RGB system?
+
+**Answer:** 3 bytes.
+
+---
+
+# Question: Why do image files like GIF, PNG, or JPEG often have sizes measured in megabytes?
+
+**Answer:** Because each pixel requires multiple bytes (typically 3), and images contain thousands or millions of pixels.
+
+---
+
+# Question: What does "megabytes" mean in the context of file size?
+
+**Answer:** Millions of bytes.
+
+---
+
+# Question: Why do larger images result in larger file sizes?
+
+**Answer:** Because they contain more pixels, each of which requires storage space (typically 3 bytes per pixel).
+
+---
+
+# Question: What underlying data representation is used for images like GIF, PNG, and JPEG?
+
+**Answer:** Patterns of zeros and ones (binary data).
+
+---
+
+# Question: Why can videos have even larger file sizes than images?
+
+**Answer:** Because videos consist of many images (frames), each requiring storage for pixel data.
+
+---
+
