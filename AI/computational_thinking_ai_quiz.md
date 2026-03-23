@@ -3422,3 +3422,140 @@
 **Answer:** It significantly improves speed by reducing the number of steps needed to locate the target.
 
 ---
+
+# Question: What does it mean to "tear the problem in half" in the context of searching the phone book?
+
+**Answer:** It means discarding half of the remaining pages based on where the target cannot be, thereby reducing the search space.
+
+---
+
+# Question: After determining that "John Hawk" is to the left of the middle, what action is taken?
+
+**Answer:** The right half of the phone book is discarded, reducing the problem size from 1,000 pages to 500 pages.
+
+---
+
+# Question: After reducing the problem to 500 pages, what is the next step?
+
+**Answer:** Go to the middle of the remaining pages and check which section the current page falls into.
+
+---
+
+# Question: If the search lands in the "E" section while looking for "John Hawk," what does that indicate?
+
+**Answer:** That the search has gone too far left, and "John Hawk" must be to the right.
+
+---
+
+# Question: After landing in the "E" section, which half of the remaining pages is discarded?
+
+**Answer:** The left half is discarded, keeping only the right half.
+
+---
+
+# Question: How does the problem size change after each step of halving?
+
+**Answer:** It is reduced by half each time (e.g., 1000 → 500 → 250 → 125 → ...).
+
+---
+
+# Question: What process is repeated after each halving step?
+
+**Answer:** Going to the middle of the remaining pages and determining whether to search left or right.
+
+---
+
+# Question: When does the halving process stop?
+
+**Answer:** When only a single page remains.
+
+---
+
+# Question: What is expected once only one page remains?
+
+**Answer:** "John Hawk" should be on that page, if he exists in the phone book.
+
+---
+
+# Question: What happens if "John Hawk" is not found on the final page?
+
+**Answer:** The search fails, meaning the target is not in the phone book.
+
+---
+
+# Question: What three categories are used to compare the algorithms discussed?
+
+**Answer:** Good, better, and best.
+
+---
+
+# Question: What condition must be met for the "counting by two" algorithm to be considered correct?
+
+**Answer:** It must include a fix (double-checking) to ensure no pages are skipped.
+
+---
+
+# Question: How do the three algorithms (linear, counting by two, halving) differ fundamentally?
+
+**Answer:** They differ in efficiency and quality of design, even though they can all solve the problem.
+
+---
+
+# Question: What is a key emphasis of studying algorithms in this context?
+
+**Answer:** Not just solving problems correctly, but solving them efficiently and well.
+
+---
+
+# Question: What does "doing it well" imply in algorithm design?
+
+**Answer:** Using fewer resources and achieving faster performance.
+
+---
+
+# Question: What types of resources are mentioned as constraints in problem-solving?
+
+**Answer:** CPU (computing power), RAM (memory), number of people, and money.
+
+---
+
+# Question: Why is minimizing resource usage important in algorithm design?
+
+**Answer:** Because efficient solutions reduce cost, time, and computational effort.
+
+---
+
+# Question: What is the purpose of plotting algorithms on a graph?
+
+**Answer:** To visualize and compare their performance as the problem size increases.
+
+---
+
+# Question: How does the halving strategy compare to earlier methods in terms of efficiency?
+
+**Answer:** It is significantly more efficient because it reduces the problem size exponentially.
+
+---
+
+# Question: What is the key idea behind repeatedly halving the problem space?
+
+**Answer:** Rapidly narrowing down the search area to find the target with minimal steps.
+
+---
+
+# Question: Why is the halving approach considered the "best" among the discussed algorithms?
+
+**Answer:** Because it achieves the fastest search time with the least number of steps.
+
+---
+
+# Question: What is implied by the phrase "repeat, repeat, repeat" in the halving process?
+
+**Answer:** The same divide-in-half procedure is applied iteratively until the solution is found.
+
+---
+
+# Question: What does the discussion suggest about writing code versus designing algorithms?
+
+**Answer:** Writing correct code is not enough; the algorithm should also be efficient and well-designed.
+
