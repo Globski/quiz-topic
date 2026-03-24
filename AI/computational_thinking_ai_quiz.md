@@ -3559,3 +3559,69 @@
 
 **Answer:** Writing correct code is not enough; the algorithm should also be efficient and well-designed.
 
+---
+
+# Question: What is equally important as correctness in algorithm design?
+
+**Answer:** Efficiency.
+
+---
+
+# Question: What term is used to describe the logical process used to solve a problem?
+
+**Answer:** An algorithm.
+
+---
+
+# Question: How is "code" defined in relation to algorithms?
+
+**Answer:** Code is an implementation of an algorithm in a programming language that a computer understands.
+
+---
+
+# Question: What does code take as input and produce as output?
+
+**Answer:** It takes standardized representations of data (like names and numbers) as input and produces answers as output.
+
+---
+
+# Question: What assumption is made about representing names digitally?
+
+**Answer:** That names are represented using systems like ASCII and Unicode.
+
+---
+
+# Question: What do systems like iOS and Android do with algorithms?
+
+**Answer:** They use algorithms to process input data and produce outputs, such as search results or autocomplete suggestions.
+
+---
+
+# Question: What type of data representation do algorithms rely on for processing?
+
+**Answer:** Binary (0s and 1s) representations of data.
+
+---
+
+# Question: What example feature on smartphones is using algorithms?
+
+**Answer:** Autocomplete functionality.
+
+---
+
+# Question: What is the relationship between algorithms and real-world applications?
+
+**Answer:** Real-world applications like smartphone features rely on efficient algorithms to function effectively.
+
+---
+
+# Question: Why is efficient algorithm design critical in practical applications?
+
+**Answer:** Because it reduces computation time and resource usage, improving performance and scalability.
+
+---
+
+# Question: What key insight does the phone book example demonstrate about scalability?
+
+**Answer:** That efficient (logarithmic) algorithms scale much better than linear ones as problem size increases.
+
