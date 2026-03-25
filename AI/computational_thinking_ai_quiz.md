@@ -217,12 +217,6 @@
 
 ---
 
-# Question: Which AI model is specified in the example program?
-
-**Answer:** `"gpt5"`
-
----
-
 # Question: How is the AI model specified in the API request?
 
 **Answer:** By setting `model="gpt5"` inside the `client.responses.create()` function.
