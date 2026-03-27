@@ -849,3 +849,297 @@
 **Answer:** Returns to the last checked-out branch quickly.
 
 ---
+
+# Question: What does tracking a remote branch mean?
+
+**Answer:** Linking a local branch to a corresponding branch on a remote repository for synchronized operations.
+
+---
+
+# Question: What does deleting a local branch do?
+
+**Answer:** Removes the branch from the local repository.
+
+---
+
+# Question: What is an orphan branch?
+
+**Answer:** A branch with no parent commit or history.
+
+---
+
+# Question: What does renaming a branch do?
+
+**Answer:** Changes the branch’s name without affecting its history.
+
+---
+
+# Question: What does searching in branches allow?
+
+**Answer:** Finding commits or content across branches.
+
+---
+
+# Question: What does pushing a branch do?
+
+**Answer:** Uploads the branch to a remote repository.
+
+---
+
+# Question: What does moving HEAD to an arbitrary commit do?
+
+**Answer:** Repositions the current branch pointer to a specific commit.
+
+---
+
+# Question: What is Rev-List?
+
+**Answer:** To list and analyze commits in repositories.
+
+---
+
+# Question: What does listing commits between branches reveal?
+
+**Answer:** Differences in commit history between local and remote branches.
+
+---
+
+# Question: What is Squashing?
+
+**Answer:** To combine multiple commits into a single commit.
+
+---
+
+# Question: What does squashing recent commits do?
+
+**Answer:** Combines recent commits into one without using rebase.
+
+---  
+
+# Question: What does squashing during a merge achieve?
+
+**Answer:** Merges changes into a single commit instead of multiple commits.
+
+---
+
+# Question: What does squashing during rebase do?
+
+**Answer:** Combines commits while rewriting history.
+
+---
+
+# Question: What is autosquashing?
+
+**Answer:** Automatically combining commits marked for squashing during rebase.
+
+---
+
+# Question: What are fixup commits?
+
+**Answer:** Commits intended to modify previous commits during autosquash.
+
+---
+
+# Question: What is the purpose of creating commits for autosquashing?
+
+**Answer:** To mark them for automatic combination during rebase.
+
+---
+
+# Question: What is Cherry Picking?
+
+**Answer:** To apply specific commits from one branch to another.
+
+---
+
+# Question: What does cherry-picking a commit do?
+
+**Answer:** Applies a specific commit to the current branch.
+
+---
+
+# Question: What does copying a range of commits do?
+
+**Answer:** Applies multiple consecutive commits to another branch.
+
+---
+
+# Question: Why check if a cherry-pick is required?
+
+**Answer:** To avoid duplicating already applied changes.
+
+---
+
+# Question: What does this process help identify?
+
+**Answer:** Commits that exist locally but not in the upstream repository.
+
+---
+
+# Question: What is Recovering?
+
+**Answer:** To restore lost data or undo destructive operations.
+
+---
+
+# Question: What does recovering from a reset involve?
+
+**Answer:** Restoring commits or changes after a reset operation.
+
+---
+
+# Question: What does recovering from stash do?
+
+**Answer:** Restores previously saved temporary changes.
+
+---
+
+# Question: What does recovering a lost commit involve?
+
+**Answer:** Finding and restoring commits no longer referenced.
+
+---
+
+# Question: What does restoring a deleted file do?
+
+**Answer:** Recovers the file from previous commits.
+
+---
+
+# Question: What does restoring a file to a previous version do?
+
+**Answer:** Reverts the file content to an earlier state.
+
+---
+
+# Question: What does recovering a deleted branch involve?
+
+**Answer:** Restoring the branch reference using commit history.
+
+---
+
+# Question: What is Git Clean?
+
+**Answer:** To remove untracked files and directories.
+
+---
+
+# Question: What does interactive clean allow?
+
+**Answer:** Selecting which untracked files to remove.
+
+---
+
+# Question: What does forceful removal do?
+
+**Answer:** Deletes untracked files without confirmation.
+
+---
+
+# Question: What does cleaning ignored files do?
+
+**Answer:** Removes files that are listed in `.gitignore`.
+
+---
+
+# Question: What does cleaning directories do?
+
+**Answer:** Removes untracked folders from the repository.
+
+---
+
+# Question: What is Using a `.gitattributes` file?
+
+**Answer:** To define attributes for files in a repository.
+
+---
+
+# Question: What does line ending normalization do?
+
+**Answer:** Ensures consistent line endings across platforms.
+
+---
+
+# Question: Why identify binary files?
+
+**Answer:** To prevent incorrect diffing and merging behavior.
+
+---
+
+# Question: What are these templates used for?
+
+**Answer:** Providing predefined attribute configurations.
+
+---
+
+# Question: What does disabling normalization do?
+
+**Answer:** Prevents automatic modification of line endings.
+
+---
+
+# Question: What is `.mailmap` file?
+
+**Answer:** To associate contributor names and email aliases.
+
+---
+
+# Question: What does merging contributors by aliases achieve?
+
+**Answer:** Combines multiple identities into a single contributor record.
+
+---
+
+# Question: What is Analyzing types of workflows?
+
+**Answer:** To understand different Git collaboration models.
+
+---
+
+# Question: What is a centralized workflow?
+
+**Answer:** A workflow where all developers work on a single central repository.
+
+---
+
+# Question: What is Gitflow workflow?
+
+**Answer:** A structured branching model with defined roles for branches.
+
+---
+
+# Question: What is a feature branch workflow?
+
+**Answer:** Developing features in separate branches before merging.
+
+--
+
+# Question: What is GitHub Flow?
+
+**Answer:** A simplified workflow focused on continuous deployment.
+
+---
+
+# Question: What is a forking workflow?
+
+**Answer:** A model where contributors fork repositories and submit changes via pull requests.
+
+---
+
+# Question: What is Pulling?
+
+**Answer:** To retrieve and integrate changes from a remote repository.
+
+---
+
+# Question: What does pulling changes do?
+
+**Answer:** Fetches and merges updates from a remote repository.
+
+---
+
+# Question: What challenge exists when updating with local changes?
+
+**Answer:** Potential conflicts between local and remote changes.
+
+---
