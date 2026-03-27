@@ -1719,3 +1719,314 @@
 **Answer:** The sequence of changes within that range.
 
 ---
+
+# Question: What is Bisecting/Finding faulty commits?
+
+**Answer:** To identify commits that introduced bugs or errors.
+
+---
+
+# Question: What does `git bisect` do?
+
+**Answer:** Uses binary search to locate the commit that introduced a bug.
+
+---
+
+# Question: What does semi-automatic bisecting involve?
+
+**Answer:** Partially automating the process of identifying faulty commits.
+
+---
+
+# Question: What is Blaming?
+
+**Answer:** To identify which commits and authors are responsible for changes.
+
+---
+
+# Question: What does limiting blame to certain lines do?
+
+**Answer:** Displays commit information only for specified lines.
+
+---
+
+# Question: What does blaming a file reveal?
+
+**Answer:** The authors responsible for its changes.
+
+---
+
+# Question: Showing the commit that last modified a line. What does this feature display?
+
+**Answer:** The most recent commit affecting each line.
+
+---
+
+# Question: Why ignore whitespace-only changes in blame?
+
+**Answer:** To focus on meaningful code modifications.
+
+---
+
+# Question: What is Git revisions syntax?
+
+**Answer:** To define ways of referencing commits and objects.
+
+---
+
+# Question: What is an object name in Git?
+
+**Answer:** A unique identifier (hash) for a Git object.
+
+---
+
+# Question: What are symbolic refs?
+
+**Answer:** Human-readable names pointing to commits.
+
+---
+
+# Question: What does HEAD represent in revision syntax?
+
+**Answer:** The current commit or branch.
+
+---
+
+# Question: What does `<refname>@{<n>}` mean?
+
+**Answer:** A previous state of a reference based on its history index.
+
+---
+
+# Question: What does `<refname>@{<date>}` represent?
+
+**Answer:** The state of a reference at a specific time.
+
+---
+
+# Question: What does `<branchname>@{upstream}` refer to?
+
+**Answer:** The remote-tracking branch associated with a local branch.
+
+---
+
+# Question: What does `<rev>^` represent?
+
+**Answer:** The parent commit.
+
+---
+
+# Question: What does `<rev>~<n>` represent?
+
+**Answer:** The nth ancestor of a commit.
+
+---
+
+# Question: What does `<rev>^0` do?
+
+**Answer:** Resolves a tag to the commit it points to.
+
+---
+
+# Question: What does `<rev>^{<type>}` do?
+
+**Answer:** Dereferences to a specific object type.
+
+---
+
+
+# Question: Finding the youngest matching commit using `<rev>^{/<text>}` or `:/<text>`. What do these expressions do?
+
+**Answer:** Locate the most recent commit matching a text pattern.
+
+---
+
+# Question: What is Worktrees?
+
+**Answer:** To manage multiple working directories from a single repository.
+
+---
+
+# Question: What does using a worktree allow?
+
+**Answer:** Working on multiple branches simultaneously.
+
+---
+
+# Question: What does moving a worktree involve?
+
+**Answer:** Changing its location on disk.
+
+---
+
+# Question: What is Git Remote?
+
+**Answer:** To manage remote repositories.
+
+---
+
+# Question: What does displaying remotes show?
+
+**Answer:** Configured remote connections.
+
+---
+
+# Question: What does changing a remote URL do?
+
+**Answer:** Updates the repository’s remote address.
+
+---
+
+# Question: What does removing a remote do?
+
+**Answer:** Deletes the remote configuration.
+
+---
+
+# Question: What does adding a remote do?
+
+**Answer:** Creates a connection to an external repository.
+
+---
+
+# Question: What does showing remote info display?
+
+**Answer:** Details like URLs and tracking branches.
+
+---
+
+# Question: What does renaming a remote do?
+
+**Answer:** Changes the identifier used for a remote.
+
+---
+
+# Question: What is Git Large File Storage (LFS)?
+
+**Answer:** To manage large files efficiently in Git.
+
+---
+
+# Question: What does storing files externally do?
+
+**Answer:** Keeps large files outside the main Git repository.
+
+---
+
+# Question: What does global LFS configuration do?
+
+**Answer:** Applies LFS rules across all cloned repositories.
+
+---
+
+# Question: What is required to use Git LFS?
+
+**Answer:** Installing and configuring the LFS extension.
+
+---
+
+# Question: What is Git Patch?
+
+**Answer:** To share changes as patch files.
+
+---
+
+# Question: What does creating a patch do?
+
+**Answer:** Exports changes into a file.
+
+---
+
+# Question: What does applying a patch do?
+
+**Answer:** Imports changes from a patch file into a repository.
+
+---
+
+# Question: What is Git statistics?
+
+**Answer:** To analyze repository activity and contributions.
+
+---
+
+# Question: What does this metric show?
+
+**Answer:** Contribution size by each developer.
+
+---
+
+# Question: Listing branches and their last revision date. What does this listing reveal?
+
+**Answer:** The most recent activity on each branch.
+
+---
+
+# Question: What does commits per developer show?
+
+**Answer:** Number of commits made by each contributor.
+
+---
+
+# Question: What does commits per date reveal?
+
+**Answer:** Activity trends over time.
+
+---
+
+# Question: Total number of commits in a branch. What does this metric indicate?
+
+**Answer:** The size of the branch’s history.
+
+---
+
+# Question: What does pretty format do?
+
+**Answer:** Displays commits in a customized readable format.
+
+---
+
+# Question: Finding all local Git repositories on a computer. What does this process do?
+
+**Answer:** Locates repositories stored locally.
+
+---
+
+# Question: Showing total commits per author. What does this show?
+
+**Answer:** Contribution counts grouped by author.
+
+---
+
+# Question: What is git send-email?
+
+**Answer:** To send patches via email.
+
+---
+
+# Question: Using git send-email with Gmail What does this setup enable?
+
+**Answer:** Sending patches through a Gmail account.
+
+---
+
+# Question: What does composing involve?
+
+**Answer:** Writing the email content for patches.
+
+---
+
+# Question: What does sending patches by mail do?
+
+**Answer:** Delivers code changes via email.
+
+---
+
+# Question: What is Git GUI Clients?
+
+**Answer:** To use graphical interfaces for interacting with Git.
+
+---
+
+# Question: What is implied by Git GUI clients?
+
+**Answer:** Tools that provide visual interfaces instead of command-line usage.
