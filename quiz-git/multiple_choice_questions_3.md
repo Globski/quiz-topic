@@ -2029,4 +2029,240 @@
 
 # Question: What is implied by Git GUI clients?
 
-**Answer:** Tools that provide visual interfaces instead of command-line usage.
+**Answer:** Tools that provide visual interfaces instead of command-line usage. gitk` and `git-gui`
+
+---
+
+# Question: What are `gitk` and `git-gui`?
+
+**Answer:** Built-in graphical tools for visualizing commit history and performing Git operations.
+
+---
+
+# Question: What is GitHub Desktop?
+
+**Answer:** A graphical Git client for managing repositories with a user-friendly interface.
+
+---
+
+# Question: What is Git Kraken?
+
+**Answer:** A GUI-based Git client with visual tools for managing repositories.
+
+---
+
+# Question: What is SourceTree?
+
+**Answer:** A graphical Git client for repository management.
+
+---
+
+# Question: What is Git Extensions?
+
+**Answer:** A GUI tool that enhances Git usability on desktop systems.
+
+---
+
+# Question: What is SmartGit?
+
+**Answer:** A cross-platform graphical Git client.
+
+---
+
+# Question: What is Reflog - Restoring commits not shown in git log?
+
+**Answer:** To recover commits that are not visible in the standard Git log.
+
+---
+
+# Question: What does recovering from a bad rebase involve?
+
+**Answer:** Using reflog to restore previous commit states.
+
+---
+
+# Question: What is TortoiseGit?
+
+**Answer:** To use a Windows-based GUI for Git operations.
+
+---
+
+# Question: What does squashing commits in TortoiseGit do?
+
+**Answer:** Combines multiple commits into one.
+
+---
+
+# Question: What does "assume unchanged" do?
+
+**Answer:** Tells Git to ignore changes in tracked files temporarily.
+
+---
+
+# Question: What does ignoring files and folders do?
+
+**Answer:** Prevents Git from tracking specified files.
+
+---
+
+# Question: What does branching in TortoiseGit allow?
+
+**Answer:** Creating and managing branches through a GUI.
+
+---
+
+# Question: What is External merge and diff tools?
+
+**Answer:** To configure external tools for comparing and merging code.
+
+---
+
+# Question: What does configuring KDiff3 as a merge tool do?
+
+**Answer:** Enables visual conflict resolution.
+
+---
+
+# Question: What does using KDiff3 as a diff tool allow?
+
+**Answer:** Visual comparison of file differences.
+
+---
+
+# Question: What does using IntelliJ as merge/diff tool provide?
+
+**Answer:** Integrated visual tools for comparison and conflict resolution.
+
+---
+
+# Question: What is Beyond Compare used for?
+
+**Answer:** Comparing files and resolving differences visually.
+
+---
+
+# Question: What is Update Object Name in Reference?
+
+**Answer:** To modify references to point to different object names.
+
+---
+
+# Question: What does updating a reference object name do?
+
+**Answer:** Changes the commit or object a reference points to.
+
+---
+
+# Question: What is Git Branch Name on Bash Ubuntu?
+
+**Answer:** To display branch names in the terminal.
+
+---
+
+# Question: What does displaying branch name in terminal help with?
+
+**Answer:** Identifying the current working branch.
+
+---
+
+# Question: What is Git Client-Side Hooks?
+
+**Answer:** To automate actions on the client side.
+
+---
+
+# Question: What does the client-side pre-push hook do?
+
+**Answer:** Executes checks before pushing changes.
+
+---
+
+# Question: What does installing a hook involve?
+
+**Answer:** Adding scripts to the hooks directory.
+
+---
+
+# Question: What is Git rerere?
+
+**Answer:** To reuse recorded conflict resolutions.
+
+---
+
+# Question: What does enabling rerere do?
+
+**Answer:** Allows Git to remember and reuse conflict resolutions.
+
+---
+
+# Question: What is Change git repository name?
+
+**Answer:** To rename a Git repository.
+
+---
+
+# Question: What does changing local settings do?
+
+**Answer:** Updates the repository name locally.
+
+---
+
+# Question: What is Git Tagging?
+
+**Answer:** To manage tags in a repository.
+
+---
+
+# Question: What does listing tags show?
+
+**Answer:** All tag references in the repository.
+
+---
+
+# Question: What does creating and pushing tags do?
+
+**Answer:** Marks specific commits and shares them with a remote.
+
+---
+
+# Question: What is Tidying up repositories?
+
+**Answer:** To clean and maintain local and remote repositories.
+
+---
+
+# Question: What does deleting such branches do?
+
+**Answer:** Removes outdated local references.
+
+---
+
+# Question: What is diff-tree?
+
+**Answer:** To inspect differences in commits at the tree level.
+
+---
+
+# Question: What does viewing changed files show?
+
+**Answer:** Files modified in a commit.
+
+---
+
+# Question: What does diff-tree usage involve?
+
+**Answer:** Commands and options for comparing commit trees.
+
+---
+
+# Question: What do common diff options control?
+
+**Answer:** Output format and comparison behavior.
+
+---
+
+# Question: What is the purpose of the Credits section?
+
+**Answer:** To acknowledge contributors or sources.
+
+---
