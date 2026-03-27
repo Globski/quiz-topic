@@ -2266,3 +2266,171 @@
 **Answer:** To acknowledge contributors or sources.
 
 ---
+
+# Question: How do you verify that Git is installed on any operating system?
+
+**Answer:** By running `git --version`.
+
+---
+
+# Question: How do you verify the Git executable location on UNIX-like systems?
+
+**Answer:** By running `which git`.
+
+---
+
+# Question: What does it mean if `which git` returns nothing or the command is not recognized?
+
+**Answer:** Git is likely not installed on the system.
+
+---
+
+# Question: What should you do if Git is not installed?
+
+**Answer:** Download and run the installer from the Git homepage.
+
+---
+
+# Question: What must you configure after installing Git and before making a commit?
+
+**Answer:** Your username and email address.
+
+---
+
+# Question: How do you initialize a new Git repository?
+
+**Answer:** By running `git init` in the desired directory.
+
+---
+
+# Question: What does the `git init` command create?
+
+**Answer:** A hidden `.git` folder containing Git’s internal data and configuration.
+
+---
+
+# Question: What is the purpose of the `.git` folder?
+
+**Answer:** It contains the internal plumbing required for Git to function.
+
+---
+
+# Question: What command is used to check which files Git will track?
+
+**Answer:** `git status`.
+
+---
+
+# Question: Why is it important to review files shown by `git status`?
+
+**Answer:** To avoid adding unwanted or sensitive files (e.g., passwords).
+
+---
+
+# Question: How do you add specific files or directories to version control?
+
+**Answer:** Using `git add <file/directory name #1> <file/directory name #2> < ... >`.
+
+---
+
+# Question: How do you add all files in the current directory and subdirectories?
+
+**Answer:** By running `git add .`.
+
+---
+
+# Question: What does `git add .` do?
+
+**Answer:** Stages all files in the current directory and its subdirectories for commit.
+
+---
+
+# Question: What does "staging" mean in Git?
+
+**Answer:** Preparing selected files to be included in the next commit.
+
+---
+
+# Question: When should you create a `.gitignore` file?
+
+**Answer:** Before running `git add`, if there are files you never want under version control.
+
+---
+
+# Question: What is the purpose of a `.gitignore` file?
+
+**Answer:** To specify files and directories that Git should ignore.
+
+---
+
+# Question: How do you create a commit with a message?
+
+**Answer:** By running `git commit -m "Initial commit"`.
+
+---
+
+# Question: What does the `git commit -m` command do?
+
+**Answer:** Creates a new commit with the specified message.
+
+---
+
+# Question: What is a commit in Git?
+
+**Answer:** A snapshot of the project at a specific point in time.
+
+---
+
+# Question: What happens if you omit the `-m` option in `git commit`?
+
+**Answer:** The default editor opens to allow you to write the commit message.
+
+---
+
+# Question: What can you do after creating a commit?
+
+**Answer:** Push it to a remote repository or revert back to it later.
+
+---
+
+# Question: What is the purpose of adding a remote repository?
+
+**Answer:** To link the local repository to a remote location for sharing and collaboration.
+
+---
+
+# Question: Which command is used to add a remote repository?
+
+**Answer:** `git remote add`.
+
+---
+
+# Question: What are the two required arguments for `git remote add`?
+
+**Answer:** A remote name and a remote URL.
+
+---
+
+# Question: What is an example of a remote name?
+
+**Answer:** `origin`.
+
+---
+
+# Question: What is an example of a remote URL?
+
+**Answer:** `https://<your-git-service-address>/user/repo.git`.
+
+---
+
+# Question: Provide a full example of adding a remote repository.
+
+**Answer:** `git remote add origin https://<your-git-service-address>/owner/repository.git`.
+
+---
+
+# Question: Where should you run the `git remote add` command?
+
+**Answer:** In the directory where the repository is stored.
+
+---
