@@ -548,3 +548,304 @@
 
 **Answer:** Changing its location within the repository.
 
+---
+
+# Question: What does removing a submodule involve in Git?
+
+**Answer:** Deleting the submodule reference and associated files from the repository.
+
+---
+
+# Question: What is Committing?
+
+**Answer:** To manage how changes are recorded in the repository history.
+
+---
+
+# Question: What does staging and committing changes accomplish?
+
+**Answer:** It prepares changes and records them as a snapshot in the repository.
+
+---
+
+# Question: Why are good commit messages important?
+
+**Answer:** They clearly describe the purpose and context of changes.
+
+---
+
+# Question: What does amending a commit do?
+
+**Answer:** It modifies the most recent commit.
+
+---
+
+# Question: What does committing without opening an editor involve?
+
+**Answer:** Providing the commit message directly via command line options.
+
+---
+
+# Question: What does committing changes directly mean?
+
+**Answer:** Committing without explicitly staging files first.
+
+---
+
+# Question: What does selecting specific lines allow?
+
+**Answer:** Fine-grained control over what changes are included in a commit.
+
+---
+
+# Question: What is an empty commit?
+
+**Answer:** A commit with no file changes.
+
+---
+
+# Question: What does committing on behalf of someone else involve?
+
+**Answer:** Setting a different author for the commit.
+
+---
+
+# Question: What is the purpose of GPG signing commits?
+
+**Answer:** To verify the authenticity and integrity of commits.
+
+---
+
+# Question: What does committing specific files allow?
+
+**Answer:** Recording changes only for selected files.
+
+---
+
+# Question: What does committing at a specific date do?
+
+**Answer:** Sets a custom timestamp for the commit.
+
+---
+
+# Question: What does amending commit time involve?
+
+**Answer:** Changing the timestamp of an existing commit.
+
+---
+
+# Question: What does amending the author do?
+
+**Answer:** Updates the author information of a commit.
+
+---
+
+# Question: What is Aliases?
+
+**Answer:** To create shortcuts for Git commands.
+
+---
+
+# Question: What is a simple alias in Git?
+
+**Answer:** A short name mapped to a longer Git command.
+
+---
+
+# Question: Why list or search aliases?
+
+**Answer:** To view or locate configured shortcuts.
+
+---
+
+# Question: What are advanced aliases?
+
+**Answer:** More complex shortcuts that can include multiple commands or logic.
+
+---
+
+# Question: What does temporarily ignoring tracked files do?
+
+**Answer:** Prevents Git from noticing changes to tracked files temporarily.
+
+---
+
+# Question: What does a branch graph display?
+
+**Answer:** The structure and relationships between branches and commits.
+
+---
+
+# Question: Why check ignored files?
+
+**Answer:** To verify ignore configurations.
+
+---
+
+# Question: What does maintaining a linear history mean?
+
+**Answer:** Avoiding merge commits to keep history straight.
+
+---
+
+# Question: What does unstaging files do?
+
+**Answer:** Removes them from the staging area without deleting changes.
+
+---
+
+# Question: What is Rebasing?
+
+**Answer:** To rewrite commit history for a cleaner, linear structure.
+
+---
+
+# Question: What does rebasing a local branch do?
+
+**Answer:** Reapplies commits on top of another base commit.
+
+---
+
+# Question: What do “ours” and “theirs” refer to in rebase?
+
+**Answer:** Different sides of conflicting changes.
+
+---
+
+# Question: What does interactive rebase allow?
+
+**Answer:** Editing, reordering, squashing, or removing commits.
+
+---
+
+# Question: What does rebasing to the initial commit enable?
+
+**Answer:** Modifying the entire project history.
+
+---
+
+# Question: What does autostash do?
+
+**Answer:** Automatically stashes changes before a rebase and reapplies them afterward.
+
+---
+
+# Question: What is the purpose of testing commits during rebase?
+
+**Answer:** To ensure each commit works correctly.
+
+---
+
+# Question: Why rebase before code review?
+
+**Answer:** To clean up commit history for reviewers.
+
+---
+
+# Question: What does aborting a rebase do?
+
+**Answer:** Stops the process and restores the previous state.
+
+---
+
+# Question: What does this configuration change?
+
+**Answer:** It makes pulls apply commits on top instead of creating merge commits.
+
+---
+
+# Question: Why is pushing after rebase significant?
+
+**Answer:** It may require force pushing due to rewritten history.
+
+---
+
+# Question: What is Configuration?
+
+**Answer:** To customize Git behavior and settings.
+
+---
+
+# Question: Why configure an editor in Git?
+
+**Answer:** To control how commit messages and other edits are made.
+
+---
+
+# Question: What does auto-correct in Git do?
+
+**Answer:** Automatically fixes minor command typos.
+
+---
+
+# Question: What does listing configuration show?
+
+**Answer:** Current Git settings.
+
+---
+
+# Question: Why use multiple identities in Git?
+
+**Answer:** To manage different profiles for different projects.
+
+---
+
+# Question: What does multiple configuration support allow?
+
+**Answer:** Different settings per repository or context.
+
+---
+
+# Question: Why configure line endings?
+
+**Answer:** To ensure compatibility across operating systems.
+
+---
+
+# Question: What does command-specific configuration do?
+
+**Answer:** Applies settings temporarily for a single command.
+
+---
+
+# Question: Why configure a proxy in Git?
+
+**Answer:** To enable network access through restricted environments.
+
+---
+
+# Question: What is Branching?
+
+**Answer:** To manage parallel development using branches.
+
+---
+
+# Question: What does creating a branch do?
+
+**Answer:** Creates a new line of development.
+
+---
+
+# Question: What does checking out a branch do?
+
+**Answer:** Switches the working directory to that branch.
+
+---
+
+# Question: What does listing branches show?
+
+**Answer:** All available local (and possibly remote) branches.
+
+---
+
+# Question: What does deleting a remote branch do?
+
+**Answer:** Removes the branch from the remote repository.
+
+---
+
+# Question: What does switching to the previous branch do?
+
+**Answer:** Returns to the last checked-out branch quickly.
+
+---
