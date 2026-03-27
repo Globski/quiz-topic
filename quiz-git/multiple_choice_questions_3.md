@@ -1143,3 +1143,297 @@
 **Answer:** Potential conflicts between local and remote changes.
 
 ---
+
+# Question: What does pulling code from a remote repository do?
+
+**Answer:** Fetches updates from the remote and integrates them into the local repository.
+
+---
+
+# Question: What does maintaining a linear history during pull involve?
+
+**Answer:** Avoiding merge commits, typically by using rebase.
+
+---
+
+# Question: What causes a “permission denied” error in Git pull?
+
+**Answer:** Authentication or access issues with the remote repository.
+
+---
+
+# Question: What is Hooks?
+
+**Answer:** To automate tasks by triggering scripts at specific Git events.
+
+---
+
+# Question: What does a pre-push hook do?
+
+**Answer:** Runs checks before code is pushed to a remote repository.
+
+---
+
+# Question: What is the purpose of verifying builds before commit?
+
+**Answer:** To ensure code compiles or passes tests before being committed.
+
+---
+
+# Question: What does forwarding pushes do?
+
+**Answer:** Replicates pushes to additional repositories automatically.
+
+---
+
+# Question: What does the commit-msg hook do?
+
+**Answer:** Validates or modifies commit messages.
+
+---
+
+# Question: What are local hooks?
+
+**Answer:** Hooks that run only on a developer’s local machine.
+
+---
+
+# Question: What does the post-checkout hook do?
+
+**Answer:** Runs after a branch or file checkout.
+
+---
+
+# Question: What does the post-commit hook do?
+
+**Answer:** Executes after a commit is created.
+
+---
+
+# Question: What does the post-receive hook do?
+
+**Answer:** Runs on the server after receiving pushed commits.
+
+---
+
+# Question: What does the pre-commit hook do?
+
+**Answer:** Runs checks before a commit is finalized.
+
+---
+
+# Question: What does the prepare-commit-msg hook do?
+
+**Answer:** Prepares or modifies the commit message before editing.
+
+---
+
+# Question: What does the pre-rebase hook do?
+
+**Answer:** Runs before a rebase operation starts.
+
+---
+
+# Question: What does the pre-receive hook do?
+
+**Answer:** Executes on the server before accepting pushed changes.
+
+---
+
+# Question: What does the update hook do?
+
+**Answer:** Runs on the server to control updates to refs.
+
+---
+
+# Question: What is Cloning Repositories?
+
+**Answer:** To create local copies of repositories with different options.
+
+---
+
+# Question: What is a shallow clone?
+
+**Answer:** A clone with limited commit history.
+
+---
+
+# Question: What is a regular clone?
+
+**Answer:** A full copy of a repository including all history.
+
+---
+
+# Question: What does cloning a specific branch do?
+
+**Answer:** Retrieves only one branch instead of the entire repository.
+
+---
+
+# Question: What does cloning recursively include?
+
+**Answer:** Submodules along with the main repository.
+
+---
+
+# Question: What does cloning via proxy enable?
+
+**Answer:** Access to repositories through restricted networks.
+
+---
+
+# Question: What is Stashing?
+
+**Answer:** To temporarily save changes without committing them.
+
+---
+
+# Question: What is stashing in Git?
+
+**Answer:** Temporarily saving uncommitted changes for later use.
+
+---
+
+# Question: What does creating a stash do?
+
+**Answer:** Saves current changes and cleans the working directory.
+
+---
+
+# Question: What does applying and removing a stash do?
+
+**Answer:** Restores changes and deletes the stash entry.
+
+---
+
+# Question: What does applying without removing do?
+
+**Answer:** Restores changes but keeps the stash saved.
+
+---
+
+# Question: What does showing a stash display?
+
+**Answer:** The changes stored in the stash.
+
+---
+
+# Question: What is a partial stash?
+
+**Answer:** Stashing only selected changes.
+
+---
+
+# Question: What does listing stashes show?
+
+**Answer:** All stored stash entries.
+
+---
+
+# Question: What does moving work via stash enable?
+
+**Answer:** Continuing work on a different branch without losing changes.
+
+---
+
+# Question: What does removing a stash do?
+
+**Answer:** Deletes a saved stash entry.
+
+---
+
+# Question: What does applying part of a stash do?
+
+**Answer:** Restores selected changes from a stash.
+
+---
+
+# Question: What does recovering from stash involve?
+
+**Answer:** Retrieving previously saved changes.
+
+---
+
+# Question: What does interactive stashing allow?
+
+**Answer:** Selecting specific changes to stash.
+
+---
+
+# Question: What does recovering a dropped stash involve?
+
+**Answer:** Attempting to restore a stash that was deleted.
+
+---
+
+# Question: What is Subtrees?
+
+**Answer:** To manage external repositories within a project using subtrees.
+
+---
+
+# Question: What does managing subtrees involve?
+
+**Answer:** Integrating and updating external code within a repository.
+
+---
+
+# Question: What is Renaming?
+
+**Answer:** To manage renaming of branches and folders.
+
+---
+
+# Question: What does renaming folders do?
+
+**Answer:** Changes directory names while tracking them in Git.
+
+---
+
+# Question: What does renaming local and remote branches involve?
+
+**Answer:** Updating branch names in both environments.
+
+---
+
+# Question: What does renaming a local branch do?
+
+**Answer:** Changes the branch name only in the local repository.
+
+---
+
+# Question: What is Pushing?
+
+**Answer:** To upload local changes to a remote repository.
+
+---
+
+# Question: What does pushing a specific object do?
+
+**Answer:** Sends a particular commit or reference to a remote branch.
+
+---
+
+# Question: What does a push do?
+
+**Answer:** Uploads commits from local to remote repository.
+
+---
+
+# Question: What does force pushing do?
+
+**Answer:** Overwrites remote history with local changes.
+
+---
+
+# Question: What risk is associated with force pushing?
+
+**Answer:** It can overwrite and lose others’ work.
+
+---
+
+# Question: What does pushing tags do?
+
+**Answer:** Uploads tag references to the remote repository.
+
+---
