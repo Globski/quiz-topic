@@ -1437,3 +1437,285 @@
 **Answer:** Uploads tag references to the remote repository.
 
 ---
+
+# Question: What is Internals?
+
+**Answer:** To explain the internal structure and core components of Git.
+
+---
+
+# Question: What is a Git repository?
+
+**Answer:** A storage location that contains all project files and version history.
+
+---
+
+# Question: What are Git objects?
+
+**Answer:** The fundamental data units used to store content and metadata in Git.
+
+---
+
+# Question: What is HEAD in Git?
+
+**Answer:** A reference pointing to the current checked-out commit or branch.
+
+---
+
+# Question: What are refs in Git?
+
+**Answer:** Pointers to commits, such as branches and tags.
+
+---
+
+# Question: What is a commit object?
+
+**Answer:** A Git object that stores a snapshot of changes along with metadata.
+
+---
+
+# Question: What is a tree object?
+
+**Answer:** A Git object representing directory structure and file hierarchy.
+
+---
+
+# Question: What is a blob object?
+
+**Answer:** A Git object that stores file contents.
+
+---
+
+# Question: What does creating new commits involve internally?
+
+**Answer:** Generating new commit objects that reference trees and parent commits.
+
+---
+
+# Question: What does moving HEAD do?
+
+**Answer:** Changes the current reference to a different commit or branch.
+
+---
+
+# Question: What does moving refs involve?
+
+**Answer:** Updating pointers to different commits.
+
+---
+
+# Question: What does creating new refs do?
+
+**Answer:** Adds new pointers to commits, such as branches or tags.
+
+---
+
+# Question: What is git-tfs?
+
+**Answer:** To integrate Git with Team Foundation Server (TFS).
+
+---
+
+# Question: What does `git-tfs clone` do?
+
+**Answer:** Clones a TFS repository into Git.
+
+---
+
+# Question: Cloning from a bare Git repository using git-tfs.
+
+**Answer:** Installing git-tfs via Chocolatey.
+
+---
+
+# Question: What is Chocolatey used for in this context?
+
+**Answer:** Installing git-tfs on a system.
+
+---
+
+# Question: What does `git-tfs check-in` do?
+
+**Answer:** Sends local commits back to TFS.
+
+---
+
+# Question: What does `git-tfs push` do?
+
+**Answer:** Pushes commits from Git to TFS.
+
+---
+
+# Question: What is Empty directories in Git?
+
+**Answer:** To explain how Git handles directories without files.
+
+---
+
+# Question: Why does Git not track directories?
+
+**Answer:** Because it only tracks files and their contents.
+
+---
+
+# Question: What is git-svn?
+
+**Answer:** To integrate Git with Subversion (SVN).
+
+---
+
+# Question: What does cloning an SVN repository do?
+
+**Answer:** Imports SVN history into a Git repository.
+
+---
+
+# Question: What does pushing to SVN involve?
+
+**Answer:** Sending Git commits back to the SVN repository.
+
+---
+
+# Question: What does working locally in git-svn involve?
+
+**Answer:** Making commits in Git before syncing with SVN.
+
+---
+
+# Question: What does fetching from SVN do?
+
+**Answer:** Updates the Git repository with new SVN changes.
+
+---
+
+# Question: Why is handling empty folders necessary in git-svn?
+
+**Answer:** Because Git does not track empty directories.
+
+---
+
+# Question: What is Archive?
+
+**Answer:** To create packaged versions of a repository.
+
+---
+
+# Question: What does creating an archive do?
+
+**Answer:** Packages repository contents into a distributable format.
+
+---
+
+# Question: What does adding a directory prefix do?
+
+**Answer:** Places archived files under a specified folder structure.
+
+---
+
+# Question: What does selecting specific sources for an archive allow?
+
+**Answer:** Packaging only desired parts of the repository.
+
+---
+
+# Question: What is Rewriting history with filter-branch?
+
+**Answer:** To modify commit history.
+
+---
+
+# Question: What does changing commit author do?
+
+**Answer:** Updates author information across commits.
+
+---
+
+# Question: What does setting committer equal to author do?
+
+**Answer:** Aligns both metadata fields for consistency.
+
+---
+
+# Question: What is Migrating to Git?
+
+**Answer:** To move projects from other version control systems to Git.
+
+---
+
+# Question: What is SubGit?
+
+**Answer:** A tool for migrating repositories to Git.
+
+---
+
+# Question: What does the Atlassian conversion utility do?
+
+**Answer:** Converts SVN repositories to Git.
+
+---
+
+
+# Question: Migrating from Mercurial to Git, Migrating from TFVC to Git.
+
+---
+
+
+# Question: What is svn2git used for?
+
+**Answer:** Converting SVN repositories into Git repositories.
+
+---
+
+# Question: What is Show?
+
+**Answer:** To display detailed information about Git objects and commits.
+
+---
+
+# Question: What does the show command do?
+
+**Answer:** Displays detailed information about a specific commit or object.
+
+---
+
+# Question: What is Resolving merge conflicts?
+
+**Answer:** To handle conflicts that occur during merges.
+
+---
+
+# Question: What does manual conflict resolution involve?
+
+**Answer:** Editing files to resolve conflicting changes.
+
+---
+
+# Question: What is Bundles?
+
+**Answer:** To transfer repositories without a remote server.
+
+---
+
+# Question: What is a Git bundle?
+
+**Answer:** A packaged file containing repository data for transfer.
+
+---
+
+# Question: What is Display commit history graphically with Gitk?
+
+**Answer:** To visualize commit history.
+
+---
+
+# Question: What does viewing history for one file show?
+
+**Answer:** Changes and commits affecting that specific file.
+
+---
+
+# Question: What does showing commits between two commits reveal?
+
+**Answer:** The sequence of changes within that range.
+
+---
