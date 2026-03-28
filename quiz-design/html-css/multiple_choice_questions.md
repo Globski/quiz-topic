@@ -94,3 +94,10 @@
 > * **Answer:** A web server is a computer that is constantly connected to the web and is specifically set up to send webpages to users. Once your browser contacts the server, it sends the requested page back to your browser.
 
 ---
+
+# **Question:** Why is it important to understand how to structure documents when learning to write web pages?
+
+> * **Answer:** Understanding how to structure documents is essential for writing web pages. Learn how HTML describes the structure of a web page, how tags or elements are added to your document, and write your first web page.
+
+---
+
