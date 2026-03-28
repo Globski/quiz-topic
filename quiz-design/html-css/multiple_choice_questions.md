@@ -119,3 +119,10 @@
 E.g <p>
 
 ---
+
+# **Question:** What are attributes in HTML, and how do they work with elements?
+
+> * **Answer:** Attributes provide additional information about an element's content and appear on the opening tag. They consist of a name and a value, separated by an equals sign. The attribute name indicates the type of information being provided and is written in lowercase, while the value, enclosed in double quotes, defines the setting for the attribute. For example, the `lang` attribute specifies the language of the content (like US English). Although HTML5 allows uppercase attribute names and omitting quotes, it is not recommended. Most attributes can only be used with specific elements, but some, like `lang`, can be applied to any element.
+
+---
+
