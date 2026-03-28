@@ -47,9 +47,9 @@
 
 ---
 
-# **Question:** What does your browser do when accessing a website?
+# **Question:** What happens when you visit a website?
 
-> **Answer:** Your browser receives HTML and CSS from the web server, then interprets this code to display the webpage you see.
+> * **Answer:** When you visit a website, your browser receives HTML and CSS from the web server hosting the site. The browser then interprets this code to display the webpage you see.
 
 ---
 
