@@ -1,15 +1,25 @@
-# Question: What is HTML and how is it used?
+# Question: What is HTML?
 
-> * **Answer:** HTML is used to create web pages. You start by writing down the words you want to appear on your page. Then, you add tags or elements to the words so that the browser knows what is a heading, where a paragraph begins and ends, and so on.
+> * **Answer:** HTML is used to create web pages. 
+
+---
+
+# Question: How is HTML used?
+> * **Answer:** You start by writing down the words you want to appear on your page. Then, you add tags or elements to the words so that the browser knows what is a heading, where a paragraph begins and ends, and so on.
 
 ---
 
 # **Question:** How does CSS control the styling and layout of web pages?
 
-> * **Answer:** CSS uses rules to control the styling and layout of web pages. CSS properties fall into two categories:
+> * **Answer:** CSS uses rules to control the styling and layout of web pages. 
 
-* **Presentation:** Controls aspects like text color, font styles and sizes, background colors, and background images.
-* **Layout:** Controls the positioning of elements on the screen.
+---
+
+# **Question:** CSS properties fall into two categories
+
+> * **Answer:** Presentation and Layout
+> * Presentation: Controls aspects like text color, font styles and sizes, background colors, and background images.
+> * Layout: Controls the positioning of elements on the screen.
 
 ---
 
