@@ -32,3 +32,17 @@
 # **Question:** What are some key considerations when putting a website on the web?
 
 > * **Answer:** Key considerations include search engine optimization (SEO) and using analytics software to track who visits your site and what they are looking at.
+
+---
+
+# **Question:** How do people access the web?
+
+> * **Answer:** People access websites using web browsers like Firefox, Internet Explorer, Safari, Chrome, and Opera. They might type a web address, follow a link, or use a bookmark.
+
+---
+
+# **Question:** What should you consider when designing website for different browsers?
+
+> * **Answer:** It's important to consider that software manufacturers release new browser versions regularly, but many users may not have the latest versions. Therefore, you can't rely on all visitors having access to the newest features in every browser.
+
+---
