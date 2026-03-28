@@ -46,3 +46,10 @@
 > * **Answer:** It's important to consider that software manufacturers release new browser versions regularly, but many users may not have the latest versions. Therefore, you can't rely on all visitors having access to the newest features in every browser.
 
 ---
+
+# **Question:** What does your browser do when accessing a website?
+
+> **Answer:** Your browser receives HTML and CSS from the web server, then interprets this code to display the webpage you see.
+
+---
+
