@@ -59,3 +59,38 @@
 
 ---
 
+# **Question:** How does a browser find a website when you enter a domain name?
+
+> * **Answer:** When you enter a domain name into your browser, it contacts a DNS (Domain Name System) server. The DNS server acts like a phonebook, providing the IP address associated with the domain name. This IP address is a unique number for the web server hosting the site, allowing your browser to connect to it. A web server is a computer constantly connected to the web and set up to send webpages to users. Once the browser contacts the web server, it sends the requested page back to your browser.
+
+---
+
+# **Question:** How does your browser find the location of a web server when visiting a site?
+
+> * **Answer:** When you visit a website, your browser connects to a Domain Name System (DNS) server. The DNS server tells the browser the location of the web server hosting the site, allowing it to find and access the website.
+
+---
+
+# **Question:** How does your computer find the IP address of a website when you type in a domain name?
+
+> * **Answer:** When you connect to the web through an ISP and type a domain name (like google.com) into your browser, your computer contacts a network of DNS servers. These servers act like a phonebook, providing the IP address associated with the requested domain name, which allows your browser to connect to the website.
+
+---
+
+# **Question:** What is an IP address and how is it used?
+
+> * **Answer:** An IP address is a unique number consisting of 12 digits, separated by periods (e.g., 192.168.1.1). Every device connected to the web has its own IP address, which functions like a phone number for that device, allowing it to be identified and contacted on the network.
+
+---
+
+# **Question:** How does the DNS server help your browser connect to a website?
+
+> * **Answer:** The unique IP address returned by the DNS server allows your browser to contact the web server that hosts the website you requested, enabling it to load the page.
+
+---
+
+# **Question:** What is a web server and how does it work?
+
+> * **Answer:** A web server is a computer that is constantly connected to the web and is specifically set up to send webpages to users. Once your browser contacts the server, it sends the requested page back to your browser.
+
+---
