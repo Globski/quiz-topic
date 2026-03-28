@@ -113,3 +113,9 @@
 
 ---
 
+# **Question:** What role do tags play in HTML?
+
+> * **Answer:** Tags act like containers in HTML. They define and describe the information that lies between their opening and closing tags, telling the browser how to display that content.
+E.g <p>
+
+---
