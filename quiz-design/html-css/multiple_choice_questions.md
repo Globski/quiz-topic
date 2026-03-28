@@ -53,3 +53,9 @@
 
 ---
 
+# **Question:** What is the purpose of different versions of HTML and CSS?
+
+> * **Answer:** Since the web was first created, there have been several versions of HTML and CSS, each intended to improve upon the previous version.
+
+---
+
