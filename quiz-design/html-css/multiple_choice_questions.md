@@ -101,3 +101,15 @@
 
 ---
 
+# **Question:** Why is understanding structure important when writing web pages, and how is it applied?
+
+> * **Answer:** Understanding structure is crucial for writing web pages because it helps convey messages clearly and allows readers to navigate the content easily. Just like newspapers or insurance forms, web pages use structure to organize information with headings, subheadings, and sections. Learn how HTML describes the structure of a web page, how tags and elements are used to organize content, and how to write your first web page. The structure in web pages mirrors the structure in documents like newspapers or Word files, where different sections, paragraphs, and headings help readers understand the content.
+
+---
+
+# **Question:** How do we describe the structure of a web page using HTML?
+
+> * **Answer:** To describe the structure of a web page, we add code to the content we want to display. This code is made up of HTML elements, which are characters inside angled brackets. Each element typically consists of two tags: an opening tag and a closing tag (the closing tag includes an extra forward slash). These elements tell the browser how to display the content between the opening and closing tags.
+
+---
+
