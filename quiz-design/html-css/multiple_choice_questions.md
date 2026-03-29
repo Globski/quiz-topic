@@ -111,6 +111,16 @@
 
 > * **Answer:** To describe the structure of a web page, we add code to the content we want to display. This code is made up of HTML elements, which are characters inside angled brackets. Each element typically consists of two tags: an opening tag and a closing tag (the closing tag includes an extra forward slash). These elements tell the browser how to display the content between the opening and closing tags.
 
+```html
+<html>
+<body>
+<h1>This is the Main Heading</h1>
+<p>This text might be an introduction to the rest of the page. And if the page is a long one it might be split up into several sub-headings.<p> <h2>This is a Sub-Heading</h2>
+<p>Many long articles have sub-headings so to help you follow the structure of what is being written. There may even be sub-sub-headings (or lower-level headings).</p>
+<h2>Another Sub-Heading</h2>
+<p>Here you can see another sub-heading.</p> </body>
+</html>
+```
 ---
 
 # **Question:** What role do tags play in HTML?
@@ -124,7 +134,11 @@
 
 # **Question:** What are attributes in HTML, and how do they work with elements?
 
-> * **Answer:** Attributes provide additional information about an element's content and appear on the opening tag. They consist of a name and a value, separated by an equals sign. The attribute name indicates the type of information being provided and is written in lowercase, while the value, enclosed in double quotes, defines the setting for the attribute. For example, the `lang` attribute specifies the language of the content (like US English). Although HTML5 allows uppercase attribute names and omitting quotes, it is not recommended. Most attributes can only be used with specific elements, but some, like `lang`, can be applied to any element.
+> * **Answer:** Attributes provide additional information about an element's content and appear on the opening tag. They consist of a name and a value, separated by an equals sign. The attribute name indicates the type of information being provided and is written in lowercase, while the value, enclosed in double quotes, defines the setting for the attribute. For example, the `lang` attribute specifies the language of the content (like US English). Although HTML5 allows uppercase attribute names and omitting quotes, it is not recommended. Most attributes can only be used with specific elements, but some, like `lang`, can be applied to any element. 
 
+**ATTRIBUTE NAME and ATTRIBUTE VALUE**
+```html
+<p lang="en-us">Paragraph in English</p>
+```
 ---
 
