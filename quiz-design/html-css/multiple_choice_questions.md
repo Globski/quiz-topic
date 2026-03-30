@@ -195,3 +195,14 @@
 > **Answer:** While some CMS platforms allow you to edit template files, caution is necessary. Editing these files requires careful attention, as incorrect changes could break the site. Always refer to the CMS documentation and ensure you’re familiar with its structure before making edits.
 
 ---
+
+Got it! Here's the formatted content as you requested:
+
+---
+
+# **Question:** How can you learn about HTML by examining the source code of other websites?
+
+> **Answer:** In the early days of the web, one common way to learn about HTML was to view the source code of web pages. While there are now many books and online tutorials available, you can still inspect the HTML code that a web server sends by using the "View Source" option in your browser's menu. This lets you see the underlying code that builds the page.
+
+---
+
