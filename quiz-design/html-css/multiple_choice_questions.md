@@ -206,3 +206,17 @@ Got it! Here's the formatted content as you requested:
 
 ---
 
+**Question:** What is the role of markup in creating a web page?
+
+> **Answer:** Markup (tags) is added to the content of a webpage to give it structure and meaning. This allows browsers to display the content properly and helps users understand the organization of the page.
+
+---
+
+**Question:** What types of markup?
+
+> **Answer:** Two types of markup:
+
+1. **Structural markup**: Elements used to describe the page’s structure, such as headings and paragraphs.
+2. **Semantic markup**: Provides extra meaning, like indicating emphasis, quotations, acronyms, and more.
+
+---
