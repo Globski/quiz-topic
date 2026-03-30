@@ -142,14 +142,18 @@
 ```
 ---
 
-**Question:** What does HTML stand for, and what does it do?
+# **Question:** What does HTML stand for, and what does it do?
 
 > * **Answer:** HTML stands for HyperText Markup Language. "HyperText" refers to the ability of HTML to create links that let users quickly move between pages. A markup language, like HTML, annotates text with tags that add meaning to the document. By adding code around the original text, HTML helps the browser display the page correctly. The tags used in HTML are the markup that structure the content.
 
 ---
 
-**Question:** What is the purpose of the `<head>` and `<title>` elements in HTML?
+# **Question:** What is the purpose of the `<head>` and `<title>` elements in HTML?
 
 > * **Answer:** The `<head>` element contains information about the page, such as metadata and links to stylesheets or scripts. Inside the `<head>` element, you’ll find the `<title>` element, which specifies the title of the page. The contents of the `<title>` element are displayed at the top of the browser window or on the tab if the browser uses tabs.
 
 ---
+
+# **Question:** What is the purpose of the `<body>` element in HTML?
+
+> * **Answer:** The `<body>` element contains everything that is displayed inside the main browser window. All visible content, such as text, images, and links, is placed within the `<body>` element.
