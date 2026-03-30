@@ -157,3 +157,41 @@
 # **Question:** What is the purpose of the `<body>` element in HTML?
 
 > * **Answer:** The `<body>` element contains everything that is displayed inside the main browser window. All visible content, such as text, images, and links, is placed within the `<body>` element.
+
+---
+
+# **Question:** What is the role of content management systems in website management?
+
+> **Answer:** Content management systems (CMS) enable users to log into an administration section of a website to control content. These systems often allow users to edit parts of the page instead of the entire page, without needing to interact with the underlying `<html>`, `<head>`, or `<body>` elements.
+
+---
+
+# **Question:** How do CMS tools typically manage website content?
+
+> **Answer:** CMS tools often include fields for entering content, such as a page title, main article, publication date, or product details like title, description, price, and quantity. These details are inserted into pre-defined templates, which control the layout of the site.
+
+---
+
+# **Question:** What is the benefit of using templates in a CMS?
+
+> **Answer:** Using templates allows easier content updates across many pages. If you alter a template, every page using it will automatically update, saving time and effort. This is especially helpful for e-commerce sites with a large number of products.
+
+---
+
+# **Question:** How do text editors in CMS work?
+
+> **Answer:** Text editors in CMS typically offer word processor-like tools to style text, add links, and insert images. These editors convert the formatted content into HTML code behind the scenes, making it easy for non-technical users to create content.
+
+---
+
+# **Question:** Can users edit the HTML code produced by text editors in a CMS?
+
+> **Answer:** Yes, many CMS text editors allow users to view and edit the HTML code they generate, offering more control over the website's content and presentation.
+
+---
+
+# **Question:** Is it safe to edit template files in a CMS?
+
+> **Answer:** While some CMS platforms allow you to edit template files, caution is necessary. Editing these files requires careful attention, as incorrect changes could break the site. Always refer to the CMS documentation and ensure you’re familiar with its structure before making edits.
+
+---
