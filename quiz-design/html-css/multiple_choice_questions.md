@@ -220,3 +220,9 @@ Got it! Here's the formatted content as you requested:
 2. **Semantic markup**: Provides extra meaning, like indicating emphasis, quotations, acronyms, and more.
 
 ---
+
+# Question: How to make your web pages more attractive?
+
+> * **Answer:** CSS is used to make web pages more attractive by controlling their design. It allows you to create rules that define how elements appear, such as setting the page background color, choosing fonts, and styling text (e.g., making paragraphs gray in Arial or headings blue, italic, and in Times typeface).
+
+---
