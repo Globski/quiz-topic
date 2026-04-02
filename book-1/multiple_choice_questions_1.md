@@ -486,4 +486,3 @@ app.run()
 
 **Answer:** `deactivate`
 
----
