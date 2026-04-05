@@ -1475,3 +1475,339 @@ const functionName = (parameters) => returnValue;
 **Answer:** Because they cannot be used as object methods where a dynamic `this` is required.
 
 ---
+
+# Question: Why should arrow functions not be used as object methods when accessing object properties like `name`?
+
+**Answer:** Because arrow functions do not have their own `this` context, so they cannot properly access properties like `this.name` within the object.
+
+---
+
+# Question: What is the output of a regular function method accessing `this.name` in an object?
+
+**Answer:** It correctly outputs the value of the `name` property, e.g., `"Hi, I'm Alice Andrew!"`.
+
+---
+
+# Question: What happens when an arrow function is used as an object method that references `this.name`?
+
+**Answer:** It returns `undefined` because `this` does not refer to the object.
+
+---
+
+# Question: Why are arrow functions still useful despite their limitation with `this`?
+
+**Answer:** They make code cleaner, are concise, and are especially useful for short functions and in React development.
+
+---
+
+# Question: What is destructuring in JavaScript?
+
+**Answer:** Destructuring is an ES6 feature that allows extracting values from arrays or properties from objects into separate variables.
+
+---
+
+# Question: What problem does destructuring solve compared to pre-ES6 JavaScript?
+
+**Answer:** It reduces repetitive code needed to extract values from arrays or objects using indexing or dot notation.
+
+---
+
+# Question: How were array values accessed before destructuring?
+
+**Answer:** By assigning each element individually using indexes, e.g., `speakers[0]`, `speakers[1]`.
+
+---
+
+# Question: How does array destructuring simplify value extraction?
+
+**Answer:** It allows assigning multiple variables in one line using array pattern syntax.
+
+---
+
+# Question: What is the result of destructuring an array into variables `[a, b, c, d]`?
+
+**Answer:** Each variable gets the corresponding value from the array based on position.
+
+---
+
+# Question: What does the spread operator (`...`) do in array destructuring?
+
+**Answer:** It collects the remaining elements of the array into a new array.
+
+---
+
+# Question: What does `const [, ...rest] = speakers` do?
+
+**Answer:** It skips the first element and assigns the remaining elements to the `rest` array.
+
+---
+
+# Question: What is the output of logging `rest` after skipping the first array element?
+
+**Answer:** An array containing all elements except the first (e.g., `"Walke", "Dan", "Sophie"`).
+
+---
+
+# Question: Can destructuring be applied to objects?
+
+**Answer:** Yes, destructuring can extract properties from objects into variables.
+
+---
+
+# Question: How do you destructure properties like `name`, `jobTitle`, and `company` from an object?
+
+**Answer:** Using syntax like `const { name, jobTitle, company } = object`.
+
+---
+
+# Question: Can nested object properties be destructured?
+
+**Answer:** Yes, nested properties can be destructured by first extracting the parent object, then destructuring its properties.
+
+---
+
+# Question: How do you destructure nested properties like `street`, `city`, `state`, and `country`?
+
+**Answer:** By first destructuring `address` and then extracting its properties using another destructuring statement.
+
+---
+
+# Question: What is one major benefit of destructuring in React applications?
+
+**Answer:** It makes code more compact and easier to read.
+
+---
+
+# Question: How does destructuring improve code readability?
+
+**Answer:** By reducing repetitive access patterns like dot notation or array indexing.
+
+---
+
+# Question: How can default values be set during destructuring?
+
+**Answer:** By assigning values in the destructuring pattern, e.g., `const { name = 'Anonymous', age = 0 }`.
+
+---
+
+# Question: When are default values in destructuring useful?
+
+**Answer:** When dealing with optional or undefined data.
+
+---
+
+# Question: How is destructuring used in React components?
+
+**Answer:** It is commonly used to access props and state.
+
+---
+
+# Question: What is the purpose of modules in ES6?
+
+**Answer:** To organize code into reusable, logical units.
+
+---
+
+# Question: What is a default export in ES6?
+
+**Answer:** A single export per file that makes a component, function, or variable available to other files.
+
+---
+
+# Question: How do you import a default export?
+
+**Answer:** Using syntax like `import ComponentName from './FileName';`.
+
+---
+
+# Question: How do you define a default export in a file?
+
+**Answer:** Using `export default ComponentName;`.
+
+---
+
+# Question: How many default exports are allowed per file?
+
+**Answer:** Only one.
+
+---
+
+# Question: What is a named export?
+
+**Answer:** An export that allows multiple items to be exported from a file.
+
+---
+
+# Question: How do you import named exports?
+
+**Answer:** Using curly braces, e.g., `import { A, B } from './File';`.
+
+---
+
+# Question: What is the advantage of named exports?
+
+**Answer:** They allow multiple functions or components to be exported from a single file.
+
+---
+
+# Question: What is a React component?
+
+**Answer:** A reusable, self-contained block of code that returns a UI.
+
+---
+
+# Question: What do React components return?
+
+**Answer:** HTML elements mixed with JavaScript (JSX).
+
+---
+
+# Question: Why is working with the DOM in vanilla JavaScript inefficient?
+
+**Answer:** Because frequent DOM manipulation is slow and requires more effort.
+
+---
+
+# Question: How does React improve DOM performance?
+
+**Answer:** By using the virtual DOM to update only the parts that change.
+
+---
+
+# Question: What are the two types of React components?
+
+**Answer:** Class components and function components.
+
+---
+
+# Question: Which type of component is considered the future of React?
+
+**Answer:** Function components.
+
+---
+
+# Question: Why are function components preferred over class components?
+
+**Answer:** They are simpler and easier to learn.
+
+---
+
+# Question: Can function and class components be used together?
+
+**Answer:** Yes, especially in legacy codebases.
+
+---
+
+# Question: What is a function component in React?
+
+**Answer:** A JavaScript function that receives props and returns JSX.
+
+---
+
+# Question: How do you define a function component?
+
+**Answer:** Using a function like `function App() {}`.
+
+---
+
+# Question: What is JSX?
+
+**Answer:** A syntax extension that allows writing HTML-like code inside JavaScript.
+
+---
+
+# Question: Where can logic be written inside a function component?
+
+**Answer:** Between the function definition and the return statement.
+
+---
+
+# Question: What happens to variables declared inside a function component body?
+
+**Answer:** They are re-declared every time the component renders.
+
+---
+
+# Question: When should variables be defined outside a function component?
+
+**Answer:** When they do not depend on the component’s internal logic or state.
+
+---
+
+# Question: What command is used to start a React application?
+
+**Answer:** `npm start`.
+
+---
+
+# Question: What happens when you save changes while the React server is running?
+
+**Answer:** The application recompiles and updates automatically in the browser.
+
+---
+
+# Question: What is the default local development URL for a React app?
+
+**Answer:** `localhost:3000`.
+
+---
+
+# Question: What is a class component in React?
+
+**Answer:** A JavaScript class that extends `React.Component` and includes a render method.
+
+---
+
+# Question: Why are class components called stateful components?
+
+**Answer:** Because they were originally the only way to manage state in React.
+
+---
+
+# Question: What must every class component include?
+
+**Answer:** A `render()` method that returns HTML (JSX).
+
+---
+
+# Question: What does `extends React.Component` do?
+
+**Answer:** It allows the class to inherit functionality from React’s base component.
+
+---
+
+# Question: What is the purpose of importing React in a class component file?
+
+**Answer:** To access React’s core functionality.
+
+---
+
+# Question: What does the `render()` method return in a class component?
+
+**Answer:** HTML elements (JSX) that define the UI.
+
+---
+
+# Question: What was introduced to replace state handling in class components?
+
+**Answer:** React Hooks.
+
+---
+
+# Question: What is one key benefit of destructuring for nested data?
+
+**Answer:** It simplifies access to deeply nested properties.
+
+---
+
+# Question: How does destructuring reduce code length?
+
+**Answer:** By eliminating repetitive variable assignments and access patterns.
+
+---
+
+# Question: What role does destructuring play in improving React code quality?
+
+**Answer:** It enhances readability, maintainability, and reduces boilerplate code.
+
+---
