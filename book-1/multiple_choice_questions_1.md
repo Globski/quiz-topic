@@ -1811,3 +1811,193 @@ const functionName = (parameters) => returnValue;
 **Answer:** It enhances readability, maintainability, and reduces boilerplate code.
 
 ---
+
+
+# Question: What command is used in the terminal to start the React development server?
+
+**Answer:** `npm start`
+
+---
+
+# Question: What URL is used to access the running React development server locally?
+
+**Answer:** `http://localhost:3000/`
+
+---
+
+# Question: What is one key advantage of function components over class components?
+
+**Answer:** They use fewer lines of code, making them more elegant, concise, and readable.
+
+---
+
+# Question: Do function components require a `render()` method?
+
+**Answer:** No, function components do not require a `render()` method.
+
+---
+
+# Question: How do function components produce UI output?
+
+**Answer:** By directly returning JSX from the function.
+
+---
+
+# Question: How is a class component defined in React?
+
+**Answer:** By extending `React.Component` using the `extends` keyword.
+
+---
+
+# Question: What is required in every class component to render UI?
+
+**Answer:** A `render()` method.
+
+---
+
+# Question: What is the role of the `render()` method in a class component?
+
+**Answer:** It returns React elements (JSX) that define what gets displayed in the UI.
+
+---
+
+# Question: What type of components were traditionally stateful before React Hooks?
+
+**Answer:** Class components.
+
+---
+
+# Question: What type of components were traditionally stateless before React Hooks?
+
+**Answer:** Function components.
+
+---
+
+# Question: How did React Hooks change function components starting from React 16.8?
+
+**Answer:** Hooks made it possible for function components to manage state and become stateful.
+
+---
+
+# Question: Can function components use lifecycle methods like `componentDidMount()`?
+
+**Answer:** No, function components cannot use traditional lifecycle methods.
+
+---
+
+# Question: Name three lifecycle methods available in class components.
+
+**Answer:** `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnmount()`.
+
+---
+
+# Question: What are the three main phases of a React component lifecycle?
+
+**Answer:** Mounting, updating, and unmounting.
+
+---
+
+# Question: What happens during the mounting phase of a React component?
+
+**Answer:** The component is created and inserted into the DOM.
+
+---
+
+# Question: Which lifecycle method is called before a component is mounted and is part of the mounting phase?
+
+**Answer:** `constructor()`
+
+---
+
+# Question: What argument does the `constructor()` method accept?
+
+**Answer:** `props`
+
+---
+
+# Question: Why is `super(props)` called inside the constructor?
+
+**Answer:** To pass props to the parent class (`React.Component`).
+
+---
+
+# Question: What are the two main purposes of the constructor in a class component?
+
+**Answer:**
+
+1. Initialize local state using `this.state`
+2. Bind event handler methods
+
+---
+
+# Question: Which lifecycle method is called right before rendering in the mounting phase?
+
+**Answer:** `static getDerivedStateFromProps()`
+
+---
+
+# Question: What is the role of `getDerivedStateFromProps()`?
+
+**Answer:** It is invoked immediately before rendering to update state based on props.
+
+---
+
+# Question: Which lifecycle method is responsible for rendering HTML elements to the DOM?
+
+**Answer:** `render()`
+
+---
+
+# Question: What determines what is displayed in the UI of a React component?
+
+**Answer:** The JSX returned by the `render()` method.
+
+---
+
+# Question: When is `componentDidMount()` called in the lifecycle?
+
+**Answer:** After the component is rendered into the DOM (after the first `render()` call).
+
+---
+
+# Question: What is a common use of `componentDidMount()`?
+
+**Answer:** To perform side effects or user actions after the component is mounted.
+
+---
+
+# Question: What is meant by the term "component lifecycle" in React?
+
+**Answer:** The sequence of phases a component goes through from creation to removal (mounting, updating, unmounting).
+
+---
+
+# Question: How is the lifecycle of a React component compared to real life?
+
+**Answer:** It is compared to being born (mounting), growing (updating), and dying (unmounting).
+
+---
+
+# Question: What does it mean that function components accept props as arguments?
+
+**Answer:** Props are passed directly into the function as parameters.
+
+---
+
+# Question: What makes function components simpler than class components?
+
+**Answer:** They eliminate the need for class syntax, `this`, and lifecycle method definitions like `render()`.
+
+---
+
+# Question: What is required to make a function component stateful before React Hooks?
+
+**Answer:** It had to be rewritten as a class component.
+
+---
+
+# Question: What is JSX in the context of React components?
+
+**Answer:** A syntax extension that allows writing HTML-like code within JavaScript to describe UI structure.
+
+---
