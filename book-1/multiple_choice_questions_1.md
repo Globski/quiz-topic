@@ -2001,3 +2001,183 @@ const functionName = (parameters) => returnValue;
 **Answer:** A syntax extension that allows writing HTML-like code within JavaScript to describe UI structure.
 
 ---
+
+# Question: What types of operations can the `componentDidMount()` method perform in a React component lifecycle?
+
+**Answer:** It can run statements that require loading data from external sources and trigger user or system events after the component has been rendered.
+
+---
+
+# Question: When is the `componentDidMount()` method invoked in the React lifecycle?
+
+**Answer:** It is invoked after the component has been rendered and mounted into the DOM.
+
+---
+
+# Question: What is the updating phase in the React component lifecycle?
+
+**Answer:** The updating phase is the stage immediately after mounting where the component reacts to changes in state or props and re-renders accordingly.
+
+---
+
+# Question: Which method is commonly used during the updating phase of a React component lifecycle?
+
+**Answer:** `componentDidUpdate()`.
+
+---
+
+# Question: What triggers a React component to update?
+
+**Answer:** A component updates when there is a change in its state or props.
+
+---
+
+# Question: How does React handle updates to state or props?
+
+**Answer:** React re-renders the component using the `render()` method and returns the updated state to the UI.
+
+---
+
+# Question: What is the unmounting phase in React?
+
+**Answer:** It is the phase where a component is removed from the DOM tree, marking the end (death) of its lifecycle.
+
+---
+
+# Question: Which lifecycle method is invoked during the unmounting phase?
+
+**Answer:** `componentWillUnmount()`.
+
+---
+
+# Question: When exactly is `componentWillUnmount()` executed?
+
+**Answer:** Immediately before the component is unmounted from the DOM tree.
+
+---
+
+# Question: How does user interaction relate to the React component lifecycle?
+
+**Answer:** User interactions cause components to be inserted into the DOM, updated through state changes, or removed when no longer needed.
+
+---
+
+# Question: What happens to a component when a user navigates away from it (e.g., from a contact page to another UI element)?
+
+**Answer:** The component’s lifecycle ends, and it is unmounted from the DOM.
+
+---
+
+# Question: What are props in React?
+
+**Answer:** Props are arguments passed to React components that allow them to communicate and share data.
+
+---
+
+# Question: What is the purpose of props in React applications?
+
+**Answer:** They enable data transfer between components, making applications reusable and configurable.
+
+---
+
+# Question: How are props passed in React?
+
+**Answer:** Props are passed as attributes from a parent component to a child component.
+
+---
+
+# Question: What type of data structure are props?
+
+**Answer:** Props are objects that store attribute values.
+
+---
+
+# Question: How is the concept of props similar to HTML?
+
+**Answer:** Like HTML attributes, props pass values to components via attributes.
+
+---
+
+# Question: What is the direction of data flow for props in React?
+
+**Answer:** Unidirectional—from parent to child components.
+
+---
+
+# Question: Can child components modify props?
+
+**Answer:** No, props are read-only and cannot be modified by child components.
+
+---
+
+# Question: What is React state?
+
+**Answer:** State is a built-in object used to store and manage data that can change over time within a component.
+
+---
+
+# Question: What is the primary role of state in React?
+
+**Answer:** It controls component interactivity and determines how components behave and render.
+
+---
+
+# Question: What happens when a component’s state changes?
+
+**Answer:** React re-renders the component to reflect the updated state.
+
+---
+
+# Question: What factors can cause a state change?
+
+**Answer:** User actions or system-generated events.
+
+---
+
+# Question: How do props and state differ in React?
+
+**Answer:** Props pass data between components, while state manages internal data within a component.
+
+---
+
+# Question: What is an example of state change in a user interface?
+
+**Answer:** Typing into a search input field, where the typed text becomes the new state.
+
+---
+
+# Question: Why is state needed in input fields?
+
+**Answer:** To capture user input, update the UI, and trigger re-rendering with new data.
+
+---
+
+# Question: How does `useState` indicate that state will change over time?
+
+**Answer:** By initializing with a value (e.g., an empty string), signaling React that the state is dynamic.
+
+---
+
+# Question: What is the significance of state in building user interfaces?
+
+**Answer:** It enables dynamic, interactive UIs that respond to user input and system events.
+
+---
+
+# Question: How do developers benefit from using state in React?
+
+**Answer:** They can manage changing data and create responsive user experiences.
+
+---
+
+# Question: What is the relationship between state updates and UI rendering?
+
+**Answer:** State updates trigger re-rendering, ensuring the UI reflects the latest data.
+
+---
+
+# Question: What overall role do props and state play together in React?
+
+**Answer:** Props handle data flow between components, while state manages dynamic data within components to create interactive applications.
+
+---
