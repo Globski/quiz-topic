@@ -2181,3 +2181,219 @@ const functionName = (parameters) => returnValue;
 **Answer:** Props handle data flow between components, while state manages dynamic data within components to create interactive applications.
 
 ---
+
+# Question: What is the role of state in React applications?
+
+**Answer:** State is the medium through which interactivity is added to the user interface, enabling dynamic behavior in components.
+
+---
+
+# Question: Before React v16.8, how could developers add state to components?
+
+**Answer:** By using class components, as functional components were stateless.
+
+---
+
+# Question: What limitation did functional components have before React v16.8?
+
+**Answer:** They were stateless and could only render JSX as presentational components.
+
+---
+
+# Question: What feature introduced state management to functional components?
+
+**Answer:** The Hooks API.
+
+---
+
+# Question: What are the fundamental building blocks of a React application?
+
+**Answer:** Components.
+
+---
+
+# Question: Why is making components stateful important?
+
+**Answer:** It enhances the user experience by enabling dynamic and interactive behavior.
+
+---
+
+# Question: Name at least five React Hooks used for stateful logic.
+
+**Answer:** useState, useEffect, useContext, useMemo, useReducer.
+
+---
+
+# Question: Which Hook is used to create stateful components?
+
+**Answer:** useState.
+
+---
+
+# Question: Which Hook is used to handle side effects in React components?
+
+**Answer:** useEffect.
+
+---
+
+# Question: Which Hook is used for managing global state in React applications?
+
+**Answer:** useContext.
+
+---
+
+# Question: Which Hook allows direct access to DOM elements and persistence of values?
+
+**Answer:** useRef.
+
+---
+
+# Question: Which Hook is used for complex state management similar to Redux patterns?
+
+**Answer:** useReducer.
+
+---
+
+# Question: Which Hook is used to improve performance by memoizing values?
+
+**Answer:** useMemo.
+
+---
+
+# Question: Which Hook helps prevent unnecessary re-rendering of functions?
+
+**Answer:** useCallback.
+
+---
+
+# Question: What is the purpose of custom Hooks?
+
+**Answer:** To enable code reusability by encapsulating reusable logic.
+
+---
+
+# Question: What is a Hook in React?
+
+**Answer:** A Hook is a special function that allows function components to use React core features like state and lifecycle methods.
+
+---
+
+# Question: What two major features do Hooks enable in function components?
+
+**Answer:** State management and lifecycle handling.
+
+---
+
+# Question: What does the lifecycle of a React component represent?
+
+**Answer:** The phases a component goes through from initialization to removal from the UI.
+
+---
+
+# Question: What are the three main lifecycle phases in React?
+
+**Answer:** Mounting, updating, and unmounting.
+
+---
+
+# Question: What happens during the mounting phase?
+
+**Answer:** The component is initialized and inserted into the DOM.
+
+---
+
+# Question: What happens during the updating phase?
+
+**Answer:** The component re-renders due to changes in state or props.
+
+---
+
+# Question: What happens during the unmounting phase?
+
+**Answer:** The component is removed from the DOM when no longer needed.
+
+---
+
+# Question: Name two lifecycle methods used in class components during mounting.
+
+**Answer:** componentWillMount() and componentDidMount().
+
+---
+
+# Question: Name two lifecycle methods used during updating in class components.
+
+**Answer:** componentWillUpdate() and componentDidUpdate().
+
+---
+
+# Question: Why are Hooks preferred over lifecycle methods in modern React?
+
+**Answer:** They allow function components to be stateful without requiring class components.
+
+---
+
+# Question: Before React 16.8, what was the only way to make components stateful?
+
+**Answer:** By using class components.
+
+--
+
+# Question: What does `import React from 'react';` do?
+
+**Answer:** It imports the React library and its core features into the file.
+
+---
+
+# Question: What does `class App extends React.Component` signify?
+
+**Answer:** It defines a class component named App that inherits from React.Component.
+
+---
+
+# Question: What modern React feature replaces the need for this class-based approach?
+
+**Answer:** React Hooks.
+
+---
+
+# Question: What key advantage do Hooks provide over class components?
+
+**Answer:** They simplify state management and lifecycle handling in functional components without needing classes.
+
+---
+
+# Question: What does "state transition" refer to in React?
+
+**Answer:** The process of updating state values in response to user actions or events.
+
+---
+
+# Question: What kind of component would only render JSX without Hooks?
+
+**Answer:** A stateless functional (presentational) component.
+
+---
+
+# Question: What does it mean for a Hook to be “special”?
+
+**Answer:** It is a React-provided function that enables use of internal React features in function components.
+
+---
+
+# Question: What happens to a component when a user navigates away from the UI?
+
+**Answer:** It enters the unmounting phase and is removed from the DOM.
+
+---
+
+# Question: What concept tracks a component from creation to removal?
+
+**Answer:** The component lifecycle.
+
+---
+
+# Question: What is the primary goal of using Hooks in modern React development?
+
+**Answer:** To build stateful, reusable, and efficient functional components.
+
+---
