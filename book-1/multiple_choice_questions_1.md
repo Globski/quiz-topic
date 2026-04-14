@@ -85,7 +85,7 @@
 
 # Question: What type of version control system is Git?
 
-**Answer:** Distributed version control system
+**Answer:** Distributed version control system.
 
 ---
 
