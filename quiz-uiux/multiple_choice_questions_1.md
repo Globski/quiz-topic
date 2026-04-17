@@ -193,3 +193,173 @@
 # Question: What core lesson did Sam learn from early feedback?
 
 **Answer:** That good design requires both appealing visuals and functional usability aligned with user needs.
+
+---
+
+# Question: Which tool did Sam use to create digital wireframes?
+
+**Answer:** Figma
+
+---
+
+# Question: Which tool allowed Sam to brainstorm quickly with hand-drawn style designs?
+
+**Answer:** Balsamiq
+
+---
+
+# Question: What was the main purpose of using wireframing tools?
+
+**Answer:** To focus on the app’s structure and how users would interact with it.
+
+---
+
+# Question: What stage comes after wireframing in the design process?
+
+**Answer:** Visual design.
+
+---
+
+# Question: What is visual design in UI/UX?
+
+**Answer:** It involves choosing colors, fonts, and icons to make the app visually appealing and user-friendly.
+
+---
+
+# Question: What type of color scheme did Sam choose for the app?
+
+**Answer:** Soft pastel colors to create a calming vibe.
+
+---
+
+# Question: Why did Sam choose simple fonts?
+
+**Answer:** To ensure readability, even on small screens.
+
+---
+
+# Question: What kind of icons did Sam include in the app?
+
+**Answer:** Friendly, recognizable icons.
+
+---
+
+# Question: Which tool did Sam use to experiment with visual styles and create mood boards?
+
+**Answer:** Canva
+
+---
+
+# Question: What feature in Canva helped Sam generate harmonious color schemes?
+
+**Answer:** Color palette (referred to as “coolers” in the material).
+
+---
+
+# Question: What was the goal of the visual design stage?
+
+**Answer:** To make the app look professional, consistent, and pleasant to use.
+
+---
+
+# Question: What problem did Sam notice in the earlier version of the app?
+
+**Answer:** Users had trouble finding what they needed.
+
+---
+
+# Question: What concept did Sam focus on to fix navigation issues?
+
+**Answer:** Information architecture.
+
+---
+
+# Question: What is information architecture in UI/UX?
+
+**Answer:** Organizing the app’s screens and content logically.
+
+---
+
+# Question: Where were less frequently used actions placed?
+
+**Answer:** In a drop-down menu.
+
+---
+
+# Question: Why were less frequently used actions placed in a drop-down menu?
+
+**Answer:** To reduce clutter and make the interface less overwhelming.
+
+---
+
+# Question: Which tool did Sam use to map out the app’s flow and layout?
+
+**Answer:** Miro
+
+---
+
+# Question: What is the purpose of using Miro?
+
+**Answer:** To create a clear and logical visualization of the app’s structure and flow.
+
+---
+
+# Question: How did improving information architecture benefit users?
+
+**Answer:** It made it easier for users to find what they needed without feeling overwhelmed.
+
+---
+
+# Question: What is the final stage Sam performed after designing the app?
+
+**Answer:** Usability testing.
+
+---
+
+# Question: What is usability testing?
+
+**Answer:** Testing the app with real users to observe how they interact with it and identify issues.
+
+---
+
+# Question: How did Sam conduct usability testing?
+
+**Answer:** By giving the app prototype to friends and observing their interactions.
+
+---
+
+# Question: What kind of feedback did Sam receive during usability testing?
+
+**Answer:** Suggestions like making the save button bigger and adding a color-coding feature.
+
+---
+
+# Question: Why was making the save button bigger suggested?
+
+**Answer:** To improve visibility and ease of interaction.
+
+---
+
+# Question: Which tool did Sam use to facilitate usability testing?
+
+**Answer:** Maze
+
+---
+
+# Question: What is the purpose of using Maze in usability testing?
+
+**Answer:** To gather structured feedback and analyze how users interact with the app prototype.
+
+---
+
+# Question: Why is usability testing important in UI/UX design?
+
+**Answer:** It ensures the app works effectively in real-world scenarios and meets user needs.
+
+---
+
+# Question: What is the overall benefit of following all UI/UX stages (research, wireframing, visual design, information architecture, testing)?
+
+**Answer:** It results in a user-friendly, visually appealing, and functional app that aligns with user expectations.
+
+---
