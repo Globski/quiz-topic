@@ -517,3 +517,189 @@
 # Question: What is the overall impact of combining good UI and UX design?
 
 **Answer:** It results in a cohesive, efficient, and enjoyable digital product that meets user needs effectively.
+
+---
+
+# Question: What types of soft skills are required for UI/UX design?
+
+**Answer:** Communication skills, collaborative skills, presentation and storytelling skills, and product thinking skills.
+
+---
+
+# Question: Why are communication skills important in UI/UX design?
+
+**Answer:** They help designers effectively communicate their ideas within a group.
+
+---
+
+# Question: What do collaborative skills enable a UI/UX designer to do?
+
+**Answer:** Work effectively with different people and as part of a team.
+
+---
+
+# Question: What is the role of presentation and storytelling skills in UI/UX?
+
+**Answer:** They help designers present ideas clearly and explain design decisions in a compelling way.
+
+---
+
+# Question: What is product thinking in UI/UX design?
+
+**Answer:** The ability to understand what will make a product successful.
+
+---
+
+# Question: What is one of the key technical skills required in UI/UX related to research?
+
+**Answer:** Knowing how and when to conduct user research.
+
+---
+
+# Question: What should a UI/UX designer understand about research methods?
+
+**Answer:** They should know which research method to execute and how to document research findings.
+
+---
+
+# Question: Why is data analysis important in UI/UX?
+
+**Answer:** It helps designers interpret findings and provide appropriate solutions.
+
+---
+
+# Question: What is user flow mapping?
+
+**Answer:** It is the process of illustrating the flow of how users navigate through a product.
+
+---
+
+# Question: Why is mapping user flows important?
+
+**Answer:** It helps explain and optimize how users interact with a product.
+
+---
+
+# Question: Name a commonly used design tool in UI/UX.
+
+**Answer:** Figma.
+
+---
+
+# Question: What is a wireframe in UI/UX design?
+
+**Answer:** A simplified outline of a design that focuses on structure and layout without visual design elements.
+
+---
+
+# Question: What aspects are intentionally excluded from wireframes?
+
+**Answer:** Visual design elements such as colors, typography, and detailed styling.
+
+---
+
+# Question: What is a prototype in UI/UX design?
+
+**Answer:** An interactive model that simulates user interactions.
+
+---
+
+# Question: What is the purpose of a prototype?
+
+**Answer:** To provide a hands-on experience for testing usability and functionality before final implementation.
+
+---
+
+# Question: How do prototypes differ from wireframes?
+
+**Answer:** Prototypes are interactive and simulate user behavior, while wireframes are static and focus only on layout and structure.
+
+---
+
+# Question: What visual design elements should a UI/UX designer learn to implement?
+
+**Answer:** Color, typography, contrast, and other visual design principles.
+
+---
+
+# Question: What is user research in UI/UX design?
+
+**Answer:** The process of collecting information from users to understand their needs and expectations.
+
+---
+
+# Question: What are the two main types of user research?
+
+**Answer:** Quantitative research and qualitative research.
+
+---
+
+# Question: What is quantitative research in UI/UX?
+
+**Answer:** It involves collecting and analyzing numerical data to identify patterns, predict outcomes, and generalize findings.
+
+---
+
+# Question: What are the goals of quantitative research?
+
+**Answer:** To identify patterns, predict outcomes, and generalize findings about a target audience or topic.
+
+---
+
+# Question: Name some methods used in quantitative research.
+
+**Answer:** Quantitative usability testing, web analytics, card sorting, and surveys.
+
+---
+
+# Question: What kind of data does quantitative research focus on?
+
+**Answer:** Numerical data related to user behavior and attitudes.
+
+---
+
+# Question: What is qualitative research in UI/UX?
+
+**Answer:** It focuses on capturing subjective insights into user experiences.
+
+---
+
+# Question: What is the main goal of qualitative research?
+
+**Answer:** To understand users' underlying reasons, motivations, and behaviors.
+
+---
+
+# Question: Name common methods used in qualitative research.
+
+**Answer:** User interviews, diary studies, focus groups, and usability tests.
+
+---
+
+# Question: How does qualitative research differ from quantitative research?
+
+**Answer:** Qualitative research focuses on subjective insights and user motivations, while quantitative research focuses on numerical data and patterns.
+
+---
+
+# Question: What type of insights do diary studies provide?
+
+**Answer:** Ongoing, real-world insights into user experiences over time.
+
+---
+
+# Question: What is the purpose of focus groups in qualitative research?
+
+**Answer:** To gather diverse perspectives and discussions about user experiences.
+
+---
+
+# Question: What do usability tests help evaluate in qualitative research?
+
+**Answer:** User interactions, behaviors, and experience with a product.
+
+---
+
+# Question: What is the overall goal of learning these UI/UX skills at a beginner level?
+
+**Answer:** To understand the foundational skills and concepts required to design effective and user-centered products.
