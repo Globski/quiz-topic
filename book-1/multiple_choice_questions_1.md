@@ -5,6 +5,7 @@
 
 ---
 
+
 # Question: What was Sir Tim Berners-Lee’s vision for the web?
 
 **Answer:** An open platform that allows internet users to share information, access opportunities, and collaborate without geographic and cultural restrictions.
