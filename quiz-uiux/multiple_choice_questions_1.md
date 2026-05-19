@@ -703,3 +703,155 @@
 # Question: What is the overall goal of learning these UI/UX skills at a beginner level?
 
 **Answer:** To understand the foundational skills and concepts required to design effective and user-centered products.
+
+---
+
+# Question: What types of user research activities are expected in a UI/UX design job?
+
+**Answer:** User research activities include interviews, surveys, and usability testing to understand user needs.
+
+---
+
+# Question: Why are interviews, surveys, and usability testing conducted in UI/UX design?
+
+**Answer:** They are conducted to better understand user needs and behaviors.
+
+---
+
+# Question: What design artifacts are created to clearly present design ideas?
+
+**Answer:** Wireframes and simple prototypes are created to show design ideas clearly.
+
+---
+
+# Question: What is the purpose of creating wireframes in UI/UX design?
+
+**Answer:** Wireframes help visually communicate and structure design ideas before full implementation.
+
+---
+
+# Question: What is the purpose of creating simple prototypes in UI/UX design?
+
+**Answer:** Prototypes demonstrate how a design may function and help communicate interaction flow.
+
+---
+
+# Question: Which visual design elements are UI/UX designers expected to help choose?
+
+**Answer:** Colors, fonts, and icons.
+
+---
+
+# Question: What interactive interface components are part of UI/UX design?
+
+**Answer:** Buttons and menus.
+
+---
+
+# Question: Why must buttons and menus be carefully designed?
+
+**Answer:** They should be designed to make interfaces easy to use.
+
+---
+
+# Question: What do UI/UX designers observe during testing sessions?
+
+**Answer:** They observe users interacting with the design during usability testing sessions.
+
+---
+
+# Question: Why do designers observe users during testing sessions?
+
+**Answer:** To gather feedback for improving designs.
+
+---
+
+# Question: What is the purpose of collaboration with other teams in UI/UX design?
+
+**Answer:** To ensure design goals align with business needs and technical requirements.
+
+---
+
+# Question: Which two major organizational concerns must design goals align with?
+
+**Answer:** Business needs and technical requirements.
+
+---
+
+# Question: What kinds of UI/UX tasks can AI assist with?
+
+**Answer:** AI can help with repetitive tasks and suggest design ideas.
+
+---
+
+# Question: Why is AI considered insufficient for fully replacing UI/UX designers?
+
+**Answer:** Because UI/UX design requires understanding human feelings and emotions, which AI is not good at.
+
+---
+
+# Question: What human abilities were identified as strengths AI cannot match in UI/UX design?
+
+**Answer:** Creativity and problem-solving skills.
+
+---
+
+# Question: Which design tool recommended for beginners in UI/UX design?
+
+**Answer:** Figma
+
+---
+
+# Question: Why is Figma considered suitable for beginners?
+
+**Answer:** Because it is user-friendly, versatile, and easy to learn.
+
+---
+
+# Question: What type of application is Figma?
+
+**Answer:** Figma is a web-based design tool.
+
+---
+
+# Question: What environment does Figma provide that benefits teams?
+
+**Answer:** A collaborative environment.
+
+---
+
+# Question: How does Figma support collaboration among users?
+
+**Answer:** Through seamless sharing and real-time collaboration.
+
+---
+
+# Question: What feature of Figma lowers the barrier to entry for beginners?
+
+**Answer:** Its intuitive interface.
+
+---
+
+# Question: What comprehensive capabilities of Figma?
+
+**Answer:** Designing interfaces, creating prototypes, and collaborating with team members.
+
+---
+
+# Question: What does Figma’s cloud-based nature enable?
+
+**Answer:** Seamless sharing and real-time collaboration.
+
+---
+
+# Question: Why is real-time collaboration especially beneficial for beginners?
+
+**Answer:** Because beginners can easily seek feedback and learn from others.
+
+---
+
+# Question: Besides learning tools, what broader skill area is important in UI/UX design?
+
+**Answer:** Understanding users’ feelings, emotions, and usability needs.
+
+---
