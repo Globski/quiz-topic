@@ -855,3 +855,213 @@
 **Answer:** Understanding users’ feelings, emotions, and usability needs.
 
 ---
+
+# Question: What is required regardless of whether you choose employment or freelancing in UI/UX design?
+
+**Answer:** A portfolio is required to exhibit your skills and projects.
+
+---
+
+# Question: Why is a portfolio important for a UI/UX designer?
+
+**Answer:** It showcases the designer’s skills, projects, creativity, and problem-solving abilities to potential employers or clients.
+
+---
+
+# Question: What is one beginner-level UI/UX project suggested for building a portfolio?
+
+**Answer:** Redesigning an existing website or app.
+
+---
+
+# Question: What is another beginner-level UI/UX project suggested for building a portfolio?
+
+**Answer:** Designing a product's landing page.
+
+---
+
+# Question: What beginner-level project involves visualizing and organizing data?
+
+**Answer:** Designing an analytics dashboard.
+
+---
+
+# Question: What beginner-level project focuses on travel-related user experiences?
+
+**Answer:** Designing a travel booking platform.
+
+---
+
+# Question: How many projects should a beginner typically choose to showcase in a UI/UX portfolio?
+
+**Answer:** Three to five of their strongest design projects.
+
+---
+
+# Question: Why should a portfolio contain a range of different projects?
+
+**Answer:** To demonstrate a range of skills.
+
+---
+
+# Question: Besides demonstrating skills, what other qualities should portfolio projects highlight?
+
+**Answer:** Creativity and problem-solving abilities.
+
+---
+
+# Question: What should be created for each project included in a UI/UX portfolio?
+
+**Answer:** A case study.
+
+---
+
+# Question: What is the purpose of a project case study in a UI/UX portfolio?
+
+**Answer:** To outline the problem, design process, and solutions implemented.
+
+---
+
+# Question: What should a case study explain about the project's initial situation?
+
+**Answer:** The problem being addressed.
+
+---
+
+# Question: What part of a case study should describe how the designer approached the project?
+
+**Answer:** The design process.
+
+---
+
+# Question: What should a case study include regarding the final outcome of the project?
+
+**Answer:** The solutions that were implemented.
+
+---
+
+# Question: What visual design artifacts should be included in project case studies?
+
+**Answer:** Wireframes, mockups, and prototypes.
+
+---
+
+# Question: What research-related materials should be included in project case studies when available?
+
+**Answer:** User research and testing conducted during the project.
+
+---
+
+# Question: What design qualities should a portfolio website have?
+
+**Answer:** A clean and professional design.
+
+---
+
+# Question: How should a portfolio website relate to the designer’s identity?
+
+**Answer:** It should reflect the designer’s personal style and brand.
+
+---
+
+# Question: What personal section should be included in a portfolio website?
+
+**Answer:** An "About Me" section.
+
+---
+
+# Question: What professional document should be included in a portfolio website?
+
+**Answer:** A resume.
+
+---
+
+# Question: What information should be included so others can reach the designer?
+
+**Answer:** Contact information.
+
+---
+
+# Question: How should project descriptions in a portfolio be written?
+
+**Answer:** They should be engaging.
+
+---
+
+# Question: What should project descriptions explain about each project?
+
+**Answer:** The context, challenges, and outcomes.
+
+---
+
+# Question: What communication style should be used when writing project descriptions?
+
+**Answer:** Clear and concise language.
+
+---
+
+# Question: What personal impact should be emphasized in project descriptions?
+
+**Answer:** The designer’s contributions and achievements.
+
+---
+
+# Question: What types of media can be included to visually showcase projects?
+
+**Answer:** Screenshots, videos, or interactive prototypes.
+
+---
+
+# Question: Why should screenshots, videos, or interactive prototypes be included in a portfolio?
+
+**Answer:** To visually showcase the designer’s work.
+
+---
+
+# Question: What quality standard should be applied to images and videos in a portfolio?
+
+**Answer:** They should be high quality.
+
+---
+
+# Question: How do high-quality images and videos improve a portfolio?
+
+**Answer:** They make the portfolio visually appealing and engaging.
+
+---
+
+# Question: From whom should a designer seek feedback on their portfolio?
+
+**Answer:** Peers, mentors, or industry professionals.
+
+---
+
+# Question: Why is feedback important when developing a portfolio?
+
+**Answer:** It helps improve the portfolio.
+
+---
+
+# Question: What should be done with feedback received from others?
+
+**Answer:** Incorporate the suggestions and make revisions as needed.
+
+---
+
+# Question: What is the goal of revising a portfolio based on feedback?
+
+**Answer:** To ensure the portfolio effectively communicates the designer’s skills and experiences.
+
+---
+
+# Question: Once a portfolio is complete, who should it be shared with?
+
+**Answer:** Potential employers, recruiters, and the designer’s professional network.
+
+---
+
+# Question: What attitude should a designer take when promoting their portfolio?
+
+**Answer:** They should be proactive.
+
+---
