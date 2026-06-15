@@ -1065,3 +1065,171 @@
 **Answer:** They should be proactive.
 
 ---
+
+# Question: Why is a portfolio important after learning UI/UX design skills?
+
+**Answer:** It is required to get a job or do freelancing because it showcases your skills and projects to companies or clients.
+
+---
+
+# Question: What are the two main ways to get work in UI/UX design after learning the basics?
+
+**Answer:** You can either apply to companies for jobs or do freelancing.
+
+---
+
+# Question: What must every UI/UX designer have before applying for jobs or freelancing?
+
+**Answer:** A portfolio that exhibits their skills and projects.
+
+---
+
+# Question: What are some beginner-level UI/UX design projects?
+
+**Answer:** Redesign an existing website or app, design a product landing page, design an analytics dashboard, and design a travel booking platform.
+
+---
+
+# Question: How many projects should a beginner include in a UI/UX portfolio?
+
+**Answer:** Three to five of the strongest design projects.
+
+---
+
+# Question: What is the purpose of selecting 3–5 projects for a portfolio?
+
+**Answer:** To showcase a range of skills and highlight creativity and problem-solving abilities.
+
+---
+
+# Question: What should each UI/UX portfolio project include?
+
+**Answer:** A case study outlining the problem, design process, and solutions implemented.
+
+---
+
+# Question: What specific design artifacts should be included in a case study?
+
+**Answer:** Wireframes, mockups, prototypes, and any user research or testing conducted.
+
+---
+
+# Question: What is the purpose of a case study in a UI/UX portfolio?
+
+**Answer:** To explain the problem, design process, and solutions implemented in a project.
+
+---
+
+# Question: What should a UI/UX portfolio website include besides projects?
+
+**Answer:** An about me section, resume, and contact information.
+
+---
+
+# Question: What design style should a UI/UX portfolio website use?
+
+**Answer:** A clean and professional design that reflects personal style and brand.
+
+---
+
+# Question: What should project descriptions in a portfolio explain?
+
+**Answer:** The context, challenges, outcomes, and the designer’s contributions and achievements.
+
+---
+
+# Question: What writing style should be used in portfolio project descriptions?
+
+**Answer:** Clear and concise language.
+
+---
+
+# Question: What types of media should be included in a UI/UX portfolio?
+
+**Answer:** Screenshots, videos, or interactive prototypes of projects.
+
+---
+
+# Question: Why are screenshots, videos, or prototypes important in a portfolio?
+
+**Answer:** They visually showcase the work and make the portfolio more engaging.
+
+---
+
+# Question: What quality standards should visual assets in a portfolio meet?
+
+**Answer:** They should be high-quality images and videos to make the portfolio visually appealing and engaging.
+
+---
+
+# Question: Why is feedback important when building a UI/UX portfolio?
+
+**Answer:** It helps improve the portfolio by identifying areas that need revision or enhancement.
+
+---
+
+# Question: Who should you ask for feedback on your portfolio?
+
+**Answer:** Peers, mentors, or industry professionals.
+
+---
+
+# Question: What should you do after receiving feedback on your portfolio?
+
+**Answer:** Incorporate suggestions and make revisions as needed.
+
+---
+
+# Question: What is the goal of revising a UI/UX portfolio after feedback?
+
+**Answer:** To ensure it effectively communicates skills and experiences.
+
+---
+
+# Question: What should you do once your UI/UX portfolio is ready?
+
+**Answer:** Share it with potential employers, recruiters, and your professional network.
+
+---
+
+# Question: How should you promote your UI/UX portfolio after completion?
+
+**Answer:** Be proactive in sharing it and seeking opportunities.
+
+---
+
+# Question: What is the role of problem-solving in UI/UX portfolio projects?
+
+**Answer:** Projects should highlight creativity and problem-solving abilities through design solutions.
+
+---
+
+# Question: What key elements define a strong UI/UX portfolio case study?
+
+**Answer:** Problem definition, design process, solutions, and supporting artifacts like wireframes and prototypes.
+
+---
+
+# Question: What is the purpose of including an “About Me” section in a portfolio?
+
+**Answer:** To introduce yourself and provide personal and professional background information.
+
+---
+
+# Question: What is the purpose of including a resume in a UI/UX portfolio?
+
+**Answer:** To provide a summary of skills, education, and professional experience.
+
+---
+
+# Question: What is the purpose of including contact information in a portfolio?
+
+**Answer:** To allow employers or clients to reach out for opportunities.
+
+---
+
+# Question: What types of UI/UX projects are suitable for beginners building a portfolio?
+
+**Answer:** Redesigns, landing pages, dashboards, and travel booking platform designs.
+
+---
