@@ -1373,3 +1373,87 @@
 **Answer:** UI is described as the “face” of a product, while UX is described as the “brain.”
 
 ---
+
+# Question: What does UI refer to in the context of design?
+
+**Answer:** UI refers to how a product looks visually, including how clean, readable, and premium the interface appears.
+
+---
+
+# Question: When can you say a UI designer has done a good job?
+
+**Answer:** When the design looks clean, easy to read, and feels visually premium.
+
+---
+
+# Question: What does UX refer to in product design?
+
+**Answer:** UX refers to how the overall experience feels, including ease of use, flow, and how smoothly a user completes tasks.
+
+---
+
+# Question: What are examples of UX in a real product experience?
+
+**Answer:** Finding a table easily, understanding a menu quickly, placing an order smoothly, and receiving food without confusion.
+
+---
+
+# Question: What indicates that UX design is done very well?
+
+**Answer:** When the experience feels simple, smooth, and stress-free for the user.
+
+---
+
+# Question: What is product design?
+
+**Answer:** Product design combines UI, UX, business thinking, user needs, product growth, and long-term strategy.
+
+---
+
+# Question: What additional responsibilities do product designers have beyond UI/UX?
+
+**Answer:** They consider business goals, user needs, product growth, and long-term strategy.
+
+---
+
+# Question: How can someone decide between UI, UX, and product design roles?
+
+**Answer:** It depends on their interest: visuals for UI, problem solving for UX, and full ownership for product design.
+
+---
+
+# Question: What type of person should choose UI design?
+
+**Answer:** Someone who loves visuals and creating aesthetically appealing interfaces.
+
+---
+
+# Question: What type of person should choose UX design?
+
+**Answer:** Someone who enjoys problem solving.
+
+---
+
+# Question: What type of person should choose product design?
+
+**Answer:** Someone who wants full ownership of a product.
+
+---
+
+# Question: What mindset is required for UI designers?
+
+**Answer:** Creativity and strong attention to detail to make interfaces clean and visually appealing.
+
+---
+
+# Question: What mindset is required for UX designers?
+
+**Answer:** Curiosity and empathy to understand user problems and design easy-to-use experiences.
+
+---
+
+# Question: What mindset is required for product designers?
+
+**Answer:** Big-picture thinking and clear communication to balance user needs and business goals.
+
+---
