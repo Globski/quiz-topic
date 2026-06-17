@@ -1457,3 +1457,57 @@
 **Answer:** Big-picture thinking and clear communication to balance user needs and business goals.
 
 ---
+
+# Question: What do design principles like contrast, alignment, spacing, and hierarchy help users do?
+
+**Answer:** They help users quickly understand what to look at, what to click, and what they can ignore.
+
+---
+
+# Question: What is the purpose of learning color theory in UI/UX design?
+
+**Answer:** To understand how colors affect emotions, trust, attention, and decision-making—not just how they look visually.
+
+---
+
+# Question: What does typographic basics refer to in UI/UX design?
+
+**Answer:** Choosing the right fonts and making text easy to read so designs look clean and professional.
+
+---
+
+# Question: Why is human psychology important in design?
+
+**Answer:** Because it helps understand how people read screens, make decisions, and get confused without realizing it.
+
+---
+
+# Question: What does identifying real user problems involve?
+
+**Answer:** Understanding not just what users say, but what they actually struggle with.
+
+---
+
+# Question: What are user personas?
+
+**Answer:** Simple profiles that represent real users, including their goals and pain points.
+
+---
+
+# Question: What is a user journey or user flow?
+
+**Answer:** A step-by-step path showing how a user moves through an app.
+
+---
+
+# Question: What are wireframes in UX design?
+
+**Answer:** Simple black-and-white screens that focus on structure rather than visual design.
+
+---
+
+# Question: What is FigJam used for?
+
+**Answer:** Brainstorming and planning ideas.
+
+---
