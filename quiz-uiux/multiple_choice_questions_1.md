@@ -1547,3 +1547,75 @@
 **Answer:** Making designs usable for everyone, including people with disabilities.
 
 ---
+
+# Question: Where should a UI/UX portfolio be uploaded?
+
+**Answer:** On platforms like a personal website, GitHub, or Behance.
+
+---
+
+# Question: What is required along with the portfolio upload?
+
+**Answer:** Proper documentation that proves readiness for UI/UX roles.
+
+---
+
+# Question: What types of tools are recommended for 2026 UI/UX design?
+
+**Answer:** Tools like Penpot, Logofy, UISD, and Framework AI.
+
+---
+
+# Question: What is the main feature of modern AI-powered design tools?
+
+**Answer:** They use AI and automation to reduce repetitive design work.
+
+---
+
+# Question: How do AI tools help designers?
+
+**Answer:** They convert ideas and designs into usable layouts and code faster.
+
+---
+
+# Question: What is the benefit of AI tools in design workflow?
+
+**Answer:** They allow designers to focus more on UX thinking and creativity rather than manual tasks.
+
+---
+
+# Question: What is the difference between Figma and AI tools?
+
+**Answer:** Figma provides control and collaboration, while AI tools provide speed and automation.
+
+---
+
+# Question: What is the recommended approach when choosing between Figma and AI tools?
+
+**Answer:** The best designers use both together instead of choosing only one.
+
+---
+
+# Question: How does automation and no-code impact designers?
+
+**Answer:** It helps designers work smarter, design faster, and gain an advantage in their work.
+
+---
+
+# Question: What are design systems?
+
+**Answer:** Systems that include components, tokens, and consistency rules for reusable design elements.
+
+---
+
+# Question: Why are components and tokens important in design systems?
+
+**Answer:** They help reuse elements instead of redesigning everything.
+
+---
+
+# Question: How do design systems help product development?
+
+**Answer:** They help products scale smoothly over time.
+
+---
