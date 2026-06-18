@@ -1511,3 +1511,39 @@
 **Answer:** Brainstorming and planning ideas.
 
 ---
+
+# Question: What does auto layout in Figma help achieve?
+
+**Answer:** It allows designs to adjust across different screen sizes.
+
+---
+
+# Question: What are clickable prototypes?
+
+**Answer:** Interactive designs that simulate a real app experience with small interactions.
+
+---
+
+# Question: What is the purpose of adding interactions in prototypes?
+
+**Answer:** To make the app feel real and smooth.
+
+---
+
+# Question: What is usability testing?
+
+**Answer:** Observing real users use a design to identify where they struggle.
+
+---
+
+# Question: What is done after usability testing?
+
+**Answer:** Feedback is collected and the design is improved repeatedly.
+
+---
+
+# Question: What is accessibility in design?
+
+**Answer:** Making designs usable for everyone, including people with disabilities.
+
+---
