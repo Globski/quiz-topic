@@ -1618,4 +1618,106 @@
 
 **Answer:** They help products scale smoothly over time.
 
+--- 
+
+# Question: What mistake should designers avoid when uploading portfolio work?
+
+**Answer:** They should not only upload beautiful screens without explanation.
+
+---
+
+# Question: What should always be included when presenting design work in a portfolio?
+
+**Answer:** The thinking behind the design, including why decisions were made and what problems were solved.
+
+---
+
+# Question: What is the most important part of a UI/UX portfolio?
+
+**Answer:** The case study portfolio.
+
+---
+
+# Question: What four elements should a good case study include?
+
+**Answer:** Problem, process, design decisions, and final outcome.
+
+---
+
+# Question: What does “building authority online” mean for designers?
+
+**Answer:** Sharing design knowledge and work consistently on platforms like X, Medium, and LinkedIn.
+
+---
+
+# Question: What type of content should designers post online for visibility?
+
+**Answer:** Simple design tips, UX articles, and regular LinkedIn posts.
+
+---
+
+# Question: Is going viral necessary for designers to succeed online?
+
+**Answer:** No, consistency and visibility are more important than going viral.
+
+---
+
+# Question: What happens when designers are consistently visible online?
+
+**Answer:** Opportunities start coming to them.
+
+---
+
+# Question: What relationship is described between visibility, trust, and jobs?
+
+**Answer:** Visibility creates trust, and trust creates jobs.
+
+---
+
+# Question: What are the three main UI/UX career paths in 2026?
+
+**Answer:** Freelancer, in-house designer, and product team designer.
+
+---
+
+# Question: What is a freelance UI/UX designer?
+
+**Answer:** A designer who chooses clients and works independently.
+
+---
+
+# Question: What is an in-house UI/UX designer?
+
+**Answer:** A designer who works for one company and grows with its product.
+
+---
+
+# Question: What is a product team designer?
+
+**Answer:** A designer who collaborates closely with designers, developers, and product managers.
+
+---
+
+# Question: How should designers choose their career path?
+
+**Answer:** Based on lifestyle, stability, and work preferences—not trends.
+
+---
+
+# Question: Why is UI/UX considered a remote-friendly career?
+
+**Answer:** Because companies care more about skills and portfolios than location.
+
+---
+
+# Question: What does remote work allow UI/UX designers to do?
+
+**Answer:** Work with global teams and international clients from anywhere.
+
+---
+
+# Question: What do companies focus on when hiring remote designers?
+
+**Answer:** Their skills and portfolio, not where they live.
+
 ---
