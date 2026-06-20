@@ -1721,3 +1721,51 @@
 **Answer:** Their skills and portfolio, not where they live.
 
 ---
+
+# Question: What is AI-powered design collaboration in future UI/UX work?
+
+**Answer:** AI-powered design collaboration means designers will work closely with AI tools to speed up work rather than replace creativity.
+
+---
+
+# Question: How will AI tools assist designers in the future?
+
+**Answer:** AI tools will help with layouts, generating ideas, testing, and making improvements.
+
+---
+
+# Question: What will designers focus on while using AI tools?
+
+**Answer:** Designers will focus on thinking and decision-making.
+
+---
+
+# Question: What is meant by personalization in future UI/UX design?
+
+**Answer:** Personalization means products will be tailored for each user based on their needs and behavior.
+
+---
+
+# Question: What ethical principle must designers follow in future UX design?
+
+**Answer:** Designers must ensure ethical UX by avoiding manipulation, confusing patterns, and tricks, and instead being honest, inclusive, and user-first.
+
+---
+
+# Question: What does good UX mean in the future according to the material?
+
+**Answer:** Good UX in the future means being honest, inclusive, and focused on the user.
+
+---
+
+# Question: What are mixed reality and augmented reality interfaces in UI/UX design?
+
+**Answer:** Mixed reality and augmented reality interfaces involve designing experiences that go beyond traditional screens into immersive environments.
+
+---
+
+# Question: How are designers expected to work with mixed reality and AR?
+
+**Answer:** Designers will create experiences that blend the digital world with the real world.
+
+---
