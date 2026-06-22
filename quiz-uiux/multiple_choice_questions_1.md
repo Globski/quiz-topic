@@ -1793,3 +1793,111 @@
 **Answer:** It creates trust and positive feelings even if there are minor usability flaws.
 
 ---
+
+# Question: What does the aesthetic usability effect mean in UI/UX design?
+
+**Answer:** It means people perceive visually attractive designs as more usable and effective, even if they are not actually better in performance.
+
+---
+
+# Question: How does the aesthetic usability effect influence user trust?
+
+**Answer:** A visually appealing design creates trust and positive feelings, even when there are minor usability flaws.
+
+---
+
+# Question: What Apple example is used to illustrate the aesthetic usability effect?
+
+**Answer:** Apple products are used as an example because their sleek design makes users feel they are using high-quality technology, even if occasional bugs exist.
+
+---
+
+# Question: How does Airbnb demonstrate the aesthetic usability effect?
+
+**Answer:** Airbnb’s clean design and high-quality images make users feel confident about booking a stay even when they are new to the platform.
+
+---
+
+# Question: What does the Docker threshold state in UI/UX design?
+
+**Answer:** It states that users stay engaged when systems respond faster than they can think.
+
+---
+
+# Question: Why are fast system responses important for user experience?
+
+**Answer:** Fast responses prevent frustration and help users stay focused and enjoy the experience.
+
+---
+
+# Question: What types of delays negatively affect user experience?
+
+**Answer:** Page load delays and slow button responses frustrate users.
+
+---
+
+# Question: How does Instagram demonstrate the Docker threshold principle?
+
+**Answer:** Instagram loads new posts instantly as users scroll, preventing interruption.
+
+---
+
+# Question: How does Google Search illustrate the Docker threshold?
+
+**Answer:** Google Search provides results immediately after pressing search, keeping the experience seamless.
+
+---
+
+# Question: What UI/UX principle is described as making buttons easier to click when they are bigger and closer?
+
+**Answer:** This is Fitts’ Law.
+
+---
+
+# Question: What does Fitts’ Law state about interactive elements?
+
+**Answer:** It states that larger and closer interactive elements are easier and faster to use.
+
+---
+
+# Question: Why are small buttons in corners considered poor UX according to Fitts’ Law?
+
+**Answer:** They are harder and more annoying for users to click.
+
+---
+
+# Question: What Amazon feature is used as an example of Fitts’ Law?
+
+**Answer:** The “Buy Now” button, which is large, bold, and easy to access.
+
+---
+
+# Question: What is Hick’s Law in UI/UX design?
+
+**Answer:** Hick’s Law states that more choices increase the time required to make a decision.
+
+---
+
+# Question: How does Hick’s Law affect users?
+
+**Answer:** Too many options overwhelm users and slow down decision-making or cause them to abandon the task.
+
+---
+
+# Question: What restaurant menu analogy is used for Hick’s Law?
+
+**Answer:** A long restaurant menu can overwhelm users, making it harder to choose.
+
+---
+
+# Question: How does Netflix apply Hick’s Law?
+
+**Answer:** Netflix organizes content into simple categories like trending and topics instead of showing everything at once.
+
+---
+
+# Question: How does Spotify apply Hick’s Law?
+
+**Answer:** Spotify offers curated playlists to reduce overwhelming choices and help users decide faster.
+
+---
