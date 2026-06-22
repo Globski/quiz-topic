@@ -1769,3 +1769,27 @@
 **Answer:** Designers will create experiences that blend the digital world with the real world.
 
 ---
+
+# Question: What key skills are covered in the UI/UX ?
+
+**Answer:** Covers wireframing, prototyping, usability testing, and mastering tools like Sketch, Figma, and Adobe XD.
+
+---
+
+# Question: What does the aesthetic usability effect state?
+
+**Answer:** It states that people believe beautiful designs work better even if they do not actually perform better.
+
+---
+
+# Question: How do users typically react to a visually appealing app or website according to this law?
+
+**Answer:** Users naturally assume that a beautifully designed app or website is high quality and easy to use.
+
+---
+
+# Question: What psychological effect does good-looking design create ?
+
+**Answer:** It creates trust and positive feelings even if there are minor usability flaws.
+
+---
