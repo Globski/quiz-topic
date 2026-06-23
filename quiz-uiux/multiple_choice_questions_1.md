@@ -1901,3 +1901,95 @@
 **Answer:** Spotify offers curated playlists to reduce overwhelming choices and help users decide faster.
 
 ---
+
+# Question: What does Jakob’s Law state in UI/UX design?
+
+**Answer:** Jakob’s Law states that users expect designs to work the same way as other familiar designs they already know.
+
+---
+
+# Question: Why do users prefer familiar UI patterns according to Jakob’s Law?
+
+**Answer:** Users prefer familiar patterns because they feel comfortable with them and avoid confusion or being lost.
+
+---
+
+# Question: What analogy is used to explain Jakob’s Law?
+
+**Answer:** It is compared to driving, where changing something like the brake pedal position would cause confusion and chaos.
+
+---
+
+# Question: How do e-commerce websites apply Jakob’s Law?
+
+**Answer:** E-commerce sites keep the shopping cart in the top right corner so users can easily find it.
+
+---
+
+# Question: How do social media platforms demonstrate Jakob’s Law?
+
+**Answer:** Platforms like Instagram, Facebook, and Twitter use consistent features like likes and comments so users instantly understand how to interact.
+
+---
+
+# Question: What does the Law of Common Region state?
+
+**Answer:** It states that related items should be grouped together visually to show they are connected.
+
+---
+
+# Question: What everyday analogy explains the Law of Common Region?
+
+**Answer:** It is compared to a grocery store where fruits are grouped in one section and snacks in another.
+
+---
+
+# Question: How does visual grouping improve user understanding?
+
+**Answer:** It helps users quickly recognize relationships between elements and reduces cognitive effort.
+
+---
+
+# Question: How do Google search results apply the Law of Common Region?
+
+**Answer:** Google groups ads, featured snippets, and organic results into separate cards to show what belongs together.
+
+# Question: How do forms demonstrate the Law of Common Region?
+
+**Answer:** Forms group related fields like name, email, and phone together so users understand they belong in the same section.
+
+---
+
+# Question: What does Miller’s Law state in UI/UX design?
+
+**Answer:** Miller’s Law states that people can only hold about seven items in their working memory at one time.
+
+---
+
+# Question: What happens when users are overloaded with too much information?
+
+**Answer:** They forget information or become confused.
+
+---
+
+# Question: What design strategy helps apply Miller’s Law effectively?
+
+**Answer:** Breaking information into smaller chunks makes it easier for users to process.
+
+---
+
+# Question: How does Spotify apply Miller’s Law?
+
+**Answer:** Spotify limits navigation to a few key options like Home and Search instead of overwhelming users with many choices.
+
+---
+
+# Question: How do multi-step forms use Miller’s Law?
+
+**Answer:** Websites like LinkedIn break long applications into smaller steps to make them easier and less intimidating.
+
+---
+
+# Question: What does Occam’s Razor state in UI/UX design?
+
+**Answer:** It states that the simplest solution is usually the best.
