@@ -1993,3 +1993,98 @@
 # Question: What does Occam’s Razor state in UI/UX design?
 
 **Answer:** It states that the simplest solution is usually the best.
+
+---
+
+# Question: What core principle is described as “more doesn’t always mean better” in UI/design?
+
+**Answer:** A clean, simple design is often more effective than one with too many elements, and anything that does not serve a purpose should be removed.
+
+---
+
+# Question: What example is used to illustrate simplicity in design?
+
+**Answer:** The Google homepage, which contains only a logo, a search bar, and two buttons.
+
+---
+
+# Question: What is the P2 principle also known as?
+
+**Answer:** The 80/20 rule.
+
+---
+
+# Question: What does the 80/20 rule (P2 principle) state?
+Answer: 80% of results come from 20% of the effort.
+
+---
+
+# Question: What design strategy does the 80/20 rule recommend?
+
+**Answer:** Focus on the features that matter most instead of trying to perfect everything.
+
+---
+
+# Question: How is Instagram used as an example of the 80/20 rule?
+
+**Answer:** Posting photos and stories drives most of the engagement, so these are the app’s main focus features.
+
+---
+
+# Question: How does Amazon demonstrate the 80/20 principle in its interface?
+**Answer:** The search bar and “Buy Now” button are prominently placed because they are the most frequently used features.
+
+# Question: What is the serial position effect?
+**Answer:** It is the principle that people remember the first and last items better than those in the middle.
+
+---
+
+# Question: Where should important information be placed according to the serial position effect?
+**Answer:** At the beginning or at the end, because those positions are more memorable.
+
+---
+
+# Question: Why is information in the middle less effective according to the serial position effect?
+**Answer:** Because it is more likely to be overlooked and remembered less clearly.
+
+---
+
+# Question: How does Amazon apply the serial position effect in its deals section?
+**Answer:** It highlights the best deals at both the top and bottom of the homepage to attract attention.
+
+---
+
+# Question: How is the serial position effect reflected in presentations?
+**Answer:** The introduction and conclusion are usually the most memorable parts.
+
+---
+
+# Question: What is Tesla’s law (law of conservation of complexity)?
+**Answer:** It states that some complexity is unavoidable and must be managed rather than eliminated.
+
+---
+
+# Question: What is the key design implication of Tesla’s law?
+**Answer:** Designers should not try to remove all complexity but instead make it as easy as possible for users.
+
+---
+
+# Question: Why can’t all systems be fully simplified according to Tesla’s law?
+**Answer:** Because some processes are inherently complex.
+
+
+# Question: How does Photoshop illustrate the law of conservation of complexity?
+**Answer:** Photoshop is complex by necessity, but it organizes tools into categories to make them manageable.
+
+---
+
+# Question: How do tax filing apps demonstrate Tesla’s law?
+**Answer:** Tax filing is inherently complex, but apps like TurboTax simplify it using step-by-step guidance.
+
+---
+
+# Question: What additional feature do some tax apps provide to reduce complexity?
+**Answer:** Autofill options to reduce user effort.
+
+---
+
