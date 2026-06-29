@@ -2088,3 +2088,104 @@ Answer: 80% of results come from 20% of the effort.
 
 ---
 
+# Question: What does the Von Restorff Effect state?
+
+**Answer:** The Von Restorff Effect states that things that stand out are easier to remember because they grab attention and stick in a person's memory.
+
+---
+
+# Question: Why are visually distinct elements easier to remember according to the Von Restorff Effect?
+
+**Answer:** Because they attract attention more effectively than surrounding elements, making them more memorable.
+
+---
+
+# Question: How should the Von Restorff Effect be applied in UI/UX design?
+
+**Answer:** It should be used to highlight important interface elements such as call-to-action buttons and special offers so they immediately attract the user's attention.
+
+---
+
+# Question: Which UI element was given as an example of the Von Restorff Effect in practice?
+
+**Answer:** Spotify's bright green sign-up button.
+
+---
+
+# Question: Why is Spotify's sign-up button an effective example of the Von Restorff Effect?
+
+**Answer:** Because its bright green color stands out against the dark interface, making the button difficult to miss.
+
+---
+
+# Question: Why do stores commonly use red sales tags?
+
+**Answer:** Because the red color immediately catches people's attention, making discounts more noticeable.
+
+---
+
+# Question: When designing a digital product such as a website or app, what should the ultimate goal be?
+
+**Answer:** The goal should be to create a seamless, intuitive, and enjoyable user experience, not just functional software.
+
+---
+
+# Question: What characteristics define the example of a good UI design?
+
+**Answer:** It is clean, organized, and easy to navigate.
+
+---
+
+# Question: What characteristics define the example of a bad UI design?
+
+**Answer:** It is cluttered, overwhelming, and frustrating to use.
+
+---
+
+# Question: What makes the difference between the good and bad UI design examples "crystal clear"?
+
+**Answer:** The good design is easy to use and organized, while the bad design is cluttered and difficult to navigate.
+
+---
+
+# Question: What are UI design principles described as?
+
+**Answer:** They are described as a roadmap that helps designers create interfaces that are user-friendly and enjoyable.
+
+---
+
+# Question: Is great UI design only about attractive visuals?
+
+**Answer:** No. Great UI design is about making a product functional, enjoyable, and easy for everyone to use.
+
+---
+
+# Question: What is the first reason for following UI design principles?
+
+**Answer:** They enhance usability.
+
+---
+
+# Question: Explain enhanced usability using the directions analogy?
+
+**Answer:** It compares good UI design to giving someone clear step-by-step directions instead of handing them a map and expecting them to figure everything out on their own.
+
+---
+
+# Question: According to the analogy, what does good UI design provide to users?
+
+**Answer:** Clear guidance that helps users navigate an interface step by step.
+
+---
+
+# Question: What is the primary purpose of UI design principles?
+
+**Answer:** To help designers create interfaces that are intuitive, user-friendly, enjoyable, and easy to navigate.
+
+---
+
+# Question: What key idea connects the Von Restorff Effect and effective UI design?
+
+**Answer:** Both emphasize directing the user's attention to the most important elements, making interfaces easier to understand and interact with.
+
+---
