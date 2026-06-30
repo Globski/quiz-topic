@@ -2189,3 +2189,73 @@ Answer: 80% of results come from 20% of the effort.
 **Answer:** Both emphasize directing the user's attention to the most important elements, making interfaces easier to understand and interact with.
 
 ---
+
+# Question: What does the Von Restorff Effect state?
+**Answer:** The Von Restorff Effect states that items that stand out are easier to remember because they attract attention and become more memorable.
+
+---
+
+# Question: Why are visually distinct elements easier for users to 
+**Answer:** Because they grab the user's attention, making them more likely to stick in memory.
+
+---
+
+# Question: How can the Von Restorff Effect be applied in UI/UX design?
+**Answer:** By highlighting important interface elements such as call-to-action buttons or special offers so they stand out from surrounding content.
+
+---
+
+# Question: What example demonstrates the Von Restorff Effect using a digital product?
+**Answer:** Spotify's bright green sign-up button stands out against its dark interface, making it highly noticeable.
+
+---
+
+# Question: What retail example illustrates the Von Restorff Effect?
+**Answer:** Stores use red sales or discount tags because they immediately catch customers' attention.
+
+---
+
+# Question: What role do UI/UX design laws play?
+**Answer:** They serve as a toolkit for creating designs that are not only visually appealing but also intuitivepb and effective.
+
+---
+
+# Question: When designing a digital product such as a website or app, what is the ultimate goal?
+**Answer:** To create a seamless, intuitive, and enjoyable user experience, not just a functional product.
+
+---
+
+# Question: What characteristics describe the example of a good UI design?
+**Answer:** It is clean, organized, and easy to navigate.
+
+---
+
+# Question: What characteristics describe the example of a bad UI design ?
+**Answer:** It is cluttered, overwhelming, and frustrating to use.
+
+---
+
+# Question: What do UI design principles help designers achieve?
+**Answer:** They provide a roadmap for creating interfaces that are both user-friendly and enjoyable.
+
+---
+
+# Question: Is great UI design only about visual appearance?
+**Answer:** No. Great UI design is about making a product functional, enjoyable, and easy for everyone to use.
+
+---
+
+# Question: What is the first reason given for following UI design principles?
+**Answer:** They enhance usability.
+
+---
+
+# Question: Explain usability using an analogy?
+**Answer:** Compares good UI design to giving someone clear directions instead of simply handing them a map and expecting them to figure everything out.
+
+---
+
+# Question: According to the analogy, what does good UI design provide users?
+**Answer:** Clear signs that guide users step by step through the interface.
+
+---
