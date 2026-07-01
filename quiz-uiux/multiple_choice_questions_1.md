@@ -2259,3 +2259,66 @@ Answer: 80% of results come from 20% of the effort.
 **Answer:** Clear signs that guide users step by step through the interface.
 
 ---
+
+# Question: How does good UI design enhance usability?
+**Answer:** It provides clarity and simplicity, guiding users toward their goals with ease.
+
+---
+
+# Question: What is the reason for following UI design principles?
+**Answer:** They improve decision making.
+
+---
+
+# Question: How does a clear and consistent design improve decision making for users?
+**Answer:** It enables users to navigate more confidently.
+
+---
+
+# Question: How do UI design principles improve decision making for designers?
+**Answer:** They provide a structured framework that helps designers anticipate user needs and make informed design choices.
+
+---
+
+# Question: What is another benefit of following UI design principles after improving decision making?
+**Answer:** They increase efficiency.
+
+---
+
+# Question: What did Figma's research find about teams using design systems?
+**Answer:** Teams using design systems complete tasks 34% faster than teams that do not use them.
+
+---
+
+# Question: By how much do teams using design systems complete tasks faster, according to Figma's -research?
+**Answer:** They complete tasks 34% faster.
+
+---
+
+# Question: How do clear UI principles contribute to efficiency?
+Answer:** They help designers and developers streamline workflows.
+
+---
+
+# Question: Which roles benefit from streamlined workflows created by clear UI principles?
+**Answer:** Designers and developers.
+
+---
+
+# Question: What is another major benefit of good UI design?
+**Answer:** It reduces cognitive load.
+
+---
+
+# Question: What is cognitive load in the context of UI design?
+**Answer:** It refers to the mental effort users need to complete tasks.
+
+---
+
+# Question: How does good UI design reduce cognitive load?
+Answer:** It minimizes the mental effort required for users to complete tasks.
+
+---
+
+# Question: What are the benefits of reducing users' cognitive load?
+**Answer:** It leads to fewer frustrations and a more enjoyable user experience.
