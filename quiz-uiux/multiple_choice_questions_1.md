@@ -2322,3 +2322,162 @@ Answer:** It minimizes the mental effort required for users to complete tasks.
 
 # Question: What are the benefits of reducing users' cognitive load?
 **Answer:** It leads to fewer frustrations and a more enjoyable user experience.
+
+
+---
+
+# Question: What is the primary purpose of hierarchy in UI design?
+
+**Answer:** To guide users' attention toward the most important elements first.
+
+---
+
+# Question: How is hierarchy explained using a newspaper analogy?
+
+**Answer:** It is compared to a newspaper headline that grabs readers' attention before they read the details.
+
+---
+
+# Question: Which three visual techniques are recommended for creating hierarchy in UI design?
+
+**Answer:** Size, contrast, and spacing.
+
+---
+
+# Question: How does font size contribute to visual hierarchy?
+
+**Answer:** Larger font sizes immediately attract users' attention to important content.
+
+---
+
+# Question: How does font weight contribute to visual hierarchy?
+
+**Answer:** Bold fonts emphasize headlines or key actions, making them more noticeable.
+
+---
+
+# Question: What effect do large, bold fonts have in a user interface?
+
+**Answer:** They immediately draw the user's eye to headlines or important actions.
+
+---
+
+# Question: How is font hierarchy demonstrated in an e-commerce application?
+
+**Answer:** The product name is displayed in bold, while the price is shown in a slightly smaller font.
+
+---
+
+# Question: How does contrast help establish visual hierarchy?
+
+**Answer:** It uses color differences to make important interface elements stand out.
+
+---
+
+# Question: What example demonstrates the use of contrast in UI design?
+
+**Answer:** A bright "Buy Now" button placed against a neutral background naturally attracts attention.
+
+---
+
+# Question: What is the purpose of spacing in UI design?
+
+**Answer:** To group related content together and separate unrelated items, improving clarity.
+
+---
+
+# Question: How should related and unrelated content be arranged using spacing?
+
+**Answer:** Related content should be grouped together, while sufficient space should separate unrelated items.
+
+---
+
+# Question: In the provided hierarchy example, which element is made most visually prominent?
+
+**Answer:** The company name or logo.
+
+---
+
+# Question: Which elements follow the company name or logo in the visual hierarchy example?
+
+**Answer:** The subtitles or sections.
+
+---
+
+# Question: What benefit do visual cues provide in a hierarchical layout?
+
+**Answer:** They allow users to quickly skim the interface and find the information they need with minimal effort.
+
+---
+
+# Question: What design question should designers ask themselves when applying hierarchy?
+
+**Answer:** "What's the first thing I want my user to notice?"
+
+---
+
+# Question: What is the goal of progressive disclosure?
+
+**Answer:** To simplify complex processes by revealing information gradually.
+
+---
+
+# Question: How is progressive disclosure explained using an analogy?
+
+**Answer:** It is compared to peeling an onion, revealing one layer at a time to avoid overwhelming users.
+
+---
+
+# Question: According to progressive disclosure, how should information be presented?
+
+**Answer:** Only the information necessary for the current step should be shown.
+
+---
+
+# Question: Why should designers avoid showing everything at once?
+
+**Answer:** Because displaying too much information at once can overwhelm users.
+
+---
+
+# Question: How is progressive disclosure applied during onboarding for a productivity app?
+
+**Answer:** Users are first asked for their name and email, followed by additional details such as preferences and settings in later steps.
+
+---
+
+# Question: Which information is collected first in the onboarding example?
+
+**Answer:** The user's name and email.
+
+---
+
+# Question: Which information is collected in later onboarding steps?
+
+**Answer:** Additional details such as preferences and settings.
+
+---
+
+# Question: How does progressive disclosure affect the user's perception of a process?
+
+**Answer:** It makes the process feel less daunting and easier to complete.
+
+---
+
+# Question: What is the first recommendation for making progressive disclosure effective?
+
+**Answer:** Provide a progress indicator.
+
+---
+
+# Question: What are two examples of progress indicators?
+
+**Answer:** A progress bar or step indicators such as "Step 1" and "Step 2."
+
+---
+
+# Question: What purpose does a progress indicator serve during a multi-step process?
+
+**Answer:** It helps users understand their current progress and how much of the process remains.
+
+---
